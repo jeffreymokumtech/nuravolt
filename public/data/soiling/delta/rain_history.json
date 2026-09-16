@@ -1,8 +1,8 @@
 {
   "metadata": {
     "plant": "delta",
-    "latitude": 39.6544,
-    "longitude": 2.6978,
+    "latitude": 39.5,
+    "longitude": 2.5,
     "source": "Open-Meteo Archive API",
     "generated_at": "2025-12-23T22:11:34.403894"
   },

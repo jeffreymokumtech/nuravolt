@@ -120,8 +120,8 @@ const SITE_1 = {
     address: 'Ctra. A-4 km 12',
     zip: '41000',
     timeZone: 'Europe/Madrid',
-    latitude: 37.39,
-    longitude: -5.98,
+    latitude: 37.5,
+    longitude: -6,
   },
 };
 

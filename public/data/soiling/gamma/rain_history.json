@@ -1,8 +1,8 @@
 {
   "metadata": {
     "source": "Open-Meteo Archive API",
-    "latitude": 39.489,
-    "longitude": 2.916,
+    "latitude": 39.5,
+    "longitude": 3,
     "period": {
       "start": "2020-01-01",
       "end": "2025-12-18"

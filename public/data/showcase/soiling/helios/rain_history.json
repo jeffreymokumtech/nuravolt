@@ -1,8 +1,8 @@
 {
   "metadata": {
     "plant_id": "helios",
-    "latitude": 37.927,
-    "longitude": -1.233,
+    "latitude": 38,
+    "longitude": -1,
     "source": "CHIRPS v2.0 Final (UCSB Climate Hazards Center)",
     "spatial_resolution": "0.05\u00b0 (~5 km)",
     "temporal_resolution": "Daily",

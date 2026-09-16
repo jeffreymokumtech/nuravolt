@@ -29,8 +29,8 @@ from nuravolt.soiling.sr_ml_features import SoilingRatioFeatureEngineer, PlantLo
 # Plant configurations
 PLANT_CONFIGS = {
     'alpha1': {
-        'latitude': 37.45,
-        'longitude': -6.14,
+        'latitude': 37.5,
+        'longitude': -6,
         'model_path': 'models/soiling/sr_foundation_alpha1.pkl',
     }
 }

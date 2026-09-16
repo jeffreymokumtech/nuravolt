@@ -4,10 +4,14 @@ import ScheduledReport from '@/components/email-templates/ScheduledReport'
 import ThankYouTemplate from '@/components/email-templates/ThanksYouTemplate'
 import config from '@/config'
 import prisma from '@/libs/prisma'
-import { Resend } from 'resend'
+import { getResend } from '@/libs/resend-client'
 
 class ResendService {
-	private resend = new Resend(process.env.RESEND_API_KEY)
+	private get resend() {
+		const client = getResend()
+		if (!client) throw new Error('email_not_configured')
+		return client
+	}
 
 	public async sendThanksYouEmail(toMail: string) {
 		const { data, error } = await this.resend.emails.send({

@@ -7,8 +7,8 @@
     {
       "system_id": 2107,
       "name": "Farm Solar Array (Arbuckle CA)",
-      "lat": 38.996306,
-      "lon": -122.134111,
+      "lat": 39,
+      "lon": -122,
       "zone": "DESERT_SOUTHWEST_US",
       "climate_prior_rate_pct_day": 0.2026,
       "rdtools_iwsr": 0.9494,
@@ -37,8 +37,8 @@
     {
       "system_id": 9069,
       "name": "Simon Solar Farm (Social Circle GA)",
-      "lat": 33.6762,
-      "lon": -83.676,
+      "lat": 33.5,
+      "lon": -83.5,
       "zone": "HUMID_SUBTROPICAL",
       "climate_prior_rate_pct_day": 0.1402,
       "rdtools_iwsr": 0.92,

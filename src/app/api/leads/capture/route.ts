@@ -1,9 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { PrismaClient } from '@prisma/client';
-import { Resend } from 'resend';
+import { getResend } from '@/libs/resend-client';
 
 const prisma = new PrismaClient();
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: NextRequest) {
   try {
@@ -101,7 +100,7 @@ export async function POST(request: NextRequest) {
 
     try {
       console.log('📧 Sending email to:', email);
-      const emailResponse = await resend.emails.send({
+      const emailResponse = await getResend()?.emails.send({
         from: 'NuraVolt <noreply@nuravolt.com>',
         to: email,
         subject: `Your ${resourceType}: ${resourceTitle}`,

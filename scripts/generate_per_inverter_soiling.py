@@ -62,7 +62,7 @@ PLANTS = {
         'scada_path': 'analyticsbackend_deprecated/data/alpha1/scada.parquet',
         # dict config on purpose: calculate_fleet_summary calls config.get()
         'site_config': {
-            'name': 'Alpha Solar Plant', 'latitude': 37.45, 'longitude': -6.14,
+            'name': 'Alpha Solar Plant', 'latitude': 37.5, 'longitude': -6,
             'timezone': 'Europe/Madrid', 'capacity_MW': 9.0, 'tilt': 25.0,
             'azimuth': 180.0, 'electricity_rate_per_MWh': 65.0,
             'cleaning_cost_per_MW': 600.0,

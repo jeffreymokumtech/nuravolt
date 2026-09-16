@@ -81,6 +81,11 @@ export default function AiInsightsCard({ plantId, plantData }: AiInsightsCardPro
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [plantId]);
 
+  // No LLM configured (or the call failed) and nothing cached: the card is a
+  // nice-to-have, so it disappears rather than showing a raw error on the
+  // flagship plant page. Same rule as the briefing strip.
+  if (error && !insights && !loading) return null;
+
   return (
     <OpsPanel
       label={

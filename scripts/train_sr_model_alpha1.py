@@ -21,8 +21,8 @@ from nuravolt.soiling.sr_ml_training import train_foundation_model
 # ALPHA1 Configuration
 ALPHA1_CONFIG = {
     'plant_id': 'alpha1',
-    'latitude': 37.45,
-    'longitude': -6.14,
+    'latitude': 37.5,
+    'longitude': -6,
 }
 
 # Data paths

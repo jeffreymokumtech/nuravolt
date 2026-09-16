@@ -1,0 +1,14 @@
+# LangGraph agent service (nuravolt/agent, docs/AGENT.md).
+FROM python:3.11-slim
+ENV PYTHONUNBUFFERED=1 PIP_NO_CACHE_DIR=1
+RUN apt-get update && apt-get install -y --no-install-recommends curl && rm -rf /var/lib/apt/lists/* \
+ && useradd -m agent
+WORKDIR /app
+COPY pyproject.toml setup.py README.md ./
+COPY nuravolt ./nuravolt
+RUN pip install -e ".[agent]"
+USER agent
+EXPOSE 8100
+HEALTHCHECK --interval=15s --timeout=5s --retries=10 --start-period=20s \
+  CMD curl -fsS http://localhost:8100/healthz > /dev/null || exit 1
+CMD ["python", "-m", "nuravolt.agent", "serve"]

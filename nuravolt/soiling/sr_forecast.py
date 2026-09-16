@@ -126,8 +126,8 @@ class SoilingRatioForecaster:
     -------
     >>> forecaster = SoilingRatioForecaster(
     ...     model_path="models/soiling/sr_model_alpha1.pkl",
-    ...     latitude=37.45,
-    ...     longitude=-6.14
+    ...     latitude=37.5,
+    ...     longitude=-6
     ... )
     >>> result = forecaster.forecast(current_sr=0.985)
     >>> print(f"7-day SR: {result.daily[6].sr_forecast:.3f}")

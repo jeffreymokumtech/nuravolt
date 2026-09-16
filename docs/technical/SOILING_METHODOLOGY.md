@@ -483,8 +483,8 @@ curtailment_factor = 1 - (dv_value / 100)
 ```python
 SITE_CONFIG = {
     'name': 'Alpha1 (ES)',
-    'latitude': 37.8145,
-    'longitude': -3.8047,
+    'latitude': 38,
+    'longitude': -4,
     'elevation': 450,  # meters
     'timezone': 'Europe/Madrid',
     'capacity_MW': 9.0,

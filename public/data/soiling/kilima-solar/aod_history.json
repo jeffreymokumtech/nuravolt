@@ -3,8 +3,8 @@
   "plant_id": "kilima-solar",
   "generated_at": "2026-07-25T12:27:11.690774",
   "source": "open-meteo air-quality (CAMS), plant coordinates",
-  "latitude": -1.45,
-  "longitude": 36.98
+  "latitude": -1.5,
+  "longitude": 37
  },
  "daily_data": [
   {

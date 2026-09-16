@@ -71,8 +71,8 @@ ALPHA = {
     # ratio above 700 W/m2 is 0.905 against a 10.5 MWp DC array.
     "capacity_kwac": 9900.0,
     "capacity_kwp": 10500.0,
-    "lat": 37.8145,
-    "lon": -3.8047,
+    "lat": 38,
+    "lon": -4,
 }
 
 # Structural outliers are excluded by name, with the reason recorded in the

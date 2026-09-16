@@ -1,0 +1,157 @@
+# Offline eval cases. Each case scripts the model (intent, plan, verdicts) and
+# the tool outputs, then asserts what the graph did: the ordered tool
+# trajectory, tools that must never run, whether a human approval interrupt
+# fired, and what happened after the resume decision. The live runner
+# (scripts/agent_eval_live.py) reuses the prompts and expectations against a
+# real model and the real MCP server.
+
+- id: soiling_question
+  prompt: "How dirty are the panels at Kilima right now and when should we clean?"
+  intent: question
+  plan:
+    - {goal: "Find the plant id for Kilima", tool: nuravolt_list_plants, args: {}}
+    - {goal: "Get the soiling forecast for Kilima", tool: nuravolt_get_soiling_forecast, args: {plantId: kilima-solar, days: 30}}
+  tool_outputs:
+    nuravolt_list_plants: {plants: [{id: p1, slug: kilima-solar, name: Kilima Solar Park, asset_type: PV}]}
+    nuravolt_get_soiling_forecast: {plant: kilima-solar, current_sr: 0.941, recommended_cleaning_date: "2026-08-04", horizon_days: 30}
+  expected_trajectory: [nuravolt_list_plants, nuravolt_get_soiling_forecast]
+  must_not_call: [nuravolt_create_ticket, nuravolt_approve_cleaning_schedule]
+  expect_interrupt: false
+  answer_text: "Kilima Solar Park is at a soiling ratio of 0.941; the optimiser recommends cleaning on 2026-08-04."
+  answer_must_contain: ["0.941", "2026-08-04"]
+
+- id: create_ticket_requires_approval
+  prompt: "Open a HIGH priority ticket on Kilima inverter INV-07 for the string fault."
+  intent: action
+  plan:
+    - {goal: "Find the plant id for Kilima", tool: nuravolt_list_plants, args: {}}
+    - {goal: "Confirm INV-07 exists", tool: nuravolt_list_inverters, args: {plantId: kilima-solar}}
+    - {goal: "Open the ticket", tool: nuravolt_create_ticket, args: {plantId: kilima-solar, inverterId: INV-07, title: "String fault on INV-07", description: "Operator reported a string fault on INV-07; inspect and trace.", priority: HIGH}}
+  tool_outputs:
+    nuravolt_list_plants: {plants: [{id: p1, slug: kilima-solar}]}
+    nuravolt_list_inverters: {inverters: [{id: INV-07}, {id: INV-08}]}
+    nuravolt_create_ticket: {ticket: {id: t-123, status: NEW}}
+  expected_trajectory: [nuravolt_list_plants, nuravolt_list_inverters]
+  expect_interrupt: true
+  interrupt_tool: nuravolt_create_ticket
+  resume: {decision: approved}
+  after_resume_calls: [nuravolt_create_ticket]
+  answer_text: "Ticket t-123 opened on INV-07 at Kilima Solar Park with HIGH priority."
+  answer_must_contain: ["t-123"]
+
+- id: rejected_write_never_executes
+  prompt: "Mark ticket t-9 as done."
+  intent: action
+  plan:
+    - {goal: "Close the ticket", tool: nuravolt_update_ticket_status, args: {ticketId: t-9, newStatus: DONE}}
+  tool_outputs:
+    nuravolt_update_ticket_status: {ticket: {id: t-9, status: DONE}}
+  expected_trajectory: []
+  expect_interrupt: true
+  interrupt_tool: nuravolt_update_ticket_status
+  resume: {decision: rejected, note: "not yet"}
+  after_resume_calls: []
+  answer_text: "Ticket t-9 is unchanged."
+  answer_must_contain: ["not applied", "rejected"]
+
+- id: edited_write_uses_edited_args
+  prompt: "Comment on ticket t-9 that the crew is booked for Monday."
+  intent: action
+  plan:
+    - {goal: "Add the comment", tool: nuravolt_comment_on_ticket, args: {ticketId: t-9, content: "Crew booked for Monday."}}
+  tool_outputs:
+    nuravolt_comment_on_ticket: {comment: {id: c-1}}
+  expected_trajectory: []
+  expect_interrupt: true
+  interrupt_tool: nuravolt_comment_on_ticket
+  resume: {decision: edited, edited_args: {ticketId: t-9, content: "Crew booked for Monday 08:00."}}
+  after_resume_calls: [nuravolt_comment_on_ticket]
+  after_resume_args_contain: {nuravolt_comment_on_ticket: {content: "Crew booked for Monday 08:00."}}
+  answer_text: "Comment c-1 added to ticket t-9."
+
+- id: plan_with_hallucinated_tool
+  prompt: "What did the battery earn last week?"
+  intent: question
+  plan:
+    - {goal: "Find the storage plant", tool: nuravolt_list_plants, args: {assetType: BESS}}
+    - {goal: "Fetch revenue", tool: nuravolt_get_battery_earnings, args: {plantId: athi-storage}}
+    - {goal: "Fetch revenue by service", tool: nuravolt_get_bess_revenue, args: {plantId: athi-storage, days: 7}}
+  tool_outputs:
+    nuravolt_list_plants: {plants: [{id: p2, slug: athi-storage, asset_type: BESS}]}
+    nuravolt_get_bess_revenue: {plant: athi-storage, total_eur: 1840.5, by_service: {arbitrage: 1840.5}}
+  expected_trajectory: [nuravolt_list_plants, nuravolt_get_bess_revenue]
+  must_not_call: [nuravolt_get_battery_earnings]
+  expect_interrupt: false
+  answer_text: "Athi Storage earned 1840.5 EUR over the last 7 days, all from arbitrage."
+  answer_must_contain: ["1840.5"]
+
+- id: verifier_triggers_replan
+  prompt: "Show me the soiling forecast for the Nairobi plant."
+  intent: question
+  plan:
+    - {goal: "Get forecast for the plant the user named", tool: nuravolt_get_soiling_forecast, args: {plantId: nairobi}}
+  replan:
+    - {goal: "Find the plant id", tool: nuravolt_list_plants, args: {}}
+    - {goal: "Get forecast", tool: nuravolt_get_soiling_forecast, args: {plantId: kilima-solar}}
+  verdicts:
+    - {passed: false, reason: "unknown plant; resolve the id first", action: replan}
+    - {passed: true, reason: ok, action: continue}
+    - {passed: true, reason: ok, action: continue}
+  tool_outputs:
+    nuravolt_get_soiling_forecast: {plant: kilima-solar, current_sr: 0.95}
+    nuravolt_list_plants: {plants: [{id: p1, slug: kilima-solar, name: Kilima Solar Park}]}
+  expected_trajectory: [nuravolt_get_soiling_forecast, nuravolt_list_plants, nuravolt_get_soiling_forecast]
+  expect_interrupt: false
+  expect_replans: 1
+
+- id: out_of_scope
+  prompt: "Write me a poem about Python."
+  intent: out_of_scope
+  plan: []
+  expected_trajectory: []
+  expect_interrupt: false
+  answer_must_contain: ["outside what I can do"]
+
+- id: memory_nickname
+  prompt: "From now on call kilima-solar 'the big one'."
+  intent: question
+  plan: []
+  memory_facts:
+    - {kind: nickname, subject: kilima-solar, value: "the big one", confidence: 0.9}
+  expected_trajectory: []
+  expect_interrupt: false
+  expect_memory_keys: ["nickname:kilima_solar"]
+  answer_text: "Noted: I will call kilima-solar the big one."
+
+- id: failed_write_is_reported_not_done
+  prompt: "Open a ticket on Kilima for INV-03: dirty panels."
+  intent: action
+  plan:
+    - {goal: "Find the plant", tool: nuravolt_list_plants, args: {}}
+    - {goal: "Open the ticket", tool: nuravolt_create_ticket, args: {plantId: kilima-solar, inverterId: INV-03, title: "Dirty panels on INV-03", description: "Soiling reported on INV-03; schedule a cleaning inspection."}}
+  tool_outputs:
+    nuravolt_list_plants: {plants: [{id: p1, slug: kilima-solar}]}
+    nuravolt_create_ticket: {error: access_denied, detail: "No access to kilima-solar."}
+  expected_trajectory: [nuravolt_list_plants]
+  expect_interrupt: true
+  interrupt_tool: nuravolt_create_ticket
+  resume: {decision: approved}
+  after_resume_calls: [nuravolt_create_ticket]
+  answer_text: "Ticket created."
+  answer_must_contain: ["was not applied"]
+
+- id: guessed_id_is_rebound_from_results
+  prompt: "List the inverters at Kilima."
+  intent: question
+  plan:
+    - {goal: "Find the plant", tool: nuravolt_list_plants, args: {}}
+    - {goal: "List inverters", tool: nuravolt_list_inverters, args: {plantId: kilima-solar-park}}
+  bind_args:
+    - {plantId: kilima-solar}
+  tool_outputs:
+    nuravolt_list_plants: {plants: [{id: p1, slug: kilima-solar}]}
+    nuravolt_list_inverters: {inverters: [{id: INV-01}]}
+  expected_trajectory: [nuravolt_list_plants, nuravolt_list_inverters]
+  expected_args:
+    nuravolt_list_inverters: {plantId: kilima-solar}
+  expect_interrupt: false

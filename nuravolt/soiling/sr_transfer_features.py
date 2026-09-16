@@ -30,8 +30,8 @@ Usage:
 
     extractor = EnhancedFeatureExtractor(
         plant_id="gamma",
-        latitude=39.489,
-        longitude=2.916,
+        latitude=39.5,
+        longitude=3,
     )
 
     # Extract all features
@@ -75,8 +75,8 @@ class PlantConfig:
 PLANT_CONFIGS = {
     "epsilon": PlantConfig(
         plant_id="epsilon",
-        latitude=51.195,
-        longitude=14.509,
+        latitude=51,
+        longitude=14.5,
         altitude=150,
         p_rated=60.0,
         climate_zone="temperate",
@@ -84,8 +84,8 @@ PLANT_CONFIGS = {
     ),
     "ribera": PlantConfig(
         plant_id="ribera",
-        latitude=37.927,
-        longitude=-1.233,
+        latitude=38,
+        longitude=-1,
         altitude=50,
         p_rated=60.0,
         climate_zone="mediterranean",
@@ -93,8 +93,8 @@ PLANT_CONFIGS = {
     ),
     "eta": PlantConfig(
         plant_id="eta",
-        latitude=38.66,
-        longitude=-5.39,
+        latitude=38.5,
+        longitude=-5.5,
         altitude=400,
         p_rated=60.0,
         climate_zone="mediterranean",
@@ -102,8 +102,8 @@ PLANT_CONFIGS = {
     ),
     "delta": PlantConfig(
         plant_id="delta",
-        latitude=39.6544,
-        longitude=2.6978,
+        latitude=39.5,
+        longitude=2.5,
         altitude=50,
         p_rated=60.0,
         climate_zone="mediterranean",
@@ -111,8 +111,8 @@ PLANT_CONFIGS = {
     ),
     "zeta": PlantConfig(
         plant_id="zeta",
-        latitude=39.525,
-        longitude=3.187,
+        latitude=39.5,
+        longitude=3,
         altitude=50,
         p_rated=60.0,
         climate_zone="mediterranean",
@@ -120,8 +120,8 @@ PLANT_CONFIGS = {
     ),
     "gamma": PlantConfig(
         plant_id="gamma",
-        latitude=39.489,
-        longitude=2.916,
+        latitude=39.5,
+        longitude=3,
         altitude=25,
         p_rated=60.0,
         climate_zone="mediterranean",
@@ -129,8 +129,8 @@ PLANT_CONFIGS = {
     ),
     "alpha": PlantConfig(
         plant_id="alpha",
-        latitude=37.8145,
-        longitude=-3.8047,
+        latitude=38,
+        longitude=-4,
         altitude=500,
         p_rated=60.0,
         climate_zone="mediterranean",

@@ -123,8 +123,8 @@ const plants: PlantDef[] = [
     location: 'Jutland, Denmark',
     capacity_MW: 10.0,
     totalInverters: 5,
-    lat: 55.86,
-    lng: 9.84,
+    lat: 56,
+    lng: 10,
     timezone: 'Europe/Copenhagen',
   },
   {
@@ -134,8 +134,8 @@ const plants: PlantDef[] = [
     location: 'Portugal',
     capacity_MW: 10.0,
     totalInverters: 5,
-    lat: 39.40,
-    lng: -8.22,
+    lat: 39.5,
+    lng: -8,
     timezone: 'Europe/Lisbon',
   },
   {
@@ -145,8 +145,8 @@ const plants: PlantDef[] = [
     location: 'Aragón, Spain',
     capacity_MW: 5.0,
     totalInverters: 0,
-    lat: 41.65,
-    lng: -0.88,
+    lat: 41.5,
+    lng: -1,
     timezone: 'Europe/Madrid',
   },
 ];

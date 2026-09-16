@@ -38,8 +38,8 @@ import pandas as pd
 PLANT_CONFIGS = {
     'alpha1': {
         'name': 'ALPHA1 - Alpha Solar',
-        'latitude': 37.8145,
-        'longitude': -3.8047,
+        'latitude': 38,
+        'longitude': -4,
         'timezone': 'Europe/Madrid',
         'model_path': 'models/soiling/sr_foundation_alpha1.pkl',
         'dustiq_path': 'public/data/soiling/alpha1/dustiq_history.json',

@@ -123,8 +123,8 @@ function calculateStatistics(rainData: RainDataPoint[]) {
 async function main() {
   // ALPHA1 plant configuration
   const plantId = 'alpha1';
-  const latitude = 37.8145;
-  const longitude = -3.8047;
+  const latitude = 38;
+  const longitude = -4;
   const startDate = '2019-01-01';
   const endDate = '2025-12-08';
 

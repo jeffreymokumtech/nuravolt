@@ -1,6 +1,6 @@
 # LLM & AI Usage in ShamsIQ
 
-Last reviewed: 2026-07-02
+Last reviewed: 2026-09-16
 
 > Quick context: this doc covers every LLM call in the codebase. Entry point for the whole system is **`docs/ARCHITECTURE.md`**; the model/dataset map is **`docs/PROJECT_MAP.md`**.
 
@@ -14,8 +14,8 @@ This document is the single reference for every LLM call in the ShamsIQ codebase
 
 | Surface | Path | Provider | Model | Streaming | Tools | Persisted |
 |---|---|---|---|---|---|---|
-| **Copilot chat** | `/chat` + `/api/chat` | AWS Bedrock | `claude-haiku-4-5` | yes (SSE) | yes (7) | yes (Conversation, ChatMessage, LLMInteraction) |
-| **Copilot rail** | embedded in `/demo/*` and `/showcase/*` | (reuses `/api/chat`) | `claude-haiku-4-5` | yes | yes (7) | yes (same path as `/chat`) |
+| **Copilot chat** | `/chat` + `/api/chat` | AWS Bedrock | `qwen.qwen3-next-80b-a3b` | yes (SSE) | yes (28) | yes (Conversation, ChatMessage, LLMInteraction) |
+| **Copilot rail** | embedded in `/demo/*` and `/showcase/*` | (reuses `/api/chat`) | `qwen.qwen3-next-80b-a3b` | yes | yes (28) | yes (same path as `/chat`) |
 | **Page briefings** | `/api/chat/briefing` | AWS Bedrock | `claude-haiku-4-5` (single shot) | no | n/a | no (client-side localStorage cache) |
 | **KB embeddings** | `/api/chat/kb/upload` | AWS Bedrock | `amazon.titan-embed-text-v2:0` (1024 dim) | no | n/a | yes (KBDocument, KBChunk + pgvector) |
 | Plant insights card | `/api/llm/insights` | AWS Bedrock | `claude-haiku-4-5` | no | no | no (planned) |
@@ -25,7 +25,7 @@ This document is the single reference for every LLM call in the ShamsIQ codebase
 | **Decommissioned** | LangChain + Ollama | local `llama3.2` | — | — | — | — |
 | **Decommissioned (zero callers)** | OpenRouter + Llama 3.3 (`src/libs/gpt.ts`) | OpenRouter | `meta-llama/llama-3.3-70b-instruct:free` | — | — | — |
 
-There is exactly **one live model family** (Anthropic Claude Haiku 4.5 on AWS Bedrock) and **one provider** (AWS Bedrock) in the running app.
+There is exactly **one live model family** (Qwen 3 Next 80B on AWS Bedrock) and **one provider** (AWS Bedrock) in the running web app. The Python agent service (§14) adds a second runtime that can also use any OpenAI-compatible endpoint.
 
 ---
 
@@ -72,7 +72,7 @@ ChatPanel (useChat from @ai-sdk/react)
         ├── getChatAccessContext(userId, orgId) → set of UUIDs/slugs the user may reference
         ├── ensureConversation(...) → Conversation row (best-effort; survives if migration pending)
         ├── buildChatTools(access, origin) → ToolSet (zod-typed, ACL-checked)
-        ├── streamText({ model: chatModel, system, messages, tools, stopWhen: stepCountIs(5) })
+        ├── streamText({ model: chatModel, system, messages, tools, stopWhen: stepCountIs(8) })
         └── result.toUIMessageStreamResponse({ originalMessages, onFinish })
                                                     │
                                                     └── onFinish: persistChatTurn(...)
@@ -104,7 +104,7 @@ ChatPanel (useChat from @ai-sdk/react)
 
 ### 3.3 Tools the LLM gets
 
-All tools are typed with `zod`, registered via `tool({ description, inputSchema, execute })` from the Vercel AI SDK, and capped at `stepCountIs(5)` per turn. Every tool that takes a `plantId` validates it against `allowedPlantIds` (UUID *or* slug) **before any DB call**. On denial it returns `{ error: 'access_denied', detail }` — the system prompt instructs the model to apologise and stop.
+All tools are typed with `zod`, registered via `tool({ description, inputSchema, execute })` from the Vercel AI SDK, and capped at `stepCountIs(8)` per turn (28 tools across `chat-tools.ts`, `chat-tools-reports.ts` and `chat-tools-contracts.ts`; 17 read, 7 draft/propose, 4 immediate report writes). Every tool that takes a `plantId` validates it against `allowedPlantIds` (UUID *or* slug) **before any DB call**. On denial it returns `{ error: 'access_denied', detail }` — the system prompt instructs the model to apologise and stop.
 
 | Tool | Inputs | Data accessed | Backed by |
 |---|---|---|---|
@@ -455,4 +455,8 @@ Six LLM call sites shipped after the May 2026 review. Each follows the same Bedr
 | `NURAVOLT_AI_CLASSIFY_ENABLED` | no | unset | `cascade_attribution.py` — explicit on/off for Layer 4 |
 | `NURAVOLT_AI_DEMO_MODE` | no | unset | relaxes triage thresholds for demo data |
 | `NURAVOLT_LLM_FIELD_MAPPING_ENABLED` | no | `1` (on) | set to `0` to disable LLM polish in discover route |
+
+## 14. LangGraph agent service (Python)
+
+`nuravolt/agent` is a separate planner/executor agent (LangGraph, FastAPI) that consumes the product through the MCP server with an API key. It has an explicit graph (classify, plan, execute, verify, synthesize), a durable human-approval interrupt before every write, Postgres checkpoints and a per-organisation memory store in schema `agent`, and an offline eval suite that runs in CI with a scripted model. Model provider is Bedrock when AWS credentials exist, otherwise any OpenAI-compatible endpoint. Usage rows land in `LLMInteraction` with `request_hash` prefixed `agent:`. Full description, diagrams and runbook: `docs/AGENT.md`. LangChain is therefore back in the repository, but only on the Python side; the web app stays on the Vercel AI SDK.
 

@@ -1,9 +1,9 @@
 {
   "metadata": {
     "plant": "delta",
-    "source": "emsdt_66461b464b573fea9babd24f_15_00497_Inverter_Inverter Power Normalized_training.parquet",
+    "source": "reference soiling sensor export (anonymised)",
     "extracted_at": "2025-12-23T17:10:56.320360",
-    "column_used": "Delta (ES): DustIQ.01 / soiling_ratio_Sensor01 (%)",
+    "column_used": "reference soiling sensor / soiling_ratio (%)",
     "total_days": 1652
   },
   "daily_data": [

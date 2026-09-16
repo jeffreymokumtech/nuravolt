@@ -114,8 +114,8 @@ const STATION_LIST = () =>
         ps_name: 'Athi Hybrid',
         ps_key: '1101_1_1_1',
         design_capacity: 4500, // kW
-        ps_latitude: -1.45,
-        ps_longitude: 37.01,
+        ps_latitude: -1.5,
+        ps_longitude: 37,
         ps_location: 'Machakos',
         ps_timezone_id: 'Africa/Nairobi',
       },

@@ -1,8 +1,8 @@
 {
   "metadata": {
     "plant_id": "alpha1",
-    "latitude": 37.8145,
-    "longitude": -3.8047,
+    "latitude": 38,
+    "longitude": -4,
     "source": "CHIRPS v2.0 Final (UCSB Climate Hazards Center)",
     "spatial_resolution": "0.05\u00b0 (~5 km)",
     "temporal_resolution": "Daily",

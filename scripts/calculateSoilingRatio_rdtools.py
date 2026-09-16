@@ -53,8 +53,8 @@ except ImportError:
 # Configuration for ALPHA1 plant
 SITE_CONFIG = {
     'plant_id': 'alpha1',
-    'latitude': 37.8145,
-    'longitude': -3.8047,
+    'latitude': 38,
+    'longitude': -4,
     'elevation': 450,
     'tilt': 20,
     'azimuth': 180,  # South-facing

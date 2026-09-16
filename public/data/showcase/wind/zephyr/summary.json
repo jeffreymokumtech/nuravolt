@@ -3,7 +3,7 @@
   "plantName": "Zephyr Wind Farm",
   "location": "Northern Europe",
   "country": "Northern Europe",
-  "latitude": 55.6,
+  "latitude": 55.5,
   "longitude": 9.5,
   "totalCapacityMw": 10.0,
   "turbineCount": 5,

@@ -7,7 +7,7 @@ name = "nuravolt"
 version = "0.1.0"
 description = "Solar energy intelligence platform for soiling detection, fault detection, and digital twin modeling"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [
     {name = "Jeffrey de Jong", email = "jeffrey@mokumtech.io"}
@@ -50,6 +50,25 @@ lake = [
     # sql-sqlite = local dev filesystem catalog; glue = shared AWS-native catalog
     # (production). Both backends sit behind nuravolt/lake/catalog.py::get_catalog().
     "pyiceberg[sql-sqlite,glue]>=0.7.0",
+]
+# Planner/executor agent service (nuravolt/agent, docs/AGENT.md). LangGraph
+# graph with Postgres checkpointing, MCP tools via langchain-mcp-adapters,
+# FastAPI transport. Bedrock via langchain-aws, any OpenAI-compatible endpoint
+# via langchain-openai for local runs.
+agent = [
+    "langgraph>=1.0,<2",
+    "langgraph-checkpoint-postgres>=3.0",
+    "langchain-core>=1.0,<2",
+    "langchain-aws>=1.0",
+    "langchain-openai>=1.0",
+    "langchain-mcp-adapters>=0.3",
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "sse-starlette>=2.1",
+    "psycopg[binary,pool]>=3.2",
+    "pydantic>=2.7",
+    "pydantic-settings>=2.3",
+    "pyyaml>=6.0",
 ]
 dev = [
     "pytest>=7.4.0",

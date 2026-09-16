@@ -63,7 +63,7 @@ class ForecastDataFetcher:
 
     Example
     -------
-    >>> fetcher = ForecastDataFetcher(latitude=37.45, longitude=-6.14)
+    >>> fetcher = ForecastDataFetcher(latitude=37.5, longitude=-6)
     >>> df_weather = fetcher.fetch_weather_forecast()
     >>> df_aod = fetcher.fetch_aod_forecast()
     >>> df_climate = fetcher.get_seasonal_climate(days=365)

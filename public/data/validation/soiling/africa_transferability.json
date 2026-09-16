@@ -13,8 +13,8 @@
   "sites": [
     {
       "region": "Morocco Atlas",
-      "lat": 31.79,
-      "lon": -7.09,
+      "lat": 32,
+      "lon": -7,
       "koppen": "Csa",
       "router_result": {
         "model_id": "soiling_foundation_MEDITERRANEAN",
@@ -46,7 +46,7 @@
     },
     {
       "region": "Egypt Aswan",
-      "lat": 24.09,
+      "lat": 24,
       "lon": 32.9,
       "koppen": "BWh",
       "router_result": {
@@ -145,8 +145,8 @@
     },
     {
       "region": "S. Africa Cape",
-      "lat": -33.92,
-      "lon": 18.42,
+      "lat": -34,
+      "lon": 18.5,
       "koppen": "Csb",
       "router_result": {
         "model_id": "soiling_foundation_MEDITERRANEAN",
@@ -211,8 +211,8 @@
     },
     {
       "region": "Senegal Dakar",
-      "lat": 14.69,
-      "lon": -17.44,
+      "lat": 14.5,
+      "lon": -17.5,
       "koppen": "BSh",
       "router_result": {
         "model_id": "climate_prior",
@@ -244,8 +244,8 @@
     },
     {
       "region": "Kenya Nairobi",
-      "lat": -1.29,
-      "lon": 36.82,
+      "lat": -1.5,
+      "lon": 37,
       "koppen": "Cwb",
       "router_result": {
         "model_id": "climate_prior",
@@ -277,8 +277,8 @@
     },
     {
       "region": "UAE Abu Dhabi",
-      "lat": 24.45,
-      "lon": 54.39,
+      "lat": 24.5,
+      "lon": 54.5,
       "koppen": "BWh",
       "router_result": {
         "model_id": "climate_prior",

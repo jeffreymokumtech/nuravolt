@@ -70,8 +70,8 @@ class PlantClimateProfile:
 PLANT_PROFILES = {
     "epsilon": PlantClimateProfile(
         plant_id="epsilon",
-        latitude=51.195,
-        longitude=14.509,
+        latitude=51,
+        longitude=14.5,
         altitude_m=150,
         is_coastal=False,
         distance_to_coast_km=500,
@@ -83,8 +83,8 @@ PLANT_PROFILES = {
     ),
     "zeta": PlantClimateProfile(
         plant_id="zeta",
-        latitude=39.525,
-        longitude=3.187,
+        latitude=39.5,
+        longitude=3,
         altitude_m=50,
         is_coastal=True,
         distance_to_coast_km=10,
@@ -96,8 +96,8 @@ PLANT_PROFILES = {
     ),
     "ribera": PlantClimateProfile(
         plant_id="ribera",
-        latitude=37.927,
-        longitude=-1.233,
+        latitude=38,
+        longitude=-1,
         altitude_m=100,
         is_coastal=False,
         distance_to_coast_km=50,
@@ -109,8 +109,8 @@ PLANT_PROFILES = {
     ),
     "delta": PlantClimateProfile(
         plant_id="delta",
-        latitude=39.6544,
-        longitude=2.6978,
+        latitude=39.5,
+        longitude=2.5,
         altitude_m=30,
         is_coastal=True,
         distance_to_coast_km=5,
@@ -122,8 +122,8 @@ PLANT_PROFILES = {
     ),
     "gamma": PlantClimateProfile(
         plant_id="gamma",
-        latitude=39.489,
-        longitude=2.916,
+        latitude=39.5,
+        longitude=3,
         altitude_m=40,
         is_coastal=True,
         distance_to_coast_km=15,
@@ -135,8 +135,8 @@ PLANT_PROFILES = {
     ),
     "eta": PlantClimateProfile(
         plant_id="eta",
-        latitude=38.66,
-        longitude=-5.39,
+        latitude=38.5,
+        longitude=-5.5,
         altitude_m=400,
         is_coastal=False,
         distance_to_coast_km=200,
@@ -148,8 +148,8 @@ PLANT_PROFILES = {
     ),
     "alpha": PlantClimateProfile(
         plant_id="alpha",
-        latitude=37.8145,
-        longitude=-3.8047,
+        latitude=38,
+        longitude=-4,
         altitude_m=200,
         is_coastal=False,
         distance_to_coast_km=150,
@@ -181,7 +181,7 @@ class PlantSimilarityScorer:
     """
 
     DEFAULT_WEIGHTS = {
-        "latitude": 0.30,
+        "latitude": 0.5,
         "humidity": 0.25,
         "aod": 0.25,
         "coastal": 0.10,

@@ -304,13 +304,13 @@ def _validate_universal() -> dict:
 
     # Plants spanning the climate zones we ship priors for
     test_plants = [
-        {"id": "iberia_med", "lat": 37.96, "lon": -1.21, "expected_zone": "MEDITERRANEAN"},
-        {"id": "germany_cont", "lat": 51.30, "lon": 13.20, "expected_zone": "TEMPERATE_CONTINENTAL"},
-        {"id": "uae_mena", "lat": 24.40, "lon": 54.50, "expected_zone": "DESERT_MENA"},
-        {"id": "morocco_nafrica", "lat": 28.00, "lon": -7.00, "expected_zone": "DESERT_NORTH_AFRICA"},
-        {"id": "phoenix_us", "lat": 33.37, "lon": -112.58, "expected_zone": "DESERT_SOUTHWEST_US"},
-        {"id": "niamey_sahel", "lat": 13.50, "lon": 2.10, "expected_zone": "TROPICAL_MONSOON_SAHEL"},
-        {"id": "delhi_india", "lat": 28.60, "lon": 77.20, "expected_zone": "SUBTROPICAL_INDIA"},
+        {"id": "iberia_med", "lat": 38, "lon": -1, "expected_zone": "MEDITERRANEAN"},
+        {"id": "germany_cont", "lat": 51.5, "lon": 13, "expected_zone": "TEMPERATE_CONTINENTAL"},
+        {"id": "uae_mena", "lat": 24.5, "lon": 54.5, "expected_zone": "DESERT_MENA"},
+        {"id": "morocco_nafrica", "lat": 28, "lon": -7, "expected_zone": "DESERT_NORTH_AFRICA"},
+        {"id": "phoenix_us", "lat": 33.5, "lon": -112.5, "expected_zone": "DESERT_SOUTHWEST_US"},
+        {"id": "niamey_sahel", "lat": 13.5, "lon": 2, "expected_zone": "TROPICAL_MONSOON_SAHEL"},
+        {"id": "delhi_india", "lat": 28.5, "lon": 77, "expected_zone": "SUBTROPICAL_INDIA"},
     ]
 
     rng = np.random.default_rng(42)

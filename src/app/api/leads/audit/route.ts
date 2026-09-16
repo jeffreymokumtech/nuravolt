@@ -1,9 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { PrismaClient } from '@prisma/client';
-import { Resend } from 'resend';
+import { getResend } from '@/libs/resend-client';
 
 const prisma = new PrismaClient();
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 const CAPACITY_MIDPOINTS: Record<string, number> = {
   '<10': 5,
@@ -105,7 +104,7 @@ export async function POST(request: NextRequest) {
 
     // Notify the sales inbox (do not fail the request if this fails)
     try {
-      await resend.emails.send({
+      await getResend()?.emails.send({
         from: FROM_ADDRESS,
         to: NOTIFY_INBOX,
         replyTo: email,
@@ -135,7 +134,7 @@ export async function POST(request: NextRequest) {
 
     // Confirmation to the prospect (do not fail the request if this fails)
     try {
-      await resend.emails.send({
+      await getResend()?.emails.send({
         from: FROM_ADDRESS,
         to: email,
         subject: 'Your NuraVolt audit request — we\'ll be in touch within 24h',

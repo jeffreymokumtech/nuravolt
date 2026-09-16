@@ -40,13 +40,13 @@ except ImportError:
 
 # Plant coordinates - coastal plants will benefit most
 PLANTS = {
-    "epsilon": {"lat": 51.195, "lon": 14.509, "name": "Epsilon (DE)", "coastal": False},
-    "ribera": {"lat": 37.927, "lon": -1.233, "name": "Ribera (ES)", "coastal": True},
-    "eta": {"lat": 38.66, "lon": -5.39, "name": "Eta (ES)", "coastal": False},
-    "delta": {"lat": 39.6544, "lon": 2.6978, "name": "Delta (ES)", "coastal": True},
-    "zeta": {"lat": 39.525, "lon": 3.187, "name": "Zeta (ES)", "coastal": True},
-    "gamma": {"lat": 39.489, "lon": 2.916, "name": "Gamma (ES)", "coastal": True},
-    "alpha": {"lat": 37.8145, "lon": -3.8047, "name": "Alpha (ES)", "coastal": False},
+    "epsilon": {"lat": 51, "lon": 14.5, "name": "Epsilon (DE)", "coastal": False},
+    "ribera": {"lat": 38, "lon": -1, "name": "Ribera (ES)", "coastal": True},
+    "eta": {"lat": 38.5, "lon": -5.5, "name": "Eta (ES)", "coastal": False},
+    "delta": {"lat": 39.5, "lon": 2.5, "name": "Delta (ES)", "coastal": True},
+    "zeta": {"lat": 39.5, "lon": 3, "name": "Zeta (ES)", "coastal": True},
+    "gamma": {"lat": 39.5, "lon": 3, "name": "Gamma (ES)", "coastal": True},
+    "alpha": {"lat": 38, "lon": -4, "name": "Alpha (ES)", "coastal": False},
 }
 
 

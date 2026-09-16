@@ -4,7 +4,7 @@ import { prismaAdapter } from 'better-auth/adapters/prisma';
 import { organization, magicLink, mcp, bearer, admin } from 'better-auth/plugins';
 import { nextCookies } from 'better-auth/next-js';
 import { expo } from '@better-auth/expo';
-import { Resend } from 'resend';
+import { getResend } from '@/libs/resend-client';
 import prisma from '@/libs/prisma';
 import { ALL_SCOPES } from '@/lib/mcp/scopes';
 import { getOrgBilling } from '@/lib/billing/plan';
@@ -15,7 +15,6 @@ const baseURL =
   process.env.NEXT_PUBLIC_SITE_URL ??
   'http://localhost:3000';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 /**
  * Better Auth server instance.
@@ -100,7 +99,7 @@ export const auth = betterAuth({
       sendInvitationEmail: async ({ id, email, role, organization: org, inviter }) => {
         const roleLabel = AUTH_ROLE_LABELS[role] ?? role;
         const inviterEmail = inviter?.user?.email ?? 'a teammate';
-        await resend.emails.send({
+        await getResend()?.emails.send({
           from: 'NuraVolt <noreply@nuravolt.com>',
           to: email,
           subject: `You've been invited to ${org.name} on NuraVolt`,
@@ -227,7 +226,7 @@ export const auth = betterAuth({
     }),
     magicLink({
       sendMagicLink: async ({ email, url }) => {
-        await resend.emails.send({
+        await getResend()?.emails.send({
           from: 'NuraVolt <noreply@nuravolt.com>',
           to: email,
           subject: 'Your NuraVolt sign-in link',

@@ -41,13 +41,13 @@ RECOMMENDED_TRAINING_DAYS = 365
 
 # Plant coordinates for feature engineering
 PLANT_LOCATIONS = {
-    "epsilon": PlantLocation(latitude=51.195, longitude=14.509, elevation_m=150, climate_zone="temperate"),
-    "zeta": PlantLocation(latitude=39.525, longitude=3.187, elevation_m=50, climate_zone="mediterranean", distance_to_coast_km=10),
-    "ribera": PlantLocation(latitude=37.927, longitude=-1.233, elevation_m=100, climate_zone="mediterranean"),
-    "delta": PlantLocation(latitude=39.6544, longitude=2.6978, elevation_m=30, climate_zone="mediterranean", distance_to_coast_km=5),
-    "gamma": PlantLocation(latitude=39.489, longitude=2.916, elevation_m=40, climate_zone="mediterranean", distance_to_coast_km=15),
-    "eta": PlantLocation(latitude=38.66, longitude=-5.39, elevation_m=400, climate_zone="mediterranean"),
-    "alpha": PlantLocation(latitude=37.8145, longitude=-3.8047, elevation_m=200, climate_zone="mediterranean"),
+    "epsilon": PlantLocation(latitude=51, longitude=14.5, elevation_m=150, climate_zone="temperate"),
+    "zeta": PlantLocation(latitude=39.5, longitude=3, elevation_m=50, climate_zone="mediterranean", distance_to_coast_km=10),
+    "ribera": PlantLocation(latitude=38, longitude=-1, elevation_m=100, climate_zone="mediterranean"),
+    "delta": PlantLocation(latitude=39.5, longitude=2.5, elevation_m=30, climate_zone="mediterranean", distance_to_coast_km=5),
+    "gamma": PlantLocation(latitude=39.5, longitude=3, elevation_m=40, climate_zone="mediterranean", distance_to_coast_km=15),
+    "eta": PlantLocation(latitude=38.5, longitude=-5.5, elevation_m=400, climate_zone="mediterranean"),
+    "alpha": PlantLocation(latitude=38, longitude=-4, elevation_m=200, climate_zone="mediterranean"),
 }
 
 

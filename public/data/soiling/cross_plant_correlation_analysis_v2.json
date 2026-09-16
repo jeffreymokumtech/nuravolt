@@ -262,7 +262,7 @@
       }
     },
     "data_sources": {
-      "dustiq": "emsdt_6516ba55a379c80fee58d660_15_00048_Inverter_Inverter Power Normalized_training.parquet",
+      "dustiq": "reference soiling sensor export (anonymised)",
       "rain": "Open-Meteo Archive API",
       "aod": "CAMS Global Reanalysis EAC4"
     }
@@ -329,7 +329,7 @@
       }
     },
     "data_sources": {
-      "dustiq": "emsdt_6633a17887bd60d9d2a44067_15_00500_Inverter_Inverter Power Normalized_training.parquet",
+      "dustiq": "reference soiling sensor export (anonymised)",
       "rain": "Open-Meteo Archive API",
       "aod": "CAMS Global Reanalysis EAC4"
     }
@@ -396,7 +396,7 @@
       }
     },
     "data_sources": {
-      "dustiq": "emsdt_66461b464b573fea9babd24f_15_00497_Inverter_Inverter Power Normalized_training.parquet",
+      "dustiq": "reference soiling sensor export (anonymised)",
       "rain": "Open-Meteo Archive API",
       "aod": "CAMS Global Reanalysis EAC4"
     }
@@ -463,7 +463,7 @@
       }
     },
     "data_sources": {
-      "dustiq": "emsdt_66474b684b573fea9babd257_15_00549_Inverter_Inverter Power Normalized_training.parquet",
+      "dustiq": "reference soiling sensor export (anonymised)",
       "rain": "Open-Meteo Archive API",
       "aod": "CAMS Global Reanalysis EAC4"
     }

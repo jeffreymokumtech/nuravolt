@@ -55,7 +55,7 @@ import psycopg2  # noqa: E402
 import psycopg2.extras  # noqa: E402
 
 from nuravolt.db.writer import TimeseriesWriter  # noqa: E402
-from nuravolt.weather.fallback import get_fallback_weather  # noqa: E402
+from nuravolt.weather.fallback import FallbackWeather, get_fallback_weather  # noqa: E402
 
 PR = 0.82  # flat performance ratio for the twin's simple clean model
 BASE_SOILING_PER_DAY = 0.0015
@@ -166,7 +166,28 @@ def ensure_local_daily_views(conn) -> None:
     conn.commit()
 
 
-def synthesize(plant: Dict[str, Any], days: int, problems: bool = False, allow_clearsky: bool = False):
+def load_weather_fixture(path: str, end, days: int) -> FallbackWeather:
+    """Offline weather for the local demo: a committed Open-Meteo archive slice
+    (public/data/weather/*.json, see its description field) calendar-shifted so
+    the series ends on ``end``. Keeps the seed deterministic and network-free;
+    the days-of-year drift a little, which is fine for a fictional site."""
+    with open(path) as fh:
+        fx = json.load(fh)
+    df = pd.DataFrame(fx["rows"], columns=["timestamp", *fx["columns"]])
+    df["timestamp"] = pd.to_datetime(df["timestamp"])
+    df = df.set_index("timestamp").sort_index()
+    shift = pd.Timestamp(end) - df.index.max().normalize()
+    df.index = df.index + shift
+    df = df[df.index >= pd.Timestamp(end) - pd.Timedelta(days=days)]
+    return FallbackWeather(
+        data=df,
+        source=f"{fx.get('source', 'open-meteo')} (committed fixture)",
+        confidence=float(fx.get("confidence", 0.8)),
+        provenance={"timezone": fx.get("timezone", "UTC"), "fixture": path},
+    )
+
+
+def synthesize(plant: Dict[str, Any], days: int, problems: bool = False, allow_clearsky: bool = False, weather_fixture: str | None = None):
     lat, lon = float(plant["latitude"]), float(plant["longitude"])
     group = plant["inverters"][0]
     tilt = float(group["tilt"] or 25)
@@ -174,9 +195,12 @@ def synthesize(plant: Dict[str, Any], days: int, problems: bool = False, allow_c
 
     end = datetime.now(timezone.utc).date()
     start = end - timedelta(days=days)
-    wx = get_fallback_weather(
-        lat, lon, start.isoformat(), end.isoformat(), freq="1h", tilt=tilt, azimuth=azimuth
-    )
+    if weather_fixture:
+        wx = load_weather_fixture(weather_fixture, end, days)
+    else:
+        wx = get_fallback_weather(
+            lat, lon, start.isoformat(), end.isoformat(), freq="1h", tilt=tilt, azimuth=azimuth
+        )
     df = wx.data.dropna(subset=["poa"]).copy()
     # Weather comes back on a naive index in the zone it was BUILT in
     # (wx.provenance['timezone']); measurements are stored true UTC
@@ -194,7 +218,7 @@ def synthesize(plant: Dict[str, Any], days: int, problems: bool = False, allow_c
         df.index = _idx.tz_convert("UTC")
     df = df[df.index.notna()]
     print(f"[seed] weather source={wx.source} rows={len(df)} tz={weather_tz} ({start}..{end})")
-    if wx.source != "open-meteo" and not allow_clearsky:
+    if not str(wx.source).startswith("open-meteo") and not allow_clearsky:
         raise SystemExit(
             "[seed] weather fell back to the clear-sky model (Open-Meteo unreachable). "
             "Every day would be an identical cloudless bell curve, which reads fake. "
@@ -611,6 +635,11 @@ def main() -> int:
         help="seed visibly unhealthy inverters (derating, midday trips, one offline) plus matching tickets — used by the shared demo plant",
     )
     parser.add_argument(
+        "--weather-fixture",
+        default=None,
+        help="path to a committed weather fixture JSON (public/data/weather/*.json) instead of fetching Open-Meteo; used by the offline local demo",
+    )
+    parser.add_argument(
         "--allow-clearsky",
         action="store_true",
         help="proceed even when Open-Meteo is unreachable and the weather falls back to a flawless clear-sky model (demo reads fake)",
@@ -652,8 +681,7 @@ def main() -> int:
         return 0
 
     measurements, twin_hourly, twin_daily_dev, sr_daily, dirty_idx, problem_ids = synthesize(
-        plant, args.days, problems=args.problems, allow_clearsky=args.allow_clearsky
-    )
+        plant, args.days, problems=args.problems, allow_clearsky=args.allow_clearsky, weather_fixture=args.weather_fixture)
     twin_daily, soiling = build_analysis_records(twin_daily_dev, sr_daily, plant["inverters"], dirty_idx)
 
     run_id = str(uuid.uuid5(uuid.NAMESPACE_URL, f"e2e-seed:{plant['id']}"))

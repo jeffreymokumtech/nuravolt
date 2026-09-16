@@ -29,8 +29,8 @@
     "physicsModel": "PVWatts",
     "mlModel": "CatBoost",
     "physicsParams": {
-      "latitude": 37.927,
-      "longitude": -1.233,
+      "latitude": 38,
+      "longitude": -1,
       "tilt": 30.0,
       "azimuth": 180.0,
       "gamma_pdc": -0.004

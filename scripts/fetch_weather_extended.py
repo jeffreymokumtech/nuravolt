@@ -19,13 +19,13 @@ from pathlib import Path
 
 # Plant coordinates
 PLANTS = {
-    "epsilon": {"lat": 51.195, "lon": 14.509},
-    "ribera": {"lat": 37.927, "lon": -1.233},
-    "eta": {"lat": 38.66, "lon": -5.39},
-    "delta": {"lat": 39.6544, "lon": 2.6978},
-    "zeta": {"lat": 39.525, "lon": 3.187},
-    "gamma": {"lat": 39.489, "lon": 2.916},
-    "alpha": {"lat": 37.8145, "lon": -3.8047},
+    "epsilon": {"lat": 51, "lon": 14.5},
+    "ribera": {"lat": 38, "lon": -1},
+    "eta": {"lat": 38.5, "lon": -5.5},
+    "delta": {"lat": 39.5, "lon": 2.5},
+    "zeta": {"lat": 39.5, "lon": 3},
+    "gamma": {"lat": 39.5, "lon": 3},
+    "alpha": {"lat": 38, "lon": -4},
 }
 
 

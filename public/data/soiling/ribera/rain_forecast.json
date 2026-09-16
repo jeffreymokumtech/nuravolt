@@ -1,8 +1,8 @@
 {
   "metadata": {
     "location": {
-      "latitude": 37.927,
-      "longitude": -1.233
+      "latitude": 38,
+      "longitude": -1
     },
     "data_source": "Open-Meteo Weather Forecast API",
     "forecast_horizon": "16 days",

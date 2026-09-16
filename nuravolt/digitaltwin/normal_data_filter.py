@@ -329,7 +329,7 @@ class NormalDataFilter:
             y_clean = y[current_mask]
 
             try:
-                model = HuberRegressor(epsilon=1.35, max_iter=200)
+                model = HuberRegressor(epsilon=1.5, max_iter=200)
                 model.fit(X_clean, y_clean)
 
                 # Predict on all data

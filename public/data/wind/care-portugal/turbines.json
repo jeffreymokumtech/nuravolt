@@ -9,8 +9,8 @@
     "manufacturer": "Generic",
     "model": "2.0 MW Class",
     "commissionDate": "2017-01-01",
-    "latitude": 39.502,
-    "longitude": -7.997,
+    "latitude": 39.5,
+    "longitude": -8,
     "enabled": true
   },
   {
@@ -23,8 +23,8 @@
     "manufacturer": "Generic",
     "model": "2.0 MW Class",
     "commissionDate": "2017-01-01",
-    "latitude": 39.504,
-    "longitude": -7.994,
+    "latitude": 39.5,
+    "longitude": -8,
     "enabled": true
   },
   {
@@ -37,8 +37,8 @@
     "manufacturer": "Generic",
     "model": "2.0 MW Class",
     "commissionDate": "2017-01-01",
-    "latitude": 39.506,
-    "longitude": -7.991,
+    "latitude": 39.5,
+    "longitude": -8,
     "enabled": true
   },
   {
@@ -51,8 +51,8 @@
     "manufacturer": "Generic",
     "model": "2.0 MW Class",
     "commissionDate": "2017-01-01",
-    "latitude": 39.508,
-    "longitude": -7.988,
+    "latitude": 39.5,
+    "longitude": -8,
     "enabled": true
   },
   {
@@ -65,8 +65,8 @@
     "manufacturer": "Generic",
     "model": "2.0 MW Class",
     "commissionDate": "2017-01-01",
-    "latitude": 39.51,
-    "longitude": -7.985,
+    "latitude": 39.5,
+    "longitude": -8,
     "enabled": true
   }
 ]

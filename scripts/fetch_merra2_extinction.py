@@ -45,13 +45,13 @@ EXTINCTION_VARS = [
 
 # Plant coordinates
 PLANTS = {
-    "epsilon": {"lat": 51.195, "lon": 14.509, "name": "Epsilon (DE)"},
-    "ribera": {"lat": 37.927, "lon": -1.233, "name": "Ribera (ES)"},
-    "eta": {"lat": 38.66, "lon": -5.39, "name": "Eta (ES)"},
-    "delta": {"lat": 39.6544, "lon": 2.6978, "name": "Delta (ES)"},
-    "zeta": {"lat": 39.525, "lon": 3.187, "name": "Zeta (ES)"},
-    "gamma": {"lat": 39.489, "lon": 2.916, "name": "Gamma (ES)"},
-    "alpha": {"lat": 37.8145, "lon": -3.8047, "name": "Alpha (ES)"},
+    "epsilon": {"lat": 51, "lon": 14.5, "name": "Epsilon (DE)"},
+    "ribera": {"lat": 38, "lon": -1, "name": "Ribera (ES)"},
+    "eta": {"lat": 38.5, "lon": -5.5, "name": "Eta (ES)"},
+    "delta": {"lat": 39.5, "lon": 2.5, "name": "Delta (ES)"},
+    "zeta": {"lat": 39.5, "lon": 3, "name": "Zeta (ES)"},
+    "gamma": {"lat": 39.5, "lon": 3, "name": "Gamma (ES)"},
+    "alpha": {"lat": 38, "lon": -4, "name": "Alpha (ES)"},
 }
 
 

@@ -7,8 +7,8 @@
   "plants": [
     {
       "plant_id": "iberia_med",
-      "lat": 37.96,
-      "lon": -1.21,
+      "lat": 38,
+      "lon": -1,
       "expected_zone": "MEDITERRANEAN",
       "resolved_zone": "MEDITERRANEAN",
       "zone_match": true,
@@ -71,8 +71,8 @@
     },
     {
       "plant_id": "phoenix_us",
-      "lat": 33.37,
-      "lon": -112.58,
+      "lat": 33.5,
+      "lon": -112.5,
       "expected_zone": "DESERT_SOUTHWEST_US",
       "resolved_zone": "DESERT_SOUTHWEST_US",
       "zone_match": true,

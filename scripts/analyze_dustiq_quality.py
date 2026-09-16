@@ -40,8 +40,8 @@ PLANT_CONFIG = {
     "alpha1": {
         "plant_id": "00461",
         "name": "Alpha1 (ES)",
-        "lat": 37.818,
-        "lon": -3.803,
+        "lat": 38,
+        "lon": -4,
         "parquet_pattern": "alpha/*training.parquet",  # alpha = alpha1
         # Plant-specific features for transfer learning
         "tilt": 30.0,  # Module tilt angle (degrees)
@@ -52,8 +52,8 @@ PLANT_CONFIG = {
     "epsilon": {
         "plant_id": "00048",
         "name": "Epsilon",
-        "lat": 51.196,
-        "lon": 14.509,
+        "lat": 51,
+        "lon": 14.5,
         "parquet_pattern": "epsilon/*training.parquet",
         "tilt": 30.0,
         "altitude": 150,
@@ -63,8 +63,8 @@ PLANT_CONFIG = {
     "ribera": {
         "plant_id": "00460",
         "name": "Ribera (ES)",
-        "lat": 37.927,
-        "lon": -1.233,
+        "lat": 38,
+        "lon": -1,
         "parquet_pattern": "ribera/*training.parquet",
         "tilt": 30.0,
         "altitude": 50,
@@ -74,8 +74,8 @@ PLANT_CONFIG = {
     "gamma": {
         "plant_id": "00500",
         "name": "Gamma (ES)",
-        "lat": 39.489,
-        "lon": 2.916,
+        "lat": 39.5,
+        "lon": 3,
         "parquet_pattern": "gamma/*training.parquet",
         "tilt": 30.0,
         "altitude": 25,
@@ -85,8 +85,8 @@ PLANT_CONFIG = {
     "eta": {
         "plant_id": "00457",
         "name": "Eta (ES)",
-        "lat": 38.663,
-        "lon": -5.392,
+        "lat": 38.5,
+        "lon": -5.5,
         "parquet_pattern": "eta/*training.parquet",
         "tilt": 30.0,
         "altitude": 400,  # Region E highlands
@@ -96,8 +96,8 @@ PLANT_CONFIG = {
     "delta": {
         "plant_id": "00497",
         "name": "Delta (ES)",
-        "lat": 39.392,
-        "lon": 2.415,
+        "lat": 39.5,
+        "lon": 2.5,
         "parquet_pattern": "delta/*training.parquet",
         "tilt": 30.0,
         "altitude": 50,
@@ -107,8 +107,8 @@ PLANT_CONFIG = {
     "zeta": {
         "plant_id": "00549",
         "name": "Zeta (ES)",
-        "lat": 39.525,
-        "lon": 3.187,
+        "lat": 39.5,
+        "lon": 3,
         "parquet_pattern": "zeta/*training.parquet",
         "tilt": 30.0,
         "altitude": 50,

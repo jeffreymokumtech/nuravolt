@@ -9,8 +9,8 @@ from typing import Dict, Any
 SITE_CONFIG = {
     'name': 'Alpha1 (ES)',
     'plant_id': 461,
-    'latitude': 37.8145,      # Degrees north
-    'longitude': -3.8047,     # Degrees west
+    'latitude': 38,      # Degrees north
+    'longitude': -4,     # Degrees west
     'elevation': 450,         # Meters above sea level (estimated for Andalusia)
     'timezone': 'Europe/Madrid',
     'capacity_MW': 9.0,       # Nominal capacity

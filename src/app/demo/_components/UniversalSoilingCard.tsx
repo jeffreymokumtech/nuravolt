@@ -46,11 +46,11 @@ type ForecastResponse = {
 };
 
 const PRESETS = [
-  { name: 'Spain (Mediterranean)', lat: 37.96, lon: -1.21 },
-  { name: 'UAE (Desert MENA)', lat: 24.45, lon: 54.39 },
-  { name: 'Phoenix (SW US)', lat: 33.37, lon: -112.58 },
-  { name: 'Germany (Continental)', lat: 51.30, lon: 13.20 },
-  { name: 'Delhi (India)', lat: 28.60, lon: 77.20 },
+  { name: 'Spain (Mediterranean)', lat: 38, lon: -1 },
+  { name: 'UAE (Desert MENA)', lat: 24.5, lon: 54.5 },
+  { name: 'Phoenix (SW US)', lat: 33.5, lon: -112.5 },
+  { name: 'Germany (Continental)', lat: 51.5, lon: 13 },
+  { name: 'Delhi (India)', lat: 28.5, lon: 77 },
 ];
 
 export function UniversalSoilingCard() {

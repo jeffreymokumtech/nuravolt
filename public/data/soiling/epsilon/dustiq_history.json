@@ -1,9 +1,9 @@
 {
   "metadata": {
     "plant": "epsilon",
-    "source": "emsdt_6516ba55a379c80fee58d660_15_00048_Inverter_Inverter Power Normalized_training.parquet",
+    "source": "reference soiling sensor export (anonymised)",
     "extracted_at": "2025-12-23T17:10:54.678519",
-    "column_used": "Epsilon: Meteo.DustIQ / soiling_ratio_Sensor01 (%)",
+    "column_used": "reference soiling sensor / soiling_ratio (%)",
     "total_days": 1610
   },
   "daily_data": [

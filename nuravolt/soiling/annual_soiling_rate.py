@@ -144,8 +144,8 @@ class AnnualSoilingRateForecast:
     Example
     -------
     >>> forecaster = AnnualSoilingRateForecast(
-    ...     latitude=37.45,
-    ...     longitude=-6.14,
+    ...     latitude=37.5,
+    ...     longitude=-6,
     ...     plant_id="alpha1"
     ... )
     >>> result = forecaster.generate_forecast()

@@ -3,7 +3,7 @@ import path from 'node:path';
 import fs from 'node:fs';
 
 /**
- * GET /api/soiling/universal?lat=37.96&lon=-1.21&plant_id=optional&days=30
+ * GET /api/soiling/universal?lat=38&lon=-1&plant_id=optional&days=30
  *
  * Day-1 universal soiling forecast for any coordinates: a climate-prior
  * baseline (literature-derived monthly soiling rates per climate zone). Runs

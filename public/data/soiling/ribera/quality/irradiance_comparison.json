@@ -7,8 +7,8 @@
       "end": "2025-12-10"
     },
     "location": {
-      "latitude": 37.9271,
-      "longitude": -1.2331
+      "latitude": 38,
+      "longitude": -1
     },
     "onSiteSensorType": "Pyranometer",
     "openMeteoSource": "ERA5"

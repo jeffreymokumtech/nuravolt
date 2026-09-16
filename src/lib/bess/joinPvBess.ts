@@ -113,8 +113,8 @@ export const PLANT_CONSTANTS: Record<string, PlantConstants> = {
     bess_power_kw: 50_000,
     bess_energy_kwh: 100_000,
     bess_rte: 0.89,
-    latitude_deg: 53.80,
-    longitude_deg: -1.55,
+    latitude_deg: 54,
+    longitude_deg: -1.5,
     baseline_soiling: 1.0,
   },
 };

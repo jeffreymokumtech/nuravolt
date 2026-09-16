@@ -1,8 +1,8 @@
 {
   "metadata": {
     "plant_id": "helios",
-    "latitude": 37.927,
-    "longitude": -1.233,
+    "latitude": 38,
+    "longitude": -1,
     "source": "CAMS Global Reanalysis EAC4",
     "temporal_resolution": "3hourly",
     "period": {

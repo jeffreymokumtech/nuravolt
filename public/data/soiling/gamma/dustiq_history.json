@@ -1,9 +1,9 @@
 {
   "metadata": {
     "plant": "gamma",
-    "source": "emsdt_6633a17887bd60d9d2a44067_15_00500_Inverter_Inverter Power Normalized_training.parquet",
+    "source": "reference soiling sensor export (anonymised)",
     "extracted_at": "2025-12-23T17:10:55.502839",
-    "column_used": "Gamma 1& 2 (ES): Dust_IQ / soiling_ratio_Sensor01 (%)",
+    "column_used": "reference soiling sensor / soiling_ratio (%)",
     "total_days": 1618
   },
   "daily_data": [

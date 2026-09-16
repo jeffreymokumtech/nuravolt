@@ -26,6 +26,23 @@ Built and operated as a solo product from 2025 to 2026. The live platform runs a
 ![Shams](docs/screenshots/07-shams-agent.png)
 ![MCP in Claude](docs/screenshots/08-mcp-claude.png)
 
+**The agent service.** A second agent, built as a LangGraph planner/executor in Python, consumes the product through its own MCP server. It classifies intent, plans tool calls against the live catalogue, verifies every result, and pauses on a durable interrupt before any write so a human approves, edits or rejects it; threads are checkpointed in Postgres and the organisation gets a long-term memory of preferences and nicknames. Trajectory and approval evals run in CI against a scripted model, and a live eval grades answers with an LLM judge. Details and diagrams in [docs/AGENT.md](docs/AGENT.md).
+
+```mermaid
+flowchart LR
+  A[classify intent] --> B[plan]
+  B --> C{write step?}
+  C -- no --> D[execute via MCP]
+  C -- yes --> H[interrupt: human approval]
+  H -- approved / edited --> D
+  H -- rejected --> V
+  D --> V[verify result]
+  V -- next step --> C
+  V -- replan --> B
+  V -- done --> S[synthesize answer]
+  S --> M[write memory]
+```
+
 **Also in the box:** digital twins per plant and per device (physics plus CatBoost residual), contract intelligence (PPA, warranty, SLA obligations evaluated hourly), alert evaluation with email and signed webhooks, a ticketing workflow, scheduled PDF reports rendered with headless Chromium, a data hub with lineage, multi-tenant organisations with plan gating and Stripe billing, and connectors for Huawei FusionSolar, SolarEdge, Sungrow, Modbus, SCADA databases and CSV.
 
 ## Architecture
@@ -103,23 +120,50 @@ docs/                architecture hub, model docs, technical specs
 
 ## Running it locally
 
-Prerequisites: Node 22, Python 3.11, PostgreSQL (a Supabase project or local instance).
+Everything below runs without any external account. The local demo seeds one fully synthetic plant pair (Kilima Solar Park, a 6 MW PV plant with 24 inverters, and Athi Storage, a 1 MW / 2 MWh battery): telemetry is generated from a committed weather fixture through the physics models, faults and tickets are scripted, battery dispatch is modelled over published day-ahead prices. Nothing is copied from a real plant.
+
+### Docker (recommended)
 
 ```bash
-cp .env.example .env.local        # fill in DATABASE_URL, BETTER_AUTH_SECRET and any provider keys
+git clone https://github.com/jeffreymokumtech/nuravolt.git && cd nuravolt
+docker compose up
+```
+
+First start builds the app, migrates the database and runs the seed (a few minutes). Then open http://localhost:3000 and sign in:
+
+| | |
+|---|---|
+| Email | `demo@nuravolt.local` |
+| Password | `nuravolt-demo` |
+
+The agent service comes up on http://localhost:8100 with the same stack (see [docs/AGENT.md](docs/AGENT.md)). Optional integrations are switched on by filling values in `.env.docker`: an LLM endpoint for the chat surfaces (Ollama on the host works out of the box), AWS for Bedrock, Resend for email, Stripe for billing.
+
+### Bare metal
+
+Prerequisites: Node 22, Python 3.11, Docker for the database (the schema uses TimescaleDB extensions).
+
+```bash
+cp .env.example .env.local           # then set the variables below
+docker compose up -d db              # TimescaleDB on localhost:5432
 npm install
-npx prisma migrate deploy
-npm run seed                      # demo organisation, plants and tickets
-npm run dev                       # http://localhost:3000
+pip install -e ".[lake,agent]" psycopg2-binary python-dotenv
+DATABASE_URL=postgresql://nuravolt:nuravolt@localhost:5432/nuravolt npm run seed:local-demo
+npm run dev                          # http://localhost:3000
 ```
 
-Python analytics:
+| Variable | Required | What it enables |
+|---|---|---|
+| `DATABASE_URL` | yes | Postgres with TimescaleDB |
+| `BETTER_AUTH_SECRET` | yes | Session signing (`openssl rand -base64 32`) |
+| `NEXT_PUBLIC_SITE_URL`, `NEXT_PUBLIC_APP_URL`, `BETTER_AUTH_URL` | yes | `http://localhost:3000` locally |
+| `AWS_ACCESS_KEY_ID` + `AWS_SECRET_ACCESS_KEY` or `AWS_BEARER_TOKEN_BEDROCK` | no | Bedrock: Shams chat, briefings, alert narration, knowledge base embeddings |
+| `OPENAI_BASE_URL`, `OPENAI_API_KEY`, `OPENAI_MODEL` | no | Any OpenAI-compatible model for the agent service |
+| `RESEND_API_KEY` | no | Invitations, magic links, scheduled report emails |
+| `STRIPE_SECRET_KEY` and price ids | no | Self-service billing (the demo org has enterprise entitlements without it) |
+| `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET` | no | Google sign-in |
+| `LAKE_BUCKET`, `LAKE_ENV` | no | The S3 lakehouse; `LAKE_ENV=dev` uses a local folder |
 
-```bash
-pip install -e ".[lake,dev]"
-python scripts/generate_per_inverter_soiling.py --help   # per-inverter soiling artifacts
-python scripts/run_fault_detection.py --help             # rule + twin + ML fault pass
-```
+What works with no keys: the whole operations console (portfolio, plant overview, soiling, faults, battery health and revenue, contracts, tickets, data quality, reports and PDFs), the MCP server, and the agent service with a local model. What needs a key: Shams chat and the other LLM surfaces (an LLM provider), knowledge base search (Bedrock embeddings plus the pgvector extension), outbound email, billing.
 
 ## Tests
 

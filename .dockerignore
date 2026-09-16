@@ -1,0 +1,41 @@
+# Keep the build context to the source tree. Local data, caches and archives
+# live next to the code but never belong in an image.
+.git
+node_modules
+.next
+backenddata
+analyticsbackend
+analyticsbackend_deprecated
+sales-assets
+career-ops
+branding
+screenshots
+automation/qa/outputs
+lake
+logs
+models
+catboost_info
+.venv*
+.tmp
+.mplconfig
+*.log
+*.png
+*.jpeg
+*.jpg
+*.pdf
+*.parquet
+*.pkl
+*.cbm
+.env
+.env.local
+.env.bak*
+.env.production.example
+.DS_Store
+__pycache__
+*.pyc
+nuravolt.egg-info
+tsconfig.tsbuildinfo
+uv.lock
+# Heavy fixtures the app does not read at runtime
+public/data/showcase/digitaltwin/helios/residuals_*.csv
+public/data/showcase/digitaltwin/helios/models

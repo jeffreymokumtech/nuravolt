@@ -1,6 +1,6 @@
 {
   "generatedAt": "2025-11-29T23:48:07.640559",
-  "dataSource": "demo_spain/emsdt_650addffb0721062b19a6636_15_00461_Inverter_Inverter Power Normalized_training.parquet",
+  "dataSource": "anonymised SCADA export (per-inverter power, normalised)",
   "predictions": {
     "INV 01.001": {
       "expected_power_kW": 0.195,

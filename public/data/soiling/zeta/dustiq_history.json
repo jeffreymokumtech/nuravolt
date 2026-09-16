@@ -1,9 +1,9 @@
 {
   "metadata": {
     "plant": "zeta",
-    "source": "emsdt_66474b684b573fea9babd257_15_00549_Inverter_Inverter Power Normalized_training.parquet",
+    "source": "reference soiling sensor export (anonymised)",
     "extracted_at": "2025-12-23T17:10:56.826195",
-    "column_used": "Zeta (ES): DUSTIQ.01 / soiling_ratio_Sensor01 (%)",
+    "column_used": "reference soiling sensor / soiling_ratio (%)",
     "total_days": 1235
   },
   "daily_data": [

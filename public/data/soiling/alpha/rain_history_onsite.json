@@ -1,8 +1,8 @@
 {
   "metadata": {
     "plant_id": "alpha1",
-    "source": "On-site weather station (Wetter_Regen)",
-    "sensor": "Alpha (ES): Plant / Wetter_Regen (mm)",
+    "source": "On-site weather station rain gauge",
+    "sensor": "on-site rain gauge (anonymised tag)",
     "period": {
       "start": "2020-09-30",
       "end": "2025-10-21"

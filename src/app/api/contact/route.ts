@@ -1,9 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { PrismaClient } from '@prisma/client';
-import { Resend } from 'resend';
+import { getResend } from '@/libs/resend-client';
 
 const prisma = new PrismaClient();
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Email where contact form submissions are sent
 const NOTIFICATION_EMAIL = process.env.CONTACT_NOTIFICATION_EMAIL || 'jeffrey@nuravolt.com';
@@ -79,7 +78,7 @@ export async function POST(request: NextRequest) {
     let notificationSent = false;
     try {
       console.log('📧 Sending contact notification to:', NOTIFICATION_EMAIL);
-      const result = await resend.emails.send({
+      const result = await getResend()?.emails.send({
         from: 'NuraVolt Contact Form <noreply@nuravolt.com>',
         to: NOTIFICATION_EMAIL,
         replyTo: email,
@@ -109,7 +108,9 @@ export async function POST(request: NextRequest) {
         `
       });
 
-      if (result.error) {
+      if (!result) {
+        console.warn("email disabled: RESEND_API_KEY not set");
+      } else if (result.error) {
         console.error('❌ Resend API error:', result.error);
       } else {
         console.log('✅ Notification email sent:', result.data?.id);
@@ -122,7 +123,7 @@ export async function POST(request: NextRequest) {
     // Send confirmation email to the user (optional)
     try {
       console.log('📧 Sending confirmation to:', email);
-      await resend.emails.send({
+      await getResend()?.emails.send({
         from: 'NuraVolt <noreply@nuravolt.com>',
         to: email,
         subject: 'Thanks for reaching out - NuraVolt',

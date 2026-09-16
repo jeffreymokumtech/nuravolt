@@ -1,8 +1,8 @@
 {
   "metadata": {
     "plant_id": "eta",
-    "latitude": 38.66,
-    "longitude": -5.39,
+    "latitude": 38.5,
+    "longitude": -5.5,
     "source": "CHIRPS v2.0 Final (UCSB Climate Hazards Center)",
     "spatial_resolution": "0.05\u00b0 (~5 km)",
     "temporal_resolution": "Daily",

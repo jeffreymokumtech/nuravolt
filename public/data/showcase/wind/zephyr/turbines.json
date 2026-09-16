@@ -9,8 +9,8 @@
     "manufacturer": "Vestas",
     "model": "V110-2.0",
     "commissionDate": "2020-09-01",
-    "latitude": 55.601,
-    "longitude": 9.498,
+    "latitude": 55.5,
+    "longitude": 9.5,
     "enabled": true
   },
   {
@@ -23,8 +23,8 @@
     "manufacturer": "Vestas",
     "model": "V110-2.0",
     "commissionDate": "2020-09-01",
-    "latitude": 55.603,
-    "longitude": 9.501,
+    "latitude": 55.5,
+    "longitude": 9.5,
     "enabled": true
   },
   {
@@ -37,8 +37,8 @@
     "manufacturer": "Vestas",
     "model": "V110-2.0",
     "commissionDate": "2020-09-01",
-    "latitude": 55.605,
-    "longitude": 9.504,
+    "latitude": 55.5,
+    "longitude": 9.5,
     "enabled": true
   },
   {
@@ -51,8 +51,8 @@
     "manufacturer": "Vestas",
     "model": "V110-2.0",
     "commissionDate": "2020-09-01",
-    "latitude": 55.607,
-    "longitude": 9.507,
+    "latitude": 55.5,
+    "longitude": 9.5,
     "enabled": true
   },
   {
@@ -65,8 +65,8 @@
     "manufacturer": "Vestas",
     "model": "V110-2.0",
     "commissionDate": "2020-09-01",
-    "latitude": 55.609,
-    "longitude": 9.510,
+    "latitude": 55.5,
+    "longitude": 9.5,
     "enabled": true
   }
 ]

@@ -175,7 +175,7 @@ export default function ResidentialOnboarding() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         name: plantName.trim() || 'My rooftop (sample)',
-        latitude: 40.42,
+        latitude: 40.5,
         longitude: -3.7,
         capacity_mw: 0.05,
         timezone: 'Europe/Madrid',

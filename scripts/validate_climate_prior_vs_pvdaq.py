@@ -32,9 +32,9 @@ from nuravolt.validation.report import write_report
 
 # Per-system lat/lon — pulled from the metadata JSONs we've already inspected
 PVDAQ_SITES = {
-    2107: {"lat": 38.996306, "lon": -122.134111, "name": "Farm Solar Array (Arbuckle CA)"},
+    2107: {"lat": 39, "lon": -122, "name": "Farm Solar Array (Arbuckle CA)"},
     7334: {"lat": 37.0,       "lon": -120.0,     "name": "Shine On Solar Facility (CA utility 257MW)"},
-    9069: {"lat": 33.6762,    "lon": -83.676,    "name": "Simon Solar Farm (Social Circle GA)"},
+    9069: {"lat": 33.5,    "lon": -83.5,    "name": "Simon Solar Farm (Social Circle GA)"},
 }
 
 
