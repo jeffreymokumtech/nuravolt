@@ -1,0 +1,3174 @@
+{
+  "generatedAt": "2025-12-08T10:25:54.364757",
+  "config": {
+    "maxYears": 2.0,
+    "minPR": 0.1,
+    "useCatBoost": true,
+    "minR2": 0.7
+  },
+  "statistics": {
+    "totalInverters": 150,
+    "successful": 150,
+    "failed": 0,
+    "skipped": 0,
+    "totalTime_s": 128.767515,
+    "avgR2": 0.9903,
+    "avgMAE_kW": 0.02
+  },
+  "trainingPeriod": {
+    "start": "2020-10-01",
+    "end": "2022-09-29"
+  },
+  "inverters": {
+    "INV 01.003": {
+      "inverterId": "INV 01.003",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9855,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.03,
+        "mape_pct": 5.21,
+        "trainingSamples": 9820,
+        "validationSamples": 2456,
+        "trainingTime_s": 0.77
+      },
+      "trainingSamples": 12374,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.68
+    },
+    "INV 01.004": {
+      "inverterId": "INV 01.004",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9914,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.13,
+        "trainingSamples": 9682,
+        "validationSamples": 2421,
+        "trainingTime_s": 0.81
+      },
+      "trainingSamples": 12188,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.72
+    },
+    "INV 01.002": {
+      "inverterId": "INV 01.002",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9913,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.22,
+        "trainingSamples": 9913,
+        "validationSamples": 2479,
+        "trainingTime_s": 0.85
+      },
+      "trainingSamples": 12491,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.76
+    },
+    "INV 01.001": {
+      "inverterId": "INV 01.001",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9909,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.28,
+        "trainingSamples": 9895,
+        "validationSamples": 2474,
+        "trainingTime_s": 0.86
+      },
+      "trainingSamples": 12483,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.77
+    },
+    "INV 01.007": {
+      "inverterId": "INV 01.007",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9925,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.16,
+        "trainingSamples": 10066,
+        "validationSamples": 2517,
+        "trainingTime_s": 0.63
+      },
+      "trainingSamples": 12686,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.39
+    },
+    "INV 01.006": {
+      "inverterId": "INV 01.006",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9918,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.13,
+        "trainingSamples": 9524,
+        "validationSamples": 2381,
+        "trainingTime_s": 0.77
+      },
+      "trainingSamples": 11981,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.58
+    },
+    "INV 01.005": {
+      "inverterId": "INV 01.005",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9911,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.14,
+        "trainingSamples": 9716,
+        "validationSamples": 2430,
+        "trainingTime_s": 0.81
+      },
+      "trainingSamples": 12234,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.66
+    },
+    "INV 01.008": {
+      "inverterId": "INV 01.008",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.992,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.14,
+        "trainingSamples": 10103,
+        "validationSamples": 2526,
+        "trainingTime_s": 0.82
+      },
+      "trainingSamples": 12731,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.58
+    },
+    "INV 01.009": {
+      "inverterId": "INV 01.009",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9924,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.23,
+        "trainingSamples": 10245,
+        "validationSamples": 2562,
+        "trainingTime_s": 1.07
+      },
+      "trainingSamples": 12916,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.28
+    },
+    "INV 01.010": {
+      "inverterId": "INV 01.010",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9925,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.08,
+        "trainingSamples": 10092,
+        "validationSamples": 2523,
+        "trainingTime_s": 1.06
+      },
+      "trainingSamples": 12713,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.19
+    },
+    "INV 01.012": {
+      "inverterId": "INV 01.012",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9923,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.22,
+        "trainingSamples": 10289,
+        "validationSamples": 2573,
+        "trainingTime_s": 0.69
+      },
+      "trainingSamples": 12947,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.28
+    },
+    "INV 01.011": {
+      "inverterId": "INV 01.011",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9923,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.21,
+        "trainingSamples": 10290,
+        "validationSamples": 2573,
+        "trainingTime_s": 0.7
+      },
+      "trainingSamples": 12959,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.32
+    },
+    "INV 01.014": {
+      "inverterId": "INV 01.014",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9859,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.03,
+        "mape_pct": 6.34,
+        "trainingSamples": 10540,
+        "validationSamples": 2636,
+        "trainingTime_s": 0.84
+      },
+      "trainingSamples": 13281,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.05
+    },
+    "INV 01.015": {
+      "inverterId": "INV 01.015",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9926,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.52,
+        "trainingSamples": 10359,
+        "validationSamples": 2590,
+        "trainingTime_s": 0.54
+      },
+      "trainingSamples": 13041,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.09
+    },
+    "INV 01.016": {
+      "inverterId": "INV 01.016",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9917,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.77,
+        "trainingSamples": 10431,
+        "validationSamples": 2608,
+        "trainingTime_s": 0.51
+      },
+      "trainingSamples": 13135,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.08
+    },
+    "INV 01.013": {
+      "inverterId": "INV 01.013",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9925,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.25,
+        "trainingSamples": 10360,
+        "validationSamples": 2590,
+        "trainingTime_s": 1.16
+      },
+      "trainingSamples": 13060,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.38
+    },
+    "INV 01.017": {
+      "inverterId": "INV 01.017",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9926,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.35,
+        "trainingSamples": 10732,
+        "validationSamples": 2683,
+        "trainingTime_s": 1.11
+      },
+      "trainingSamples": 13671,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.26
+    },
+    "INV 01.018": {
+      "inverterId": "INV 01.018",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9821,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.03,
+        "mape_pct": 6.75,
+        "trainingSamples": 10715,
+        "validationSamples": 2679,
+        "trainingTime_s": 0.66
+      },
+      "trainingSamples": 13587,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.32
+    },
+    "INV 01.019": {
+      "inverterId": "INV 01.019",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9779,
+        "mae_kW": 0.03,
+        "rmse_kW": 0.03,
+        "mape_pct": 8.16,
+        "trainingSamples": 10730,
+        "validationSamples": 2683,
+        "trainingTime_s": 0.64
+      },
+      "trainingSamples": 13522,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.33
+    },
+    "INV 01.020": {
+      "inverterId": "INV 01.020",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9913,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.9,
+        "trainingSamples": 10676,
+        "validationSamples": 2670,
+        "trainingTime_s": 0.69
+      },
+      "trainingSamples": 13479,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.33
+    },
+    "INV 01.021": {
+      "inverterId": "INV 01.021",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.988,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 5.58,
+        "trainingSamples": 10622,
+        "validationSamples": 2656,
+        "trainingTime_s": 0.91
+      },
+      "trainingSamples": 13373,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.39
+    },
+    "INV 01.023": {
+      "inverterId": "INV 01.023",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9883,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 5.7,
+        "trainingSamples": 10664,
+        "validationSamples": 2667,
+        "trainingTime_s": 0.52
+      },
+      "trainingSamples": 13440,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.29
+    },
+    "INV 01.024": {
+      "inverterId": "INV 01.024",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9919,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.65,
+        "trainingSamples": 10728,
+        "validationSamples": 2683,
+        "trainingTime_s": 0.61
+      },
+      "trainingSamples": 13557,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.3
+    },
+    "INV 01.022": {
+      "inverterId": "INV 01.022",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9837,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.03,
+        "mape_pct": 5.89,
+        "trainingSamples": 10579,
+        "validationSamples": 2645,
+        "trainingTime_s": 1.16
+      },
+      "trainingSamples": 13320,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.46
+    },
+    "INV 01.025": {
+      "inverterId": "INV 01.025",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9913,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.83,
+        "trainingSamples": 10769,
+        "validationSamples": 2693,
+        "trainingTime_s": 1.01
+      },
+      "trainingSamples": 13629,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.36
+    },
+    "INV 01.026": {
+      "inverterId": "INV 01.026",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9906,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 5.06,
+        "trainingSamples": 10777,
+        "validationSamples": 2695,
+        "trainingTime_s": 0.94
+      },
+      "trainingSamples": 13666,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.2
+    },
+    "INV 01.028": {
+      "inverterId": "INV 01.028",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9909,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.76,
+        "trainingSamples": 10768,
+        "validationSamples": 2692,
+        "trainingTime_s": 0.6
+      },
+      "trainingSamples": 13683,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.23
+    },
+    "INV 01.027": {
+      "inverterId": "INV 01.027",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9924,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.37,
+        "trainingSamples": 10796,
+        "validationSamples": 2699,
+        "trainingTime_s": 0.61
+      },
+      "trainingSamples": 13749,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.3
+    },
+    "INV 01.030": {
+      "inverterId": "INV 01.030",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9926,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.26,
+        "trainingSamples": 10785,
+        "validationSamples": 2697,
+        "trainingTime_s": 0.45
+      },
+      "trainingSamples": 13726,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 2.04
+    },
+    "INV 01.029": {
+      "inverterId": "INV 01.029",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9927,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.25,
+        "trainingSamples": 10761,
+        "validationSamples": 2691,
+        "trainingTime_s": 0.46
+      },
+      "trainingSamples": 13694,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 2.05
+    },
+    "INV 02.033": {
+      "inverterId": "INV 02.033",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9926,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.7,
+        "trainingSamples": 10514,
+        "validationSamples": 2629,
+        "trainingTime_s": 0.68
+      },
+      "trainingSamples": 13242,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.89
+    },
+    "INV 02.031": {
+      "inverterId": "INV 02.031",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9922,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.7,
+        "trainingSamples": 10432,
+        "validationSamples": 2608,
+        "trainingTime_s": 0.7
+      },
+      "trainingSamples": 13114,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.9
+    },
+    "INV 02.034": {
+      "inverterId": "INV 02.034",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9923,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.67,
+        "trainingSamples": 10498,
+        "validationSamples": 2625,
+        "trainingTime_s": 0.75
+      },
+      "trainingSamples": 13216,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.97
+    },
+    "INV 02.032": {
+      "inverterId": "INV 02.032",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.992,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.63,
+        "trainingSamples": 10468,
+        "validationSamples": 2617,
+        "trainingTime_s": 0.85
+      },
+      "trainingSamples": 13159,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 4.07
+    },
+    "INV 02.035": {
+      "inverterId": "INV 02.035",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9915,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 5.1,
+        "trainingSamples": 10553,
+        "validationSamples": 2639,
+        "trainingTime_s": 0.99
+      },
+      "trainingSamples": 13276,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.32
+    },
+    "INV 02.036": {
+      "inverterId": "INV 02.036",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9918,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.89,
+        "trainingSamples": 10546,
+        "validationSamples": 2637,
+        "trainingTime_s": 0.98
+      },
+      "trainingSamples": 13269,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.37
+    },
+    "INV 02.038": {
+      "inverterId": "INV 02.038",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9911,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 5.15,
+        "trainingSamples": 10478,
+        "validationSamples": 2620,
+        "trainingTime_s": 0.53
+      },
+      "trainingSamples": 13172,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.29
+    },
+    "INV 02.037": {
+      "inverterId": "INV 02.037",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9917,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.96,
+        "trainingSamples": 10472,
+        "validationSamples": 2619,
+        "trainingTime_s": 0.56
+      },
+      "trainingSamples": 13165,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.42
+    },
+    "INV 02.039": {
+      "inverterId": "INV 02.039",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9925,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.81,
+        "trainingSamples": 10540,
+        "validationSamples": 2635,
+        "trainingTime_s": 1.04
+      },
+      "trainingSamples": 13266,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.29
+    },
+    "INV 02.040": {
+      "inverterId": "INV 02.040",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9918,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.7,
+        "trainingSamples": 10441,
+        "validationSamples": 2611,
+        "trainingTime_s": 1.21
+      },
+      "trainingSamples": 13123,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.47
+    },
+    "INV 02.042": {
+      "inverterId": "INV 02.042",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9918,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.7,
+        "trainingSamples": 10452,
+        "validationSamples": 2614,
+        "trainingTime_s": 0.76
+      },
+      "trainingSamples": 13135,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.43
+    },
+    "INV 02.041": {
+      "inverterId": "INV 02.041",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9923,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.65,
+        "trainingSamples": 10579,
+        "validationSamples": 2645,
+        "trainingTime_s": 0.82
+      },
+      "trainingSamples": 13295,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.53
+    },
+    "INV 02.043": {
+      "inverterId": "INV 02.043",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9921,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.59,
+        "trainingSamples": 10546,
+        "validationSamples": 2637,
+        "trainingTime_s": 1.34
+      },
+      "trainingSamples": 13256,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.34
+    },
+    "INV 02.045": {
+      "inverterId": "INV 02.045",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9918,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.82,
+        "trainingSamples": 10336,
+        "validationSamples": 2584,
+        "trainingTime_s": 0.76
+      },
+      "trainingSamples": 13019,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.08
+    },
+    "INV 02.046": {
+      "inverterId": "INV 02.046",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9928,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.28,
+        "trainingSamples": 10168,
+        "validationSamples": 2542,
+        "trainingTime_s": 0.5
+      },
+      "trainingSamples": 12808,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.06
+    },
+    "INV 02.044": {
+      "inverterId": "INV 02.044",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.992,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.56,
+        "trainingSamples": 10469,
+        "validationSamples": 2618,
+        "trainingTime_s": 0.94
+      },
+      "trainingSamples": 13155,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.29
+    },
+    "INV 02.047": {
+      "inverterId": "INV 02.047",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9929,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.13,
+        "trainingSamples": 9856,
+        "validationSamples": 2464,
+        "trainingTime_s": 0.91
+      },
+      "trainingSamples": 12419,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.18
+    },
+    "INV 02.048": {
+      "inverterId": "INV 02.048",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9919,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.26,
+        "trainingSamples": 9604,
+        "validationSamples": 2402,
+        "trainingTime_s": 0.81
+      },
+      "trainingSamples": 12094,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.13
+    },
+    "INV 02.049": {
+      "inverterId": "INV 02.049",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9918,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.06,
+        "trainingSamples": 9268,
+        "validationSamples": 2317,
+        "trainingTime_s": 0.89
+      },
+      "trainingSamples": 11654,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.31
+    },
+    "INV 02.050": {
+      "inverterId": "INV 02.050",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9921,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.01,
+        "trainingSamples": 9298,
+        "validationSamples": 2325,
+        "trainingTime_s": 0.71
+      },
+      "trainingSamples": 11686,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.34
+    },
+    "INV 02.052": {
+      "inverterId": "INV 02.052",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9908,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 3.97,
+        "trainingSamples": 8556,
+        "validationSamples": 2140,
+        "trainingTime_s": 0.9
+      },
+      "trainingSamples": 10738,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.3
+    },
+    "INV 02.054": {
+      "inverterId": "INV 02.054",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9917,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.05,
+        "trainingSamples": 8661,
+        "validationSamples": 2166,
+        "trainingTime_s": 0.7
+      },
+      "trainingSamples": 10876,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.06
+    },
+    "INV 02.053": {
+      "inverterId": "INV 02.053",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9905,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.22,
+        "trainingSamples": 8664,
+        "validationSamples": 2166,
+        "trainingTime_s": 0.99
+      },
+      "trainingSamples": 10880,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.18
+    },
+    "INV 02.051": {
+      "inverterId": "INV 02.051",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9911,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.28,
+        "trainingSamples": 9128,
+        "validationSamples": 2283,
+        "trainingTime_s": 1.01
+      },
+      "trainingSamples": 11458,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.43
+    },
+    "INV 02.055": {
+      "inverterId": "INV 02.055",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9908,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.04,
+        "trainingSamples": 8543,
+        "validationSamples": 2136,
+        "trainingTime_s": 1.02
+      },
+      "trainingSamples": 10725,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.29
+    },
+    "INV 02.058": {
+      "inverterId": "INV 02.058",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9913,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.15,
+        "trainingSamples": 8837,
+        "validationSamples": 2210,
+        "trainingTime_s": 0.65
+      },
+      "trainingSamples": 11124,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.24
+    },
+    "INV 02.057": {
+      "inverterId": "INV 02.057",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9908,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.03,
+        "trainingSamples": 8612,
+        "validationSamples": 2154,
+        "trainingTime_s": 0.97
+      },
+      "trainingSamples": 10817,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.28
+    },
+    "INV 02.056": {
+      "inverterId": "INV 02.056",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9907,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.02,
+        "trainingSamples": 8622,
+        "validationSamples": 2156,
+        "trainingTime_s": 0.95
+      },
+      "trainingSamples": 10832,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.29
+    },
+    "INV 02.059": {
+      "inverterId": "INV 02.059",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.991,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.16,
+        "trainingSamples": 8875,
+        "validationSamples": 2219,
+        "trainingTime_s": 0.61
+      },
+      "trainingSamples": 11185,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 1.93
+    },
+    "INV 02.060": {
+      "inverterId": "INV 02.060",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9901,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.38,
+        "trainingSamples": 9100,
+        "validationSamples": 2275,
+        "trainingTime_s": 0.57
+      },
+      "trainingSamples": 11514,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 1.88
+    },
+    "INV 03.061": {
+      "inverterId": "INV 03.061",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9914,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.6,
+        "trainingSamples": 10782,
+        "validationSamples": 2696,
+        "trainingTime_s": 0.65
+      },
+      "trainingSamples": 13722,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.74
+    },
+    "INV 03.064": {
+      "inverterId": "INV 03.064",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9883,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 5.36,
+        "trainingSamples": 10647,
+        "validationSamples": 2662,
+        "trainingTime_s": 0.72
+      },
+      "trainingSamples": 13544,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.81
+    },
+    "INV 03.062": {
+      "inverterId": "INV 03.062",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9913,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.68,
+        "trainingSamples": 10696,
+        "validationSamples": 2675,
+        "trainingTime_s": 0.72
+      },
+      "trainingSamples": 13621,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.82
+    },
+    "INV 03.063": {
+      "inverterId": "INV 03.063",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9896,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 5.25,
+        "trainingSamples": 10725,
+        "validationSamples": 2682,
+        "trainingTime_s": 0.75
+      },
+      "trainingSamples": 13649,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.85
+    },
+    "INV 03.067": {
+      "inverterId": "INV 03.067",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9778,
+        "mae_kW": 0.03,
+        "rmse_kW": 0.03,
+        "mape_pct": 7.14,
+        "trainingSamples": 10448,
+        "validationSamples": 2612,
+        "trainingTime_s": 0.57
+      },
+      "trainingSamples": 13249,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.32
+    },
+    "INV 03.068": {
+      "inverterId": "INV 03.068",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9803,
+        "mae_kW": 0.03,
+        "rmse_kW": 0.03,
+        "mape_pct": 6.34,
+        "trainingSamples": 10487,
+        "validationSamples": 2622,
+        "trainingTime_s": 0.6
+      },
+      "trainingSamples": 13331,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.32
+    },
+    "INV 03.065": {
+      "inverterId": "INV 03.065",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9879,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 5.06,
+        "trainingSamples": 10659,
+        "validationSamples": 2665,
+        "trainingTime_s": 0.68
+      },
+      "trainingSamples": 13552,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.46
+    },
+    "INV 03.066": {
+      "inverterId": "INV 03.066",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9877,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 5.12,
+        "trainingSamples": 10546,
+        "validationSamples": 2637,
+        "trainingTime_s": 0.68
+      },
+      "trainingSamples": 13395,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.43
+    },
+    "INV 03.069": {
+      "inverterId": "INV 03.069",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9691,
+        "mae_kW": 0.03,
+        "rmse_kW": 0.04,
+        "mape_pct": 8.63,
+        "trainingSamples": 10377,
+        "validationSamples": 2595,
+        "trainingTime_s": 0.8
+      },
+      "trainingSamples": 13162,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.2
+    },
+    "INV 03.070": {
+      "inverterId": "INV 03.070",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9818,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.03,
+        "mape_pct": 6.36,
+        "trainingSamples": 10689,
+        "validationSamples": 2673,
+        "trainingTime_s": 0.68
+      },
+      "trainingSamples": 13603,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.22
+    },
+    "INV 03.071": {
+      "inverterId": "INV 03.071",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9833,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.03,
+        "mape_pct": 5.88,
+        "trainingSamples": 10645,
+        "validationSamples": 2662,
+        "trainingTime_s": 0.79
+      },
+      "trainingSamples": 13534,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.3
+    },
+    "INV 03.072": {
+      "inverterId": "INV 03.072",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9852,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.03,
+        "mape_pct": 5.74,
+        "trainingSamples": 10676,
+        "validationSamples": 2669,
+        "trainingTime_s": 0.5
+      },
+      "trainingSamples": 13590,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.32
+    },
+    "INV 03.073": {
+      "inverterId": "INV 03.073",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9902,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 5.19,
+        "trainingSamples": 10800,
+        "validationSamples": 2701,
+        "trainingTime_s": 0.65
+      },
+      "trainingSamples": 13760,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.44
+    },
+    "INV 03.074": {
+      "inverterId": "INV 03.074",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9934,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.5,
+        "trainingSamples": 10828,
+        "validationSamples": 2707,
+        "trainingTime_s": 0.58
+      },
+      "trainingSamples": 13773,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.45
+    },
+    "INV 03.076": {
+      "inverterId": "INV 03.076",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9935,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.22,
+        "trainingSamples": 10481,
+        "validationSamples": 2621,
+        "trainingTime_s": 0.62
+      },
+      "trainingSamples": 13329,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.3
+    },
+    "INV 03.075": {
+      "inverterId": "INV 03.075",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9934,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.21,
+        "trainingSamples": 10428,
+        "validationSamples": 2607,
+        "trainingTime_s": 0.62
+      },
+      "trainingSamples": 13252,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.37
+    },
+    "INV 03.077": {
+      "inverterId": "INV 03.077",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9944,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.09,
+        "trainingSamples": 10239,
+        "validationSamples": 2560,
+        "trainingTime_s": 1.09
+      },
+      "trainingSamples": 13035,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.19
+    },
+    "INV 03.080": {
+      "inverterId": "INV 03.080",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9875,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 5.29,
+        "trainingSamples": 10680,
+        "validationSamples": 2670,
+        "trainingTime_s": 0.57
+      },
+      "trainingSamples": 13584,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.32
+    },
+    "INV 03.078": {
+      "inverterId": "INV 03.078",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9897,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.81,
+        "trainingSamples": 10711,
+        "validationSamples": 2678,
+        "trainingTime_s": 0.68
+      },
+      "trainingSamples": 13634,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.37
+    },
+    "INV 03.079": {
+      "inverterId": "INV 03.079",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9846,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.03,
+        "mape_pct": 5.6,
+        "trainingSamples": 10697,
+        "validationSamples": 2675,
+        "trainingTime_s": 0.59
+      },
+      "trainingSamples": 13613,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.35
+    },
+    "INV 03.081": {
+      "inverterId": "INV 03.081",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9807,
+        "mae_kW": 0.03,
+        "rmse_kW": 0.03,
+        "mape_pct": 6.95,
+        "trainingSamples": 10640,
+        "validationSamples": 2660,
+        "trainingTime_s": 0.88
+      },
+      "trainingSamples": 13487,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.13
+    },
+    "INV 03.082": {
+      "inverterId": "INV 03.082",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9801,
+        "mae_kW": 0.03,
+        "rmse_kW": 0.03,
+        "mape_pct": 6.55,
+        "trainingSamples": 10441,
+        "validationSamples": 2611,
+        "trainingTime_s": 0.9
+      },
+      "trainingSamples": 13247,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 2.99
+    },
+    "INV 03.084": {
+      "inverterId": "INV 03.084",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9739,
+        "mae_kW": 0.03,
+        "rmse_kW": 0.04,
+        "mape_pct": 8.66,
+        "trainingSamples": 10636,
+        "validationSamples": 2660,
+        "trainingTime_s": 0.43
+      },
+      "trainingSamples": 13455,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.08
+    },
+    "INV 03.083": {
+      "inverterId": "INV 03.083",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9847,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.03,
+        "mape_pct": 6.37,
+        "trainingSamples": 10623,
+        "validationSamples": 2656,
+        "trainingTime_s": 0.45
+      },
+      "trainingSamples": 13454,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.11
+    },
+    "INV 03.086": {
+      "inverterId": "INV 03.086",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9828,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.03,
+        "mape_pct": 6.62,
+        "trainingSamples": 10677,
+        "validationSamples": 2670,
+        "trainingTime_s": 0.82
+      },
+      "trainingSamples": 13506,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.17
+    },
+    "INV 03.085": {
+      "inverterId": "INV 03.085",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9827,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.03,
+        "mape_pct": 6.27,
+        "trainingSamples": 10703,
+        "validationSamples": 2676,
+        "trainingTime_s": 0.86
+      },
+      "trainingSamples": 13556,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.3
+    },
+    "INV 03.087": {
+      "inverterId": "INV 03.087",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.986,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.03,
+        "mape_pct": 5.83,
+        "trainingSamples": 10729,
+        "validationSamples": 2683,
+        "trainingTime_s": 0.47
+      },
+      "trainingSamples": 13588,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.21
+    },
+    "INV 03.088": {
+      "inverterId": "INV 03.088",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9907,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 5.03,
+        "trainingSamples": 10780,
+        "validationSamples": 2695,
+        "trainingTime_s": 0.47
+      },
+      "trainingSamples": 13704,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.19
+    },
+    "INV 03.089": {
+      "inverterId": "INV 03.089",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9928,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.58,
+        "trainingSamples": 10845,
+        "validationSamples": 2712,
+        "trainingTime_s": 0.41
+      },
+      "trainingSamples": 13796,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 2.04
+    },
+    "INV 03.090": {
+      "inverterId": "INV 03.090",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9925,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.28,
+        "trainingSamples": 10797,
+        "validationSamples": 2700,
+        "trainingTime_s": 0.59
+      },
+      "trainingSamples": 13683,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 2.17
+    },
+    "INV 04.091": {
+      "inverterId": "INV 04.091",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9936,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.27,
+        "trainingSamples": 10800,
+        "validationSamples": 2701,
+        "trainingTime_s": 0.59
+      },
+      "trainingSamples": 13753,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.71
+    },
+    "INV 04.093": {
+      "inverterId": "INV 04.093",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9937,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.64,
+        "trainingSamples": 10657,
+        "validationSamples": 2665,
+        "trainingTime_s": 0.6
+      },
+      "trainingSamples": 13443,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.71
+    },
+    "INV 04.094": {
+      "inverterId": "INV 04.094",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9941,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.41,
+        "trainingSamples": 10611,
+        "validationSamples": 2653,
+        "trainingTime_s": 0.62
+      },
+      "trainingSamples": 13418,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.73
+    },
+    "INV 04.092": {
+      "inverterId": "INV 04.092",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9933,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.47,
+        "trainingSamples": 10709,
+        "validationSamples": 2678,
+        "trainingTime_s": 0.7
+      },
+      "trainingSamples": 13559,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.82
+    },
+    "INV 04.097": {
+      "inverterId": "INV 04.097",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9924,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.97,
+        "trainingSamples": 10780,
+        "validationSamples": 2695,
+        "trainingTime_s": 0.62
+      },
+      "trainingSamples": 13576,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.57
+    },
+    "INV 04.095": {
+      "inverterId": "INV 04.095",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9935,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.45,
+        "trainingSamples": 10624,
+        "validationSamples": 2657,
+        "trainingTime_s": 0.62
+      },
+      "trainingSamples": 13364,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.59
+    },
+    "INV 04.096": {
+      "inverterId": "INV 04.096",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9932,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.64,
+        "trainingSamples": 10646,
+        "validationSamples": 2662,
+        "trainingTime_s": 0.65
+      },
+      "trainingSamples": 13416,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.61
+    },
+    "INV 04.098": {
+      "inverterId": "INV 04.098",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9925,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.71,
+        "trainingSamples": 10813,
+        "validationSamples": 2704,
+        "trainingTime_s": 0.73
+      },
+      "trainingSamples": 13643,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.58
+    },
+    "INV 04.101": {
+      "inverterId": "INV 04.101",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9832,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.03,
+        "mape_pct": 5.85,
+        "trainingSamples": 10376,
+        "validationSamples": 2594,
+        "trainingTime_s": 0.61
+      },
+      "trainingSamples": 13135,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.4
+    },
+    "INV 04.099": {
+      "inverterId": "INV 04.099",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9933,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.26,
+        "trainingSamples": 10812,
+        "validationSamples": 2703,
+        "trainingTime_s": 0.76
+      },
+      "trainingSamples": 13734,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.58
+    },
+    "INV 04.102": {
+      "inverterId": "INV 04.102",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9918,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.52,
+        "trainingSamples": 10504,
+        "validationSamples": 2626,
+        "trainingTime_s": 1.05
+      },
+      "trainingSamples": 13302,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.76
+    },
+    "INV 04.100": {
+      "inverterId": "INV 04.100",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9922,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.49,
+        "trainingSamples": 10700,
+        "validationSamples": 2675,
+        "trainingTime_s": 1.17
+      },
+      "trainingSamples": 13580,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.92
+    },
+    "INV 04.103": {
+      "inverterId": "INV 04.103",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9911,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.74,
+        "trainingSamples": 10524,
+        "validationSamples": 2632,
+        "trainingTime_s": 1.59
+      },
+      "trainingSamples": 13324,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.76
+    },
+    "INV 04.105": {
+      "inverterId": "INV 04.105",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.992,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.42,
+        "trainingSamples": 10514,
+        "validationSamples": 2629,
+        "trainingTime_s": 0.89
+      },
+      "trainingSamples": 13311,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.61
+    },
+    "INV 04.106": {
+      "inverterId": "INV 04.106",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9915,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.43,
+        "trainingSamples": 10540,
+        "validationSamples": 2636,
+        "trainingTime_s": 0.99
+      },
+      "trainingSamples": 13345,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.66
+    },
+    "INV 04.104": {
+      "inverterId": "INV 04.104",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9736,
+        "mae_kW": 0.03,
+        "rmse_kW": 0.03,
+        "mape_pct": 6.87,
+        "trainingSamples": 10487,
+        "validationSamples": 2622,
+        "trainingTime_s": 1.59
+      },
+      "trainingSamples": 13273,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 4.08
+    },
+    "INV 04.107": {
+      "inverterId": "INV 04.107",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9797,
+        "mae_kW": 0.03,
+        "rmse_kW": 0.03,
+        "mape_pct": 6.65,
+        "trainingSamples": 10692,
+        "validationSamples": 2674,
+        "trainingTime_s": 1.31
+      },
+      "trainingSamples": 13531,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.29
+    },
+    "INV 04.109": {
+      "inverterId": "INV 04.109",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9766,
+        "mae_kW": 0.03,
+        "rmse_kW": 0.03,
+        "mape_pct": 7.27,
+        "trainingSamples": 10585,
+        "validationSamples": 2647,
+        "trainingTime_s": 0.54
+      },
+      "trainingSamples": 13297,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.09
+    },
+    "INV 04.110": {
+      "inverterId": "INV 04.110",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9891,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.73,
+        "trainingSamples": 10402,
+        "validationSamples": 2601,
+        "trainingTime_s": 0.56
+      },
+      "trainingSamples": 13072,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.04
+    },
+    "INV 04.108": {
+      "inverterId": "INV 04.108",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9914,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.38,
+        "trainingSamples": 10329,
+        "validationSamples": 2583,
+        "trainingTime_s": 0.74
+      },
+      "trainingSamples": 12988,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.22
+    },
+    "INV 04.111": {
+      "inverterId": "INV 04.111",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9913,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.46,
+        "trainingSamples": 10392,
+        "validationSamples": 2598,
+        "trainingTime_s": 1.11
+      },
+      "trainingSamples": 13054,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.2
+    },
+    "INV 04.112": {
+      "inverterId": "INV 04.112",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9838,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.03,
+        "mape_pct": 6.05,
+        "trainingSamples": 10525,
+        "validationSamples": 2632,
+        "trainingTime_s": 0.55
+      },
+      "trainingSamples": 13215,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.16
+    },
+    "INV 04.114": {
+      "inverterId": "INV 04.114",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9897,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 5.18,
+        "trainingSamples": 10687,
+        "validationSamples": 2672,
+        "trainingTime_s": 0.64
+      },
+      "trainingSamples": 13447,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.22
+    },
+    "INV 04.113": {
+      "inverterId": "INV 04.113",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9932,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.03,
+        "trainingSamples": 10493,
+        "validationSamples": 2624,
+        "trainingTime_s": 0.81
+      },
+      "trainingSamples": 13195,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.39
+    },
+    "INV 04.115": {
+      "inverterId": "INV 04.115",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9874,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.03,
+        "mape_pct": 5.27,
+        "trainingSamples": 10728,
+        "validationSamples": 2682,
+        "trainingTime_s": 0.77
+      },
+      "trainingSamples": 13477,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.15
+    },
+    "INV 04.116": {
+      "inverterId": "INV 04.116",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9938,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.62,
+        "trainingSamples": 10753,
+        "validationSamples": 2689,
+        "trainingTime_s": 0.73
+      },
+      "trainingSamples": 13514,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.08
+    },
+    "INV 04.118": {
+      "inverterId": "INV 04.118",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9933,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.62,
+        "trainingSamples": 10724,
+        "validationSamples": 2681,
+        "trainingTime_s": 0.47
+      },
+      "trainingSamples": 13466,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 2.95
+    },
+    "INV 04.117": {
+      "inverterId": "INV 04.117",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9937,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.39,
+        "trainingSamples": 10759,
+        "validationSamples": 2690,
+        "trainingTime_s": 0.89
+      },
+      "trainingSamples": 13530,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.15
+    },
+    "INV 04.119": {
+      "inverterId": "INV 04.119",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9934,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.78,
+        "trainingSamples": 10814,
+        "validationSamples": 2704,
+        "trainingTime_s": 0.4
+      },
+      "trainingSamples": 13608,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 1.98
+    },
+    "INV 04.120": {
+      "inverterId": "INV 04.120",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9934,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.41,
+        "trainingSamples": 10740,
+        "validationSamples": 2685,
+        "trainingTime_s": 0.52
+      },
+      "trainingSamples": 13499,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 2.03
+    },
+    "INV 05.122": {
+      "inverterId": "INV 05.122",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9938,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.25,
+        "trainingSamples": 10941,
+        "validationSamples": 2736,
+        "trainingTime_s": 0.57
+      },
+      "trainingSamples": 13906,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.42
+    },
+    "INV 05.123": {
+      "inverterId": "INV 05.123",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9939,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.13,
+        "trainingSamples": 10911,
+        "validationSamples": 2728,
+        "trainingTime_s": 0.58
+      },
+      "trainingSamples": 13852,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.42
+    },
+    "INV 05.121": {
+      "inverterId": "INV 05.121",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9924,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.58,
+        "trainingSamples": 10912,
+        "validationSamples": 2728,
+        "trainingTime_s": 0.66
+      },
+      "trainingSamples": 13781,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.51
+    },
+    "INV 05.124": {
+      "inverterId": "INV 05.124",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9937,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.08,
+        "trainingSamples": 10974,
+        "validationSamples": 2744,
+        "trainingTime_s": 0.69
+      },
+      "trainingSamples": 13965,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.53
+    },
+    "INV 05.126": {
+      "inverterId": "INV 05.126",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9937,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.09,
+        "trainingSamples": 10974,
+        "validationSamples": 2744,
+        "trainingTime_s": 0.78
+      },
+      "trainingSamples": 13962,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.67
+    },
+    "INV 05.125": {
+      "inverterId": "INV 05.125",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9941,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 3.94,
+        "trainingSamples": 10920,
+        "validationSamples": 2731,
+        "trainingTime_s": 0.69
+      },
+      "trainingSamples": 13910,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.69
+    },
+    "INV 05.128": {
+      "inverterId": "INV 05.128",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9935,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.2,
+        "trainingSamples": 11028,
+        "validationSamples": 2757,
+        "trainingTime_s": 0.74
+      },
+      "trainingSamples": 14045,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.63
+    },
+    "INV 05.127": {
+      "inverterId": "INV 05.127",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9935,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.16,
+        "trainingSamples": 11055,
+        "validationSamples": 2764,
+        "trainingTime_s": 0.77
+      },
+      "trainingSamples": 14076,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.68
+    },
+    "INV 05.130": {
+      "inverterId": "INV 05.130",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9932,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.34,
+        "trainingSamples": 10873,
+        "validationSamples": 2719,
+        "trainingTime_s": 1.1
+      },
+      "trainingSamples": 13834,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.44
+    },
+    "INV 05.131": {
+      "inverterId": "INV 05.131",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9939,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.26,
+        "trainingSamples": 11047,
+        "validationSamples": 2762,
+        "trainingTime_s": 0.67
+      },
+      "trainingSamples": 14018,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.5
+    },
+    "INV 05.132": {
+      "inverterId": "INV 05.132",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9933,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.28,
+        "trainingSamples": 11044,
+        "validationSamples": 2761,
+        "trainingTime_s": 0.79
+      },
+      "trainingSamples": 14010,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.59
+    },
+    "INV 05.129": {
+      "inverterId": "INV 05.129",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9852,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.03,
+        "mape_pct": 5.28,
+        "trainingSamples": 10971,
+        "validationSamples": 2743,
+        "trainingTime_s": 1.39
+      },
+      "trainingSamples": 13937,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.75
+    },
+    "INV 05.135": {
+      "inverterId": "INV 05.135",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9881,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 5.85,
+        "trainingSamples": 11081,
+        "validationSamples": 2771,
+        "trainingTime_s": 0.48
+      },
+      "trainingSamples": 13987,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.15
+    },
+    "INV 05.134": {
+      "inverterId": "INV 05.134",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9936,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.25,
+        "trainingSamples": 11019,
+        "validationSamples": 2755,
+        "trainingTime_s": 0.99
+      },
+      "trainingSamples": 13933,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.27
+    },
+    "INV 05.136": {
+      "inverterId": "INV 05.136",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9944,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.46,
+        "trainingSamples": 11005,
+        "validationSamples": 2752,
+        "trainingTime_s": 0.54
+      },
+      "trainingSamples": 13879,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.16
+    },
+    "INV 05.133": {
+      "inverterId": "INV 05.133",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9938,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.21,
+        "trainingSamples": 10983,
+        "validationSamples": 2746,
+        "trainingTime_s": 1.06
+      },
+      "trainingSamples": 13899,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.47
+    },
+    "INV 05.137": {
+      "inverterId": "INV 05.137",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9937,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.48,
+        "trainingSamples": 10478,
+        "validationSamples": 2620,
+        "trainingTime_s": 1.0
+      },
+      "trainingSamples": 13186,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.31
+    },
+    "INV 05.138": {
+      "inverterId": "INV 05.138",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9947,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.01,
+        "trainingSamples": 10827,
+        "validationSamples": 2707,
+        "trainingTime_s": 0.89
+      },
+      "trainingSamples": 13614,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.33
+    },
+    "INV 05.140": {
+      "inverterId": "INV 05.140",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9934,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.16,
+        "trainingSamples": 10964,
+        "validationSamples": 2742,
+        "trainingTime_s": 0.6
+      },
+      "trainingSamples": 13886,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.45
+    },
+    "INV 05.139": {
+      "inverterId": "INV 05.139",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9935,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.13,
+        "trainingSamples": 10936,
+        "validationSamples": 2735,
+        "trainingTime_s": 0.62
+      },
+      "trainingSamples": 13870,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.48
+    },
+    "INV 05.144": {
+      "inverterId": "INV 05.144",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9931,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.25,
+        "trainingSamples": 10433,
+        "validationSamples": 2609,
+        "trainingTime_s": 0.71
+      },
+      "trainingSamples": 13155,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.08
+    },
+    "INV 05.142": {
+      "inverterId": "INV 05.142",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.993,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.34,
+        "trainingSamples": 10572,
+        "validationSamples": 2644,
+        "trainingTime_s": 0.68
+      },
+      "trainingSamples": 13377,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.4
+    },
+    "INV 05.141": {
+      "inverterId": "INV 05.141",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9931,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.23,
+        "trainingSamples": 11024,
+        "validationSamples": 2756,
+        "trainingTime_s": 0.73
+      },
+      "trainingSamples": 13945,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.47
+    },
+    "INV 05.143": {
+      "inverterId": "INV 05.143",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9929,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.31,
+        "trainingSamples": 10616,
+        "validationSamples": 2654,
+        "trainingTime_s": 0.75
+      },
+      "trainingSamples": 13413,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.27
+    },
+    "INV 05.147": {
+      "inverterId": "INV 05.147",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9945,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 3.51,
+        "trainingSamples": 9978,
+        "validationSamples": 2495,
+        "trainingTime_s": 0.58
+      },
+      "trainingSamples": 12560,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.14
+    },
+    "INV 05.146": {
+      "inverterId": "INV 05.146",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9939,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 3.77,
+        "trainingSamples": 10109,
+        "validationSamples": 2528,
+        "trainingTime_s": 0.65
+      },
+      "trainingSamples": 12724,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.26
+    },
+    "INV 05.145": {
+      "inverterId": "INV 05.145",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9921,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.22,
+        "trainingSamples": 10235,
+        "validationSamples": 2559,
+        "trainingTime_s": 0.65
+      },
+      "trainingSamples": 12901,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.37
+    },
+    "INV 05.148": {
+      "inverterId": "INV 05.148",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9931,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 4.02,
+        "trainingSamples": 10065,
+        "validationSamples": 2517,
+        "trainingTime_s": 0.71
+      },
+      "trainingSamples": 12666,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 3.23
+    },
+    "INV 05.149": {
+      "inverterId": "INV 05.149",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9955,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.01,
+        "mape_pct": 3.55,
+        "trainingSamples": 10125,
+        "validationSamples": 2532,
+        "trainingTime_s": 0.38
+      },
+      "trainingSamples": 12726,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 1.89
+    },
+    "INV 05.150": {
+      "inverterId": "INV 05.150",
+      "groupId": "INV 05",
+      "success": true,
+      "metrics": {
+        "r2": 0.9953,
+        "mae_kW": 0.01,
+        "rmse_kW": 0.02,
+        "mape_pct": 3.86,
+        "trainingSamples": 10303,
+        "validationSamples": 2576,
+        "trainingTime_s": 0.38
+      },
+      "trainingSamples": 12953,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2022-09-29"
+      },
+      "errorMessage": null,
+      "processingTime_s": 1.82
+    }
+  }
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "T001",
+    "name": "Turbine 01",
+    "plantId": "care-portugal",
+    "ratedPowerKw": 2000,
+    "hubHeightM": 80,
+    "rotorDiameterM": 90,
+    "manufacturer": "Generic",
+    "model": "2.0 MW Class",
+    "commissionDate": "2017-01-01",
+    "latitude": 39.502,
+    "longitude": -7.997,
+    "enabled": true
+  },
+  {
+    "id": "T002",
+    "name": "Turbine 02",
+    "plantId": "care-portugal",
+    "ratedPowerKw": 2000,
+    "hubHeightM": 80,
+    "rotorDiameterM": 90,
+    "manufacturer": "Generic",
+    "model": "2.0 MW Class",
+    "commissionDate": "2017-01-01",
+    "latitude": 39.504,
+    "longitude": -7.994,
+    "enabled": true
+  },
+  {
+    "id": "T003",
+    "name": "Turbine 03",
+    "plantId": "care-portugal",
+    "ratedPowerKw": 2000,
+    "hubHeightM": 80,
+    "rotorDiameterM": 90,
+    "manufacturer": "Generic",
+    "model": "2.0 MW Class",
+    "commissionDate": "2017-01-01",
+    "latitude": 39.506,
+    "longitude": -7.991,
+    "enabled": true
+  },
+  {
+    "id": "T004",
+    "name": "Turbine 04",
+    "plantId": "care-portugal",
+    "ratedPowerKw": 2000,
+    "hubHeightM": 80,
+    "rotorDiameterM": 90,
+    "manufacturer": "Generic",
+    "model": "2.0 MW Class",
+    "commissionDate": "2017-01-01",
+    "latitude": 39.508,
+    "longitude": -7.988,
+    "enabled": true
+  },
+  {
+    "id": "T005",
+    "name": "Turbine 05",
+    "plantId": "care-portugal",
+    "ratedPowerKw": 2000,
+    "hubHeightM": 80,
+    "rotorDiameterM": 90,
+    "manufacturer": "Generic",
+    "model": "2.0 MW Class",
+    "commissionDate": "2017-01-01",
+    "latitude": 39.51,
+    "longitude": -7.985,
+    "enabled": true
+  }
+]

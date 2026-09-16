@@ -1,0 +1,36 @@
+{
+  "plantId": "ribera",
+  "lastUpdated": "2025-03-11",
+  "inverterIssues": [
+    {
+      "inverterId": "inv27",
+      "status": "under_investigation",
+      "description": "Performance anomaly detected - requires investigation",
+      "reportedDate": "2025-03-11"
+    }
+  ],
+  "cleaningEvents": [
+    {
+      "date": "2024-11-01",
+      "type": "manual_cleaning",
+      "scope": "full_plant",
+      "notes": "November 2024 scheduled cleaning"
+    },
+    {
+      "date": "2025-08-14",
+      "type": "sensor_cleaning",
+      "scope": "partial",
+      "affectedInverters": ["inv53", "inv54"],
+      "notes": "Sensor cleaning performed. INV53 and INV54 reportedly NOT cleaned - verification needed",
+      "verified": false
+    }
+  ],
+  "sensorNotes": [
+    {
+      "date": "2025-08-14",
+      "type": "cleaning_discrepancy",
+      "description": "INV53 and INV54 allegedly not cleaned during sensor cleaning event - data quality may be affected",
+      "inverters": ["inv53", "inv54"]
+    }
+  ]
+}

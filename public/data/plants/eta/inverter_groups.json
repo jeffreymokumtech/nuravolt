@@ -1,0 +1,212 @@
+{
+  "inverter_groups": [
+    {
+      "id": "eta-grp-inv-01",
+      "name": "INV 01",
+      "slug": "inv-01",
+      "tilt": 30,
+      "azimuth": 180,
+      "inverter_model": "Generic 250 kW",
+      "inverter_nominal_power_kw": 250,
+      "orientation_source": "default_estimate",
+      "inverters": [
+        {
+          "id": "eta-inv-inv_01_001",
+          "external_id": "INV 01.001",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_002",
+          "external_id": "INV 01.002",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_003",
+          "external_id": "INV 01.003",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_004",
+          "external_id": "INV 01.004",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_005",
+          "external_id": "INV 01.005",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_006",
+          "external_id": "INV 01.006",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_007",
+          "external_id": "INV 01.007",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_008",
+          "external_id": "INV 01.008",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_009",
+          "external_id": "INV 01.009",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_010",
+          "external_id": "INV 01.010",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_011",
+          "external_id": "INV 01.011",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_012",
+          "external_id": "INV 01.012",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_013",
+          "external_id": "INV 01.013",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_014",
+          "external_id": "INV 01.014",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_015",
+          "external_id": "INV 01.015",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_016",
+          "external_id": "INV 01.016",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_017",
+          "external_id": "INV 01.017",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_018",
+          "external_id": "INV 01.018",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_019",
+          "external_id": "INV 01.019",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_020",
+          "external_id": "INV 01.020",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_021",
+          "external_id": "INV 01.021",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_022",
+          "external_id": "INV 01.022",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_023",
+          "external_id": "INV 01.023",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_024",
+          "external_id": "INV 01.024",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_025",
+          "external_id": "INV 01.025",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_026",
+          "external_id": "INV 01.026",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_027",
+          "external_id": "INV 01.027",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "eta-inv-inv_01_028",
+          "external_id": "INV 01.028",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        }
+      ]
+    }
+  ]
+}

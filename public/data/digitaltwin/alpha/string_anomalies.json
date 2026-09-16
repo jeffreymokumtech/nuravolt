@@ -1,0 +1,1826 @@
+{
+  "plantId": "alpha",
+  "generatedAt": "2026-04-05T18:09:00Z",
+  "anomalies": [
+    {
+      "inverterId": "INV 01.001",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.8,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.8% below MPPT peer average (4.18A vs 6.22A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.002",
+      "mpptId": "MPPT-3",
+      "stringId": "STR-5",
+      "type": "DEGRADATION",
+      "severity": "warning",
+      "currentDrop_pct": 2.28,
+      "detectedAt": "2026-04-05",
+      "description": "Irradiance-normalised string current declining at 2.28%/month over 29 days"
+    },
+    {
+      "inverterId": "INV 01.002",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.8,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.8% below MPPT peer average (4.10A vs 6.20A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.003",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 39.2,
+      "detectedAt": "2026-04-05",
+      "description": "String current 39.2% below MPPT peer average (3.60A vs 5.93A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.004",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 36.6,
+      "detectedAt": "2026-04-05",
+      "description": "String current 36.6% below MPPT peer average (3.81A vs 6.01A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.005",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 31.9,
+      "detectedAt": "2026-04-05",
+      "description": "String current 31.9% below MPPT peer average (4.07A vs 5.97A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.006",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 34.3,
+      "detectedAt": "2026-04-05",
+      "description": "String current 34.3% below MPPT peer average (3.93A vs 5.98A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.007",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 28.9,
+      "detectedAt": "2026-04-05",
+      "description": "String current 28.9% below MPPT peer average (4.15A vs 5.83A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.008",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 29.4,
+      "detectedAt": "2026-04-05",
+      "description": "String current 29.4% below MPPT peer average (4.23A vs 6.00A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.009",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 29.5,
+      "detectedAt": "2026-04-05",
+      "description": "String current 29.5% below MPPT peer average (4.19A vs 5.94A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.010",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 34.6,
+      "detectedAt": "2026-04-05",
+      "description": "String current 34.6% below MPPT peer average (4.12A vs 6.29A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.011",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 29.6,
+      "detectedAt": "2026-04-05",
+      "description": "String current 29.6% below MPPT peer average (4.21A vs 5.98A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.012",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.8,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.8% below MPPT peer average (4.15A vs 6.18A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.013",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 35.9,
+      "detectedAt": "2026-04-05",
+      "description": "String current 35.9% below MPPT peer average (3.96A vs 6.17A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.014",
+      "mpptId": "MPPT-1",
+      "stringId": "STR-2",
+      "type": "DEGRADATION",
+      "severity": "warning",
+      "currentDrop_pct": 1.05,
+      "detectedAt": "2026-04-05",
+      "description": "Irradiance-normalised string current declining at 1.05%/month over 29 days"
+    },
+    {
+      "inverterId": "INV 01.014",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 30.6,
+      "detectedAt": "2026-04-05",
+      "description": "String current 30.6% below MPPT peer average (4.33A vs 6.24A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.015",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.0,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.0% below MPPT peer average (4.08A vs 6.09A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.016",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 34.4,
+      "detectedAt": "2026-04-05",
+      "description": "String current 34.4% below MPPT peer average (3.95A vs 6.01A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.017",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.3,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.3% below MPPT peer average (4.15A vs 6.12A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.018",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 29.5,
+      "detectedAt": "2026-04-05",
+      "description": "String current 29.5% below MPPT peer average (4.40A vs 6.25A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.019",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 27.7,
+      "detectedAt": "2026-04-05",
+      "description": "String current 27.7% below MPPT peer average (4.18A vs 5.79A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.020",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.2,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.2% below MPPT peer average (4.24A vs 6.25A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.021",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 38.5,
+      "detectedAt": "2026-04-05",
+      "description": "String current 38.5% below MPPT peer average (3.61A vs 5.87A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.022",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 38.4,
+      "detectedAt": "2026-04-05",
+      "description": "String current 38.4% below MPPT peer average (3.00A vs 4.86A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.023",
+      "mpptId": "MPPT-3",
+      "stringId": "STR-6",
+      "type": "MISMATCH",
+      "severity": "warning",
+      "currentDrop_pct": 15.7,
+      "detectedAt": "2026-04-05",
+      "description": "String current 15.7% below MPPT peer average (3.03A vs 3.59A)"
+    },
+    {
+      "inverterId": "INV 01.023",
+      "mpptId": "MPPT-5",
+      "stringId": "STR-10",
+      "type": "MISMATCH",
+      "severity": "warning",
+      "currentDrop_pct": 16.0,
+      "detectedAt": "2026-04-05",
+      "description": "String current 16.0% below MPPT peer average (2.99A vs 3.56A)"
+    },
+    {
+      "inverterId": "INV 01.023",
+      "mpptId": "MPPT-5",
+      "stringId": "STR-10",
+      "type": "DEGRADATION",
+      "severity": "warning",
+      "currentDrop_pct": 3.21,
+      "detectedAt": "2026-04-05",
+      "description": "Irradiance-normalised string current declining at 3.21%/month over 29 days"
+    },
+    {
+      "inverterId": "INV 01.023",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 31.1,
+      "detectedAt": "2026-04-05",
+      "description": "String current 31.1% below MPPT peer average (4.17A vs 6.06A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.024",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 27.9,
+      "detectedAt": "2026-04-05",
+      "description": "String current 27.9% below MPPT peer average (4.05A vs 5.62A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.025",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 25.9,
+      "detectedAt": "2026-04-05",
+      "description": "String current 25.9% below MPPT peer average (4.23A vs 5.71A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.026",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 36.9,
+      "detectedAt": "2026-04-05",
+      "description": "String current 36.9% below MPPT peer average (3.55A vs 5.63A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.027",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 31.8,
+      "detectedAt": "2026-04-05",
+      "description": "String current 31.8% below MPPT peer average (4.17A vs 6.12A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.028",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.8,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.8% below MPPT peer average (4.25A vs 6.32A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.029",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.7,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.7% below MPPT peer average (4.18A vs 6.21A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 01.030",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.7,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.7% below MPPT peer average (4.16A vs 6.28A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.031",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 28.5,
+      "detectedAt": "2026-04-05",
+      "description": "String current 28.5% below MPPT peer average (4.17A vs 5.83A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.032",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 36.7,
+      "detectedAt": "2026-04-05",
+      "description": "String current 36.7% below MPPT peer average (3.87A vs 6.10A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.033",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.9,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.9% below MPPT peer average (4.05A vs 6.03A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.034",
+      "mpptId": "MPPT-4",
+      "stringId": "STR-8",
+      "type": "DEGRADATION",
+      "severity": "warning",
+      "currentDrop_pct": 5.81,
+      "detectedAt": "2026-04-05",
+      "description": "Irradiance-normalised string current declining at 5.81%/month over 29 days"
+    },
+    {
+      "inverterId": "INV 02.034",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.5,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.5% below MPPT peer average (4.00A vs 6.02A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.035",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "warning",
+      "currentDrop_pct": 24.0,
+      "detectedAt": "2026-04-05",
+      "description": "String current 24.0% below MPPT peer average (4.13A vs 5.43A)"
+    },
+    {
+      "inverterId": "INV 02.036",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "warning",
+      "currentDrop_pct": 22.0,
+      "detectedAt": "2026-04-05",
+      "description": "String current 22.0% below MPPT peer average (4.12A vs 5.28A)"
+    },
+    {
+      "inverterId": "INV 02.037",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 29.6,
+      "detectedAt": "2026-04-05",
+      "description": "String current 29.6% below MPPT peer average (3.95A vs 5.61A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.038",
+      "mpptId": "MPPT-4",
+      "stringId": "STR-7",
+      "type": "DEGRADATION",
+      "severity": "warning",
+      "currentDrop_pct": 6.0,
+      "detectedAt": "2026-04-05",
+      "description": "Irradiance-normalised string current declining at 6.00%/month over 29 days"
+    },
+    {
+      "inverterId": "INV 02.038",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 29.5,
+      "detectedAt": "2026-04-05",
+      "description": "String current 29.5% below MPPT peer average (3.97A vs 5.63A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.039",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 25.7,
+      "detectedAt": "2026-04-05",
+      "description": "String current 25.7% below MPPT peer average (4.29A vs 5.77A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.040",
+      "mpptId": "MPPT-3",
+      "stringId": "STR-6",
+      "type": "DEGRADATION",
+      "severity": "info",
+      "currentDrop_pct": 0.81,
+      "detectedAt": "2026-04-05",
+      "description": "Mild irradiance-normalised current decline: 0.81%/month over 29 days"
+    },
+    {
+      "inverterId": "INV 02.040",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "warning",
+      "currentDrop_pct": 24.9,
+      "detectedAt": "2026-04-05",
+      "description": "String current 24.9% below MPPT peer average (4.27A vs 5.69A)"
+    },
+    {
+      "inverterId": "INV 02.041",
+      "mpptId": "MPPT-1",
+      "stringId": "STR-1",
+      "type": "DEGRADATION",
+      "severity": "warning",
+      "currentDrop_pct": 1.33,
+      "detectedAt": "2026-04-05",
+      "description": "Irradiance-normalised string current declining at 1.33%/month over 29 days"
+    },
+    {
+      "inverterId": "INV 02.041",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 50.0,
+      "detectedAt": "2026-04-05",
+      "description": "String current 50.0% below MPPT peer average (2.82A vs 5.65A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.041",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "DEGRADATION",
+      "severity": "warning",
+      "currentDrop_pct": 3.79,
+      "detectedAt": "2026-04-05",
+      "description": "Irradiance-normalised string current declining at 3.79%/month over 29 days"
+    },
+    {
+      "inverterId": "INV 02.042",
+      "mpptId": "MPPT-1",
+      "stringId": "STR-2",
+      "type": "DEGRADATION",
+      "severity": "warning",
+      "currentDrop_pct": 2.83,
+      "detectedAt": "2026-04-05",
+      "description": "Irradiance-normalised string current declining at 2.83%/month over 29 days"
+    },
+    {
+      "inverterId": "INV 02.042",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 31.7,
+      "detectedAt": "2026-04-05",
+      "description": "String current 31.7% below MPPT peer average (4.00A vs 5.85A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.043",
+      "mpptId": "MPPT-4",
+      "stringId": "STR-7",
+      "type": "MISMATCH",
+      "severity": "warning",
+      "currentDrop_pct": 15.9,
+      "detectedAt": "2026-04-05",
+      "description": "String current 15.9% below MPPT peer average (2.96A vs 3.52A)"
+    },
+    {
+      "inverterId": "INV 02.043",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 30.5,
+      "detectedAt": "2026-04-05",
+      "description": "String current 30.5% below MPPT peer average (4.06A vs 5.85A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.044",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 50.1,
+      "detectedAt": "2026-04-05",
+      "description": "String current 50.1% below MPPT peer average (2.56A vs 5.14A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.044",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "DEGRADATION",
+      "severity": "warning",
+      "currentDrop_pct": 6.33,
+      "detectedAt": "2026-04-05",
+      "description": "Irradiance-normalised string current declining at 6.33%/month over 29 days"
+    },
+    {
+      "inverterId": "INV 02.045",
+      "mpptId": "MPPT-1",
+      "stringId": "STR-1",
+      "type": "MISMATCH",
+      "severity": "warning",
+      "currentDrop_pct": 17.9,
+      "detectedAt": "2026-04-05",
+      "description": "String current 17.9% below MPPT peer average (2.61A vs 3.18A)"
+    },
+    {
+      "inverterId": "INV 02.045",
+      "mpptId": "MPPT-1",
+      "stringId": "STR-1",
+      "type": "DEGRADATION",
+      "severity": "warning",
+      "currentDrop_pct": 10.08,
+      "detectedAt": "2026-04-05",
+      "description": "Irradiance-normalised string current declining at 10.08%/month over 29 days"
+    },
+    {
+      "inverterId": "INV 02.045",
+      "mpptId": "MPPT-1",
+      "stringId": "STR-2",
+      "type": "DEGRADATION",
+      "severity": "info",
+      "currentDrop_pct": 0.8,
+      "detectedAt": "2026-04-05",
+      "description": "Mild irradiance-normalised current decline: 0.80%/month over 29 days"
+    },
+    {
+      "inverterId": "INV 02.045",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 26.8,
+      "detectedAt": "2026-04-05",
+      "description": "String current 26.8% below MPPT peer average (4.22A vs 5.77A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.046",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 36.9,
+      "detectedAt": "2026-04-05",
+      "description": "String current 36.9% below MPPT peer average (3.49A vs 5.54A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.047",
+      "mpptId": "MPPT-4",
+      "stringId": "STR-7",
+      "type": "DEGRADATION",
+      "severity": "warning",
+      "currentDrop_pct": 2.09,
+      "detectedAt": "2026-04-05",
+      "description": "Irradiance-normalised string current declining at 2.09%/month over 29 days"
+    },
+    {
+      "inverterId": "INV 02.047",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.4,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.4% below MPPT peer average (4.16A vs 6.16A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.048",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 28.6,
+      "detectedAt": "2026-04-05",
+      "description": "String current 28.6% below MPPT peer average (4.07A vs 5.70A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.049",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 43.4,
+      "detectedAt": "2026-04-05",
+      "description": "String current 43.4% below MPPT peer average (3.09A vs 5.47A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.050",
+      "mpptId": "MPPT-1",
+      "stringId": "STR-2",
+      "type": "DEGRADATION",
+      "severity": "warning",
+      "currentDrop_pct": 6.6,
+      "detectedAt": "2026-04-05",
+      "description": "Irradiance-normalised string current declining at 6.60%/month over 29 days"
+    },
+    {
+      "inverterId": "INV 02.050",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 27.2,
+      "detectedAt": "2026-04-05",
+      "description": "String current 27.2% below MPPT peer average (4.07A vs 5.59A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.051",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.2,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.2% below MPPT peer average (4.17A vs 6.24A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.052",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 30.6,
+      "detectedAt": "2026-04-05",
+      "description": "String current 30.6% below MPPT peer average (4.29A vs 6.19A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.053",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 31.6,
+      "detectedAt": "2026-04-05",
+      "description": "String current 31.6% below MPPT peer average (4.38A vs 6.41A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.054",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.0,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.0% below MPPT peer average (4.26A vs 6.36A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.055",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 34.4,
+      "detectedAt": "2026-04-05",
+      "description": "String current 34.4% below MPPT peer average (4.04A vs 6.16A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.056",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.5,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.5% below MPPT peer average (4.32A vs 6.39A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.057",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.8,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.8% below MPPT peer average (4.29A vs 6.39A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.058",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.7,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.7% below MPPT peer average (4.24A vs 6.40A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.059",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.1,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.1% below MPPT peer average (4.28A vs 6.40A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 02.060",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.3,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.3% below MPPT peer average (4.25A vs 6.36A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.061",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.0,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.0% below MPPT peer average (4.28A vs 6.38A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.062",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.1,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.1% below MPPT peer average (3.75A vs 5.53A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.063",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 34.3,
+      "detectedAt": "2026-04-05",
+      "description": "String current 34.3% below MPPT peer average (4.11A vs 6.26A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.064",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.0,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.0% below MPPT peer average (4.18A vs 6.15A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.065",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 31.8,
+      "detectedAt": "2026-04-05",
+      "description": "String current 31.8% below MPPT peer average (3.97A vs 5.82A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.066",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 31.7,
+      "detectedAt": "2026-04-05",
+      "description": "String current 31.7% below MPPT peer average (4.08A vs 5.97A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.067",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 37.4,
+      "detectedAt": "2026-04-05",
+      "description": "String current 37.4% below MPPT peer average (3.39A vs 5.42A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.068",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 36.8,
+      "detectedAt": "2026-04-05",
+      "description": "String current 36.8% below MPPT peer average (3.65A vs 5.78A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.069",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 44.7,
+      "detectedAt": "2026-04-05",
+      "description": "String current 44.7% below MPPT peer average (3.04A vs 5.50A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.070",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 26.6,
+      "detectedAt": "2026-04-05",
+      "description": "String current 26.6% below MPPT peer average (4.17A vs 5.68A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.071",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 39.3,
+      "detectedAt": "2026-04-05",
+      "description": "String current 39.3% below MPPT peer average (3.27A vs 5.39A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.072",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 29.8,
+      "detectedAt": "2026-04-05",
+      "description": "String current 29.8% below MPPT peer average (4.11A vs 5.86A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.073",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.5,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.5% below MPPT peer average (4.15A vs 6.25A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.074",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.8,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.8% below MPPT peer average (4.01A vs 6.06A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.075",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.6,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.6% below MPPT peer average (4.18A vs 6.29A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.076",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.3,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.3% below MPPT peer average (4.04A vs 6.05A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.077",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 34.5,
+      "detectedAt": "2026-04-05",
+      "description": "String current 34.5% below MPPT peer average (4.12A vs 6.29A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.078",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 31.7,
+      "detectedAt": "2026-04-05",
+      "description": "String current 31.7% below MPPT peer average (4.10A vs 6.01A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.079",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 37.6,
+      "detectedAt": "2026-04-05",
+      "description": "String current 37.6% below MPPT peer average (3.64A vs 5.84A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.080",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 31.6,
+      "detectedAt": "2026-04-05",
+      "description": "String current 31.6% below MPPT peer average (4.15A vs 6.07A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.081",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 29.7,
+      "detectedAt": "2026-04-05",
+      "description": "String current 29.7% below MPPT peer average (3.85A vs 5.47A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.082",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 38.3,
+      "detectedAt": "2026-04-05",
+      "description": "String current 38.3% below MPPT peer average (3.36A vs 5.45A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.083",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 36.6,
+      "detectedAt": "2026-04-05",
+      "description": "String current 36.6% below MPPT peer average (3.30A vs 5.21A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.084",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 35.4,
+      "detectedAt": "2026-04-05",
+      "description": "String current 35.4% below MPPT peer average (3.73A vs 5.77A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.085",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.3,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.3% below MPPT peer average (4.13A vs 6.10A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.086",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.7,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.7% below MPPT peer average (3.99A vs 5.94A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.087",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.9,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.9% below MPPT peer average (4.11A vs 6.13A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.088",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 31.2,
+      "detectedAt": "2026-04-05",
+      "description": "String current 31.2% below MPPT peer average (4.38A vs 6.37A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 03.090",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.7,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.7% below MPPT peer average (4.23A vs 6.38A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.091",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.8,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.8% below MPPT peer average (4.13A vs 6.23A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.092",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.4,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.4% below MPPT peer average (4.17A vs 6.25A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.093",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.6,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.6% below MPPT peer average (4.23A vs 6.29A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.094",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.4,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.4% below MPPT peer average (4.26A vs 6.31A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.095",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 36.0,
+      "detectedAt": "2026-04-05",
+      "description": "String current 36.0% below MPPT peer average (3.84A vs 6.00A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.096",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 31.9,
+      "detectedAt": "2026-04-05",
+      "description": "String current 31.9% below MPPT peer average (4.25A vs 6.24A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.097",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 34.7,
+      "detectedAt": "2026-04-05",
+      "description": "String current 34.7% below MPPT peer average (4.06A vs 6.22A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.098",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.1,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.1% below MPPT peer average (3.92A vs 5.86A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.099",
+      "mpptId": "MPPT-4",
+      "stringId": "STR-7",
+      "type": "OPEN_CIRCUIT",
+      "severity": "critical",
+      "currentDrop_pct": 100.0,
+      "detectedAt": "2026-04-05",
+      "description": "String mean current 0.032A is below open-circuit threshold (0.1A)"
+    },
+    {
+      "inverterId": "INV 04.099",
+      "mpptId": "MPPT-5",
+      "stringId": "STR-9",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.6,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.6% below MPPT peer average (0.14A vs 0.20A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.099",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 37.0,
+      "detectedAt": "2026-04-05",
+      "description": "String current 37.0% below MPPT peer average (0.20A vs 0.32A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.100",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 31.6,
+      "detectedAt": "2026-04-05",
+      "description": "String current 31.6% below MPPT peer average (4.18A vs 6.11A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.101",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.2,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.2% below MPPT peer average (3.67A vs 5.41A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.102",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 36.1,
+      "detectedAt": "2026-04-05",
+      "description": "String current 36.1% below MPPT peer average (3.84A vs 6.01A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.103",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 37.6,
+      "detectedAt": "2026-04-05",
+      "description": "String current 37.6% below MPPT peer average (3.58A vs 5.75A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.104",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.2,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.2% below MPPT peer average (3.82A vs 5.63A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.105",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 28.9,
+      "detectedAt": "2026-04-05",
+      "description": "String current 28.9% below MPPT peer average (4.14A vs 5.82A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.106",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 29.1,
+      "detectedAt": "2026-04-05",
+      "description": "String current 29.1% below MPPT peer average (4.22A vs 5.96A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.107",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 40.2,
+      "detectedAt": "2026-04-05",
+      "description": "String current 40.2% below MPPT peer average (3.54A vs 5.92A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.108",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 34.2,
+      "detectedAt": "2026-04-05",
+      "description": "String current 34.2% below MPPT peer average (4.00A vs 6.08A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.109",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.8,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.8% below MPPT peer average (3.94A vs 5.95A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.110",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.3,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.3% below MPPT peer average (4.17A vs 6.16A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.111",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.0,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.0% below MPPT peer average (4.14A vs 6.18A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.112",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 39.0,
+      "detectedAt": "2026-04-05",
+      "description": "String current 39.0% below MPPT peer average (3.61A vs 5.92A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.113",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 30.8,
+      "detectedAt": "2026-04-05",
+      "description": "String current 30.8% below MPPT peer average (4.23A vs 6.11A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.114",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.1,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.1% below MPPT peer average (4.24A vs 6.34A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.115",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 35.8,
+      "detectedAt": "2026-04-05",
+      "description": "String current 35.8% below MPPT peer average (3.81A vs 5.94A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.116",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 35.5,
+      "detectedAt": "2026-04-05",
+      "description": "String current 35.5% below MPPT peer average (3.91A vs 6.06A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.117",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 29.8,
+      "detectedAt": "2026-04-05",
+      "description": "String current 29.8% below MPPT peer average (4.19A vs 5.97A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.118",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.7,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.7% below MPPT peer average (3.81A vs 5.66A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.119",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 39.7,
+      "detectedAt": "2026-04-05",
+      "description": "String current 39.7% below MPPT peer average (3.40A vs 5.65A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 04.120",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.4,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.4% below MPPT peer average (4.08A vs 6.13A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.121",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.6,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.6% below MPPT peer average (3.98A vs 5.99A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.122",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.8,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.8% below MPPT peer average (4.34A vs 6.47A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.123",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.4,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.4% below MPPT peer average (4.31A vs 6.37A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.124",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.6,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.6% below MPPT peer average (4.30A vs 6.47A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.125",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.8,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.8% below MPPT peer average (4.23A vs 6.39A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.126",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.9,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.9% below MPPT peer average (4.33A vs 6.55A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.127",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.2,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.2% below MPPT peer average (4.37A vs 6.44A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.128",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.7,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.7% below MPPT peer average (4.46A vs 6.62A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.129",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 34.6,
+      "detectedAt": "2026-04-05",
+      "description": "String current 34.6% below MPPT peer average (4.32A vs 6.61A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.130",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 35.0,
+      "detectedAt": "2026-04-05",
+      "description": "String current 35.0% below MPPT peer average (4.25A vs 6.54A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.131",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.1,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.1% below MPPT peer average (4.34A vs 6.48A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.132",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.7,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.7% below MPPT peer average (4.29A vs 6.47A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.133",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 34.7,
+      "detectedAt": "2026-04-05",
+      "description": "String current 34.7% below MPPT peer average (4.26A vs 6.52A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.134",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.1,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.1% below MPPT peer average (4.38A vs 6.45A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.135",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.9,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.9% below MPPT peer average (4.29A vs 6.39A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.136",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.9,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.9% below MPPT peer average (4.33A vs 6.46A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.137",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 31.5,
+      "detectedAt": "2026-04-05",
+      "description": "String current 31.5% below MPPT peer average (4.43A vs 6.47A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.138",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.9,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.9% below MPPT peer average (4.36A vs 6.50A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.139",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 34.0,
+      "detectedAt": "2026-04-05",
+      "description": "String current 34.0% below MPPT peer average (4.17A vs 6.31A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.140",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 34.4,
+      "detectedAt": "2026-04-05",
+      "description": "String current 34.4% below MPPT peer average (4.10A vs 6.25A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.141",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.7,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.7% below MPPT peer average (4.32A vs 6.41A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.142",
+      "mpptId": "MPPT-5",
+      "stringId": "STR-9",
+      "type": "MISMATCH",
+      "severity": "warning",
+      "currentDrop_pct": 18.2,
+      "detectedAt": "2026-04-05",
+      "description": "String current 18.2% below MPPT peer average (3.09A vs 3.77A)"
+    },
+    {
+      "inverterId": "INV 05.142",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 34.4,
+      "detectedAt": "2026-04-05",
+      "description": "String current 34.4% below MPPT peer average (4.32A vs 6.59A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.143",
+      "mpptId": "MPPT-1",
+      "stringId": "STR-1",
+      "type": "OPEN_CIRCUIT",
+      "severity": "critical",
+      "currentDrop_pct": 100.0,
+      "detectedAt": "2026-04-05",
+      "description": "String mean current 0.000A is below open-circuit threshold (0.1A)"
+    },
+    {
+      "inverterId": "INV 05.143",
+      "mpptId": "MPPT-1",
+      "stringId": "STR-2",
+      "type": "OPEN_CIRCUIT",
+      "severity": "critical",
+      "currentDrop_pct": 100.0,
+      "detectedAt": "2026-04-05",
+      "description": "String mean current 0.000A is below open-circuit threshold (0.1A)"
+    },
+    {
+      "inverterId": "INV 05.143",
+      "mpptId": "MPPT-2",
+      "stringId": "STR-3",
+      "type": "OPEN_CIRCUIT",
+      "severity": "critical",
+      "currentDrop_pct": 100.0,
+      "detectedAt": "2026-04-05",
+      "description": "String mean current 0.000A is below open-circuit threshold (0.1A)"
+    },
+    {
+      "inverterId": "INV 05.143",
+      "mpptId": "MPPT-2",
+      "stringId": "STR-4",
+      "type": "OPEN_CIRCUIT",
+      "severity": "critical",
+      "currentDrop_pct": 100.0,
+      "detectedAt": "2026-04-05",
+      "description": "String mean current 0.000A is below open-circuit threshold (0.1A)"
+    },
+    {
+      "inverterId": "INV 05.143",
+      "mpptId": "MPPT-3",
+      "stringId": "STR-5",
+      "type": "OPEN_CIRCUIT",
+      "severity": "critical",
+      "currentDrop_pct": 100.0,
+      "detectedAt": "2026-04-05",
+      "description": "String mean current 0.000A is below open-circuit threshold (0.1A)"
+    },
+    {
+      "inverterId": "INV 05.143",
+      "mpptId": "MPPT-3",
+      "stringId": "STR-6",
+      "type": "OPEN_CIRCUIT",
+      "severity": "critical",
+      "currentDrop_pct": 100.0,
+      "detectedAt": "2026-04-05",
+      "description": "String mean current 0.000A is below open-circuit threshold (0.1A)"
+    },
+    {
+      "inverterId": "INV 05.143",
+      "mpptId": "MPPT-4",
+      "stringId": "STR-7",
+      "type": "OPEN_CIRCUIT",
+      "severity": "critical",
+      "currentDrop_pct": 100.0,
+      "detectedAt": "2026-04-05",
+      "description": "String mean current 0.000A is below open-circuit threshold (0.1A)"
+    },
+    {
+      "inverterId": "INV 05.143",
+      "mpptId": "MPPT-4",
+      "stringId": "STR-8",
+      "type": "OPEN_CIRCUIT",
+      "severity": "critical",
+      "currentDrop_pct": 100.0,
+      "detectedAt": "2026-04-05",
+      "description": "String mean current 0.000A is below open-circuit threshold (0.1A)"
+    },
+    {
+      "inverterId": "INV 05.143",
+      "mpptId": "MPPT-5",
+      "stringId": "STR-9",
+      "type": "OPEN_CIRCUIT",
+      "severity": "critical",
+      "currentDrop_pct": 100.0,
+      "detectedAt": "2026-04-05",
+      "description": "String mean current 0.000A is below open-circuit threshold (0.1A)"
+    },
+    {
+      "inverterId": "INV 05.143",
+      "mpptId": "MPPT-5",
+      "stringId": "STR-10",
+      "type": "OPEN_CIRCUIT",
+      "severity": "critical",
+      "currentDrop_pct": 100.0,
+      "detectedAt": "2026-04-05",
+      "description": "String mean current 0.000A is below open-circuit threshold (0.1A)"
+    },
+    {
+      "inverterId": "INV 05.143",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "OPEN_CIRCUIT",
+      "severity": "critical",
+      "currentDrop_pct": 100.0,
+      "detectedAt": "2026-04-05",
+      "description": "String mean current 0.000A is below open-circuit threshold (0.1A)"
+    },
+    {
+      "inverterId": "INV 05.143",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-12",
+      "type": "OPEN_CIRCUIT",
+      "severity": "critical",
+      "currentDrop_pct": 100.0,
+      "detectedAt": "2026-04-05",
+      "description": "String mean current 0.000A is below open-circuit threshold (0.1A)"
+    },
+    {
+      "inverterId": "INV 05.144",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.2,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.2% below MPPT peer average (4.36A vs 6.43A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.145",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.5,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.5% below MPPT peer average (4.27A vs 6.43A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.146",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 34.4,
+      "detectedAt": "2026-04-05",
+      "description": "String current 34.4% below MPPT peer average (4.18A vs 6.37A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.147",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 34.0,
+      "detectedAt": "2026-04-05",
+      "description": "String current 34.0% below MPPT peer average (4.25A vs 6.44A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.148",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 33.2,
+      "detectedAt": "2026-04-05",
+      "description": "String current 33.2% below MPPT peer average (4.24A vs 6.35A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.149",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 32.9,
+      "detectedAt": "2026-04-05",
+      "description": "String current 32.9% below MPPT peer average (4.31A vs 6.43A) \u2014 critical mismatch"
+    },
+    {
+      "inverterId": "INV 05.150",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-11",
+      "type": "MISMATCH",
+      "severity": "critical",
+      "currentDrop_pct": 31.7,
+      "detectedAt": "2026-04-05",
+      "description": "String current 31.7% below MPPT peer average (4.42A vs 6.47A) \u2014 critical mismatch"
+    }
+  ],
+  "summary": {
+    "totalStrings": 1800,
+    "normalCount": 1623,
+    "anomalyCount": 177,
+    "byType": {
+      "MISMATCH": 154,
+      "DEGRADATION": 14,
+      "OPEN_CIRCUIT": 13
+    }
+  }
+}

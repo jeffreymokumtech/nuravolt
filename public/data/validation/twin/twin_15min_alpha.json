@@ -1,0 +1,49 @@
+{
+  "dataset": "Alpha 15-minute plant twin (walk-forward)",
+  "n_samples": 42229,
+  "n_windows": 35,
+  "normalizer": "ac_capacity_kw",
+  "normalizer_value": 9900.0,
+  "nmae_pct": 6.685,
+  "nrmse_pct": 15.538,
+  "mbe_pct": 2.11,
+  "model": {
+    "label": "hybrid",
+    "nmae_pct": 6.685,
+    "nrmse_pct": 15.538,
+    "mbe_pct": 2.11,
+    "r2_footnote_only": 0.7165
+  },
+  "baselines": {
+    "physics_only": {
+      "label": "physics_only",
+      "nmae_pct": 6.613,
+      "nrmse_pct": 14.555,
+      "mbe_pct": 1.823,
+      "r2_footnote_only": 0.7513
+    }
+  },
+  "retention": {
+    "n_raw": 177400,
+    "n_after_nonnull": 154017,
+    "n_after_daylight": 67045,
+    "availability_excluded": 345,
+    "n_after_availability": 66686,
+    "clipping_excluded": 373,
+    "n_after_clipping": 66313,
+    "n_after_sensor_sanity": 66313,
+    "retention_pct": 37.38,
+    "calibration_factor_min": 1.1198,
+    "calibration_factor_max": 1.1578
+  },
+  "extras": {
+    "protocol": "Expanding 730-day train, 30-day test, 30-day step at 15-minute resolution. Physics is recalibrated on each training window only. The ML layer learns the physics residual.",
+    "capacity_derivation": "AC nameplate 9,900 kW from the 99.9th percentile of measured plant power (9,746 kW, max 9,818). DC 10,500 kWp from a median performance ratio of 0.905 above 700 W/m2.",
+    "baseline_definition": "physics_only = PVWatts twin, calibrated on the training window",
+    "scope_of_the_ml_claim": "The ML layer scored here is a gradient-boosted model over the physics residual using irradiance, ambient temperature, wind, solar elevation and day-of-year. It is NOT the product's full CatBoost hybrid with the complete physics feature set. The honest reading of a negative uplift is therefore 'residual boosting over these features does not improve on correctly calibrated physics at this resolution', not 'machine learning cannot help'. What it does establish is that the physics twin carries the accuracy on its own, and any ML layer has to be measured against it rather than assumed to add value."
+  },
+  "reference_baseline": "physics_only",
+  "reference_nmae_pct": 6.613,
+  "uplift_vs_reference_pct": -1.09,
+  "generated_at": "2026-08-20T12:13:48.924022Z"
+}

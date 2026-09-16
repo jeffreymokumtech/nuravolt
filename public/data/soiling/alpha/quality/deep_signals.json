@@ -1,0 +1,37 @@
+{
+  "plant_id": "alpha",
+  "generated_at": "2025-12-24T23:44:32.575086",
+  "method": "offline soiling-sensor research analysis (DustIQ reference series)",
+  "quality": {
+    "coverage_pct": 88.4,
+    "outlier_pct": 0.0,
+    "max_gap_days": 1,
+    "seasonal_coverage": {
+      "DJF": 85.1,
+      "MAM": 76.7,
+      "JJA": 95.2,
+      "SON": 95.6
+    },
+    "date_range": [
+      "2020-09-30",
+      "2025-12-13"
+    ],
+    "mean_sr": 1.0028,
+    "std_sr": 0.0052,
+    "sensor_agreement": 0.116
+  },
+  "cleaning": {
+    "events_total": 7,
+    "rate_per_year": 1.3,
+    "rain_cleanings": 11,
+    "manual_cleanings": 4,
+    "avg_sr_recovery": 0.0149,
+    "avg_soiling_period_days": 211.2,
+    "avg_sr_loss_per_period": 0.0098
+  },
+  "drivers": {
+    "days_since_rain_1mm_r": -0.7239,
+    "precip_30d_r": 0.5407,
+    "temp_mean_7d_r": -0.6466
+  }
+}

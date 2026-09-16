@@ -1,0 +1,304 @@
+{
+  "dataset": "Rule-based fault detector firing rates on real plants",
+  "n_samples": 8357802,
+  "per_plant": {
+    "eta": {
+      "inverters": 28,
+      "mwp": 2.03,
+      "months": 62.4,
+      "daylight_device_intervals": 1624840,
+      "by_fault_type": {
+        "inverter_offline": {
+          "events": 1151,
+          "active_fraction": 0.011073,
+          "alerts_per_mw_month": 9.071,
+          "plausible_max_active_fraction": 0.02,
+          "verdict": "plausible"
+        },
+        "mppt_imbalance": {
+          "events": 649,
+          "active_fraction": 0.010211,
+          "alerts_per_mw_month": 5.115,
+          "plausible_max_active_fraction": 0.05,
+          "verdict": "plausible"
+        },
+        "string_mismatch_coarse": {
+          "events": 363,
+          "active_fraction": 0.016442,
+          "alerts_per_mw_month": 2.861,
+          "plausible_max_active_fraction": 0.05,
+          "verdict": "plausible"
+        },
+        "mppt_hunting": {
+          "events": 336,
+          "active_fraction": 0.029893,
+          "alerts_per_mw_month": 2.648,
+          "plausible_max_active_fraction": 0.01,
+          "verdict": "high (3.0x bound)"
+        },
+        "bypass_diode_active": {
+          "events": 44,
+          "active_fraction": 0.000468,
+          "alerts_per_mw_month": 0.347,
+          "plausible_max_active_fraction": 0.005,
+          "verdict": "plausible"
+        },
+        "sensor_frozen": {
+          "events": 28,
+          "active_fraction": 0.000103,
+          "alerts_per_mw_month": 0.221,
+          "plausible_max_active_fraction": 0.01,
+          "verdict": "plausible"
+        },
+        "soiling_detected": {
+          "events": 28,
+          "active_fraction": 0.590653,
+          "alerts_per_mw_month": 0.221,
+          "plausible_max_active_fraction": 0.4,
+          "verdict": "high (1.5x bound)"
+        },
+        "string_open_circuit": {
+          "events": 6,
+          "active_fraction": 0.001446,
+          "alerts_per_mw_month": 0.047,
+          "plausible_max_active_fraction": 0.005,
+          "verdict": "plausible"
+        },
+        "string_short_circuit": {
+          "events": 2,
+          "active_fraction": 4e-06,
+          "alerts_per_mw_month": 0.016,
+          "plausible_max_active_fraction": 0.002,
+          "verdict": "plausible"
+        },
+        "inverter_underperformance_peer": {
+          "events": 1,
+          "active_fraction": 0.000217,
+          "alerts_per_mw_month": 0.008,
+          "plausible_max_active_fraction": 0.02,
+          "verdict": "plausible"
+        }
+      }
+    },
+    "zeta": {
+      "inverters": 30,
+      "mwp": 3.7,
+      "months": 40.6,
+      "daylight_device_intervals": 1359390,
+      "by_fault_type": {
+        "string_open_circuit": {
+          "events": 815,
+          "active_fraction": 0.028362,
+          "alerts_per_mw_month": 5.421,
+          "plausible_max_active_fraction": 0.005,
+          "verdict": "IMPLAUSIBLE (6x the plausible bound)"
+        },
+        "inverter_offline": {
+          "events": 394,
+          "active_fraction": 0.002537,
+          "alerts_per_mw_month": 2.621,
+          "plausible_max_active_fraction": 0.02,
+          "verdict": "plausible"
+        },
+        "soiling_detected": {
+          "events": 30,
+          "active_fraction": 0.603894,
+          "alerts_per_mw_month": 0.2,
+          "plausible_max_active_fraction": 0.4,
+          "verdict": "high (1.5x bound)"
+        },
+        "vegetation_shading": {
+          "events": 16,
+          "active_fraction": 0.450661,
+          "alerts_per_mw_month": 0.106,
+          "plausible_max_active_fraction": 0.1,
+          "verdict": "high (4.5x bound)"
+        },
+        "inverter_underperformance_peer": {
+          "events": 12,
+          "active_fraction": 0.001544,
+          "alerts_per_mw_month": 0.08,
+          "plausible_max_active_fraction": 0.02,
+          "verdict": "plausible"
+        }
+      }
+    },
+    "delta": {
+      "inverters": 43,
+      "mwp": 3.62,
+      "months": 55.5,
+      "daylight_device_intervals": 2652197,
+      "by_fault_type": {
+        "string_mismatch_coarse": {
+          "events": 1361,
+          "active_fraction": 0.137661,
+          "alerts_per_mw_month": 6.779,
+          "plausible_max_active_fraction": 0.05,
+          "verdict": "high (2.8x bound)"
+        },
+        "bypass_diode_active": {
+          "events": 998,
+          "active_fraction": 0.01359,
+          "alerts_per_mw_month": 4.971,
+          "plausible_max_active_fraction": 0.005,
+          "verdict": "high (2.7x bound)"
+        },
+        "inverter_offline": {
+          "events": 518,
+          "active_fraction": 0.002773,
+          "alerts_per_mw_month": 2.58,
+          "plausible_max_active_fraction": 0.02,
+          "verdict": "plausible"
+        },
+        "mppt_hunting": {
+          "events": 516,
+          "active_fraction": 0.022739,
+          "alerts_per_mw_month": 2.57,
+          "plausible_max_active_fraction": 0.01,
+          "verdict": "high (2.3x bound)"
+        },
+        "mppt_imbalance": {
+          "events": 500,
+          "active_fraction": 0.046716,
+          "alerts_per_mw_month": 2.49,
+          "plausible_max_active_fraction": 0.05,
+          "verdict": "plausible"
+        },
+        "string_short_circuit": {
+          "events": 478,
+          "active_fraction": 0.000446,
+          "alerts_per_mw_month": 2.381,
+          "plausible_max_active_fraction": 0.002,
+          "verdict": "plausible"
+        },
+        "string_open_circuit": {
+          "events": 251,
+          "active_fraction": 0.001464,
+          "alerts_per_mw_month": 1.25,
+          "plausible_max_active_fraction": 0.005,
+          "verdict": "plausible"
+        },
+        "inverter_overtemperature": {
+          "events": 217,
+          "active_fraction": 0.007895,
+          "alerts_per_mw_month": 1.081,
+          "plausible_max_active_fraction": 0.001,
+          "verdict": "IMPLAUSIBLE (8x the plausible bound)"
+        },
+        "soiling_detected": {
+          "events": 43,
+          "active_fraction": 0.604801,
+          "alerts_per_mw_month": 0.214,
+          "plausible_max_active_fraction": 0.4,
+          "verdict": "high (1.5x bound)"
+        },
+        "inverter_underperformance_peer": {
+          "events": 12,
+          "active_fraction": 0.001047,
+          "alerts_per_mw_month": 0.06,
+          "plausible_max_active_fraction": 0.02,
+          "verdict": "plausible"
+        },
+        "vegetation_shading": {
+          "events": 11,
+          "active_fraction": 0.217155,
+          "alerts_per_mw_month": 0.055,
+          "plausible_max_active_fraction": 0.1,
+          "verdict": "high (2.2x bound)"
+        }
+      }
+    },
+    "gamma": {
+      "inverters": 45,
+      "mwp": 5.07,
+      "months": 55.6,
+      "daylight_device_intervals": 2721375,
+      "by_fault_type": {
+        "bypass_diode_active": {
+          "events": 1250,
+          "active_fraction": 0.015797,
+          "alerts_per_mw_month": 4.434,
+          "plausible_max_active_fraction": 0.005,
+          "verdict": "high (3.2x bound)"
+        },
+        "string_mismatch_coarse": {
+          "events": 1070,
+          "active_fraction": 0.0784,
+          "alerts_per_mw_month": 3.796,
+          "plausible_max_active_fraction": 0.05,
+          "verdict": "high (1.6x bound)"
+        },
+        "string_short_circuit": {
+          "events": 896,
+          "active_fraction": 0.00095,
+          "alerts_per_mw_month": 3.179,
+          "plausible_max_active_fraction": 0.002,
+          "verdict": "plausible"
+        },
+        "mppt_hunting": {
+          "events": 540,
+          "active_fraction": 0.023404,
+          "alerts_per_mw_month": 1.916,
+          "plausible_max_active_fraction": 0.01,
+          "verdict": "high (2.3x bound)"
+        },
+        "mppt_imbalance": {
+          "events": 400,
+          "active_fraction": 0.034169,
+          "alerts_per_mw_month": 1.419,
+          "plausible_max_active_fraction": 0.05,
+          "verdict": "plausible"
+        },
+        "inverter_offline": {
+          "events": 199,
+          "active_fraction": 0.004954,
+          "alerts_per_mw_month": 0.706,
+          "plausible_max_active_fraction": 0.02,
+          "verdict": "plausible"
+        },
+        "inverter_overtemperature": {
+          "events": 142,
+          "active_fraction": 0.002596,
+          "alerts_per_mw_month": 0.504,
+          "plausible_max_active_fraction": 0.001,
+          "verdict": "high (2.6x bound)"
+        },
+        "string_open_circuit": {
+          "events": 132,
+          "active_fraction": 0.001291,
+          "alerts_per_mw_month": 0.468,
+          "plausible_max_active_fraction": 0.005,
+          "verdict": "plausible"
+        },
+        "soiling_detected": {
+          "events": 45,
+          "active_fraction": 0.548274,
+          "alerts_per_mw_month": 0.16,
+          "plausible_max_active_fraction": 0.4,
+          "verdict": "high (1.4x bound)"
+        },
+        "inverter_underperformance_peer": {
+          "events": 28,
+          "active_fraction": 0.000689,
+          "alerts_per_mw_month": 0.099,
+          "plausible_max_active_fraction": 0.02,
+          "verdict": "plausible"
+        },
+        "vegetation_shading": {
+          "events": 3,
+          "active_fraction": 0.057496,
+          "alerts_per_mw_month": 0.011,
+          "plausible_max_active_fraction": 0.1,
+          "verdict": "plausible"
+        }
+      }
+    }
+  },
+  "implausible_rules": [
+    "inverter_overtemperature",
+    "string_open_circuit"
+  ],
+  "method": "Every emitting rule run over real plant SCADA with default EU config. No fault labels exist, so precision cannot be computed. Instead each rule's active fraction is compared against a stated plausible upper bound for that failure mode. A rule far above its bound is raising false positives; the bounds are engineering judgements, published so they can be argued with.",
+  "what_this_is_not": "Not a false-positive RATE. It is evidence of false positives where a rule fires far more often than its failure mode can plausibly occur.",
+  "generated_at": "2026-08-21T06:42:08.346331Z"
+}

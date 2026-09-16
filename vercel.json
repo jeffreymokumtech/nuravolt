@@ -1,0 +1,101 @@
+{
+  "buildCommand": "npx prisma generate && next build",
+  "framework": "nextjs",
+  "outputDirectory": ".next",
+  "installCommand": "npm install",
+  "regions": [
+    "fra1"
+  ],
+  "functions": {
+    "src/app/api/cron/poll-connections/route.ts": {
+      "maxDuration": 300
+    },
+    "src/app/api/cron/send-reports/route.ts": {
+      "maxDuration": 300
+    },
+    "src/app/api/dashboards/[id]/export-pdf/route.ts": {
+      "maxDuration": 120
+    },
+    "src/app/api/reports/[id]/generate/route.ts": {
+      "maxDuration": 120
+    },
+    "src/app/api/reports/[id]/send/route.ts": {
+      "maxDuration": 120
+    },
+    "src/app/api/stripe/webhook/route.ts": {
+      "maxDuration": 60
+    },
+    "src/app/api/**/*.ts": {
+      "maxDuration": 30
+    }
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-DNS-Prefetch-Control",
+          "value": "on"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), payment=()"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://js.stripe.com https://eu.i.posthog.com https://eu-assets.i.posthog.com https://app.lemlist.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https: blob:; font-src 'self' data: https://fonts.gstatic.com; connect-src 'self' https://api.stripe.com https://eu.i.posthog.com https://eu-assets.i.posthog.com wss:; worker-src 'self' blob:; frame-src 'self' https://js.stripe.com https://hooks.stripe.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.nuravolt.com"
+        }
+      ],
+      "destination": "https://nuravolt.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "/compare/nuravolt-vs-smarthelio",
+      "destination": "/compare/smarthelio-alternative",
+      "permanent": true
+    }
+  ],
+  "rewrites": [],
+  "env": {
+    "NEXT_PUBLIC_DEPLOYMENT_ENV": "vercel"
+  },
+  "git": {
+    "deploymentEnabled": {
+      "main": true
+    }
+  },
+  "github": {
+    "silent": true
+  }
+}

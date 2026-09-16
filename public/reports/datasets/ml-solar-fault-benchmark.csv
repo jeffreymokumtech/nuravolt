@@ -1,0 +1,25 @@
+report_section,dataset,item,precision,recall,f1,test_samples,mae_days,within_1day_pct,mape_pct,within_10pct_pct,within_25pct_pct,meets_bar
+pv_classification,Lazzaretti UTFPR (CC BY 4.0),normal,0.9988,0.9969,0.9979,59230,,,,,,
+pv_classification,Lazzaretti UTFPR (CC BY 4.0),short_circuit,0.9983,0.9975,0.9979,1203,,,,,,
+pv_classification,Lazzaretti UTFPR (CC BY 4.0),degradation,0.9976,0.9995,0.9985,2062,,,,,,
+pv_classification,Lazzaretti UTFPR (CC BY 4.0),open_circuit,0.9983,1.0000,0.9992,1183,,,,,,
+pv_classification,Lazzaretti UTFPR (CC BY 4.0),partial_shading,0.9950,0.9979,0.9964,35803,,,,,,
+pv_classification,Lazzaretti UTFPR (CC BY 4.0),MACRO_AVG,,,0.9980,99481,,,,,,
+pv_classification,GPVS-Faults,dc_link_capacitor_aging,0.9991,0.9998,0.9994,8000,,,,,,
+pv_classification,GPVS-Faults,string_short_circuit,0.7449,0.8506,0.7943,8000,,,,,,
+pv_classification,GPVS-Faults,grid_voltage_sag,0.9054,0.7014,0.7904,8000,,,,,,
+pv_classification,GPVS-Faults,string_open_circuit,0.8625,0.7260,0.7884,8000,,,,,,
+pv_classification,GPVS-Faults,normal,0.7212,0.7897,0.7539,8000,,,,,,
+pv_classification,GPVS-Faults,grid_voltage_swell,0.7089,0.7991,0.7513,8000,,,,,,
+pv_classification,GPVS-Faults,irradiance_sensor_drift,0.6222,0.6379,0.6299,8000,,,,,,
+pv_classification,GPVS-Faults,inverter_overtemperature,0.6252,0.6212,0.6232,8000,,,,,,
+pv_classification,GPVS-Faults,MACRO_AVG,,,0.7664,64000,,,,,,
+rul,Lazzaretti-derived (1.37M rows),bypass_diode_stress,,,,,0.35,90.5,,,,Yes
+rul,Lazzaretti-derived (1.37M rows),inverter_overtemperature,,,,,0.48,84.0,,,,Yes
+rul,Lazzaretti-derived (1.37M rows),thermal_hotspot_risk,,,,,0.54,79.1,,,,Yes
+rul,Lazzaretti-derived (1.37M rows),string_degradation,,,,,0.69,71.5,,,,Yes
+rul,Lazzaretti-derived (1.37M rows),string_mismatch,,,,,1.34,60.1,,,,Yes
+rul,Lazzaretti-derived (1.37M rows),module_degradation,,,,,4.75,39.0,,,,No
+rul,Lazzaretti-derived (1.37M rows),insulation_degradation,,,,,7.18,8.9,,,,No
+bess_eol,Severson 2019 (A123 LFP),LFP,,,,124,,,17.2,49,84,
+bess_eol,NASA PCoE (NMC),NMC,,,,13,,,29.5,69,85,

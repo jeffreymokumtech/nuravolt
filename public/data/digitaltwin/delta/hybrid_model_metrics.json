@@ -1,0 +1,18 @@
+{
+  "plant_id": "delta",
+  "trained_at": "2025-12-29T09:22:17.158738",
+  "metrics": {
+    "r2": -13.6855,
+    "mae_kW": 0.35,
+    "rmse_kW": 0.87,
+    "mape_pct": 89.97,
+    "physics_r2": -13581.8725,
+    "physics_mae_kW": 22.98,
+    "ml_r2": 0.9956,
+    "ml_mae_kW": 0.36,
+    "trainingSamples": 53472,
+    "validationSamples": 13369,
+    "trainingTime_s": 3.22,
+    "calibrationFactor": 1.0
+  }
+}

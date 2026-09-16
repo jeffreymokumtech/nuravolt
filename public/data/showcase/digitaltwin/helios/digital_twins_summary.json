@@ -1,0 +1,162 @@
+{
+  "generatedAt": "2025-12-18T15:57:34.551775",
+  "plantId": "helios",
+  "plantName": "Helios Solar Plant",
+  "modelType": "PlantLevel (Physics + CatBoost)",
+  "config": {
+    "maxYears": 3,
+    "minPR": 0.1,
+    "useCatBoost": true,
+    "minR2": 0.7,
+    "useEnhancedSelection": false
+  },
+  "statistics": {
+    "totalInverters": 10,
+    "successful": 10,
+    "failed": 0,
+    "totalTime_s": 578.55,
+    "avgR2": 0.9802,
+    "avgMAE_kW": 0.0181,
+    "plantModelR2": 0.9806,
+    "physicsOnlyR2": 0.9545
+  },
+  "trainingPeriod": {
+    "start": "2020-10-01 07:00:00",
+    "end": "2023-09-30 17:30:00"
+  },
+  "hybridConfig": {
+    "modelType": "PlantLevel (Physics + ML)",
+    "physicsModel": "PVWatts",
+    "mlModel": "CatBoost",
+    "physicsParams": {
+      "latitude": 37.927,
+      "longitude": -1.233,
+      "tilt": 30,
+      "azimuth": 180,
+      "gamma_pdc": -0.004
+    },
+    "categoricalFeature": "inverter_id"
+  },
+  "inverters": {
+    "INV 03.066": {
+      "inverterId": "INV 03.066",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9954,
+        "mae_kW": 0.0114,
+        "rmse_kW": 0.0162
+      },
+      "nSamples": 8228,
+      "nominalPower_kW": 60
+    },
+    "INV 03.082": {
+      "inverterId": "INV 03.082",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9951,
+        "mae_kW": 0.0109,
+        "rmse_kW": 0.0168
+      },
+      "nSamples": 7919,
+      "nominalPower_kW": 60
+    },
+    "INV 04.100": {
+      "inverterId": "INV 04.100",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9921,
+        "mae_kW": 0.0142,
+        "rmse_kW": 0.0218
+      },
+      "nSamples": 8842,
+      "nominalPower_kW": 60
+    },
+    "INV 04.115": {
+      "inverterId": "INV 04.115",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9902,
+        "mae_kW": 0.0146,
+        "rmse_kW": 0.0238
+      },
+      "nSamples": 8972,
+      "nominalPower_kW": 60
+    },
+    "INV 01.032": {
+      "inverterId": "INV 01.032",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9727,
+        "mae_kW": 0.0223,
+        "rmse_kW": 0.0399
+      },
+      "nSamples": 8552,
+      "nominalPower_kW": 60
+    },
+    "INV 01.044": {
+      "inverterId": "INV 01.044",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9763,
+        "mae_kW": 0.0202,
+        "rmse_kW": 0.0371
+      },
+      "nSamples": 8390,
+      "nominalPower_kW": 60
+    },
+    "INV 01.057": {
+      "inverterId": "INV 01.057",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9735,
+        "mae_kW": 0.0239,
+        "rmse_kW": 0.0389
+      },
+      "nSamples": 8510,
+      "nominalPower_kW": 60
+    },
+    "INV 02.005": {
+      "inverterId": "INV 02.005",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9759,
+        "mae_kW": 0.0219,
+        "rmse_kW": 0.0371
+      },
+      "nSamples": 8225,
+      "nominalPower_kW": 60
+    },
+    "INV 02.018": {
+      "inverterId": "INV 02.018",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9731,
+        "mae_kW": 0.0231,
+        "rmse_kW": 0.0387
+      },
+      "nSamples": 8243,
+      "nominalPower_kW": 60
+    },
+    "INV 02.028": {
+      "inverterId": "INV 02.028",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9756,
+        "mae_kW": 0.0209,
+        "rmse_kW": 0.0372
+      },
+      "nSamples": 8345,
+      "nominalPower_kW": 60
+    }
+  }
+}

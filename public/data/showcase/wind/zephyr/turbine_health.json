@@ -1,0 +1,72 @@
+[
+  {
+    "turbineId": "WT-01",
+    "name": "Turbine 01",
+    "overallHealth": 94,
+    "availability": 0.978,
+    "capacityFactor": 0.335,
+    "activeFaults": 0,
+    "lowestRUL": {
+      "component": "GEARBOX_BEARING",
+      "days": 245
+    },
+    "lastDataTimestamp": "2025-01-13T07:55:00Z",
+    "status": "OPERATING"
+  },
+  {
+    "turbineId": "WT-02",
+    "name": "Turbine 02",
+    "overallHealth": 91,
+    "availability": 0.965,
+    "capacityFactor": 0.318,
+    "activeFaults": 1,
+    "lowestRUL": {
+      "component": "GENERATOR_BEARING_DE",
+      "days": 89
+    },
+    "lastDataTimestamp": "2025-01-13T07:55:00Z",
+    "status": "OPERATING"
+  },
+  {
+    "turbineId": "WT-03",
+    "name": "Turbine 03",
+    "overallHealth": 88,
+    "availability": 0.952,
+    "capacityFactor": 0.312,
+    "activeFaults": 1,
+    "lowestRUL": {
+      "component": "MAIN_BEARING",
+      "days": 156
+    },
+    "lastDataTimestamp": "2025-01-13T07:55:00Z",
+    "status": "OPERATING"
+  },
+  {
+    "turbineId": "WT-04",
+    "name": "Turbine 04",
+    "overallHealth": 96,
+    "availability": 0.985,
+    "capacityFactor": 0.341,
+    "activeFaults": 0,
+    "lowestRUL": {
+      "component": "PITCH_ACTUATOR",
+      "days": 412
+    },
+    "lastDataTimestamp": "2025-01-13T07:55:00Z",
+    "status": "OPERATING"
+  },
+  {
+    "turbineId": "WT-05",
+    "name": "Turbine 05",
+    "overallHealth": 85,
+    "availability": 0.932,
+    "capacityFactor": 0.298,
+    "activeFaults": 0,
+    "lowestRUL": {
+      "component": "GEARBOX_OIL",
+      "days": 67
+    },
+    "lastDataTimestamp": "2025-01-13T07:50:00Z",
+    "status": "IDLE"
+  }
+]

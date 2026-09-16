@@ -1,0 +1,128 @@
+{
+  "plant_id": "eta",
+  "generated_at": "2026-06-21T08:12:00Z",
+  "sla": {
+    "contract_pct": 99.0,
+    "mtd_pct": 97.4,
+    "projected_eom_pct": 97.8,
+    "days_remaining_in_month": 9,
+    "iec_reference": "IEC 61724-1:2021 Class A — typical ≥ 99% monthly availability"
+  },
+  "freshness_summary": {
+    "total_streams": 46,
+    "fresh": 35,
+    "stale_under_1h": 3,
+    "stale_under_24h": 7,
+    "stale_over_24h": 1
+  },
+  "top_degraded": [
+    {
+      "stream_id": "eta.gateway_central.poll",
+      "label": "Gateway Central SCADA poll",
+      "category": "scada_poll",
+      "severity": "high",
+      "last_good_at": "2026-06-21T03:14:00Z",
+      "last_value": null,
+      "gap_minutes": 298,
+      "attribution_cause": "network_outage",
+      "attribution_narrative": "Gateway Central went silent at 03:14 — six downstream streams (INV-01/02/03 power + status) lost concurrently within ±2 minutes. Cellular backhaul outage suspected; no fault entries in /api/faults for that window.",
+      "affected_kpis": ["PR", "AC_yield", "fleet_capacity_factor", "SR"],
+      "recommended_action": "Power-cycle gateway via remote PDU; if no recovery, dispatch field tech to verify cellular signal"
+    },
+    {
+      "stream_id": "eta.INV01.power_ac",
+      "label": "INV-01 AC power",
+      "category": "inverter",
+      "severity": "high",
+      "last_good_at": "2026-06-21T03:15:00Z",
+      "last_value": null,
+      "gap_minutes": 297,
+      "attribution_cause": "network_outage",
+      "attribution_narrative": "Lost at 03:15 — co-stale with 5 other Gateway Central streams within ±2 min. Inverter likely operating normally; we're just blind to it.",
+      "affected_kpis": ["PR", "AC_yield"],
+      "recommended_action": "Resolves automatically when gateway recovers"
+    },
+    {
+      "stream_id": "eta.INV02.power_ac",
+      "label": "INV-02 AC power",
+      "category": "inverter",
+      "severity": "high",
+      "last_good_at": "2026-06-21T03:14:00Z",
+      "last_value": null,
+      "gap_minutes": 298,
+      "attribution_cause": "network_outage",
+      "attribution_narrative": "Lost at 03:14 — co-stale with Gateway Central and 5 sibling streams. Same root cause.",
+      "affected_kpis": ["PR", "AC_yield"],
+      "recommended_action": "Resolves automatically when gateway recovers"
+    },
+    {
+      "stream_id": "eta.INV03.power_ac",
+      "label": "INV-03 AC power",
+      "category": "inverter",
+      "severity": "high",
+      "last_good_at": "2026-06-21T03:15:00Z",
+      "last_value": null,
+      "gap_minutes": 297,
+      "attribution_cause": "network_outage",
+      "attribution_narrative": "Lost at 03:15 — co-stale with Gateway Central cluster. Same root cause.",
+      "affected_kpis": ["PR", "AC_yield"],
+      "recommended_action": "Resolves automatically when gateway recovers"
+    },
+    {
+      "stream_id": "eta.INV01.status",
+      "label": "INV-01 status",
+      "category": "inverter",
+      "severity": "medium",
+      "last_good_at": "2026-06-21T03:14:00Z",
+      "last_value": null,
+      "gap_minutes": 298,
+      "attribution_cause": "network_outage",
+      "attribution_narrative": "Lost at 03:14 — co-stale with Gateway Central cluster. Cannot confirm inverter state until link restored.",
+      "affected_kpis": ["fleet_capacity_factor"],
+      "recommended_action": "Resolves automatically when gateway recovers"
+    },
+    {
+      "stream_id": "eta.INV02.status",
+      "label": "INV-02 status",
+      "category": "inverter",
+      "severity": "medium",
+      "last_good_at": "2026-06-21T03:15:00Z",
+      "last_value": null,
+      "gap_minutes": 297,
+      "attribution_cause": "network_outage",
+      "attribution_narrative": "Lost at 03:15 — co-stale with Gateway Central cluster. Cannot confirm inverter state until link restored.",
+      "affected_kpis": ["fleet_capacity_factor"],
+      "recommended_action": "Resolves automatically when gateway recovers"
+    },
+    {
+      "stream_id": "eta.INV03.status",
+      "label": "INV-03 status",
+      "category": "inverter",
+      "severity": "medium",
+      "last_good_at": "2026-06-21T03:14:00Z",
+      "last_value": null,
+      "gap_minutes": 298,
+      "attribution_cause": "network_outage",
+      "attribution_narrative": "Lost at 03:14 — co-stale with Gateway Central cluster. Cannot confirm inverter state until link restored.",
+      "affected_kpis": ["fleet_capacity_factor"],
+      "recommended_action": "Resolves automatically when gateway recovers"
+    }
+  ],
+  "satellite_fallback_active": {
+    "active": false,
+    "fallback_source": null,
+    "substituting_for": null,
+    "ghi_confidence_band_pct": null,
+    "engaged_at": null
+  },
+  "kpi_impact": [
+    { "kpi": "PR", "nominal": 0.838, "band_lo": 0.812, "band_hi": 0.864, "degraded_inputs_pct": 22.6 },
+    { "kpi": "SR", "nominal": 0.954, "band_lo": 0.941, "band_hi": 0.968, "degraded_inputs_pct": 8.1 },
+    { "kpi": "AC_yield", "nominal": 3872, "band_lo": 3681, "band_hi": 4063, "degraded_inputs_pct": 26.4 }
+  ],
+  "curation_log_recent": [
+    { "ts": "2026-06-21T03:18:00Z", "actor": "system", "action": "outage_detected", "stream_id": "eta.gateway_central.poll", "reason": "7 streams stale within ±5 min — auto-attributed to network_outage rule" },
+    { "ts": "2026-06-21T03:22:00Z", "actor": "system", "action": "remote_pdu_recycle_attempted", "stream_id": "eta.gateway_central.poll", "reason": "Auto-recovery via PDU power-cycle — no link return after 90s" },
+    { "ts": "2026-06-21T06:45:00Z", "actor": "AM", "action": "acknowledge", "stream_id": "eta.gateway_central.poll", "reason": "Field tech dispatched, ETA 11:00 local" }
+  ]
+}

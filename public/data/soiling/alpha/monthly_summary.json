@@ -1,0 +1,170 @@
+{
+ "metadata": {
+  "plant_id": "alpha",
+  "period": {
+   "start": "2024-12-01",
+   "end": "2025-12-01"
+  },
+  "n_months": 13,
+  "source": "plant_power_history predicted energy x fleet SR, AOD-climatology seasonal shape",
+  "eur_per_mwh": 65.0
+ },
+ "monthly_data": [
+  {
+   "date": "2024-12-01",
+   "energy_if_clean_mwh": 929.24,
+   "energy_with_soiling_mwh": 903.17,
+   "energy_loss_mwh": 26.07,
+   "energy_loss_pct": 2.81,
+   "revenue_if_clean_eur": 60401.2,
+   "revenue_with_soiling_eur": 58706.42,
+   "revenue_loss_eur": 1694.78,
+   "cumulative_energy_loss_mwh": 26.07,
+   "cumulative_revenue_loss_eur": 1694.78
+  },
+  {
+   "date": "2025-01-01",
+   "energy_if_clean_mwh": 895.37,
+   "energy_with_soiling_mwh": 868.77,
+   "energy_loss_mwh": 26.6,
+   "energy_loss_pct": 2.97,
+   "revenue_if_clean_eur": 58199.69,
+   "revenue_with_soiling_eur": 56470.63,
+   "revenue_loss_eur": 1729.06,
+   "cumulative_energy_loss_mwh": 52.67,
+   "cumulative_revenue_loss_eur": 3423.84
+  },
+  {
+   "date": "2025-02-01",
+   "energy_if_clean_mwh": 1023.62,
+   "energy_with_soiling_mwh": 991.52,
+   "energy_loss_mwh": 32.1,
+   "energy_loss_pct": 3.14,
+   "revenue_if_clean_eur": 66535.9,
+   "revenue_with_soiling_eur": 64449.36,
+   "revenue_loss_eur": 2086.54,
+   "cumulative_energy_loss_mwh": 84.77,
+   "cumulative_revenue_loss_eur": 5510.39
+  },
+  {
+   "date": "2025-03-01",
+   "energy_if_clean_mwh": 1012.24,
+   "energy_with_soiling_mwh": 975.49,
+   "energy_loss_mwh": 36.76,
+   "energy_loss_pct": 3.63,
+   "revenue_if_clean_eur": 65796.58,
+   "revenue_with_soiling_eur": 63407.43,
+   "revenue_loss_eur": 2389.15,
+   "cumulative_energy_loss_mwh": 121.53,
+   "cumulative_revenue_loss_eur": 7899.54
+  },
+  {
+   "date": "2025-04-01",
+   "energy_if_clean_mwh": 1296.39,
+   "energy_with_soiling_mwh": 1242.89,
+   "energy_loss_mwh": 53.49,
+   "energy_loss_pct": 4.13,
+   "revenue_if_clean_eur": 84266.02,
+   "revenue_with_soiling_eur": 80788.97,
+   "revenue_loss_eur": 3477.05,
+   "cumulative_energy_loss_mwh": 175.02,
+   "cumulative_revenue_loss_eur": 11376.59
+  },
+  {
+   "date": "2025-05-01",
+   "energy_if_clean_mwh": 1574.78,
+   "energy_with_soiling_mwh": 1502.0,
+   "energy_loss_mwh": 72.78,
+   "energy_loss_pct": 4.62,
+   "revenue_if_clean_eur": 102361.57,
+   "revenue_with_soiling_eur": 97631.0,
+   "revenue_loss_eur": 4730.56,
+   "cumulative_energy_loss_mwh": 247.8,
+   "cumulative_revenue_loss_eur": 16107.15
+  },
+  {
+   "date": "2025-06-01",
+   "energy_if_clean_mwh": 1483.98,
+   "energy_with_soiling_mwh": 1405.6,
+   "energy_loss_mwh": 78.38,
+   "energy_loss_pct": 5.28,
+   "revenue_if_clean_eur": 96459.57,
+   "revenue_with_soiling_eur": 91364.93,
+   "revenue_loss_eur": 5094.64,
+   "cumulative_energy_loss_mwh": 326.18,
+   "cumulative_revenue_loss_eur": 21201.79
+  },
+  {
+   "date": "2025-07-01",
+   "energy_if_clean_mwh": 1670.56,
+   "energy_with_soiling_mwh": 1574.05,
+   "energy_loss_mwh": 96.5,
+   "energy_loss_pct": 5.78,
+   "revenue_if_clean_eur": 108587.53,
+   "revenue_with_soiling_eur": 102314.66,
+   "revenue_loss_eur": 6272.87,
+   "cumulative_energy_loss_mwh": 422.68,
+   "cumulative_revenue_loss_eur": 27474.65
+  },
+  {
+   "date": "2025-08-01",
+   "energy_if_clean_mwh": 1534.65,
+   "energy_with_soiling_mwh": 1451.07,
+   "energy_loss_mwh": 83.59,
+   "energy_loss_pct": 5.45,
+   "revenue_if_clean_eur": 99753.67,
+   "revenue_with_soiling_eur": 94320.41,
+   "revenue_loss_eur": 5433.26,
+   "cumulative_energy_loss_mwh": 506.27,
+   "cumulative_revenue_loss_eur": 32907.92
+  },
+  {
+   "date": "2025-09-01",
+   "energy_if_clean_mwh": 1344.59,
+   "energy_with_soiling_mwh": 1282.45,
+   "energy_loss_mwh": 62.14,
+   "energy_loss_pct": 4.62,
+   "revenue_if_clean_eur": 87399.51,
+   "revenue_with_soiling_eur": 83360.4,
+   "revenue_loss_eur": 4039.1,
+   "cumulative_energy_loss_mwh": 568.41,
+   "cumulative_revenue_loss_eur": 36947.02
+  },
+  {
+   "date": "2025-10-01",
+   "energy_if_clean_mwh": 1158.85,
+   "energy_with_soiling_mwh": 1112.95,
+   "energy_loss_mwh": 45.9,
+   "energy_loss_pct": 3.96,
+   "revenue_if_clean_eur": 75326.34,
+   "revenue_with_soiling_eur": 72342.5,
+   "revenue_loss_eur": 2983.84,
+   "cumulative_energy_loss_mwh": 614.31,
+   "cumulative_revenue_loss_eur": 39930.87
+  },
+  {
+   "date": "2025-11-01",
+   "energy_if_clean_mwh": 838.78,
+   "energy_with_soiling_mwh": 811.09,
+   "energy_loss_mwh": 27.69,
+   "energy_loss_pct": 3.3,
+   "revenue_if_clean_eur": 54521.5,
+   "revenue_with_soiling_eur": 52721.73,
+   "revenue_loss_eur": 1799.76,
+   "cumulative_energy_loss_mwh": 642.0,
+   "cumulative_revenue_loss_eur": 41730.63
+  },
+  {
+   "date": "2025-12-01",
+   "energy_if_clean_mwh": 263.91,
+   "energy_with_soiling_mwh": 256.5,
+   "energy_loss_mwh": 7.4,
+   "energy_loss_pct": 2.81,
+   "revenue_if_clean_eur": 17154.27,
+   "revenue_with_soiling_eur": 16672.95,
+   "revenue_loss_eur": 481.33,
+   "cumulative_energy_loss_mwh": 649.41,
+   "cumulative_revenue_loss_eur": 42211.96
+  }
+ ]
+}

@@ -1,0 +1,62 @@
+{
+  "plantId": "helios",
+  "generatedAt": "2026-04-17T12:25:46.797Z",
+  "totalAnomalies": 5,
+  "anomalies": [
+    {
+      "id": "anom-1",
+      "inverterId": "INV 01.032",
+      "mpptId": "MPPT-1",
+      "stringId": "STR-1.2",
+      "type": "DEGRADATION",
+      "severity": "warning",
+      "currentDrop_pct": 12.9,
+      "detectedAt": "2026-04-05",
+      "description": "Irradiance-normalised string current declining ~13%/month over 29 days"
+    },
+    {
+      "id": "anom-2",
+      "inverterId": "INV 02.018",
+      "mpptId": "MPPT-2",
+      "stringId": "STR-2.1",
+      "type": "OPEN_CIRCUIT",
+      "severity": "critical",
+      "currentDrop_pct": 68.4,
+      "detectedAt": "2026-04-14",
+      "description": "String current dropped to near zero — likely open circuit"
+    },
+    {
+      "id": "anom-3",
+      "inverterId": "INV 03.082",
+      "mpptId": "MPPT-1",
+      "stringId": "STR-1.3",
+      "type": "MISMATCH",
+      "severity": "warning",
+      "currentDrop_pct": 8.1,
+      "detectedAt": "2026-04-10",
+      "description": "Sustained ~8% current mismatch vs peer strings on same MPPT"
+    },
+    {
+      "id": "anom-4",
+      "inverterId": "INV 04.115",
+      "mpptId": "MPPT-3",
+      "stringId": "STR-3.4",
+      "type": "SHADING",
+      "severity": "info",
+      "currentDrop_pct": 4.3,
+      "detectedAt": "2026-03-28",
+      "description": "Seasonal shading pattern detected — recurs between 08:00 and 10:00 local"
+    },
+    {
+      "id": "anom-5",
+      "inverterId": "INV 01.057",
+      "mpptId": "MPPT-2",
+      "stringId": "STR-2.2",
+      "type": "DEGRADATION",
+      "severity": "warning",
+      "currentDrop_pct": 6.7,
+      "detectedAt": "2026-04-12",
+      "description": "Gradual 7% decline over last 45 days, not explained by soiling"
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "generatedAt": "2026-04-17T12:25:46.950Z",
+  "plants": [
+    {
+      "plantId": "helios",
+      "plantName": "Helios PV",
+      "assetType": "SOLAR",
+      "location": "Southern Europe",
+      "capacity_MW": 45,
+      "totalInverters": 10,
+      "inverterGroups": [
+        "INV 01",
+        "INV 02",
+        "INV 03",
+        "INV 04"
+      ],
+      "status": "operational",
+      "healthDistribution": {
+        "normal": 104,
+        "minorIssues": 11,
+        "majorIssues": 4,
+        "critical": 1
+      },
+      "metrics": {
+        "avgR2": 0.932,
+        "avgMAE_kW": 3.1,
+        "soilingRatio": 0.962,
+        "healthScore": 87
+      },
+      "dataRange": {
+        "start": "2024-01-01",
+        "end": "2026-04-17"
+      },
+      "lastUpdated": "2026-04-17T12:25:46.950Z",
+      "financials": {
+        "ppa_price_per_MWh": 58,
+        "budget_generation_MWh": 66400,
+        "actual_generation_MWh": 65536.8,
+        "budget_deviation_pct": -1.2,
+        "annual_opex_eur": 810000,
+        "soiling_loss_eur": 68200,
+        "fault_loss_eur": 74300,
+        "degradation_loss_eur": 18500,
+        "curtailment_loss_eur": 0,
+        "total_loss_eur": 161000,
+        "availability_pct": 99.2,
+        "performance_ratio": 0.839,
+        "revenue_at_risk_eur": 142500,
+        "annual_revenue_eur": 3850000,
+        "ytd_revenue_eur": 1480000
+      },
+      "riskScore": {
+        "overall": 34,
+        "components": {
+          "health": 22,
+          "soiling": 35,
+          "fault_frequency": 52,
+          "budget_deviation": 10,
+          "availability": 8
+        },
+        "trend": "stable",
+        "level": "medium"
+      },
+      "monthlyGeneration": [
+        {
+          "month": "Jan",
+          "budget_MWh": 14255,
+          "actual_MWh": 13115,
+          "deviation_pct": -8
+        },
+        {
+          "month": "Feb",
+          "budget_MWh": 18470,
+          "actual_MWh": 17547,
+          "deviation_pct": -5
+        },
+        {
+          "month": "Mar",
+          "budget_MWh": 25595,
+          "actual_MWh": 23803,
+          "deviation_pct": -7
+        },
+        {
+          "month": "Apr",
+          "budget_MWh": 30455,
+          "actual_MWh": 27714,
+          "deviation_pct": -9
+        },
+        {
+          "month": "May",
+          "budget_MWh": 35315,
+          "actual_MWh": 33549,
+          "deviation_pct": -5
+        },
+        {
+          "month": "Jun",
+          "budget_MWh": 39850,
+          "actual_MWh": 36662,
+          "deviation_pct": -8
+        },
+        {
+          "month": "Jul",
+          "budget_MWh": 41470,
+          "actual_MWh": 37323,
+          "deviation_pct": -10
+        },
+        {
+          "month": "Aug",
+          "budget_MWh": 38230,
+          "actual_MWh": 34789,
+          "deviation_pct": -9
+        },
+        {
+          "month": "Sep",
+          "budget_MWh": 31430,
+          "actual_MWh": 28287,
+          "deviation_pct": -10
+        },
+        {
+          "month": "Oct",
+          "budget_MWh": 24000,
+          "actual_MWh": 22080,
+          "deviation_pct": -8
+        },
+        {
+          "month": "Nov",
+          "budget_MWh": 17500,
+          "actual_MWh": 15750,
+          "deviation_pct": -10
+        },
+        {
+          "month": "Dec",
+          "budget_MWh": 14500,
+          "actual_MWh": 13630,
+          "deviation_pct": -6
+        }
+      ]
+    },
+    {
+      "plantId": "zephyr",
+      "plantName": "Zephyr Wind",
+      "assetType": "WIND",
+      "location": "Northern Europe",
+      "capacity_MW": 20,
+      "totalInverters": 0,
+      "turbineCount": 10,
+      "turbineModel": "Generic 2.0 MW onshore",
+      "status": "operational",
+      "healthDistribution": {
+        "normal": 8,
+        "minorIssues": 1,
+        "majorIssues": 1,
+        "critical": 0
+      },
+      "metrics": {
+        "soilingRatio": null,
+        "healthScore": 92,
+        "availability": 97.8,
+        "capacityFactor": 0.36
+      },
+      "dataRange": {
+        "start": "2024-01-01",
+        "end": "2026-04-17"
+      },
+      "lastUpdated": "2026-04-17T12:25:46.950Z",
+      "financials": {
+        "ppa_price_per_MWh": 45,
+        "budget_generation_MWh": 63100,
+        "actual_generation_MWh": 61700,
+        "budget_deviation_pct": 0.8,
+        "annual_opex_eur": 420000,
+        "soiling_loss_eur": 0,
+        "fault_loss_eur": 48900,
+        "degradation_loss_eur": 6200,
+        "curtailment_loss_eur": 12400,
+        "total_loss_eur": 67500,
+        "availability_pct": 97.8,
+        "performance_ratio": 0.912,
+        "revenue_at_risk_eur": 48900,
+        "annual_revenue_eur": 2100000,
+        "ytd_revenue_eur": 810000
+      },
+      "riskScore": {
+        "overall": 22,
+        "components": {
+          "health": 12,
+          "soiling": 0,
+          "fault_frequency": 38,
+          "budget_deviation": 5,
+          "availability": 22
+        },
+        "trend": "stable",
+        "level": "low"
+      },
+      "monthlyGeneration": [
+        {
+          "month": "Jan",
+          "budget_MWh": 6336,
+          "actual_MWh": 5702,
+          "deviation_pct": -10
+        },
+        {
+          "month": "Feb",
+          "budget_MWh": 8209,
+          "actual_MWh": 7799,
+          "deviation_pct": -5
+        },
+        {
+          "month": "Mar",
+          "budget_MWh": 11376,
+          "actual_MWh": 10693,
+          "deviation_pct": -6
+        },
+        {
+          "month": "Apr",
+          "budget_MWh": 13536,
+          "actual_MWh": 12588,
+          "deviation_pct": -7
+        },
+        {
+          "month": "May",
+          "budget_MWh": 15696,
+          "actual_MWh": 14440,
+          "deviation_pct": -8
+        },
+        {
+          "month": "Jun",
+          "budget_MWh": 17711,
+          "actual_MWh": 16471,
+          "deviation_pct": -7
+        },
+        {
+          "month": "Jul",
+          "budget_MWh": 18431,
+          "actual_MWh": 17509,
+          "deviation_pct": -5
+        },
+        {
+          "month": "Aug",
+          "budget_MWh": 16991,
+          "actual_MWh": 15462,
+          "deviation_pct": -9
+        },
+        {
+          "month": "Sep",
+          "budget_MWh": 13969,
+          "actual_MWh": 12991,
+          "deviation_pct": -7
+        },
+        {
+          "month": "Oct",
+          "budget_MWh": 10667,
+          "actual_MWh": 9920,
+          "deviation_pct": -7
+        },
+        {
+          "month": "Nov",
+          "budget_MWh": 7778,
+          "actual_MWh": 7000,
+          "deviation_pct": -10
+        },
+        {
+          "month": "Dec",
+          "budget_MWh": 6444,
+          "actual_MWh": 6122,
+          "deviation_pct": -5
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "totalPlants": 2,
+    "operationalPlants": 2,
+    "totalCapacity_MW": 65,
+    "byAssetType": {
+      "SOLAR": 1,
+      "WIND": 1
+    },
+    "totalInverters": 10,
+    "totalTurbines": 10,
+    "criticalIssues": 1,
+    "majorIssues": 5,
+    "topPerformers": [
+      "Zephyr Wind"
+    ],
+    "needsAttention": [
+      "Helios PV"
+    ],
+    "financials": {
+      "total_capacity_MW": 65,
+      "total_budget_generation_MWh": 129500,
+      "total_actual_generation_MWh": 127236.8,
+      "overall_budget_deviation_pct": -0.5,
+      "total_annual_revenue_eur": 5950000,
+      "total_ytd_revenue_eur": 2290000,
+      "total_revenue_at_risk_eur": 191400,
+      "total_soiling_loss_eur": 68200,
+      "total_fault_loss_eur": 123200,
+      "total_degradation_loss_eur": 24700,
+      "total_curtailment_loss_eur": 12400,
+      "total_opex_eur": 1230000,
+      "portfolio_risk_score": 28,
+      "portfolio_risk_level": "medium"
+    }
+  }
+}

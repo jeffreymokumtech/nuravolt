@@ -1,0 +1,188 @@
+{
+ "help": "https://api.neso.energy/api/3/action/help_show?name=datastore_search",
+ "success": true,
+ "result": {
+  "include_total": true,
+  "resource_id": "3c51a666-1c33-450e-a6eb-c9b4a0c91584",
+  "fields": [
+   {
+    "type": "int",
+    "id": "_id"
+   },
+   {
+    "info": {
+     "comment": "MANDATORY\t\t",
+     "description": "Unique auction identifier. All products auctioned in the same market \t\t",
+     "title": "auctionID\t\t",
+     "type": "integer",
+     "example": "144\t\t",
+     "unit": "N/A"
+    },
+    "type": "int4",
+    "id": "auctionID"
+   },
+   {
+    "info": {
+     "comment": "MANDATORY\t\t",
+     "description": "Service Type Identifier \u2013 \r\n[DCH,DCL,DMH,DML,DRH,DRL,NSR,PSR,NQR,PQR]",
+     "title": "auctionProduct\t\t",
+     "type": "string",
+     "example": "Dynamic Containment LF\t\t",
+     "unit": "N/A"
+    },
+    "type": "text",
+    "id": "auctionProduct"
+   },
+   {
+    "info": {
+     "comment": "MANDATORY\t\t",
+     "description": "Service Type Identifier - [Response, Quick Reserve or Slow Reserve]\t\t",
+     "title": "serviceType\t\t",
+     "type": "string",
+     "example": "Response\t\t",
+     "unit": "N/A"
+    },
+    "type": "text",
+    "id": "serviceType"
+   },
+   {
+    "info": {
+     "comment": "MANDATORY\t\t",
+     "description": "The time from which delivery of the Auction Product will commence\t\t",
+     "title": "deliveryStart\t\t",
+     "type": "datetime",
+     "example": "2023-06-19T13:30:00Z\t\t",
+     "unit": "N/A"
+    },
+    "type": "timestamp",
+    "id": "deliveryStart"
+   },
+   {
+    "info": {
+     "comment": "MANDATORY\t\t",
+     "description": "The time from which delivery of the Auction Product will end \t\t",
+     "title": "deliveryEnd\t\t",
+     "type": "datetime",
+     "example": "2023-06-19T17:30:00Z\t\t",
+     "unit": "N/A"
+    },
+    "type": "timestamp",
+    "id": "deliveryEnd"
+   },
+   {
+    "info": {
+     "comment": "MANDATORY\t\t",
+     "description": "The volume of the Auction Product that was accepted at the clearing price\t\t",
+     "title": "clearedVolume\t\t",
+     "type": "number",
+     "example": "0\t\t",
+     "unit": "MW\t\t"
+    },
+    "type": "numeric",
+    "id": "clearedVolume"
+   },
+   {
+    "info": {
+     "comment": "MANDATORY\t\t",
+     "description": "The cleared price per MW per hour (\u00a3/MW/h) \t\t",
+     "title": "clearingPrice\t\t",
+     "type": "number",
+     "example": "100\t\t",
+     "unit": "\u00a3/MW/h\t\t"
+    },
+    "type": "numeric",
+    "id": "clearingPrice"
+   },
+   {
+    "info": {
+     "comment": "Optional\t\t",
+     "description": "The linked service window ID indicates, which service windows for a specific service (.e.g PQR or NQR) have been linked together to ensure consistency for particular periods of time. \t\t",
+     "title": "linkedServiceWindowID\t\t",
+     "type": "integer",
+     "example": "1\t\t",
+     "unit": "N/A\t\t"
+    },
+    "type": "int4",
+    "id": "linkedServiceWindowID"
+   }
+  ],
+  "records_format": "objects",
+  "records": [
+   {
+    "_id": 1,
+    "auctionID": 2794,
+    "auctionProduct": "DRH",
+    "serviceType": "Response",
+    "deliveryStart": "2026-07-28T22:00:00",
+    "deliveryEnd": "2026-07-29T02:00:00",
+    "clearedVolume": 500,
+    "clearingPrice": -14.29,
+    "linkedServiceWindowID": null
+   },
+   {
+    "_id": 2,
+    "auctionID": 2794,
+    "auctionProduct": "DRH",
+    "serviceType": "Response",
+    "deliveryStart": "2026-07-29T02:00:00",
+    "deliveryEnd": "2026-07-29T06:00:00",
+    "clearedVolume": 500,
+    "clearingPrice": -15.76,
+    "linkedServiceWindowID": null
+   },
+   {
+    "_id": 3,
+    "auctionID": 2794,
+    "auctionProduct": "DRH",
+    "serviceType": "Response",
+    "deliveryStart": "2026-07-29T06:00:00",
+    "deliveryEnd": "2026-07-29T10:00:00",
+    "clearedVolume": 500,
+    "clearingPrice": -15.36,
+    "linkedServiceWindowID": null
+   },
+   {
+    "_id": 4,
+    "auctionID": 2794,
+    "auctionProduct": "DRH",
+    "serviceType": "Response",
+    "deliveryStart": "2026-07-29T10:00:00",
+    "deliveryEnd": "2026-07-29T14:00:00",
+    "clearedVolume": 500,
+    "clearingPrice": -12.37,
+    "linkedServiceWindowID": null
+   },
+   {
+    "_id": 5,
+    "auctionID": 2794,
+    "auctionProduct": "DRH",
+    "serviceType": "Response",
+    "deliveryStart": "2026-07-29T14:00:00",
+    "deliveryEnd": "2026-07-29T18:00:00",
+    "clearedVolume": 500,
+    "clearingPrice": -9.24,
+    "linkedServiceWindowID": null
+   },
+   {
+    "_id": 6,
+    "auctionID": 2794,
+    "auctionProduct": "DRH",
+    "serviceType": "Response",
+    "deliveryStart": "2026-07-29T18:00:00",
+    "deliveryEnd": "2026-07-29T22:00:00",
+    "clearedVolume": 500,
+    "clearingPrice": -19.0,
+    "linkedServiceWindowID": null
+   }
+  ],
+  "limit": 200,
+  "filters": {
+   "auctionProduct": "DRH"
+  },
+  "_links": {
+   "start": "/api/3/action/datastore_search?limit=200&filters=%7B%22auctionProduct%22%3A%22DRH%22%7D&resource_id=3c51a666-1c33-450e-a6eb-c9b4a0c91584",
+   "next": "/api/3/action/datastore_search?offset=200&limit=200&filters=%7B%22auctionProduct%22%3A%22DRH%22%7D&resource_id=3c51a666-1c33-450e-a6eb-c9b4a0c91584"
+  },
+  "total": 6
+ }
+}

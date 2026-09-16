@@ -1,0 +1,15 @@
+{
+  "schedule_date": "2026-02-04",
+  "horizon_hours": 24,
+  "resolution_minutes": 60,
+  "charge_schedule_kw": [0, 0, 0, 0, 0, 0, 0, 0, 0, -250, -450, -500, -450, -200, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  "discharge_schedule_kw": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 250, 450, 500, 450, 200, 0, 0],
+  "soc_schedule": [0.20, 0.20, 0.20, 0.20, 0.20, 0.20, 0.20, 0.20, 0.20, 0.20, 0.27, 0.41, 0.56, 0.69, 0.75, 0.75, 0.75, 0.75, 0.67, 0.53, 0.38, 0.23, 0.17, 0.17],
+  "price_forecast": [42, 38, 35, 32, 33, 36, 42, 55, 62, 45, 32, 25, 22, 28, 40, 52, 65, 78, 88, 92, 85, 72, 55, 45],
+  "expected_revenue_eur": 104.10,
+  "degradation_cost_eur": 18.0,
+  "net_revenue_eur": 86.10,
+  "optimizer_type": "degradation_aware_greedy",
+  "status": "optimal",
+  "expected_cycles": 0.58
+}

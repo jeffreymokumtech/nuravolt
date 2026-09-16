@@ -1,0 +1,431 @@
+{
+  "plant_id": "gamma",
+  "generated_at": "2025-01-15T10:00:00.000000",
+  "summary": {
+    "current_loss_kwh": 170.7,
+    "projected_loss_kwh": 850.0,
+    "current_loss_value": 20.5,
+    "projected_loss_value": 102.0,
+    "currency": "EUR",
+    "reactive_count": 2,
+    "predictive_count": 3,
+    "critical_count": 0,
+    "urgent_count": 0,
+    "soon_count": 1,
+    "planned_count": 2,
+    "monitoring_count": 0
+  },
+  "health_score": {
+    "value": 87,
+    "status": "healthy",
+    "anomaly_penalty": 5,
+    "fault_penalty": 3,
+    "rul_penalty": 5,
+    "trend": "stable"
+  },
+  "rul_predictions": [
+    {
+      "fault_type": "module_degradation",
+      "display_name": "Module Degradation",
+      "inverter_id": "PV-01.003",
+      "days_to_fault": 5,
+      "confidence": 0.82,
+      "current_value": 0.72,
+      "threshold": 0.75,
+      "unit": "PR",
+      "trend": -0.0045,
+      "is_urgent": false,
+      "urgency": "soon",
+      "recommended_action": "Schedule module inspection. Check for PID, delamination, or hotspots. Consider I-V curve testing.",
+      "repair_cost_eur": 1200,
+      "revenue_at_risk_eur": 85,
+      "classification_layer": "ML_CLASSIFIER",
+      "evidence": "CatBoost classifier: module degradation @ 82% probability, trend -0.45%/d (improving), ~5d to fault",
+      "numeric_evidence": {
+        "model_probability": 0.82,
+        "days_to_fault": 5,
+        "trend_per_day": -0.0045
+      },
+      "winner_reason": "highest confidence (0.82) via ML_CLASSIFIER",
+      "layer_chain": [
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "module_degradation",
+          "confidence": 0.492,
+          "evidence": "digital twin residual 0.03PR below expected; actual 0.72 vs twin band \u00b10.75",
+          "severity": "warning"
+        },
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "module_degradation",
+          "confidence": 0.82,
+          "evidence": "CatBoost classifier: module degradation @ 82% probability, trend -0.45%/d (improving), ~5d to fault",
+          "severity": "warning"
+        }
+      ],
+      "severity": "warning",
+      "asset_type": "PV_INVERTER",
+      "cascade_winning_confidence": 0.82
+    },
+    {
+      "fault_type": "string_degradation",
+      "display_name": "String Degradation",
+      "inverter_id": "PV-02.001",
+      "days_to_fault": 12,
+      "confidence": 0.78,
+      "current_value": 0.22,
+      "threshold": 0.25,
+      "unit": "CV",
+      "trend": 0.0028,
+      "is_urgent": false,
+      "urgency": "planned",
+      "recommended_action": "Inspect string connections for corrosion or loose terminals. Check for damaged cables.",
+      "repair_cost_eur": 650,
+      "revenue_at_risk_eur": 120,
+      "classification_layer": "ML_CLASSIFIER",
+      "evidence": "CatBoost classifier: string degradation @ 78% probability, trend +0.28%/d (worsening), ~12d to fault",
+      "numeric_evidence": {
+        "model_probability": 0.78,
+        "days_to_fault": 12,
+        "trend_per_day": 0.0028
+      },
+      "winner_reason": "highest confidence (0.78) via ML_CLASSIFIER",
+      "layer_chain": [
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "string_degradation",
+          "confidence": 0.476,
+          "evidence": "digital twin residual 0.03CV below expected; actual 0.22 vs twin band \u00b10.25",
+          "severity": "warning"
+        },
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "string_degradation",
+          "confidence": 0.78,
+          "evidence": "CatBoost classifier: string degradation @ 78% probability, trend +0.28%/d (worsening), ~12d to fault",
+          "severity": "warning"
+        }
+      ],
+      "severity": "warning",
+      "asset_type": "PV_STRING",
+      "cascade_winning_confidence": 0.78
+    },
+    {
+      "fault_type": "mismatch",
+      "display_name": "String Mismatch",
+      "inverter_id": "PV-01.005",
+      "days_to_fault": 18,
+      "confidence": 0.72,
+      "current_value": 0.8,
+      "threshold": 0.85,
+      "unit": "ratio",
+      "trend": -0.0018,
+      "is_urgent": false,
+      "urgency": "planned",
+      "recommended_action": "Check string voltage/current balance. Look for shading, soiling patterns, or module degradation differences.",
+      "repair_cost_eur": 580,
+      "revenue_at_risk_eur": 95,
+      "classification_layer": "ML_CLASSIFIER",
+      "evidence": "CatBoost classifier: mismatch @ 72% probability, trend -0.18%/d (improving), ~18d to fault",
+      "numeric_evidence": {
+        "model_probability": 0.72,
+        "days_to_fault": 18,
+        "trend_per_day": -0.0018
+      },
+      "winner_reason": "highest confidence (0.72) via ML_CLASSIFIER",
+      "layer_chain": [
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "mismatch",
+          "confidence": 0.488,
+          "evidence": "digital twin residual 0.05ratio below expected; actual 0.80 vs twin band \u00b10.85",
+          "severity": "warning"
+        },
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "mismatch",
+          "confidence": 0.72,
+          "evidence": "CatBoost classifier: mismatch @ 72% probability, trend -0.18%/d (improving), ~18d to fault",
+          "severity": "warning"
+        }
+      ],
+      "severity": "warning",
+      "asset_type": "PV_STRING",
+      "cascade_winning_confidence": 0.72
+    }
+  ],
+  "urgency_summary": {
+    "urgent": {
+      "count": 0,
+      "total_revenue_at_risk_eur": 0
+    },
+    "soon": {
+      "count": 1,
+      "total_revenue_at_risk_eur": 85
+    },
+    "planned": {
+      "count": 2,
+      "total_revenue_at_risk_eur": 215
+    },
+    "monitoring": {
+      "count": 0,
+      "total_revenue_at_risk_eur": 0
+    }
+  },
+  "maintenance_schedule": {
+    "next_7_days": [
+      {
+        "date": "2025-01-15",
+        "tasks": []
+      },
+      {
+        "date": "2025-01-16",
+        "tasks": []
+      },
+      {
+        "date": "2025-01-17",
+        "tasks": []
+      },
+      {
+        "date": "2025-01-18",
+        "tasks": []
+      },
+      {
+        "date": "2025-01-19",
+        "tasks": []
+      },
+      {
+        "date": "2025-01-20",
+        "tasks": [
+          {
+            "fault_type": "module_degradation",
+            "inverter_id": "PV-01.003",
+            "priority_score": 78.0
+          }
+        ]
+      },
+      {
+        "date": "2025-01-21",
+        "tasks": [
+          {
+            "fault_type": "module_degradation",
+            "inverter_id": "PV-01.003",
+            "priority_score": 78.0
+          }
+        ]
+      }
+    ],
+    "total_repair_cost_eur": 2430,
+    "total_revenue_saved_eur": 300,
+    "roi_pct": 12.3
+  },
+  "loss_disaggregation": {
+    "reference_energy_kwh": 1850000,
+    "net_energy_kwh": 1765420.0,
+    "losses": {
+      "soiling": {
+        "kwh": 35150.0,
+        "pct": 1.9
+      },
+      "temperature": {
+        "kwh": 22200.0,
+        "pct": 1.2
+      },
+      "spectral": {
+        "kwh": 7400.0,
+        "pct": 0.4
+      },
+      "inverter": {
+        "kwh": 11100.0,
+        "pct": 0.6
+      },
+      "wiring_bop": {
+        "kwh": 3700.0,
+        "pct": 0.2
+      },
+      "degradation": {
+        "kwh": 3700.0,
+        "pct": 0.2
+      },
+      "curtailment": {
+        "kwh": 1330.0,
+        "pct": 0.07
+      }
+    }
+  },
+  "reactive_faults": [
+    {
+      "id": "RF-0001",
+      "fault_type": "inverter_efficiency_degradation",
+      "severity": "warning",
+      "equipment_id": "PV-01.003",
+      "equipment_name": "PV-01.003",
+      "timestamp_start": "2025-01-12T14:30:00",
+      "timestamp_end": null,
+      "value": 0.92,
+      "threshold": 1.0,
+      "message": "Inverter showing 8% lower output than expected",
+      "duration_minutes": 180,
+      "power_loss_kw": 0.42,
+      "energy_loss_kwh": 125.5
+    },
+    {
+      "id": "RF-0002",
+      "fault_type": "string_mismatch_coarse",
+      "severity": "info",
+      "equipment_id": "PV-02.001",
+      "equipment_name": "PV-02.001",
+      "timestamp_start": "2025-01-10T09:15:00",
+      "timestamp_end": "2025-01-10T16:45:00",
+      "value": 0.95,
+      "threshold": 1.0,
+      "message": "String current deviation detected",
+      "duration_minutes": 450,
+      "power_loss_kw": 0.15,
+      "energy_loss_kwh": 45.2
+    }
+  ],
+  "predictive_faults": [
+    {
+      "id": "PF-0001",
+      "fault_type": "module_degradation",
+      "display_name": "Module Degradation",
+      "urgency": "soon",
+      "equipment_id": "PV-01.003",
+      "equipment_name": "PV-01.003",
+      "days_to_fault": 5,
+      "confidence": 0.82,
+      "current_value": 0.72,
+      "threshold": 0.75,
+      "unit": "PR",
+      "recommended_action": "Schedule module inspection. Check for PID, delamination, or hotspots. Consider I-V curve testing.",
+      "estimated_date": "2025-01-20T10:00:00",
+      "projected_power_loss_kw": 0.85,
+      "projected_energy_loss_kwh": 350.0,
+      "classification_layer": "ML_CLASSIFIER",
+      "evidence": "CatBoost classifier: module degradation @ 82% probability, ~5d to fault",
+      "numeric_evidence": {
+        "model_probability": 0.82,
+        "days_to_fault": 5,
+        "trend_per_day": null
+      },
+      "winner_reason": "highest confidence (0.82) via ML_CLASSIFIER",
+      "layer_chain": [
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "module_degradation",
+          "confidence": 0.492,
+          "evidence": "digital twin residual 0.03PR below expected; actual 0.72 vs twin band \u00b10.75",
+          "severity": "warning"
+        },
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "module_degradation",
+          "confidence": 0.82,
+          "evidence": "CatBoost classifier: module degradation @ 82% probability, ~5d to fault",
+          "severity": "warning"
+        }
+      ],
+      "severity": "warning",
+      "asset_type": "PV_INVERTER",
+      "cascade_winning_confidence": 0.82
+    },
+    {
+      "id": "PF-0002",
+      "fault_type": "string_degradation",
+      "display_name": "String Degradation",
+      "urgency": "planned",
+      "equipment_id": "PV-02.001",
+      "equipment_name": "PV-02.001",
+      "days_to_fault": 12,
+      "confidence": 0.78,
+      "current_value": 0.22,
+      "threshold": 0.25,
+      "unit": "CV",
+      "recommended_action": "Inspect string connections for corrosion or loose terminals. Check for damaged cables.",
+      "estimated_date": "2025-01-27T10:00:00",
+      "projected_power_loss_kw": 0.65,
+      "projected_energy_loss_kwh": 280.0,
+      "classification_layer": "ML_CLASSIFIER",
+      "evidence": "CatBoost classifier: string degradation @ 78% probability, ~12d to fault",
+      "numeric_evidence": {
+        "model_probability": 0.78,
+        "days_to_fault": 12,
+        "trend_per_day": null
+      },
+      "winner_reason": "highest confidence (0.78) via ML_CLASSIFIER",
+      "layer_chain": [
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "string_degradation",
+          "confidence": 0.476,
+          "evidence": "digital twin residual 0.03CV below expected; actual 0.22 vs twin band \u00b10.25",
+          "severity": "warning"
+        },
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "string_degradation",
+          "confidence": 0.78,
+          "evidence": "CatBoost classifier: string degradation @ 78% probability, ~12d to fault",
+          "severity": "warning"
+        }
+      ],
+      "severity": "warning",
+      "asset_type": "PV_STRING",
+      "cascade_winning_confidence": 0.78
+    },
+    {
+      "id": "PF-0003",
+      "fault_type": "mismatch",
+      "display_name": "String Mismatch",
+      "urgency": "planned",
+      "equipment_id": "PV-01.005",
+      "equipment_name": "PV-01.005",
+      "days_to_fault": 18,
+      "confidence": 0.72,
+      "current_value": 0.8,
+      "threshold": 0.85,
+      "unit": "ratio",
+      "recommended_action": "Check string voltage/current balance. Look for shading, soiling patterns, or module degradation differences.",
+      "estimated_date": "2025-02-02T10:00:00",
+      "projected_power_loss_kw": 0.48,
+      "projected_energy_loss_kwh": 220.0,
+      "classification_layer": "ML_CLASSIFIER",
+      "evidence": "CatBoost classifier: mismatch @ 72% probability, ~18d to fault",
+      "numeric_evidence": {
+        "model_probability": 0.72,
+        "days_to_fault": 18,
+        "trend_per_day": null
+      },
+      "winner_reason": "highest confidence (0.72) via ML_CLASSIFIER",
+      "layer_chain": [
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "mismatch",
+          "confidence": 0.488,
+          "evidence": "digital twin residual 0.05ratio below expected; actual 0.80 vs twin band \u00b10.85",
+          "severity": "warning"
+        },
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "mismatch",
+          "confidence": 0.72,
+          "evidence": "CatBoost classifier: mismatch @ 72% probability, ~18d to fault",
+          "severity": "warning"
+        }
+      ],
+      "severity": "warning",
+      "asset_type": "PV_STRING",
+      "cascade_winning_confidence": 0.72
+    }
+  ],
+  "cascade_summary": {
+    "rows_classified": 6,
+    "layer_distribution": {
+      "ML_CLASSIFIER": 6
+    },
+    "ai_overrides": 0,
+    "ai_override_rate": 0.0
+  },
+  "cascade_generated_at": "2026-06-19T15:08:13.105541"
+}

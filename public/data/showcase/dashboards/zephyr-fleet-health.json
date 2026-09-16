@@ -1,0 +1,63 @@
+{
+  "id": "zephyr-fleet-health",
+  "title": "Zephyr Wind — Fleet Health",
+  "subtitle": "Turbine-by-turbine health, power curve drift, and remaining useful life.",
+  "scope": "Zephyr Wind · 10 turbines · 2026-03-17 to 2026-04-16",
+  "generated_at": "2026-04-16T08:00:00.000Z",
+  "tiles": [
+    {
+      "title": "Fleet Availability",
+      "metric": "97.8",
+      "unit": "%",
+      "note": "Excludes contracted maintenance windows."
+    },
+    {
+      "title": "Fleet Health Score",
+      "metric": "92",
+      "unit": "/100",
+      "note": "Composite of vibration, temperature, and power-curve signals."
+    },
+    {
+      "title": "Power Curve Deviation",
+      "series": [
+        { "label": "WTG-01", "value": -0.8 },
+        { "label": "WTG-02", "value": 0.3 },
+        { "label": "WTG-03", "value": -1.5 },
+        { "label": "WTG-04", "value": -3.7 },
+        { "label": "WTG-05", "value": -0.1 },
+        { "label": "WTG-06", "value": -2.1 },
+        { "label": "WTG-07", "value": -0.4 },
+        { "label": "WTG-08", "value": -4.2 },
+        { "label": "WTG-09", "value": -0.9 },
+        { "label": "WTG-10", "value": -1.3 }
+      ],
+      "note": "Mean deviation from rated curve (%). WTG-08 flagged for inspection."
+    },
+    {
+      "title": "RUL — Gearboxes",
+      "series": [
+        { "label": "WTG-01", "value": 38.0 },
+        { "label": "WTG-02", "value": 42.0 },
+        { "label": "WTG-03", "value": 29.0 },
+        { "label": "WTG-04", "value": 18.0 },
+        { "label": "WTG-05", "value": 45.0 },
+        { "label": "WTG-06", "value": 24.0 },
+        { "label": "WTG-07", "value": 41.0 },
+        { "label": "WTG-08", "value": 12.0 },
+        { "label": "WTG-09", "value": 36.0 },
+        { "label": "WTG-10", "value": 33.0 }
+      ],
+      "note": "Remaining useful life estimate (months). WTG-08 priority replacement."
+    },
+    {
+      "title": "Predictive Alerts (30d)",
+      "metric": "6",
+      "note": "2 critical, 1 high, 3 medium. All captured by condition-monitoring ML."
+    },
+    {
+      "title": "Revenue at Risk",
+      "metric": "€48.9k",
+      "note": "Projected 90-day exposure if WTG-08 not addressed."
+    }
+  ]
+}

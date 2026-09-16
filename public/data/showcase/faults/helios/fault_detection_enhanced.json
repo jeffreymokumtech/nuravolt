@@ -1,0 +1,110 @@
+{
+  "plant_id": "helios",
+  "generated_at": "2026-04-17T12:25:46.798Z",
+  "summary": {
+    "current_loss_kwh": 24576,
+    "projected_loss_kwh": 4800,
+    "current_loss_value": 1425,
+    "projected_loss_value": 278,
+    "currency": "EUR",
+    "reactive_count": 3,
+    "predictive_count": 2,
+    "critical_count": 1,
+    "urgent_count": 1,
+    "soon_count": 1,
+    "planned_count": 2,
+    "monitoring_count": 1
+  },
+  "health_score": {
+    "value": 87,
+    "status": "attention_needed",
+    "anomaly_penalty": 4,
+    "fault_penalty": 6,
+    "rul_penalty": 3,
+    "trend": "stable"
+  },
+  "urgency_summary": {
+    "urgent": {
+      "count": 1,
+      "total_revenue_at_risk_eur": 2160
+    },
+    "soon": {
+      "count": 1,
+      "total_revenue_at_risk_eur": 1440
+    },
+    "planned": {
+      "count": 2,
+      "total_revenue_at_risk_eur": 1740
+    },
+    "monitoring": {
+      "count": 1,
+      "total_revenue_at_risk_eur": 950
+    }
+  },
+  "rul_predictions": [
+    {
+      "fault_type": "inverter_efficiency_degradation",
+      "display_name": "Inverter efficiency drift",
+      "inverter_id": "INV 04.100",
+      "days_to_fault": 42,
+      "confidence": 0.78,
+      "current_value": 1.34,
+      "threshold": 2.0,
+      "unit": "% drop vs nameplate",
+      "trend": 0.0023,
+      "is_urgent": false,
+      "urgency": "planned",
+      "recommended_action": "Plan into next quarterly maintenance round. Continue monitoring trend monthly.",
+      "repair_cost_eur": 4200,
+      "revenue_at_risk_eur": 1200
+    },
+    {
+      "fault_type": "string_degradation",
+      "display_name": "String 1.2 degradation",
+      "inverter_id": "INV 01.032",
+      "days_to_fault": 120,
+      "confidence": 0.65,
+      "current_value": 0.46,
+      "threshold": 0.8,
+      "unit": "ohm\u00b7m drift",
+      "trend": 0.0012,
+      "is_urgent": false,
+      "urgency": "monitoring",
+      "recommended_action": "No action required. Re-evaluate at next scheduled health-score window.",
+      "repair_cost_eur": 680,
+      "revenue_at_risk_eur": 380
+    },
+    {
+      "fault_type": "mppt_imbalance",
+      "display_name": "MPPT-1 power imbalance",
+      "inverter_id": "INV 03.082",
+      "days_to_fault": 5,
+      "confidence": 0.72,
+      "current_value": 4.58,
+      "threshold": 5.0,
+      "unit": "pp imbalance",
+      "trend": 0.0047,
+      "is_urgent": false,
+      "urgency": "soon",
+      "recommended_action": "Schedule maintenance within the next dispatch window. Order replacement parts now.",
+      "repair_cost_eur": 1800,
+      "revenue_at_risk_eur": 1440
+    },
+    {
+      "fault_type": "string_degradation",
+      "display_name": "String 2.1 degradation",
+      "inverter_id": "INV 02.018",
+      "days_to_fault": 2,
+      "confidence": 0.81,
+      "current_value": 0.75,
+      "threshold": 0.8,
+      "unit": "ohm\u00b7m drift",
+      "trend": 0.0049,
+      "is_urgent": true,
+      "urgency": "urgent",
+      "recommended_action": "Replace component within 48h. Production loss compounding daily; spare part required on site.",
+      "repair_cost_eur": 680,
+      "revenue_at_risk_eur": 2160
+    }
+  ]
+}

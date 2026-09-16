@@ -1,0 +1,289 @@
+{
+  "dataset": "Spanish fleet daily-energy twin (walk-forward)",
+  "n_samples": 5847,
+  "n_windows": 248,
+  "normalizer": "mean_daily_energy_kwh",
+  "normalizer_value": 2651.266,
+  "nmae_pct": 9.31,
+  "nrmse_pct": 19.384,
+  "mbe_pct": 1.127,
+  "model": {
+    "label": "hybrid",
+    "nmae_pct": 9.31,
+    "nrmse_pct": 19.384,
+    "mbe_pct": 1.127,
+    "r2_footnote_only": 0.9638
+  },
+  "baselines": {
+    "irradiance_scaling": {
+      "label": "irradiance_scaling",
+      "nmae_pct": 8.507,
+      "nrmse_pct": 18.064,
+      "mbe_pct": 1.057,
+      "r2_footnote_only": 0.9686
+    }
+  },
+  "retention": {
+    "plants_in_fleet": 6
+  },
+  "extras": {
+    "per_plant": {
+      "gamma": {
+        "dataset": "gamma",
+        "n_samples": 884,
+        "n_windows": 32,
+        "normalizer": "mean_daily_energy_kwh",
+        "normalizer_value": 841.376,
+        "nmae_pct": 28.537,
+        "nrmse_pct": 36.511,
+        "mbe_pct": -27.655,
+        "model": {
+          "label": "hybrid",
+          "nmae_pct": 28.537,
+          "nrmse_pct": 36.511,
+          "mbe_pct": -27.655,
+          "r2_footnote_only": 0.0243
+        },
+        "baselines": {
+          "irradiance_scaling": {
+            "label": "irradiance_scaling",
+            "nmae_pct": 26.178,
+            "nrmse_pct": 32.35,
+            "mbe_pct": -25.078,
+            "r2_footnote_only": 0.2341
+          }
+        },
+        "retention": {
+          "n_raw_days": 1459,
+          "n_test_days": 884,
+          "note": "Source pipeline pre-filtered to days with mean irradiance above 100 W/m2, so winter is under-represented. No availability or clipping filter was applied upstream."
+        },
+        "extras": {},
+        "reference_baseline": "irradiance_scaling",
+        "reference_nmae_pct": 26.178,
+        "uplift_vs_reference_pct": -9.01,
+        "excluded_from_fleet": true,
+        "exclusion_reason": "Measured output level shifts mid-record (bias -27.8%), consistent with a capacity change or irradiance-sensor swap rather than twin error. Excluded from the fleet headline; its own row is still published."
+      },
+      "eta": {
+        "dataset": "eta",
+        "n_samples": 1012,
+        "n_windows": 39,
+        "normalizer": "mean_daily_energy_kwh",
+        "normalizer_value": 380.134,
+        "nmae_pct": 15.349,
+        "nrmse_pct": 34.506,
+        "mbe_pct": 11.205,
+        "model": {
+          "label": "hybrid",
+          "nmae_pct": 15.349,
+          "nrmse_pct": 34.506,
+          "mbe_pct": 11.205,
+          "r2_footnote_only": 0.2153
+        },
+        "baselines": {
+          "irradiance_scaling": {
+            "label": "irradiance_scaling",
+            "nmae_pct": 16.677,
+            "nrmse_pct": 35.374,
+            "mbe_pct": 9.625,
+            "r2_footnote_only": 0.1753
+          }
+        },
+        "retention": {
+          "n_raw_days": 1637,
+          "n_test_days": 1012,
+          "note": "Source pipeline pre-filtered to days with mean irradiance above 100 W/m2, so winter is under-represented. No availability or clipping filter was applied upstream."
+        },
+        "extras": {},
+        "reference_baseline": "irradiance_scaling",
+        "reference_nmae_pct": 16.677,
+        "uplift_vs_reference_pct": 7.96
+      },
+      "epsilon": {
+        "dataset": "epsilon",
+        "n_samples": 1575,
+        "n_windows": 87,
+        "normalizer": "mean_daily_energy_kwh",
+        "normalizer_value": 6458.614,
+        "nmae_pct": 7.978,
+        "nrmse_pct": 12.498,
+        "mbe_pct": -0.022,
+        "model": {
+          "label": "hybrid",
+          "nmae_pct": 7.978,
+          "nrmse_pct": 12.498,
+          "mbe_pct": -0.022,
+          "r2_footnote_only": 0.8708
+        },
+        "baselines": {
+          "irradiance_scaling": {
+            "label": "irradiance_scaling",
+            "nmae_pct": 7.244,
+            "nrmse_pct": 11.831,
+            "mbe_pct": 0.572,
+            "r2_footnote_only": 0.8842
+          }
+        },
+        "retention": {
+          "n_raw_days": 2069,
+          "n_test_days": 1575,
+          "note": "Source pipeline pre-filtered to days with mean irradiance above 100 W/m2, so winter is under-represented. No availability or clipping filter was applied upstream."
+        },
+        "extras": {},
+        "reference_baseline": "irradiance_scaling",
+        "reference_nmae_pct": 7.244,
+        "uplift_vs_reference_pct": -10.14
+      },
+      "alpha": {
+        "dataset": "alpha",
+        "n_samples": 972,
+        "n_windows": 37,
+        "normalizer": "mean_daily_energy_kwh",
+        "normalizer_value": 2262.764,
+        "nmae_pct": 12.404,
+        "nrmse_pct": 25.249,
+        "mbe_pct": 7.224,
+        "model": {
+          "label": "hybrid",
+          "nmae_pct": 12.404,
+          "nrmse_pct": 25.249,
+          "mbe_pct": 7.224,
+          "r2_footnote_only": 0.3498
+        },
+        "baselines": {
+          "irradiance_scaling": {
+            "label": "irradiance_scaling",
+            "nmae_pct": 11.573,
+            "nrmse_pct": 23.092,
+            "mbe_pct": 3.926,
+            "r2_footnote_only": 0.4561
+          }
+        },
+        "retention": {
+          "n_raw_days": 1526,
+          "n_test_days": 972,
+          "note": "Source pipeline pre-filtered to days with mean irradiance above 100 W/m2, so winter is under-represented. No availability or clipping filter was applied upstream."
+        },
+        "extras": {},
+        "reference_baseline": "irradiance_scaling",
+        "reference_nmae_pct": 11.573,
+        "uplift_vs_reference_pct": -7.18
+      },
+      "delta": {
+        "dataset": "delta",
+        "n_samples": 861,
+        "n_windows": 31,
+        "normalizer": "mean_daily_energy_kwh",
+        "normalizer_value": 680.854,
+        "nmae_pct": 6.287,
+        "nrmse_pct": 11.278,
+        "mbe_pct": 4.129,
+        "model": {
+          "label": "hybrid",
+          "nmae_pct": 6.287,
+          "nrmse_pct": 11.278,
+          "mbe_pct": 4.129,
+          "r2_footnote_only": 0.8599
+        },
+        "baselines": {
+          "irradiance_scaling": {
+            "label": "irradiance_scaling",
+            "nmae_pct": 4.482,
+            "nrmse_pct": 6.149,
+            "mbe_pct": 3.438,
+            "r2_footnote_only": 0.9584
+          }
+        },
+        "retention": {
+          "n_raw_days": 1487,
+          "n_test_days": 861,
+          "note": "Source pipeline pre-filtered to days with mean irradiance above 100 W/m2, so winter is under-represented. No availability or clipping filter was applied upstream."
+        },
+        "extras": {},
+        "reference_baseline": "irradiance_scaling",
+        "reference_nmae_pct": 4.482,
+        "uplift_vs_reference_pct": -40.3
+      },
+      "ribera": {
+        "dataset": "ribera",
+        "n_samples": 997,
+        "n_windows": 38,
+        "normalizer": "mean_daily_energy_kwh",
+        "normalizer_value": 1881.285,
+        "nmae_pct": 13.502,
+        "nrmse_pct": 22.44,
+        "mbe_pct": -2.921,
+        "model": {
+          "label": "hybrid",
+          "nmae_pct": 13.502,
+          "nrmse_pct": 22.44,
+          "mbe_pct": -2.921,
+          "r2_footnote_only": 0.4629
+        },
+        "baselines": {
+          "irradiance_scaling": {
+            "label": "irradiance_scaling",
+            "nmae_pct": 11.991,
+            "nrmse_pct": 19.606,
+            "mbe_pct": -2.381,
+            "r2_footnote_only": 0.59
+          }
+        },
+        "retention": {
+          "n_raw_days": 1659,
+          "n_test_days": 997,
+          "note": "Source pipeline pre-filtered to days with mean irradiance above 100 W/m2, so winter is under-represented. No availability or clipping filter was applied upstream."
+        },
+        "extras": {},
+        "reference_baseline": "irradiance_scaling",
+        "reference_nmae_pct": 11.991,
+        "uplift_vs_reference_pct": -12.6
+      },
+      "zeta": {
+        "dataset": "zeta",
+        "n_samples": 430,
+        "n_windows": 16,
+        "normalizer": "mean_daily_energy_kwh",
+        "normalizer_value": 659.72,
+        "nmae_pct": 3.431,
+        "nrmse_pct": 5.739,
+        "mbe_pct": 1.929,
+        "model": {
+          "label": "hybrid",
+          "nmae_pct": 3.431,
+          "nrmse_pct": 5.739,
+          "mbe_pct": 1.929,
+          "r2_footnote_only": 0.9674
+        },
+        "baselines": {
+          "irradiance_scaling": {
+            "label": "irradiance_scaling",
+            "nmae_pct": 4.252,
+            "nrmse_pct": 6.253,
+            "mbe_pct": 2.389,
+            "r2_footnote_only": 0.9613
+          }
+        },
+        "retention": {
+          "n_raw_days": 1117,
+          "n_test_days": 430,
+          "note": "Source pipeline pre-filtered to days with mean irradiance above 100 W/m2, so winter is under-represented. No availability or clipping filter was applied upstream."
+        },
+        "extras": {},
+        "reference_baseline": "irradiance_scaling",
+        "reference_nmae_pct": 4.252,
+        "uplift_vs_reference_pct": 19.3
+      }
+    },
+    "protocol": "Expanding 730-day train, 30-day test, 30-day step. Refit each window; score only the unseen window. The p_hybrid column in the source parquet is ignored because it was produced with a shuffled split.",
+    "exclusions": {
+      "gamma": "Measured output level shifts mid-record (bias -27.8%), consistent with a capacity change or irradiance-sensor swap rather than twin error. Excluded from the fleet headline; its own row is still published."
+    },
+    "baseline_definition": "irradiance_scaling = power proportional to irradiance, least-squares scale fitted on the training window only. This is NOT the PVWatts physics twin; it is a deliberately simple reference that the ML layer has to beat to justify its existence."
+  },
+  "reference_baseline": "irradiance_scaling",
+  "reference_nmae_pct": 8.507,
+  "uplift_vs_reference_pct": -9.44,
+  "generated_at": "2026-08-20T12:12:09.065240Z"
+}

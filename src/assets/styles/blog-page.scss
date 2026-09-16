@@ -1,0 +1,168 @@
+scss body {
+  font-family: "Inter", sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+.article {
+  h2.wp-block-heading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    &.has-large-font-size {
+      font-size: 1.2rem;
+    }
+  }
+  a {
+    color: #4099ff;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  p {
+    margin-bottom: 1rem;
+    a {
+      color: #4099ff;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  h3.wp-block-heading {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    a {
+      color: #4099ff;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  // code {
+  //   background-color: #e5e7eb;
+  //   padding: 0.25rem;
+  //   border-radius: 0.25rem;
+  // }
+  code {
+    @apply bg-[#0F1121] dark:bg-gray-500 text-white p-1 rounded-md;
+  }
+
+  figure.wp-block-image {
+    margin: 1.5rem 0;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+    }
+  }
+  // blockquote.wp-block-quote {
+  //   background-color: #ffffff;
+  //   padding: 1rem;
+  //   border-radius: 0.5rem;
+  //   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  //   margin-bottom: 1.5rem;
+  //   p {
+  //     margin: 0;
+  //   }
+  // }
+
+  blockquote.wp-block-quote {
+    background-color: #1e293b; // Matching the background color from the image
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #3b82f6; // Adding the blue border on the left
+
+    p {
+      margin: 0;
+      @apply text-white p-1 rounded-md;
+    }
+  }
+  ul.wp-block-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+  .wp-block-embed {
+    margin: 1.5rem 0;
+    &__wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      background: #000;
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    }
+  }
+  .schema-faq {
+    margin-top: 2rem;
+    color: black;
+    display: none;
+    .schema-faq-section {
+      background-color: #ffffff;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+      margin-bottom: 1rem;
+      position: relative;
+      input {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+        &:checked + label + .schema-faq-answer {
+          max-height: 1000px; /* large enough to fit the content */
+          padding: 1rem 0;
+        }
+      }
+      label {
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &::after {
+          content: "\f078"; /* FontAwesome down arrow */
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          transition: transform 0.3s ease;
+        }
+      }
+      .schema-faq-answer {
+        // max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        padding: 0;
+      }
+      input:checked + label::after {
+        transform: rotate(180deg);
+      }
+      input:checked + label + .schema-faq-answer {
+        max-height: 1000px;
+        padding: 1rem 0;
+      }
+    }
+  }
+}
+
+#blog-detail-faq > div:first-child {
+  margin: 0;
+  > div:first-child {
+    padding: 0;
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "plant_id": "eta",
+  "trained_at": "2025-12-29T09:22:12.949886",
+  "metrics": {
+    "r2": 0.3164,
+    "mae_kW": 0.13,
+    "rmse_kW": 0.2,
+    "mape_pct": 82.98,
+    "physics_r2": -9940.6452,
+    "physics_mae_kW": 21.0,
+    "ml_r2": 0.9997,
+    "ml_mae_kW": 0.13,
+    "trainingSamples": 50356,
+    "validationSamples": 12589,
+    "trainingTime_s": 2.99,
+    "calibrationFactor": 1.0
+  }
+}

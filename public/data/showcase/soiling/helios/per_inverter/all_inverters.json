@@ -1,0 +1,149 @@
+{
+  "metadata": {
+    "plant_id": "helios",
+    "generated_at": "2025-12-16T16:06:55.003380",
+    "total_inverters": 10
+  },
+  "inverters": [
+    {
+      "inverterId": "INV 01.032",
+      "groupId": "INV 01",
+      "powerLoss": 0.1394,
+      "performanceRatio": 0.8606,
+      "soilingRatio": {
+        "mean": 0.8606,
+        "std": 0.0385
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": 0
+      }
+    },
+    {
+      "inverterId": "INV 01.044",
+      "groupId": "INV 01",
+      "powerLoss": 0.1394,
+      "performanceRatio": 0.8606,
+      "soilingRatio": {
+        "mean": 0.8606,
+        "std": 0.0385
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": 0
+      }
+    },
+    {
+      "inverterId": "INV 01.057",
+      "groupId": "INV 01",
+      "powerLoss": 0.1394,
+      "performanceRatio": 0.8606,
+      "soilingRatio": {
+        "mean": 0.8606,
+        "std": 0.0385
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": 0
+      }
+    },
+    {
+      "inverterId": "INV 02.005",
+      "groupId": "INV 02",
+      "powerLoss": 0.1394,
+      "performanceRatio": 0.8606,
+      "soilingRatio": {
+        "mean": 0.8606,
+        "std": 0.0385
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": 0
+      }
+    },
+    {
+      "inverterId": "INV 02.018",
+      "groupId": "INV 02",
+      "powerLoss": 0.1394,
+      "performanceRatio": 0.8606,
+      "soilingRatio": {
+        "mean": 0.8606,
+        "std": 0.0385
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": 0
+      }
+    },
+    {
+      "inverterId": "INV 02.028",
+      "groupId": "INV 02",
+      "powerLoss": 0.1394,
+      "performanceRatio": 0.8606,
+      "soilingRatio": {
+        "mean": 0.8606,
+        "std": 0.0385
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": 0
+      }
+    },
+    {
+      "inverterId": "INV 03.066",
+      "groupId": "INV 03",
+      "powerLoss": 0.1394,
+      "performanceRatio": 0.8606,
+      "soilingRatio": {
+        "mean": 0.8606,
+        "std": 0.0385
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": 0
+      }
+    },
+    {
+      "inverterId": "INV 03.082",
+      "groupId": "INV 03",
+      "powerLoss": 0.1394,
+      "performanceRatio": 0.8606,
+      "soilingRatio": {
+        "mean": 0.8606,
+        "std": 0.0385
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": 0
+      }
+    },
+    {
+      "inverterId": "INV 04.100",
+      "groupId": "INV 04",
+      "powerLoss": 0.1394,
+      "performanceRatio": 0.8606,
+      "soilingRatio": {
+        "mean": 0.8606,
+        "std": 0.0385
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": 0
+      }
+    },
+    {
+      "inverterId": "INV 04.115",
+      "groupId": "INV 04",
+      "powerLoss": 0.1394,
+      "performanceRatio": 0.8606,
+      "soilingRatio": {
+        "mean": 0.8606,
+        "std": 0.0385
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": 0
+      }
+    }
+  ]
+}

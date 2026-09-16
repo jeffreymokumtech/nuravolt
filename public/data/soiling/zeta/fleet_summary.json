@@ -1,0 +1,49 @@
+{
+  "plantInfo": {
+    "plantName": "Zeta Solar Plant",
+    "capacity_MW": 9.0,
+    "totalInverters": 150,
+    "inverterGroups": [
+      "INV 01",
+      "INV 02",
+      "INV 03",
+      "INV 04",
+      "INV 05"
+    ]
+  },
+  "analysisPeriod": {
+    "start": "2024-01-15",
+    "end": "2025-01-15",
+    "totalDays": 365
+  },
+  "fleetSoiling": {
+    "srMean": 0.928,
+    "srStd": 0.035,
+    "srMin": 0.86,
+    "srMax": 0.99
+  },
+  "fleetLosses": {
+    "totalSoilingLoss_MWh": 1152.0,
+    "totalLoss_MWh": 1152.0,
+    "referenceEnergy_MWh": 16000.0,
+    "netEnergy_MWh": 14848.0
+  },
+  "healthDistribution": {
+    "normal": 135,
+    "minorIssues": 12,
+    "majorIssues": 3,
+    "critical": 0
+  },
+  "topPerformers": [
+    { "id": "INV 02", "sr": 0.97, "loss_pct": 3.0 },
+    { "id": "INV 01", "sr": 0.96, "loss_pct": 4.0 }
+  ],
+  "worstPerformers": [
+    { "id": "INV 04", "sr": 0.89, "loss_pct": 11.0 },
+    { "id": "INV 05", "sr": 0.90, "loss_pct": 10.0 }
+  ],
+  "economicImpact": {
+    "estimatedAnnualLoss_EUR": 74880.0,
+    "cleaningROIPotential_EUR": 52416.0
+  }
+}

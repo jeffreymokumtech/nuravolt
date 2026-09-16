@@ -1,0 +1,57 @@
+{
+  "id": "helios-30d",
+  "title": "Helios PV — Last 30 Days",
+  "subtitle": "Expected-vs-measured, loss disaggregation, and top residuals for the 45 MW PV plant.",
+  "scope": "Helios PV · 2026-03-17 to 2026-04-16",
+  "generated_at": "2026-04-16T08:00:00.000Z",
+  "tiles": [
+    {
+      "title": "Performance Ratio (30d)",
+      "metric": "83.9",
+      "unit": "%",
+      "note": "Weighted across 120 inverters. Target 85% for 45 MW in this climate band."
+    },
+    {
+      "title": "Revenue at Risk",
+      "metric": "€142.5k",
+      "note": "Sum of soiling + fault-attributed losses over next 90 days."
+    },
+    {
+      "title": "Soiling Ratio (latest)",
+      "metric": "96.2",
+      "unit": "%",
+      "note": "ML ensemble aligned with DustIQ sensor within 0.3 pp."
+    },
+    {
+      "title": "Loss Disaggregation (30d)",
+      "series": [
+        { "label": "Reference energy", "value": 0.0 },
+        { "label": "Soiling", "value": -3.2 },
+        { "label": "Temperature", "value": -1.7 },
+        { "label": "Spectral", "value": -0.4 },
+        { "label": "Inverter losses", "value": -2.1 },
+        { "label": "Wiring/MV", "value": -0.8 },
+        { "label": "Degradation (YoY)", "value": -0.5 },
+        { "label": "Net energy", "value": -8.7 }
+      ],
+      "note": "Waterfall from reference to net. Negatives reduce yield."
+    },
+    {
+      "title": "Top Residuals — Inverters",
+      "series": [
+        { "label": "INV 03.082", "value": -6.2 },
+        { "label": "INV 01.044", "value": -4.8 },
+        { "label": "INV 02.019", "value": -4.1 },
+        { "label": "INV 04.108", "value": -3.7 },
+        { "label": "INV 03.069", "value": -3.1 },
+        { "label": "INV 02.028", "value": -2.8 }
+      ],
+      "note": "Worst-performing inverters vs digital-twin expectation (%)."
+    },
+    {
+      "title": "Active Tickets",
+      "metric": "14",
+      "note": "3 critical, 6 high, 5 medium. 2 awaiting validation."
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+version: 2
+
+# Only gold_bess_rack_daily is documented here, because it is the model that
+# shares a definition with Python code and therefore needs the definition
+# written down in both places. gold_bess_asset_daily and gold_inverter_daily_kwh
+# are undocumented: that is a gap, not a statement that they need no tests.
+#
+# These tests run in the nightly `dbt build` (.github/workflows/dbt-daily.yml),
+# so every one of them is a live assertion against production gold rather than
+# documentation. That is also why none of them assert that a spread is present:
+# a rack that reports only a pack scalar legitimately has no spread, and turning
+# "this feed cannot answer the question" into a red pipeline would teach the
+# team to ignore the pipeline.
+
+models:
+  - name: gold_bess_rack_daily
+    description: >
+      Per (plant, BESS asset, rack, day) imbalance statistics.
+
+      SPREAD HAS ONE DEFINITION AND IT LIVES IN nuravolt/bess/imbalance.py.
+      Its SPREAD_DEFINITION constant reads, verbatim: "instantaneous_then_worst:
+      spread(t) = max(members at t) - min(members at t), reported as the worst
+      spread(t) over the window. Not the day envelope (max over all members and
+      times minus min over all members and times), which over reads any rack
+      whose extremes never coincide."
+
+      Division of labour: this model owns descriptive statistics over
+      fleet-years (SQL can scan a year of lake Parquet; Python cannot).
+      imbalance.py owns findings for one asset-day: the modified z score, the
+      MAD, the dwell window and the availability reasons (SQL cannot express
+      them). So this model computes the same inner quantity and emits no column
+      whose name implies a finding. There is no flag, no score and no
+      "imbalanced" column here on purpose.
+      tests/bess/test_spread_definition_parity.py runs both engines over one
+      fixture and asserts voltage_spread_max_v equals
+      RackDayImbalance.voltage_spread_v to 1e-9.
+
+      Two known asymmetries against imbalance.py, both narrow and both worth
+      knowing before trusting a comparison. First, members here are grouped on
+      the raw silver ts; imbalance.py snaps to a cadence bucket first (its
+      ALIGNMENT_RULE). A feed that jitters one rack's members across timestamps
+      therefore yields nulls here where imbalance.py yields numbers, which is
+      silence rather than a wrong number, and *_spread_instants shows it.
+      Second, a rack that reports both bess_soc and bess_soc_rack at one instant
+      is medianed here and deduplicated to the first reading by imbalance.py's
+      adapter; that feed is self contradictory either way.
+
+    data_tests:
+      # The grain, and the key the Postgres publish upserts on. A duplicate
+      # would silently overwrite one rack-day with another.
+      - unique:
+          name: gold_bess_rack_daily_unique_rack_day
+          column_name: "device_id || '|' || cast(day as varchar)"
+
+      # A spread is a max minus a min over one population at one instant, so it
+      # cannot be negative. A negative one means the max and the min were taken
+      # over different populations: the classic way to get there is a metric
+      # filter that crosses a family, for instance letting bess_voltage_pack
+      # (hundreds of volts of series string) into a cell voltage min. These are
+      # written as not_null over an expression that is null exactly when the
+      # value is negative, so a null spread (not measurable) passes and a
+      # negative spread (impossible) fails.
+      - not_null:
+          name: gold_bess_rack_daily_temp_spread_max_c_non_negative
+          column_name: "case when temp_spread_max_c < 0 then null else 1 end"
+      - not_null:
+          name: gold_bess_rack_daily_temp_spread_p95_c_non_negative
+          column_name: "case when temp_spread_p95_c < 0 then null else 1 end"
+      - not_null:
+          name: gold_bess_rack_daily_temp_spread_mean_c_non_negative
+          column_name: "case when temp_spread_mean_c < 0 then null else 1 end"
+      - not_null:
+          name: gold_bess_rack_daily_temp_spread_envelope_c_non_negative
+          column_name: "case when temp_spread_envelope_c < 0 then null else 1 end"
+      - not_null:
+          name: gold_bess_rack_daily_voltage_spread_max_v_non_negative
+          column_name: "case when voltage_spread_max_v < 0 then null else 1 end"
+      - not_null:
+          name: gold_bess_rack_daily_voltage_spread_p95_v_non_negative
+          column_name: "case when voltage_spread_p95_v < 0 then null else 1 end"
+      - not_null:
+          name: gold_bess_rack_daily_voltage_spread_mean_v_non_negative
+          column_name: "case when voltage_spread_mean_v < 0 then null else 1 end"
+      - not_null:
+          name: gold_bess_rack_daily_voltage_spread_envelope_v_non_negative
+          column_name: "case when voltage_spread_envelope_v < 0 then null else 1 end"
+
+      # The related invariant, that the instantaneous number never exceeds the
+      # envelope over the same readings, is asserted in
+      # tests/bess/test_spread_definition_parity.py rather than here. It is a
+      # property of the two SQL expressions, so it belongs in a test with a
+      # fixture; asserted against production gold it would also fire on a feed
+      # that reports a cell scalar above its own reported cell max, which is a
+      # contradictory feed rather than a broken model.
+
+    columns:
+      - name: plant_id
+        description: "NuraVolt Plant uuid. The publish's --plant-col."
+        data_tests: [not_null]
+
+      - name: plant_slug
+        description: "Plant slug, carried for readability in ad hoc lake queries."
+
+      - name: bess_asset_id
+        description: "BessAsset uuid this rack belongs to."
+        data_tests: [not_null]
+
+      - name: device_id
+        description: >
+          The canonical rack id, 'BESS <asset>.U-n.R-k'. The publish's
+          --device-col, so it is the id the app reads back.
+        data_tests: [not_null]
+
+      - name: day
+        description: "UTC calendar day of the samples. The publish's --time-col."
+        data_tests: [not_null]
+
+      - name: unit_no
+        description: "Unit number parsed out of the canonical device id."
+
+      - name: rack_no
+        description: "Rack number parsed out of the canonical device id."
+
+      - name: temp_spread_max_c
+        description: >
+          Worst instantaneous cell temperature spread over the day, in C. This
+          is SPREAD_DEFINITION exactly: "instantaneous_then_worst: spread(t) =
+          max(members at t) - min(members at t), reported as the worst spread(t)
+          over the window. Not the day envelope (max over all members and times
+          minus min over all members and times), which over reads any rack whose
+          extremes never coincide." Null when the rack never had two members
+          reporting temperature at one instant; never zero, because a zero
+          spread reads as a perfectly balanced rack.
+
+      - name: temp_spread_p95_c
+        description: >
+          95th percentile (quantile_cont, interpolated) of the same
+          instantaneous series. Exists so that one bad sample does not own the
+          day: read the p95 next to the max to tell a transient from a
+          condition.
+
+      - name: temp_spread_mean_c
+        description: "Mean of the same instantaneous series: the day's typical separation."
+
+      - name: temp_spread_instants
+        description: >
+          How many instants in the day had at least two members reporting
+          temperature, and so contributed a spread. Zero means the temperature
+          spread columns are null because the question could not be asked, not
+          because the rack was balanced. Never null.
+        data_tests: [not_null]
+
+      - name: voltage_spread_max_v
+        description: >
+          Worst instantaneous cell voltage spread over the day, in V, under the
+          same definition as temp_spread_max_c: "instantaneous_then_worst:
+          spread(t) = max(members at t) - min(members at t), reported as the
+          worst spread(t) over the window." This is the column the parity test
+          pins against nuravolt/bess/imbalance.py's
+          RackDayImbalance.voltage_spread_v, and cell to cell voltage spread is
+          the single best early indicator of a developing cell fault.
+        data_tests:
+          # Not a blanket not_null: null is the honest answer when no instant
+          # had two members. But if instants were measured, a spread must exist.
+          - not_null:
+              name: gold_bess_rack_daily_voltage_spread_max_v_present_when_measured
+              config:
+                where: "voltage_spread_instants > 0"
+
+      - name: voltage_spread_p95_v
+        description: "95th percentile (quantile_cont) of the instantaneous voltage spread series."
+
+      - name: voltage_spread_mean_v
+        description: "Mean of the instantaneous voltage spread series."
+
+      - name: voltage_spread_instants
+        description: >
+          How many instants in the day had at least two members reporting cell
+          voltage. Zero means the voltage spread columns are null for lack of
+          evidence. Never null.
+        data_tests: [not_null]
+
+      - name: spread_basis
+        description: >
+          What the spreads were computed from: 'members' (real per module or per
+          cell children), 'extremes' (the max/min pair a BMS reports across a
+          population it does not stream), or 'mixed'. Read it with `devices`: two
+          members on the 'extremes' basis is a rack of hundreds of cells
+          reporting its two edges, not a rack with two modules, and a caption
+          that omits this over states the sample. Null when no spread was
+          measured. Mirrors RackDayImbalance.spread_basis, except that
+          imbalance.py also counts a SoC spread when deciding whether to state a
+          basis, and this model does not emit one.
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["members", "extremes", "mixed"]
+
+      - name: temp_cell_max_c
+        description: "Highest cell temperature seen anywhere in the rack that day, in C."
+
+      - name: temp_cell_min_c
+        description: "Lowest cell temperature seen anywhere in the rack that day, in C."
+
+      - name: temp_spread_envelope_c
+        description: >
+          The DAY ENVELOPE of cell temperature: temp_cell_max_c minus
+          temp_cell_min_c, so the coldest cell at dawn subtracted from the
+          hottest cell at noon. Deliberately NOT temp_spread_max_c and
+          deliberately not named `temp_spread_c`: it is a different quantity and
+          it is systematically larger, because it does not require the extremes
+          to coincide. Kept because "how far apart did anything this rack report
+          get, all day" is a useful question. Use temp_spread_max_c for anything
+          that is about cells diverging.
+
+      - name: voltage_cell_max_v
+        description: "Highest cell voltage seen anywhere in the rack that day, in V."
+
+      - name: voltage_cell_min_v
+        description: "Lowest cell voltage seen anywhere in the rack that day, in V."
+
+      - name: voltage_spread_envelope_v
+        description: >
+          The DAY ENVELOPE of cell voltage: voltage_cell_max_v minus
+          voltage_cell_min_v. The same caveat as temp_spread_envelope_c, and it
+          bites hardest here: on a battery cycling twice a day the envelope over
+          reads by the whole swing. Measured on the parity fixture, 0.5 C
+          instantaneous against 4.5 C envelope for one rack-day, a factor of
+          nine. It replaced a column called `voltage_spread_v`, which was the
+          name imbalance.py uses for the instantaneous number, which is how the
+          two drifted apart unnoticed.
+
+      - name: voltage_pack_max_v
+        description: >
+          Highest pack (series string) voltage the rack reported, in V. Never
+          mixed into the cell voltage spread: a pack is hundreds of volts and a
+          cell is a few, so folding it in would fabricate a spread of hundreds
+          of volts.
+
+      - name: soc_mean_pct
+        description: "Mean state of charge across the rack's readings that day, in percent."
+
+      - name: soc_max_pct
+        description: "Highest state of charge reading that day, in percent."
+
+      - name: soc_min_pct
+        description: "Lowest state of charge reading that day, in percent."
+
+      - name: soc_divergence_from_sibling_median_pct
+        description: >
+          This rack's SoC minus the median of its SIBLING racks at the same
+          instant, in percentage points, reported at the instant of largest
+          absolute divergence with the sign kept. The centre is
+          imbalance.py's SIBLING_CENTRE, which is "median", and it excludes the
+          rack itself: a mean, and a median that counts the rack in its own
+          reference, both let a diverging rack drag the centre toward itself and
+          so under report exactly the case this column exists to catch. Null
+          when the asset never had a second rack reporting at the same instant:
+          there is nothing to diverge from, and a zero there would read as
+          "balanced". Replaced `soc_divergence_pct`, which was this rack's day
+          mean minus the asset's day mean of rack means.
+
+      - name: hours_observed
+        description: "Distinct hours in which the rack reported anything. A coverage number, not a quality one."
+
+      - name: devices
+        description: >
+          Distinct canonical device ids attributed to this rack that day,
+          including the rack itself. Read it with spread_basis before describing
+          a population size.
+
+      - name: samples
+        description: "Silver rows attributed to this rack that day."

@@ -1,0 +1,20 @@
+{
+  "dataset": "Sandia PV-IV-EL (time-trend degradation)",
+  "n_samples": 166,
+  "n_modules_with_fade_rate": 166,
+  "fleet_fade_rate_distribution_pct_per_year": {
+    "mean": 0.8865,
+    "median": 0.7239,
+    "p25": 0.4599,
+    "p75": 1.2417,
+    "min": -0.157,
+    "max": 2.4346
+  },
+  "per_cell_tech_mean_fade_rate_pct_per_year": {
+    "unknown": 0.8865
+  },
+  "headline": "fleet mean fade rate 0.887 %/yr across 166 modules",
+  "method": "linear regression of (Pmp / Nameplate_Pmp) vs exposure_days, slope \u00d7 365 \u00d7 100",
+  "comparison_to_literature": "Published c-Si module degradation: 0.5-1.0 %/yr (Jordan & Kurtz 2013 meta-review). Fleet median above this range = unusually fast-fading population; below = unusually stable. PV-IV-EL is intentionally a stress-tested cohort.",
+  "generated_at": "2026-06-21T10:40:15.581268Z"
+}

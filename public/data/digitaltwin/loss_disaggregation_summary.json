@@ -1,0 +1,141 @@
+{
+  "analysis_date": "2025-12-24T22:45:11.295651",
+  "plants": [
+    {
+      "plant_id": "alpha",
+      "n_inverters": 150,
+      "avg_temp_r2": 0.399,
+      "twins_loaded": 5,
+      "sample_inverters": [
+        "INV 01.001",
+        "INV 01.002",
+        "INV 01.003",
+        "INV 01.004",
+        "INV 01.005"
+      ],
+      "avg_retention": 31.2,
+      "avg_current_r2": 0.724,
+      "avg_voltage_r2": 0.993,
+      "soiling_isolation_quality": 0.68,
+      "isolation_confidence": "MEDIUM",
+      "notes": "Reasonable soiling isolation, some uncertainty"
+    },
+    {
+      "plant_id": "ribera",
+      "n_inverters": 120,
+      "avg_temp_r2": 0.774,
+      "twins_loaded": 5,
+      "sample_inverters": [
+        "INV 01.032",
+        "INV 01.033",
+        "INV 01.034",
+        "INV 01.035",
+        "INV 01.036"
+      ],
+      "avg_retention": 34.1,
+      "avg_current_r2": 0.82,
+      "avg_voltage_r2": 0.994,
+      "soiling_isolation_quality": 0.841,
+      "isolation_confidence": "HIGH",
+      "notes": "Twins can reliably isolate soiling from other losses"
+    },
+    {
+      "plant_id": "eta",
+      "n_inverters": 28,
+      "avg_temp_r2": 0.872,
+      "twins_loaded": 5,
+      "sample_inverters": [
+        "INV 01.001",
+        "INV 01.002",
+        "INV 01.003",
+        "INV 01.004",
+        "INV 01.005"
+      ],
+      "avg_retention": 36.1,
+      "avg_current_r2": 0.88,
+      "avg_voltage_r2": 0.997,
+      "soiling_isolation_quality": 0.901,
+      "isolation_confidence": "HIGH",
+      "notes": "Twins can reliably isolate soiling from other losses"
+    },
+    {
+      "plant_id": "epsilon",
+      "n_inverters": 36,
+      "avg_temp_r2": 1.0,
+      "twins_loaded": 5,
+      "sample_inverters": [
+        "INV 01.01",
+        "INV 01.02",
+        "INV 02.03",
+        "INV 02.04",
+        "INV 03.05"
+      ],
+      "avg_retention": 33.0,
+      "avg_current_r2": 0.983,
+      "avg_voltage_r2": 0.987,
+      "soiling_isolation_quality": 0.989,
+      "isolation_confidence": "HIGH",
+      "notes": "Twins can reliably isolate soiling from other losses"
+    },
+    {
+      "plant_id": "zeta",
+      "n_inverters": 30,
+      "avg_temp_r2": 0.978,
+      "twins_loaded": 5,
+      "sample_inverters": [
+        "INV 01.001",
+        "INV 01.002",
+        "INV 01.003",
+        "INV 01.004",
+        "INV 01.005"
+      ],
+      "avg_retention": 38.3,
+      "avg_current_r2": 0.863,
+      "avg_voltage_r2": 0.991,
+      "soiling_isolation_quality": 0.923,
+      "isolation_confidence": "HIGH",
+      "notes": "Twins can reliably isolate soiling from other losses"
+    },
+    {
+      "plant_id": "delta",
+      "n_inverters": 43,
+      "avg_temp_r2": -0.894,
+      "twins_loaded": 5,
+      "sample_inverters": [
+        "INV 01.001",
+        "INV 01.002",
+        "INV 01.003",
+        "INV 01.004",
+        "INV 01.005"
+      ],
+      "avg_retention": 37.1,
+      "avg_current_r2": 0.709,
+      "avg_voltage_r2": 0.989,
+      "soiling_isolation_quality": 0.552,
+      "isolation_confidence": "LOW",
+      "notes": "Poor twin quality limits soiling isolation accuracy"
+    },
+    {
+      "plant_id": "gamma",
+      "n_inverters": 45,
+      "avg_temp_r2": 0.29,
+      "twins_loaded": 5,
+      "sample_inverters": [
+        "INV 01.001",
+        "INV 01.002",
+        "INV 01.003",
+        "INV 01.004",
+        "INV 01.005"
+      ],
+      "avg_retention": 32.1,
+      "avg_current_r2": 0.613,
+      "avg_voltage_r2": 0.973,
+      "soiling_isolation_quality": 0.588,
+      "isolation_confidence": "LOW",
+      "notes": "Poor twin quality limits soiling isolation accuracy"
+    }
+  ],
+  "dustiq_comparison": {
+    "status": "no_dustiq_data"
+  }
+}

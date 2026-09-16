@@ -1,0 +1,18 @@
+{
+  "plant_id": "gamma",
+  "trained_at": "2025-12-29T09:22:22.690026",
+  "metrics": {
+    "r2": 0.5924,
+    "mae_kW": 0.11,
+    "rmse_kW": 0.15,
+    "mape_pct": 43.98,
+    "physics_r2": -12057.0784,
+    "physics_mae_kW": 21.75,
+    "ml_r2": 0.9998,
+    "ml_mae_kW": 0.11,
+    "trainingSamples": 23699,
+    "validationSamples": 5925,
+    "trainingTime_s": 2.0,
+    "calibrationFactor": 1.0
+  }
+}

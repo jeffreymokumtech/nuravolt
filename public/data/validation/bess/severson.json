@@ -1,0 +1,670 @@
+{
+  "dataset": "Severson MIT-Stanford LFP (124 cells)",
+  "n_samples": 89,
+  "n_cells": 89,
+  "predictions": [
+    {
+      "cell_id": "b1c1",
+      "actual_eol": 1177.0,
+      "predicted_eol": 1642.0,
+      "error_cycles": 465.0,
+      "error_pct": 0.395
+    },
+    {
+      "cell_id": "b1c11",
+      "actual_eol": 685.0,
+      "predicted_eol": 814.0,
+      "error_cycles": 129.0,
+      "error_pct": 0.188
+    },
+    {
+      "cell_id": "b1c14",
+      "actual_eol": 765.0,
+      "predicted_eol": 879.0,
+      "error_cycles": 114.0,
+      "error_pct": 0.149
+    },
+    {
+      "cell_id": "b1c15",
+      "actual_eol": 632.0,
+      "predicted_eol": 737.0,
+      "error_cycles": 105.0,
+      "error_pct": 0.166
+    },
+    {
+      "cell_id": "b1c16",
+      "actual_eol": 772.0,
+      "predicted_eol": 861.0,
+      "error_cycles": 89.0,
+      "error_pct": 0.115
+    },
+    {
+      "cell_id": "b1c17",
+      "actual_eol": 762.0,
+      "predicted_eol": 863.0,
+      "error_cycles": 101.0,
+      "error_pct": 0.133
+    },
+    {
+      "cell_id": "b1c18",
+      "actual_eol": 609.0,
+      "predicted_eol": 927.0,
+      "error_cycles": 318.0,
+      "error_pct": 0.522
+    },
+    {
+      "cell_id": "b1c19",
+      "actual_eol": 685.0,
+      "predicted_eol": 791.0,
+      "error_cycles": 106.0,
+      "error_pct": 0.155
+    },
+    {
+      "cell_id": "b1c2",
+      "actual_eol": 1175.0,
+      "predicted_eol": 1552.0,
+      "error_cycles": 377.0,
+      "error_pct": 0.321
+    },
+    {
+      "cell_id": "b1c20",
+      "actual_eol": 414.0,
+      "predicted_eol": 684.0,
+      "error_cycles": 270.0,
+      "error_pct": 0.652
+    },
+    {
+      "cell_id": "b1c21",
+      "actual_eol": 489.0,
+      "predicted_eol": 728.0,
+      "error_cycles": 239.0,
+      "error_pct": 0.489
+    },
+    {
+      "cell_id": "b1c23",
+      "actual_eol": 903.0,
+      "predicted_eol": 1058.0,
+      "error_cycles": 155.0,
+      "error_pct": 0.172
+    },
+    {
+      "cell_id": "b1c24",
+      "actual_eol": 896.0,
+      "predicted_eol": 1049.0,
+      "error_cycles": 153.0,
+      "error_pct": 0.171
+    },
+    {
+      "cell_id": "b1c25",
+      "actual_eol": 738.0,
+      "predicted_eol": 862.0,
+      "error_cycles": 124.0,
+      "error_pct": 0.168
+    },
+    {
+      "cell_id": "b1c26",
+      "actual_eol": 776.0,
+      "predicted_eol": 877.0,
+      "error_cycles": 101.0,
+      "error_pct": 0.13
+    },
+    {
+      "cell_id": "b1c27",
+      "actual_eol": 754.0,
+      "predicted_eol": 860.0,
+      "error_cycles": 106.0,
+      "error_pct": 0.141
+    },
+    {
+      "cell_id": "b1c29",
+      "actual_eol": 795.0,
+      "predicted_eol": 926.0,
+      "error_cycles": 131.0,
+      "error_pct": 0.165
+    },
+    {
+      "cell_id": "b1c3",
+      "actual_eol": 1224.0,
+      "predicted_eol": 1557.0,
+      "error_cycles": 333.0,
+      "error_pct": 0.272
+    },
+    {
+      "cell_id": "b1c30",
+      "actual_eol": 637.0,
+      "predicted_eol": 711.0,
+      "error_cycles": 74.0,
+      "error_pct": 0.116
+    },
+    {
+      "cell_id": "b1c31",
+      "actual_eol": 787.0,
+      "predicted_eol": 875.0,
+      "error_cycles": 88.0,
+      "error_pct": 0.112
+    },
+    {
+      "cell_id": "b1c32",
+      "actual_eol": 592.0,
+      "predicted_eol": 722.0,
+      "error_cycles": 130.0,
+      "error_pct": 0.22
+    },
+    {
+      "cell_id": "b1c33",
+      "actual_eol": 502.0,
+      "predicted_eol": 729.0,
+      "error_cycles": 227.0,
+      "error_pct": 0.452
+    },
+    {
+      "cell_id": "b1c35",
+      "actual_eol": 620.0,
+      "predicted_eol": 1056.0,
+      "error_cycles": 436.0,
+      "error_pct": 0.703
+    },
+    {
+      "cell_id": "b1c36",
+      "actual_eol": 570.0,
+      "predicted_eol": 706.0,
+      "error_cycles": 136.0,
+      "error_pct": 0.239
+    },
+    {
+      "cell_id": "b1c38",
+      "actual_eol": 514.0,
+      "predicted_eol": 731.0,
+      "error_cycles": 217.0,
+      "error_pct": 0.422
+    },
+    {
+      "cell_id": "b1c39",
+      "actual_eol": 514.0,
+      "predicted_eol": 623.0,
+      "error_cycles": 109.0,
+      "error_pct": 0.212
+    },
+    {
+      "cell_id": "b1c4",
+      "actual_eol": 1225.0,
+      "predicted_eol": 2122.0,
+      "error_cycles": 897.0,
+      "error_pct": 0.732
+    },
+    {
+      "cell_id": "b1c40",
+      "actual_eol": 852.0,
+      "predicted_eol": 1018.0,
+      "error_cycles": 166.0,
+      "error_pct": 0.195
+    },
+    {
+      "cell_id": "b1c41",
+      "actual_eol": 930.0,
+      "predicted_eol": 1119.0,
+      "error_cycles": 189.0,
+      "error_pct": 0.203
+    },
+    {
+      "cell_id": "b1c45",
+      "actual_eol": 218.0,
+      "predicted_eol": 218.0,
+      "error_cycles": 0.0,
+      "error_pct": 0.0
+    },
+    {
+      "cell_id": "b1c5",
+      "actual_eol": 983.0,
+      "predicted_eol": 1222.0,
+      "error_cycles": 239.0,
+      "error_pct": 0.243
+    },
+    {
+      "cell_id": "b1c6",
+      "actual_eol": 579.0,
+      "predicted_eol": 648.0,
+      "error_cycles": 69.0,
+      "error_pct": 0.119
+    },
+    {
+      "cell_id": "b1c7",
+      "actual_eol": 777.0,
+      "predicted_eol": 884.0,
+      "error_cycles": 107.0,
+      "error_pct": 0.138
+    },
+    {
+      "cell_id": "b1c9",
+      "actual_eol": 948.0,
+      "predicted_eol": 1313.0,
+      "error_cycles": 365.0,
+      "error_pct": 0.385
+    },
+    {
+      "cell_id": "b2c0",
+      "actual_eol": 212.0,
+      "predicted_eol": 341.0,
+      "error_cycles": 129.0,
+      "error_pct": 0.608
+    },
+    {
+      "cell_id": "b2c10",
+      "actual_eol": 465.0,
+      "predicted_eol": 612.0,
+      "error_cycles": 147.0,
+      "error_pct": 0.316
+    },
+    {
+      "cell_id": "b2c11",
+      "actual_eol": 404.0,
+      "predicted_eol": 504.0,
+      "error_cycles": 100.0,
+      "error_pct": 0.248
+    },
+    {
+      "cell_id": "b2c13",
+      "actual_eol": 415.0,
+      "predicted_eol": 548.0,
+      "error_cycles": 133.0,
+      "error_pct": 0.32
+    },
+    {
+      "cell_id": "b2c18",
+      "actual_eol": 414.0,
+      "predicted_eol": 541.0,
+      "error_cycles": 127.0,
+      "error_pct": 0.307
+    },
+    {
+      "cell_id": "b2c19",
+      "actual_eol": 368.0,
+      "predicted_eol": 630.0,
+      "error_cycles": 262.0,
+      "error_pct": 0.712
+    },
+    {
+      "cell_id": "b2c21",
+      "actual_eol": 429.0,
+      "predicted_eol": 504.0,
+      "error_cycles": 75.0,
+      "error_pct": 0.175
+    },
+    {
+      "cell_id": "b2c23",
+      "actual_eol": 462.0,
+      "predicted_eol": 539.0,
+      "error_cycles": 77.0,
+      "error_pct": 0.167
+    },
+    {
+      "cell_id": "b2c24",
+      "actual_eol": 403.0,
+      "predicted_eol": 708.0,
+      "error_cycles": 305.0,
+      "error_pct": 0.757
+    },
+    {
+      "cell_id": "b2c25",
+      "actual_eol": 339.0,
+      "predicted_eol": 388.0,
+      "error_cycles": 49.0,
+      "error_pct": 0.145
+    },
+    {
+      "cell_id": "b2c26",
+      "actual_eol": 351.0,
+      "predicted_eol": 626.0,
+      "error_cycles": 275.0,
+      "error_pct": 0.783
+    },
+    {
+      "cell_id": "b2c3",
+      "actual_eol": 240.0,
+      "predicted_eol": 369.0,
+      "error_cycles": 129.0,
+      "error_pct": 0.537
+    },
+    {
+      "cell_id": "b2c4",
+      "actual_eol": 372.0,
+      "predicted_eol": 480.0,
+      "error_cycles": 108.0,
+      "error_pct": 0.29
+    },
+    {
+      "cell_id": "b2c47",
+      "actual_eol": 595.0,
+      "predicted_eol": 818.0,
+      "error_cycles": 223.0,
+      "error_pct": 0.375
+    },
+    {
+      "cell_id": "b2c6",
+      "actual_eol": 362.0,
+      "predicted_eol": 833.0,
+      "error_cycles": 471.0,
+      "error_pct": 1.301
+    },
+    {
+      "cell_id": "b3c0",
+      "actual_eol": 956.0,
+      "predicted_eol": 1142.0,
+      "error_cycles": 186.0,
+      "error_pct": 0.195
+    },
+    {
+      "cell_id": "b3c1",
+      "actual_eol": 973.0,
+      "predicted_eol": 1186.0,
+      "error_cycles": 213.0,
+      "error_pct": 0.219
+    },
+    {
+      "cell_id": "b3c10",
+      "actual_eol": 1019.0,
+      "predicted_eol": 1160.0,
+      "error_cycles": 141.0,
+      "error_pct": 0.138
+    },
+    {
+      "cell_id": "b3c11",
+      "actual_eol": 809.0,
+      "predicted_eol": 940.0,
+      "error_cycles": 131.0,
+      "error_pct": 0.162
+    },
+    {
+      "cell_id": "b3c12",
+      "actual_eol": 914.0,
+      "predicted_eol": 1023.0,
+      "error_cycles": 109.0,
+      "error_pct": 0.119
+    },
+    {
+      "cell_id": "b3c13",
+      "actual_eol": 810.0,
+      "predicted_eol": 956.0,
+      "error_cycles": 146.0,
+      "error_pct": 0.18
+    },
+    {
+      "cell_id": "b3c14",
+      "actual_eol": 843.0,
+      "predicted_eol": 975.0,
+      "error_cycles": 132.0,
+      "error_pct": 0.157
+    },
+    {
+      "cell_id": "b3c15",
+      "actual_eol": 869.0,
+      "predicted_eol": 1027.0,
+      "error_cycles": 158.0,
+      "error_pct": 0.182
+    },
+    {
+      "cell_id": "b3c16",
+      "actual_eol": 1433.0,
+      "predicted_eol": 2876.0,
+      "error_cycles": 1443.0,
+      "error_pct": 1.007
+    },
+    {
+      "cell_id": "b3c17",
+      "actual_eol": 1156.0,
+      "predicted_eol": 2333.0,
+      "error_cycles": 1177.0,
+      "error_pct": 1.018
+    },
+    {
+      "cell_id": "b3c18",
+      "actual_eol": 1022.0,
+      "predicted_eol": 1402.0,
+      "error_cycles": 380.0,
+      "error_pct": 0.372
+    },
+    {
+      "cell_id": "b3c19",
+      "actual_eol": 1024.0,
+      "predicted_eol": 1459.0,
+      "error_cycles": 435.0,
+      "error_pct": 0.425
+    },
+    {
+      "cell_id": "b3c20",
+      "actual_eol": 806.0,
+      "predicted_eol": 922.0,
+      "error_cycles": 116.0,
+      "error_pct": 0.144
+    },
+    {
+      "cell_id": "b3c21",
+      "actual_eol": 657.0,
+      "predicted_eol": 1786.0,
+      "error_cycles": 1129.0,
+      "error_pct": 1.718
+    },
+    {
+      "cell_id": "b3c22",
+      "actual_eol": 944.0,
+      "predicted_eol": 1130.0,
+      "error_cycles": 186.0,
+      "error_pct": 0.197
+    },
+    {
+      "cell_id": "b3c24",
+      "actual_eol": 810.0,
+      "predicted_eol": 965.0,
+      "error_cycles": 155.0,
+      "error_pct": 0.191
+    },
+    {
+      "cell_id": "b3c25",
+      "actual_eol": 947.0,
+      "predicted_eol": 1094.0,
+      "error_cycles": 147.0,
+      "error_pct": 0.155
+    },
+    {
+      "cell_id": "b3c26",
+      "actual_eol": 986.0,
+      "predicted_eol": 1095.0,
+      "error_cycles": 109.0,
+      "error_pct": 0.111
+    },
+    {
+      "cell_id": "b3c27",
+      "actual_eol": 815.0,
+      "predicted_eol": 962.0,
+      "error_cycles": 147.0,
+      "error_pct": 0.18
+    },
+    {
+      "cell_id": "b3c28",
+      "actual_eol": 537.0,
+      "predicted_eol": 812.0,
+      "error_cycles": 275.0,
+      "error_pct": 0.512
+    },
+    {
+      "cell_id": "b3c29",
+      "actual_eol": 845.0,
+      "predicted_eol": 1012.0,
+      "error_cycles": 167.0,
+      "error_pct": 0.198
+    },
+    {
+      "cell_id": "b3c3",
+      "actual_eol": 1024.0,
+      "predicted_eol": 1333.0,
+      "error_cycles": 309.0,
+      "error_pct": 0.302
+    },
+    {
+      "cell_id": "b3c30",
+      "actual_eol": 908.0,
+      "predicted_eol": 1032.0,
+      "error_cycles": 124.0,
+      "error_pct": 0.137
+    },
+    {
+      "cell_id": "b3c31",
+      "actual_eol": 708.0,
+      "predicted_eol": 816.0,
+      "error_cycles": 108.0,
+      "error_pct": 0.153
+    },
+    {
+      "cell_id": "b3c33",
+      "actual_eol": 1168.0,
+      "predicted_eol": 1875.0,
+      "error_cycles": 707.0,
+      "error_pct": 0.605
+    },
+    {
+      "cell_id": "b3c34",
+      "actual_eol": 1015.0,
+      "predicted_eol": 1480.0,
+      "error_cycles": 465.0,
+      "error_pct": 0.458
+    },
+    {
+      "cell_id": "b3c35",
+      "actual_eol": 961.0,
+      "predicted_eol": 1254.0,
+      "error_cycles": 293.0,
+      "error_pct": 0.305
+    },
+    {
+      "cell_id": "b3c36",
+      "actual_eol": 859.0,
+      "predicted_eol": 1121.0,
+      "error_cycles": 262.0,
+      "error_pct": 0.305
+    },
+    {
+      "cell_id": "b3c38",
+      "actual_eol": 1704.0,
+      "predicted_eol": 2975.0,
+      "error_cycles": 1271.0,
+      "error_pct": 0.746
+    },
+    {
+      "cell_id": "b3c39",
+      "actual_eol": 1060.0,
+      "predicted_eol": 1523.0,
+      "error_cycles": 463.0,
+      "error_pct": 0.437
+    },
+    {
+      "cell_id": "b3c4",
+      "actual_eol": 965.0,
+      "predicted_eol": 1153.0,
+      "error_cycles": 188.0,
+      "error_pct": 0.195
+    },
+    {
+      "cell_id": "b3c40",
+      "actual_eol": 781.0,
+      "predicted_eol": 932.0,
+      "error_cycles": 151.0,
+      "error_pct": 0.193
+    },
+    {
+      "cell_id": "b3c41",
+      "actual_eol": 754.0,
+      "predicted_eol": 937.0,
+      "error_cycles": 183.0,
+      "error_pct": 0.243
+    },
+    {
+      "cell_id": "b3c44",
+      "actual_eol": 921.0,
+      "predicted_eol": 1033.0,
+      "error_cycles": 112.0,
+      "error_pct": 0.122
+    },
+    {
+      "cell_id": "b3c45",
+      "actual_eol": 1627.0,
+      "predicted_eol": 1838.0,
+      "error_cycles": 211.0,
+      "error_pct": 0.13
+    },
+    {
+      "cell_id": "b3c5",
+      "actual_eol": 769.0,
+      "predicted_eol": 974.0,
+      "error_cycles": 205.0,
+      "error_pct": 0.267
+    },
+    {
+      "cell_id": "b3c6",
+      "actual_eol": 550.0,
+      "predicted_eol": 1480.0,
+      "error_cycles": 930.0,
+      "error_pct": 1.691
+    },
+    {
+      "cell_id": "b3c7",
+      "actual_eol": 1717.0,
+      "predicted_eol": 2751.0,
+      "error_cycles": 1034.0,
+      "error_pct": 0.602
+    },
+    {
+      "cell_id": "b3c8",
+      "actual_eol": 823.0,
+      "predicted_eol": 950.0,
+      "error_cycles": 127.0,
+      "error_pct": 0.154
+    },
+    {
+      "cell_id": "b3c9",
+      "actual_eol": 1005.0,
+      "predicted_eol": 1130.0,
+      "error_cycles": 125.0,
+      "error_pct": 0.124
+    }
+  ],
+  "mape": 0.3459,
+  "rmse_cycles": 388.1,
+  "eol_within_10pct_fraction": 0.011,
+  "eol_within_25pct_fraction": 0.573,
+  "extras": {
+    "prediction_method": "linear extrapolation from first 200 cycles",
+    "eol_threshold_ah": null,
+    "eol_threshold_fraction": 0.8,
+    "n_cells": 124,
+    "n_cells_scored": 89,
+    "n_cells_abstained": 31,
+    "n_cells_observed_not_predicted": 4,
+    "cells_observed_not_predicted": [
+      {
+        "cell_id": "b1c0",
+        "actual_eol": 10,
+        "reason": "EOL at cycle 10 is inside the 200-cycle window"
+      },
+      {
+        "cell_id": "b1c44",
+        "actual_eol": 108,
+        "reason": "EOL at cycle 108 is inside the 200-cycle window"
+      },
+      {
+        "cell_id": "b2c1",
+        "actual_eol": 101,
+        "reason": "EOL at cycle 101 is inside the 200-cycle window"
+      },
+      {
+        "cell_id": "b2c27",
+        "actual_eol": 118,
+        "reason": "EOL at cycle 118 is inside the 200-cycle window"
+      }
+    ],
+    "n_cells_forecastable": 120,
+    "coverage_of_forecastable": 0.7417,
+    "scoring_note": "Scored only on cells whose EOL lies BEYOND the observation window (otherwise the predictor watches the cell die rather than predicting it) AND where the baseline produced a prediction. It previously returned len(capacity) on every failure path, which for a run-to-failure cell IS the label; those returns scored as perfect. Coverage is published so a method that only answers on easy cells cannot hide behind a high score.",
+    "note": "Naive linear-fit baseline. Severson 2019 Nature Energy paper achieved ~9% MAPE using delta-Q featurization; this is the much-simpler floor."
+  },
+  "generated_at": "2026-08-20T19:35:20.744404Z"
+}

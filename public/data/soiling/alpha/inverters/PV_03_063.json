@@ -1,0 +1,73 @@
+{
+  "inverterId": "INV 03.063",
+  "groupId": "INV 03",
+  "soilingRatio": {
+    "mean": 1.0069,
+    "median": 1.0179,
+    "min": 0.1073,
+    "max": 1.05,
+    "std": 0.0622
+  },
+  "lossDisaggregation": {
+    "method": "IEA_PVPS_T13",
+    "percentages": {
+      "soiling": 0.0,
+      "temperature": 0.64,
+      "spectral": 1.0,
+      "inverter": 2.0,
+      "wiringBop": 2.0,
+      "degradation": 0.5,
+      "total": 6.14
+    },
+    "energy_kWh": {
+      "reference": 8850.7,
+      "net": 8307.4,
+      "soilingLoss": 0.0
+    }
+  },
+  "anomalyDetection": {
+    "totalAnomalies": 2,
+    "anomalyRate_pct": 0.0,
+    "periods": [
+      {
+        "start": "2025-04-18",
+        "end": "2025-04-22",
+        "duration_hours": 38.25,
+        "severity": "Critical",
+        "type": "underperformance",
+        "deviation_pct": -45.1
+      },
+      {
+        "start": "2025-04-22",
+        "end": "2025-04-26",
+        "duration_hours": 46.5,
+        "severity": "Critical",
+        "type": "overperformance",
+        "deviation_pct": 56.7
+      }
+    ]
+  },
+  "performance": {
+    "performanceRatio": 1.007,
+    "avgPowerNormalized": 0.4204,
+    "capacityFactor": 0.105,
+    "availability_pct": 100.0,
+    "productionRate": 0.984
+  },
+  "fleetComparison": {
+    "rank": 56,
+    "deviationFromMean_pct": 0.52,
+    "zScore": 0.28,
+    "severity": "Normal"
+  },
+  "dataQuality": {
+    "completeness_pct": 100.0,
+    "validRecords": 65877,
+    "totalRecords": 65877
+  },
+  "metadata": {
+    "analysisStart": "2020-10-01",
+    "analysisEnd": "2025-10-21",
+    "generatedAt": "2025-11-25T15:54:06.970154"
+  }
+}

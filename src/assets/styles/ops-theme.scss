@@ -1,0 +1,326 @@
+/**
+ * Ops console design system tokens — two palettes (light + dark) keyed on a
+ * body class. Every ops primitive (OpsShell, TelemetryStrip, OpsPanel, etc.)
+ * reads exclusively from these CSS variables, which means a single class swap
+ * flips the entire console.
+ *
+ * Defaults to LIGHT (per the user's "whiter" comment after the cool re-skin).
+ * The OpsThemeContext writes/removes `.ops-theme-dark` on <html> to toggle.
+ *
+ * Palette extracted from the design source at
+ *   /tmp/nuravolt-design/.../Overview Redesign.dc.html
+ * (light = const PL = { ... }, dark = literal hex throughout the dark frame).
+ */
+
+/* Geist + Geist Mono are loaded via next/font in src/app/layout.tsx (self-hosted,
+   no external request). Only the serif accent still comes from Google Fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500&display=swap');
+
+/* Light palette as a mixin so it can be re-applied inside a subtree: the
+   Shams rail (CopilotRail) is always white even when <html> carries
+   .ops-theme-dark, so inline charts there need the light tokens back. */
+@mixin ops-light-tokens {
+  --ops-bright: #171A1E;
+  --ops-txt: #2C3036;
+  --ops-muted: #5E6670;
+  --ops-dim: #CDD2D8;
+  --ops-label: #6E7780;
+
+  --ops-canvas: #F4F5F7;
+  --ops-panel: #FFFFFF;
+  --ops-panel-2: #F7F8F9; /* alt panel surface for command bar / nav */
+  --ops-hair: #E5E7EA;
+  --ops-row-hair: #EFF1F3;
+  --ops-nav-active-bg: #E9EEF0;
+
+  /* Signal tones — richer chroma than the original desaturated set (the old
+     info #15706A sat below the dataviz chroma floor and read gray). Semantics
+     unchanged: ok/warn/alarm/info/bess. Validated with the dataviz palette
+     checker on the white panel surface. */
+  --ops-ok: #268A56;
+  --ops-warn: #C08A1F;
+  --ops-alarm: #C6392B;
+  --ops-info: #0A7EA8;
+  --ops-bess: #7C3AED;
+
+  --ops-ok-bg: #eef6f1;
+  --ops-ok-border: #bcd6c6;
+  --ops-warn-bg: #f7eedd;
+  --ops-warn-border: #d9c69e;
+  --ops-alarm-bg: #f7e7e2;
+  --ops-alarm-border: #d9b4a8;
+  --ops-info-bg: #e4f0f6;
+  --ops-info-border: #b9d5e4;
+  --ops-bess-bg: #f3eefc;
+  --ops-bess-border: #d9caf3;
+  --ops-ack-bg: #eaf3f0;
+  --ops-ack-border: #cfe0dc;
+
+  /* Area-fill fade under solid chart lines (top → bottom stop opacity). */
+  --ops-chart-fill-a: 0.18;
+  --ops-chart-fill-b: 0.02;
+
+  /* Softer chrome — shared radius + a barely-there card shadow so panels
+     separate from the flat canvas without hairline-only austerity. */
+  --ops-radius: 10px;
+  --ops-shadow: 0 1px 2px rgba(16, 24, 40, 0.05), 0 2px 6px rgba(16, 24, 40, 0.04);
+
+  /* Typography — Geist (sans) is the base reading font; Geist Mono carries the
+     numerics/labels so figures stay tabular. Inter/system are the fallbacks. */
+  --ops-font-mono: var(--font-geist-mono, 'Geist Mono'), ui-monospace, 'SF Mono', Menlo, monospace;
+  --ops-font-serif: 'Newsreader', 'Iowan Old Style', Georgia, serif;
+  --ops-font-sans: var(--font-geist-sans, var(--font-inter, 'Inter')), system-ui, sans-serif;
+}
+
+:root {
+  /* --- Light palette (default) --- */
+  @include ops-light-tokens;
+}
+
+/* Force-light subtree (the always-white Shams rail) regardless of the
+   page-level theme class. Must come AFTER .ops-theme-dark in specificity
+   terms: .ops-theme-dark sets vars on <html>, this re-sets them closer to
+   the consumers, so the nearest definition wins. */
+.ops-light-scope {
+  @include ops-light-tokens;
+}
+
+.ops-theme-dark {
+  --ops-bright: #EAF0F3;
+  --ops-txt: #CBD3D9;
+  --ops-muted: #707B84;
+  --ops-dim: #5a636b;
+  --ops-label: #8C97A0;
+
+  --ops-canvas: #0C0E11;
+  --ops-panel: #13171B;
+  --ops-panel-2: #0E1116;
+  --ops-hair: #20262C;
+  --ops-row-hair: #1A2026;
+  --ops-nav-active-bg: #1A1F25;
+
+  /* Dark signal tones pulled into the dark-surface lightness band (the old
+     pastels sat too bright and halated against near-black). */
+  --ops-ok: #2FA36B;
+  --ops-warn: #B78B12;
+  --ops-alarm: #DB4747;
+  --ops-info: #2B94B8;
+  --ops-bess: #8B67E8;
+
+  --ops-ok-bg: #0f241c;
+  --ops-ok-border: #1f4a3a;
+  --ops-warn-bg: #2a210c;
+  --ops-warn-border: #57451d;
+  --ops-alarm-bg: #2a1410;
+  --ops-alarm-border: #5c2b22;
+  --ops-info-bg: #0e2a30;
+  --ops-info-border: #1d4750;
+  --ops-bess-bg: #1a1430;
+  --ops-bess-border: #3a2d57;
+  --ops-ack-bg: #0f1c1a;
+  --ops-ack-border: #1d3531;
+
+  /* Dark panels already separate from the near-black canvas; keep the shadow
+     imperceptible so dark mode stays crisp. */
+  --ops-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+
+  /* Dark fills need a slightly higher peak opacity to read against near-black. */
+  --ops-chart-fill-a: 0.24;
+  --ops-chart-fill-b: 0.03;
+}
+
+/* --- Global pulse used by LiveBadge + brand mark in CommandBar --- */
+@keyframes ops-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.45; transform: scale(0.92); }
+}
+
+/* --- Container utility classes for the ops chrome ---
+   These wrap the design's hardcoded inline styles so OpsShell/OpsPanel
+   can stay theme-aware without resorting to inline `style` everywhere. */
+
+.ops-canvas {
+  /* Clean flat canvas — the old 32px square grid overlay read as graph paper;
+     cards now separate via border + soft shadow instead. */
+  background-color: var(--ops-canvas);
+  color: var(--ops-txt);
+  /* Base reading font is now Geist (sans) — the monospace base was the main
+     source of the "developer console" feel. Numerics (.ops-num) and eyebrow
+     labels (.ops-eyebrow) keep Geist Mono so figures stay tabular. */
+  font-family: var(--ops-font-sans);
+  font-size: 14px;
+}
+
+.ops-panel-surface {
+  background-color: var(--ops-panel);
+  border: 1px solid var(--ops-hair);
+  border-radius: var(--ops-radius);
+  box-shadow: var(--ops-shadow);
+}
+
+/* Tabular numerics — every numeric figure renders monospace-tabular. */
+.ops-num {
+  font-family: var(--ops-font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+}
+
+/* Panel-header / telemetry label. Sentence case + sans on purpose — the old
+   mono ALL-CAPS treatment was the loudest "calculator" tell. Labels keep
+   their muted color for hierarchy; only data numerals stay mono (.ops-num). */
+.ops-eyebrow {
+  font-family: var(--ops-font-sans);
+  font-size: 12px;
+  font-weight: 550;
+  color: var(--ops-label);
+  letter-spacing: 0.01em;
+}
+
+/* KPI tile labels (KPIReadout is shared with marketing pages, so the ops
+   softening is scoped to the ops canvas instead of changing its default). */
+.ops-canvas .kpi-label {
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
+/* Neutral KPI values use marketing ink tokens that don't flip with the ops
+   dark theme — remap them to the theme-aware text ramp. Signal-toned values
+   (positive/warning/critical) keep their own classes. */
+.ops-canvas .kpi-value.text-ink,
+.ops-canvas .kpi-value.text-data-fg {
+  color: var(--ops-bright);
+}
+
+.ops-panel-body { line-height: 1.55; }
+
+/* Nav rail group divider — thin hairline above an item (e.g. the org-level
+   Team entry below the plant sections). */
+.ops-nav-divided {
+  position: relative;
+  margin-top: 13px !important;
+}
+.ops-nav-divided::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 6px;
+  right: 6px;
+  border-top: 1px solid var(--ops-hair);
+}
+
+/* Hairline divider helper. */
+.ops-hairline-y > * + * {
+  border-top: 1px solid var(--ops-row-hair);
+}
+
+.ops-hairline-x > * + * {
+  border-left: 1px solid var(--ops-row-hair);
+}
+
+/* Responsive: TelemetryStrip expands at sm/lg breakpoints to its target
+ * column count. Keeps the dense look on desktop while staying readable on
+ * tablet + phone.
+ */
+@media (min-width: 640px) {
+  [data-responsive-strip] {
+    grid-template-columns: repeat(var(--strip-tablet-cols, 4), minmax(0, 1fr)) !important;
+  }
+}
+@media (min-width: 1024px) {
+  [data-responsive-strip] {
+    grid-template-columns: repeat(var(--strip-desktop-cols, 6), minmax(0, 1fr)) !important;
+  }
+}
+
+/* Responsive 2-column ops layouts: stack on mobile/tablet, side-by-side on
+ * desktop. Components opt in by adding the `ops-grid-2` class instead of an
+ * inline gridTemplateColumns.
+ */
+.ops-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+@media (min-width: 1024px) {
+  .ops-grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.ops-grid-2.ops-grid-2-wide {
+  /* For 1.55fr/1fr style — collapses to single column under lg. */
+  grid-template-columns: 1fr;
+}
+@media (min-width: 1024px) {
+  .ops-grid-2.ops-grid-2-wide {
+    grid-template-columns: 1.55fr 1fr;
+  }
+}
+
+/* ────────────────────────────────────────────────────────────────────────
+ * Legacy-component re-skin overlay
+ *
+ * Apply `.ops-legacy` to a panel body containing pre-overhaul components
+ * (CleaningOptimizerTab, ZoneAnalysisTab, DataExplorerChart, the BessSection
+ * tabs, etc.). The selectors below softly retone the most jarring
+ * SaaS-era patterns — white card backgrounds, hard ink text, blue CTAs,
+ * gray utility chrome — without rewriting the components' internals.
+ *
+ * Touch a class? Add it here, not in the legacy file.
+ * ──────────────────────────────────────────────────────────────────────── */
+.ops-legacy {
+  /* Background swaps */
+  .bg-white { background-color: var(--ops-panel) !important; }
+  .bg-paper, .bg-paper-2 { background-color: var(--ops-panel-2) !important; }
+  .bg-gray-50, .bg-zinc-50, .bg-slate-50 { background-color: var(--ops-panel-2) !important; }
+  .bg-gray-100, .bg-zinc-100, .bg-slate-100 { background-color: var(--ops-row-hair) !important; }
+
+  /* Borders */
+  .border-divider,
+  .border-gray-100, .border-gray-200, .border-gray-300,
+  .border-zinc-100, .border-zinc-200, .border-zinc-300,
+  .border-slate-100, .border-slate-200, .border-slate-300 {
+    border-color: var(--ops-hair) !important;
+  }
+
+  /* Text */
+  .text-ink, .text-zinc-900, .text-gray-900, .text-slate-900 { color: var(--ops-bright) !important; }
+  .text-ink-2, .text-zinc-700, .text-gray-700, .text-slate-700,
+  .text-gray-600, .text-zinc-600, .text-slate-600 { color: var(--ops-txt) !important; }
+  .text-ink-3, .text-zinc-500, .text-gray-500, .text-slate-500,
+  .text-gray-400, .text-zinc-400, .text-slate-400 { color: var(--ops-muted) !important; }
+
+  /* Soft signal banners (info / warn / alarm) */
+  .bg-blue-50 { background-color: var(--ops-info-bg) !important; }
+  .border-blue-200, .border-blue-300 { border-color: var(--ops-info-border) !important; }
+  .text-blue-600, .text-blue-700, .text-blue-800 { color: var(--ops-info) !important; }
+
+  .bg-amber-50, .bg-yellow-50, .bg-orange-50 { background-color: var(--ops-warn-bg) !important; }
+  .border-amber-200, .border-yellow-200, .border-orange-200 { border-color: var(--ops-warn-border) !important; }
+  .text-amber-700, .text-amber-800, .text-yellow-700, .text-orange-700, .text-orange-800 { color: var(--ops-warn) !important; }
+
+  .bg-red-50, .bg-rose-50 { background-color: var(--ops-alarm-bg) !important; }
+  .border-red-200, .border-rose-200 { border-color: var(--ops-alarm-border) !important; }
+  .text-red-600, .text-red-700, .text-rose-600, .text-rose-700 { color: var(--ops-alarm) !important; }
+
+  .bg-emerald-50, .bg-green-50 { background-color: var(--ops-ok-bg) !important; }
+  .border-emerald-200, .border-green-200 { border-color: var(--ops-ok-border) !important; }
+  .text-emerald-600, .text-emerald-700, .text-green-600, .text-green-700 { color: var(--ops-ok) !important; }
+
+  /* Primary CTAs → info tone, not vivid blue */
+  .bg-blue-600, .bg-blue-700 {
+    background-color: var(--ops-info) !important;
+    color: var(--ops-panel) !important;
+  }
+  .bg-blue-600:hover, .bg-blue-700:hover { filter: brightness(1.08); }
+
+  /* Tabular numerics + mono in tables */
+  table { font-family: var(--ops-font-mono); font-size: 11.5px; }
+  th { color: var(--ops-label) !important; text-transform: uppercase; letter-spacing: 0.04em; font-size: 10px; }
+
+  /* Clamp legacy radii to the shared ops radius */
+  .rounded-xl { border-radius: var(--ops-radius) !important; }
+  .rounded-lg { border-radius: 8px !important; }
+
+  /* Drop soft shadows entirely — ops is hairlines, no glow */
+  .shadow, .shadow-sm, .shadow-md, .shadow-lg { box-shadow: none !important; }
+}

@@ -1,0 +1,54 @@
+name: nuravolt
+version: 1.0.0
+config-version: 2
+profile: nuravolt
+
+model-paths: [models]
+seed-paths: [seeds]
+macro-paths: [macros]
+
+# Wire DuckDB to the lake on every run: load extensions, register an S3 secret
+# from the AWS credential chain, and ATTACH the Glue Iceberg catalog so models can
+# read bronze tables natively as `glue_cat.bronze.<table>`. (DuckDB reads Glue
+# Iceberg but can't write it, so silver/gold materialize as external Parquet on S3.)
+on-run-start:
+  - "INSTALL iceberg; LOAD iceberg; INSTALL httpfs; LOAD httpfs;"
+  - "CREATE SECRET IF NOT EXISTS s3sec (TYPE s3, PROVIDER credential_chain, REGION '{{ env_var('AWS_REGION', 'eu-west-1') }}')"
+  - "ATTACH IF NOT EXISTS '{{ env_var('AWS_ACCOUNT_ID', '751140963783') }}' AS glue_cat (TYPE iceberg, ENDPOINT_TYPE 'glue')"
+
+models:
+  nuravolt:
+    silver:
+      +materialized: external
+    gold:
+      +materialized: external
+
+# Seeds are reference data that must be editable without a code deploy. They land
+# in the run's in-memory DuckDB, so models that ref() them require `dbt build`
+# (or `dbt seed` then `dbt run` in the same invocation), not a bare `dbt run`.
+#
+# seeds/bess_metric_alias.csv (vendor, raw_metric, canonical_metric) maps a tag
+# as it arrives in bronze onto a canonical BESS DataFieldType. A CSV cannot carry
+# comments, so its contract is here:
+#
+#   * It ships with the 25 IDENTITY rows only (vendor 'canonical'), because that
+#     is all that is verified today: the connectors already emit DataFieldType
+#     member names (src/lib/services/cloud-connector.ts), and no vendor's raw
+#     battery tag names have been read off a reference or a live account. Huawei's
+#     FusionSolar battery dataItemMap keys are deliberately unverified and a test
+#     asserts none are guessed (HUAWEI_BATTERY_CANDIDATE_KEYS in
+#     src/lib/services/huawei-api-service.ts). Do not seed a raw_metric you have
+#     not seen on the wire or read in a vendor document.
+#   * It is meant to GROW from observed traffic: when an unmapped tag shows up,
+#     add the row here and the next dbt build picks it up.
+#   * `vendor` is documentation for now. Bronze rows carry no vendor column, so
+#     silver_bess_telemetry joins on raw_metric alone and drops any raw name that
+#     two vendors map to different canonical metrics rather than picking one.
+seeds:
+  nuravolt:
+    +quote_columns: false
+    bess_metric_alias:
+      +column_types:
+        vendor: VARCHAR
+        raw_metric: VARCHAR
+        canonical_metric: VARCHAR

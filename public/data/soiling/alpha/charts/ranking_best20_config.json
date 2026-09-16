@@ -1,0 +1,183 @@
+{
+  "chartType": "bar",
+  "title": {
+    "text": "Top 20 Inverters by Soiling Ratio",
+    "left": "center"
+  },
+  "tooltip": {
+    "trigger": "axis",
+    "axisPointer": {
+      "type": "shadow"
+    }
+  },
+  "grid": {
+    "top": "60",
+    "left": "120",
+    "right": "40",
+    "bottom": "40"
+  },
+  "xAxis": {
+    "type": "value",
+    "name": "Soiling Ratio",
+    "min": 0.9,
+    "max": 1.0
+  },
+  "yAxis": {
+    "type": "category",
+    "data": [
+      "INV 05.144",
+      "INV 01.027",
+      "INV 05.130",
+      "INV 03.074",
+      "INV 03.061",
+      "INV 05.122",
+      "INV 03.090",
+      "INV 05.123",
+      "INV 05.143",
+      "INV 05.133",
+      "INV 05.128",
+      "INV 05.131",
+      "INV 05.132",
+      "INV 05.134",
+      "INV 05.142",
+      "INV 05.127",
+      "INV 05.141",
+      "INV 05.124",
+      "INV 05.126",
+      "INV 05.125"
+    ]
+  },
+  "series": [
+    {
+      "name": "SR",
+      "type": "bar",
+      "data": [
+        {
+          "value": 1.021,
+          "itemStyle": {
+            "color": "#91cc75"
+          }
+        },
+        {
+          "value": 1.0214,
+          "itemStyle": {
+            "color": "#91cc75"
+          }
+        },
+        {
+          "value": 1.0215,
+          "itemStyle": {
+            "color": "#91cc75"
+          }
+        },
+        {
+          "value": 1.0223,
+          "itemStyle": {
+            "color": "#91cc75"
+          }
+        },
+        {
+          "value": 1.0242,
+          "itemStyle": {
+            "color": "#91cc75"
+          }
+        },
+        {
+          "value": 1.0242,
+          "itemStyle": {
+            "color": "#91cc75"
+          }
+        },
+        {
+          "value": 1.0243,
+          "itemStyle": {
+            "color": "#91cc75"
+          }
+        },
+        {
+          "value": 1.0248,
+          "itemStyle": {
+            "color": "#91cc75"
+          }
+        },
+        {
+          "value": 1.0262,
+          "itemStyle": {
+            "color": "#fac858"
+          }
+        },
+        {
+          "value": 1.0283,
+          "itemStyle": {
+            "color": "#91cc75"
+          }
+        },
+        {
+          "value": 1.0292,
+          "itemStyle": {
+            "color": "#91cc75"
+          }
+        },
+        {
+          "value": 1.0299,
+          "itemStyle": {
+            "color": "#91cc75"
+          }
+        },
+        {
+          "value": 1.0313,
+          "itemStyle": {
+            "color": "#91cc75"
+          }
+        },
+        {
+          "value": 1.0315,
+          "itemStyle": {
+            "color": "#91cc75"
+          }
+        },
+        {
+          "value": 1.0324,
+          "itemStyle": {
+            "color": "#91cc75"
+          }
+        },
+        {
+          "value": 1.0324,
+          "itemStyle": {
+            "color": "#91cc75"
+          }
+        },
+        {
+          "value": 1.0329,
+          "itemStyle": {
+            "color": "#91cc75"
+          }
+        },
+        {
+          "value": 1.0334,
+          "itemStyle": {
+            "color": "#91cc75"
+          }
+        },
+        {
+          "value": 1.0339,
+          "itemStyle": {
+            "color": "#91cc75"
+          }
+        },
+        {
+          "value": 1.0347,
+          "itemStyle": {
+            "color": "#91cc75"
+          }
+        }
+      ],
+      "label": {
+        "show": true,
+        "position": "right",
+        "formatter": "{c}"
+      }
+    }
+  ]
+}

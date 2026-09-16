@@ -1,0 +1,198 @@
+{
+  "dataset": "INVERTER_UNDERPERFORMANCE_PEER",
+  "detector": "INVERTER_UNDERPERFORMANCE_PEER",
+  "tier": "A",
+  "n_samples": 416,
+  "parameters": {
+    "ratio_max": 0.9,
+    "z_max": -4.0,
+    "min_consecutive_intervals": 8
+  },
+  "parameter_budget_ok": true,
+  "per_plant": {
+    "alpha": {
+      "inverters": 150,
+      "mwp": 11.8,
+      "months": 62.4,
+      "peer_groups": 11,
+      "lockbox": false,
+      "events": 1259,
+      "mw_months": 736.37,
+      "alerts_per_mw_month": 1.7097,
+      "devices_alerted": 40,
+      "devices_total": 150,
+      "gate": 1.0,
+      "passes_gate": false,
+      "null_calibration": {
+        "method": "Symmetric-tail control. Only one direction of this statistic can indicate a fault, so the opposite tail contains no faults by construction and estimates the false-positive rate directly, with no labels.",
+        "threshold": 4.0,
+        "n_scored": 8845505,
+        "fault_tail_rate": 0.00399502,
+        "null_tail_rate": 8.82e-06,
+        "signal_to_null_ratio": 453.1,
+        "theoretical_null_rate": 3.167e-05,
+        "is_calibrated": false
+      }
+    },
+    "ribera": {
+      "inverters": 120,
+      "mwp": 9.95,
+      "months": 62.4,
+      "peer_groups": 8,
+      "lockbox": false,
+      "events": 697,
+      "mw_months": 621.2,
+      "alerts_per_mw_month": 1.122,
+      "devices_alerted": 26,
+      "devices_total": 120,
+      "gate": 1.0,
+      "passes_gate": false,
+      "null_calibration": {
+        "method": "Symmetric-tail control. Only one direction of this statistic can indicate a fault, so the opposite tail contains no faults by construction and estimates the false-positive rate directly, with no labels.",
+        "threshold": 4.0,
+        "n_scored": 6983015,
+        "fault_tail_rate": 0.00335328,
+        "null_tail_rate": 1.217e-05,
+        "signal_to_null_ratio": 275.5,
+        "theoretical_null_rate": 3.167e-05,
+        "is_calibrated": true
+      }
+    },
+    "gamma": {
+      "inverters": 45,
+      "mwp": 5.07,
+      "months": 55.6,
+      "peer_groups": 3,
+      "lockbox": false,
+      "events": 161,
+      "mw_months": 281.89,
+      "alerts_per_mw_month": 0.5711,
+      "devices_alerted": 12,
+      "devices_total": 45,
+      "gate": 1.0,
+      "passes_gate": true,
+      "null_calibration": {
+        "method": "Symmetric-tail control. Only one direction of this statistic can indicate a fault, so the opposite tail contains no faults by construction and estimates the false-positive rate directly, with no labels.",
+        "threshold": 4.0,
+        "n_scored": 2175214,
+        "fault_tail_rate": 0.00182603,
+        "null_tail_rate": 8.413e-05,
+        "signal_to_null_ratio": 21.7,
+        "theoretical_null_rate": 3.167e-05,
+        "is_calibrated": true
+      }
+    },
+    "delta": {
+      "inverters": 43,
+      "mwp": 3.62,
+      "months": 55.5,
+      "peer_groups": 2,
+      "lockbox": true,
+      "events": 166,
+      "mw_months": 200.78,
+      "alerts_per_mw_month": 0.8268,
+      "devices_alerted": 9,
+      "devices_total": 43,
+      "gate": 1.0,
+      "passes_gate": true,
+      "null_calibration": {
+        "method": "Symmetric-tail control. Only one direction of this statistic can indicate a fault, so the opposite tail contains no faults by construction and estimates the false-positive rate directly, with no labels.",
+        "threshold": 4.0,
+        "n_scored": 2399960,
+        "fault_tail_rate": 0.00217045,
+        "null_tail_rate": 1.25e-05,
+        "signal_to_null_ratio": 173.6,
+        "theoretical_null_rate": 3.167e-05,
+        "is_calibrated": true
+      }
+    },
+    "zeta": {
+      "inverters": 30,
+      "mwp": 3.7,
+      "months": 40.6,
+      "peer_groups": 2,
+      "lockbox": false,
+      "events": 119,
+      "mw_months": 150.34,
+      "alerts_per_mw_month": 0.7915,
+      "devices_alerted": 10,
+      "devices_total": 30,
+      "gate": 1.0,
+      "passes_gate": true,
+      "null_calibration": {
+        "method": "Symmetric-tail control. Only one direction of this statistic can indicate a fault, so the opposite tail contains no faults by construction and estimates the false-positive rate directly, with no labels.",
+        "threshold": 4.0,
+        "n_scored": 1215338,
+        "fault_tail_rate": 0.00311847,
+        "null_tail_rate": 5.348e-05,
+        "signal_to_null_ratio": 58.3,
+        "theoretical_null_rate": 3.167e-05,
+        "is_calibrated": true
+      }
+    },
+    "eta": {
+      "inverters": 28,
+      "mwp": 2.03,
+      "months": 62.4,
+      "peer_groups": 2,
+      "lockbox": false,
+      "events": 10,
+      "mw_months": 126.88,
+      "alerts_per_mw_month": 0.0788,
+      "devices_alerted": 1,
+      "devices_total": 28,
+      "gate": 1.0,
+      "passes_gate": true,
+      "null_calibration": {
+        "method": "Symmetric-tail control. Only one direction of this statistic can indicate a fault, so the opposite tail contains no faults by construction and estimates the false-positive rate directly, with no labels.",
+        "threshold": 4.0,
+        "n_scored": 1690981,
+        "fault_tail_rate": 0.00048611,
+        "null_tail_rate": 1.124e-05,
+        "signal_to_null_ratio": 43.3,
+        "theoretical_null_rate": 3.167e-05,
+        "is_calibrated": true
+      }
+    }
+  },
+  "extras": {
+    "statistic": "Modified z and ratio against same-timestamp peers grouped by (bus, inverter model, nameplate class). Both must trip together and stay tripped for the dwell window.",
+    "identical_parameters_on_every_plant": true,
+    "fixed_parameters": {
+      "mad_floor_pu": 0.02,
+      "min_peer_median_pu": 0.15,
+      "min_peers": 4
+    },
+    "lockbox_plants": [
+      "delta"
+    ]
+  },
+  "what_this_is_not": "None of these measurements is recall against ground truth. Real plants carry no fault labels. A detector that fires rarely, is calibrated against its own null, and agrees with an independent method is plausible, not proven.",
+  "events": 2412,
+  "mw_months": 2117.47,
+  "alerts_per_mw_month": 1.1391,
+  "devices_alerted": 98,
+  "devices_total": 416,
+  "gate": 1.0,
+  "passes_gate": false,
+  "null_calibration": {
+    "method": "Symmetric-tail control. Only one direction of this statistic can indicate a fault, so the opposite tail contains no faults by construction and estimates the false-positive rate directly, with no labels.",
+    "threshold": 4.0,
+    "n_scored": 23310013,
+    "fault_tail_rate": 0.00311227,
+    "null_tail_rate": 1.973e-05,
+    "signal_to_null_ratio": 157.7,
+    "theoretical_null_rate": 3.167e-05,
+    "is_calibrated": true
+  },
+  "scale_invariance": {
+    "spearman_size_vs_alert_rate": 0.829,
+    "n_plants": 6,
+    "limit": 0.5,
+    "computable": true,
+    "passes": false,
+    "note": "With 6 plants this is weak evidence in either direction. A tier A detector's alert rate should not track plant size; if it does, check the null calibration before concluding the statistic is at fault, because a real difference in plant health looks the same here.",
+    "interpretation": "Read this together with the null calibration. A size correlation only indicates a broken statistic if the HARMLESS tail inflates with size too. If the harmless tail sits on theory at every plant size, the correlation reflects real differences in plant health, not an artefact."
+  },
+  "generated_at": "2026-08-20T14:20:49.241443Z"
+}

@@ -1,0 +1,43 @@
+{
+  "plantInfo": {
+    "plantId": "delta",
+    "plantName": "Delta Solar Plant",
+    "capacity_MW": 12.9,
+    "totalInverters": 215
+  },
+  "currentStatus": {
+    "avgSoilingRatio": 0.918,
+    "estimatedLossPct": 8.2,
+    "lastUpdateTime": "2025-01-15T10:00:00.000000",
+    "dataSource": "ml_model",
+    "validation": {
+      "mae": 0.0158,
+      "rmse": 0.0205,
+      "r_squared": 0.632,
+      "bias": 0.0048,
+      "count": 365
+    }
+  },
+  "fleetHealth": {
+    "normalInverters": 185,
+    "minorIssues": 24,
+    "majorIssues": 6,
+    "critical": 0
+  },
+  "economicImpact": {
+    "ytdEnergyLoss_MWh": 302.8,
+    "ytdRevenueLoss_EUR": 19682.0,
+    "nextCleaningRecommended": "2025-01-25",
+    "estimatedROI_pct": 185,
+    "expectedNetBenefit_EUR": 13777.4,
+    "paybackDays": 55
+  },
+  "topPerformers": [
+    { "id": "INV 01", "sr": 0.96, "loss_pct": 4.0 },
+    { "id": "INV 03", "sr": 0.95, "loss_pct": 5.0 }
+  ],
+  "worstPerformers": [
+    { "id": "INV 07", "sr": 0.87, "loss_pct": 13.0 },
+    { "id": "INV 05", "sr": 0.88, "loss_pct": 12.0 }
+  ]
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "v-nimbus-001",
+    "type": "SOC_HIGH_DWELL",
+    "started_at": "2026-01-28T06:15:00Z",
+    "ended_at": "2026-01-28T11:42:00Z",
+    "duration_minutes": 327,
+    "severity": "warning",
+    "measured_value": 0.96,
+    "threshold_value": 0.95,
+    "unit": "fraction",
+    "description": "SoC held above 95% for 5h27m after planned morning trough fill — buyer cancelled afternoon dispatch slot.",
+    "is_resolved": true
+  },
+  {
+    "id": "v-nimbus-002",
+    "type": "C_RATE_EXCEED",
+    "started_at": "2026-01-20T17:48:00Z",
+    "ended_at": "2026-01-20T17:53:00Z",
+    "duration_minutes": 5,
+    "severity": "warning",
+    "measured_value": 1.08,
+    "threshold_value": 1.00,
+    "unit": "C",
+    "description": "Continuous C-rate momentarily reached 1.08 during a frequency response activation. Brief excursion, within peak allowance window.",
+    "is_resolved": true
+  },
+  {
+    "id": "v-nimbus-003",
+    "type": "TEMPERATURE_EXCEED",
+    "started_at": "2026-01-13T15:40:00Z",
+    "ended_at": "2026-01-13T16:22:00Z",
+    "duration_minutes": 42,
+    "severity": "warning",
+    "measured_value": 47.2,
+    "threshold_value": 45.0,
+    "unit": "°C",
+    "description": "Rack 14 cell-level temperature exceeded 45°C for 42 minutes during back-to-back DC then arbitrage dispatch — HVAC catching up.",
+    "is_resolved": false
+  },
+  {
+    "id": "v-nimbus-004",
+    "type": "RTE_DEGRADATION",
+    "started_at": "2025-12-15T00:00:00Z",
+    "ended_at": null,
+    "duration_minutes": null,
+    "severity": "warning",
+    "measured_value": 0.832,
+    "threshold_value": 0.86,
+    "unit": "fraction",
+    "description": "Trailing-30d round-trip efficiency 83.2% — 2.8pp below the 86% contractual minimum. Suspect HVAC inefficiency at higher ambient temperatures.",
+    "is_resolved": false
+  }
+]

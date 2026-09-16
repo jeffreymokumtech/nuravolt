@@ -1,0 +1,1000 @@
+{
+  "plant_id": "ribera",
+  "generated_at": "2025-12-14T00:00:00+00:00",
+  "summary": {
+    "current_loss_kwh": 0.0,
+    "projected_loss_kwh": 0.0,
+    "current_loss_value": 0,
+    "projected_loss_value": 0,
+    "currency": "EUR",
+    "reactive_count": 1,
+    "predictive_count": 7,
+    "critical_count": 1,
+    "urgent_count": 0,
+    "soon_count": 1,
+    "planned_count": 0,
+    "monitoring_count": 1
+  },
+  "health_score": {
+    "value": 95,
+    "status": "healthy",
+    "anomaly_penalty": 0,
+    "fault_penalty": 0,
+    "rul_penalty": 5,
+    "trend": "stable"
+  },
+  "urgency_summary": {
+    "monitoring": {
+      "count": 1,
+      "total_revenue_at_risk_eur": 0
+    },
+    "critical": {
+      "count": 1,
+      "total_revenue_at_risk_eur": 0
+    },
+    "urgent": {
+      "count": 0,
+      "total_revenue_at_risk_eur": 0
+    },
+    "soon": {
+      "count": 0,
+      "total_revenue_at_risk_eur": 0
+    },
+    "planned": {
+      "count": 0,
+      "total_revenue_at_risk_eur": 0
+    }
+  },
+  "rul_predictions": [
+    {
+      "fault_type": "string_degradation",
+      "display_name": "Module Voltage Drop",
+      "days_to_fault": 180,
+      "confidence": 0.52,
+      "current_value": 1.76,
+      "threshold": 5.0,
+      "unit": "% voltage deviation",
+      "trend": -0.0065,
+      "urgency": "monitoring",
+      "is_urgent": false,
+      "recommended_action": "IV-curve trace the strings on this inverter; check connectors and isolation.",
+      "repair_cost_eur": 800,
+      "estimated_date": "2026-06-12T00:00:00+00:00",
+      "projected_power_loss_kw": 0.0,
+      "projected_energy_loss_kwh": 0.0,
+      "revenue_at_risk_eur": 0,
+      "inverter_id": "PV-03.085",
+      "classification_layer": "AI_OVERRIDE",
+      "evidence": "AI: reclassifies as module voltage drop based on signal context; prior ML_CLASSIFIER @ 52% insufficient for high-confidence call",
+      "numeric_evidence": {
+        "prior_best_confidence": 0.52,
+        "ai_synthesised_confidence": 0.67,
+        "reclassified_from": "string_degradation",
+        "source": "synthetic"
+      },
+      "winner_reason": "AI override: ML_CLASSIFIER @ 0.52 \u2192 AI @ 0.67 reclassified as module_voltage_drop",
+      "layer_chain": [
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "string_degradation",
+          "confidence": 0.52,
+          "evidence": "CatBoost classifier: string degradation @ 52% probability, trend -0.65%/d (improving), ~180d to fault",
+          "severity": "info"
+        },
+        {
+          "layer": "AI_OVERRIDE",
+          "fault_type": "module_voltage_drop",
+          "confidence": 0.67,
+          "evidence": "AI: reclassifies as module voltage drop based on signal context; prior ML_CLASSIFIER @ 52% insufficient for high-confidence call",
+          "severity": "info"
+        }
+      ],
+      "severity": "info",
+      "asset_type": "PV_STRING",
+      "fault_type_original": "string_degradation",
+      "fault_type_reclassified": "module_voltage_drop",
+      "confidence_cascade": 0.67,
+      "cascade_winning_confidence": 0.67
+    },
+    {
+      "fault_type": "string_degradation",
+      "display_name": "String Degradation",
+      "days_to_fault": 1,
+      "confidence": 0.9,
+      "current_value": 8.54,
+      "threshold": 5.0,
+      "unit": "% voltage deviation",
+      "trend": 0.0153,
+      "urgency": "critical",
+      "is_urgent": true,
+      "recommended_action": "IV-curve trace the strings on this inverter; check connectors and isolation.",
+      "repair_cost_eur": 800,
+      "estimated_date": "2025-12-15T00:00:00+00:00",
+      "projected_power_loss_kw": 0.0,
+      "projected_energy_loss_kwh": 0.0,
+      "revenue_at_risk_eur": 0,
+      "inverter_id": "PV-03.093",
+      "classification_layer": "RULE",
+      "evidence": "string degradation: actual 8.54% voltage deviation severely exceeds rule threshold 5.00% voltage deviation (+71%, rule R-39)",
+      "numeric_evidence": {
+        "actual": 8.54,
+        "threshold": 5.0,
+        "unit": "% voltage deviation",
+        "overage_pct": 70.8
+      },
+      "winner_reason": "highest confidence (0.89) via RULE",
+      "layer_chain": [
+        {
+          "layer": "RULE",
+          "fault_type": "string_degradation",
+          "confidence": 0.892,
+          "evidence": "string degradation: actual 8.54% voltage deviation severely exceeds rule threshold 5.00% voltage deviation (+71%, rule R-39)",
+          "severity": "critical"
+        },
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "string_degradation",
+          "confidence": 0.592,
+          "evidence": "digital twin residual 3.54% voltage deviation above expected; actual 8.54 vs twin band \u00b15.00",
+          "severity": "critical"
+        },
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "string_degradation",
+          "confidence": 0.85,
+          "evidence": "CatBoost classifier: string degradation @ 85% probability, trend +1.53%/d (worsening), ~1d to fault",
+          "severity": "critical"
+        }
+      ],
+      "severity": "critical",
+      "asset_type": "PV_STRING",
+      "cascade_winning_confidence": 0.892
+    },
+    {
+      "id": "bess-reactive-soc_high_dwell-bess-ribera-001-0",
+      "fault_type": "soc_high_dwell",
+      "display_name": "Warranty Violation Soc Dwell",
+      "equipment_id": "bess-ribera-001",
+      "equipment_name": "Ribera BESS Unit 1",
+      "asset_type": "BESS_PACK",
+      "days_to_fault": 0.0,
+      "confidence": 1.0,
+      "current_value": 32.9,
+      "threshold": 24.0,
+      "unit": "h cumulative",
+      "trend": null,
+      "urgency": "soon",
+      "is_urgent": false,
+      "recommended_action": "Dispatch energy to reduce SoC below 95%",
+      "estimated_date": "2026-06-16",
+      "projected_power_loss_kw": 0.0,
+      "projected_energy_loss_kwh": 0.0,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 0.0,
+      "is_reactive": true,
+      "bess_source": true,
+      "classification_layer": "AI_OVERRIDE",
+      "evidence": "SOC high dwell time of 32.90h exceeds warranty threshold of 24.00h, indicating a potential violation.",
+      "numeric_evidence": {
+        "ai_reasoning": "The system has exceeded the allowable high SOC dwell time as defined by warranty terms, which can lead to accelerated degradation and reduced battery life. This is a direct match to the 'warranty_violation_soc_dwell' fault type, which is more appropriate than generic 'soc_high_dwell' for regulatory and contractual compliance tracking.",
+        "model_id": "qwen.qwen3-32b-v1:0"
+      },
+      "winner_reason": "AI override: RULE @ 0.82 \u2192 AI @ 0.85 reclassified as warranty_violation_soc_dwell",
+      "layer_chain": [
+        {
+          "layer": "RULE",
+          "fault_type": "soc_high_dwell",
+          "confidence": 0.824,
+          "evidence": "soc high dwell: actual 32.90h cumulative substantially exceeds rule threshold 24.00h cumulative (+37%, rule R-28)",
+          "severity": "warning"
+        },
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "soc_high_dwell",
+          "confidence": 0.524,
+          "evidence": "digital twin residual 8.90h cumulative above expected; actual 32.90 vs twin band \u00b124.00",
+          "severity": "warning"
+        },
+        {
+          "layer": "AI_OVERRIDE",
+          "fault_type": "warranty_violation_soc_dwell",
+          "confidence": 0.85,
+          "evidence": "SOC high dwell time of 32.90h exceeds warranty threshold of 24.00h, indicating a potential violation.",
+          "severity": "warning"
+        }
+      ],
+      "severity": "warning",
+      "fault_type_original": "soc_high_dwell",
+      "fault_type_reclassified": "warranty_violation_soc_dwell",
+      "cascade_winning_confidence": 0.85
+    },
+    {
+      "id": "bess-pred-cell_imbalance-bess-ribera-001",
+      "fault_type": "cell_imbalance",
+      "display_name": "Cell Voltage Imbalance Warning",
+      "equipment_id": "bess-ribera-001",
+      "equipment_name": "Ribera BESS Unit 1",
+      "asset_type": "BESS_MODULE",
+      "days_to_fault": 145.4,
+      "confidence": 0.982,
+      "current_value": 12.8,
+      "threshold": 50.0,
+      "unit": "mV",
+      "trend": 0.256923,
+      "urgency": "monitoring",
+      "is_urgent": false,
+      "recommended_action": "Schedule a full balance cycle. If spread continues growing, inspect individual cells for early-stage failure.",
+      "estimated_date": "2026-11-11",
+      "projected_power_loss_kw": 64.0,
+      "projected_energy_loss_kwh": 1536.0,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 115.2,
+      "is_reactive": false,
+      "bess_source": true,
+      "classification_layer": "ML_CLASSIFIER",
+      "evidence": "CatBoost classifier: cell imbalance @ 85% probability, trend +25.69%/d (worsening), ~145d to fault",
+      "numeric_evidence": {
+        "model_probability": 0.85,
+        "days_to_fault": 145.4,
+        "trend_per_day": 0.256923
+      },
+      "winner_reason": "highest confidence (0.85) via ML_CLASSIFIER",
+      "layer_chain": [
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "cell_imbalance",
+          "confidence": 0.85,
+          "evidence": "CatBoost classifier: cell imbalance @ 85% probability, trend +25.69%/d (worsening), ~145d to fault",
+          "severity": "info"
+        }
+      ],
+      "severity": "info",
+      "cascade_winning_confidence": 0.85
+    },
+    {
+      "id": "bess-pred-capacity_fade-bess-ribera-001",
+      "fault_type": "capacity_fade",
+      "display_name": "Capacity Fade Warning",
+      "equipment_id": "bess-ribera-001",
+      "equipment_name": "Ribera BESS Unit 1",
+      "asset_type": "BESS_PACK",
+      "days_to_fault": 3650.0,
+      "confidence": 0.94,
+      "current_value": 0.9412,
+      "threshold": 0.7,
+      "unit": "%",
+      "trend": -6.4e-05,
+      "urgency": "monitoring",
+      "is_urgent": false,
+      "recommended_action": "Review dispatch strategy to reduce cycling stress and calendar aging",
+      "estimated_date": "2036-06-16",
+      "projected_power_loss_kw": 188.16,
+      "projected_energy_loss_kwh": 4515.8,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 338.69,
+      "is_reactive": false,
+      "bess_source": true,
+      "classification_layer": "AI_OVERRIDE",
+      "evidence": "AI: confirms capacity fade with higher confidence (RULE @ 82% \u2192 AI @ 90%); signal pattern matches known fault signature",
+      "numeric_evidence": {
+        "prior_best_confidence": 0.819,
+        "ai_synthesised_confidence": 0.9,
+        "reclassified_from": null,
+        "source": "synthetic"
+      },
+      "winner_reason": "AI override: RULE @ 0.82 \u2192 AI @ 0.90 reclassified as capacity_fade",
+      "layer_chain": [
+        {
+          "layer": "RULE",
+          "fault_type": "capacity_fade",
+          "confidence": 0.819,
+          "evidence": "capacity fade: actual 0.94% substantially exceeds rule threshold 0.70% (+34%, rule R-95)",
+          "severity": "info"
+        },
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "capacity_fade",
+          "confidence": 0.519,
+          "evidence": "digital twin residual 0.24% above expected; actual 0.94 vs twin band \u00b10.70",
+          "severity": "info"
+        },
+        {
+          "layer": "AI_OVERRIDE",
+          "fault_type": "capacity_fade",
+          "confidence": 0.9,
+          "evidence": "AI: confirms capacity fade with higher confidence (RULE @ 82% \u2192 AI @ 90%); signal pattern matches known fault signature",
+          "severity": "info"
+        }
+      ],
+      "severity": "info",
+      "cascade_winning_confidence": 0.9
+    },
+    {
+      "id": "bess-pred-thermal_stress-bess-ribera-001",
+      "fault_type": "thermal_stress",
+      "display_name": "Thermal Stress Warning",
+      "equipment_id": "bess-ribera-001",
+      "equipment_name": "Ribera BESS Unit 1",
+      "asset_type": "BESS_MODULE",
+      "days_to_fault": 3650.0,
+      "confidence": 0.014,
+      "current_value": 30.3767,
+      "threshold": 45.0,
+      "unit": "\u00b0C",
+      "trend": 0.005558,
+      "urgency": "monitoring",
+      "is_urgent": false,
+      "recommended_action": "Inspect HVAC / cooling system. Reduce peak power during hottest hours to lower cell temperature.",
+      "estimated_date": "2036-06-16",
+      "projected_power_loss_kw": 160.0,
+      "projected_energy_loss_kwh": 3840.0,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 288.0,
+      "is_reactive": false,
+      "bess_source": true,
+      "classification_layer": "AI_OVERRIDE",
+      "evidence": "AI: confirms thermal stress with higher confidence (ML_CLASSIFIER @ 45% \u2192 AI @ 60%); signal pattern matches known fault signature",
+      "numeric_evidence": {
+        "prior_best_confidence": 0.45,
+        "ai_synthesised_confidence": 0.6,
+        "reclassified_from": null,
+        "source": "synthetic"
+      },
+      "winner_reason": "AI override: ML_CLASSIFIER @ 0.45 \u2192 AI @ 0.60 reclassified as thermal_stress",
+      "layer_chain": [
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "thermal_stress",
+          "confidence": 0.435,
+          "evidence": "digital twin residual 14.62\u00b0C below expected; actual 30.38 vs twin band \u00b145.00",
+          "severity": "info"
+        },
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "thermal_stress",
+          "confidence": 0.45,
+          "evidence": "CatBoost classifier: thermal stress @ 45% probability, trend +0.56%/d (worsening), ~3650d to fault",
+          "severity": "info"
+        },
+        {
+          "layer": "AI_OVERRIDE",
+          "fault_type": "thermal_stress",
+          "confidence": 0.6,
+          "evidence": "AI: confirms thermal stress with higher confidence (ML_CLASSIFIER @ 45% \u2192 AI @ 60%); signal pattern matches known fault signature",
+          "severity": "info"
+        }
+      ],
+      "severity": "info",
+      "confidence_cascade": 0.6,
+      "cascade_winning_confidence": 0.6
+    },
+    {
+      "id": "bess-pred-cycle_life-bess-ribera-001",
+      "fault_type": "cycle_life",
+      "display_name": "Cycle Life Warning",
+      "equipment_id": "bess-ribera-001",
+      "equipment_name": "Ribera BESS Unit 1",
+      "asset_type": "BESS_PACK",
+      "days_to_fault": 3650.0,
+      "confidence": 1.0,
+      "current_value": 612.8,
+      "threshold": 6000.0,
+      "unit": "EFC",
+      "trend": 0.71188,
+      "urgency": "monitoring",
+      "is_urgent": false,
+      "recommended_action": "Reduce daily cycling frequency. Consider partial-cycle dispatching to stay within warranty budget.",
+      "estimated_date": "2036-06-16",
+      "projected_power_loss_kw": 0.0,
+      "projected_energy_loss_kwh": 0.0,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 0.0,
+      "is_reactive": false,
+      "bess_source": true,
+      "classification_layer": "ML_CLASSIFIER",
+      "evidence": "CatBoost classifier: cycle life @ 85% probability, trend +71.19%/d (worsening), ~3650d to fault",
+      "numeric_evidence": {
+        "model_probability": 0.85,
+        "days_to_fault": 3650.0,
+        "trend_per_day": 0.71188
+      },
+      "winner_reason": "highest confidence (0.85) via ML_CLASSIFIER",
+      "layer_chain": [
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "cycle_life",
+          "confidence": 0.85,
+          "evidence": "CatBoost classifier: cycle life @ 85% probability, trend +71.19%/d (worsening), ~3650d to fault",
+          "severity": "info"
+        }
+      ],
+      "severity": "info",
+      "cascade_winning_confidence": 0.85
+    },
+    {
+      "id": "bess-pred-rte_decay-bess-ribera-001",
+      "fault_type": "rte_decay",
+      "display_name": "Round-Trip Efficiency Decay",
+      "equipment_id": "bess-ribera-001",
+      "equipment_name": "Ribera BESS Unit 1",
+      "asset_type": "BESS_PACK",
+      "days_to_fault": 3650.0,
+      "confidence": 0.28,
+      "current_value": 0.8868,
+      "threshold": 0.85,
+      "unit": "%",
+      "trend": 0.000103,
+      "urgency": "monitoring",
+      "is_urgent": false,
+      "recommended_action": "Investigate internal resistance increase. Check connections, BMS calibration, and consider capacity test to confirm degradation.",
+      "estimated_date": "2036-06-16",
+      "projected_power_loss_kw": 0.0,
+      "projected_energy_loss_kwh": 0.0,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 0.0,
+      "is_reactive": false,
+      "bess_source": true,
+      "classification_layer": "AI_OVERRIDE",
+      "evidence": "AI: confirms rte decay with higher confidence (RULE @ 76% \u2192 AI @ 87%); signal pattern matches known fault signature",
+      "numeric_evidence": {
+        "prior_best_confidence": 0.759,
+        "ai_synthesised_confidence": 0.867,
+        "reclassified_from": null,
+        "source": "synthetic"
+      },
+      "winner_reason": "AI override: RULE @ 0.76 \u2192 AI @ 0.87 reclassified as rte_decay",
+      "layer_chain": [
+        {
+          "layer": "RULE",
+          "fault_type": "rte_decay",
+          "confidence": 0.759,
+          "evidence": "rte decay: actual 0.89% marginally exceeds rule threshold 0.85% (+4%, rule R-03)",
+          "severity": "info"
+        },
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "rte_decay",
+          "confidence": 0.459,
+          "evidence": "digital twin residual 0.04% above expected; actual 0.89 vs twin band \u00b10.85",
+          "severity": "info"
+        },
+        {
+          "layer": "AI_OVERRIDE",
+          "fault_type": "rte_decay",
+          "confidence": 0.867,
+          "evidence": "AI: confirms rte decay with higher confidence (RULE @ 76% \u2192 AI @ 87%); signal pattern matches known fault signature",
+          "severity": "info"
+        }
+      ],
+      "severity": "info",
+      "confidence_cascade": 0.867,
+      "cascade_winning_confidence": 0.867
+    }
+  ],
+  "generator": "scripts/regenerate_fault_rul.py \u2014 derived from analysis_daily twin residuals",
+  "maintenance_schedule": {
+    "next_7_days": [
+      {
+        "date": "2025-12-14",
+        "tasks": [
+          {
+            "fault_type": "string_degradation",
+            "inverter_id": "PV-03.093",
+            "priority_score": 106
+          }
+        ]
+      },
+      {
+        "date": "2025-12-15",
+        "tasks": [
+          {
+            "fault_type": "string_degradation",
+            "inverter_id": "PV-03.093",
+            "priority_score": 106
+          }
+        ]
+      },
+      {
+        "date": "2025-12-16",
+        "tasks": [
+          {
+            "fault_type": "string_degradation",
+            "inverter_id": "PV-03.093",
+            "priority_score": 106
+          }
+        ]
+      },
+      {
+        "date": "2025-12-17",
+        "tasks": [
+          {
+            "fault_type": "string_degradation",
+            "inverter_id": "PV-03.093",
+            "priority_score": 106
+          }
+        ]
+      },
+      {
+        "date": "2025-12-18",
+        "tasks": [
+          {
+            "fault_type": "string_degradation",
+            "inverter_id": "PV-03.093",
+            "priority_score": 106
+          }
+        ]
+      },
+      {
+        "date": "2025-12-19",
+        "tasks": [
+          {
+            "fault_type": "string_degradation",
+            "inverter_id": "PV-03.093",
+            "priority_score": 106
+          }
+        ]
+      },
+      {
+        "date": "2025-12-20",
+        "tasks": [
+          {
+            "fault_type": "string_degradation",
+            "inverter_id": "PV-03.093",
+            "priority_score": 106
+          }
+        ]
+      }
+    ],
+    "total_repair_cost_eur": 1600,
+    "total_revenue_saved_eur": 0,
+    "roi_pct": -100.0
+  },
+  "predictive_faults": [
+    {
+      "id": "PF-0001",
+      "fault_type": "string_degradation",
+      "display_name": "Module Voltage Drop",
+      "equipment_id": "PV-03.085",
+      "days_to_fault": 180,
+      "confidence": 0.52,
+      "current_value": 1.76,
+      "threshold": 5.0,
+      "unit": "% voltage deviation",
+      "trend": -0.0065,
+      "urgency": "monitoring",
+      "is_urgent": false,
+      "recommended_action": "IV-curve trace the strings on this inverter; check connectors and isolation.",
+      "repair_cost_eur": 800,
+      "estimated_date": "2026-06-12T00:00:00+00:00",
+      "projected_power_loss_kw": 0.0,
+      "projected_energy_loss_kwh": 0.0,
+      "revenue_at_risk_eur": 0,
+      "equipment_name": "PV-03.085",
+      "classification_layer": "AI_OVERRIDE",
+      "evidence": "AI: reclassifies as module voltage drop based on signal context; prior ML_CLASSIFIER @ 52% insufficient for high-confidence call",
+      "numeric_evidence": {
+        "prior_best_confidence": 0.52,
+        "ai_synthesised_confidence": 0.67,
+        "reclassified_from": "string_degradation",
+        "source": "synthetic"
+      },
+      "winner_reason": "AI override: ML_CLASSIFIER @ 0.52 \u2192 AI @ 0.67 reclassified as module_voltage_drop",
+      "layer_chain": [
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "string_degradation",
+          "confidence": 0.52,
+          "evidence": "CatBoost classifier: string degradation @ 52% probability, trend -0.65%/d (improving), ~180d to fault",
+          "severity": "info"
+        },
+        {
+          "layer": "AI_OVERRIDE",
+          "fault_type": "module_voltage_drop",
+          "confidence": 0.67,
+          "evidence": "AI: reclassifies as module voltage drop based on signal context; prior ML_CLASSIFIER @ 52% insufficient for high-confidence call",
+          "severity": "info"
+        }
+      ],
+      "severity": "info",
+      "asset_type": "PV_STRING",
+      "fault_type_original": "string_degradation",
+      "fault_type_reclassified": "module_voltage_drop",
+      "confidence_cascade": 0.67,
+      "cascade_winning_confidence": 0.67
+    },
+    {
+      "id": "PF-0002",
+      "fault_type": "string_degradation",
+      "display_name": "String Degradation",
+      "equipment_id": "PV-03.093",
+      "days_to_fault": 1,
+      "confidence": 0.9,
+      "current_value": 8.54,
+      "threshold": 5.0,
+      "unit": "% voltage deviation",
+      "trend": 0.0153,
+      "urgency": "critical",
+      "is_urgent": true,
+      "recommended_action": "IV-curve trace the strings on this inverter; check connectors and isolation.",
+      "repair_cost_eur": 800,
+      "estimated_date": "2025-12-15T00:00:00+00:00",
+      "projected_power_loss_kw": 0.0,
+      "projected_energy_loss_kwh": 0.0,
+      "revenue_at_risk_eur": 0,
+      "equipment_name": "PV-03.093",
+      "classification_layer": "RULE",
+      "evidence": "string degradation: actual 8.54% voltage deviation severely exceeds rule threshold 5.00% voltage deviation (+71%, rule R-39)",
+      "numeric_evidence": {
+        "actual": 8.54,
+        "threshold": 5.0,
+        "unit": "% voltage deviation",
+        "overage_pct": 70.8
+      },
+      "winner_reason": "highest confidence (0.89) via RULE",
+      "layer_chain": [
+        {
+          "layer": "RULE",
+          "fault_type": "string_degradation",
+          "confidence": 0.892,
+          "evidence": "string degradation: actual 8.54% voltage deviation severely exceeds rule threshold 5.00% voltage deviation (+71%, rule R-39)",
+          "severity": "critical"
+        },
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "string_degradation",
+          "confidence": 0.592,
+          "evidence": "digital twin residual 3.54% voltage deviation above expected; actual 8.54 vs twin band \u00b15.00",
+          "severity": "critical"
+        },
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "string_degradation",
+          "confidence": 0.85,
+          "evidence": "CatBoost classifier: string degradation @ 85% probability, trend +1.53%/d (worsening), ~1d to fault",
+          "severity": "critical"
+        }
+      ],
+      "severity": "critical",
+      "asset_type": "PV_STRING",
+      "cascade_winning_confidence": 0.892
+    },
+    {
+      "id": "bess-reactive-soc_high_dwell-bess-ribera-001-0",
+      "fault_type": "soc_high_dwell",
+      "display_name": "Warranty Violation Soc Dwell",
+      "equipment_id": "bess-ribera-001",
+      "equipment_name": "Ribera BESS Unit 1",
+      "asset_type": "BESS_PACK",
+      "days_to_fault": 0.0,
+      "confidence": 1.0,
+      "current_value": 32.9,
+      "threshold": 24.0,
+      "unit": "h cumulative",
+      "trend": null,
+      "urgency": "soon",
+      "is_urgent": false,
+      "recommended_action": "Dispatch energy to reduce SoC below 95%",
+      "estimated_date": "2026-06-16",
+      "projected_power_loss_kw": 0.0,
+      "projected_energy_loss_kwh": 0.0,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 0.0,
+      "is_reactive": true,
+      "bess_source": true,
+      "classification_layer": "AI_OVERRIDE",
+      "evidence": "SOC high dwell time of 32.90h exceeds warranty threshold of 24.00h, indicating a potential violation.",
+      "numeric_evidence": {
+        "ai_reasoning": "The system has exceeded the allowable high SOC dwell time as defined by warranty terms, which can lead to accelerated degradation and reduced battery life. This is a direct match to the 'warranty_violation_soc_dwell' fault type, which is more appropriate than generic 'soc_high_dwell' for regulatory and contractual compliance tracking.",
+        "model_id": "qwen.qwen3-32b-v1:0"
+      },
+      "winner_reason": "AI override: RULE @ 0.82 \u2192 AI @ 0.85 reclassified as warranty_violation_soc_dwell",
+      "layer_chain": [
+        {
+          "layer": "RULE",
+          "fault_type": "soc_high_dwell",
+          "confidence": 0.824,
+          "evidence": "soc high dwell: actual 32.90h cumulative substantially exceeds rule threshold 24.00h cumulative (+37%, rule R-28)",
+          "severity": "warning"
+        },
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "soc_high_dwell",
+          "confidence": 0.524,
+          "evidence": "digital twin residual 8.90h cumulative above expected; actual 32.90 vs twin band \u00b124.00",
+          "severity": "warning"
+        },
+        {
+          "layer": "AI_OVERRIDE",
+          "fault_type": "warranty_violation_soc_dwell",
+          "confidence": 0.85,
+          "evidence": "SOC high dwell time of 32.90h exceeds warranty threshold of 24.00h, indicating a potential violation.",
+          "severity": "warning"
+        }
+      ],
+      "severity": "warning",
+      "fault_type_original": "soc_high_dwell",
+      "fault_type_reclassified": "warranty_violation_soc_dwell",
+      "cascade_winning_confidence": 0.85
+    },
+    {
+      "id": "bess-pred-cell_imbalance-bess-ribera-001",
+      "fault_type": "cell_imbalance",
+      "display_name": "Cell Voltage Imbalance Warning",
+      "equipment_id": "bess-ribera-001",
+      "equipment_name": "Ribera BESS Unit 1",
+      "asset_type": "BESS_MODULE",
+      "days_to_fault": 145.4,
+      "confidence": 0.982,
+      "current_value": 12.8,
+      "threshold": 50.0,
+      "unit": "mV",
+      "trend": 0.256923,
+      "urgency": "monitoring",
+      "is_urgent": false,
+      "recommended_action": "Schedule a full balance cycle. If spread continues growing, inspect individual cells for early-stage failure.",
+      "estimated_date": "2026-11-11",
+      "projected_power_loss_kw": 64.0,
+      "projected_energy_loss_kwh": 1536.0,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 115.2,
+      "is_reactive": false,
+      "bess_source": true,
+      "classification_layer": "ML_CLASSIFIER",
+      "evidence": "CatBoost classifier: cell imbalance @ 85% probability, trend +25.69%/d (worsening), ~145d to fault",
+      "numeric_evidence": {
+        "model_probability": 0.85,
+        "days_to_fault": 145.4,
+        "trend_per_day": 0.256923
+      },
+      "winner_reason": "highest confidence (0.85) via ML_CLASSIFIER",
+      "layer_chain": [
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "cell_imbalance",
+          "confidence": 0.85,
+          "evidence": "CatBoost classifier: cell imbalance @ 85% probability, trend +25.69%/d (worsening), ~145d to fault",
+          "severity": "info"
+        }
+      ],
+      "severity": "info",
+      "cascade_winning_confidence": 0.85
+    },
+    {
+      "id": "bess-pred-capacity_fade-bess-ribera-001",
+      "fault_type": "capacity_fade",
+      "display_name": "Capacity Fade Warning",
+      "equipment_id": "bess-ribera-001",
+      "equipment_name": "Ribera BESS Unit 1",
+      "asset_type": "BESS_PACK",
+      "days_to_fault": 3650.0,
+      "confidence": 0.94,
+      "current_value": 0.9412,
+      "threshold": 0.7,
+      "unit": "%",
+      "trend": -6.4e-05,
+      "urgency": "monitoring",
+      "is_urgent": false,
+      "recommended_action": "Review dispatch strategy to reduce cycling stress and calendar aging",
+      "estimated_date": "2036-06-16",
+      "projected_power_loss_kw": 188.16,
+      "projected_energy_loss_kwh": 4515.8,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 338.69,
+      "is_reactive": false,
+      "bess_source": true,
+      "classification_layer": "AI_OVERRIDE",
+      "evidence": "AI: confirms capacity fade with higher confidence (RULE @ 82% \u2192 AI @ 90%); signal pattern matches known fault signature",
+      "numeric_evidence": {
+        "prior_best_confidence": 0.819,
+        "ai_synthesised_confidence": 0.9,
+        "reclassified_from": null,
+        "source": "synthetic"
+      },
+      "winner_reason": "AI override: RULE @ 0.82 \u2192 AI @ 0.90 reclassified as capacity_fade",
+      "layer_chain": [
+        {
+          "layer": "RULE",
+          "fault_type": "capacity_fade",
+          "confidence": 0.819,
+          "evidence": "capacity fade: actual 0.94% substantially exceeds rule threshold 0.70% (+34%, rule R-95)",
+          "severity": "info"
+        },
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "capacity_fade",
+          "confidence": 0.519,
+          "evidence": "digital twin residual 0.24% above expected; actual 0.94 vs twin band \u00b10.70",
+          "severity": "info"
+        },
+        {
+          "layer": "AI_OVERRIDE",
+          "fault_type": "capacity_fade",
+          "confidence": 0.9,
+          "evidence": "AI: confirms capacity fade with higher confidence (RULE @ 82% \u2192 AI @ 90%); signal pattern matches known fault signature",
+          "severity": "info"
+        }
+      ],
+      "severity": "info",
+      "cascade_winning_confidence": 0.9
+    },
+    {
+      "id": "bess-pred-thermal_stress-bess-ribera-001",
+      "fault_type": "thermal_stress",
+      "display_name": "Thermal Stress Warning",
+      "equipment_id": "bess-ribera-001",
+      "equipment_name": "Ribera BESS Unit 1",
+      "asset_type": "BESS_MODULE",
+      "days_to_fault": 3650.0,
+      "confidence": 0.014,
+      "current_value": 30.3767,
+      "threshold": 45.0,
+      "unit": "\u00b0C",
+      "trend": 0.005558,
+      "urgency": "monitoring",
+      "is_urgent": false,
+      "recommended_action": "Inspect HVAC / cooling system. Reduce peak power during hottest hours to lower cell temperature.",
+      "estimated_date": "2036-06-16",
+      "projected_power_loss_kw": 160.0,
+      "projected_energy_loss_kwh": 3840.0,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 288.0,
+      "is_reactive": false,
+      "bess_source": true,
+      "classification_layer": "AI_OVERRIDE",
+      "evidence": "AI: confirms thermal stress with higher confidence (ML_CLASSIFIER @ 45% \u2192 AI @ 60%); signal pattern matches known fault signature",
+      "numeric_evidence": {
+        "prior_best_confidence": 0.45,
+        "ai_synthesised_confidence": 0.6,
+        "reclassified_from": null,
+        "source": "synthetic"
+      },
+      "winner_reason": "AI override: ML_CLASSIFIER @ 0.45 \u2192 AI @ 0.60 reclassified as thermal_stress",
+      "layer_chain": [
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "thermal_stress",
+          "confidence": 0.435,
+          "evidence": "digital twin residual 14.62\u00b0C below expected; actual 30.38 vs twin band \u00b145.00",
+          "severity": "info"
+        },
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "thermal_stress",
+          "confidence": 0.45,
+          "evidence": "CatBoost classifier: thermal stress @ 45% probability, trend +0.56%/d (worsening), ~3650d to fault",
+          "severity": "info"
+        },
+        {
+          "layer": "AI_OVERRIDE",
+          "fault_type": "thermal_stress",
+          "confidence": 0.6,
+          "evidence": "AI: confirms thermal stress with higher confidence (ML_CLASSIFIER @ 45% \u2192 AI @ 60%); signal pattern matches known fault signature",
+          "severity": "info"
+        }
+      ],
+      "severity": "info",
+      "confidence_cascade": 0.6,
+      "cascade_winning_confidence": 0.6
+    },
+    {
+      "id": "bess-pred-cycle_life-bess-ribera-001",
+      "fault_type": "cycle_life",
+      "display_name": "Cycle Life Warning",
+      "equipment_id": "bess-ribera-001",
+      "equipment_name": "Ribera BESS Unit 1",
+      "asset_type": "BESS_PACK",
+      "days_to_fault": 3650.0,
+      "confidence": 1.0,
+      "current_value": 612.8,
+      "threshold": 6000.0,
+      "unit": "EFC",
+      "trend": 0.71188,
+      "urgency": "monitoring",
+      "is_urgent": false,
+      "recommended_action": "Reduce daily cycling frequency. Consider partial-cycle dispatching to stay within warranty budget.",
+      "estimated_date": "2036-06-16",
+      "projected_power_loss_kw": 0.0,
+      "projected_energy_loss_kwh": 0.0,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 0.0,
+      "is_reactive": false,
+      "bess_source": true,
+      "classification_layer": "ML_CLASSIFIER",
+      "evidence": "CatBoost classifier: cycle life @ 85% probability, trend +71.19%/d (worsening), ~3650d to fault",
+      "numeric_evidence": {
+        "model_probability": 0.85,
+        "days_to_fault": 3650.0,
+        "trend_per_day": 0.71188
+      },
+      "winner_reason": "highest confidence (0.85) via ML_CLASSIFIER",
+      "layer_chain": [
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "cycle_life",
+          "confidence": 0.85,
+          "evidence": "CatBoost classifier: cycle life @ 85% probability, trend +71.19%/d (worsening), ~3650d to fault",
+          "severity": "info"
+        }
+      ],
+      "severity": "info",
+      "cascade_winning_confidence": 0.85
+    },
+    {
+      "id": "bess-pred-rte_decay-bess-ribera-001",
+      "fault_type": "rte_decay",
+      "display_name": "Round-Trip Efficiency Decay",
+      "equipment_id": "bess-ribera-001",
+      "equipment_name": "Ribera BESS Unit 1",
+      "asset_type": "BESS_PACK",
+      "days_to_fault": 3650.0,
+      "confidence": 0.28,
+      "current_value": 0.8868,
+      "threshold": 0.85,
+      "unit": "%",
+      "trend": 0.000103,
+      "urgency": "monitoring",
+      "is_urgent": false,
+      "recommended_action": "Investigate internal resistance increase. Check connections, BMS calibration, and consider capacity test to confirm degradation.",
+      "estimated_date": "2036-06-16",
+      "projected_power_loss_kw": 0.0,
+      "projected_energy_loss_kwh": 0.0,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 0.0,
+      "is_reactive": false,
+      "bess_source": true,
+      "classification_layer": "AI_OVERRIDE",
+      "evidence": "AI: confirms rte decay with higher confidence (RULE @ 76% \u2192 AI @ 87%); signal pattern matches known fault signature",
+      "numeric_evidence": {
+        "prior_best_confidence": 0.759,
+        "ai_synthesised_confidence": 0.867,
+        "reclassified_from": null,
+        "source": "synthetic"
+      },
+      "winner_reason": "AI override: RULE @ 0.76 \u2192 AI @ 0.87 reclassified as rte_decay",
+      "layer_chain": [
+        {
+          "layer": "RULE",
+          "fault_type": "rte_decay",
+          "confidence": 0.759,
+          "evidence": "rte decay: actual 0.89% marginally exceeds rule threshold 0.85% (+4%, rule R-03)",
+          "severity": "info"
+        },
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "rte_decay",
+          "confidence": 0.459,
+          "evidence": "digital twin residual 0.04% above expected; actual 0.89 vs twin band \u00b10.85",
+          "severity": "info"
+        },
+        {
+          "layer": "AI_OVERRIDE",
+          "fault_type": "rte_decay",
+          "confidence": 0.867,
+          "evidence": "AI: confirms rte decay with higher confidence (RULE @ 76% \u2192 AI @ 87%); signal pattern matches known fault signature",
+          "severity": "info"
+        }
+      ],
+      "severity": "info",
+      "confidence_cascade": 0.867,
+      "cascade_winning_confidence": 0.867
+    }
+  ],
+  "cascade_summary": {
+    "rows_classified": 16,
+    "layer_distribution": {
+      "AI_OVERRIDE": 10,
+      "RULE": 2,
+      "ML_CLASSIFIER": 4
+    },
+    "ai_overrides": 10,
+    "ai_override_rate": 0.625
+  },
+  "cascade_generated_at": "2026-06-19T18:05:54.295636",
+  "bess_summary": {
+    "reactive_count": 1,
+    "predictive_count": 5,
+    "synthesised_violations": 1,
+    "asset_id": "bess-ribera-001",
+    "generated_at": "2026-06-19T18:05:26.709300"
+  }
+}

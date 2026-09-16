@@ -1,0 +1,110 @@
+{
+  "dataset": "Lazzaretti (shipped RuleBasedFaultDetector)",
+  "n_samples": 200000,
+  "classes": [
+    "normal",
+    "short_circuit",
+    "degradation",
+    "open_circuit",
+    "partial_shading"
+  ],
+  "confusion_matrix": [
+    [
+      165045,
+      40,
+      0,
+      4031,
+      0
+    ],
+    [
+      906,
+      0,
+      0,
+      27,
+      0
+    ],
+    [
+      1453,
+      0,
+      0,
+      31,
+      0
+    ],
+    [
+      636,
+      17,
+      0,
+      251,
+      0
+    ],
+    [
+      25614,
+      8,
+      0,
+      1941,
+      0
+    ]
+  ],
+  "per_class": {
+    "normal": {
+      "precision": 0.8523,
+      "recall": 0.9759,
+      "f1": 0.9099,
+      "support": 169116
+    },
+    "short_circuit": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 933
+    },
+    "degradation": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1484
+    },
+    "open_circuit": {
+      "precision": 0.04,
+      "recall": 0.2777,
+      "f1": 0.0699,
+      "support": 904
+    },
+    "partial_shading": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 27563
+    }
+  },
+  "macro_f1": 0.196,
+  "weighted_f1": 0.7697,
+  "accuracy": 0.8265,
+  "extras": {},
+  "macro_f1_addressable_classes_only": 0.3266,
+  "addressable_classes": [
+    "normal",
+    "short_circuit",
+    "open_circuit"
+  ],
+  "unaddressed_classes": {
+    "degradation": "no rule emits MODULE_CURRENT_DEGRADATION",
+    "partial_shading": "partial shading needs a real clock for AM/PM asymmetry"
+  },
+  "alerts_emitted_by_type": {
+    "string_open_circuit": 722,
+    "string_short_circuit": 11,
+    "mppt_imbalance": 1554,
+    "dc_undervoltage": 3,
+    "mppt_hunting": 2,
+    "string_mismatch_coarse": 1342,
+    "bypass_diode_active": 1
+  },
+  "measures": "nuravolt/fault/rule_based.py::RuleBasedFaultDetector, the shipped code",
+  "not_comparable_to": "pv/lazzaretti_holdout.json, which scores nuravolt/validation/pv_row_classifier.py -- a separate implementation with its own thresholds fitted to this dataset's own percentiles. That artifact records thresholds_source as rule_based.py, which is incorrect.",
+  "limitations": [
+    "Lazzaretti has no time axis; a synthetic 5-minute clock is supplied, so any rule depending on persistence is evaluated on a meaningless ordering.",
+    "The shipped rule set addresses 2 of 5 classes, so all-class macro-F1 is capped near 0.4 by coverage alone."
+  ],
+  "generated_at": "2026-08-20T21:22:39.683563Z"
+}

@@ -1,0 +1,15 @@
+{
+  "asset_id": "bess-nimbus-001",
+  "plant_id": "nimbus",
+  "name": "Nimbus Storage Block A",
+  "chemistry": "LFP",
+  "nominal_capacity_kwh": 200000,
+  "nominal_power_kw": 100000,
+  "module_count": 192,
+  "rack_count": 24,
+  "manufacturer": "CATL",
+  "model": "EnerC Plus (LFP)",
+  "installation_date": "2024-03-01",
+  "current_soh": 0.9302,
+  "current_soc": 0.41
+}

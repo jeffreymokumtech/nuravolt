@@ -1,0 +1,492 @@
+{
+  "plant_id": "ribera",
+  "timestamp": "2026-02-10T09:30:00.000000",
+  "summary": {
+    "current_loss_kwh": 41450.0,
+    "projected_loss_kwh": 21260.0,
+    "current_loss_value": 4974.0,
+    "projected_loss_value": 2551.2,
+    "currency": "EUR",
+    "reactive_count": 12,
+    "predictive_count": 6,
+    "critical_count": 2,
+    "urgent_count": 1
+  },
+  "reactive_faults": [
+    {
+      "id": "a3f7c912",
+      "fault_type": "inverter_failure",
+      "severity": "critical",
+      "equipment_id": "PV-03.078",
+      "equipment_name": "PV-03.078",
+      "timestamp_start": "2026.02.07 06:00",
+      "timestamp_end": "2026.02.10 06:00",
+      "value": 0,
+      "threshold": 1,
+      "message": "Inverter offline: no AC output detected for 72 hours",
+      "duration_minutes": 4320,
+      "power_loss_kw": 60.0,
+      "energy_loss_kwh": 2160.0,
+      "is_chronic": false,
+      "chronic_note": "",
+      "loss_computation": {
+        "method": "affected_records",
+        "power_formula": "rated_power / n_inverters * loss_factor",
+        "energy_formula": "power_loss * affected_records * interval_hours * capacity_factor",
+        "factors": {
+          "rated_ac_power_kw": 7200.0,
+          "n_inverters": 120,
+          "loss_factor_pct": 100,
+          "affected_records": 288,
+          "fault_duration_hours": 72.0,
+          "rationale": "Based on 288 affected records \u00d7 15 min interval"
+        }
+      }
+    },
+    {
+      "id": "b8d41e07",
+      "fault_type": "inverter_overtemperature",
+      "severity": "critical",
+      "equipment_id": "PV-01.032",
+      "equipment_name": "PV-01.032",
+      "timestamp_start": "2026.02.09 11:30",
+      "timestamp_end": "2026.02.10 11:30",
+      "value": 92.3,
+      "threshold": 85.0,
+      "message": "Inverter thermal shutdown: 92.3\u00b0C exceeded emergency limit (85\u00b0C)",
+      "duration_minutes": 1440,
+      "power_loss_kw": 60.0,
+      "energy_loss_kwh": 720.0,
+      "is_chronic": false,
+      "chronic_note": "",
+      "loss_computation": {
+        "method": "affected_records",
+        "power_formula": "rated_power / n_inverters * loss_factor",
+        "energy_formula": "power_loss * affected_records * interval_hours * capacity_factor",
+        "factors": {
+          "rated_ac_power_kw": 7200.0,
+          "n_inverters": 120,
+          "loss_factor_pct": 100,
+          "affected_records": 96,
+          "fault_duration_hours": 24.0,
+          "rationale": "Based on 96 affected records \u00d7 15 min interval"
+        }
+      }
+    },
+    {
+      "id": "45d7d6b0",
+      "fault_type": "bypass_diode_active",
+      "severity": "warning",
+      "equipment_id": "PV-04.119",
+      "equipment_name": "PV-04.119",
+      "timestamp_start": "2025.11.15 08:15",
+      "timestamp_end": "2026.02.10 08:15",
+      "value": 17.1,
+      "threshold": 10.0,
+      "message": "Bypass diode active: voltage drop of 17.1V detected",
+      "duration_minutes": 86400,
+      "power_loss_kw": 8.0,
+      "energy_loss_kwh": 4800.0,
+      "is_chronic": true,
+      "chronic_note": "Active for 87 days; hardware replacement recommended",
+      "loss_computation": {
+        "method": "affected_records",
+        "power_formula": "rated_power / n_inverters * loss_factor",
+        "energy_formula": "power_loss * affected_records * interval_hours * capacity_factor",
+        "factors": {
+          "rated_ac_power_kw": 7200.0,
+          "n_inverters": 120,
+          "loss_factor_pct": 13.3,
+          "affected_records": 5760,
+          "fault_duration_hours": 1440.0,
+          "rationale": "Based on 5760 affected records \u00d7 15 min interval"
+        }
+      }
+    },
+    {
+      "id": "1db3aec0",
+      "fault_type": "bypass_diode_active",
+      "severity": "warning",
+      "equipment_id": "PV-03.067",
+      "equipment_name": "PV-03.067",
+      "timestamp_start": "2025.12.20 10:00",
+      "timestamp_end": "2026.02.10 10:00",
+      "value": 16.2,
+      "threshold": 10.0,
+      "message": "Bypass diode active: voltage drop of 16.2V detected",
+      "duration_minutes": 74880,
+      "power_loss_kw": 8.0,
+      "energy_loss_kwh": 3200.0,
+      "is_chronic": true,
+      "chronic_note": "Active for 52 days; hardware replacement recommended",
+      "loss_computation": {
+        "method": "affected_records",
+        "power_formula": "rated_power / n_inverters * loss_factor",
+        "energy_formula": "power_loss * affected_records * interval_hours * capacity_factor",
+        "factors": {
+          "rated_ac_power_kw": 7200.0,
+          "n_inverters": 120,
+          "loss_factor_pct": 13.3,
+          "affected_records": 4992,
+          "fault_duration_hours": 1248.0,
+          "rationale": "Based on 4992 affected records \u00d7 15 min interval"
+        }
+      }
+    },
+    {
+      "id": "c91e3c6b",
+      "fault_type": "inverter_overtemperature",
+      "severity": "warning",
+      "equipment_id": "PV-01.060",
+      "equipment_name": "PV-01.060",
+      "timestamp_start": "2026.01.28 14:00",
+      "timestamp_end": "2026.02.10 14:00",
+      "value": 73.5,
+      "threshold": 65.0,
+      "message": "Inverter overtemperature: 73.5\u00b0C approaching thermal limit (65.0\u00b0C)",
+      "duration_minutes": 18720,
+      "power_loss_kw": 5.0,
+      "energy_loss_kwh": 900.0,
+      "is_chronic": false,
+      "chronic_note": "",
+      "loss_computation": {
+        "method": "affected_records",
+        "power_formula": "rated_power / n_inverters * loss_factor",
+        "energy_formula": "power_loss * affected_records * interval_hours * capacity_factor",
+        "factors": {
+          "rated_ac_power_kw": 7200.0,
+          "n_inverters": 120,
+          "loss_factor_pct": 8.3,
+          "affected_records": 1248,
+          "fault_duration_hours": 312.0,
+          "rationale": "Based on 1248 affected records \u00d7 15 min interval"
+        }
+      }
+    },
+    {
+      "id": "70573806",
+      "fault_type": "inverter_overtemperature",
+      "severity": "warning",
+      "equipment_id": "PV-02.045",
+      "equipment_name": "PV-02.045",
+      "timestamp_start": "2026.02.01 09:00",
+      "timestamp_end": "2026.02.10 09:00",
+      "value": 71.8,
+      "threshold": 65.0,
+      "message": "Inverter overtemperature: 71.8\u00b0C approaching thermal limit (65.0\u00b0C)",
+      "duration_minutes": 12960,
+      "power_loss_kw": 5.0,
+      "energy_loss_kwh": 600.0,
+      "is_chronic": false,
+      "chronic_note": "",
+      "loss_computation": {
+        "method": "affected_records",
+        "power_formula": "rated_power / n_inverters * loss_factor",
+        "energy_formula": "power_loss * affected_records * interval_hours * capacity_factor",
+        "factors": {
+          "rated_ac_power_kw": 7200.0,
+          "n_inverters": 120,
+          "loss_factor_pct": 8.3,
+          "affected_records": 864,
+          "fault_duration_hours": 216.0,
+          "rationale": "Based on 864 affected records \u00d7 15 min interval"
+        }
+      }
+    },
+    {
+      "id": "de6042ea",
+      "fault_type": "inverter_overtemperature",
+      "severity": "warning",
+      "equipment_id": "PV-04.098",
+      "equipment_name": "PV-04.098",
+      "timestamp_start": "2026.02.03 12:00",
+      "timestamp_end": "2026.02.10 12:00",
+      "value": 69.2,
+      "threshold": 65.0,
+      "message": "Inverter overtemperature: 69.2\u00b0C approaching thermal limit (65.0\u00b0C)",
+      "duration_minutes": 10080,
+      "power_loss_kw": 5.0,
+      "energy_loss_kwh": 420.0,
+      "is_chronic": false,
+      "chronic_note": "",
+      "loss_computation": {
+        "method": "affected_records",
+        "power_formula": "rated_power / n_inverters * loss_factor",
+        "energy_formula": "power_loss * affected_records * interval_hours * capacity_factor",
+        "factors": {
+          "rated_ac_power_kw": 7200.0,
+          "n_inverters": 120,
+          "loss_factor_pct": 8.3,
+          "affected_records": 672,
+          "fault_duration_hours": 168.0,
+          "rationale": "Based on 672 affected records \u00d7 15 min interval"
+        }
+      }
+    },
+    {
+      "id": "e5ebed30",
+      "fault_type": "string_degradation",
+      "severity": "warning",
+      "equipment_id": "PV-04.105",
+      "equipment_name": "PV-04.105",
+      "timestamp_start": "2025.10.10 07:00",
+      "timestamp_end": "2026.02.10 07:00",
+      "value": 12.8,
+      "threshold": 10.0,
+      "message": "String current mismatch: 12.8% deviation from expected (> 10%)",
+      "duration_minutes": 176640,
+      "power_loss_kw": 4.0,
+      "energy_loss_kwh": 5840.0,
+      "is_chronic": true,
+      "chronic_note": "Active for 123 days; string inspection and IV curve trace recommended",
+      "loss_computation": {
+        "method": "affected_records",
+        "power_formula": "rated_power / n_inverters * loss_factor",
+        "energy_formula": "power_loss * affected_records * interval_hours * capacity_factor",
+        "factors": {
+          "rated_ac_power_kw": 7200.0,
+          "n_inverters": 120,
+          "loss_factor_pct": 6.7,
+          "affected_records": 11776,
+          "fault_duration_hours": 2944.0,
+          "rationale": "Based on 11776 affected records \u00d7 15 min interval"
+        }
+      }
+    },
+    {
+      "id": "3c4d02a0",
+      "fault_type": "string_degradation",
+      "severity": "warning",
+      "equipment_id": "PV-02.028",
+      "equipment_name": "PV-02.028",
+      "timestamp_start": "2025.11.22 09:30",
+      "timestamp_end": "2026.02.10 09:30",
+      "value": 11.4,
+      "threshold": 10.0,
+      "message": "String current mismatch: 11.4% deviation from expected (> 10%)",
+      "duration_minutes": 115200,
+      "power_loss_kw": 4.0,
+      "energy_loss_kwh": 4560.0,
+      "is_chronic": true,
+      "chronic_note": "Active for 80 days; string inspection and IV curve trace recommended",
+      "loss_computation": {
+        "method": "affected_records",
+        "power_formula": "rated_power / n_inverters * loss_factor",
+        "energy_formula": "power_loss * affected_records * interval_hours * capacity_factor",
+        "factors": {
+          "rated_ac_power_kw": 7200.0,
+          "n_inverters": 120,
+          "loss_factor_pct": 6.7,
+          "affected_records": 7680,
+          "fault_duration_hours": 1920.0,
+          "rationale": "Based on 7680 affected records \u00d7 15 min interval"
+        }
+      }
+    },
+    {
+      "id": "5f9b23cb",
+      "fault_type": "soiling_detected",
+      "severity": "info",
+      "equipment_id": "PV-04.095",
+      "equipment_name": "PV-04.095",
+      "timestamp_start": "2025.09.01 06:00",
+      "timestamp_end": "2026.02.10 06:00",
+      "value": 0.032,
+      "threshold": 0.02,
+      "message": "Soiling suspected: PR deviation 3.2% under clear sky conditions",
+      "duration_minutes": 234720,
+      "power_loss_kw": 3.0,
+      "energy_loss_kwh": 6650.0,
+      "is_chronic": true,
+      "chronic_note": "Active for 163 days; soiling accumulation consistent with arid climate pattern",
+      "loss_computation": {
+        "method": "affected_records",
+        "power_formula": "rated_power / n_inverters * loss_factor",
+        "energy_formula": "power_loss * affected_records * interval_hours * capacity_factor",
+        "factors": {
+          "rated_ac_power_kw": 7200.0,
+          "n_inverters": 120,
+          "loss_factor_pct": 5.0,
+          "affected_records": 15648,
+          "fault_duration_hours": 3912.0,
+          "rationale": "Based on 15648 affected records \u00d7 15 min interval"
+        }
+      }
+    },
+    {
+      "id": "748d8560",
+      "fault_type": "soiling_detected",
+      "severity": "info",
+      "equipment_id": "PV-04.110",
+      "equipment_name": "PV-04.110",
+      "timestamp_start": "2025.09.15 06:00",
+      "timestamp_end": "2026.02.10 06:00",
+      "value": 0.028,
+      "threshold": 0.02,
+      "message": "Soiling suspected: PR deviation 2.8% under clear sky conditions",
+      "duration_minutes": 214560,
+      "power_loss_kw": 3.0,
+      "energy_loss_kwh": 6200.0,
+      "is_chronic": true,
+      "chronic_note": "Active for 149 days; soiling accumulation consistent with arid climate pattern",
+      "loss_computation": {
+        "method": "affected_records",
+        "power_formula": "rated_power / n_inverters * loss_factor",
+        "energy_formula": "power_loss * affected_records * interval_hours * capacity_factor",
+        "factors": {
+          "rated_ac_power_kw": 7200.0,
+          "n_inverters": 120,
+          "loss_factor_pct": 5.0,
+          "affected_records": 14304,
+          "fault_duration_hours": 3576.0,
+          "rationale": "Based on 14304 affected records \u00d7 15 min interval"
+        }
+      }
+    },
+    {
+      "id": "2b6da7a3",
+      "fault_type": "soiling_detected",
+      "severity": "info",
+      "equipment_id": "PV-04.115",
+      "equipment_name": "PV-04.115",
+      "timestamp_start": "2025.10.01 06:00",
+      "timestamp_end": "2026.02.10 06:00",
+      "value": 0.025,
+      "threshold": 0.02,
+      "message": "Soiling suspected: PR deviation 2.5% under clear sky conditions",
+      "duration_minutes": 191520,
+      "power_loss_kw": 3.0,
+      "energy_loss_kwh": 5400.0,
+      "is_chronic": true,
+      "chronic_note": "Active for 133 days; soiling accumulation consistent with arid climate pattern",
+      "loss_computation": {
+        "method": "affected_records",
+        "power_formula": "rated_power / n_inverters * loss_factor",
+        "energy_formula": "power_loss * affected_records * interval_hours * capacity_factor",
+        "factors": {
+          "rated_ac_power_kw": 7200.0,
+          "n_inverters": 120,
+          "loss_factor_pct": 5.0,
+          "affected_records": 12768,
+          "fault_duration_hours": 3192.0,
+          "rationale": "Based on 12768 affected records \u00d7 15 min interval"
+        }
+      }
+    }
+  ],
+  "predictive_faults": [
+    {
+      "id": "d1e4a28f",
+      "fault_type": "inverter_thermal",
+      "display_name": "Inverter Thermal Degradation",
+      "urgency": "urgent",
+      "equipment_id": "PV-01.032",
+      "equipment_name": "PV-01.032",
+      "days_to_fault": 5,
+      "confidence": 0.91,
+      "current_value": 88.2,
+      "threshold": 85.0,
+      "unit": "\u00b0C",
+      "recommended_action": "URGENT: Schedule immediate fan inspection for INV 01.032. Thermal runaway risk within 5 days.",
+      "estimated_date": "2026-02-15",
+      "projected_power_loss_kw": 60.0,
+      "projected_energy_loss_kwh": 3600.0
+    },
+    {
+      "id": "468f453d",
+      "fault_type": "string_degradation",
+      "display_name": "String Degradation",
+      "urgency": "soon",
+      "equipment_id": "PV-04.105",
+      "equipment_name": "PV-04.105",
+      "days_to_fault": 12,
+      "confidence": 0.84,
+      "current_value": 12.8,
+      "threshold": 15.0,
+      "unit": "%",
+      "recommended_action": "Schedule string inspection for INV 04.105 within 2 weeks. Current mismatch accelerating.",
+      "estimated_date": "2026-02-22",
+      "projected_power_loss_kw": 4.8,
+      "projected_energy_loss_kwh": 2880.0
+    },
+    {
+      "id": "7b2c9e61",
+      "fault_type": "inverter_thermal",
+      "display_name": "Inverter Thermal Degradation",
+      "urgency": "planned",
+      "equipment_id": "PV-01.060",
+      "equipment_name": "PV-01.060",
+      "days_to_fault": 25,
+      "confidence": 0.76,
+      "current_value": 73.5,
+      "threshold": 85.0,
+      "unit": "\u00b0C",
+      "recommended_action": "Plan preventive maintenance for INV 01.060 cooling system within 30 days.",
+      "estimated_date": "2026-03-07",
+      "projected_power_loss_kw": 5.0,
+      "projected_energy_loss_kwh": 1500.0
+    },
+    {
+      "id": "8a3df174",
+      "fault_type": "inverter_thermal",
+      "display_name": "Inverter Thermal Degradation",
+      "urgency": "planned",
+      "equipment_id": "PV-02.045",
+      "equipment_name": "PV-02.045",
+      "days_to_fault": 28,
+      "confidence": 0.72,
+      "current_value": 71.8,
+      "threshold": 85.0,
+      "unit": "\u00b0C",
+      "recommended_action": "Plan preventive maintenance for INV 02.045 cooling system within 30 days.",
+      "estimated_date": "2026-03-10",
+      "projected_power_loss_kw": 5.0,
+      "projected_energy_loss_kwh": 1400.0
+    },
+    {
+      "id": "dba57a48",
+      "fault_type": "string_degradation",
+      "display_name": "String Degradation",
+      "urgency": "monitoring",
+      "equipment_id": "PV-02.028",
+      "equipment_name": "PV-02.028",
+      "days_to_fault": 90,
+      "confidence": 0.65,
+      "current_value": 11.4,
+      "threshold": 15.0,
+      "unit": "%",
+      "recommended_action": "Monitor string current imbalance. Schedule inspection if degradation rate increases.",
+      "estimated_date": "2026-05-11",
+      "projected_power_loss_kw": 4.0,
+      "projected_energy_loss_kwh": 4320.0
+    },
+    {
+      "id": "927140b4",
+      "fault_type": "string_degradation",
+      "display_name": "String Degradation",
+      "urgency": "monitoring",
+      "equipment_id": "PV-03.089",
+      "equipment_name": "PV-03.089",
+      "days_to_fault": 180,
+      "confidence": 0.58,
+      "current_value": 8.5,
+      "threshold": 15.0,
+      "unit": "%",
+      "recommended_action": "Monitor string performance trends. Low urgency at current degradation rate.",
+      "estimated_date": "2026-08-09",
+      "projected_power_loss_kw": 3.5,
+      "projected_energy_loss_kwh": 7560.0
+    }
+  ],
+  "metadata": {
+    "generated_at": "2026-02-10T09:30:00.000000",
+    "data_period": {
+      "start": "2025.09.01 00:00",
+      "end": "2026.02.10 09:30"
+    },
+    "detection_config": {
+      "n_inverters": 120,
+      "total_alerts_raw": 18
+    }
+  }
+}

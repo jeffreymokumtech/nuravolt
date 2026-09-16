@@ -1,0 +1,4281 @@
+{
+  "plantId": "kilima-solar",
+  "generatedAt": "2026-07-24T08:30:00Z",
+  "inverterModel": "Huawei SUN2000",
+  "mpptCount": 6,
+  "stringsPerMppt": 2,
+  "inverters": {
+    "INV-01": {
+      "inverterId": "INV-01",
+      "groupId": "array-a",
+      "model": "Huawei SUN2000",
+      "nominalPower_kW": 250.0,
+      "timestamp": "2026-07-24T08:30:00Z",
+      "mppts": [
+        {
+          "mpptId": "MPPT-1",
+          "voltage_V": 731.7,
+          "current_A": 24.24,
+          "power_kW": 17.73,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 721.3,
+              "current_A": 12.4,
+              "power_kW": 8.944,
+              "status": "normal",
+              "degradation_pct": 0.56
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 742.1,
+              "current_A": 11.84,
+              "power_kW": 8.786,
+              "status": "normal",
+              "degradation_pct": 0.41
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-2",
+          "voltage_V": 734.0,
+          "current_A": 25.2,
+          "power_kW": 18.498,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 734.8,
+              "current_A": 12.48,
+              "power_kW": 9.17,
+              "status": "normal",
+              "degradation_pct": 0.69
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 733.3,
+              "current_A": 12.72,
+              "power_kW": 9.328,
+              "status": "normal",
+              "degradation_pct": 0.68
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-3",
+          "voltage_V": 737.1,
+          "current_A": 24.38,
+          "power_kW": 17.971,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 739.0,
+              "current_A": 12.52,
+              "power_kW": 9.252,
+              "status": "normal",
+              "degradation_pct": 0.42
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 735.2,
+              "current_A": 11.86,
+              "power_kW": 8.719,
+              "status": "normal",
+              "degradation_pct": 0.71
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-4",
+          "voltage_V": 733.8,
+          "current_A": 24.83,
+          "power_kW": 18.218,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 730.6,
+              "current_A": 12.84,
+              "power_kW": 9.381,
+              "status": "normal",
+              "degradation_pct": 0.64
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 737.0,
+              "current_A": 11.99,
+              "power_kW": 8.837,
+              "status": "normal",
+              "degradation_pct": 0.43
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-5",
+          "voltage_V": 745.7,
+          "current_A": 25.42,
+          "power_kW": 18.955,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 745.4,
+              "current_A": 13.0,
+              "power_kW": 9.69,
+              "status": "normal",
+              "degradation_pct": 0.7
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 746.0,
+              "current_A": 12.42,
+              "power_kW": 9.265,
+              "status": "normal",
+              "degradation_pct": 0.34
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-6",
+          "voltage_V": 729.1,
+          "current_A": 25.41,
+          "power_kW": 18.528,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 727.5,
+              "current_A": 12.48,
+              "power_kW": 9.079,
+              "status": "normal",
+              "degradation_pct": 0.45
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 730.8,
+              "current_A": 12.93,
+              "power_kW": 9.449,
+              "status": "normal",
+              "degradation_pct": 0.65
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalPower_kW": 109.9,
+        "avgVoltage_V": 735.2,
+        "healthyStrings": 12,
+        "totalStrings": 12,
+        "overallStatus": "healthy"
+      }
+    },
+    "INV-02": {
+      "inverterId": "INV-02",
+      "groupId": "array-a",
+      "model": "Huawei SUN2000",
+      "nominalPower_kW": 250.0,
+      "timestamp": "2026-07-24T08:30:00Z",
+      "mppts": [
+        {
+          "mpptId": "MPPT-1",
+          "voltage_V": 731.2,
+          "current_A": 24.02,
+          "power_kW": 17.562,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 734.2,
+              "current_A": 11.73,
+              "power_kW": 8.612,
+              "status": "normal",
+              "degradation_pct": 0.66
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 728.2,
+              "current_A": 12.29,
+              "power_kW": 8.95,
+              "status": "normal",
+              "degradation_pct": 0.5
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-2",
+          "voltage_V": 733.3,
+          "current_A": 25.15,
+          "power_kW": 18.443,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 734.4,
+              "current_A": 12.4,
+              "power_kW": 9.107,
+              "status": "normal",
+              "degradation_pct": 0.36
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 732.2,
+              "current_A": 12.75,
+              "power_kW": 9.336,
+              "status": "normal",
+              "degradation_pct": 0.6
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-3",
+          "voltage_V": 730.8,
+          "current_A": 25.98,
+          "power_kW": 18.984,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 731.7,
+              "current_A": 12.98,
+              "power_kW": 9.497,
+              "status": "normal",
+              "degradation_pct": 0.43
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 729.8,
+              "current_A": 13.0,
+              "power_kW": 9.487,
+              "status": "normal",
+              "degradation_pct": 0.54
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-4",
+          "voltage_V": 727.0,
+          "current_A": 23.51,
+          "power_kW": 17.093,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 732.5,
+              "current_A": 11.74,
+              "power_kW": 8.6,
+              "status": "normal",
+              "degradation_pct": 0.41
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 721.6,
+              "current_A": 11.77,
+              "power_kW": 8.493,
+              "status": "normal",
+              "degradation_pct": 0.65
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-5",
+          "voltage_V": 737.0,
+          "current_A": 24.21,
+          "power_kW": 17.84,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 742.8,
+              "current_A": 11.84,
+              "power_kW": 8.795,
+              "status": "normal",
+              "degradation_pct": 0.61
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 731.2,
+              "current_A": 12.37,
+              "power_kW": 9.045,
+              "status": "normal",
+              "degradation_pct": 0.41
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-6",
+          "voltage_V": 737.0,
+          "current_A": 25.58,
+          "power_kW": 18.848,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 742.8,
+              "current_A": 12.58,
+              "power_kW": 9.344,
+              "status": "normal",
+              "degradation_pct": 0.53
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 731.1,
+              "current_A": 13.0,
+              "power_kW": 9.504,
+              "status": "normal",
+              "degradation_pct": 0.79
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalPower_kW": 108.77,
+        "avgVoltage_V": 732.7,
+        "healthyStrings": 12,
+        "totalStrings": 12,
+        "overallStatus": "healthy"
+      }
+    },
+    "INV-03": {
+      "inverterId": "INV-03",
+      "groupId": "array-a",
+      "model": "Huawei SUN2000",
+      "nominalPower_kW": 250.0,
+      "timestamp": "2026-07-24T08:30:00Z",
+      "mppts": [
+        {
+          "mpptId": "MPPT-1",
+          "voltage_V": 732.9,
+          "current_A": 23.42,
+          "power_kW": 17.165,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 733.7,
+              "current_A": 11.87,
+              "power_kW": 8.709,
+              "status": "normal",
+              "degradation_pct": 0.45
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 732.1,
+              "current_A": 11.55,
+              "power_kW": 8.456,
+              "status": "normal",
+              "degradation_pct": 0.74
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-2",
+          "voltage_V": 730.5,
+          "current_A": 22.93,
+          "power_kW": 16.75,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 726.2,
+              "current_A": 11.37,
+              "power_kW": 8.257,
+              "status": "normal",
+              "degradation_pct": 0.32
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 734.7,
+              "current_A": 11.56,
+              "power_kW": 8.493,
+              "status": "normal",
+              "degradation_pct": 0.56
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-3",
+          "voltage_V": 742.5,
+          "current_A": 23.4,
+          "power_kW": 17.373,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 743.8,
+              "current_A": 11.34,
+              "power_kW": 8.435,
+              "status": "normal",
+              "degradation_pct": 0.54
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 741.1,
+              "current_A": 12.06,
+              "power_kW": 8.938,
+              "status": "normal",
+              "degradation_pct": 0.58
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-4",
+          "voltage_V": 739.3,
+          "current_A": 23.45,
+          "power_kW": 17.335,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 741.3,
+              "current_A": 11.32,
+              "power_kW": 8.392,
+              "status": "normal",
+              "degradation_pct": 0.76
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 737.3,
+              "current_A": 12.13,
+              "power_kW": 8.943,
+              "status": "normal",
+              "degradation_pct": 0.56
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-5",
+          "voltage_V": 732.4,
+          "current_A": 23.63,
+          "power_kW": 17.319,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 745.0,
+              "current_A": 12.28,
+              "power_kW": 9.149,
+              "status": "normal",
+              "degradation_pct": 0.72
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 719.8,
+              "current_A": 11.35,
+              "power_kW": 8.17,
+              "status": "normal",
+              "degradation_pct": 0.55
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-6",
+          "voltage_V": 728.5,
+          "current_A": 23.52,
+          "power_kW": 17.131,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 738.9,
+              "current_A": 11.64,
+              "power_kW": 8.601,
+              "status": "normal",
+              "degradation_pct": 0.52
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 718.0,
+              "current_A": 11.88,
+              "power_kW": 8.53,
+              "status": "normal",
+              "degradation_pct": 0.77
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalPower_kW": 103.073,
+        "avgVoltage_V": 734.4,
+        "healthyStrings": 12,
+        "totalStrings": 12,
+        "overallStatus": "healthy"
+      }
+    },
+    "INV-04": {
+      "inverterId": "INV-04",
+      "groupId": "array-a",
+      "model": "Huawei SUN2000",
+      "nominalPower_kW": 250.0,
+      "timestamp": "2026-07-24T08:30:00Z",
+      "mppts": [
+        {
+          "mpptId": "MPPT-1",
+          "voltage_V": 727.8,
+          "current_A": 25.56,
+          "power_kW": 18.603,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 720.3,
+              "current_A": 12.81,
+              "power_kW": 9.227,
+              "status": "normal",
+              "degradation_pct": 0.42
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 735.4,
+              "current_A": 12.75,
+              "power_kW": 9.376,
+              "status": "normal",
+              "degradation_pct": 0.78
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-2",
+          "voltage_V": 731.8,
+          "current_A": 25.11,
+          "power_kW": 18.375,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 736.7,
+              "current_A": 12.59,
+              "power_kW": 9.275,
+              "status": "normal",
+              "degradation_pct": 0.38
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 726.8,
+              "current_A": 12.52,
+              "power_kW": 9.1,
+              "status": "normal",
+              "degradation_pct": 0.68
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-3",
+          "voltage_V": 733.2,
+          "current_A": 24.4,
+          "power_kW": 17.895,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 744.6,
+              "current_A": 12.39,
+              "power_kW": 9.226,
+              "status": "normal",
+              "degradation_pct": 0.66
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 721.8,
+              "current_A": 12.01,
+              "power_kW": 8.669,
+              "status": "normal",
+              "degradation_pct": 0.59
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-4",
+          "voltage_V": 732.6,
+          "current_A": 25.57,
+          "power_kW": 18.736,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 744.8,
+              "current_A": 12.93,
+              "power_kW": 9.63,
+              "status": "normal",
+              "degradation_pct": 0.55
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 720.4,
+              "current_A": 12.64,
+              "power_kW": 9.106,
+              "status": "normal",
+              "degradation_pct": 0.77
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-5",
+          "voltage_V": 734.7,
+          "current_A": 25.81,
+          "power_kW": 18.963,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 739.9,
+              "current_A": 12.98,
+              "power_kW": 9.604,
+              "status": "normal",
+              "degradation_pct": 0.45
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 729.5,
+              "current_A": 12.83,
+              "power_kW": 9.359,
+              "status": "normal",
+              "degradation_pct": 0.56
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-6",
+          "voltage_V": 733.2,
+          "current_A": 23.49,
+          "power_kW": 17.223,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 723.5,
+              "current_A": 11.72,
+              "power_kW": 8.479,
+              "status": "normal",
+              "degradation_pct": 0.35
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 742.9,
+              "current_A": 11.77,
+              "power_kW": 8.744,
+              "status": "normal",
+              "degradation_pct": 0.47
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalPower_kW": 109.795,
+        "avgVoltage_V": 732.2,
+        "healthyStrings": 12,
+        "totalStrings": 12,
+        "overallStatus": "healthy"
+      }
+    },
+    "INV-05": {
+      "inverterId": "INV-05",
+      "groupId": "array-a",
+      "model": "Huawei SUN2000",
+      "nominalPower_kW": 250.0,
+      "timestamp": "2026-07-24T08:30:00Z",
+      "mppts": [
+        {
+          "mpptId": "MPPT-1",
+          "voltage_V": 730.1,
+          "current_A": 24.94,
+          "power_kW": 18.208,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 727.9,
+              "current_A": 12.78,
+              "power_kW": 9.303,
+              "status": "normal",
+              "degradation_pct": 0.31
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 732.3,
+              "current_A": 12.16,
+              "power_kW": 8.905,
+              "status": "normal",
+              "degradation_pct": 0.45
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-2",
+          "voltage_V": 730.5,
+          "current_A": 24.7,
+          "power_kW": 18.048,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 727.1,
+              "current_A": 11.87,
+              "power_kW": 8.631,
+              "status": "normal",
+              "degradation_pct": 0.77
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 734.0,
+              "current_A": 12.83,
+              "power_kW": 9.417,
+              "status": "normal",
+              "degradation_pct": 0.38
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-3",
+          "voltage_V": 733.6,
+          "current_A": 24.96,
+          "power_kW": 18.312,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 732.5,
+              "current_A": 12.31,
+              "power_kW": 9.017,
+              "status": "normal",
+              "degradation_pct": 0.47
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 734.8,
+              "current_A": 12.65,
+              "power_kW": 9.295,
+              "status": "normal",
+              "degradation_pct": 0.33
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-4",
+          "voltage_V": 724.2,
+          "current_A": 24.43,
+          "power_kW": 17.691,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 729.2,
+              "current_A": 11.97,
+              "power_kW": 8.729,
+              "status": "normal",
+              "degradation_pct": 0.76
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 719.3,
+              "current_A": 12.46,
+              "power_kW": 8.962,
+              "status": "normal",
+              "degradation_pct": 0.72
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-5",
+          "voltage_V": 734.3,
+          "current_A": 25.69,
+          "power_kW": 18.865,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 730.7,
+              "current_A": 12.76,
+              "power_kW": 9.324,
+              "status": "normal",
+              "degradation_pct": 0.39
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 737.9,
+              "current_A": 12.93,
+              "power_kW": 9.541,
+              "status": "normal",
+              "degradation_pct": 0.36
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-6",
+          "voltage_V": 738.8,
+          "current_A": 24.72,
+          "power_kW": 18.258,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 732.8,
+              "current_A": 12.8,
+              "power_kW": 9.38,
+              "status": "normal",
+              "degradation_pct": 0.56
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 744.8,
+              "current_A": 11.92,
+              "power_kW": 8.878,
+              "status": "normal",
+              "degradation_pct": 0.72
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalPower_kW": 109.382,
+        "avgVoltage_V": 731.9,
+        "healthyStrings": 12,
+        "totalStrings": 12,
+        "overallStatus": "healthy"
+      }
+    },
+    "INV-06": {
+      "inverterId": "INV-06",
+      "groupId": "array-a",
+      "model": "Huawei SUN2000",
+      "nominalPower_kW": 250.0,
+      "timestamp": "2026-07-24T08:30:00Z",
+      "mppts": [
+        {
+          "mpptId": "MPPT-1",
+          "voltage_V": 724.5,
+          "current_A": 24.43,
+          "power_kW": 17.701,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 728.9,
+              "current_A": 12.3,
+              "power_kW": 8.965,
+              "status": "normal",
+              "degradation_pct": 0.51
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 720.2,
+              "current_A": 12.13,
+              "power_kW": 8.736,
+              "status": "normal",
+              "degradation_pct": 0.47
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-2",
+          "voltage_V": 727.5,
+          "current_A": 24.75,
+          "power_kW": 18.006,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 725.4,
+              "current_A": 12.4,
+              "power_kW": 8.995,
+              "status": "normal",
+              "degradation_pct": 0.69
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 729.6,
+              "current_A": 12.35,
+              "power_kW": 9.011,
+              "status": "normal",
+              "degradation_pct": 0.46
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-3",
+          "voltage_V": 735.9,
+          "current_A": 24.71,
+          "power_kW": 18.188,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 731.5,
+              "current_A": 11.87,
+              "power_kW": 8.683,
+              "status": "normal",
+              "degradation_pct": 0.7
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 740.3,
+              "current_A": 12.84,
+              "power_kW": 9.505,
+              "status": "normal",
+              "degradation_pct": 0.72
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-4",
+          "voltage_V": 730.3,
+          "current_A": 25.31,
+          "power_kW": 18.479,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 724.5,
+              "current_A": 13.04,
+              "power_kW": 9.447,
+              "status": "normal",
+              "degradation_pct": 0.74
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 736.1,
+              "current_A": 12.27,
+              "power_kW": 9.032,
+              "status": "normal",
+              "degradation_pct": 0.69
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-5",
+          "voltage_V": 734.8,
+          "current_A": 24.56,
+          "power_kW": 18.053,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 741.8,
+              "current_A": 12.64,
+              "power_kW": 9.376,
+              "status": "normal",
+              "degradation_pct": 0.78
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 727.9,
+              "current_A": 11.92,
+              "power_kW": 8.677,
+              "status": "normal",
+              "degradation_pct": 0.58
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-6",
+          "voltage_V": 736.0,
+          "current_A": 24.93,
+          "power_kW": 18.348,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 734.0,
+              "current_A": 12.45,
+              "power_kW": 9.138,
+              "status": "normal",
+              "degradation_pct": 0.35
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 738.0,
+              "current_A": 12.48,
+              "power_kW": 9.21,
+              "status": "normal",
+              "degradation_pct": 0.58
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalPower_kW": 108.775,
+        "avgVoltage_V": 731.5,
+        "healthyStrings": 12,
+        "totalStrings": 12,
+        "overallStatus": "healthy"
+      }
+    },
+    "INV-07": {
+      "inverterId": "INV-07",
+      "groupId": "array-a",
+      "model": "Huawei SUN2000",
+      "nominalPower_kW": 250.0,
+      "timestamp": "2026-07-24T08:30:00Z",
+      "mppts": [
+        {
+          "mpptId": "MPPT-1",
+          "voltage_V": 728.8,
+          "current_A": 23.95,
+          "power_kW": 17.454,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 724.0,
+              "current_A": 12.11,
+              "power_kW": 8.768,
+              "status": "normal",
+              "degradation_pct": 0.43
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 733.6,
+              "current_A": 11.84,
+              "power_kW": 8.686,
+              "status": "normal",
+              "degradation_pct": 0.43
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-2",
+          "voltage_V": 736.7,
+          "current_A": 22.21,
+          "power_kW": 16.36,
+          "status": "warning",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 737.2,
+              "current_A": 10.36,
+              "power_kW": 7.637,
+              "status": "degraded",
+              "degradation_pct": 1.34
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 736.1,
+              "current_A": 11.85,
+              "power_kW": 8.723,
+              "status": "normal",
+              "degradation_pct": 0.46
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-3",
+          "voltage_V": 728.5,
+          "current_A": 23.85,
+          "power_kW": 17.373,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 734.5,
+              "current_A": 11.79,
+              "power_kW": 8.66,
+              "status": "normal",
+              "degradation_pct": 0.77
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 722.5,
+              "current_A": 12.06,
+              "power_kW": 8.713,
+              "status": "normal",
+              "degradation_pct": 0.31
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-4",
+          "voltage_V": 743.6,
+          "current_A": 24.75,
+          "power_kW": 18.404,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 742.3,
+              "current_A": 12.97,
+              "power_kW": 9.628,
+              "status": "normal",
+              "degradation_pct": 0.43
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 745.0,
+              "current_A": 11.78,
+              "power_kW": 8.776,
+              "status": "normal",
+              "degradation_pct": 0.42
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-5",
+          "voltage_V": 736.2,
+          "current_A": 24.73,
+          "power_kW": 18.217,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 726.7,
+              "current_A": 11.83,
+              "power_kW": 8.597,
+              "status": "normal",
+              "degradation_pct": 0.58
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 745.7,
+              "current_A": 12.9,
+              "power_kW": 9.62,
+              "status": "normal",
+              "degradation_pct": 0.46
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-6",
+          "voltage_V": 725.0,
+          "current_A": 24.85,
+          "power_kW": 18.016,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 730.8,
+              "current_A": 12.58,
+              "power_kW": 9.193,
+              "status": "normal",
+              "degradation_pct": 0.66
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 719.1,
+              "current_A": 12.27,
+              "power_kW": 8.823,
+              "status": "normal",
+              "degradation_pct": 0.6
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalPower_kW": 105.824,
+        "avgVoltage_V": 733.1,
+        "healthyStrings": 11,
+        "totalStrings": 12,
+        "overallStatus": "degraded"
+      }
+    },
+    "INV-08": {
+      "inverterId": "INV-08",
+      "groupId": "array-a",
+      "model": "Huawei SUN2000",
+      "nominalPower_kW": 250.0,
+      "timestamp": "2026-07-24T08:30:00Z",
+      "mppts": [
+        {
+          "mpptId": "MPPT-1",
+          "voltage_V": 728.0,
+          "current_A": 24.52,
+          "power_kW": 17.85,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 734.6,
+              "current_A": 12.3,
+              "power_kW": 9.036,
+              "status": "normal",
+              "degradation_pct": 0.64
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 721.3,
+              "current_A": 12.22,
+              "power_kW": 8.814,
+              "status": "normal",
+              "degradation_pct": 0.55
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-2",
+          "voltage_V": 743.1,
+          "current_A": 23.83,
+          "power_kW": 17.709,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 745.3,
+              "current_A": 12.05,
+              "power_kW": 8.981,
+              "status": "normal",
+              "degradation_pct": 0.45
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 740.9,
+              "current_A": 11.78,
+              "power_kW": 8.728,
+              "status": "normal",
+              "degradation_pct": 0.66
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-3",
+          "voltage_V": 740.5,
+          "current_A": 24.87,
+          "power_kW": 18.415,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 742.6,
+              "current_A": 12.09,
+              "power_kW": 8.978,
+              "status": "normal",
+              "degradation_pct": 0.47
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 738.4,
+              "current_A": 12.78,
+              "power_kW": 9.437,
+              "status": "normal",
+              "degradation_pct": 0.76
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-4",
+          "voltage_V": 722.5,
+          "current_A": 25.32,
+          "power_kW": 18.29,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 726.3,
+              "current_A": 12.28,
+              "power_kW": 8.919,
+              "status": "normal",
+              "degradation_pct": 0.59
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 718.6,
+              "current_A": 13.04,
+              "power_kW": 9.371,
+              "status": "normal",
+              "degradation_pct": 0.4
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-5",
+          "voltage_V": 720.5,
+          "current_A": 24.85,
+          "power_kW": 17.903,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 719.6,
+              "current_A": 13.1,
+              "power_kW": 9.427,
+              "status": "normal",
+              "degradation_pct": 0.38
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 721.4,
+              "current_A": 11.75,
+              "power_kW": 8.476,
+              "status": "normal",
+              "degradation_pct": 0.56
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-6",
+          "voltage_V": 732.3,
+          "current_A": 24.94,
+          "power_kW": 18.266,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 734.7,
+              "current_A": 13.06,
+              "power_kW": 9.595,
+              "status": "normal",
+              "degradation_pct": 0.45
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 729.9,
+              "current_A": 11.88,
+              "power_kW": 8.671,
+              "status": "normal",
+              "degradation_pct": 0.51
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalPower_kW": 108.433,
+        "avgVoltage_V": 731.1,
+        "healthyStrings": 12,
+        "totalStrings": 12,
+        "overallStatus": "healthy"
+      }
+    },
+    "INV-09": {
+      "inverterId": "INV-09",
+      "groupId": "array-b",
+      "model": "Huawei SUN2000",
+      "nominalPower_kW": 250.0,
+      "timestamp": "2026-07-24T08:30:00Z",
+      "mppts": [
+        {
+          "mpptId": "MPPT-1",
+          "voltage_V": 734.2,
+          "current_A": 24.75,
+          "power_kW": 18.166,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 728.6,
+              "current_A": 12.79,
+              "power_kW": 9.319,
+              "status": "normal",
+              "degradation_pct": 0.63
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 739.7,
+              "current_A": 11.96,
+              "power_kW": 8.847,
+              "status": "normal",
+              "degradation_pct": 0.31
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-2",
+          "voltage_V": 740.5,
+          "current_A": 25.26,
+          "power_kW": 18.706,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 738.1,
+              "current_A": 12.46,
+              "power_kW": 9.197,
+              "status": "normal",
+              "degradation_pct": 0.58
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 742.9,
+              "current_A": 12.8,
+              "power_kW": 9.509,
+              "status": "normal",
+              "degradation_pct": 0.41
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-3",
+          "voltage_V": 731.6,
+          "current_A": 24.35,
+          "power_kW": 17.809,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 718.5,
+              "current_A": 12.46,
+              "power_kW": 8.953,
+              "status": "normal",
+              "degradation_pct": 0.51
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 744.8,
+              "current_A": 11.89,
+              "power_kW": 8.856,
+              "status": "normal",
+              "degradation_pct": 0.61
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-4",
+          "voltage_V": 731.4,
+          "current_A": 24.8,
+          "power_kW": 18.149,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 720.5,
+              "current_A": 11.95,
+              "power_kW": 8.61,
+              "status": "normal",
+              "degradation_pct": 0.32
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 742.3,
+              "current_A": 12.85,
+              "power_kW": 9.539,
+              "status": "normal",
+              "degradation_pct": 0.71
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-5",
+          "voltage_V": 723.5,
+          "current_A": 25.31,
+          "power_kW": 18.311,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 727.5,
+              "current_A": 12.43,
+              "power_kW": 9.043,
+              "status": "normal",
+              "degradation_pct": 0.67
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 719.6,
+              "current_A": 12.88,
+              "power_kW": 9.268,
+              "status": "normal",
+              "degradation_pct": 0.61
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-6",
+          "voltage_V": 728.5,
+          "current_A": 23.69,
+          "power_kW": 17.259,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 724.8,
+              "current_A": 11.78,
+              "power_kW": 8.538,
+              "status": "normal",
+              "degradation_pct": 0.41
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 732.2,
+              "current_A": 11.91,
+              "power_kW": 8.721,
+              "status": "normal",
+              "degradation_pct": 0.67
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalPower_kW": 108.4,
+        "avgVoltage_V": 731.6,
+        "healthyStrings": 12,
+        "totalStrings": 12,
+        "overallStatus": "healthy"
+      }
+    },
+    "INV-10": {
+      "inverterId": "INV-10",
+      "groupId": "array-b",
+      "model": "Huawei SUN2000",
+      "nominalPower_kW": 250.0,
+      "timestamp": "2026-07-24T08:30:00Z",
+      "mppts": [
+        {
+          "mpptId": "MPPT-1",
+          "voltage_V": 741.2,
+          "current_A": 25.18,
+          "power_kW": 18.665,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 742.4,
+              "current_A": 12.69,
+              "power_kW": 9.421,
+              "status": "normal",
+              "degradation_pct": 0.48
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 740.1,
+              "current_A": 12.49,
+              "power_kW": 9.244,
+              "status": "normal",
+              "degradation_pct": 0.44
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-2",
+          "voltage_V": 736.5,
+          "current_A": 25.06,
+          "power_kW": 18.451,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 742.1,
+              "current_A": 12.22,
+              "power_kW": 9.068,
+              "status": "normal",
+              "degradation_pct": 0.53
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 730.8,
+              "current_A": 12.84,
+              "power_kW": 9.383,
+              "status": "normal",
+              "degradation_pct": 0.75
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-3",
+          "voltage_V": 733.2,
+          "current_A": 24.52,
+          "power_kW": 17.977,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 736.9,
+              "current_A": 12.14,
+              "power_kW": 8.946,
+              "status": "normal",
+              "degradation_pct": 0.38
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 729.5,
+              "current_A": 12.38,
+              "power_kW": 9.031,
+              "status": "normal",
+              "degradation_pct": 0.3
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-4",
+          "voltage_V": 728.6,
+          "current_A": 24.79,
+          "power_kW": 18.062,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 727.9,
+              "current_A": 13.04,
+              "power_kW": 9.492,
+              "status": "normal",
+              "degradation_pct": 0.56
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 729.4,
+              "current_A": 11.75,
+              "power_kW": 8.57,
+              "status": "normal",
+              "degradation_pct": 0.39
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-5",
+          "voltage_V": 732.2,
+          "current_A": 24.31,
+          "power_kW": 17.796,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 726.4,
+              "current_A": 12.47,
+              "power_kW": 9.058,
+              "status": "normal",
+              "degradation_pct": 0.43
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 738.0,
+              "current_A": 11.84,
+              "power_kW": 8.738,
+              "status": "normal",
+              "degradation_pct": 0.75
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-6",
+          "voltage_V": 729.8,
+          "current_A": 24.65,
+          "power_kW": 17.992,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 732.9,
+              "current_A": 12.89,
+              "power_kW": 9.447,
+              "status": "normal",
+              "degradation_pct": 0.65
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 726.6,
+              "current_A": 11.76,
+              "power_kW": 8.545,
+              "status": "normal",
+              "degradation_pct": 0.5
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalPower_kW": 108.943,
+        "avgVoltage_V": 733.6,
+        "healthyStrings": 12,
+        "totalStrings": 12,
+        "overallStatus": "healthy"
+      }
+    },
+    "INV-11": {
+      "inverterId": "INV-11",
+      "groupId": "array-b",
+      "model": "Huawei SUN2000",
+      "nominalPower_kW": 250.0,
+      "timestamp": "2026-07-24T08:30:00Z",
+      "mppts": [
+        {
+          "mpptId": "MPPT-1",
+          "voltage_V": 734.8,
+          "current_A": 26.11,
+          "power_kW": 19.185,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 733.1,
+              "current_A": 13.06,
+              "power_kW": 9.574,
+              "status": "normal",
+              "degradation_pct": 0.71
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 736.5,
+              "current_A": 13.05,
+              "power_kW": 9.611,
+              "status": "normal",
+              "degradation_pct": 0.35
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-2",
+          "voltage_V": 724.4,
+          "current_A": 24.97,
+          "power_kW": 18.088,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 722.0,
+              "current_A": 12.24,
+              "power_kW": 8.837,
+              "status": "normal",
+              "degradation_pct": 0.57
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 726.7,
+              "current_A": 12.73,
+              "power_kW": 9.251,
+              "status": "normal",
+              "degradation_pct": 0.63
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-3",
+          "voltage_V": 724.6,
+          "current_A": 24.85,
+          "power_kW": 18.006,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 723.3,
+              "current_A": 12.96,
+              "power_kW": 9.374,
+              "status": "normal",
+              "degradation_pct": 0.45
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 726.0,
+              "current_A": 11.89,
+              "power_kW": 8.632,
+              "status": "normal",
+              "degradation_pct": 0.49
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-4",
+          "voltage_V": 740.7,
+          "current_A": 25.59,
+          "power_kW": 18.953,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 745.3,
+              "current_A": 12.58,
+              "power_kW": 9.376,
+              "status": "normal",
+              "degradation_pct": 0.72
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 736.1,
+              "current_A": 13.01,
+              "power_kW": 9.577,
+              "status": "normal",
+              "degradation_pct": 0.48
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-5",
+          "voltage_V": 736.3,
+          "current_A": 25.5,
+          "power_kW": 18.775,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 739.6,
+              "current_A": 12.79,
+              "power_kW": 9.459,
+              "status": "normal",
+              "degradation_pct": 0.74
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 733.0,
+              "current_A": 12.71,
+              "power_kW": 9.316,
+              "status": "normal",
+              "degradation_pct": 0.31
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-6",
+          "voltage_V": 724.0,
+          "current_A": 24.53,
+          "power_kW": 17.759,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 726.8,
+              "current_A": 11.9,
+              "power_kW": 8.649,
+              "status": "normal",
+              "degradation_pct": 0.31
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 721.3,
+              "current_A": 12.63,
+              "power_kW": 9.11,
+              "status": "normal",
+              "degradation_pct": 0.65
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalPower_kW": 110.766,
+        "avgVoltage_V": 730.8,
+        "healthyStrings": 12,
+        "totalStrings": 12,
+        "overallStatus": "healthy"
+      }
+    },
+    "INV-12": {
+      "inverterId": "INV-12",
+      "groupId": "array-b",
+      "model": "Huawei SUN2000",
+      "nominalPower_kW": 250.0,
+      "timestamp": "2026-07-24T08:30:00Z",
+      "mppts": [
+        {
+          "mpptId": "MPPT-1",
+          "voltage_V": 733.0,
+          "current_A": 25.32,
+          "power_kW": 18.563,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 739.5,
+              "current_A": 12.88,
+              "power_kW": 9.525,
+              "status": "normal",
+              "degradation_pct": 0.33
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 726.5,
+              "current_A": 12.44,
+              "power_kW": 9.038,
+              "status": "normal",
+              "degradation_pct": 0.6
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-2",
+          "voltage_V": 723.0,
+          "current_A": 24.72,
+          "power_kW": 17.869,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 724.9,
+              "current_A": 11.85,
+              "power_kW": 8.59,
+              "status": "normal",
+              "degradation_pct": 0.46
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 721.0,
+              "current_A": 12.87,
+              "power_kW": 9.279,
+              "status": "normal",
+              "degradation_pct": 0.34
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-3",
+          "voltage_V": 728.3,
+          "current_A": 24.52,
+          "power_kW": 17.86,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 725.4,
+              "current_A": 12.12,
+              "power_kW": 8.792,
+              "status": "normal",
+              "degradation_pct": 0.36
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 731.3,
+              "current_A": 12.4,
+              "power_kW": 9.068,
+              "status": "normal",
+              "degradation_pct": 0.58
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-4",
+          "voltage_V": 734.3,
+          "current_A": 24.38,
+          "power_kW": 17.902,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 724.9,
+              "current_A": 12.2,
+              "power_kW": 8.844,
+              "status": "normal",
+              "degradation_pct": 0.71
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 743.7,
+              "current_A": 12.18,
+              "power_kW": 9.058,
+              "status": "normal",
+              "degradation_pct": 0.33
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-5",
+          "voltage_V": 735.3,
+          "current_A": 25.46,
+          "power_kW": 18.724,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 745.3,
+              "current_A": 12.83,
+              "power_kW": 9.562,
+              "status": "normal",
+              "degradation_pct": 0.69
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 725.4,
+              "current_A": 12.63,
+              "power_kW": 9.162,
+              "status": "normal",
+              "degradation_pct": 0.38
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-6",
+          "voltage_V": 736.6,
+          "current_A": 25.11,
+          "power_kW": 18.497,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 730.1,
+              "current_A": 12.49,
+              "power_kW": 9.119,
+              "status": "normal",
+              "degradation_pct": 0.46
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 743.1,
+              "current_A": 12.62,
+              "power_kW": 9.378,
+              "status": "normal",
+              "degradation_pct": 0.55
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalPower_kW": 109.415,
+        "avgVoltage_V": 731.8,
+        "healthyStrings": 12,
+        "totalStrings": 12,
+        "overallStatus": "healthy"
+      }
+    },
+    "INV-13": {
+      "inverterId": "INV-13",
+      "groupId": "array-b",
+      "model": "Huawei SUN2000",
+      "nominalPower_kW": 250.0,
+      "timestamp": "2026-07-24T08:30:00Z",
+      "mppts": [
+        {
+          "mpptId": "MPPT-1",
+          "voltage_V": 734.5,
+          "current_A": 24.97,
+          "power_kW": 18.348,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 726.8,
+              "current_A": 11.98,
+              "power_kW": 8.707,
+              "status": "normal",
+              "degradation_pct": 0.53
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 742.2,
+              "current_A": 12.99,
+              "power_kW": 9.641,
+              "status": "normal",
+              "degradation_pct": 0.68
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-2",
+          "voltage_V": 725.9,
+          "current_A": 25.18,
+          "power_kW": 18.28,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 727.8,
+              "current_A": 12.86,
+              "power_kW": 9.36,
+              "status": "normal",
+              "degradation_pct": 0.59
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 724.0,
+              "current_A": 12.32,
+              "power_kW": 8.92,
+              "status": "normal",
+              "degradation_pct": 0.58
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-3",
+          "voltage_V": 730.0,
+          "current_A": 24.37,
+          "power_kW": 17.791,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 738.6,
+              "current_A": 12.3,
+              "power_kW": 9.085,
+              "status": "normal",
+              "degradation_pct": 0.46
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 721.3,
+              "current_A": 12.07,
+              "power_kW": 8.706,
+              "status": "normal",
+              "degradation_pct": 0.73
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-4",
+          "voltage_V": 726.3,
+          "current_A": 24.36,
+          "power_kW": 17.693,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 725.4,
+              "current_A": 12.46,
+              "power_kW": 9.038,
+              "status": "normal",
+              "degradation_pct": 0.43
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 727.3,
+              "current_A": 11.9,
+              "power_kW": 8.655,
+              "status": "normal",
+              "degradation_pct": 0.69
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-5",
+          "voltage_V": 727.4,
+          "current_A": 24.97,
+          "power_kW": 18.162,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 725.5,
+              "current_A": 12.5,
+              "power_kW": 9.069,
+              "status": "normal",
+              "degradation_pct": 0.62
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 729.2,
+              "current_A": 12.47,
+              "power_kW": 9.093,
+              "status": "normal",
+              "degradation_pct": 0.46
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-6",
+          "voltage_V": 730.7,
+          "current_A": 24.48,
+          "power_kW": 17.889,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 729.5,
+              "current_A": 11.83,
+              "power_kW": 8.63,
+              "status": "normal",
+              "degradation_pct": 0.68
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 731.9,
+              "current_A": 12.65,
+              "power_kW": 9.259,
+              "status": "normal",
+              "degradation_pct": 0.62
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalPower_kW": 108.163,
+        "avgVoltage_V": 729.1,
+        "healthyStrings": 12,
+        "totalStrings": 12,
+        "overallStatus": "healthy"
+      }
+    },
+    "INV-14": {
+      "inverterId": "INV-14",
+      "groupId": "array-b",
+      "model": "Huawei SUN2000",
+      "nominalPower_kW": 250.0,
+      "timestamp": "2026-07-24T08:30:00Z",
+      "mppts": [
+        {
+          "mpptId": "MPPT-1",
+          "voltage_V": 735.7,
+          "current_A": 25.38,
+          "power_kW": 18.673,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 741.5,
+              "current_A": 12.77,
+              "power_kW": 9.469,
+              "status": "normal",
+              "degradation_pct": 0.56
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 729.9,
+              "current_A": 12.61,
+              "power_kW": 9.204,
+              "status": "normal",
+              "degradation_pct": 0.33
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-2",
+          "voltage_V": 733.4,
+          "current_A": 23.82,
+          "power_kW": 17.47,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 729.2,
+              "current_A": 11.94,
+              "power_kW": 8.707,
+              "status": "normal",
+              "degradation_pct": 0.43
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 737.6,
+              "current_A": 11.88,
+              "power_kW": 8.763,
+              "status": "normal",
+              "degradation_pct": 0.59
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-3",
+          "voltage_V": 738.5,
+          "current_A": 25.25,
+          "power_kW": 18.644,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 735.1,
+              "current_A": 12.87,
+              "power_kW": 9.461,
+              "status": "normal",
+              "degradation_pct": 0.7
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 741.8,
+              "current_A": 12.38,
+              "power_kW": 9.183,
+              "status": "normal",
+              "degradation_pct": 0.31
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-4",
+          "voltage_V": 741.8,
+          "current_A": 24.75,
+          "power_kW": 18.359,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 739.2,
+              "current_A": 12.59,
+              "power_kW": 9.307,
+              "status": "normal",
+              "degradation_pct": 0.63
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 744.4,
+              "current_A": 12.16,
+              "power_kW": 9.052,
+              "status": "normal",
+              "degradation_pct": 0.69
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-5",
+          "voltage_V": 731.7,
+          "current_A": 23.09,
+          "power_kW": 16.91,
+          "status": "warning",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 740.1,
+              "current_A": 12.42,
+              "power_kW": 9.192,
+              "status": "normal",
+              "degradation_pct": 0.61
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 723.3,
+              "current_A": 10.67,
+              "power_kW": 7.718,
+              "status": "degraded",
+              "degradation_pct": 1.64
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-6",
+          "voltage_V": 723.1,
+          "current_A": 25.7,
+          "power_kW": 18.584,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 722.4,
+              "current_A": 13.06,
+              "power_kW": 9.435,
+              "status": "normal",
+              "degradation_pct": 0.77
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 723.8,
+              "current_A": 12.64,
+              "power_kW": 9.149,
+              "status": "normal",
+              "degradation_pct": 0.65
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalPower_kW": 108.64,
+        "avgVoltage_V": 734.0,
+        "healthyStrings": 11,
+        "totalStrings": 12,
+        "overallStatus": "degraded"
+      }
+    },
+    "INV-15": {
+      "inverterId": "INV-15",
+      "groupId": "array-b",
+      "model": "Huawei SUN2000",
+      "nominalPower_kW": 250.0,
+      "timestamp": "2026-07-24T08:30:00Z",
+      "mppts": [
+        {
+          "mpptId": "MPPT-1",
+          "voltage_V": 727.5,
+          "current_A": 24.17,
+          "power_kW": 17.58,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 720.4,
+              "current_A": 12.28,
+              "power_kW": 8.847,
+              "status": "normal",
+              "degradation_pct": 0.56
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 734.5,
+              "current_A": 11.89,
+              "power_kW": 8.733,
+              "status": "normal",
+              "degradation_pct": 0.31
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-2",
+          "voltage_V": 738.3,
+          "current_A": 23.78,
+          "power_kW": 17.556,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 744.3,
+              "current_A": 11.76,
+              "power_kW": 8.753,
+              "status": "normal",
+              "degradation_pct": 0.58
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 732.4,
+              "current_A": 12.02,
+              "power_kW": 8.803,
+              "status": "normal",
+              "degradation_pct": 0.77
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-3",
+          "voltage_V": 729.0,
+          "current_A": 25.0,
+          "power_kW": 18.227,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 731.2,
+              "current_A": 12.63,
+              "power_kW": 9.235,
+              "status": "normal",
+              "degradation_pct": 0.47
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 726.9,
+              "current_A": 12.37,
+              "power_kW": 8.992,
+              "status": "normal",
+              "degradation_pct": 0.54
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-4",
+          "voltage_V": 724.5,
+          "current_A": 24.42,
+          "power_kW": 17.69,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 727.2,
+              "current_A": 12.05,
+              "power_kW": 8.763,
+              "status": "normal",
+              "degradation_pct": 0.62
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 721.7,
+              "current_A": 12.37,
+              "power_kW": 8.927,
+              "status": "normal",
+              "degradation_pct": 0.48
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-5",
+          "voltage_V": 736.8,
+          "current_A": 25.08,
+          "power_kW": 18.478,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 741.4,
+              "current_A": 12.35,
+              "power_kW": 9.156,
+              "status": "normal",
+              "degradation_pct": 0.48
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 732.3,
+              "current_A": 12.73,
+              "power_kW": 9.322,
+              "status": "normal",
+              "degradation_pct": 0.45
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-6",
+          "voltage_V": 736.3,
+          "current_A": 25.44,
+          "power_kW": 18.731,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 734.3,
+              "current_A": 12.84,
+              "power_kW": 9.428,
+              "status": "normal",
+              "degradation_pct": 0.73
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 738.3,
+              "current_A": 12.6,
+              "power_kW": 9.303,
+              "status": "normal",
+              "degradation_pct": 0.55
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalPower_kW": 108.262,
+        "avgVoltage_V": 732.1,
+        "healthyStrings": 12,
+        "totalStrings": 12,
+        "overallStatus": "healthy"
+      }
+    },
+    "INV-16": {
+      "inverterId": "INV-16",
+      "groupId": "array-b",
+      "model": "Huawei SUN2000",
+      "nominalPower_kW": 250.0,
+      "timestamp": "2026-07-24T08:30:00Z",
+      "mppts": [
+        {
+          "mpptId": "MPPT-1",
+          "voltage_V": 734.1,
+          "current_A": 25.79,
+          "power_kW": 18.932,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 732.9,
+              "current_A": 12.9,
+              "power_kW": 9.454,
+              "status": "normal",
+              "degradation_pct": 0.79
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 735.3,
+              "current_A": 12.89,
+              "power_kW": 9.478,
+              "status": "normal",
+              "degradation_pct": 0.79
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-2",
+          "voltage_V": 731.4,
+          "current_A": 24.19,
+          "power_kW": 17.695,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 734.7,
+              "current_A": 12.38,
+              "power_kW": 9.096,
+              "status": "normal",
+              "degradation_pct": 0.63
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 728.1,
+              "current_A": 11.81,
+              "power_kW": 8.599,
+              "status": "normal",
+              "degradation_pct": 0.58
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-3",
+          "voltage_V": 742.6,
+          "current_A": 25.2,
+          "power_kW": 18.713,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 740.3,
+              "current_A": 12.76,
+              "power_kW": 9.446,
+              "status": "normal",
+              "degradation_pct": 0.78
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 744.9,
+              "current_A": 12.44,
+              "power_kW": 9.267,
+              "status": "normal",
+              "degradation_pct": 0.73
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-4",
+          "voltage_V": 727.2,
+          "current_A": 25.04,
+          "power_kW": 18.218,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 735.7,
+              "current_A": 13.0,
+              "power_kW": 9.564,
+              "status": "normal",
+              "degradation_pct": 0.79
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 718.8,
+              "current_A": 12.04,
+              "power_kW": 8.654,
+              "status": "normal",
+              "degradation_pct": 0.51
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-5",
+          "voltage_V": 742.0,
+          "current_A": 24.67,
+          "power_kW": 18.306,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 742.0,
+              "current_A": 11.88,
+              "power_kW": 8.815,
+              "status": "normal",
+              "degradation_pct": 0.41
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 742.1,
+              "current_A": 12.79,
+              "power_kW": 9.491,
+              "status": "normal",
+              "degradation_pct": 0.66
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-6",
+          "voltage_V": 725.0,
+          "current_A": 25.26,
+          "power_kW": 18.314,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 721.8,
+              "current_A": 12.65,
+              "power_kW": 9.131,
+              "status": "normal",
+              "degradation_pct": 0.73
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 728.2,
+              "current_A": 12.61,
+              "power_kW": 9.183,
+              "status": "normal",
+              "degradation_pct": 0.57
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalPower_kW": 110.178,
+        "avgVoltage_V": 733.7,
+        "healthyStrings": 12,
+        "totalStrings": 12,
+        "overallStatus": "healthy"
+      }
+    },
+    "INV-17": {
+      "inverterId": "INV-17",
+      "groupId": "array-c",
+      "model": "Huawei SUN2000",
+      "nominalPower_kW": 250.0,
+      "timestamp": "2026-07-24T08:30:00Z",
+      "mppts": [
+        {
+          "mpptId": "MPPT-1",
+          "voltage_V": 738.0,
+          "current_A": 23.87,
+          "power_kW": 17.616,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 738.3,
+              "current_A": 11.96,
+              "power_kW": 8.83,
+              "status": "normal",
+              "degradation_pct": 0.6
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 737.7,
+              "current_A": 11.91,
+              "power_kW": 8.786,
+              "status": "normal",
+              "degradation_pct": 0.37
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-2",
+          "voltage_V": 740.4,
+          "current_A": 25.73,
+          "power_kW": 19.051,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 740.3,
+              "current_A": 12.82,
+              "power_kW": 9.491,
+              "status": "normal",
+              "degradation_pct": 0.59
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 740.5,
+              "current_A": 12.91,
+              "power_kW": 9.56,
+              "status": "normal",
+              "degradation_pct": 0.44
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-3",
+          "voltage_V": 735.7,
+          "current_A": 25.52,
+          "power_kW": 18.773,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 726.4,
+              "current_A": 12.85,
+              "power_kW": 9.334,
+              "status": "normal",
+              "degradation_pct": 0.37
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 745.0,
+              "current_A": 12.67,
+              "power_kW": 9.439,
+              "status": "normal",
+              "degradation_pct": 0.36
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-4",
+          "voltage_V": 736.1,
+          "current_A": 20.74,
+          "power_kW": 15.271,
+          "status": "warning",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 739.0,
+              "current_A": 10.9,
+              "power_kW": 8.055,
+              "status": "degraded",
+              "degradation_pct": 2.26
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 733.3,
+              "current_A": 9.84,
+              "power_kW": 7.216,
+              "status": "degraded",
+              "degradation_pct": 2.04
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-5",
+          "voltage_V": 729.3,
+          "current_A": 20.82,
+          "power_kW": 15.179,
+          "status": "warning",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 720.6,
+              "current_A": 10.68,
+              "power_kW": 7.696,
+              "status": "degraded",
+              "degradation_pct": 2.48
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 738.0,
+              "current_A": 10.14,
+              "power_kW": 7.483,
+              "status": "degraded",
+              "degradation_pct": 1.86
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-6",
+          "voltage_V": 728.6,
+          "current_A": 25.03,
+          "power_kW": 18.243,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 719.6,
+              "current_A": 12.19,
+              "power_kW": 8.772,
+              "status": "normal",
+              "degradation_pct": 0.72
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 737.6,
+              "current_A": 12.84,
+              "power_kW": 9.471,
+              "status": "normal",
+              "degradation_pct": 0.46
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalPower_kW": 104.133,
+        "avgVoltage_V": 734.7,
+        "healthyStrings": 8,
+        "totalStrings": 12,
+        "overallStatus": "degraded"
+      }
+    },
+    "INV-18": {
+      "inverterId": "INV-18",
+      "groupId": "array-c",
+      "model": "Huawei SUN2000",
+      "nominalPower_kW": 250.0,
+      "timestamp": "2026-07-24T08:30:00Z",
+      "mppts": [
+        {
+          "mpptId": "MPPT-1",
+          "voltage_V": 719.6,
+          "current_A": 25.03,
+          "power_kW": 18.013,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 718.8,
+              "current_A": 12.4,
+              "power_kW": 8.913,
+              "status": "normal",
+              "degradation_pct": 0.73
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 720.5,
+              "current_A": 12.63,
+              "power_kW": 9.1,
+              "status": "normal",
+              "degradation_pct": 0.4
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-2",
+          "voltage_V": 736.7,
+          "current_A": 24.26,
+          "power_kW": 17.872,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 741.6,
+              "current_A": 12.04,
+              "power_kW": 8.929,
+              "status": "normal",
+              "degradation_pct": 0.63
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 731.8,
+              "current_A": 12.22,
+              "power_kW": 8.943,
+              "status": "normal",
+              "degradation_pct": 0.57
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-3",
+          "voltage_V": 735.3,
+          "current_A": 24.7,
+          "power_kW": 18.167,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 742.4,
+              "current_A": 12.71,
+              "power_kW": 9.436,
+              "status": "normal",
+              "degradation_pct": 0.53
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 728.2,
+              "current_A": 11.99,
+              "power_kW": 8.731,
+              "status": "normal",
+              "degradation_pct": 0.45
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-4",
+          "voltage_V": 735.1,
+          "current_A": 25.94,
+          "power_kW": 19.068,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 738.7,
+              "current_A": 13.01,
+              "power_kW": 9.61,
+              "status": "normal",
+              "degradation_pct": 0.58
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 731.5,
+              "current_A": 12.93,
+              "power_kW": 9.458,
+              "status": "normal",
+              "degradation_pct": 0.41
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-5",
+          "voltage_V": 730.2,
+          "current_A": 25.42,
+          "power_kW": 18.562,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 723.5,
+              "current_A": 12.76,
+              "power_kW": 9.232,
+              "status": "normal",
+              "degradation_pct": 0.48
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 737.0,
+              "current_A": 12.66,
+              "power_kW": 9.33,
+              "status": "normal",
+              "degradation_pct": 0.36
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-6",
+          "voltage_V": 734.4,
+          "current_A": 24.61,
+          "power_kW": 18.073,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 723.7,
+              "current_A": 12.31,
+              "power_kW": 8.909,
+              "status": "normal",
+              "degradation_pct": 0.75
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 745.0,
+              "current_A": 12.3,
+              "power_kW": 9.164,
+              "status": "normal",
+              "degradation_pct": 0.57
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalPower_kW": 109.755,
+        "avgVoltage_V": 731.9,
+        "healthyStrings": 12,
+        "totalStrings": 12,
+        "overallStatus": "healthy"
+      }
+    },
+    "INV-19": {
+      "inverterId": "INV-19",
+      "groupId": "array-c",
+      "model": "Huawei SUN2000",
+      "nominalPower_kW": 250.0,
+      "timestamp": "2026-07-24T08:30:00Z",
+      "mppts": [
+        {
+          "mpptId": "MPPT-1",
+          "voltage_V": 723.8,
+          "current_A": 25.68,
+          "power_kW": 18.587,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 722.1,
+              "current_A": 12.95,
+              "power_kW": 9.351,
+              "status": "normal",
+              "degradation_pct": 0.62
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 725.5,
+              "current_A": 12.73,
+              "power_kW": 9.236,
+              "status": "normal",
+              "degradation_pct": 0.5
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-2",
+          "voltage_V": 729.6,
+          "current_A": 25.42,
+          "power_kW": 18.545,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 731.3,
+              "current_A": 12.34,
+              "power_kW": 9.024,
+              "status": "normal",
+              "degradation_pct": 0.44
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 727.9,
+              "current_A": 13.08,
+              "power_kW": 9.521,
+              "status": "normal",
+              "degradation_pct": 0.35
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-3",
+          "voltage_V": 725.3,
+          "current_A": 24.6,
+          "power_kW": 17.844,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 722.0,
+              "current_A": 12.01,
+              "power_kW": 8.671,
+              "status": "normal",
+              "degradation_pct": 0.48
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 728.6,
+              "current_A": 12.59,
+              "power_kW": 9.173,
+              "status": "normal",
+              "degradation_pct": 0.32
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-4",
+          "voltage_V": 741.3,
+          "current_A": 24.29,
+          "power_kW": 18.004,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 737.5,
+              "current_A": 12.48,
+              "power_kW": 9.204,
+              "status": "normal",
+              "degradation_pct": 0.68
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 745.1,
+              "current_A": 11.81,
+              "power_kW": 8.8,
+              "status": "normal",
+              "degradation_pct": 0.53
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-5",
+          "voltage_V": 738.9,
+          "current_A": 25.66,
+          "power_kW": 18.96,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 733.3,
+              "current_A": 12.82,
+              "power_kW": 9.401,
+              "status": "normal",
+              "degradation_pct": 0.71
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 744.5,
+              "current_A": 12.84,
+              "power_kW": 9.559,
+              "status": "normal",
+              "degradation_pct": 0.45
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-6",
+          "voltage_V": 725.5,
+          "current_A": 23.61,
+          "power_kW": 17.13,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 720.3,
+              "current_A": 11.76,
+              "power_kW": 8.471,
+              "status": "normal",
+              "degradation_pct": 0.56
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 730.7,
+              "current_A": 11.85,
+              "power_kW": 8.659,
+              "status": "normal",
+              "degradation_pct": 0.7
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalPower_kW": 109.07,
+        "avgVoltage_V": 730.7,
+        "healthyStrings": 12,
+        "totalStrings": 12,
+        "overallStatus": "healthy"
+      }
+    },
+    "INV-20": {
+      "inverterId": "INV-20",
+      "groupId": "array-c",
+      "model": "Huawei SUN2000",
+      "nominalPower_kW": 250.0,
+      "timestamp": "2026-07-24T08:30:00Z",
+      "mppts": [
+        {
+          "mpptId": "MPPT-1",
+          "voltage_V": 736.8,
+          "current_A": 24.95,
+          "power_kW": 18.386,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 740.4,
+              "current_A": 13.04,
+              "power_kW": 9.655,
+              "status": "normal",
+              "degradation_pct": 0.61
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 733.1,
+              "current_A": 11.91,
+              "power_kW": 8.731,
+              "status": "normal",
+              "degradation_pct": 0.46
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-2",
+          "voltage_V": 730.4,
+          "current_A": 23.98,
+          "power_kW": 17.509,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 718.7,
+              "current_A": 12.25,
+              "power_kW": 8.804,
+              "status": "normal",
+              "degradation_pct": 0.38
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 742.1,
+              "current_A": 11.73,
+              "power_kW": 8.705,
+              "status": "normal",
+              "degradation_pct": 0.32
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-3",
+          "voltage_V": 741.9,
+          "current_A": 25.65,
+          "power_kW": 19.028,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 745.2,
+              "current_A": 12.75,
+              "power_kW": 9.501,
+              "status": "normal",
+              "degradation_pct": 0.56
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 738.5,
+              "current_A": 12.9,
+              "power_kW": 9.527,
+              "status": "normal",
+              "degradation_pct": 0.47
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-4",
+          "voltage_V": 730.2,
+          "current_A": 25.4,
+          "power_kW": 18.542,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 722.3,
+              "current_A": 13.04,
+              "power_kW": 9.419,
+              "status": "normal",
+              "degradation_pct": 0.42
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 738.1,
+              "current_A": 12.36,
+              "power_kW": 9.123,
+              "status": "normal",
+              "degradation_pct": 0.42
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-5",
+          "voltage_V": 722.0,
+          "current_A": 24.96,
+          "power_kW": 18.022,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 724.7,
+              "current_A": 12.91,
+              "power_kW": 9.356,
+              "status": "normal",
+              "degradation_pct": 0.46
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 719.2,
+              "current_A": 12.05,
+              "power_kW": 8.666,
+              "status": "normal",
+              "degradation_pct": 0.39
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-6",
+          "voltage_V": 726.0,
+          "current_A": 24.3,
+          "power_kW": 17.643,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 723.3,
+              "current_A": 11.86,
+              "power_kW": 8.578,
+              "status": "normal",
+              "degradation_pct": 0.54
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 728.7,
+              "current_A": 12.44,
+              "power_kW": 9.065,
+              "status": "normal",
+              "degradation_pct": 0.55
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalPower_kW": 109.13,
+        "avgVoltage_V": 731.2,
+        "healthyStrings": 12,
+        "totalStrings": 12,
+        "overallStatus": "healthy"
+      }
+    },
+    "INV-21": {
+      "inverterId": "INV-21",
+      "groupId": "array-c",
+      "model": "Huawei SUN2000",
+      "nominalPower_kW": 250.0,
+      "timestamp": "2026-07-24T08:30:00Z",
+      "mppts": [
+        {
+          "mpptId": "MPPT-1",
+          "voltage_V": 0.0,
+          "current_A": 0.0,
+          "power_kW": 0.0,
+          "status": "fault",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 0.0,
+              "current_A": 0.0,
+              "power_kW": 0.0,
+              "status": "open_circuit",
+              "degradation_pct": 0.56
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 0.0,
+              "current_A": 0.0,
+              "power_kW": 0.0,
+              "status": "open_circuit",
+              "degradation_pct": 0.73
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-2",
+          "voltage_V": 0.0,
+          "current_A": 0.0,
+          "power_kW": 0.0,
+          "status": "fault",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 0.0,
+              "current_A": 0.0,
+              "power_kW": 0.0,
+              "status": "open_circuit",
+              "degradation_pct": 0.73
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 0.0,
+              "current_A": 0.0,
+              "power_kW": 0.0,
+              "status": "open_circuit",
+              "degradation_pct": 0.73
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-3",
+          "voltage_V": 0.0,
+          "current_A": 0.0,
+          "power_kW": 0.0,
+          "status": "fault",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 0.0,
+              "current_A": 0.0,
+              "power_kW": 0.0,
+              "status": "open_circuit",
+              "degradation_pct": 0.58
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 0.0,
+              "current_A": 0.0,
+              "power_kW": 0.0,
+              "status": "open_circuit",
+              "degradation_pct": 0.58
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-4",
+          "voltage_V": 0.0,
+          "current_A": 0.0,
+          "power_kW": 0.0,
+          "status": "fault",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 0.0,
+              "current_A": 0.0,
+              "power_kW": 0.0,
+              "status": "open_circuit",
+              "degradation_pct": 0.7
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 0.0,
+              "current_A": 0.0,
+              "power_kW": 0.0,
+              "status": "open_circuit",
+              "degradation_pct": 0.79
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-5",
+          "voltage_V": 0.0,
+          "current_A": 0.0,
+          "power_kW": 0.0,
+          "status": "fault",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 0.0,
+              "current_A": 0.0,
+              "power_kW": 0.0,
+              "status": "open_circuit",
+              "degradation_pct": 0.68
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 0.0,
+              "current_A": 0.0,
+              "power_kW": 0.0,
+              "status": "open_circuit",
+              "degradation_pct": 0.49
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-6",
+          "voltage_V": 0.0,
+          "current_A": 0.0,
+          "power_kW": 0.0,
+          "status": "fault",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 0.0,
+              "current_A": 0.0,
+              "power_kW": 0.0,
+              "status": "open_circuit",
+              "degradation_pct": 0.32
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 0.0,
+              "current_A": 0.0,
+              "power_kW": 0.0,
+              "status": "open_circuit",
+              "degradation_pct": 0.66
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalPower_kW": 0.0,
+        "avgVoltage_V": 0.0,
+        "healthyStrings": 0,
+        "totalStrings": 12,
+        "overallStatus": "faulted"
+      }
+    },
+    "INV-22": {
+      "inverterId": "INV-22",
+      "groupId": "array-c",
+      "model": "Huawei SUN2000",
+      "nominalPower_kW": 250.0,
+      "timestamp": "2026-07-24T08:30:00Z",
+      "mppts": [
+        {
+          "mpptId": "MPPT-1",
+          "voltage_V": 724.6,
+          "current_A": 25.27,
+          "power_kW": 18.312,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 721.2,
+              "current_A": 12.33,
+              "power_kW": 8.892,
+              "status": "normal",
+              "degradation_pct": 0.63
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 728.0,
+              "current_A": 12.94,
+              "power_kW": 9.42,
+              "status": "normal",
+              "degradation_pct": 0.78
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-2",
+          "voltage_V": 725.0,
+          "current_A": 26.03,
+          "power_kW": 18.873,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 731.1,
+              "current_A": 13.03,
+              "power_kW": 9.526,
+              "status": "normal",
+              "degradation_pct": 0.62
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 719.0,
+              "current_A": 13.0,
+              "power_kW": 9.347,
+              "status": "normal",
+              "degradation_pct": 0.73
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-3",
+          "voltage_V": 724.8,
+          "current_A": 24.55,
+          "power_kW": 17.792,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 723.3,
+              "current_A": 12.61,
+              "power_kW": 9.121,
+              "status": "normal",
+              "degradation_pct": 0.54
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 726.2,
+              "current_A": 11.94,
+              "power_kW": 8.671,
+              "status": "normal",
+              "degradation_pct": 0.33
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-4",
+          "voltage_V": 727.5,
+          "current_A": 24.16,
+          "power_kW": 17.575,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 723.7,
+              "current_A": 12.1,
+              "power_kW": 8.757,
+              "status": "normal",
+              "degradation_pct": 0.62
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 731.2,
+              "current_A": 12.06,
+              "power_kW": 8.818,
+              "status": "normal",
+              "degradation_pct": 0.74
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-5",
+          "voltage_V": 736.3,
+          "current_A": 23.96,
+          "power_kW": 17.643,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 738.4,
+              "current_A": 11.93,
+              "power_kW": 8.809,
+              "status": "normal",
+              "degradation_pct": 0.62
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 734.3,
+              "current_A": 12.03,
+              "power_kW": 8.834,
+              "status": "normal",
+              "degradation_pct": 0.71
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-6",
+          "voltage_V": 726.8,
+          "current_A": 23.76,
+          "power_kW": 17.27,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 733.2,
+              "current_A": 12.02,
+              "power_kW": 8.813,
+              "status": "normal",
+              "degradation_pct": 0.5
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 720.4,
+              "current_A": 11.74,
+              "power_kW": 8.457,
+              "status": "normal",
+              "degradation_pct": 0.51
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalPower_kW": 107.465,
+        "avgVoltage_V": 727.5,
+        "healthyStrings": 12,
+        "totalStrings": 12,
+        "overallStatus": "healthy"
+      }
+    },
+    "INV-23": {
+      "inverterId": "INV-23",
+      "groupId": "array-c",
+      "model": "Huawei SUN2000",
+      "nominalPower_kW": 250.0,
+      "timestamp": "2026-07-24T08:30:00Z",
+      "mppts": [
+        {
+          "mpptId": "MPPT-1",
+          "voltage_V": 728.2,
+          "current_A": 24.25,
+          "power_kW": 17.661,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 733.6,
+              "current_A": 12.32,
+              "power_kW": 9.038,
+              "status": "normal",
+              "degradation_pct": 0.61
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 722.8,
+              "current_A": 11.93,
+              "power_kW": 8.623,
+              "status": "normal",
+              "degradation_pct": 0.4
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-2",
+          "voltage_V": 737.8,
+          "current_A": 24.62,
+          "power_kW": 18.165,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 739.2,
+              "current_A": 12.26,
+              "power_kW": 9.063,
+              "status": "normal",
+              "degradation_pct": 0.79
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 736.4,
+              "current_A": 12.36,
+              "power_kW": 9.102,
+              "status": "normal",
+              "degradation_pct": 0.31
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-3",
+          "voltage_V": 727.0,
+          "current_A": 25.17,
+          "power_kW": 18.296,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 720.1,
+              "current_A": 12.75,
+              "power_kW": 9.181,
+              "status": "normal",
+              "degradation_pct": 0.79
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 733.9,
+              "current_A": 12.42,
+              "power_kW": 9.115,
+              "status": "normal",
+              "degradation_pct": 0.42
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-4",
+          "voltage_V": 740.6,
+          "current_A": 24.87,
+          "power_kW": 18.42,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 740.9,
+              "current_A": 12.92,
+              "power_kW": 9.572,
+              "status": "normal",
+              "degradation_pct": 0.37
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 740.4,
+              "current_A": 11.95,
+              "power_kW": 8.848,
+              "status": "normal",
+              "degradation_pct": 0.58
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-5",
+          "voltage_V": 729.7,
+          "current_A": 25.42,
+          "power_kW": 18.547,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 721.9,
+              "current_A": 12.84,
+              "power_kW": 9.269,
+              "status": "normal",
+              "degradation_pct": 0.34
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 737.5,
+              "current_A": 12.58,
+              "power_kW": 9.278,
+              "status": "normal",
+              "degradation_pct": 0.64
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-6",
+          "voltage_V": 732.3,
+          "current_A": 24.75,
+          "power_kW": 18.118,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 727.5,
+              "current_A": 13.02,
+              "power_kW": 9.472,
+              "status": "normal",
+              "degradation_pct": 0.34
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 737.1,
+              "current_A": 11.73,
+              "power_kW": 8.646,
+              "status": "normal",
+              "degradation_pct": 0.43
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalPower_kW": 109.207,
+        "avgVoltage_V": 732.6,
+        "healthyStrings": 12,
+        "totalStrings": 12,
+        "overallStatus": "healthy"
+      }
+    },
+    "INV-24": {
+      "inverterId": "INV-24",
+      "groupId": "array-c",
+      "model": "Huawei SUN2000",
+      "nominalPower_kW": 250.0,
+      "timestamp": "2026-07-24T08:30:00Z",
+      "mppts": [
+        {
+          "mpptId": "MPPT-1",
+          "voltage_V": 728.0,
+          "current_A": 25.44,
+          "power_kW": 18.516,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 721.2,
+              "current_A": 12.93,
+              "power_kW": 9.325,
+              "status": "normal",
+              "degradation_pct": 0.77
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 734.7,
+              "current_A": 12.51,
+              "power_kW": 9.191,
+              "status": "normal",
+              "degradation_pct": 0.8
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-2",
+          "voltage_V": 720.9,
+          "current_A": 25.74,
+          "power_kW": 18.555,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 723.0,
+              "current_A": 12.75,
+              "power_kW": 9.218,
+              "status": "normal",
+              "degradation_pct": 0.31
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 718.8,
+              "current_A": 12.99,
+              "power_kW": 9.337,
+              "status": "normal",
+              "degradation_pct": 0.39
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-3",
+          "voltage_V": 734.9,
+          "current_A": 23.76,
+          "power_kW": 17.462,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 730.8,
+              "current_A": 11.84,
+              "power_kW": 8.653,
+              "status": "normal",
+              "degradation_pct": 0.63
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 739.0,
+              "current_A": 11.92,
+              "power_kW": 8.809,
+              "status": "normal",
+              "degradation_pct": 0.78
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-4",
+          "voltage_V": 731.1,
+          "current_A": 24.81,
+          "power_kW": 18.138,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 744.1,
+              "current_A": 12.37,
+              "power_kW": 9.205,
+              "status": "normal",
+              "degradation_pct": 0.33
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 718.1,
+              "current_A": 12.44,
+              "power_kW": 8.933,
+              "status": "normal",
+              "degradation_pct": 0.37
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-5",
+          "voltage_V": 744.5,
+          "current_A": 23.96,
+          "power_kW": 17.837,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 744.3,
+              "current_A": 11.73,
+              "power_kW": 8.731,
+              "status": "normal",
+              "degradation_pct": 0.6
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 744.6,
+              "current_A": 12.23,
+              "power_kW": 9.106,
+              "status": "normal",
+              "degradation_pct": 0.61
+            }
+          ]
+        },
+        {
+          "mpptId": "MPPT-6",
+          "voltage_V": 728.8,
+          "current_A": 24.7,
+          "power_kW": 17.999,
+          "status": "normal",
+          "strings": [
+            {
+              "stringId": "STR-1",
+              "moduleCount": 28,
+              "voltage_V": 730.4,
+              "current_A": 11.87,
+              "power_kW": 8.67,
+              "status": "normal",
+              "degradation_pct": 0.41
+            },
+            {
+              "stringId": "STR-2",
+              "moduleCount": 28,
+              "voltage_V": 727.1,
+              "current_A": 12.83,
+              "power_kW": 9.329,
+              "status": "normal",
+              "degradation_pct": 0.72
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "totalPower_kW": 108.507,
+        "avgVoltage_V": 731.4,
+        "healthyStrings": 12,
+        "totalStrings": 12,
+        "overallStatus": "healthy"
+      }
+    }
+  }
+}

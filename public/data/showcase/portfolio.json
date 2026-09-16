@@ -1,0 +1,82 @@
+{
+  "as_of": "2026-04-17T12:25:46.950Z",
+  "total_capacity_mw": 165,
+  "total_plants": 3,
+  "plants": [
+    {
+      "plantId": "nimbus",
+      "plantName": "Nimbus Storage",
+      "location": "Yorkshire, UK",
+      "asset_type": "BESS",
+      "capacity_MW": 100,
+      "metrics": {
+        "healthScore": 71,
+        "availability_pct": 99.6,
+        "performance_ratio": 0.832
+      },
+      "financials": {
+        "annual_revenue_eur": 12480000,
+        "revenue_at_risk_eur": 410000,
+        "budget_deviation_pct": -3.4,
+        "soiling_loss_eur": 0,
+        "fault_loss_eur": 410000,
+        "availability_pct": 99.6,
+        "performance_ratio": 0.832
+      },
+      "riskScore": {
+        "overall": 58,
+        "level": "medium"
+      }
+    },
+    {
+      "plantId": "helios",
+      "plantName": "Helios PV",
+      "location": "Southern Europe",
+      "asset_type": "SOLAR",
+      "capacity_MW": 45,
+      "metrics": {
+        "healthScore": 87,
+        "availability_pct": 99.2,
+        "performance_ratio": 0.839
+      },
+      "financials": {
+        "annual_revenue_eur": 3850000,
+        "revenue_at_risk_eur": 142500,
+        "budget_deviation_pct": -1.2,
+        "soiling_loss_eur": 68200,
+        "fault_loss_eur": 74300,
+        "availability_pct": 99.2,
+        "performance_ratio": 0.839
+      },
+      "riskScore": {
+        "overall": 34,
+        "level": "medium"
+      }
+    },
+    {
+      "plantId": "zephyr",
+      "plantName": "Zephyr Wind",
+      "location": "Northern Europe",
+      "asset_type": "WIND",
+      "capacity_MW": 20,
+      "metrics": {
+        "healthScore": 92,
+        "availability_pct": 97.8,
+        "performance_ratio": 0.912
+      },
+      "financials": {
+        "annual_revenue_eur": 2100000,
+        "revenue_at_risk_eur": 48900,
+        "budget_deviation_pct": 0.8,
+        "soiling_loss_eur": 0,
+        "fault_loss_eur": 48900,
+        "availability_pct": 97.8,
+        "performance_ratio": 0.912
+      },
+      "riskScore": {
+        "overall": 22,
+        "level": "low"
+      }
+    }
+  ]
+}

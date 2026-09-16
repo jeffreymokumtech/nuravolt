@@ -1,0 +1,78 @@
+{
+  "dataset": "GPVS-Faults (cross-dataset)",
+  "n_samples": 80000,
+  "classes": [
+    "dc_link_capacitor_aging",
+    "grid_voltage_sag",
+    "grid_voltage_swell",
+    "inverter_overtemperature",
+    "irradiance_sensor_drift",
+    "normal",
+    "string_open_circuit",
+    "string_short_circuit"
+  ],
+  "confusion_matrix": null,
+  "per_class": {
+    "dc_link_capacitor_aging": {
+      "precision": 0.407,
+      "recall": 0.921,
+      "f1": 0.565,
+      "support": 10000
+    },
+    "grid_voltage_sag": {
+      "precision": 1.0,
+      "recall": 0.461,
+      "f1": 0.631,
+      "support": 10000
+    },
+    "grid_voltage_swell": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 10000
+    },
+    "inverter_overtemperature": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 10000
+    },
+    "irradiance_sensor_drift": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 10000
+    },
+    "normal": {
+      "precision": 0.19,
+      "recall": 1.0,
+      "f1": 0.319,
+      "support": 10000
+    },
+    "string_open_circuit": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 10000
+    },
+    "string_short_circuit": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 10000
+    }
+  },
+  "macro_f1": 0.1893,
+  "weighted_f1": 0.1893,
+  "accuracy": 0.2978,
+  "extras": {
+    "mode": "both",
+    "sample_per_file": 5000,
+    "classifier": "gpvs_row_classifier (cascade-aligned, GPVS-shape features)",
+    "training_dataset": "Lazzaretti (different feature shape)",
+    "note": "Cross-dataset test. Trained on per-string Lazzaretti; applied to system-level 3-phase GPVS. F3 (inverter overtemp) and F7 (sensor drift) have NO electrical-only discriminator so they're expected to misclassify as normal."
+  },
+  "reconstruction_notice": "RECONSTRUCTED 2026-08-21. The original artifact was overwritten by a pending_manual_fetch marker when the validator was made resilient to the missing GPVS download -- the marker was written unconditionally instead of only when no result existed. Per-class precision, recall, F1 and support, and the three summary metrics, were recovered verbatim from the rendered tables in docs/MODEL_ACCURACY.md and from extras captured during the provenance audit. The CONFUSION MATRIX could not be recovered and is null. The GPVS CSVs are not in this checkout, so the run cannot simply be repeated. The validator now refuses to overwrite a result with a marker.",
+  "what_it_does_not_measure": "The Lazzaretti cascade. This number came from gpvs_row_classifier, a separate implementation reading system-level Ipv/Vpv/Vdc, with thresholds fitted to GPVS's own percentiles. The Lazzaretti surrogate has never been run on any second dataset. See pv/classifier_provenance.json.",
+  "generated_at": "2026-08-21T08:26:03.155026Z"
+}

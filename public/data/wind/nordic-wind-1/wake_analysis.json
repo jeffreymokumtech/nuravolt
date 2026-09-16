@@ -1,0 +1,251 @@
+{
+ "model": "Jensen (nuravolt.wind.wake_model), frequency-weighted over 16 sectors",
+ "windSource": "Open-Meteo ERA5 archive, hourly 100 m wind, 2025",
+ "farm": {
+  "annualWakeLossPct": 11.59,
+  "farmEfficiencyPct": 88.41,
+  "ratedPowerKw": 2000
+ },
+ "turbines": [
+  {
+   "id": "WT-01",
+   "x": -377.3,
+   "y": -442.2,
+   "annualWakeLossPct": 3.89
+  },
+  {
+   "id": "WT-02",
+   "x": -188.7,
+   "y": -221.1,
+   "annualWakeLossPct": 13.98
+  },
+  {
+   "id": "WT-03",
+   "x": 0.0,
+   "y": 0.0,
+   "annualWakeLossPct": 14.55
+  },
+  {
+   "id": "WT-04",
+   "x": 188.7,
+   "y": 221.1,
+   "annualWakeLossPct": 14.49
+  },
+  {
+   "id": "WT-05",
+   "x": 377.3,
+   "y": 442.2,
+   "annualWakeLossPct": 11.04
+  }
+ ],
+ "sectors": [
+  {
+   "sector": "N",
+   "centerDeg": 0.0,
+   "frequencyPct": 2.87,
+   "farmLossPct": 0.0,
+   "turbineLossPct": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "sector": "NNE",
+   "centerDeg": 22.5,
+   "frequencyPct": 2.85,
+   "farmLossPct": 0.0,
+   "turbineLossPct": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "sector": "NE",
+   "centerDeg": 45.0,
+   "frequencyPct": 3.48,
+   "farmLossPct": 63.38,
+   "turbineLossPct": [
+    82.91,
+    82.01,
+    79.6,
+    72.4,
+    0.0
+   ]
+  },
+  {
+   "sector": "ENE",
+   "centerDeg": 67.5,
+   "frequencyPct": 3.28,
+   "farmLossPct": 24.53,
+   "turbineLossPct": [
+    30.66,
+    30.66,
+    30.66,
+    30.66,
+    0.0
+   ]
+  },
+  {
+   "sector": "E",
+   "centerDeg": 90.0,
+   "frequencyPct": 5.32,
+   "farmLossPct": 0.0,
+   "turbineLossPct": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "sector": "ESE",
+   "centerDeg": 112.5,
+   "frequencyPct": 4.36,
+   "farmLossPct": 0.0,
+   "turbineLossPct": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "sector": "SE",
+   "centerDeg": 135.0,
+   "frequencyPct": 5.1,
+   "farmLossPct": 0.0,
+   "turbineLossPct": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "sector": "SSE",
+   "centerDeg": 157.5,
+   "frequencyPct": 5.83,
+   "farmLossPct": 0.0,
+   "turbineLossPct": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "sector": "S",
+   "centerDeg": 180.0,
+   "frequencyPct": 4.9,
+   "farmLossPct": 0.0,
+   "turbineLossPct": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "sector": "SSW",
+   "centerDeg": 202.5,
+   "frequencyPct": 7.89,
+   "farmLossPct": 0.0,
+   "turbineLossPct": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "sector": "SW",
+   "centerDeg": 225.0,
+   "frequencyPct": 10.13,
+   "farmLossPct": 59.76,
+   "turbineLossPct": [
+    0.0,
+    68.78,
+    75.17,
+    77.08,
+    77.79
+   ]
+  },
+  {
+   "sector": "WSW",
+   "centerDeg": 247.5,
+   "frequencyPct": 11.5,
+   "farmLossPct": 21.98,
+   "turbineLossPct": [
+    0.0,
+    27.47,
+    27.47,
+    27.47,
+    27.47
+   ]
+  },
+  {
+   "sector": "W",
+   "centerDeg": 270.0,
+   "frequencyPct": 10.65,
+   "farmLossPct": 0.0,
+   "turbineLossPct": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "sector": "WNW",
+   "centerDeg": 292.5,
+   "frequencyPct": 11.78,
+   "farmLossPct": 0.0,
+   "turbineLossPct": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "sector": "NW",
+   "centerDeg": 315.0,
+   "frequencyPct": 6.7,
+   "farmLossPct": 0.0,
+   "turbineLossPct": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "sector": "NNW",
+   "centerDeg": 337.5,
+   "frequencyPct": 3.37,
+   "farmLossPct": 0.0,
+   "turbineLossPct": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  }
+ ]
+}

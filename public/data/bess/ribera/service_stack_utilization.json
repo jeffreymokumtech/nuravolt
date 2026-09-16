@@ -1,0 +1,268 @@
+{
+  "hours": [
+    {
+      "hour": 0,
+      "share": {
+        "dynamic_containment": 0.4974,
+        "dynamic_moderation": 0.1225,
+        "dynamic_regulation": 0.0939,
+        "balancing_mechanism": 0.0662,
+        "capacity_market": 0.1043,
+        "wholesale_arbitrage": 0.1157
+      }
+    },
+    {
+      "hour": 1,
+      "share": {
+        "dynamic_containment": 0.5065,
+        "dynamic_moderation": 0.1366,
+        "dynamic_regulation": 0.083,
+        "balancing_mechanism": 0.0826,
+        "capacity_market": 0.0897,
+        "wholesale_arbitrage": 0.1016
+      }
+    },
+    {
+      "hour": 2,
+      "share": {
+        "dynamic_containment": 0.4981,
+        "dynamic_moderation": 0.1326,
+        "dynamic_regulation": 0.0997,
+        "balancing_mechanism": 0.0936,
+        "capacity_market": 0.0919,
+        "wholesale_arbitrage": 0.0841
+      }
+    },
+    {
+      "hour": 3,
+      "share": {
+        "dynamic_containment": 0.5103,
+        "dynamic_moderation": 0.1316,
+        "dynamic_regulation": 0.1109,
+        "balancing_mechanism": 0.0629,
+        "capacity_market": 0.092,
+        "wholesale_arbitrage": 0.0923
+      }
+    },
+    {
+      "hour": 4,
+      "share": {
+        "dynamic_containment": 0.4907,
+        "dynamic_moderation": 0.1323,
+        "dynamic_regulation": 0.0893,
+        "balancing_mechanism": 0.0608,
+        "capacity_market": 0.114,
+        "wholesale_arbitrage": 0.1129
+      }
+    },
+    {
+      "hour": 5,
+      "share": {
+        "dynamic_containment": 0.5259,
+        "dynamic_moderation": 0.1045,
+        "dynamic_regulation": 0.0931,
+        "balancing_mechanism": 0.069,
+        "capacity_market": 0.12,
+        "wholesale_arbitrage": 0.0875
+      }
+    },
+    {
+      "hour": 6,
+      "share": {
+        "dynamic_containment": 0.4925,
+        "dynamic_moderation": 0.1105,
+        "dynamic_regulation": 0.1133,
+        "balancing_mechanism": 0.0689,
+        "capacity_market": 0.1211,
+        "wholesale_arbitrage": 0.0937
+      }
+    },
+    {
+      "hour": 7,
+      "share": {
+        "dynamic_containment": 0.3228,
+        "dynamic_moderation": 0.1364,
+        "dynamic_regulation": 0.0908,
+        "balancing_mechanism": 0.1532,
+        "capacity_market": 0.1782,
+        "wholesale_arbitrage": 0.1186
+      }
+    },
+    {
+      "hour": 8,
+      "share": {
+        "dynamic_containment": 0.326,
+        "dynamic_moderation": 0.1374,
+        "dynamic_regulation": 0.0911,
+        "balancing_mechanism": 0.1405,
+        "capacity_market": 0.167,
+        "wholesale_arbitrage": 0.138
+      }
+    },
+    {
+      "hour": 9,
+      "share": {
+        "dynamic_containment": 0.3174,
+        "dynamic_moderation": 0.1378,
+        "dynamic_regulation": 0.1033,
+        "balancing_mechanism": 0.1354,
+        "capacity_market": 0.1555,
+        "wholesale_arbitrage": 0.1506
+      }
+    },
+    {
+      "hour": 10,
+      "share": {
+        "dynamic_containment": 0.3122,
+        "dynamic_moderation": 0.1261,
+        "dynamic_regulation": 0.1142,
+        "balancing_mechanism": 0.1533,
+        "capacity_market": 0.1502,
+        "wholesale_arbitrage": 0.144
+      }
+    },
+    {
+      "hour": 11,
+      "share": {
+        "dynamic_containment": 0.296,
+        "dynamic_moderation": 0.1623,
+        "dynamic_regulation": 0.0844,
+        "balancing_mechanism": 0.1504,
+        "capacity_market": 0.1626,
+        "wholesale_arbitrage": 0.1443
+      }
+    },
+    {
+      "hour": 12,
+      "share": {
+        "dynamic_containment": 0.1737,
+        "dynamic_moderation": 0.1072,
+        "dynamic_regulation": 0.0985,
+        "balancing_mechanism": 0.1263,
+        "capacity_market": 0.3406,
+        "wholesale_arbitrage": 0.1537
+      }
+    },
+    {
+      "hour": 13,
+      "share": {
+        "dynamic_containment": 0.1747,
+        "dynamic_moderation": 0.0868,
+        "dynamic_regulation": 0.064,
+        "balancing_mechanism": 0.1414,
+        "capacity_market": 0.3761,
+        "wholesale_arbitrage": 0.157
+      }
+    },
+    {
+      "hour": 14,
+      "share": {
+        "dynamic_containment": 0.1962,
+        "dynamic_moderation": 0.0864,
+        "dynamic_regulation": 0.0682,
+        "balancing_mechanism": 0.1519,
+        "capacity_market": 0.3583,
+        "wholesale_arbitrage": 0.139
+      }
+    },
+    {
+      "hour": 15,
+      "share": {
+        "dynamic_containment": 0.1667,
+        "dynamic_moderation": 0.1088,
+        "dynamic_regulation": 0.1009,
+        "balancing_mechanism": 0.1435,
+        "capacity_market": 0.3388,
+        "wholesale_arbitrage": 0.1413
+      }
+    },
+    {
+      "hour": 16,
+      "share": {
+        "dynamic_containment": 0.2096,
+        "dynamic_moderation": 0.113,
+        "dynamic_regulation": 0.0589,
+        "balancing_mechanism": 0.1807,
+        "capacity_market": 0.1835,
+        "wholesale_arbitrage": 0.2543
+      }
+    },
+    {
+      "hour": 17,
+      "share": {
+        "dynamic_containment": 0.1281,
+        "dynamic_moderation": 0.0787,
+        "dynamic_regulation": 0.0604,
+        "balancing_mechanism": 0.1666,
+        "capacity_market": 0.1246,
+        "wholesale_arbitrage": 0.4416
+      }
+    },
+    {
+      "hour": 18,
+      "share": {
+        "dynamic_containment": 0.1265,
+        "dynamic_moderation": 0.0641,
+        "dynamic_regulation": 0.0491,
+        "balancing_mechanism": 0.1883,
+        "capacity_market": 0.1114,
+        "wholesale_arbitrage": 0.4606
+      }
+    },
+    {
+      "hour": 19,
+      "share": {
+        "dynamic_containment": 0.0992,
+        "dynamic_moderation": 0.0755,
+        "dynamic_regulation": 0.0666,
+        "balancing_mechanism": 0.1829,
+        "capacity_market": 0.1183,
+        "wholesale_arbitrage": 0.4575
+      }
+    },
+    {
+      "hour": 20,
+      "share": {
+        "dynamic_containment": 0.1252,
+        "dynamic_moderation": 0.0788,
+        "dynamic_regulation": 0.0441,
+        "balancing_mechanism": 0.1911,
+        "capacity_market": 0.1202,
+        "wholesale_arbitrage": 0.4406
+      }
+    },
+    {
+      "hour": 21,
+      "share": {
+        "dynamic_containment": 0.1166,
+        "dynamic_moderation": 0.0671,
+        "dynamic_regulation": 0.0382,
+        "balancing_mechanism": 0.1869,
+        "capacity_market": 0.1233,
+        "wholesale_arbitrage": 0.4679
+      }
+    },
+    {
+      "hour": 22,
+      "share": {
+        "dynamic_containment": 0.3941,
+        "dynamic_moderation": 0.1143,
+        "dynamic_regulation": 0.1013,
+        "balancing_mechanism": 0.0892,
+        "capacity_market": 0.1174,
+        "wholesale_arbitrage": 0.1837
+      }
+    },
+    {
+      "hour": 23,
+      "share": {
+        "dynamic_containment": 0.3746,
+        "dynamic_moderation": 0.1144,
+        "dynamic_regulation": 0.1086,
+        "balancing_mechanism": 0.1128,
+        "capacity_market": 0.1032,
+        "wholesale_arbitrage": 0.1864
+      }
+    }
+  ]
+}

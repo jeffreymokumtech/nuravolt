@@ -1,0 +1,7915 @@
+{
+ "metadata": {
+  "plant_id": "alpha",
+  "generated_at": "2026-07-13T18:39:37.713079",
+  "data_start": "2024-11-08",
+  "data_end": "2025-12-13",
+  "days": 397,
+  "resolution": "daily + 3-hourly tail",
+  "source": "twin_residuals",
+  "total_inverters": 150
+ },
+ "daily": [
+  {
+   "date": "2024-11-08",
+   "predicted_kw": 1532.3,
+   "actual_kw": 1658.4,
+   "residual_kw": 126.1,
+   "loss_pct": -8.23,
+   "predicted_mwh": 14.94,
+   "actual_mwh": 16.169
+  },
+  {
+   "date": "2024-11-09",
+   "predicted_kw": 2245.7,
+   "actual_kw": 2355.8,
+   "residual_kw": 110.1,
+   "loss_pct": -4.9,
+   "predicted_mwh": 21.895,
+   "actual_mwh": 22.969
+  },
+  {
+   "date": "2024-11-10",
+   "predicted_kw": 3245.8,
+   "actual_kw": 3268.8,
+   "residual_kw": 23.0,
+   "loss_pct": -0.71,
+   "predicted_mwh": 32.458,
+   "actual_mwh": 32.688
+  },
+  {
+   "date": "2024-11-11",
+   "predicted_kw": 3927.7,
+   "actual_kw": 3963.7,
+   "residual_kw": 35.9,
+   "loss_pct": -0.91,
+   "predicted_mwh": 39.277,
+   "actual_mwh": 39.637
+  },
+  {
+   "date": "2024-11-12",
+   "predicted_kw": 3277.5,
+   "actual_kw": 3350.6,
+   "residual_kw": 73.2,
+   "loss_pct": -2.23,
+   "predicted_mwh": 31.955,
+   "actual_mwh": 32.669
+  },
+  {
+   "date": "2024-11-13",
+   "predicted_kw": 0.0,
+   "actual_kw": 333.8,
+   "residual_kw": 333.8,
+   "loss_pct": null,
+   "predicted_mwh": 0.0,
+   "actual_mwh": 1.753
+  },
+  {
+   "date": "2024-11-14",
+   "predicted_kw": 1935.6,
+   "actual_kw": 2073.7,
+   "residual_kw": 138.2,
+   "loss_pct": -7.14,
+   "predicted_mwh": 18.388,
+   "actual_mwh": 19.7
+  },
+  {
+   "date": "2024-11-15",
+   "predicted_kw": 3724.0,
+   "actual_kw": 3754.8,
+   "residual_kw": 30.8,
+   "loss_pct": -0.83,
+   "predicted_mwh": 37.24,
+   "actual_mwh": 37.548
+  },
+  {
+   "date": "2024-11-16",
+   "predicted_kw": 2721.7,
+   "actual_kw": 2960.7,
+   "residual_kw": 239.0,
+   "loss_pct": -8.78,
+   "predicted_mwh": 24.495,
+   "actual_mwh": 26.647
+  },
+  {
+   "date": "2024-11-17",
+   "predicted_kw": 1731.2,
+   "actual_kw": 1878.4,
+   "residual_kw": 147.2,
+   "loss_pct": -8.5,
+   "predicted_mwh": 15.581,
+   "actual_mwh": 16.905
+  },
+  {
+   "date": "2024-11-18",
+   "predicted_kw": 3666.8,
+   "actual_kw": 3591.5,
+   "residual_kw": -75.3,
+   "loss_pct": 2.05,
+   "predicted_mwh": 34.835,
+   "actual_mwh": 34.119
+  },
+  {
+   "date": "2024-11-19",
+   "predicted_kw": 3085.8,
+   "actual_kw": 3005.8,
+   "residual_kw": -80.1,
+   "loss_pct": 2.59,
+   "predicted_mwh": 29.315,
+   "actual_mwh": 28.555
+  },
+  {
+   "date": "2024-11-20",
+   "predicted_kw": 3717.6,
+   "actual_kw": 3716.8,
+   "residual_kw": -0.8,
+   "loss_pct": 0.02,
+   "predicted_mwh": 35.317,
+   "actual_mwh": 35.31
+  },
+  {
+   "date": "2024-11-21",
+   "predicted_kw": 2119.7,
+   "actual_kw": 1916.1,
+   "residual_kw": -203.6,
+   "loss_pct": 9.61,
+   "predicted_mwh": 19.077,
+   "actual_mwh": 17.245
+  },
+  {
+   "date": "2024-11-22",
+   "predicted_kw": 1754.3,
+   "actual_kw": 1927.0,
+   "residual_kw": 172.8,
+   "loss_pct": -9.85,
+   "predicted_mwh": 15.35,
+   "actual_mwh": 16.862
+  },
+  {
+   "date": "2024-11-23",
+   "predicted_kw": 3816.5,
+   "actual_kw": 3736.4,
+   "residual_kw": -80.1,
+   "loss_pct": 2.1,
+   "predicted_mwh": 36.257,
+   "actual_mwh": 35.496
+  },
+  {
+   "date": "2024-11-24",
+   "predicted_kw": 2745.0,
+   "actual_kw": 2786.3,
+   "residual_kw": 41.3,
+   "loss_pct": -1.51,
+   "predicted_mwh": 25.391,
+   "actual_mwh": 25.774
+  },
+  {
+   "date": "2024-11-25",
+   "predicted_kw": 2015.6,
+   "actual_kw": 2196.5,
+   "residual_kw": 180.9,
+   "loss_pct": -8.98,
+   "predicted_mwh": 17.636,
+   "actual_mwh": 19.219
+  },
+  {
+   "date": "2024-11-26",
+   "predicted_kw": 2939.2,
+   "actual_kw": 2890.9,
+   "residual_kw": -48.4,
+   "loss_pct": 1.65,
+   "predicted_mwh": 27.188,
+   "actual_mwh": 26.741
+  },
+  {
+   "date": "2024-11-27",
+   "predicted_kw": 3838.7,
+   "actual_kw": 3729.8,
+   "residual_kw": -108.9,
+   "loss_pct": 2.84,
+   "predicted_mwh": 36.468,
+   "actual_mwh": 35.433
+  },
+  {
+   "date": "2024-11-28",
+   "predicted_kw": 3785.4,
+   "actual_kw": 3679.8,
+   "residual_kw": -105.5,
+   "loss_pct": 2.79,
+   "predicted_mwh": 35.961,
+   "actual_mwh": 34.958
+  },
+  {
+   "date": "2024-11-29",
+   "predicted_kw": 2180.4,
+   "actual_kw": 2181.9,
+   "residual_kw": 1.6,
+   "loss_pct": -0.07,
+   "predicted_mwh": 20.713,
+   "actual_mwh": 20.728
+  },
+  {
+   "date": "2024-11-30",
+   "predicted_kw": 3512.2,
+   "actual_kw": 3429.4,
+   "residual_kw": -82.8,
+   "loss_pct": 2.36,
+   "predicted_mwh": 32.488,
+   "actual_mwh": 31.722
+  },
+  {
+   "date": "2024-12-01",
+   "predicted_kw": 1694.5,
+   "actual_kw": 1905.9,
+   "residual_kw": 211.4,
+   "loss_pct": -12.47,
+   "predicted_mwh": 16.098,
+   "actual_mwh": 18.106
+  },
+  {
+   "date": "2024-12-02",
+   "predicted_kw": 2876.9,
+   "actual_kw": 2875.5,
+   "residual_kw": -1.3,
+   "loss_pct": 0.05,
+   "predicted_mwh": 25.892,
+   "actual_mwh": 25.88
+  },
+  {
+   "date": "2024-12-03",
+   "predicted_kw": 2901.3,
+   "actual_kw": 2919.8,
+   "residual_kw": 18.5,
+   "loss_pct": -0.64,
+   "predicted_mwh": 26.837,
+   "actual_mwh": 27.008
+  },
+  {
+   "date": "2024-12-04",
+   "predicted_kw": 2015.6,
+   "actual_kw": 2006.6,
+   "residual_kw": -9.0,
+   "loss_pct": 0.45,
+   "predicted_mwh": 17.636,
+   "actual_mwh": 17.558
+  },
+  {
+   "date": "2024-12-05",
+   "predicted_kw": 3787.4,
+   "actual_kw": 3725.7,
+   "residual_kw": -61.6,
+   "loss_pct": 1.63,
+   "predicted_mwh": 34.087,
+   "actual_mwh": 33.532
+  },
+  {
+   "date": "2024-12-06",
+   "predicted_kw": 3903.7,
+   "actual_kw": 3792.6,
+   "residual_kw": -111.1,
+   "loss_pct": 2.85,
+   "predicted_mwh": 35.134,
+   "actual_mwh": 34.133
+  },
+  {
+   "date": "2024-12-07",
+   "predicted_kw": 3637.8,
+   "actual_kw": 3532.7,
+   "residual_kw": -105.1,
+   "loss_pct": 2.89,
+   "predicted_mwh": 33.649,
+   "actual_mwh": 32.677
+  },
+  {
+   "date": "2024-12-08",
+   "predicted_kw": 4100.7,
+   "actual_kw": 4005.7,
+   "residual_kw": -94.9,
+   "loss_pct": 2.32,
+   "predicted_mwh": 37.931,
+   "actual_mwh": 37.053
+  },
+  {
+   "date": "2024-12-09",
+   "predicted_kw": 4080.2,
+   "actual_kw": 3949.4,
+   "residual_kw": -130.8,
+   "loss_pct": 3.21,
+   "predicted_mwh": 37.742,
+   "actual_mwh": 36.532
+  },
+  {
+   "date": "2024-12-10",
+   "predicted_kw": 3882.5,
+   "actual_kw": 3223.3,
+   "residual_kw": -659.1,
+   "loss_pct": 16.98,
+   "predicted_mwh": 35.913,
+   "actual_mwh": 29.816
+  },
+  {
+   "date": "2024-12-11",
+   "predicted_kw": 802.7,
+   "actual_kw": 998.3,
+   "residual_kw": 195.6,
+   "loss_pct": -24.37,
+   "predicted_mwh": 2.809,
+   "actual_mwh": 3.494
+  },
+  {
+   "date": "2024-12-12",
+   "predicted_kw": 2598.9,
+   "actual_kw": 2613.2,
+   "residual_kw": 14.3,
+   "loss_pct": -0.55,
+   "predicted_mwh": 22.74,
+   "actual_mwh": 22.866
+  },
+  {
+   "date": "2024-12-13",
+   "predicted_kw": 2344.3,
+   "actual_kw": 2558.1,
+   "residual_kw": 213.8,
+   "loss_pct": -9.12,
+   "predicted_mwh": 21.098,
+   "actual_mwh": 23.023
+  },
+  {
+   "date": "2024-12-14",
+   "predicted_kw": 2831.7,
+   "actual_kw": 2866.8,
+   "residual_kw": 35.1,
+   "loss_pct": -1.24,
+   "predicted_mwh": 26.193,
+   "actual_mwh": 26.518
+  },
+  {
+   "date": "2024-12-15",
+   "predicted_kw": 3729.4,
+   "actual_kw": 3688.8,
+   "residual_kw": -40.7,
+   "loss_pct": 1.09,
+   "predicted_mwh": 34.497,
+   "actual_mwh": 34.121
+  },
+  {
+   "date": "2024-12-16",
+   "predicted_kw": 3913.7,
+   "actual_kw": 3796.6,
+   "residual_kw": -117.1,
+   "loss_pct": 2.99,
+   "predicted_mwh": 36.202,
+   "actual_mwh": 35.119
+  },
+  {
+   "date": "2024-12-17",
+   "predicted_kw": 3053.9,
+   "actual_kw": 3048.7,
+   "residual_kw": -5.2,
+   "loss_pct": 0.17,
+   "predicted_mwh": 27.485,
+   "actual_mwh": 27.439
+  },
+  {
+   "date": "2024-12-18",
+   "predicted_kw": 2860.0,
+   "actual_kw": 2870.9,
+   "residual_kw": 10.9,
+   "loss_pct": -0.38,
+   "predicted_mwh": 25.025,
+   "actual_mwh": 25.12
+  },
+  {
+   "date": "2024-12-19",
+   "predicted_kw": 961.1,
+   "actual_kw": 1230.1,
+   "residual_kw": 268.9,
+   "loss_pct": -27.98,
+   "predicted_mwh": 8.41,
+   "actual_mwh": 10.763
+  },
+  {
+   "date": "2024-12-20",
+   "predicted_kw": 3817.5,
+   "actual_kw": 3772.1,
+   "residual_kw": -45.4,
+   "loss_pct": 1.19,
+   "predicted_mwh": 34.357,
+   "actual_mwh": 33.949
+  },
+  {
+   "date": "2024-12-21",
+   "predicted_kw": 4124.5,
+   "actual_kw": 3996.4,
+   "residual_kw": -128.2,
+   "loss_pct": 3.11,
+   "predicted_mwh": 37.121,
+   "actual_mwh": 35.967
+  },
+  {
+   "date": "2024-12-22",
+   "predicted_kw": 3946.7,
+   "actual_kw": 3827.8,
+   "residual_kw": -118.9,
+   "loss_pct": 3.01,
+   "predicted_mwh": 35.52,
+   "actual_mwh": 34.45
+  },
+  {
+   "date": "2024-12-23",
+   "predicted_kw": 4038.4,
+   "actual_kw": 3964.8,
+   "residual_kw": -73.6,
+   "loss_pct": 1.82,
+   "predicted_mwh": 36.346,
+   "actual_mwh": 35.683
+  },
+  {
+   "date": "2024-12-24",
+   "predicted_kw": 4029.9,
+   "actual_kw": 3929.9,
+   "residual_kw": -100.0,
+   "loss_pct": 2.48,
+   "predicted_mwh": 36.269,
+   "actual_mwh": 35.369
+  },
+  {
+   "date": "2024-12-25",
+   "predicted_kw": 4009.3,
+   "actual_kw": 3881.6,
+   "residual_kw": -127.7,
+   "loss_pct": 3.18,
+   "predicted_mwh": 36.084,
+   "actual_mwh": 34.935
+  },
+  {
+   "date": "2024-12-26",
+   "predicted_kw": 3960.0,
+   "actual_kw": 3816.0,
+   "residual_kw": -144.0,
+   "loss_pct": 3.64,
+   "predicted_mwh": 35.64,
+   "actual_mwh": 34.344
+  },
+  {
+   "date": "2024-12-27",
+   "predicted_kw": 3863.3,
+   "actual_kw": 3751.3,
+   "residual_kw": -112.0,
+   "loss_pct": 2.9,
+   "predicted_mwh": 35.736,
+   "actual_mwh": 34.699
+  },
+  {
+   "date": "2024-12-28",
+   "predicted_kw": 3881.2,
+   "actual_kw": 3781.5,
+   "residual_kw": -99.6,
+   "loss_pct": 2.57,
+   "predicted_mwh": 35.901,
+   "actual_mwh": 34.979
+  },
+  {
+   "date": "2024-12-29",
+   "predicted_kw": 3859.4,
+   "actual_kw": 3779.9,
+   "residual_kw": -79.5,
+   "loss_pct": 2.06,
+   "predicted_mwh": 35.699,
+   "actual_mwh": 34.964
+  },
+  {
+   "date": "2024-12-30",
+   "predicted_kw": 3862.6,
+   "actual_kw": 3802.7,
+   "residual_kw": -60.0,
+   "loss_pct": 1.55,
+   "predicted_mwh": 35.729,
+   "actual_mwh": 35.175
+  },
+  {
+   "date": "2024-12-31",
+   "predicted_kw": 3273.3,
+   "actual_kw": 3313.7,
+   "residual_kw": 40.5,
+   "loss_pct": -1.24,
+   "predicted_mwh": 29.459,
+   "actual_mwh": 29.824
+  },
+  {
+   "date": "2025-01-01",
+   "predicted_kw": 3675.0,
+   "actual_kw": 3671.9,
+   "residual_kw": -3.1,
+   "loss_pct": 0.09,
+   "predicted_mwh": 33.994,
+   "actual_mwh": 33.965
+  },
+  {
+   "date": "2025-01-02",
+   "predicted_kw": 3940.9,
+   "actual_kw": 3835.4,
+   "residual_kw": -105.5,
+   "loss_pct": 2.68,
+   "predicted_mwh": 36.453,
+   "actual_mwh": 35.477
+  },
+  {
+   "date": "2025-01-03",
+   "predicted_kw": 2986.3,
+   "actual_kw": 2985.9,
+   "residual_kw": -0.4,
+   "loss_pct": 0.01,
+   "predicted_mwh": 27.623,
+   "actual_mwh": 27.619
+  },
+  {
+   "date": "2025-01-04",
+   "predicted_kw": 2834.4,
+   "actual_kw": 2896.8,
+   "residual_kw": 62.4,
+   "loss_pct": -2.2,
+   "predicted_mwh": 25.51,
+   "actual_mwh": 26.071
+  },
+  {
+   "date": "2025-01-05",
+   "predicted_kw": 2190.4,
+   "actual_kw": 2256.0,
+   "residual_kw": 65.6,
+   "loss_pct": -2.99,
+   "predicted_mwh": 19.166,
+   "actual_mwh": 19.74
+  },
+  {
+   "date": "2025-01-06",
+   "predicted_kw": 1489.2,
+   "actual_kw": 1767.3,
+   "residual_kw": 278.1,
+   "loss_pct": -18.67,
+   "predicted_mwh": 12.658,
+   "actual_mwh": 15.022
+  },
+  {
+   "date": "2025-01-07",
+   "predicted_kw": 3822.7,
+   "actual_kw": 3806.6,
+   "residual_kw": -16.1,
+   "loss_pct": 0.42,
+   "predicted_mwh": 35.36,
+   "actual_mwh": 35.211
+  },
+  {
+   "date": "2025-01-08",
+   "predicted_kw": 3398.0,
+   "actual_kw": 3442.3,
+   "residual_kw": 44.2,
+   "loss_pct": -1.3,
+   "predicted_mwh": 30.582,
+   "actual_mwh": 30.98
+  },
+  {
+   "date": "2025-01-09",
+   "predicted_kw": 3207.5,
+   "actual_kw": 3314.5,
+   "residual_kw": 107.0,
+   "loss_pct": -3.34,
+   "predicted_mwh": 28.066,
+   "actual_mwh": 29.002
+  },
+  {
+   "date": "2025-01-10",
+   "predicted_kw": 3264.2,
+   "actual_kw": 3160.9,
+   "residual_kw": -103.3,
+   "loss_pct": 3.16,
+   "predicted_mwh": 30.194,
+   "actual_mwh": 29.239
+  },
+  {
+   "date": "2025-01-11",
+   "predicted_kw": 951.8,
+   "actual_kw": 1184.1,
+   "residual_kw": 232.3,
+   "loss_pct": -24.4,
+   "predicted_mwh": 8.09,
+   "actual_mwh": 10.064
+  },
+  {
+   "date": "2025-01-12",
+   "predicted_kw": 4045.8,
+   "actual_kw": 3935.4,
+   "residual_kw": -110.4,
+   "loss_pct": 2.73,
+   "predicted_mwh": 36.412,
+   "actual_mwh": 35.419
+  },
+  {
+   "date": "2025-01-13",
+   "predicted_kw": 4294.0,
+   "actual_kw": 3998.9,
+   "residual_kw": -295.1,
+   "loss_pct": 6.87,
+   "predicted_mwh": 40.793,
+   "actual_mwh": 37.99
+  },
+  {
+   "date": "2025-01-14",
+   "predicted_kw": 4267.3,
+   "actual_kw": 4211.9,
+   "residual_kw": -55.3,
+   "loss_pct": 1.3,
+   "predicted_mwh": 40.539,
+   "actual_mwh": 40.013
+  },
+  {
+   "date": "2025-01-15",
+   "predicted_kw": 4304.7,
+   "actual_kw": 4214.2,
+   "residual_kw": -90.6,
+   "loss_pct": 2.1,
+   "predicted_mwh": 40.895,
+   "actual_mwh": 40.035
+  },
+  {
+   "date": "2025-01-16",
+   "predicted_kw": 4240.9,
+   "actual_kw": 4167.2,
+   "residual_kw": -73.7,
+   "loss_pct": 1.74,
+   "predicted_mwh": 40.289,
+   "actual_mwh": 39.589
+  },
+  {
+   "date": "2025-01-17",
+   "predicted_kw": 4103.7,
+   "actual_kw": 4060.9,
+   "residual_kw": -42.8,
+   "loss_pct": 1.04,
+   "predicted_mwh": 38.985,
+   "actual_mwh": 38.578
+  },
+  {
+   "date": "2025-01-18",
+   "predicted_kw": 4152.7,
+   "actual_kw": 4121.0,
+   "residual_kw": -31.7,
+   "loss_pct": 0.76,
+   "predicted_mwh": 39.451,
+   "actual_mwh": 39.15
+  },
+  {
+   "date": "2025-01-19",
+   "predicted_kw": 4079.2,
+   "actual_kw": 4032.8,
+   "residual_kw": -46.5,
+   "loss_pct": 1.14,
+   "predicted_mwh": 38.753,
+   "actual_mwh": 38.311
+  },
+  {
+   "date": "2025-01-20",
+   "predicted_kw": 1148.5,
+   "actual_kw": 1277.0,
+   "residual_kw": 128.5,
+   "loss_pct": -11.19,
+   "predicted_mwh": 10.05,
+   "actual_mwh": 11.174
+  },
+  {
+   "date": "2025-01-21",
+   "predicted_kw": 2627.1,
+   "actual_kw": 2661.3,
+   "residual_kw": 34.2,
+   "loss_pct": -1.3,
+   "predicted_mwh": 24.3,
+   "actual_mwh": 24.617
+  },
+  {
+   "date": "2025-01-22",
+   "predicted_kw": 3399.1,
+   "actual_kw": 3593.0,
+   "residual_kw": 193.9,
+   "loss_pct": -5.71,
+   "predicted_mwh": 30.591,
+   "actual_mwh": 32.337
+  },
+  {
+   "date": "2025-01-23",
+   "predicted_kw": 2491.2,
+   "actual_kw": 2410.4,
+   "residual_kw": -80.8,
+   "loss_pct": 3.24,
+   "predicted_mwh": 23.043,
+   "actual_mwh": 22.296
+  },
+  {
+   "date": "2025-01-24",
+   "predicted_kw": 3957.6,
+   "actual_kw": 3949.1,
+   "residual_kw": -8.6,
+   "loss_pct": 0.22,
+   "predicted_mwh": 37.598,
+   "actual_mwh": 37.516
+  },
+  {
+   "date": "2025-01-25",
+   "predicted_kw": 1300.2,
+   "actual_kw": 1407.2,
+   "residual_kw": 107.0,
+   "loss_pct": -8.23,
+   "predicted_mwh": 12.027,
+   "actual_mwh": 13.017
+  },
+  {
+   "date": "2025-01-26",
+   "predicted_kw": 2265.0,
+   "actual_kw": 2264.4,
+   "residual_kw": -0.6,
+   "loss_pct": 0.03,
+   "predicted_mwh": 21.517,
+   "actual_mwh": 21.512
+  },
+  {
+   "date": "2025-01-27",
+   "predicted_kw": 3665.5,
+   "actual_kw": 3730.6,
+   "residual_kw": 65.1,
+   "loss_pct": -1.78,
+   "predicted_mwh": 32.073,
+   "actual_mwh": 32.643
+  },
+  {
+   "date": "2025-01-28",
+   "predicted_kw": 1729.7,
+   "actual_kw": 1827.1,
+   "residual_kw": 97.4,
+   "loss_pct": -5.63,
+   "predicted_mwh": 15.999,
+   "actual_mwh": 16.9
+  },
+  {
+   "date": "2025-01-29",
+   "predicted_kw": 1494.8,
+   "actual_kw": 1621.0,
+   "residual_kw": 126.3,
+   "loss_pct": -8.45,
+   "predicted_mwh": 14.2,
+   "actual_mwh": 15.4
+  },
+  {
+   "date": "2025-01-30",
+   "predicted_kw": 2666.3,
+   "actual_kw": 2720.6,
+   "residual_kw": 54.3,
+   "loss_pct": -2.04,
+   "predicted_mwh": 25.997,
+   "actual_mwh": 26.526
+  },
+  {
+   "date": "2025-01-31",
+   "predicted_kw": 4416.2,
+   "actual_kw": 4412.9,
+   "residual_kw": -3.3,
+   "loss_pct": 0.07,
+   "predicted_mwh": 44.162,
+   "actual_mwh": 44.129
+  },
+  {
+   "date": "2025-02-01",
+   "predicted_kw": 4426.4,
+   "actual_kw": 4430.5,
+   "residual_kw": 4.1,
+   "loss_pct": -0.09,
+   "predicted_mwh": 44.264,
+   "actual_mwh": 44.305
+  },
+  {
+   "date": "2025-02-02",
+   "predicted_kw": 1694.0,
+   "actual_kw": 1913.5,
+   "residual_kw": 219.5,
+   "loss_pct": -12.96,
+   "predicted_mwh": 16.093,
+   "actual_mwh": 18.178
+  },
+  {
+   "date": "2025-02-03",
+   "predicted_kw": 2200.2,
+   "actual_kw": 2243.7,
+   "residual_kw": 43.5,
+   "loss_pct": -1.98,
+   "predicted_mwh": 21.452,
+   "actual_mwh": 21.876
+  },
+  {
+   "date": "2025-02-04",
+   "predicted_kw": 4114.6,
+   "actual_kw": 4218.1,
+   "residual_kw": 103.4,
+   "loss_pct": -2.51,
+   "predicted_mwh": 41.146,
+   "actual_mwh": 42.181
+  },
+  {
+   "date": "2025-02-05",
+   "predicted_kw": 4472.1,
+   "actual_kw": 2226.0,
+   "residual_kw": -2246.1,
+   "loss_pct": 50.22,
+   "predicted_mwh": 44.721,
+   "actual_mwh": 22.26
+  },
+  {
+   "date": "2025-02-06",
+   "predicted_kw": 4457.9,
+   "actual_kw": 4268.1,
+   "residual_kw": -189.8,
+   "loss_pct": 4.26,
+   "predicted_mwh": 44.579,
+   "actual_mwh": 42.681
+  },
+  {
+   "date": "2025-02-07",
+   "predicted_kw": 4146.1,
+   "actual_kw": 4210.1,
+   "residual_kw": 64.0,
+   "loss_pct": -1.54,
+   "predicted_mwh": 40.425,
+   "actual_mwh": 41.048
+  },
+  {
+   "date": "2025-02-08",
+   "predicted_kw": 3033.2,
+   "actual_kw": 2072.1,
+   "residual_kw": -961.1,
+   "loss_pct": 31.69,
+   "predicted_mwh": 30.332,
+   "actual_mwh": 20.721
+  },
+  {
+   "date": "2025-02-09",
+   "predicted_kw": 4455.8,
+   "actual_kw": 4227.4,
+   "residual_kw": -228.4,
+   "loss_pct": 5.13,
+   "predicted_mwh": 44.558,
+   "actual_mwh": 42.274
+  },
+  {
+   "date": "2025-02-10",
+   "predicted_kw": 3567.6,
+   "actual_kw": 3627.2,
+   "residual_kw": 59.5,
+   "loss_pct": -1.67,
+   "predicted_mwh": 36.568,
+   "actual_mwh": 37.178
+  },
+  {
+   "date": "2025-02-11",
+   "predicted_kw": 4316.8,
+   "actual_kw": 4225.9,
+   "residual_kw": -90.9,
+   "loss_pct": 2.11,
+   "predicted_mwh": 42.089,
+   "actual_mwh": 41.203
+  },
+  {
+   "date": "2025-02-12",
+   "predicted_kw": 3158.4,
+   "actual_kw": 2991.8,
+   "residual_kw": -166.6,
+   "loss_pct": 5.27,
+   "predicted_mwh": 31.584,
+   "actual_mwh": 29.918
+  },
+  {
+   "date": "2025-02-13",
+   "predicted_kw": 4149.1,
+   "actual_kw": 3818.9,
+   "residual_kw": -330.1,
+   "loss_pct": 7.96,
+   "predicted_mwh": 43.565,
+   "actual_mwh": 40.099
+  },
+  {
+   "date": "2025-02-14",
+   "predicted_kw": 4368.5,
+   "actual_kw": 1565.9,
+   "residual_kw": -2802.6,
+   "loss_pct": 64.16,
+   "predicted_mwh": 45.87,
+   "actual_mwh": 16.442
+  },
+  {
+   "date": "2025-02-15",
+   "predicted_kw": 2696.1,
+   "actual_kw": 2792.0,
+   "residual_kw": 95.9,
+   "loss_pct": -3.56,
+   "predicted_mwh": 27.635,
+   "actual_mwh": 28.618
+  },
+  {
+   "date": "2025-02-16",
+   "predicted_kw": 4339.9,
+   "actual_kw": 4228.3,
+   "residual_kw": -111.6,
+   "loss_pct": 2.57,
+   "predicted_mwh": 44.484,
+   "actual_mwh": 43.341
+  },
+  {
+   "date": "2025-02-17",
+   "predicted_kw": 3794.3,
+   "actual_kw": 2739.8,
+   "residual_kw": -1054.6,
+   "loss_pct": 27.79,
+   "predicted_mwh": 38.892,
+   "actual_mwh": 28.083
+  },
+  {
+   "date": "2025-02-18",
+   "predicted_kw": 2188.6,
+   "actual_kw": 2312.4,
+   "residual_kw": 123.8,
+   "loss_pct": -5.66,
+   "predicted_mwh": 22.981,
+   "actual_mwh": 24.281
+  },
+  {
+   "date": "2025-02-19",
+   "predicted_kw": 4208.0,
+   "actual_kw": 4272.7,
+   "residual_kw": 64.7,
+   "loss_pct": -1.54,
+   "predicted_mwh": 44.184,
+   "actual_mwh": 44.863
+  },
+  {
+   "date": "2025-02-20",
+   "predicted_kw": 4309.4,
+   "actual_kw": 4133.0,
+   "residual_kw": -176.4,
+   "loss_pct": 4.09,
+   "predicted_mwh": 45.249,
+   "actual_mwh": 43.397
+  },
+  {
+   "date": "2025-02-21",
+   "predicted_kw": 2619.1,
+   "actual_kw": 2674.3,
+   "residual_kw": 55.2,
+   "loss_pct": -2.11,
+   "predicted_mwh": 28.155,
+   "actual_mwh": 28.749
+  },
+  {
+   "date": "2025-02-22",
+   "predicted_kw": 2440.1,
+   "actual_kw": 2399.8,
+   "residual_kw": -40.3,
+   "loss_pct": 1.65,
+   "predicted_mwh": 24.401,
+   "actual_mwh": 23.998
+  },
+  {
+   "date": "2025-02-23",
+   "predicted_kw": 4655.7,
+   "actual_kw": 1251.9,
+   "residual_kw": -3403.9,
+   "loss_pct": 73.11,
+   "predicted_mwh": 50.049,
+   "actual_mwh": 13.458
+  },
+  {
+   "date": "2025-02-24",
+   "predicted_kw": 3402.8,
+   "actual_kw": 3292.0,
+   "residual_kw": -110.8,
+   "loss_pct": 3.26,
+   "predicted_mwh": 37.431,
+   "actual_mwh": 36.212
+  },
+  {
+   "date": "2025-02-25",
+   "predicted_kw": 2146.0,
+   "actual_kw": 2256.1,
+   "residual_kw": 110.1,
+   "loss_pct": -5.13,
+   "predicted_mwh": 23.069,
+   "actual_mwh": 24.253
+  },
+  {
+   "date": "2025-02-26",
+   "predicted_kw": 4404.4,
+   "actual_kw": 1474.2,
+   "residual_kw": -2930.2,
+   "loss_pct": 66.53,
+   "predicted_mwh": 47.348,
+   "actual_mwh": 15.848
+  },
+  {
+   "date": "2025-02-27",
+   "predicted_kw": 3811.3,
+   "actual_kw": 3772.7,
+   "residual_kw": -38.6,
+   "loss_pct": 1.01,
+   "predicted_mwh": 40.972,
+   "actual_mwh": 40.556
+  },
+  {
+   "date": "2025-02-28",
+   "predicted_kw": 2207.4,
+   "actual_kw": 2262.5,
+   "residual_kw": 55.1,
+   "loss_pct": -2.5,
+   "predicted_mwh": 21.522,
+   "actual_mwh": 22.059
+  },
+  {
+   "date": "2025-03-01",
+   "predicted_kw": 1629.4,
+   "actual_kw": 1777.6,
+   "residual_kw": 148.2,
+   "loss_pct": -9.1,
+   "predicted_mwh": 16.294,
+   "actual_mwh": 17.776
+  },
+  {
+   "date": "2025-03-02",
+   "predicted_kw": 1528.2,
+   "actual_kw": 1599.6,
+   "residual_kw": 71.3,
+   "loss_pct": -4.67,
+   "predicted_mwh": 16.429,
+   "actual_mwh": 17.195
+  },
+  {
+   "date": "2025-03-03",
+   "predicted_kw": 2553.3,
+   "actual_kw": 2685.6,
+   "residual_kw": 132.4,
+   "loss_pct": -5.19,
+   "predicted_mwh": 26.171,
+   "actual_mwh": 27.528
+  },
+  {
+   "date": "2025-03-04",
+   "predicted_kw": 1867.2,
+   "actual_kw": 1852.3,
+   "residual_kw": -14.9,
+   "loss_pct": 0.8,
+   "predicted_mwh": 20.539,
+   "actual_mwh": 20.376
+  },
+  {
+   "date": "2025-03-05",
+   "predicted_kw": 1146.5,
+   "actual_kw": 1324.6,
+   "residual_kw": 178.1,
+   "loss_pct": -15.53,
+   "predicted_mwh": 12.325,
+   "actual_mwh": 14.239
+  },
+  {
+   "date": "2025-03-06",
+   "predicted_kw": 3780.0,
+   "actual_kw": 3578.4,
+   "residual_kw": -201.5,
+   "loss_pct": 5.33,
+   "predicted_mwh": 39.69,
+   "actual_mwh": 37.574
+  },
+  {
+   "date": "2025-03-07",
+   "predicted_kw": 1540.3,
+   "actual_kw": 1666.6,
+   "residual_kw": 126.3,
+   "loss_pct": -8.2,
+   "predicted_mwh": 16.943,
+   "actual_mwh": 18.333
+  },
+  {
+   "date": "2025-03-08",
+   "predicted_kw": 1053.9,
+   "actual_kw": 1210.3,
+   "residual_kw": 156.4,
+   "loss_pct": -14.84,
+   "predicted_mwh": 11.33,
+   "actual_mwh": 13.011
+  },
+  {
+   "date": "2025-03-09",
+   "predicted_kw": 2386.6,
+   "actual_kw": 2514.4,
+   "residual_kw": 127.8,
+   "loss_pct": -5.36,
+   "predicted_mwh": 25.059,
+   "actual_mwh": 26.401
+  },
+  {
+   "date": "2025-03-10",
+   "predicted_kw": 2645.9,
+   "actual_kw": 2571.4,
+   "residual_kw": -74.4,
+   "loss_pct": 2.81,
+   "predicted_mwh": 29.105,
+   "actual_mwh": 28.286
+  },
+  {
+   "date": "2025-03-11",
+   "predicted_kw": 5037.7,
+   "actual_kw": 4912.2,
+   "residual_kw": -125.6,
+   "loss_pct": 2.49,
+   "predicted_mwh": 32.745,
+   "actual_mwh": 31.929
+  },
+  {
+   "date": "2025-03-12",
+   "predicted_kw": 1684.7,
+   "actual_kw": 1723.7,
+   "residual_kw": 39.0,
+   "loss_pct": -2.32,
+   "predicted_mwh": 11.793,
+   "actual_mwh": 12.066
+  },
+  {
+   "date": "2025-03-13",
+   "predicted_kw": 1189.5,
+   "actual_kw": 1415.2,
+   "residual_kw": 225.6,
+   "loss_pct": -18.97,
+   "predicted_mwh": 12.193,
+   "actual_mwh": 14.505
+  },
+  {
+   "date": "2025-03-14",
+   "predicted_kw": 2327.5,
+   "actual_kw": 2289.8,
+   "residual_kw": -37.7,
+   "loss_pct": 1.62,
+   "predicted_mwh": 17.456,
+   "actual_mwh": 17.174
+  },
+  {
+   "date": "2025-03-15",
+   "predicted_kw": 4432.0,
+   "actual_kw": 2291.4,
+   "residual_kw": -2140.6,
+   "loss_pct": 48.3,
+   "predicted_mwh": 48.752,
+   "actual_mwh": 25.206
+  },
+  {
+   "date": "2025-03-16",
+   "predicted_kw": 3525.7,
+   "actual_kw": 3449.7,
+   "residual_kw": -76.0,
+   "loss_pct": 2.16,
+   "predicted_mwh": 38.782,
+   "actual_mwh": 37.946
+  },
+  {
+   "date": "2025-03-17",
+   "predicted_kw": 1632.6,
+   "actual_kw": 1635.4,
+   "residual_kw": 2.8,
+   "loss_pct": -0.17,
+   "predicted_mwh": 13.877,
+   "actual_mwh": 13.901
+  },
+  {
+   "date": "2025-03-18",
+   "predicted_kw": 3086.9,
+   "actual_kw": 2990.6,
+   "residual_kw": -96.3,
+   "loss_pct": 3.12,
+   "predicted_mwh": 33.956,
+   "actual_mwh": 32.897
+  },
+  {
+   "date": "2025-03-19",
+   "predicted_kw": 4045.8,
+   "actual_kw": 2685.1,
+   "residual_kw": -1360.7,
+   "loss_pct": 33.63,
+   "predicted_mwh": 46.526,
+   "actual_mwh": 30.878
+  },
+  {
+   "date": "2025-03-20",
+   "predicted_kw": 2235.3,
+   "actual_kw": 2275.0,
+   "residual_kw": 39.7,
+   "loss_pct": -1.78,
+   "predicted_mwh": 25.147,
+   "actual_mwh": 25.594
+  },
+  {
+   "date": "2025-03-21",
+   "predicted_kw": 3898.2,
+   "actual_kw": 3856.9,
+   "residual_kw": -41.3,
+   "loss_pct": 1.06,
+   "predicted_mwh": 44.829,
+   "actual_mwh": 44.354
+  },
+  {
+   "date": "2025-03-22",
+   "predicted_kw": 3866.8,
+   "actual_kw": 3078.2,
+   "residual_kw": -788.6,
+   "loss_pct": 20.4,
+   "predicted_mwh": 43.502,
+   "actual_mwh": 34.63
+  },
+  {
+   "date": "2025-03-23",
+   "predicted_kw": 842.6,
+   "actual_kw": 1080.0,
+   "residual_kw": 237.4,
+   "loss_pct": -28.18,
+   "predicted_mwh": 9.901,
+   "actual_mwh": 12.69
+  },
+  {
+   "date": "2025-03-24",
+   "predicted_kw": 4042.3,
+   "actual_kw": 2913.7,
+   "residual_kw": -1128.6,
+   "loss_pct": 27.92,
+   "predicted_mwh": 47.497,
+   "actual_mwh": 34.236
+  },
+  {
+   "date": "2025-03-25",
+   "predicted_kw": 3642.4,
+   "actual_kw": 1372.2,
+   "residual_kw": -2270.3,
+   "loss_pct": 62.33,
+   "predicted_mwh": 42.798,
+   "actual_mwh": 16.123
+  },
+  {
+   "date": "2025-03-26",
+   "predicted_kw": 4643.6,
+   "actual_kw": 2137.2,
+   "residual_kw": -2506.4,
+   "loss_pct": 53.98,
+   "predicted_mwh": 55.723,
+   "actual_mwh": 25.646
+  },
+  {
+   "date": "2025-03-27",
+   "predicted_kw": 3964.1,
+   "actual_kw": 1835.6,
+   "residual_kw": -2128.5,
+   "loss_pct": 53.69,
+   "predicted_mwh": 47.569,
+   "actual_mwh": 22.027
+  },
+  {
+   "date": "2025-03-28",
+   "predicted_kw": 4547.5,
+   "actual_kw": 1117.9,
+   "residual_kw": -3429.6,
+   "loss_pct": 75.42,
+   "predicted_mwh": 54.57,
+   "actual_mwh": 13.414
+  },
+  {
+   "date": "2025-03-29",
+   "predicted_kw": 4655.9,
+   "actual_kw": 691.0,
+   "residual_kw": -3964.8,
+   "loss_pct": 85.16,
+   "predicted_mwh": 55.87,
+   "actual_mwh": 8.292
+  },
+  {
+   "date": "2025-03-30",
+   "predicted_kw": 4795.0,
+   "actual_kw": 528.8,
+   "residual_kw": -4266.2,
+   "loss_pct": 88.97,
+   "predicted_mwh": 57.54,
+   "actual_mwh": 6.345
+  },
+  {
+   "date": "2025-03-31",
+   "predicted_kw": 4777.8,
+   "actual_kw": 1410.3,
+   "residual_kw": -3367.5,
+   "loss_pct": 70.48,
+   "predicted_mwh": 57.333,
+   "actual_mwh": 16.923
+  },
+  {
+   "date": "2025-04-01",
+   "predicted_kw": 3839.6,
+   "actual_kw": 1011.0,
+   "residual_kw": -2828.6,
+   "loss_pct": 73.67,
+   "predicted_mwh": 46.075,
+   "actual_mwh": 12.131
+  },
+  {
+   "date": "2025-04-02",
+   "predicted_kw": 2831.7,
+   "actual_kw": 2775.7,
+   "residual_kw": -55.9,
+   "loss_pct": 1.98,
+   "predicted_mwh": 33.98,
+   "actual_mwh": 33.309
+  },
+  {
+   "date": "2025-04-03",
+   "predicted_kw": 773.4,
+   "actual_kw": 1048.4,
+   "residual_kw": 275.0,
+   "loss_pct": -35.55,
+   "predicted_mwh": 8.701,
+   "actual_mwh": 11.794
+  },
+  {
+   "date": "2025-04-04",
+   "predicted_kw": 3125.3,
+   "actual_kw": 3002.5,
+   "residual_kw": -122.8,
+   "loss_pct": 3.93,
+   "predicted_mwh": 38.285,
+   "actual_mwh": 36.781
+  },
+  {
+   "date": "2025-04-05",
+   "predicted_kw": 4180.3,
+   "actual_kw": 3678.8,
+   "residual_kw": -501.5,
+   "loss_pct": 12.0,
+   "predicted_mwh": 50.164,
+   "actual_mwh": 44.146
+  },
+  {
+   "date": "2025-04-06",
+   "predicted_kw": 4239.5,
+   "actual_kw": 4134.1,
+   "residual_kw": -105.4,
+   "loss_pct": 2.49,
+   "predicted_mwh": 51.934,
+   "actual_mwh": 50.643
+  },
+  {
+   "date": "2025-04-07",
+   "predicted_kw": 4628.0,
+   "actual_kw": 4584.6,
+   "residual_kw": -43.4,
+   "loss_pct": 0.94,
+   "predicted_mwh": 56.693,
+   "actual_mwh": 56.162
+  },
+  {
+   "date": "2025-04-08",
+   "predicted_kw": 4684.9,
+   "actual_kw": 4640.2,
+   "residual_kw": -44.7,
+   "loss_pct": 0.95,
+   "predicted_mwh": 57.39,
+   "actual_mwh": 56.843
+  },
+  {
+   "date": "2025-04-09",
+   "predicted_kw": 4301.3,
+   "actual_kw": 4272.4,
+   "residual_kw": -28.9,
+   "loss_pct": 0.67,
+   "predicted_mwh": 53.767,
+   "actual_mwh": 53.405
+  },
+  {
+   "date": "2025-04-10",
+   "predicted_kw": 3470.6,
+   "actual_kw": 1475.1,
+   "residual_kw": -1995.5,
+   "loss_pct": 57.5,
+   "predicted_mwh": 42.515,
+   "actual_mwh": 18.07
+  },
+  {
+   "date": "2025-04-11",
+   "predicted_kw": 1177.9,
+   "actual_kw": 1267.7,
+   "residual_kw": 89.7,
+   "loss_pct": -7.62,
+   "predicted_mwh": 14.429,
+   "actual_mwh": 15.529
+  },
+  {
+   "date": "2025-04-12",
+   "predicted_kw": 1557.8,
+   "actual_kw": 1685.6,
+   "residual_kw": 127.8,
+   "loss_pct": -8.2,
+   "predicted_mwh": 19.084,
+   "actual_mwh": 20.649
+  },
+  {
+   "date": "2025-04-13",
+   "predicted_kw": 3182.7,
+   "actual_kw": 2943.2,
+   "residual_kw": -239.4,
+   "loss_pct": 7.52,
+   "predicted_mwh": 38.988,
+   "actual_mwh": 36.055
+  },
+  {
+   "date": "2025-04-14",
+   "predicted_kw": 3131.9,
+   "actual_kw": 878.2,
+   "residual_kw": -2253.7,
+   "loss_pct": 71.96,
+   "predicted_mwh": 38.366,
+   "actual_mwh": 10.758
+  },
+  {
+   "date": "2025-04-15",
+   "predicted_kw": 3193.9,
+   "actual_kw": 3071.2,
+   "residual_kw": -122.7,
+   "loss_pct": 3.84,
+   "predicted_mwh": 39.125,
+   "actual_mwh": 37.622
+  },
+  {
+   "date": "2025-04-16",
+   "predicted_kw": 4196.3,
+   "actual_kw": 1023.6,
+   "residual_kw": -3172.7,
+   "loss_pct": 75.61,
+   "predicted_mwh": 52.454,
+   "actual_mwh": 12.795
+  },
+  {
+   "date": "2025-04-17",
+   "predicted_kw": 4166.7,
+   "actual_kw": 816.1,
+   "residual_kw": -3350.6,
+   "loss_pct": 80.41,
+   "predicted_mwh": 53.125,
+   "actual_mwh": 10.405
+  },
+  {
+   "date": "2025-04-18",
+   "predicted_kw": 4189.5,
+   "actual_kw": 209.9,
+   "residual_kw": -3979.6,
+   "loss_pct": 94.99,
+   "predicted_mwh": 52.369,
+   "actual_mwh": 2.624
+  },
+  {
+   "date": "2025-04-19",
+   "predicted_kw": 3157.3,
+   "actual_kw": 95.0,
+   "residual_kw": -3062.3,
+   "loss_pct": 96.99,
+   "predicted_mwh": 39.467,
+   "actual_mwh": 1.188
+  },
+  {
+   "date": "2025-04-20",
+   "predicted_kw": 3338.0,
+   "actual_kw": 1964.7,
+   "residual_kw": -1373.3,
+   "loss_pct": 41.14,
+   "predicted_mwh": 39.221,
+   "actual_mwh": 23.085
+  },
+  {
+   "date": "2025-04-21",
+   "predicted_kw": 3805.2,
+   "actual_kw": 1997.5,
+   "residual_kw": -1807.7,
+   "loss_pct": 47.51,
+   "predicted_mwh": 48.517,
+   "actual_mwh": 25.469
+  },
+  {
+   "date": "2025-04-22",
+   "predicted_kw": 3812.1,
+   "actual_kw": 1880.2,
+   "residual_kw": -1931.8,
+   "loss_pct": 50.68,
+   "predicted_mwh": 48.604,
+   "actual_mwh": 23.973
+  },
+  {
+   "date": "2025-04-23",
+   "predicted_kw": 4453.2,
+   "actual_kw": 618.6,
+   "residual_kw": -3834.6,
+   "loss_pct": 86.11,
+   "predicted_mwh": 57.891,
+   "actual_mwh": 8.041
+  },
+  {
+   "date": "2025-04-24",
+   "predicted_kw": 4458.0,
+   "actual_kw": 406.9,
+   "residual_kw": -4051.1,
+   "loss_pct": 90.87,
+   "predicted_mwh": 56.84,
+   "actual_mwh": 5.188
+  },
+  {
+   "date": "2025-04-25",
+   "predicted_kw": 4192.8,
+   "actual_kw": 466.4,
+   "residual_kw": -3726.4,
+   "loss_pct": 88.88,
+   "predicted_mwh": 54.507,
+   "actual_mwh": 6.063
+  },
+  {
+   "date": "2025-04-26",
+   "predicted_kw": 4400.3,
+   "actual_kw": 2022.1,
+   "residual_kw": -2378.2,
+   "loss_pct": 54.05,
+   "predicted_mwh": 57.204,
+   "actual_mwh": 26.287
+  },
+  {
+   "date": "2025-04-27",
+   "predicted_kw": 4579.0,
+   "actual_kw": 106.4,
+   "residual_kw": -4472.6,
+   "loss_pct": 97.68,
+   "predicted_mwh": 58.383,
+   "actual_mwh": 1.357
+  },
+  {
+   "date": "2025-04-28",
+   "predicted_kw": 3770.5,
+   "actual_kw": 1695.5,
+   "residual_kw": -2075.1,
+   "loss_pct": 55.03,
+   "predicted_mwh": 17.91,
+   "actual_mwh": 8.054
+  },
+  {
+   "date": "2025-04-29",
+   "predicted_kw": 3008.9,
+   "actual_kw": 2510.4,
+   "residual_kw": -498.4,
+   "loss_pct": 16.57,
+   "predicted_mwh": 26.328,
+   "actual_mwh": 21.966
+  },
+  {
+   "date": "2025-04-30",
+   "predicted_kw": 3597.6,
+   "actual_kw": 3575.6,
+   "residual_kw": -21.9,
+   "loss_pct": 0.61,
+   "predicted_mwh": 44.07,
+   "actual_mwh": 43.802
+  },
+  {
+   "date": "2025-05-01",
+   "predicted_kw": 4303.8,
+   "actual_kw": 4281.3,
+   "residual_kw": -22.5,
+   "loss_pct": 0.52,
+   "predicted_mwh": 55.95,
+   "actual_mwh": 55.657
+  },
+  {
+   "date": "2025-05-02",
+   "predicted_kw": 3642.2,
+   "actual_kw": 3615.7,
+   "residual_kw": -26.5,
+   "loss_pct": 0.73,
+   "predicted_mwh": 46.438,
+   "actual_mwh": 46.101
+  },
+  {
+   "date": "2025-05-03",
+   "predicted_kw": 2831.4,
+   "actual_kw": 2843.4,
+   "residual_kw": 12.1,
+   "loss_pct": -0.43,
+   "predicted_mwh": 36.808,
+   "actual_mwh": 36.964
+  },
+  {
+   "date": "2025-05-04",
+   "predicted_kw": 3616.2,
+   "actual_kw": 3509.6,
+   "residual_kw": -106.5,
+   "loss_pct": 2.95,
+   "predicted_mwh": 45.202,
+   "actual_mwh": 43.87
+  },
+  {
+   "date": "2025-05-05",
+   "predicted_kw": 2595.3,
+   "actual_kw": 2696.9,
+   "residual_kw": 101.6,
+   "loss_pct": -3.91,
+   "predicted_mwh": 33.739,
+   "actual_mwh": 35.06
+  },
+  {
+   "date": "2025-05-06",
+   "predicted_kw": 4434.3,
+   "actual_kw": 4234.5,
+   "residual_kw": -199.8,
+   "loss_pct": 4.51,
+   "predicted_mwh": 56.538,
+   "actual_mwh": 53.99
+  },
+  {
+   "date": "2025-05-07",
+   "predicted_kw": 3518.5,
+   "actual_kw": 3472.0,
+   "residual_kw": -46.5,
+   "loss_pct": 1.32,
+   "predicted_mwh": 45.74,
+   "actual_mwh": 45.136
+  },
+  {
+   "date": "2025-05-08",
+   "predicted_kw": 2947.7,
+   "actual_kw": 2976.2,
+   "residual_kw": 28.5,
+   "loss_pct": -0.97,
+   "predicted_mwh": 39.057,
+   "actual_mwh": 39.435
+  },
+  {
+   "date": "2025-05-09",
+   "predicted_kw": 3442.7,
+   "actual_kw": 3309.3,
+   "residual_kw": -133.4,
+   "loss_pct": 3.87,
+   "predicted_mwh": 46.476,
+   "actual_mwh": 44.676
+  },
+  {
+   "date": "2025-05-10",
+   "predicted_kw": 3229.8,
+   "actual_kw": 3203.3,
+   "residual_kw": -26.5,
+   "loss_pct": 0.82,
+   "predicted_mwh": 42.794,
+   "actual_mwh": 42.443
+  },
+  {
+   "date": "2025-05-11",
+   "predicted_kw": 3634.5,
+   "actual_kw": 3492.8,
+   "residual_kw": -141.7,
+   "loss_pct": 3.9,
+   "predicted_mwh": 49.066,
+   "actual_mwh": 47.153
+  },
+  {
+   "date": "2025-05-12",
+   "predicted_kw": 4256.4,
+   "actual_kw": 4223.6,
+   "residual_kw": -32.8,
+   "loss_pct": 0.77,
+   "predicted_mwh": 57.462,
+   "actual_mwh": 57.018
+  },
+  {
+   "date": "2025-05-13",
+   "predicted_kw": 3217.5,
+   "actual_kw": 3198.7,
+   "residual_kw": -18.9,
+   "loss_pct": 0.59,
+   "predicted_mwh": 42.632,
+   "actual_mwh": 42.382
+  },
+  {
+   "date": "2025-05-14",
+   "predicted_kw": 4094.3,
+   "actual_kw": 3557.2,
+   "residual_kw": -537.1,
+   "loss_pct": 13.12,
+   "predicted_mwh": 45.038,
+   "actual_mwh": 39.129
+  },
+  {
+   "date": "2025-05-15",
+   "predicted_kw": 3997.4,
+   "actual_kw": 3292.8,
+   "residual_kw": -704.5,
+   "loss_pct": 17.63,
+   "predicted_mwh": 53.964,
+   "actual_mwh": 44.453
+  },
+  {
+   "date": "2025-05-16",
+   "predicted_kw": 4354.0,
+   "actual_kw": 1093.0,
+   "residual_kw": -3260.9,
+   "loss_pct": 74.9,
+   "predicted_mwh": 58.779,
+   "actual_mwh": 14.756
+  },
+  {
+   "date": "2025-05-17",
+   "predicted_kw": 4023.5,
+   "actual_kw": 4011.4,
+   "residual_kw": -12.2,
+   "loss_pct": 0.3,
+   "predicted_mwh": 54.318,
+   "actual_mwh": 54.154
+  },
+  {
+   "date": "2025-05-18",
+   "predicted_kw": 4019.2,
+   "actual_kw": 4024.2,
+   "residual_kw": 5.0,
+   "loss_pct": -0.12,
+   "predicted_mwh": 54.259,
+   "actual_mwh": 54.327
+  },
+  {
+   "date": "2025-05-19",
+   "predicted_kw": 4153.9,
+   "actual_kw": 4086.8,
+   "residual_kw": -67.1,
+   "loss_pct": 1.61,
+   "predicted_mwh": 54.0,
+   "actual_mwh": 53.128
+  },
+  {
+   "date": "2025-05-20",
+   "predicted_kw": 4339.2,
+   "actual_kw": 4339.2,
+   "residual_kw": 0.0,
+   "loss_pct": -0.0,
+   "predicted_mwh": 58.579,
+   "actual_mwh": 58.579
+  },
+  {
+   "date": "2025-05-21",
+   "predicted_kw": 4261.8,
+   "actual_kw": 4225.6,
+   "residual_kw": -36.2,
+   "loss_pct": 0.85,
+   "predicted_mwh": 57.534,
+   "actual_mwh": 57.046
+  },
+  {
+   "date": "2025-05-22",
+   "predicted_kw": 3902.4,
+   "actual_kw": 3929.6,
+   "residual_kw": 27.2,
+   "loss_pct": -0.7,
+   "predicted_mwh": 51.707,
+   "actual_mwh": 52.067
+  },
+  {
+   "date": "2025-05-23",
+   "predicted_kw": 2889.1,
+   "actual_kw": 3043.6,
+   "residual_kw": 154.5,
+   "loss_pct": -5.35,
+   "predicted_mwh": 37.558,
+   "actual_mwh": 39.567
+  },
+  {
+   "date": "2025-05-24",
+   "predicted_kw": 4397.0,
+   "actual_kw": 4437.8,
+   "residual_kw": 40.8,
+   "loss_pct": -0.93,
+   "predicted_mwh": 59.359,
+   "actual_mwh": 59.91
+  },
+  {
+   "date": "2025-05-25",
+   "predicted_kw": 4326.5,
+   "actual_kw": 4359.9,
+   "residual_kw": 33.5,
+   "loss_pct": -0.77,
+   "predicted_mwh": 58.407,
+   "actual_mwh": 58.859
+  },
+  {
+   "date": "2025-05-26",
+   "predicted_kw": 4265.1,
+   "actual_kw": 4307.4,
+   "residual_kw": 42.3,
+   "loss_pct": -0.99,
+   "predicted_mwh": 57.579,
+   "actual_mwh": 58.15
+  },
+  {
+   "date": "2025-05-27",
+   "predicted_kw": 3997.9,
+   "actual_kw": 4040.9,
+   "residual_kw": 43.0,
+   "loss_pct": -1.08,
+   "predicted_mwh": 54.971,
+   "actual_mwh": 55.563
+  },
+  {
+   "date": "2025-05-28",
+   "predicted_kw": 4074.4,
+   "actual_kw": 4113.7,
+   "residual_kw": 39.3,
+   "loss_pct": -0.96,
+   "predicted_mwh": 56.023,
+   "actual_mwh": 56.563
+  },
+  {
+   "date": "2025-05-29",
+   "predicted_kw": 3849.7,
+   "actual_kw": 3895.4,
+   "residual_kw": 45.7,
+   "loss_pct": -1.19,
+   "predicted_mwh": 52.933,
+   "actual_mwh": 53.562
+  },
+  {
+   "date": "2025-05-30",
+   "predicted_kw": 3995.7,
+   "actual_kw": 3407.7,
+   "residual_kw": -588.0,
+   "loss_pct": 14.72,
+   "predicted_mwh": 55.94,
+   "actual_mwh": 47.708
+  },
+  {
+   "date": "2025-05-31",
+   "predicted_kw": 3994.7,
+   "actual_kw": 2764.6,
+   "residual_kw": -1230.2,
+   "loss_pct": 30.8,
+   "predicted_mwh": 55.926,
+   "actual_mwh": 38.704
+  },
+  {
+   "date": "2025-06-01",
+   "predicted_kw": 3683.3,
+   "actual_kw": 3748.4,
+   "residual_kw": 65.1,
+   "loss_pct": -1.77,
+   "predicted_mwh": 50.646,
+   "actual_mwh": 51.54
+  },
+  {
+   "date": "2025-06-02",
+   "predicted_kw": 3523.9,
+   "actual_kw": 3562.4,
+   "residual_kw": 38.5,
+   "loss_pct": -1.09,
+   "predicted_mwh": 48.453,
+   "actual_mwh": 48.983
+  },
+  {
+   "date": "2025-06-03",
+   "predicted_kw": 4014.3,
+   "actual_kw": 4122.5,
+   "residual_kw": 108.2,
+   "loss_pct": -2.69,
+   "predicted_mwh": 55.197,
+   "actual_mwh": 56.684
+  },
+  {
+   "date": "2025-06-04",
+   "predicted_kw": 3927.6,
+   "actual_kw": 4058.8,
+   "residual_kw": 131.2,
+   "loss_pct": -3.34,
+   "predicted_mwh": 54.986,
+   "actual_mwh": 56.824
+  },
+  {
+   "date": "2025-06-05",
+   "predicted_kw": 4082.5,
+   "actual_kw": 3970.9,
+   "residual_kw": -111.5,
+   "loss_pct": 2.73,
+   "predicted_mwh": 56.134,
+   "actual_mwh": 54.6
+  },
+  {
+   "date": "2025-06-06",
+   "predicted_kw": 4023.8,
+   "actual_kw": 3754.9,
+   "residual_kw": -268.8,
+   "loss_pct": 6.68,
+   "predicted_mwh": 56.333,
+   "actual_mwh": 52.569
+  },
+  {
+   "date": "2025-06-07",
+   "predicted_kw": 3951.4,
+   "actual_kw": 3485.0,
+   "residual_kw": -466.4,
+   "loss_pct": 11.8,
+   "predicted_mwh": 55.32,
+   "actual_mwh": 48.79
+  },
+  {
+   "date": "2025-06-08",
+   "predicted_kw": 3927.4,
+   "actual_kw": 3570.0,
+   "residual_kw": -357.4,
+   "loss_pct": 9.1,
+   "predicted_mwh": 54.001,
+   "actual_mwh": 49.087
+  },
+  {
+   "date": "2025-06-09",
+   "predicted_kw": 3118.8,
+   "actual_kw": 3222.8,
+   "residual_kw": 104.0,
+   "loss_pct": -3.33,
+   "predicted_mwh": 43.663,
+   "actual_mwh": 45.119
+  },
+  {
+   "date": "2025-06-10",
+   "predicted_kw": 2080.2,
+   "actual_kw": 1935.6,
+   "residual_kw": -144.7,
+   "loss_pct": 6.95,
+   "predicted_mwh": 28.603,
+   "actual_mwh": 26.614
+  },
+  {
+   "date": "2025-06-11",
+   "predicted_kw": 3406.7,
+   "actual_kw": 1711.8,
+   "residual_kw": -1694.9,
+   "loss_pct": 49.75,
+   "predicted_mwh": 42.583,
+   "actual_mwh": 21.398
+  },
+  {
+   "date": "2025-06-12",
+   "predicted_kw": 4030.2,
+   "actual_kw": 3990.1,
+   "residual_kw": -40.2,
+   "loss_pct": 1.0,
+   "predicted_mwh": 56.423,
+   "actual_mwh": 55.861
+  },
+  {
+   "date": "2025-06-13",
+   "predicted_kw": 3654.1,
+   "actual_kw": 3612.7,
+   "residual_kw": -41.4,
+   "loss_pct": 1.13,
+   "predicted_mwh": 51.157,
+   "actual_mwh": 50.577
+  },
+  {
+   "date": "2025-06-14",
+   "predicted_kw": 3675.4,
+   "actual_kw": 3701.6,
+   "residual_kw": 26.2,
+   "loss_pct": -0.71,
+   "predicted_mwh": 51.455,
+   "actual_mwh": 51.822
+  },
+  {
+   "date": "2025-06-15",
+   "predicted_kw": 3651.0,
+   "actual_kw": 3531.5,
+   "residual_kw": -119.5,
+   "loss_pct": 3.27,
+   "predicted_mwh": 51.114,
+   "actual_mwh": 49.441
+  },
+  {
+   "date": "2025-06-16",
+   "predicted_kw": 2692.1,
+   "actual_kw": 1962.6,
+   "residual_kw": -729.5,
+   "loss_pct": 27.1,
+   "predicted_mwh": 30.286,
+   "actual_mwh": 22.079
+  },
+  {
+   "date": "2025-06-17",
+   "predicted_kw": 3311.2,
+   "actual_kw": 2876.4,
+   "residual_kw": -434.8,
+   "loss_pct": 13.13,
+   "predicted_mwh": 41.389,
+   "actual_mwh": 35.955
+  },
+  {
+   "date": "2025-06-18",
+   "predicted_kw": 3142.3,
+   "actual_kw": 3524.8,
+   "residual_kw": 382.4,
+   "loss_pct": -12.17,
+   "predicted_mwh": 40.85,
+   "actual_mwh": 45.822
+  },
+  {
+   "date": "2025-06-19",
+   "predicted_kw": 3301.9,
+   "actual_kw": 2978.5,
+   "residual_kw": -323.3,
+   "loss_pct": 9.79,
+   "predicted_mwh": 46.226,
+   "actual_mwh": 41.699
+  },
+  {
+   "date": "2025-06-20",
+   "predicted_kw": 3790.4,
+   "actual_kw": 1213.6,
+   "residual_kw": -2576.7,
+   "loss_pct": 67.98,
+   "predicted_mwh": 54.013,
+   "actual_mwh": 17.294
+  },
+  {
+   "date": "2025-06-21",
+   "predicted_kw": 3609.9,
+   "actual_kw": 3116.8,
+   "residual_kw": -493.0,
+   "loss_pct": 13.66,
+   "predicted_mwh": 52.343,
+   "actual_mwh": 45.194
+  },
+  {
+   "date": "2025-06-22",
+   "predicted_kw": 3558.3,
+   "actual_kw": 3524.8,
+   "residual_kw": -33.4,
+   "loss_pct": 0.94,
+   "predicted_mwh": 49.816,
+   "actual_mwh": 49.347
+  },
+  {
+   "date": "2025-06-23",
+   "predicted_kw": 3480.9,
+   "actual_kw": 3449.4,
+   "residual_kw": -31.5,
+   "loss_pct": 0.9,
+   "predicted_mwh": 55.694,
+   "actual_mwh": 55.191
+  },
+  {
+   "date": "2025-06-24",
+   "predicted_kw": 3696.5,
+   "actual_kw": 3780.3,
+   "residual_kw": 83.8,
+   "loss_pct": -2.27,
+   "predicted_mwh": 50.827,
+   "actual_mwh": 51.979
+  },
+  {
+   "date": "2025-06-25",
+   "predicted_kw": 4291.5,
+   "actual_kw": 4392.2,
+   "residual_kw": 100.7,
+   "loss_pct": -2.35,
+   "predicted_mwh": 59.008,
+   "actual_mwh": 60.393
+  },
+  {
+   "date": "2025-06-26",
+   "predicted_kw": 4031.8,
+   "actual_kw": 3820.1,
+   "residual_kw": -211.7,
+   "loss_pct": 5.25,
+   "predicted_mwh": 39.31,
+   "actual_mwh": 37.246
+  },
+  {
+   "date": "2025-06-27",
+   "predicted_kw": 3979.9,
+   "actual_kw": 2870.7,
+   "residual_kw": -1109.1,
+   "loss_pct": 27.87,
+   "predicted_mwh": 55.718,
+   "actual_mwh": 40.19
+  },
+  {
+   "date": "2025-06-28",
+   "predicted_kw": 3999.4,
+   "actual_kw": 4071.7,
+   "residual_kw": 72.3,
+   "loss_pct": -1.81,
+   "predicted_mwh": 55.991,
+   "actual_mwh": 57.004
+  },
+  {
+   "date": "2025-06-29",
+   "predicted_kw": 3900.6,
+   "actual_kw": 3678.1,
+   "residual_kw": -222.5,
+   "loss_pct": 5.71,
+   "predicted_mwh": 54.609,
+   "actual_mwh": 51.493
+  },
+  {
+   "date": "2025-06-30",
+   "predicted_kw": 3637.3,
+   "actual_kw": 3679.6,
+   "residual_kw": 42.3,
+   "loss_pct": -1.16,
+   "predicted_mwh": 41.829,
+   "actual_mwh": 42.316
+  },
+  {
+   "date": "2025-07-01",
+   "predicted_kw": 4123.0,
+   "actual_kw": 1865.5,
+   "residual_kw": -2257.5,
+   "loss_pct": 54.75,
+   "predicted_mwh": 52.568,
+   "actual_mwh": 23.785
+  },
+  {
+   "date": "2025-07-02",
+   "predicted_kw": 3967.2,
+   "actual_kw": 2497.7,
+   "residual_kw": -1469.5,
+   "loss_pct": 37.04,
+   "predicted_mwh": 54.549,
+   "actual_mwh": 34.344
+  },
+  {
+   "date": "2025-07-03",
+   "predicted_kw": 3762.8,
+   "actual_kw": 2829.4,
+   "residual_kw": -933.4,
+   "loss_pct": 24.81,
+   "predicted_mwh": 51.738,
+   "actual_mwh": 38.904
+  },
+  {
+   "date": "2025-07-04",
+   "predicted_kw": 3840.2,
+   "actual_kw": 3139.4,
+   "residual_kw": -700.8,
+   "loss_pct": 18.25,
+   "predicted_mwh": 53.763,
+   "actual_mwh": 43.951
+  },
+  {
+   "date": "2025-07-05",
+   "predicted_kw": 3967.7,
+   "actual_kw": 3458.4,
+   "residual_kw": -509.4,
+   "loss_pct": 12.84,
+   "predicted_mwh": 54.557,
+   "actual_mwh": 47.553
+  },
+  {
+   "date": "2025-07-06",
+   "predicted_kw": 3980.4,
+   "actual_kw": 1504.5,
+   "residual_kw": -2476.0,
+   "loss_pct": 62.2,
+   "predicted_mwh": 54.731,
+   "actual_mwh": 20.686
+  },
+  {
+   "date": "2025-07-07",
+   "predicted_kw": 3953.9,
+   "actual_kw": 3662.9,
+   "residual_kw": -291.0,
+   "loss_pct": 7.36,
+   "predicted_mwh": 54.367,
+   "actual_mwh": 50.365
+  },
+  {
+   "date": "2025-07-08",
+   "predicted_kw": 4039.7,
+   "actual_kw": 2081.7,
+   "residual_kw": -1958.0,
+   "loss_pct": 48.47,
+   "predicted_mwh": 54.536,
+   "actual_mwh": 28.103
+  },
+  {
+   "date": "2025-07-09",
+   "predicted_kw": 3937.6,
+   "actual_kw": 1625.4,
+   "residual_kw": -2312.2,
+   "loss_pct": 58.72,
+   "predicted_mwh": 54.142,
+   "actual_mwh": 22.349
+  },
+  {
+   "date": "2025-07-10",
+   "predicted_kw": 4048.5,
+   "actual_kw": 2345.3,
+   "residual_kw": -1703.1,
+   "loss_pct": 42.07,
+   "predicted_mwh": 55.667,
+   "actual_mwh": 32.248
+  },
+  {
+   "date": "2025-07-11",
+   "predicted_kw": 4605.6,
+   "actual_kw": 603.1,
+   "residual_kw": -4002.5,
+   "loss_pct": 86.91,
+   "predicted_mwh": 57.57,
+   "actual_mwh": 7.539
+  },
+  {
+   "date": "2025-07-12",
+   "predicted_kw": 3189.0,
+   "actual_kw": 1764.9,
+   "residual_kw": -1424.1,
+   "loss_pct": 44.66,
+   "predicted_mwh": 43.848,
+   "actual_mwh": 24.267
+  },
+  {
+   "date": "2025-07-13",
+   "predicted_kw": 4120.4,
+   "actual_kw": 1656.0,
+   "residual_kw": -2464.4,
+   "loss_pct": 59.81,
+   "predicted_mwh": 56.655,
+   "actual_mwh": 22.77
+  },
+  {
+   "date": "2025-07-14",
+   "predicted_kw": 3943.1,
+   "actual_kw": 3878.9,
+   "residual_kw": -64.2,
+   "loss_pct": 1.63,
+   "predicted_mwh": 55.203,
+   "actual_mwh": 54.304
+  },
+  {
+   "date": "2025-07-15",
+   "predicted_kw": 4051.2,
+   "actual_kw": 4057.1,
+   "residual_kw": 5.9,
+   "loss_pct": -0.15,
+   "predicted_mwh": 55.704,
+   "actual_mwh": 55.785
+  },
+  {
+   "date": "2025-07-16",
+   "predicted_kw": 3979.1,
+   "actual_kw": 4040.1,
+   "residual_kw": 61.0,
+   "loss_pct": -1.53,
+   "predicted_mwh": 54.713,
+   "actual_mwh": 55.552
+  },
+  {
+   "date": "2025-07-17",
+   "predicted_kw": 3983.8,
+   "actual_kw": 4058.1,
+   "residual_kw": 74.3,
+   "loss_pct": -1.86,
+   "predicted_mwh": 54.778,
+   "actual_mwh": 55.799
+  },
+  {
+   "date": "2025-07-18",
+   "predicted_kw": 3940.1,
+   "actual_kw": 3702.9,
+   "residual_kw": -237.2,
+   "loss_pct": 6.02,
+   "predicted_mwh": 54.177,
+   "actual_mwh": 50.915
+  },
+  {
+   "date": "2025-07-19",
+   "predicted_kw": 4174.7,
+   "actual_kw": 1165.2,
+   "residual_kw": -3009.5,
+   "loss_pct": 72.09,
+   "predicted_mwh": 56.358,
+   "actual_mwh": 15.73
+  },
+  {
+   "date": "2025-07-20",
+   "predicted_kw": 4170.8,
+   "actual_kw": 2063.5,
+   "residual_kw": -2107.3,
+   "loss_pct": 50.52,
+   "predicted_mwh": 56.306,
+   "actual_mwh": 27.858
+  },
+  {
+   "date": "2025-07-21",
+   "predicted_kw": 4169.1,
+   "actual_kw": 3445.3,
+   "residual_kw": -723.8,
+   "loss_pct": 17.36,
+   "predicted_mwh": 56.283,
+   "actual_mwh": 46.511
+  },
+  {
+   "date": "2025-07-22",
+   "predicted_kw": 4121.2,
+   "actual_kw": 4161.8,
+   "residual_kw": 40.6,
+   "loss_pct": -0.99,
+   "predicted_mwh": 55.636,
+   "actual_mwh": 56.185
+  },
+  {
+   "date": "2025-07-23",
+   "predicted_kw": 3510.9,
+   "actual_kw": 2661.8,
+   "residual_kw": -849.2,
+   "loss_pct": 24.19,
+   "predicted_mwh": 46.52,
+   "actual_mwh": 35.269
+  },
+  {
+   "date": "2025-07-24",
+   "predicted_kw": 3693.7,
+   "actual_kw": 2933.7,
+   "residual_kw": -760.0,
+   "loss_pct": 20.58,
+   "predicted_mwh": 49.865,
+   "actual_mwh": 39.605
+  },
+  {
+   "date": "2025-07-25",
+   "predicted_kw": 3896.6,
+   "actual_kw": 2869.5,
+   "residual_kw": -1027.1,
+   "loss_pct": 26.36,
+   "predicted_mwh": 52.604,
+   "actual_mwh": 38.738
+  },
+  {
+   "date": "2025-07-26",
+   "predicted_kw": 4075.5,
+   "actual_kw": 1454.3,
+   "residual_kw": -2621.2,
+   "loss_pct": 64.32,
+   "predicted_mwh": 55.019,
+   "actual_mwh": 19.632
+  },
+  {
+   "date": "2025-07-27",
+   "predicted_kw": 4060.0,
+   "actual_kw": 1902.5,
+   "residual_kw": -2157.5,
+   "loss_pct": 53.14,
+   "predicted_mwh": 54.81,
+   "actual_mwh": 25.683
+  },
+  {
+   "date": "2025-07-28",
+   "predicted_kw": 4095.1,
+   "actual_kw": 3375.9,
+   "residual_kw": -719.1,
+   "loss_pct": 17.56,
+   "predicted_mwh": 54.259,
+   "actual_mwh": 44.731
+  },
+  {
+   "date": "2025-07-29",
+   "predicted_kw": 4036.9,
+   "actual_kw": 1248.4,
+   "residual_kw": -2788.5,
+   "loss_pct": 69.08,
+   "predicted_mwh": 53.488,
+   "actual_mwh": 16.541
+  },
+  {
+   "date": "2025-07-30",
+   "predicted_kw": 4009.0,
+   "actual_kw": 3197.8,
+   "residual_kw": -811.2,
+   "loss_pct": 20.23,
+   "predicted_mwh": 53.119,
+   "actual_mwh": 42.371
+  },
+  {
+   "date": "2025-07-31",
+   "predicted_kw": 4001.9,
+   "actual_kw": 3786.9,
+   "residual_kw": -215.0,
+   "loss_pct": 5.37,
+   "predicted_mwh": 53.026,
+   "actual_mwh": 50.177
+  },
+  {
+   "date": "2025-08-01",
+   "predicted_kw": 3852.0,
+   "actual_kw": 3373.7,
+   "residual_kw": -478.2,
+   "loss_pct": 12.42,
+   "predicted_mwh": 51.039,
+   "actual_mwh": 44.702
+  },
+  {
+   "date": "2025-08-02",
+   "predicted_kw": 4020.2,
+   "actual_kw": 1903.7,
+   "residual_kw": -2116.5,
+   "loss_pct": 52.65,
+   "predicted_mwh": 53.268,
+   "actual_mwh": 25.224
+  },
+  {
+   "date": "2025-08-03",
+   "predicted_kw": 3994.3,
+   "actual_kw": 3009.2,
+   "residual_kw": -985.2,
+   "loss_pct": 24.66,
+   "predicted_mwh": 52.925,
+   "actual_mwh": 39.871
+  },
+  {
+   "date": "2025-08-04",
+   "predicted_kw": 3926.0,
+   "actual_kw": 3515.1,
+   "residual_kw": -410.9,
+   "loss_pct": 10.47,
+   "predicted_mwh": 52.02,
+   "actual_mwh": 46.576
+  },
+  {
+   "date": "2025-08-05",
+   "predicted_kw": 3831.8,
+   "actual_kw": 3772.3,
+   "residual_kw": -59.5,
+   "loss_pct": 1.55,
+   "predicted_mwh": 50.771,
+   "actual_mwh": 49.983
+  },
+  {
+   "date": "2025-08-06",
+   "predicted_kw": 3975.8,
+   "actual_kw": 4057.8,
+   "residual_kw": 82.0,
+   "loss_pct": -2.06,
+   "predicted_mwh": 52.679,
+   "actual_mwh": 53.766
+  },
+  {
+   "date": "2025-08-07",
+   "predicted_kw": 3503.0,
+   "actual_kw": 2624.1,
+   "residual_kw": -878.9,
+   "loss_pct": 25.09,
+   "predicted_mwh": 42.912,
+   "actual_mwh": 32.145
+  },
+  {
+   "date": "2025-08-08",
+   "predicted_kw": 2862.1,
+   "actual_kw": 2926.8,
+   "residual_kw": 64.7,
+   "loss_pct": -2.26,
+   "predicted_mwh": 37.923,
+   "actual_mwh": 38.78
+  },
+  {
+   "date": "2025-08-09",
+   "predicted_kw": 3960.1,
+   "actual_kw": 3588.3,
+   "residual_kw": -371.7,
+   "loss_pct": 9.39,
+   "predicted_mwh": 52.471,
+   "actual_mwh": 47.546
+  },
+  {
+   "date": "2025-08-10",
+   "predicted_kw": 3955.8,
+   "actual_kw": 3218.1,
+   "residual_kw": -737.7,
+   "loss_pct": 18.65,
+   "predicted_mwh": 52.414,
+   "actual_mwh": 42.639
+  },
+  {
+   "date": "2025-08-11",
+   "predicted_kw": 4058.8,
+   "actual_kw": 3713.8,
+   "residual_kw": -345.0,
+   "loss_pct": 8.5,
+   "predicted_mwh": 52.764,
+   "actual_mwh": 48.279
+  },
+  {
+   "date": "2025-08-12",
+   "predicted_kw": 3996.4,
+   "actual_kw": 3695.6,
+   "residual_kw": -300.9,
+   "loss_pct": 7.53,
+   "predicted_mwh": 51.954,
+   "actual_mwh": 48.043
+  },
+  {
+   "date": "2025-08-13",
+   "predicted_kw": 3871.2,
+   "actual_kw": 3039.1,
+   "residual_kw": -832.2,
+   "loss_pct": 21.5,
+   "predicted_mwh": 50.326,
+   "actual_mwh": 39.508
+  },
+  {
+   "date": "2025-08-14",
+   "predicted_kw": 3739.3,
+   "actual_kw": 2417.8,
+   "residual_kw": -1321.5,
+   "loss_pct": 35.34,
+   "predicted_mwh": 48.611,
+   "actual_mwh": 31.431
+  },
+  {
+   "date": "2025-08-15",
+   "predicted_kw": 3985.2,
+   "actual_kw": 2800.7,
+   "residual_kw": -1184.5,
+   "loss_pct": 29.72,
+   "predicted_mwh": 51.807,
+   "actual_mwh": 36.409
+  },
+  {
+   "date": "2025-08-16",
+   "predicted_kw": 3873.1,
+   "actual_kw": 3912.6,
+   "residual_kw": 39.4,
+   "loss_pct": -1.02,
+   "predicted_mwh": 50.351,
+   "actual_mwh": 50.863
+  },
+  {
+   "date": "2025-08-17",
+   "predicted_kw": 3818.4,
+   "actual_kw": 3787.9,
+   "residual_kw": -30.5,
+   "loss_pct": 0.8,
+   "predicted_mwh": 48.685,
+   "actual_mwh": 48.296
+  },
+  {
+   "date": "2025-08-18",
+   "predicted_kw": 3085.1,
+   "actual_kw": 3170.6,
+   "residual_kw": 85.5,
+   "loss_pct": -2.77,
+   "predicted_mwh": 38.564,
+   "actual_mwh": 39.633
+  },
+  {
+   "date": "2025-08-19",
+   "predicted_kw": 4273.9,
+   "actual_kw": 2541.9,
+   "residual_kw": -1732.0,
+   "loss_pct": 40.52,
+   "predicted_mwh": 54.492,
+   "actual_mwh": 32.409
+  },
+  {
+   "date": "2025-08-20",
+   "predicted_kw": 4227.4,
+   "actual_kw": 1200.2,
+   "residual_kw": -3027.1,
+   "loss_pct": 71.61,
+   "predicted_mwh": 53.899,
+   "actual_mwh": 15.303
+  },
+  {
+   "date": "2025-08-21",
+   "predicted_kw": 4012.7,
+   "actual_kw": 2749.8,
+   "residual_kw": -1263.0,
+   "loss_pct": 31.47,
+   "predicted_mwh": 50.159,
+   "actual_mwh": 34.372
+  },
+  {
+   "date": "2025-08-22",
+   "predicted_kw": 4036.7,
+   "actual_kw": 2443.7,
+   "residual_kw": -1593.0,
+   "loss_pct": 39.46,
+   "predicted_mwh": 51.467,
+   "actual_mwh": 31.157
+  },
+  {
+   "date": "2025-08-23",
+   "predicted_kw": 4089.5,
+   "actual_kw": 2901.2,
+   "residual_kw": -1188.3,
+   "loss_pct": 29.06,
+   "predicted_mwh": 52.141,
+   "actual_mwh": 36.991
+  },
+  {
+   "date": "2025-08-24",
+   "predicted_kw": 3070.9,
+   "actual_kw": 2931.3,
+   "residual_kw": -139.6,
+   "loss_pct": 4.55,
+   "predicted_mwh": 37.619,
+   "actual_mwh": 35.908
+  },
+  {
+   "date": "2025-08-25",
+   "predicted_kw": 3317.0,
+   "actual_kw": 1191.2,
+   "residual_kw": -2125.8,
+   "loss_pct": 64.09,
+   "predicted_mwh": 40.633,
+   "actual_mwh": 14.592
+  },
+  {
+   "date": "2025-08-26",
+   "predicted_kw": 3415.5,
+   "actual_kw": 3450.9,
+   "residual_kw": 35.4,
+   "loss_pct": -1.04,
+   "predicted_mwh": 42.694,
+   "actual_mwh": 43.137
+  },
+  {
+   "date": "2025-08-27",
+   "predicted_kw": 3868.6,
+   "actual_kw": 4036.4,
+   "residual_kw": 167.8,
+   "loss_pct": -4.34,
+   "predicted_mwh": 48.358,
+   "actual_mwh": 50.455
+  },
+  {
+   "date": "2025-08-28",
+   "predicted_kw": 4328.1,
+   "actual_kw": 501.2,
+   "residual_kw": -3826.9,
+   "loss_pct": 88.42,
+   "predicted_mwh": 55.183,
+   "actual_mwh": 6.39
+  },
+  {
+   "date": "2025-08-29",
+   "predicted_kw": 4195.8,
+   "actual_kw": 897.5,
+   "residual_kw": -3298.3,
+   "loss_pct": 78.61,
+   "predicted_mwh": 52.448,
+   "actual_mwh": 11.219
+  },
+  {
+   "date": "2025-08-30",
+   "predicted_kw": 4266.1,
+   "actual_kw": 2638.4,
+   "residual_kw": -1627.7,
+   "loss_pct": 38.15,
+   "predicted_mwh": 53.326,
+   "actual_mwh": 32.98
+  },
+  {
+   "date": "2025-08-31",
+   "predicted_kw": 4143.0,
+   "actual_kw": 2286.0,
+   "residual_kw": -1857.0,
+   "loss_pct": 44.82,
+   "predicted_mwh": 50.752,
+   "actual_mwh": 28.003
+  },
+  {
+   "date": "2025-09-01",
+   "predicted_kw": 4529.1,
+   "actual_kw": 1135.3,
+   "residual_kw": -3393.8,
+   "loss_pct": 74.93,
+   "predicted_mwh": 55.481,
+   "actual_mwh": 13.907
+  },
+  {
+   "date": "2025-09-02",
+   "predicted_kw": 4324.0,
+   "actual_kw": 1499.8,
+   "residual_kw": -2824.2,
+   "loss_pct": 65.31,
+   "predicted_mwh": 54.05,
+   "actual_mwh": 18.748
+  },
+  {
+   "date": "2025-09-03",
+   "predicted_kw": 4384.8,
+   "actual_kw": 4159.7,
+   "residual_kw": -225.2,
+   "loss_pct": 5.14,
+   "predicted_mwh": 53.714,
+   "actual_mwh": 50.956
+  },
+  {
+   "date": "2025-09-04",
+   "predicted_kw": 3661.8,
+   "actual_kw": 2311.0,
+   "residual_kw": -1350.7,
+   "loss_pct": 36.89,
+   "predicted_mwh": 44.857,
+   "actual_mwh": 28.31
+  },
+  {
+   "date": "2025-09-05",
+   "predicted_kw": 4238.2,
+   "actual_kw": 4266.0,
+   "residual_kw": 27.9,
+   "loss_pct": -0.66,
+   "predicted_mwh": 51.917,
+   "actual_mwh": 52.259
+  },
+  {
+   "date": "2025-09-06",
+   "predicted_kw": 3668.3,
+   "actual_kw": 1525.7,
+   "residual_kw": -2142.6,
+   "loss_pct": 58.41,
+   "predicted_mwh": 44.02,
+   "actual_mwh": 18.308
+  },
+  {
+   "date": "2025-09-07",
+   "predicted_kw": 2048.0,
+   "actual_kw": 2133.0,
+   "residual_kw": 85.0,
+   "loss_pct": -4.15,
+   "predicted_mwh": 24.064,
+   "actual_mwh": 25.063
+  },
+  {
+   "date": "2025-09-08",
+   "predicted_kw": 3128.9,
+   "actual_kw": 3132.3,
+   "residual_kw": 3.5,
+   "loss_pct": -0.11,
+   "predicted_mwh": 36.764,
+   "actual_mwh": 36.805
+  },
+  {
+   "date": "2025-09-09",
+   "predicted_kw": 3546.6,
+   "actual_kw": 3594.7,
+   "residual_kw": 48.0,
+   "loss_pct": -1.35,
+   "predicted_mwh": 43.446,
+   "actual_mwh": 44.035
+  },
+  {
+   "date": "2025-09-10",
+   "predicted_kw": 4261.8,
+   "actual_kw": 3728.7,
+   "residual_kw": -533.2,
+   "loss_pct": 12.51,
+   "predicted_mwh": 52.207,
+   "actual_mwh": 45.676
+  },
+  {
+   "date": "2025-09-11",
+   "predicted_kw": 4311.9,
+   "actual_kw": 2354.8,
+   "residual_kw": -1957.1,
+   "loss_pct": 45.39,
+   "predicted_mwh": 51.742,
+   "actual_mwh": 28.258
+  },
+  {
+   "date": "2025-09-12",
+   "predicted_kw": 4210.9,
+   "actual_kw": 4087.1,
+   "residual_kw": -123.8,
+   "loss_pct": 2.94,
+   "predicted_mwh": 50.531,
+   "actual_mwh": 49.045
+  },
+  {
+   "date": "2025-09-13",
+   "predicted_kw": 4028.1,
+   "actual_kw": 2093.0,
+   "residual_kw": -1935.1,
+   "loss_pct": 48.04,
+   "predicted_mwh": 48.337,
+   "actual_mwh": 25.116
+  },
+  {
+   "date": "2025-09-14",
+   "predicted_kw": 4203.2,
+   "actual_kw": 2094.7,
+   "residual_kw": -2108.5,
+   "loss_pct": 50.16,
+   "predicted_mwh": 50.438,
+   "actual_mwh": 25.136
+  },
+  {
+   "date": "2025-09-15",
+   "predicted_kw": 4104.2,
+   "actual_kw": 4140.1,
+   "residual_kw": 35.9,
+   "loss_pct": -0.87,
+   "predicted_mwh": 49.25,
+   "actual_mwh": 49.681
+  },
+  {
+   "date": "2025-09-16",
+   "predicted_kw": 4158.4,
+   "actual_kw": 4189.9,
+   "residual_kw": 31.4,
+   "loss_pct": -0.76,
+   "predicted_mwh": 48.861,
+   "actual_mwh": 49.231
+  },
+  {
+   "date": "2025-09-17",
+   "predicted_kw": 4084.4,
+   "actual_kw": 4060.1,
+   "residual_kw": -24.4,
+   "loss_pct": 0.6,
+   "predicted_mwh": 47.992,
+   "actual_mwh": 47.706
+  },
+  {
+   "date": "2025-09-18",
+   "predicted_kw": 3498.3,
+   "actual_kw": 3475.1,
+   "residual_kw": -23.2,
+   "loss_pct": 0.66,
+   "predicted_mwh": 41.106,
+   "actual_mwh": 40.832
+  },
+  {
+   "date": "2025-09-19",
+   "predicted_kw": 3189.8,
+   "actual_kw": 3206.8,
+   "residual_kw": 17.0,
+   "loss_pct": -0.53,
+   "predicted_mwh": 35.886,
+   "actual_mwh": 36.077
+  },
+  {
+   "date": "2025-09-20",
+   "predicted_kw": 3666.5,
+   "actual_kw": 3199.3,
+   "residual_kw": -467.2,
+   "loss_pct": 12.74,
+   "predicted_mwh": 43.081,
+   "actual_mwh": 37.591
+  },
+  {
+   "date": "2025-09-21",
+   "predicted_kw": 4054.1,
+   "actual_kw": 1197.6,
+   "residual_kw": -2856.4,
+   "loss_pct": 70.46,
+   "predicted_mwh": 46.622,
+   "actual_mwh": 13.773
+  },
+  {
+   "date": "2025-09-22",
+   "predicted_kw": 4387.8,
+   "actual_kw": 3070.3,
+   "residual_kw": -1317.5,
+   "loss_pct": 30.03,
+   "predicted_mwh": 51.556,
+   "actual_mwh": 36.076
+  },
+  {
+   "date": "2025-09-23",
+   "predicted_kw": 4356.6,
+   "actual_kw": 1100.5,
+   "residual_kw": -3256.1,
+   "loss_pct": 74.74,
+   "predicted_mwh": 51.19,
+   "actual_mwh": 12.93
+  },
+  {
+   "date": "2025-09-24",
+   "predicted_kw": 3622.8,
+   "actual_kw": 3642.2,
+   "residual_kw": 19.4,
+   "loss_pct": -0.54,
+   "predicted_mwh": 42.568,
+   "actual_mwh": 42.796
+  },
+  {
+   "date": "2025-09-25",
+   "predicted_kw": 4180.2,
+   "actual_kw": 2940.6,
+   "residual_kw": -1239.6,
+   "loss_pct": 29.65,
+   "predicted_mwh": 48.072,
+   "actual_mwh": 33.817
+  },
+  {
+   "date": "2025-09-26",
+   "predicted_kw": 4274.5,
+   "actual_kw": 1994.7,
+   "residual_kw": -2279.8,
+   "loss_pct": 53.34,
+   "predicted_mwh": 49.156,
+   "actual_mwh": 22.939
+  },
+  {
+   "date": "2025-09-27",
+   "predicted_kw": 3802.6,
+   "actual_kw": 1119.6,
+   "residual_kw": -2683.0,
+   "loss_pct": 70.56,
+   "predicted_mwh": 42.779,
+   "actual_mwh": 12.596
+  },
+  {
+   "date": "2025-09-28",
+   "predicted_kw": 2472.5,
+   "actual_kw": 1858.7,
+   "residual_kw": -613.8,
+   "loss_pct": 24.83,
+   "predicted_mwh": 27.816,
+   "actual_mwh": 20.91
+  },
+  {
+   "date": "2025-09-29",
+   "predicted_kw": 2549.6,
+   "actual_kw": 2152.1,
+   "residual_kw": -397.5,
+   "loss_pct": 15.59,
+   "predicted_mwh": 27.408,
+   "actual_mwh": 23.135
+  },
+  {
+   "date": "2025-09-30",
+   "predicted_kw": 2698.4,
+   "actual_kw": 2274.5,
+   "residual_kw": -423.9,
+   "loss_pct": 15.71,
+   "predicted_mwh": 29.682,
+   "actual_mwh": 25.019
+  },
+  {
+   "date": "2025-10-01",
+   "predicted_kw": 4308.0,
+   "actual_kw": 3355.2,
+   "residual_kw": -952.8,
+   "loss_pct": 22.12,
+   "predicted_mwh": 48.465,
+   "actual_mwh": 37.746
+  },
+  {
+   "date": "2025-10-02",
+   "predicted_kw": 4420.0,
+   "actual_kw": 3533.6,
+   "residual_kw": -886.5,
+   "loss_pct": 20.06,
+   "predicted_mwh": 49.725,
+   "actual_mwh": 39.752
+  },
+  {
+   "date": "2025-10-03",
+   "predicted_kw": 4380.4,
+   "actual_kw": 3507.1,
+   "residual_kw": -873.3,
+   "loss_pct": 19.94,
+   "predicted_mwh": 49.279,
+   "actual_mwh": 39.455
+  },
+  {
+   "date": "2025-10-04",
+   "predicted_kw": 4194.1,
+   "actual_kw": 2199.2,
+   "residual_kw": -1994.8,
+   "loss_pct": 47.56,
+   "predicted_mwh": 47.183,
+   "actual_mwh": 24.741
+  },
+  {
+   "date": "2025-10-05",
+   "predicted_kw": 4349.4,
+   "actual_kw": 174.1,
+   "residual_kw": -4175.3,
+   "loss_pct": 96.0,
+   "predicted_mwh": 48.931,
+   "actual_mwh": 1.959
+  },
+  {
+   "date": "2025-10-06",
+   "predicted_kw": 4070.1,
+   "actual_kw": 999.8,
+   "residual_kw": -3070.3,
+   "loss_pct": 75.44,
+   "predicted_mwh": 45.789,
+   "actual_mwh": 11.248
+  },
+  {
+   "date": "2025-10-07",
+   "predicted_kw": 4375.2,
+   "actual_kw": 2783.4,
+   "residual_kw": -1591.8,
+   "loss_pct": 36.38,
+   "predicted_mwh": 48.128,
+   "actual_mwh": 30.618
+  },
+  {
+   "date": "2025-10-08",
+   "predicted_kw": 3843.7,
+   "actual_kw": 3879.6,
+   "residual_kw": 35.9,
+   "loss_pct": -0.93,
+   "predicted_mwh": 42.281,
+   "actual_mwh": 42.676
+  },
+  {
+   "date": "2025-10-09",
+   "predicted_kw": 4361.0,
+   "actual_kw": 3529.6,
+   "residual_kw": -831.4,
+   "loss_pct": 19.06,
+   "predicted_mwh": 45.791,
+   "actual_mwh": 37.061
+  },
+  {
+   "date": "2025-10-10",
+   "predicted_kw": 4228.9,
+   "actual_kw": 2218.5,
+   "residual_kw": -2010.4,
+   "loss_pct": 47.54,
+   "predicted_mwh": 46.518,
+   "actual_mwh": 24.404
+  },
+  {
+   "date": "2025-10-11",
+   "predicted_kw": 4397.6,
+   "actual_kw": 4208.9,
+   "residual_kw": -188.7,
+   "loss_pct": 4.29,
+   "predicted_mwh": 48.373,
+   "actual_mwh": 46.298
+  },
+  {
+   "date": "2025-10-12",
+   "predicted_kw": 3874.3,
+   "actual_kw": 1869.6,
+   "residual_kw": -2004.7,
+   "loss_pct": 51.74,
+   "predicted_mwh": 41.648,
+   "actual_mwh": 20.098
+  },
+  {
+   "date": "2025-10-13",
+   "predicted_kw": 4129.7,
+   "actual_kw": 4086.8,
+   "residual_kw": -42.9,
+   "loss_pct": 1.04,
+   "predicted_mwh": 44.395,
+   "actual_mwh": 43.934
+  },
+  {
+   "date": "2025-10-14",
+   "predicted_kw": 4158.6,
+   "actual_kw": 2721.5,
+   "residual_kw": -1437.0,
+   "loss_pct": 34.56,
+   "predicted_mwh": 44.704,
+   "actual_mwh": 29.256
+  },
+  {
+   "date": "2025-10-15",
+   "predicted_kw": 3979.4,
+   "actual_kw": 2797.6,
+   "residual_kw": -1181.9,
+   "loss_pct": 29.7,
+   "predicted_mwh": 42.779,
+   "actual_mwh": 30.074
+  },
+  {
+   "date": "2025-10-16",
+   "predicted_kw": 2884.0,
+   "actual_kw": 2930.8,
+   "residual_kw": 46.8,
+   "loss_pct": -1.62,
+   "predicted_mwh": 31.003,
+   "actual_mwh": 31.506
+  },
+  {
+   "date": "2025-10-17",
+   "predicted_kw": 3934.3,
+   "actual_kw": 1742.0,
+   "residual_kw": -2192.2,
+   "loss_pct": 55.72,
+   "predicted_mwh": 40.326,
+   "actual_mwh": 17.856
+  },
+  {
+   "date": "2025-10-18",
+   "predicted_kw": 4367.3,
+   "actual_kw": 3749.7,
+   "residual_kw": -617.6,
+   "loss_pct": 14.14,
+   "predicted_mwh": 45.857,
+   "actual_mwh": 39.372
+  },
+  {
+   "date": "2025-10-19",
+   "predicted_kw": 3363.9,
+   "actual_kw": 2585.9,
+   "residual_kw": -778.0,
+   "loss_pct": 23.13,
+   "predicted_mwh": 35.321,
+   "actual_mwh": 27.152
+  },
+  {
+   "date": "2025-10-20",
+   "predicted_kw": 2973.9,
+   "actual_kw": 3070.8,
+   "residual_kw": 96.9,
+   "loss_pct": -3.26,
+   "predicted_mwh": 31.226,
+   "actual_mwh": 32.244
+  },
+  {
+   "date": "2025-10-21",
+   "predicted_kw": 2612.3,
+   "actual_kw": 2672.1,
+   "residual_kw": 59.8,
+   "loss_pct": -2.29,
+   "predicted_mwh": 26.123,
+   "actual_mwh": 26.721
+  },
+  {
+   "date": "2025-10-22",
+   "predicted_kw": 3124.4,
+   "actual_kw": 2634.8,
+   "residual_kw": -489.6,
+   "loss_pct": 15.67,
+   "predicted_mwh": 32.025,
+   "actual_mwh": 27.006
+  },
+  {
+   "date": "2025-10-23",
+   "predicted_kw": 4132.7,
+   "actual_kw": 4049.6,
+   "residual_kw": -83.1,
+   "loss_pct": 2.01,
+   "predicted_mwh": 42.361,
+   "actual_mwh": 41.508
+  },
+  {
+   "date": "2025-10-24",
+   "predicted_kw": 4196.9,
+   "actual_kw": 4172.3,
+   "residual_kw": -24.7,
+   "loss_pct": 0.59,
+   "predicted_mwh": 44.068,
+   "actual_mwh": 43.809
+  },
+  {
+   "date": "2025-10-25",
+   "predicted_kw": 3857.3,
+   "actual_kw": 3835.7,
+   "residual_kw": -21.6,
+   "loss_pct": 0.56,
+   "predicted_mwh": 40.502,
+   "actual_mwh": 40.275
+  },
+  {
+   "date": "2025-10-26",
+   "predicted_kw": 1358.9,
+   "actual_kw": 1519.4,
+   "residual_kw": 160.5,
+   "loss_pct": -11.81,
+   "predicted_mwh": 10.871,
+   "actual_mwh": 12.155
+  },
+  {
+   "date": "2025-10-27",
+   "predicted_kw": 4138.1,
+   "actual_kw": 3902.4,
+   "residual_kw": -235.7,
+   "loss_pct": 5.69,
+   "predicted_mwh": 42.415,
+   "actual_mwh": 40.0
+  },
+  {
+   "date": "2025-10-28",
+   "predicted_kw": 3317.1,
+   "actual_kw": 3373.3,
+   "residual_kw": 56.2,
+   "loss_pct": -1.69,
+   "predicted_mwh": 32.342,
+   "actual_mwh": 32.89
+  },
+  {
+   "date": "2025-10-29",
+   "predicted_kw": 1345.2,
+   "actual_kw": 1415.1,
+   "residual_kw": 70.0,
+   "loss_pct": -5.2,
+   "predicted_mwh": 10.425,
+   "actual_mwh": 10.967
+  },
+  {
+   "date": "2025-11-03",
+   "predicted_kw": 4843.1,
+   "actual_kw": 3576.5,
+   "residual_kw": -1266.5,
+   "loss_pct": 26.15,
+   "predicted_mwh": 32.691,
+   "actual_mwh": 24.142
+  },
+  {
+   "date": "2025-11-04",
+   "predicted_kw": 3707.5,
+   "actual_kw": 3598.8,
+   "residual_kw": -108.7,
+   "loss_pct": 2.93,
+   "predicted_mwh": 37.075,
+   "actual_mwh": 35.988
+  },
+  {
+   "date": "2025-11-05",
+   "predicted_kw": 2248.7,
+   "actual_kw": 2382.2,
+   "residual_kw": 133.5,
+   "loss_pct": -5.94,
+   "predicted_mwh": 21.363,
+   "actual_mwh": 22.631
+  },
+  {
+   "date": "2025-11-06",
+   "predicted_kw": 2993.4,
+   "actual_kw": 1084.3,
+   "residual_kw": -1909.0,
+   "loss_pct": 63.78,
+   "predicted_mwh": 28.437,
+   "actual_mwh": 10.301
+  },
+  {
+   "date": "2025-11-07",
+   "predicted_kw": 4013.2,
+   "actual_kw": 3994.8,
+   "residual_kw": -18.4,
+   "loss_pct": 0.46,
+   "predicted_mwh": 39.129,
+   "actual_mwh": 38.949
+  },
+  {
+   "date": "2025-11-08",
+   "predicted_kw": 4239.9,
+   "actual_kw": 3339.3,
+   "residual_kw": -900.5,
+   "loss_pct": 21.24,
+   "predicted_mwh": 41.339,
+   "actual_mwh": 32.559
+  },
+  {
+   "date": "2025-11-09",
+   "predicted_kw": 3685.3,
+   "actual_kw": 2678.8,
+   "residual_kw": -1006.5,
+   "loss_pct": 27.31,
+   "predicted_mwh": 35.931,
+   "actual_mwh": 26.118
+  },
+  {
+   "date": "2025-11-10",
+   "predicted_kw": 4116.7,
+   "actual_kw": 4061.1,
+   "residual_kw": -55.7,
+   "loss_pct": 1.35,
+   "predicted_mwh": 41.167,
+   "actual_mwh": 40.611
+  },
+  {
+   "date": "2025-11-11",
+   "predicted_kw": 3923.3,
+   "actual_kw": 2842.7,
+   "residual_kw": -1080.7,
+   "loss_pct": 27.54,
+   "predicted_mwh": 39.233,
+   "actual_mwh": 28.427
+  },
+  {
+   "date": "2025-11-12",
+   "predicted_kw": 3694.7,
+   "actual_kw": 1150.4,
+   "residual_kw": -2544.3,
+   "loss_pct": 68.86,
+   "predicted_mwh": 36.024,
+   "actual_mwh": 11.217
+  },
+  {
+   "date": "2025-11-13",
+   "predicted_kw": 386.5,
+   "actual_kw": 752.7,
+   "residual_kw": 366.3,
+   "loss_pct": -94.78,
+   "predicted_mwh": 3.092,
+   "actual_mwh": 6.022
+  },
+  {
+   "date": "2025-11-14",
+   "predicted_kw": 2785.3,
+   "actual_kw": 2807.8,
+   "residual_kw": 22.5,
+   "loss_pct": -0.81,
+   "predicted_mwh": 24.371,
+   "actual_mwh": 24.568
+  },
+  {
+   "date": "2025-11-15",
+   "predicted_kw": 1045.2,
+   "actual_kw": 1151.1,
+   "residual_kw": 105.9,
+   "loss_pct": -10.13,
+   "predicted_mwh": 9.668,
+   "actual_mwh": 10.647
+  },
+  {
+   "date": "2025-11-16",
+   "predicted_kw": 1641.2,
+   "actual_kw": 717.7,
+   "residual_kw": -923.5,
+   "loss_pct": 56.27,
+   "predicted_mwh": 15.591,
+   "actual_mwh": 6.819
+  },
+  {
+   "date": "2025-11-17",
+   "predicted_kw": 863.2,
+   "actual_kw": 1154.1,
+   "residual_kw": 290.9,
+   "loss_pct": -33.7,
+   "predicted_mwh": 7.769,
+   "actual_mwh": 10.387
+  },
+  {
+   "date": "2025-11-18",
+   "predicted_kw": 3864.0,
+   "actual_kw": 2832.3,
+   "residual_kw": -1031.7,
+   "loss_pct": 26.7,
+   "predicted_mwh": 36.708,
+   "actual_mwh": 26.907
+  },
+  {
+   "date": "2025-11-19",
+   "predicted_kw": 3623.7,
+   "actual_kw": 3630.1,
+   "residual_kw": 6.4,
+   "loss_pct": -0.18,
+   "predicted_mwh": 34.425,
+   "actual_mwh": 34.486
+  },
+  {
+   "date": "2025-11-20",
+   "predicted_kw": 3611.6,
+   "actual_kw": 3500.7,
+   "residual_kw": -110.9,
+   "loss_pct": 3.07,
+   "predicted_mwh": 34.311,
+   "actual_mwh": 33.257
+  },
+  {
+   "date": "2025-11-21",
+   "predicted_kw": 4363.0,
+   "actual_kw": 4282.0,
+   "residual_kw": -81.0,
+   "loss_pct": 1.86,
+   "predicted_mwh": 41.448,
+   "actual_mwh": 40.679
+  },
+  {
+   "date": "2025-11-22",
+   "predicted_kw": 4349.2,
+   "actual_kw": 4276.2,
+   "residual_kw": -72.9,
+   "loss_pct": 1.68,
+   "predicted_mwh": 41.317,
+   "actual_mwh": 40.624
+  },
+  {
+   "date": "2025-11-23",
+   "predicted_kw": 3765.9,
+   "actual_kw": 3701.8,
+   "residual_kw": -64.1,
+   "loss_pct": 1.7,
+   "predicted_mwh": 35.776,
+   "actual_mwh": 35.167
+  },
+  {
+   "date": "2025-11-24",
+   "predicted_kw": 2103.2,
+   "actual_kw": 2291.9,
+   "residual_kw": 188.7,
+   "loss_pct": -8.97,
+   "predicted_mwh": 17.877,
+   "actual_mwh": 19.481
+  },
+  {
+   "date": "2025-11-25",
+   "predicted_kw": 3040.5,
+   "actual_kw": 3011.6,
+   "residual_kw": -29.0,
+   "loss_pct": 0.95,
+   "predicted_mwh": 28.125,
+   "actual_mwh": 27.857
+  },
+  {
+   "date": "2025-11-26",
+   "predicted_kw": 4252.2,
+   "actual_kw": 4166.5,
+   "residual_kw": -85.8,
+   "loss_pct": 2.02,
+   "predicted_mwh": 40.396,
+   "actual_mwh": 39.582
+  },
+  {
+   "date": "2025-11-27",
+   "predicted_kw": 4252.0,
+   "actual_kw": 4136.8,
+   "residual_kw": -115.2,
+   "loss_pct": 2.71,
+   "predicted_mwh": 40.394,
+   "actual_mwh": 39.299
+  },
+  {
+   "date": "2025-11-28",
+   "predicted_kw": 4122.7,
+   "actual_kw": 3969.8,
+   "residual_kw": -152.9,
+   "loss_pct": 3.71,
+   "predicted_mwh": 39.166,
+   "actual_mwh": 37.713
+  },
+  {
+   "date": "2025-11-29",
+   "predicted_kw": 3852.1,
+   "actual_kw": 3809.7,
+   "residual_kw": -42.4,
+   "loss_pct": 1.1,
+   "predicted_mwh": 35.632,
+   "actual_mwh": 35.24
+  },
+  {
+   "date": "2025-11-30",
+   "predicted_kw": 37.5,
+   "actual_kw": 588.8,
+   "residual_kw": 551.4,
+   "loss_pct": -1471.63,
+   "predicted_mwh": 0.328,
+   "actual_mwh": 5.152
+  },
+  {
+   "date": "2025-12-01",
+   "predicted_kw": 3765.9,
+   "actual_kw": 3612.0,
+   "residual_kw": -153.9,
+   "loss_pct": 4.09,
+   "predicted_mwh": 34.835,
+   "actual_mwh": 33.411
+  },
+  {
+   "date": "2025-12-02",
+   "predicted_kw": 918.9,
+   "actual_kw": 1096.8,
+   "residual_kw": 177.9,
+   "loss_pct": -19.36,
+   "predicted_mwh": 8.27,
+   "actual_mwh": 9.871
+  },
+  {
+   "date": "2025-12-03",
+   "predicted_kw": 1994.6,
+   "actual_kw": 1977.8,
+   "residual_kw": -16.8,
+   "loss_pct": 0.84,
+   "predicted_mwh": 17.453,
+   "actual_mwh": 17.306
+  },
+  {
+   "date": "2025-12-04",
+   "predicted_kw": 1470.6,
+   "actual_kw": 1583.8,
+   "residual_kw": 113.2,
+   "loss_pct": -7.7,
+   "predicted_mwh": 12.868,
+   "actual_mwh": 13.858
+  },
+  {
+   "date": "2025-12-05",
+   "predicted_kw": 1352.2,
+   "actual_kw": 1565.2,
+   "residual_kw": 213.0,
+   "loss_pct": -15.75,
+   "predicted_mwh": 11.832,
+   "actual_mwh": 13.696
+  },
+  {
+   "date": "2025-12-06",
+   "predicted_kw": 1269.7,
+   "actual_kw": 1422.0,
+   "residual_kw": 152.3,
+   "loss_pct": -12.0,
+   "predicted_mwh": 10.792,
+   "actual_mwh": 12.087
+  },
+  {
+   "date": "2025-12-07",
+   "predicted_kw": 2760.3,
+   "actual_kw": 2401.1,
+   "residual_kw": -359.3,
+   "loss_pct": 13.02,
+   "predicted_mwh": 25.533,
+   "actual_mwh": 22.21
+  },
+  {
+   "date": "2025-12-08",
+   "predicted_kw": 3810.3,
+   "actual_kw": 3645.4,
+   "residual_kw": -164.9,
+   "loss_pct": 4.33,
+   "predicted_mwh": 35.245,
+   "actual_mwh": 33.72
+  },
+  {
+   "date": "2025-12-09",
+   "predicted_kw": 3114.0,
+   "actual_kw": 2696.4,
+   "residual_kw": -417.6,
+   "loss_pct": 13.41,
+   "predicted_mwh": 28.804,
+   "actual_mwh": 24.942
+  },
+  {
+   "date": "2025-12-10",
+   "predicted_kw": 735.5,
+   "actual_kw": 877.1,
+   "residual_kw": 141.6,
+   "loss_pct": -19.25,
+   "predicted_mwh": 4.045,
+   "actual_mwh": 4.824
+  },
+  {
+   "date": "2025-12-11",
+   "predicted_kw": 3711.4,
+   "actual_kw": 3566.2,
+   "residual_kw": -145.1,
+   "loss_pct": 3.91,
+   "predicted_mwh": 34.33,
+   "actual_mwh": 32.988
+  },
+  {
+   "date": "2025-12-12",
+   "predicted_kw": 2460.1,
+   "actual_kw": 2568.4,
+   "residual_kw": 108.3,
+   "loss_pct": -4.4,
+   "predicted_mwh": 22.14,
+   "actual_mwh": 23.116
+  },
+  {
+   "date": "2025-12-13",
+   "predicted_kw": 2029.9,
+   "actual_kw": 2136.8,
+   "residual_kw": 107.0,
+   "loss_pct": -5.27,
+   "predicted_mwh": 17.762,
+   "actual_mwh": 18.697
+  }
+ ],
+ "recent": [
+  {
+   "timestamp": "2025-09-14 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-15 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-15 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-15 06:00",
+   "predicted_kw": 1387.9,
+   "actual_kw": 1520.4,
+   "residual_kw": -132.5
+  },
+  {
+   "timestamp": "2025-09-15 09:00",
+   "predicted_kw": 5774.2,
+   "actual_kw": 5731.1,
+   "residual_kw": 43.1
+  },
+  {
+   "timestamp": "2025-09-15 12:00",
+   "predicted_kw": 6360.0,
+   "actual_kw": 6329.2,
+   "residual_kw": 30.8
+  },
+  {
+   "timestamp": "2025-09-15 15:00",
+   "predicted_kw": 2894.6,
+   "actual_kw": 2960.1,
+   "residual_kw": -65.5
+  },
+  {
+   "timestamp": "2025-09-15 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 38.9,
+   "residual_kw": -38.9
+  },
+  {
+   "timestamp": "2025-09-15 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-16 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-16 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-16 06:00",
+   "predicted_kw": 1398.3,
+   "actual_kw": 1525.7,
+   "residual_kw": -127.4
+  },
+  {
+   "timestamp": "2025-09-16 09:00",
+   "predicted_kw": 5762.6,
+   "actual_kw": 5719.0,
+   "residual_kw": 43.6
+  },
+  {
+   "timestamp": "2025-09-16 12:00",
+   "predicted_kw": 6292.8,
+   "actual_kw": 6256.7,
+   "residual_kw": 36.1
+  },
+  {
+   "timestamp": "2025-09-16 15:00",
+   "predicted_kw": 2833.5,
+   "actual_kw": 2893.2,
+   "residual_kw": -59.7
+  },
+  {
+   "timestamp": "2025-09-16 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 36.0,
+   "residual_kw": -36.0
+  },
+  {
+   "timestamp": "2025-09-16 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-17 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-17 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-17 06:00",
+   "predicted_kw": 1355.7,
+   "actual_kw": 1472.9,
+   "residual_kw": -117.2
+  },
+  {
+   "timestamp": "2025-09-17 09:00",
+   "predicted_kw": 5684.4,
+   "actual_kw": 5436.6,
+   "residual_kw": 247.8
+  },
+  {
+   "timestamp": "2025-09-17 12:00",
+   "predicted_kw": 6204.4,
+   "actual_kw": 6171.2,
+   "residual_kw": 33.2
+  },
+  {
+   "timestamp": "2025-09-17 15:00",
+   "predicted_kw": 2752.9,
+   "actual_kw": 2807.6,
+   "residual_kw": -54.7
+  },
+  {
+   "timestamp": "2025-09-17 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 32.5,
+   "residual_kw": -32.5
+  },
+  {
+   "timestamp": "2025-09-17 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-18 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-18 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-18 06:00",
+   "predicted_kw": 1359.6,
+   "actual_kw": 1468.7,
+   "residual_kw": -109.0
+  },
+  {
+   "timestamp": "2025-09-18 09:00",
+   "predicted_kw": 5417.8,
+   "actual_kw": 5200.4,
+   "residual_kw": 217.4
+  },
+  {
+   "timestamp": "2025-09-18 12:00",
+   "predicted_kw": 5431.0,
+   "actual_kw": 5174.9,
+   "residual_kw": 256.1
+  },
+  {
+   "timestamp": "2025-09-18 15:00",
+   "predicted_kw": 1493.4,
+   "actual_kw": 1769.6,
+   "residual_kw": -276.2
+  },
+  {
+   "timestamp": "2025-09-18 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 16.3,
+   "residual_kw": -16.3
+  },
+  {
+   "timestamp": "2025-09-18 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-19 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-19 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-19 06:00",
+   "predicted_kw": 1481.3,
+   "actual_kw": 1533.8,
+   "residual_kw": -52.5
+  },
+  {
+   "timestamp": "2025-09-19 09:00",
+   "predicted_kw": 5156.5,
+   "actual_kw": 5097.3,
+   "residual_kw": 59.3
+  },
+  {
+   "timestamp": "2025-09-19 12:00",
+   "predicted_kw": 3451.9,
+   "actual_kw": 3478.2,
+   "residual_kw": -26.3
+  },
+  {
+   "timestamp": "2025-09-19 15:00",
+   "predicted_kw": 1872.1,
+   "actual_kw": 1925.1,
+   "residual_kw": -53.0
+  },
+  {
+   "timestamp": "2025-09-19 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 14.6,
+   "residual_kw": -14.6
+  },
+  {
+   "timestamp": "2025-09-19 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-20 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-20 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-20 06:00",
+   "predicted_kw": 818.7,
+   "actual_kw": 857.1,
+   "residual_kw": -38.4
+  },
+  {
+   "timestamp": "2025-09-20 09:00",
+   "predicted_kw": 5053.0,
+   "actual_kw": 4947.1,
+   "residual_kw": 105.9
+  },
+  {
+   "timestamp": "2025-09-20 12:00",
+   "predicted_kw": 5949.1,
+   "actual_kw": 4093.2,
+   "residual_kw": 1856.0
+  },
+  {
+   "timestamp": "2025-09-20 15:00",
+   "predicted_kw": 2539.7,
+   "actual_kw": 2626.4,
+   "residual_kw": -86.7
+  },
+  {
+   "timestamp": "2025-09-20 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 21.9,
+   "residual_kw": -21.9
+  },
+  {
+   "timestamp": "2025-09-20 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-21 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-21 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-21 06:00",
+   "predicted_kw": 1165.0,
+   "actual_kw": 1191.5,
+   "residual_kw": -26.4
+  },
+  {
+   "timestamp": "2025-09-21 09:00",
+   "predicted_kw": 5593.5,
+   "actual_kw": 344.9,
+   "residual_kw": 5248.6
+  },
+  {
+   "timestamp": "2025-09-21 12:00",
+   "predicted_kw": 6313.7,
+   "actual_kw": 2504.2,
+   "residual_kw": 3809.5
+  },
+  {
+   "timestamp": "2025-09-21 15:00",
+   "predicted_kw": 2468.4,
+   "actual_kw": 542.4,
+   "residual_kw": 1926.0
+  },
+  {
+   "timestamp": "2025-09-21 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 22.4,
+   "residual_kw": -22.4
+  },
+  {
+   "timestamp": "2025-09-21 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-22 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-22 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-22 06:00",
+   "predicted_kw": 1503.1,
+   "actual_kw": 991.5,
+   "residual_kw": 511.6
+  },
+  {
+   "timestamp": "2025-09-22 09:00",
+   "predicted_kw": 6177.3,
+   "actual_kw": 2784.5,
+   "residual_kw": 3392.8
+  },
+  {
+   "timestamp": "2025-09-22 12:00",
+   "predicted_kw": 6524.3,
+   "actual_kw": 6324.2,
+   "residual_kw": 200.1
+  },
+  {
+   "timestamp": "2025-09-22 15:00",
+   "predicted_kw": 2980.7,
+   "actual_kw": 1922.1,
+   "residual_kw": 1058.6
+  },
+  {
+   "timestamp": "2025-09-22 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 21.6,
+   "residual_kw": -21.6
+  },
+  {
+   "timestamp": "2025-09-22 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-23 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-23 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-23 06:00",
+   "predicted_kw": 1456.2,
+   "actual_kw": 1569.9,
+   "residual_kw": -113.6
+  },
+  {
+   "timestamp": "2025-09-23 09:00",
+   "predicted_kw": 6060.8,
+   "actual_kw": 418.3,
+   "residual_kw": 5642.5
+  },
+  {
+   "timestamp": "2025-09-23 12:00",
+   "predicted_kw": 6615.5,
+   "actual_kw": 535.3,
+   "residual_kw": 6080.3
+  },
+  {
+   "timestamp": "2025-09-23 15:00",
+   "predicted_kw": 2930.7,
+   "actual_kw": 1787.0,
+   "residual_kw": 1143.7
+  },
+  {
+   "timestamp": "2025-09-23 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 18.5,
+   "residual_kw": -18.5
+  },
+  {
+   "timestamp": "2025-09-23 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-24 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-24 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-24 06:00",
+   "predicted_kw": 1451.0,
+   "actual_kw": 1574.9,
+   "residual_kw": -123.9
+  },
+  {
+   "timestamp": "2025-09-24 09:00",
+   "predicted_kw": 5560.0,
+   "actual_kw": 5420.1,
+   "residual_kw": 139.8
+  },
+  {
+   "timestamp": "2025-09-24 12:00",
+   "predicted_kw": 5764.3,
+   "actual_kw": 5623.6,
+   "residual_kw": 140.7
+  },
+  {
+   "timestamp": "2025-09-24 15:00",
+   "predicted_kw": 1414.1,
+   "actual_kw": 1646.8,
+   "residual_kw": -232.7
+  },
+  {
+   "timestamp": "2025-09-24 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 19.2,
+   "residual_kw": -19.2
+  },
+  {
+   "timestamp": "2025-09-24 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-25 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-25 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-25 06:00",
+   "predicted_kw": 1364.8,
+   "actual_kw": 1120.9,
+   "residual_kw": -49.8
+  },
+  {
+   "timestamp": "2025-09-25 09:00",
+   "predicted_kw": 5829.2,
+   "actual_kw": 3512.8,
+   "residual_kw": 1116.8
+  },
+  {
+   "timestamp": "2025-09-25 12:00",
+   "predicted_kw": 6147.4,
+   "actual_kw": 4614.3,
+   "residual_kw": 311.1
+  },
+  {
+   "timestamp": "2025-09-25 15:00",
+   "predicted_kw": 2682.5,
+   "actual_kw": 2030.0,
+   "residual_kw": 157.4
+  },
+  {
+   "timestamp": "2025-09-25 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 10.9,
+   "residual_kw": -10.9
+  },
+  {
+   "timestamp": "2025-09-25 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-26 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-26 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-26 06:00",
+   "predicted_kw": 1362.8,
+   "actual_kw": 1102.0,
+   "residual_kw": -32.4
+  },
+  {
+   "timestamp": "2025-09-26 09:00",
+   "predicted_kw": 5878.7,
+   "actual_kw": 3897.7,
+   "residual_kw": 770.2
+  },
+  {
+   "timestamp": "2025-09-26 12:00",
+   "predicted_kw": 6456.9,
+   "actual_kw": 769.5,
+   "residual_kw": 4405.0
+  },
+  {
+   "timestamp": "2025-09-26 15:00",
+   "predicted_kw": 2687.1,
+   "actual_kw": 1885.0,
+   "residual_kw": 303.3
+  },
+  {
+   "timestamp": "2025-09-26 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 8.6,
+   "residual_kw": -8.6
+  },
+  {
+   "timestamp": "2025-09-26 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-27 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-27 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-27 06:00",
+   "predicted_kw": 1394.1,
+   "actual_kw": 914.5,
+   "residual_kw": 179.1
+  },
+  {
+   "timestamp": "2025-09-27 09:00",
+   "predicted_kw": 5405.7,
+   "actual_kw": 527.2,
+   "residual_kw": 3761.1
+  },
+  {
+   "timestamp": "2025-09-27 12:00",
+   "predicted_kw": 5541.9,
+   "actual_kw": 1213.5,
+   "residual_kw": 3228.9
+  },
+  {
+   "timestamp": "2025-09-27 15:00",
+   "predicted_kw": 1918.0,
+   "actual_kw": 1557.4,
+   "residual_kw": 9.6
+  },
+  {
+   "timestamp": "2025-09-27 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 3.5,
+   "residual_kw": -3.5
+  },
+  {
+   "timestamp": "2025-09-27 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-28 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-28 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-28 06:00",
+   "predicted_kw": 1034.4,
+   "actual_kw": 895.8,
+   "residual_kw": -84.1
+  },
+  {
+   "timestamp": "2025-09-28 09:00",
+   "predicted_kw": 2603.1,
+   "actual_kw": 1869.9,
+   "residual_kw": 195.3
+  },
+  {
+   "timestamp": "2025-09-28 12:00",
+   "predicted_kw": 4080.6,
+   "actual_kw": 2850.8,
+   "residual_kw": 410.6
+  },
+  {
+   "timestamp": "2025-09-28 15:00",
+   "predicted_kw": 1553.7,
+   "actual_kw": 1359.8,
+   "residual_kw": -106.3
+  },
+  {
+   "timestamp": "2025-09-28 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 2.6,
+   "residual_kw": -2.6
+  },
+  {
+   "timestamp": "2025-09-28 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-29 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-29 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-29 06:00",
+   "predicted_kw": 312.6,
+   "actual_kw": 400.2,
+   "residual_kw": -159.5
+  },
+  {
+   "timestamp": "2025-09-29 09:00",
+   "predicted_kw": 2845.5,
+   "actual_kw": 2369.9,
+   "residual_kw": -107.8
+  },
+  {
+   "timestamp": "2025-09-29 12:00",
+   "predicted_kw": 4440.4,
+   "actual_kw": 3538.2,
+   "residual_kw": 18.2
+  },
+  {
+   "timestamp": "2025-09-29 15:00",
+   "predicted_kw": 1537.5,
+   "actual_kw": 1417.6,
+   "residual_kw": -161.3
+  },
+  {
+   "timestamp": "2025-09-29 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 4.0,
+   "residual_kw": -4.0
+  },
+  {
+   "timestamp": "2025-09-29 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-30 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-30 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-09-30 06:00",
+   "predicted_kw": 75.4,
+   "actual_kw": 289.3,
+   "residual_kw": -230.8
+  },
+  {
+   "timestamp": "2025-09-30 09:00",
+   "predicted_kw": 5151.7,
+   "actual_kw": 4071.1,
+   "residual_kw": 24.9
+  },
+  {
+   "timestamp": "2025-09-30 12:00",
+   "predicted_kw": 3410.7,
+   "actual_kw": 2901.8,
+   "residual_kw": -180.0
+  },
+  {
+   "timestamp": "2025-09-30 15:00",
+   "predicted_kw": 1256.4,
+   "actual_kw": 1088.4,
+   "residual_kw": -60.1
+  },
+  {
+   "timestamp": "2025-09-30 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 6.4,
+   "residual_kw": -6.4
+  },
+  {
+   "timestamp": "2025-09-30 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-01 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-01 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-01 06:00",
+   "predicted_kw": 999.5,
+   "actual_kw": 907.3,
+   "residual_kw": -124.7
+  },
+  {
+   "timestamp": "2025-10-01 09:00",
+   "predicted_kw": 6016.1,
+   "actual_kw": 4294.7,
+   "residual_kw": 479.2
+  },
+  {
+   "timestamp": "2025-10-01 12:00",
+   "predicted_kw": 6453.4,
+   "actual_kw": 5106.9,
+   "residual_kw": 59.6
+  },
+  {
+   "timestamp": "2025-10-01 15:00",
+   "predicted_kw": 2685.9,
+   "actual_kw": 2284.4,
+   "residual_kw": -90.2
+  },
+  {
+   "timestamp": "2025-10-01 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 4.3,
+   "residual_kw": -4.3
+  },
+  {
+   "timestamp": "2025-10-01 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-02 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-02 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-02 06:00",
+   "predicted_kw": 1413.3,
+   "actual_kw": 1154.2,
+   "residual_kw": -44.4
+  },
+  {
+   "timestamp": "2025-10-02 09:00",
+   "predicted_kw": 6037.9,
+   "actual_kw": 4731.6,
+   "residual_kw": 62.7
+  },
+  {
+   "timestamp": "2025-10-02 12:00",
+   "predicted_kw": 6481.8,
+   "actual_kw": 5122.9,
+   "residual_kw": 69.6
+  },
+  {
+   "timestamp": "2025-10-02 15:00",
+   "predicted_kw": 2642.0,
+   "actual_kw": 2252.4,
+   "residual_kw": -91.4
+  },
+  {
+   "timestamp": "2025-10-02 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 3.3,
+   "residual_kw": -3.3
+  },
+  {
+   "timestamp": "2025-10-02 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-03 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-03 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-03 06:00",
+   "predicted_kw": 1386.8,
+   "actual_kw": 1139.9,
+   "residual_kw": -49.4
+  },
+  {
+   "timestamp": "2025-10-03 09:00",
+   "predicted_kw": 5973.1,
+   "actual_kw": 4683.4,
+   "residual_kw": 62.6
+  },
+  {
+   "timestamp": "2025-10-03 12:00",
+   "predicted_kw": 6457.8,
+   "actual_kw": 5131.9,
+   "residual_kw": 47.2
+  },
+  {
+   "timestamp": "2025-10-03 15:00",
+   "predicted_kw": 2608.7,
+   "actual_kw": 2204.0,
+   "residual_kw": -72.1
+  },
+  {
+   "timestamp": "2025-10-03 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 9.0,
+   "residual_kw": -9.0
+  },
+  {
+   "timestamp": "2025-10-03 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-04 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-04 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-04 06:00",
+   "predicted_kw": 1277.6,
+   "actual_kw": 980.7,
+   "residual_kw": 20.8
+  },
+  {
+   "timestamp": "2025-10-04 09:00",
+   "predicted_kw": 5766.1,
+   "actual_kw": 4016.8,
+   "residual_kw": 563.7
+  },
+  {
+   "timestamp": "2025-10-04 12:00",
+   "predicted_kw": 6372.3,
+   "actual_kw": 2273.4,
+   "residual_kw": 2837.4
+  },
+  {
+   "timestamp": "2025-10-04 15:00",
+   "predicted_kw": 2311.7,
+   "actual_kw": 981.6,
+   "residual_kw": 910.0
+  },
+  {
+   "timestamp": "2025-10-04 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 4.1,
+   "residual_kw": -4.1
+  },
+  {
+   "timestamp": "2025-10-04 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-05 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-05 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-05 06:00",
+   "predicted_kw": 1408.2,
+   "actual_kw": 299.0,
+   "residual_kw": 807.4
+  },
+  {
+   "timestamp": "2025-10-05 09:00",
+   "predicted_kw": 6001.2,
+   "actual_kw": 0.0,
+   "residual_kw": 4769.6
+  },
+  {
+   "timestamp": "2025-10-05 12:00",
+   "predicted_kw": 6414.9,
+   "actual_kw": 0.0,
+   "residual_kw": 5145.4
+  },
+  {
+   "timestamp": "2025-10-05 15:00",
+   "predicted_kw": 2485.9,
+   "actual_kw": 364.9,
+   "residual_kw": 1670.6
+  },
+  {
+   "timestamp": "2025-10-05 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 2.0,
+   "residual_kw": -2.0
+  },
+  {
+   "timestamp": "2025-10-05 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-06 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-06 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-06 06:00",
+   "predicted_kw": 1325.1,
+   "actual_kw": 830.8,
+   "residual_kw": 205.1
+  },
+  {
+   "timestamp": "2025-10-06 09:00",
+   "predicted_kw": 5879.0,
+   "actual_kw": 948.6,
+   "residual_kw": 3725.4
+  },
+  {
+   "timestamp": "2025-10-06 12:00",
+   "predicted_kw": 6226.6,
+   "actual_kw": 1281.5,
+   "residual_kw": 4945.1
+  },
+  {
+   "timestamp": "2025-10-06 15:00",
+   "predicted_kw": 1832.3,
+   "actual_kw": 695.9,
+   "residual_kw": 1136.4
+  },
+  {
+   "timestamp": "2025-10-06 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 4.4,
+   "residual_kw": -4.4
+  },
+  {
+   "timestamp": "2025-10-06 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-07 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-07 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-07 06:00",
+   "predicted_kw": 1356.2,
+   "actual_kw": 1435.4,
+   "residual_kw": -79.2
+  },
+  {
+   "timestamp": "2025-10-07 09:00",
+   "predicted_kw": 5895.3,
+   "actual_kw": 2967.7,
+   "residual_kw": 2927.6
+  },
+  {
+   "timestamp": "2025-10-07 12:00",
+   "predicted_kw": 6368.6,
+   "actual_kw": 4890.6,
+   "residual_kw": 1478.0
+  },
+  {
+   "timestamp": "2025-10-07 15:00",
+   "predicted_kw": 2422.5,
+   "actual_kw": 929.1,
+   "residual_kw": 1493.4
+  },
+  {
+   "timestamp": "2025-10-07 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 1.6,
+   "residual_kw": -1.6
+  },
+  {
+   "timestamp": "2025-10-07 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-08 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-08 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-08 06:00",
+   "predicted_kw": 595.4,
+   "actual_kw": 706.0,
+   "residual_kw": -110.6
+  },
+  {
+   "timestamp": "2025-10-08 09:00",
+   "predicted_kw": 4688.2,
+   "actual_kw": 4657.5,
+   "residual_kw": 30.7
+  },
+  {
+   "timestamp": "2025-10-08 12:00",
+   "predicted_kw": 6453.5,
+   "actual_kw": 6429.1,
+   "residual_kw": 24.4
+  },
+  {
+   "timestamp": "2025-10-08 15:00",
+   "predicted_kw": 2356.5,
+   "actual_kw": 2446.8,
+   "residual_kw": -90.3
+  },
+  {
+   "timestamp": "2025-10-08 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 1.4,
+   "residual_kw": -1.4
+  },
+  {
+   "timestamp": "2025-10-08 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-09 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-09 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-09 06:00",
+   "predicted_kw": 1095.7,
+   "actual_kw": 1194.0,
+   "residual_kw": -98.2
+  },
+  {
+   "timestamp": "2025-10-09 09:00",
+   "predicted_kw": 5742.8,
+   "actual_kw": 5603.3,
+   "residual_kw": 139.5
+  },
+  {
+   "timestamp": "2025-10-09 12:00",
+   "predicted_kw": 6211.9,
+   "actual_kw": 3927.0,
+   "residual_kw": 2284.9
+  },
+  {
+   "timestamp": "2025-10-09 15:00",
+   "predicted_kw": 2213.2,
+   "actual_kw": 1655.7,
+   "residual_kw": 557.5
+  },
+  {
+   "timestamp": "2025-10-09 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.7,
+   "residual_kw": -0.7
+  },
+  {
+   "timestamp": "2025-10-09 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-10 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-10 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-10 06:00",
+   "predicted_kw": 1033.6,
+   "actual_kw": 1099.2,
+   "residual_kw": -65.7
+  },
+  {
+   "timestamp": "2025-10-10 09:00",
+   "predicted_kw": 5897.6,
+   "actual_kw": 629.3,
+   "residual_kw": 5268.4
+  },
+  {
+   "timestamp": "2025-10-10 12:00",
+   "predicted_kw": 5904.9,
+   "actual_kw": 3535.1,
+   "residual_kw": 2369.8
+  },
+  {
+   "timestamp": "2025-10-10 15:00",
+   "predicted_kw": 2669.9,
+   "actual_kw": 2886.8,
+   "residual_kw": -216.9
+  },
+  {
+   "timestamp": "2025-10-10 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.3,
+   "residual_kw": -0.3
+  },
+  {
+   "timestamp": "2025-10-10 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-11 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-11 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-11 06:00",
+   "predicted_kw": 1334.1,
+   "actual_kw": 1423.7,
+   "residual_kw": -89.6
+  },
+  {
+   "timestamp": "2025-10-11 09:00",
+   "predicted_kw": 5953.1,
+   "actual_kw": 5988.1,
+   "residual_kw": -35.0
+  },
+  {
+   "timestamp": "2025-10-11 12:00",
+   "predicted_kw": 6419.6,
+   "actual_kw": 5546.7,
+   "residual_kw": 872.8
+  },
+  {
+   "timestamp": "2025-10-11 15:00",
+   "predicted_kw": 2417.7,
+   "actual_kw": 2490.7,
+   "residual_kw": -73.0
+  },
+  {
+   "timestamp": "2025-10-11 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.6,
+   "residual_kw": -0.6
+  },
+  {
+   "timestamp": "2025-10-11 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-12 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-12 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-12 06:00",
+   "predicted_kw": 1093.0,
+   "actual_kw": 974.5,
+   "residual_kw": 118.6
+  },
+  {
+   "timestamp": "2025-10-12 09:00",
+   "predicted_kw": 5452.1,
+   "actual_kw": 3218.8,
+   "residual_kw": 2233.3
+  },
+  {
+   "timestamp": "2025-10-12 12:00",
+   "predicted_kw": 5848.4,
+   "actual_kw": 962.4,
+   "residual_kw": 4886.0
+  },
+  {
+   "timestamp": "2025-10-12 15:00",
+   "predicted_kw": 1489.3,
+   "actual_kw": 1566.7,
+   "residual_kw": -77.4
+  },
+  {
+   "timestamp": "2025-10-12 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.1,
+   "residual_kw": -0.1
+  },
+  {
+   "timestamp": "2025-10-12 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-13 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-13 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-13 06:00",
+   "predicted_kw": 1173.0,
+   "actual_kw": 1182.2,
+   "residual_kw": -9.2
+  },
+  {
+   "timestamp": "2025-10-13 09:00",
+   "predicted_kw": 5521.8,
+   "actual_kw": 5386.3,
+   "residual_kw": 135.5
+  },
+  {
+   "timestamp": "2025-10-13 12:00",
+   "predicted_kw": 6125.4,
+   "actual_kw": 6025.7,
+   "residual_kw": 99.7
+  },
+  {
+   "timestamp": "2025-10-13 15:00",
+   "predicted_kw": 1978.0,
+   "actual_kw": 2062.0,
+   "residual_kw": -84.1
+  },
+  {
+   "timestamp": "2025-10-13 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.2,
+   "residual_kw": -0.2
+  },
+  {
+   "timestamp": "2025-10-13 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-14 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-14 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-14 06:00",
+   "predicted_kw": 1078.0,
+   "actual_kw": 1167.2,
+   "residual_kw": -89.2
+  },
+  {
+   "timestamp": "2025-10-14 09:00",
+   "predicted_kw": 5571.1,
+   "actual_kw": 3604.0,
+   "residual_kw": 1967.1
+  },
+  {
+   "timestamp": "2025-10-14 12:00",
+   "predicted_kw": 6104.7,
+   "actual_kw": 3096.0,
+   "residual_kw": 3008.7
+  },
+  {
+   "timestamp": "2025-10-14 15:00",
+   "predicted_kw": 2147.7,
+   "actual_kw": 1903.5,
+   "residual_kw": 244.2
+  },
+  {
+   "timestamp": "2025-10-14 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.1,
+   "residual_kw": -0.1
+  },
+  {
+   "timestamp": "2025-10-14 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-15 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-15 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-15 06:00",
+   "predicted_kw": 1112.8,
+   "actual_kw": 1180.0,
+   "residual_kw": -67.2
+  },
+  {
+   "timestamp": "2025-10-15 09:00",
+   "predicted_kw": 5466.7,
+   "actual_kw": 5352.2,
+   "residual_kw": 114.6
+  },
+  {
+   "timestamp": "2025-10-15 12:00",
+   "predicted_kw": 5988.4,
+   "actual_kw": 1720.5,
+   "residual_kw": 4267.9
+  },
+  {
+   "timestamp": "2025-10-15 15:00",
+   "predicted_kw": 1691.7,
+   "actual_kw": 1790.8,
+   "residual_kw": -99.1
+  },
+  {
+   "timestamp": "2025-10-15 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": -0.0
+  },
+  {
+   "timestamp": "2025-10-15 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-16 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-16 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-16 06:00",
+   "predicted_kw": 579.2,
+   "actual_kw": 751.2,
+   "residual_kw": -172.0
+  },
+  {
+   "timestamp": "2025-10-16 09:00",
+   "predicted_kw": 4722.5,
+   "actual_kw": 4588.3,
+   "residual_kw": 134.1
+  },
+  {
+   "timestamp": "2025-10-16 12:00",
+   "predicted_kw": 3886.2,
+   "actual_kw": 3876.3,
+   "residual_kw": 9.8
+  },
+  {
+   "timestamp": "2025-10-16 15:00",
+   "predicted_kw": 1146.6,
+   "actual_kw": 1297.3,
+   "residual_kw": -150.7
+  },
+  {
+   "timestamp": "2025-10-16 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": -0.0
+  },
+  {
+   "timestamp": "2025-10-16 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-17 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-17 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-17 06:00",
+   "predicted_kw": 1086.2,
+   "actual_kw": 1161.0,
+   "residual_kw": -74.8
+  },
+  {
+   "timestamp": "2025-10-17 09:00",
+   "predicted_kw": 5589.0,
+   "actual_kw": 3367.5,
+   "residual_kw": 2221.4
+  },
+  {
+   "timestamp": "2025-10-17 12:00",
+   "predicted_kw": 6157.0,
+   "actual_kw": 900.1,
+   "residual_kw": 5256.9
+  },
+  {
+   "timestamp": "2025-10-17 15:00",
+   "predicted_kw": 609.9,
+   "actual_kw": 544.9,
+   "residual_kw": 65.0
+  },
+  {
+   "timestamp": "2025-10-17 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-17 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-18 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-18 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-18 06:00",
+   "predicted_kw": 1200.2,
+   "actual_kw": 1262.4,
+   "residual_kw": -62.2
+  },
+  {
+   "timestamp": "2025-10-18 09:00",
+   "predicted_kw": 5769.5,
+   "actual_kw": 4041.3,
+   "residual_kw": 1728.2
+  },
+  {
+   "timestamp": "2025-10-18 12:00",
+   "predicted_kw": 6182.7,
+   "actual_kw": 5652.6,
+   "residual_kw": 530.1
+  },
+  {
+   "timestamp": "2025-10-18 15:00",
+   "predicted_kw": 2133.3,
+   "actual_kw": 2185.1,
+   "residual_kw": -51.7
+  },
+  {
+   "timestamp": "2025-10-18 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": -0.0
+  },
+  {
+   "timestamp": "2025-10-18 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-19 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-19 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-19 06:00",
+   "predicted_kw": 1230.4,
+   "actual_kw": 328.3,
+   "residual_kw": 902.2
+  },
+  {
+   "timestamp": "2025-10-19 09:00",
+   "predicted_kw": 3831.9,
+   "actual_kw": 2084.9,
+   "residual_kw": 1747.0
+  },
+  {
+   "timestamp": "2025-10-19 12:00",
+   "predicted_kw": 5654.8,
+   "actual_kw": 5473.1,
+   "residual_kw": 181.7
+  },
+  {
+   "timestamp": "2025-10-19 15:00",
+   "predicted_kw": 1056.4,
+   "actual_kw": 1176.4,
+   "residual_kw": -120.0
+  },
+  {
+   "timestamp": "2025-10-19 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-19 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-20 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-20 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-20 06:00",
+   "predicted_kw": 753.6,
+   "actual_kw": 893.3,
+   "residual_kw": -139.7
+  },
+  {
+   "timestamp": "2025-10-20 09:00",
+   "predicted_kw": 3682.9,
+   "actual_kw": 3755.3,
+   "residual_kw": -72.4
+  },
+  {
+   "timestamp": "2025-10-20 12:00",
+   "predicted_kw": 4082.0,
+   "actual_kw": 4122.0,
+   "residual_kw": -40.0
+  },
+  {
+   "timestamp": "2025-10-20 15:00",
+   "predicted_kw": 1890.1,
+   "actual_kw": 1995.7,
+   "residual_kw": -105.6
+  },
+  {
+   "timestamp": "2025-10-20 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": -0.0
+  },
+  {
+   "timestamp": "2025-10-20 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-21 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-21 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-21 06:00",
+   "predicted_kw": 495.4,
+   "actual_kw": 607.5,
+   "residual_kw": -112.1
+  },
+  {
+   "timestamp": "2025-10-21 09:00",
+   "predicted_kw": 2037.0,
+   "actual_kw": 2128.0,
+   "residual_kw": -91.0
+  },
+  {
+   "timestamp": "2025-10-21 12:00",
+   "predicted_kw": 4108.4,
+   "actual_kw": 4166.1,
+   "residual_kw": -57.6
+  },
+  {
+   "timestamp": "2025-10-21 15:00",
+   "predicted_kw": 2066.8,
+   "actual_kw": 2032.1,
+   "residual_kw": 34.7
+  },
+  {
+   "timestamp": "2025-10-21 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": -0.0
+  },
+  {
+   "timestamp": "2025-10-21 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-22 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-22 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-22 06:00",
+   "predicted_kw": 486.8,
+   "actual_kw": 675.0,
+   "residual_kw": -188.1
+  },
+  {
+   "timestamp": "2025-10-22 09:00",
+   "predicted_kw": 3585.3,
+   "actual_kw": 2279.0,
+   "residual_kw": 1306.3
+  },
+  {
+   "timestamp": "2025-10-22 12:00",
+   "predicted_kw": 5390.8,
+   "actual_kw": 4712.8,
+   "residual_kw": 678.0
+  },
+  {
+   "timestamp": "2025-10-22 15:00",
+   "predicted_kw": 1212.1,
+   "actual_kw": 1351.2,
+   "residual_kw": -139.1
+  },
+  {
+   "timestamp": "2025-10-22 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-22 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-23 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-23 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-23 06:00",
+   "predicted_kw": 808.1,
+   "actual_kw": 958.2,
+   "residual_kw": -150.0
+  },
+  {
+   "timestamp": "2025-10-23 09:00",
+   "predicted_kw": 5007.5,
+   "actual_kw": 4761.9,
+   "residual_kw": 245.7
+  },
+  {
+   "timestamp": "2025-10-23 12:00",
+   "predicted_kw": 6231.9,
+   "actual_kw": 6043.9,
+   "residual_kw": 188.0
+  },
+  {
+   "timestamp": "2025-10-23 15:00",
+   "predicted_kw": 2072.6,
+   "actual_kw": 2092.2,
+   "residual_kw": -19.6
+  },
+  {
+   "timestamp": "2025-10-23 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-23 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-24 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-24 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-24 06:00",
+   "predicted_kw": 1140.1,
+   "actual_kw": 1145.0,
+   "residual_kw": -4.8
+  },
+  {
+   "timestamp": "2025-10-24 09:00",
+   "predicted_kw": 5655.3,
+   "actual_kw": 5508.8,
+   "residual_kw": 146.5
+  },
+  {
+   "timestamp": "2025-10-24 12:00",
+   "predicted_kw": 6047.6,
+   "actual_kw": 6019.2,
+   "residual_kw": 28.4
+  },
+  {
+   "timestamp": "2025-10-24 15:00",
+   "predicted_kw": 1846.1,
+   "actual_kw": 1948.3,
+   "residual_kw": -102.2
+  },
+  {
+   "timestamp": "2025-10-24 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-24 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-25 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-25 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-25 06:00",
+   "predicted_kw": 970.3,
+   "actual_kw": 990.6,
+   "residual_kw": -20.3
+  },
+  {
+   "timestamp": "2025-10-25 09:00",
+   "predicted_kw": 5450.8,
+   "actual_kw": 5286.6,
+   "residual_kw": 164.2
+  },
+  {
+   "timestamp": "2025-10-25 12:00",
+   "predicted_kw": 5641.6,
+   "actual_kw": 5574.4,
+   "residual_kw": 67.2
+  },
+  {
+   "timestamp": "2025-10-25 15:00",
+   "predicted_kw": 1438.1,
+   "actual_kw": 1590.4,
+   "residual_kw": -152.3
+  },
+  {
+   "timestamp": "2025-10-25 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-25 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-26 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-26 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-26 06:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 262.4,
+   "residual_kw": -262.4
+  },
+  {
+   "timestamp": "2025-10-26 09:00",
+   "predicted_kw": 1428.8,
+   "actual_kw": 1602.1,
+   "residual_kw": -173.3
+  },
+  {
+   "timestamp": "2025-10-26 12:00",
+   "predicted_kw": 2195.0,
+   "actual_kw": 2123.4,
+   "residual_kw": 71.6
+  },
+  {
+   "timestamp": "2025-10-26 15:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 130.2,
+   "residual_kw": -130.2
+  },
+  {
+   "timestamp": "2025-10-26 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-26 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-27 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-27 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-27 06:00",
+   "predicted_kw": 795.6,
+   "actual_kw": 671.0,
+   "residual_kw": 124.6
+  },
+  {
+   "timestamp": "2025-10-27 09:00",
+   "predicted_kw": 5603.8,
+   "actual_kw": 5219.9,
+   "residual_kw": 384.0
+  },
+  {
+   "timestamp": "2025-10-27 12:00",
+   "predicted_kw": 5709.3,
+   "actual_kw": 5421.4,
+   "residual_kw": 287.9
+  },
+  {
+   "timestamp": "2025-10-27 15:00",
+   "predicted_kw": 2029.7,
+   "actual_kw": 2035.4,
+   "residual_kw": -5.7
+  },
+  {
+   "timestamp": "2025-10-27 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-27 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-28 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-28 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-28 06:00",
+   "predicted_kw": 781.1,
+   "actual_kw": 907.9,
+   "residual_kw": -126.7
+  },
+  {
+   "timestamp": "2025-10-28 09:00",
+   "predicted_kw": 4973.2,
+   "actual_kw": 4931.2,
+   "residual_kw": 42.0
+  },
+  {
+   "timestamp": "2025-10-28 12:00",
+   "predicted_kw": 4810.9,
+   "actual_kw": 4689.6,
+   "residual_kw": 121.3
+  },
+  {
+   "timestamp": "2025-10-28 15:00",
+   "predicted_kw": 215.4,
+   "actual_kw": 458.7,
+   "residual_kw": -243.3
+  },
+  {
+   "timestamp": "2025-10-28 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-28 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-29 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-29 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-29 06:00",
+   "predicted_kw": 8.7,
+   "actual_kw": 328.6,
+   "residual_kw": -319.9
+  },
+  {
+   "timestamp": "2025-10-29 09:00",
+   "predicted_kw": 2203.7,
+   "actual_kw": 2014.2,
+   "residual_kw": 189.5
+  },
+  {
+   "timestamp": "2025-10-29 12:00",
+   "predicted_kw": 1262.7,
+   "actual_kw": 1302.9,
+   "residual_kw": -40.2
+  },
+  {
+   "timestamp": "2025-10-29 15:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 57.7,
+   "residual_kw": -57.7
+  },
+  {
+   "timestamp": "2025-10-29 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-29 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-30 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-30 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-30 06:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-30 09:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-30 12:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-30 15:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-30 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-30 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-31 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-31 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-31 06:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-31 09:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-31 12:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-31 15:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-31 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-10-31 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-01 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-01 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-01 06:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-01 09:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-01 12:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-01 15:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-01 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-01 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-02 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-02 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-02 06:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-02 09:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-02 12:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-02 15:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-02 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-02 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-03 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-03 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-03 06:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-03 09:00",
+   "predicted_kw": 3185.9,
+   "actual_kw": 3152.4,
+   "residual_kw": 33.5
+  },
+  {
+   "timestamp": "2025-11-03 12:00",
+   "predicted_kw": 5969.1,
+   "actual_kw": 3392.7,
+   "residual_kw": 2576.4
+  },
+  {
+   "timestamp": "2025-11-03 15:00",
+   "predicted_kw": 1741.9,
+   "actual_kw": 1510.1,
+   "residual_kw": 231.9
+  },
+  {
+   "timestamp": "2025-11-03 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-03 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-04 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-04 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-04 06:00",
+   "predicted_kw": 555.2,
+   "actual_kw": 673.5,
+   "residual_kw": -118.4
+  },
+  {
+   "timestamp": "2025-11-04 09:00",
+   "predicted_kw": 5192.1,
+   "actual_kw": 4776.6,
+   "residual_kw": 415.5
+  },
+  {
+   "timestamp": "2025-11-04 12:00",
+   "predicted_kw": 5015.4,
+   "actual_kw": 4923.2,
+   "residual_kw": 92.2
+  },
+  {
+   "timestamp": "2025-11-04 15:00",
+   "predicted_kw": 1595.5,
+   "actual_kw": 1641.5,
+   "residual_kw": -46.0
+  },
+  {
+   "timestamp": "2025-11-04 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-04 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-05 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-05 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-05 06:00",
+   "predicted_kw": 118.8,
+   "actual_kw": 352.2,
+   "residual_kw": -233.4
+  },
+  {
+   "timestamp": "2025-11-05 09:00",
+   "predicted_kw": 2866.2,
+   "actual_kw": 2881.7,
+   "residual_kw": -15.5
+  },
+  {
+   "timestamp": "2025-11-05 12:00",
+   "predicted_kw": 3001.7,
+   "actual_kw": 3081.0,
+   "residual_kw": -79.3
+  },
+  {
+   "timestamp": "2025-11-05 15:00",
+   "predicted_kw": 1134.2,
+   "actual_kw": 1257.9,
+   "residual_kw": -123.7
+  },
+  {
+   "timestamp": "2025-11-05 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-05 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-06 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-06 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-06 06:00",
+   "predicted_kw": 896.8,
+   "actual_kw": 345.7,
+   "residual_kw": 551.1
+  },
+  {
+   "timestamp": "2025-11-06 09:00",
+   "predicted_kw": 4629.4,
+   "actual_kw": 841.5,
+   "residual_kw": 3787.9
+  },
+  {
+   "timestamp": "2025-11-06 12:00",
+   "predicted_kw": 3501.9,
+   "actual_kw": 1644.7,
+   "residual_kw": 1857.2
+  },
+  {
+   "timestamp": "2025-11-06 15:00",
+   "predicted_kw": 451.0,
+   "actual_kw": 629.0,
+   "residual_kw": -178.0
+  },
+  {
+   "timestamp": "2025-11-06 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-06 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-07 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-07 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-07 06:00",
+   "predicted_kw": 780.3,
+   "actual_kw": 807.1,
+   "residual_kw": -26.8
+  },
+  {
+   "timestamp": "2025-11-07 09:00",
+   "predicted_kw": 5433.2,
+   "actual_kw": 5275.6,
+   "residual_kw": 157.5
+  },
+  {
+   "timestamp": "2025-11-07 12:00",
+   "predicted_kw": 5917.4,
+   "actual_kw": 5849.6,
+   "residual_kw": 67.8
+  },
+  {
+   "timestamp": "2025-11-07 15:00",
+   "predicted_kw": 912.0,
+   "actual_kw": 1075.8,
+   "residual_kw": -163.7
+  },
+  {
+   "timestamp": "2025-11-07 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-07 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-08 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-08 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-08 06:00",
+   "predicted_kw": 914.4,
+   "actual_kw": 868.9,
+   "residual_kw": 45.5
+  },
+  {
+   "timestamp": "2025-11-08 09:00",
+   "predicted_kw": 5580.6,
+   "actual_kw": 3992.4,
+   "residual_kw": 1588.2
+  },
+  {
+   "timestamp": "2025-11-08 12:00",
+   "predicted_kw": 5679.3,
+   "actual_kw": 4382.0,
+   "residual_kw": 1297.3
+  },
+  {
+   "timestamp": "2025-11-08 15:00",
+   "predicted_kw": 1605.4,
+   "actual_kw": 1628.2,
+   "residual_kw": -22.8
+  },
+  {
+   "timestamp": "2025-11-08 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-08 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-09 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-09 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-09 06:00",
+   "predicted_kw": 854.1,
+   "actual_kw": 852.7,
+   "residual_kw": 1.4
+  },
+  {
+   "timestamp": "2025-11-09 09:00",
+   "predicted_kw": 5152.9,
+   "actual_kw": 3008.0,
+   "residual_kw": 2144.9
+  },
+  {
+   "timestamp": "2025-11-09 12:00",
+   "predicted_kw": 5240.8,
+   "actual_kw": 3977.2,
+   "residual_kw": 1263.5
+  },
+  {
+   "timestamp": "2025-11-09 15:00",
+   "predicted_kw": 729.3,
+   "actual_kw": 885.6,
+   "residual_kw": -156.3
+  },
+  {
+   "timestamp": "2025-11-09 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-09 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-10 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-10 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-10 06:00",
+   "predicted_kw": 867.7,
+   "actual_kw": 847.6,
+   "residual_kw": 20.0
+  },
+  {
+   "timestamp": "2025-11-10 09:00",
+   "predicted_kw": 5107.6,
+   "actual_kw": 5025.8,
+   "residual_kw": 81.8
+  },
+  {
+   "timestamp": "2025-11-10 12:00",
+   "predicted_kw": 6005.7,
+   "actual_kw": 5944.1,
+   "residual_kw": 61.6
+  },
+  {
+   "timestamp": "2025-11-10 15:00",
+   "predicted_kw": 1741.5,
+   "actual_kw": 1731.4,
+   "residual_kw": 10.1
+  },
+  {
+   "timestamp": "2025-11-10 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-10 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-11 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-11 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-11 06:00",
+   "predicted_kw": 852.6,
+   "actual_kw": 819.4,
+   "residual_kw": 33.2
+  },
+  {
+   "timestamp": "2025-11-11 09:00",
+   "predicted_kw": 5134.1,
+   "actual_kw": 4499.7,
+   "residual_kw": 634.4
+  },
+  {
+   "timestamp": "2025-11-11 12:00",
+   "predicted_kw": 5445.1,
+   "actual_kw": 2520.8,
+   "residual_kw": 2924.3
+  },
+  {
+   "timestamp": "2025-11-11 15:00",
+   "predicted_kw": 1646.0,
+   "actual_kw": 1654.4,
+   "residual_kw": -8.4
+  },
+  {
+   "timestamp": "2025-11-11 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-11 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-12 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-12 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-12 06:00",
+   "predicted_kw": 150.0,
+   "actual_kw": 352.1,
+   "residual_kw": -202.0
+  },
+  {
+   "timestamp": "2025-11-12 09:00",
+   "predicted_kw": 5140.9,
+   "actual_kw": 1201.5,
+   "residual_kw": 3939.5
+  },
+  {
+   "timestamp": "2025-11-12 12:00",
+   "predicted_kw": 5473.3,
+   "actual_kw": 890.3,
+   "residual_kw": 4583.0
+  },
+  {
+   "timestamp": "2025-11-12 15:00",
+   "predicted_kw": 1243.7,
+   "actual_kw": 1314.5,
+   "residual_kw": -70.9
+  },
+  {
+   "timestamp": "2025-11-12 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-12 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-13 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-13 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-13 06:00",
+   "predicted_kw": 129.6,
+   "actual_kw": 306.9,
+   "residual_kw": -177.3
+  },
+  {
+   "timestamp": "2025-11-13 09:00",
+   "predicted_kw": 516.7,
+   "actual_kw": 888.8,
+   "residual_kw": -372.1
+  },
+  {
+   "timestamp": "2025-11-13 12:00",
+   "predicted_kw": 384.2,
+   "actual_kw": 762.3,
+   "residual_kw": -378.1
+  },
+  {
+   "timestamp": "2025-11-13 15:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 100.6,
+   "residual_kw": -100.6
+  },
+  {
+   "timestamp": "2025-11-13 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-13 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-14 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-14 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-14 06:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 118.8,
+   "residual_kw": -118.8
+  },
+  {
+   "timestamp": "2025-11-14 09:00",
+   "predicted_kw": 2995.8,
+   "actual_kw": 2966.3,
+   "residual_kw": 29.5
+  },
+  {
+   "timestamp": "2025-11-14 12:00",
+   "predicted_kw": 5037.6,
+   "actual_kw": 4919.4,
+   "residual_kw": 118.2
+  },
+  {
+   "timestamp": "2025-11-14 15:00",
+   "predicted_kw": 90.3,
+   "actual_kw": 209.3,
+   "residual_kw": -119.0
+  },
+  {
+   "timestamp": "2025-11-14 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-14 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-15 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-15 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-15 06:00",
+   "predicted_kw": 112.0,
+   "actual_kw": 243.8,
+   "residual_kw": -131.8
+  },
+  {
+   "timestamp": "2025-11-15 09:00",
+   "predicted_kw": 2125.4,
+   "actual_kw": 2014.4,
+   "residual_kw": 111.0
+  },
+  {
+   "timestamp": "2025-11-15 12:00",
+   "predicted_kw": 985.3,
+   "actual_kw": 1135.3,
+   "residual_kw": -150.0
+  },
+  {
+   "timestamp": "2025-11-15 15:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 192.6,
+   "residual_kw": -192.6
+  },
+  {
+   "timestamp": "2025-11-15 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-15 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-16 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-16 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-16 06:00",
+   "predicted_kw": 259.3,
+   "actual_kw": 262.4,
+   "residual_kw": -3.1
+  },
+  {
+   "timestamp": "2025-11-16 09:00",
+   "predicted_kw": 1551.1,
+   "actual_kw": 703.2,
+   "residual_kw": 847.9
+  },
+  {
+   "timestamp": "2025-11-16 12:00",
+   "predicted_kw": 2843.6,
+   "actual_kw": 891.2,
+   "residual_kw": 1952.4
+  },
+  {
+   "timestamp": "2025-11-16 15:00",
+   "predicted_kw": 543.2,
+   "actual_kw": 434.1,
+   "residual_kw": 109.1
+  },
+  {
+   "timestamp": "2025-11-16 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-16 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-17 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-17 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-17 06:00",
+   "predicted_kw": 404.8,
+   "actual_kw": 524.0,
+   "residual_kw": -119.2
+  },
+  {
+   "timestamp": "2025-11-17 09:00",
+   "predicted_kw": 2016.1,
+   "actual_kw": 2032.5,
+   "residual_kw": -16.4
+  },
+  {
+   "timestamp": "2025-11-17 12:00",
+   "predicted_kw": 168.8,
+   "actual_kw": 603.1,
+   "residual_kw": -434.3
+  },
+  {
+   "timestamp": "2025-11-17 15:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 328.1,
+   "residual_kw": -328.1
+  },
+  {
+   "timestamp": "2025-11-17 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-17 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-18 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-18 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-18 06:00",
+   "predicted_kw": 695.6,
+   "actual_kw": 642.4,
+   "residual_kw": 53.2
+  },
+  {
+   "timestamp": "2025-11-18 09:00",
+   "predicted_kw": 3942.2,
+   "actual_kw": 2331.8,
+   "residual_kw": 1610.4
+  },
+  {
+   "timestamp": "2025-11-18 12:00",
+   "predicted_kw": 6008.8,
+   "actual_kw": 4488.4,
+   "residual_kw": 1520.4
+  },
+  {
+   "timestamp": "2025-11-18 15:00",
+   "predicted_kw": 1589.3,
+   "actual_kw": 1528.1,
+   "residual_kw": 61.2
+  },
+  {
+   "timestamp": "2025-11-18 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-18 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-19 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-19 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-19 06:00",
+   "predicted_kw": 718.6,
+   "actual_kw": 673.7,
+   "residual_kw": 44.8
+  },
+  {
+   "timestamp": "2025-11-19 09:00",
+   "predicted_kw": 5047.8,
+   "actual_kw": 5034.8,
+   "residual_kw": 13.0
+  },
+  {
+   "timestamp": "2025-11-19 12:00",
+   "predicted_kw": 5163.1,
+   "actual_kw": 5081.1,
+   "residual_kw": 82.0
+  },
+  {
+   "timestamp": "2025-11-19 15:00",
+   "predicted_kw": 545.7,
+   "actual_kw": 724.4,
+   "residual_kw": -178.7
+  },
+  {
+   "timestamp": "2025-11-19 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-19 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-20 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-20 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-20 06:00",
+   "predicted_kw": 65.8,
+   "actual_kw": 294.2,
+   "residual_kw": -228.3
+  },
+  {
+   "timestamp": "2025-11-20 09:00",
+   "predicted_kw": 3851.0,
+   "actual_kw": 3440.1,
+   "residual_kw": 411.0
+  },
+  {
+   "timestamp": "2025-11-20 12:00",
+   "predicted_kw": 5966.9,
+   "actual_kw": 5845.7,
+   "residual_kw": 121.2
+  },
+  {
+   "timestamp": "2025-11-20 15:00",
+   "predicted_kw": 1553.0,
+   "actual_kw": 1522.4,
+   "residual_kw": 30.7
+  },
+  {
+   "timestamp": "2025-11-20 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-20 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-21 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-21 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-21 06:00",
+   "predicted_kw": 689.6,
+   "actual_kw": 639.0,
+   "residual_kw": 50.7
+  },
+  {
+   "timestamp": "2025-11-21 09:00",
+   "predicted_kw": 5447.1,
+   "actual_kw": 5303.7,
+   "residual_kw": 143.4
+  },
+  {
+   "timestamp": "2025-11-21 12:00",
+   "predicted_kw": 6048.8,
+   "actual_kw": 6059.6,
+   "residual_kw": -10.7
+  },
+  {
+   "timestamp": "2025-11-21 15:00",
+   "predicted_kw": 1630.5,
+   "actual_kw": 1577.3,
+   "residual_kw": 53.2
+  },
+  {
+   "timestamp": "2025-11-21 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-21 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-22 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-22 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-22 06:00",
+   "predicted_kw": 707.4,
+   "actual_kw": 661.0,
+   "residual_kw": 46.4
+  },
+  {
+   "timestamp": "2025-11-22 09:00",
+   "predicted_kw": 5458.8,
+   "actual_kw": 5331.0,
+   "residual_kw": 127.7
+  },
+  {
+   "timestamp": "2025-11-22 12:00",
+   "predicted_kw": 6057.6,
+   "actual_kw": 6045.9,
+   "residual_kw": 11.7
+  },
+  {
+   "timestamp": "2025-11-22 15:00",
+   "predicted_kw": 1548.6,
+   "actual_kw": 1525.5,
+   "residual_kw": 23.1
+  },
+  {
+   "timestamp": "2025-11-22 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-22 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-23 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-23 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-23 06:00",
+   "predicted_kw": 529.2,
+   "actual_kw": 558.4,
+   "residual_kw": -29.2
+  },
+  {
+   "timestamp": "2025-11-23 09:00",
+   "predicted_kw": 4755.6,
+   "actual_kw": 4642.1,
+   "residual_kw": 113.4
+  },
+  {
+   "timestamp": "2025-11-23 12:00",
+   "predicted_kw": 5236.2,
+   "actual_kw": 5140.6,
+   "residual_kw": 95.7
+  },
+  {
+   "timestamp": "2025-11-23 15:00",
+   "predicted_kw": 1404.4,
+   "actual_kw": 1394.9,
+   "residual_kw": 9.5
+  },
+  {
+   "timestamp": "2025-11-23 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-23 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-24 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-24 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-24 06:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 119.8,
+   "residual_kw": -119.8
+  },
+  {
+   "timestamp": "2025-11-24 09:00",
+   "predicted_kw": 3282.7,
+   "actual_kw": 3445.0,
+   "residual_kw": -162.2
+  },
+  {
+   "timestamp": "2025-11-24 12:00",
+   "predicted_kw": 2676.3,
+   "actual_kw": 2697.2,
+   "residual_kw": -20.9
+  },
+  {
+   "timestamp": "2025-11-24 15:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 257.3,
+   "residual_kw": -257.3
+  },
+  {
+   "timestamp": "2025-11-24 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-24 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-25 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-25 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-25 06:00",
+   "predicted_kw": 89.4,
+   "actual_kw": 229.8,
+   "residual_kw": -140.4
+  },
+  {
+   "timestamp": "2025-11-25 09:00",
+   "predicted_kw": 2277.0,
+   "actual_kw": 2090.1,
+   "residual_kw": 186.9
+  },
+  {
+   "timestamp": "2025-11-25 12:00",
+   "predicted_kw": 5740.7,
+   "actual_kw": 5690.7,
+   "residual_kw": 50.1
+  },
+  {
+   "timestamp": "2025-11-25 15:00",
+   "predicted_kw": 1267.9,
+   "actual_kw": 1302.4,
+   "residual_kw": -34.4
+  },
+  {
+   "timestamp": "2025-11-25 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-25 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-26 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-26 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-26 06:00",
+   "predicted_kw": 630.9,
+   "actual_kw": 557.3,
+   "residual_kw": 73.6
+  },
+  {
+   "timestamp": "2025-11-26 09:00",
+   "predicted_kw": 5291.7,
+   "actual_kw": 5190.0,
+   "residual_kw": 101.8
+  },
+  {
+   "timestamp": "2025-11-26 12:00",
+   "predicted_kw": 5979.7,
+   "actual_kw": 5981.3,
+   "residual_kw": -1.6
+  },
+  {
+   "timestamp": "2025-11-26 15:00",
+   "predicted_kw": 1563.1,
+   "actual_kw": 1486.7,
+   "residual_kw": 76.3
+  },
+  {
+   "timestamp": "2025-11-26 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-26 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-27 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-27 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-27 06:00",
+   "predicted_kw": 643.0,
+   "actual_kw": 557.4,
+   "residual_kw": 85.6
+  },
+  {
+   "timestamp": "2025-11-27 09:00",
+   "predicted_kw": 5300.1,
+   "actual_kw": 5158.6,
+   "residual_kw": 141.5
+  },
+  {
+   "timestamp": "2025-11-27 12:00",
+   "predicted_kw": 5954.4,
+   "actual_kw": 5933.3,
+   "residual_kw": 21.1
+  },
+  {
+   "timestamp": "2025-11-27 15:00",
+   "predicted_kw": 1567.1,
+   "actual_kw": 1471.6,
+   "residual_kw": 95.5
+  },
+  {
+   "timestamp": "2025-11-27 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-27 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-28 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-28 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-28 06:00",
+   "predicted_kw": 599.7,
+   "actual_kw": 522.4,
+   "residual_kw": 77.3
+  },
+  {
+   "timestamp": "2025-11-28 09:00",
+   "predicted_kw": 5144.8,
+   "actual_kw": 4959.0,
+   "residual_kw": 185.7
+  },
+  {
+   "timestamp": "2025-11-28 12:00",
+   "predicted_kw": 5801.1,
+   "actual_kw": 5702.5,
+   "residual_kw": 98.6
+  },
+  {
+   "timestamp": "2025-11-28 15:00",
+   "predicted_kw": 1509.7,
+   "actual_kw": 1409.1,
+   "residual_kw": 100.6
+  },
+  {
+   "timestamp": "2025-11-28 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-28 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-29 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-29 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-29 06:00",
+   "predicted_kw": 498.9,
+   "actual_kw": 431.5,
+   "residual_kw": 67.3
+  },
+  {
+   "timestamp": "2025-11-29 09:00",
+   "predicted_kw": 5067.6,
+   "actual_kw": 4921.2,
+   "residual_kw": 146.3
+  },
+  {
+   "timestamp": "2025-11-29 12:00",
+   "predicted_kw": 5505.2,
+   "actual_kw": 5464.9,
+   "residual_kw": 40.3
+  },
+  {
+   "timestamp": "2025-11-29 15:00",
+   "predicted_kw": 805.7,
+   "actual_kw": 955.2,
+   "residual_kw": -149.5
+  },
+  {
+   "timestamp": "2025-11-29 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-29 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-30 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-30 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-30 06:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 84.1,
+   "residual_kw": -84.1
+  },
+  {
+   "timestamp": "2025-11-30 09:00",
+   "predicted_kw": 19.7,
+   "actual_kw": 649.3,
+   "residual_kw": -629.6
+  },
+  {
+   "timestamp": "2025-11-30 12:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 460.8,
+   "residual_kw": -460.8
+  },
+  {
+   "timestamp": "2025-11-30 15:00",
+   "predicted_kw": 89.6,
+   "actual_kw": 550.7,
+   "residual_kw": -461.2
+  },
+  {
+   "timestamp": "2025-11-30 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-11-30 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-01 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-01 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-01 06:00",
+   "predicted_kw": 493.9,
+   "actual_kw": 435.2,
+   "residual_kw": 58.7
+  },
+  {
+   "timestamp": "2025-12-01 09:00",
+   "predicted_kw": 4455.3,
+   "actual_kw": 4108.8,
+   "residual_kw": 346.5
+  },
+  {
+   "timestamp": "2025-12-01 12:00",
+   "predicted_kw": 5542.2,
+   "actual_kw": 5415.7,
+   "residual_kw": 126.5
+  },
+  {
+   "timestamp": "2025-12-01 15:00",
+   "predicted_kw": 1120.1,
+   "actual_kw": 1188.0,
+   "residual_kw": -68.0
+  },
+  {
+   "timestamp": "2025-12-01 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-01 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-02 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-02 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-02 06:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 133.3,
+   "residual_kw": -133.3
+  },
+  {
+   "timestamp": "2025-12-02 09:00",
+   "predicted_kw": 2117.4,
+   "actual_kw": 2088.4,
+   "residual_kw": 29.0
+  },
+  {
+   "timestamp": "2025-12-02 12:00",
+   "predicted_kw": 639.2,
+   "actual_kw": 848.2,
+   "residual_kw": -209.0
+  },
+  {
+   "timestamp": "2025-12-02 15:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 239.0,
+   "residual_kw": -239.0
+  },
+  {
+   "timestamp": "2025-12-02 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-02 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-03 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-03 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-03 06:00",
+   "predicted_kw": 49.0,
+   "actual_kw": 130.7,
+   "residual_kw": -81.7
+  },
+  {
+   "timestamp": "2025-12-03 09:00",
+   "predicted_kw": 1578.2,
+   "actual_kw": 1607.1,
+   "residual_kw": -29.0
+  },
+  {
+   "timestamp": "2025-12-03 12:00",
+   "predicted_kw": 2658.9,
+   "actual_kw": 2651.7,
+   "residual_kw": 7.3
+  },
+  {
+   "timestamp": "2025-12-03 15:00",
+   "predicted_kw": 1531.5,
+   "actual_kw": 1405.2,
+   "residual_kw": 126.3
+  },
+  {
+   "timestamp": "2025-12-03 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-03 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-04 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-04 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-04 06:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 150.6,
+   "residual_kw": -150.6
+  },
+  {
+   "timestamp": "2025-12-04 09:00",
+   "predicted_kw": 1980.2,
+   "actual_kw": 1961.9,
+   "residual_kw": 18.3
+  },
+  {
+   "timestamp": "2025-12-04 12:00",
+   "predicted_kw": 2309.0,
+   "actual_kw": 2310.0,
+   "residual_kw": -1.0
+  },
+  {
+   "timestamp": "2025-12-04 15:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 221.9,
+   "residual_kw": -221.9
+  },
+  {
+   "timestamp": "2025-12-04 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-04 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-05 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-05 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-05 06:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 132.6,
+   "residual_kw": -132.6
+  },
+  {
+   "timestamp": "2025-12-05 09:00",
+   "predicted_kw": 1134.8,
+   "actual_kw": 1314.3,
+   "residual_kw": -179.5
+  },
+  {
+   "timestamp": "2025-12-05 12:00",
+   "predicted_kw": 2574.3,
+   "actual_kw": 2614.6,
+   "residual_kw": -40.4
+  },
+  {
+   "timestamp": "2025-12-05 15:00",
+   "predicted_kw": 234.8,
+   "actual_kw": 527.9,
+   "residual_kw": -293.1
+  },
+  {
+   "timestamp": "2025-12-05 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-05 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-06 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-06 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-06 06:00",
+   "predicted_kw": 194.8,
+   "actual_kw": 251.5,
+   "residual_kw": -56.8
+  },
+  {
+   "timestamp": "2025-12-06 09:00",
+   "predicted_kw": 1464.8,
+   "actual_kw": 1536.6,
+   "residual_kw": -71.9
+  },
+  {
+   "timestamp": "2025-12-06 12:00",
+   "predicted_kw": 1549.6,
+   "actual_kw": 1716.2,
+   "residual_kw": -166.6
+  },
+  {
+   "timestamp": "2025-12-06 15:00",
+   "predicted_kw": 388.3,
+   "actual_kw": 556.9,
+   "residual_kw": -168.6
+  },
+  {
+   "timestamp": "2025-12-06 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-06 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-07 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-07 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-07 06:00",
+   "predicted_kw": 423.2,
+   "actual_kw": 344.5,
+   "residual_kw": 78.7
+  },
+  {
+   "timestamp": "2025-12-07 09:00",
+   "predicted_kw": 2523.1,
+   "actual_kw": 1892.5,
+   "residual_kw": 630.6
+  },
+  {
+   "timestamp": "2025-12-07 12:00",
+   "predicted_kw": 4183.4,
+   "actual_kw": 3893.0,
+   "residual_kw": 290.4
+  },
+  {
+   "timestamp": "2025-12-07 15:00",
+   "predicted_kw": 1381.3,
+   "actual_kw": 1293.1,
+   "residual_kw": 88.3
+  },
+  {
+   "timestamp": "2025-12-07 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-07 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-08 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-08 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-08 06:00",
+   "predicted_kw": 429.9,
+   "actual_kw": 369.0,
+   "residual_kw": 60.9
+  },
+  {
+   "timestamp": "2025-12-08 09:00",
+   "predicted_kw": 4811.5,
+   "actual_kw": 4574.1,
+   "residual_kw": 237.4
+  },
+  {
+   "timestamp": "2025-12-08 12:00",
+   "predicted_kw": 5226.1,
+   "actual_kw": 5125.9,
+   "residual_kw": 100.2
+  },
+  {
+   "timestamp": "2025-12-08 15:00",
+   "predicted_kw": 1280.9,
+   "actual_kw": 1185.7,
+   "residual_kw": 95.1
+  },
+  {
+   "timestamp": "2025-12-08 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-08 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-09 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-09 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-09 06:00",
+   "predicted_kw": 270.6,
+   "actual_kw": 319.2,
+   "residual_kw": -48.6
+  },
+  {
+   "timestamp": "2025-12-09 09:00",
+   "predicted_kw": 4462.6,
+   "actual_kw": 3503.4,
+   "residual_kw": 362.8
+  },
+  {
+   "timestamp": "2025-12-09 12:00",
+   "predicted_kw": 4586.8,
+   "actual_kw": 3921.2,
+   "residual_kw": 231.6
+  },
+  {
+   "timestamp": "2025-12-09 15:00",
+   "predicted_kw": 281.4,
+   "actual_kw": 580.7,
+   "residual_kw": -299.3
+  },
+  {
+   "timestamp": "2025-12-09 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-09 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-10 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-10 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-10 06:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-10 09:00",
+   "predicted_kw": 430.6,
+   "actual_kw": 397.9,
+   "residual_kw": 32.7
+  },
+  {
+   "timestamp": "2025-12-10 12:00",
+   "predicted_kw": 917.9,
+   "actual_kw": 1075.9,
+   "residual_kw": -158.0
+  },
+  {
+   "timestamp": "2025-12-10 15:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 150.1,
+   "residual_kw": -150.1
+  },
+  {
+   "timestamp": "2025-12-10 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-10 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-11 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-11 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-11 06:00",
+   "predicted_kw": 319.2,
+   "actual_kw": 312.5,
+   "residual_kw": 6.8
+  },
+  {
+   "timestamp": "2025-12-11 09:00",
+   "predicted_kw": 4493.2,
+   "actual_kw": 4227.3,
+   "residual_kw": 265.9
+  },
+  {
+   "timestamp": "2025-12-11 12:00",
+   "predicted_kw": 5418.2,
+   "actual_kw": 5287.9,
+   "residual_kw": 130.4
+  },
+  {
+   "timestamp": "2025-12-11 15:00",
+   "predicted_kw": 1212.7,
+   "actual_kw": 1186.6,
+   "residual_kw": 26.1
+  },
+  {
+   "timestamp": "2025-12-11 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-11 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-12 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-12 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-12 06:00",
+   "predicted_kw": 29.7,
+   "actual_kw": 246.8,
+   "residual_kw": -217.1
+  },
+  {
+   "timestamp": "2025-12-12 09:00",
+   "predicted_kw": 2943.2,
+   "actual_kw": 2881.5,
+   "residual_kw": 61.7
+  },
+  {
+   "timestamp": "2025-12-12 12:00",
+   "predicted_kw": 4160.0,
+   "actual_kw": 4131.4,
+   "residual_kw": 28.6
+  },
+  {
+   "timestamp": "2025-12-12 15:00",
+   "predicted_kw": 247.3,
+   "actual_kw": 466.5,
+   "residual_kw": -219.2
+  },
+  {
+   "timestamp": "2025-12-12 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-12 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-13 00:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-13 03:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-13 06:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 95.7,
+   "residual_kw": -95.7
+  },
+  {
+   "timestamp": "2025-12-13 09:00",
+   "predicted_kw": 1094.2,
+   "actual_kw": 1295.2,
+   "residual_kw": -201.0
+  },
+  {
+   "timestamp": "2025-12-13 12:00",
+   "predicted_kw": 3457.2,
+   "actual_kw": 3552.5,
+   "residual_kw": -95.2
+  },
+  {
+   "timestamp": "2025-12-13 15:00",
+   "predicted_kw": 1369.1,
+   "actual_kw": 1308.5,
+   "residual_kw": 60.6
+  },
+  {
+   "timestamp": "2025-12-13 18:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  },
+  {
+   "timestamp": "2025-12-13 21:00",
+   "predicted_kw": 0.0,
+   "actual_kw": 0.0,
+   "residual_kw": 0.0
+  }
+ ]
+}

@@ -1,0 +1,280 @@
+{
+  "metadata": {
+    "plant_id": "helios",
+    "generated_at": "2025-12-18T14:35:42.664213",
+    "method": "ml_transfer_learning",
+    "foundationModel": "helios_foundation_v1"
+  },
+  "inverters": {
+    "INV01": {
+      "inverterId": "INV01",
+      "soilingRatio": {
+        "mean": 0.959626,
+        "median": 0.958538,
+        "min": 0.94,
+        "max": 0.98,
+        "std": 0.014381
+      },
+      "lossDisaggregation": {
+        "method": "ml_transfer_learning",
+        "percentages": {
+          "soiling": 4.04,
+          "temperature": 2.1,
+          "spectral": 0.8,
+          "inverter": 1.2,
+          "wiringBop": 1.5,
+          "degradation": 0.5,
+          "total": 10.14
+        },
+        "energy_kWh": {
+          "reference": 45000,
+          "net": 40438.18,
+          "soilingLoss": 1816.82
+        }
+      }
+    },
+    "INV02": {
+      "inverterId": "INV02",
+      "soilingRatio": {
+        "mean": 0.959626,
+        "median": 0.958538,
+        "min": 0.94,
+        "max": 0.98,
+        "std": 0.014381
+      },
+      "lossDisaggregation": {
+        "method": "ml_transfer_learning",
+        "percentages": {
+          "soiling": 4.04,
+          "temperature": 2.1,
+          "spectral": 0.8,
+          "inverter": 1.2,
+          "wiringBop": 1.5,
+          "degradation": 0.5,
+          "total": 10.14
+        },
+        "energy_kWh": {
+          "reference": 45000,
+          "net": 40438.18,
+          "soilingLoss": 1816.82
+        }
+      }
+    },
+    "INV03": {
+      "inverterId": "INV03",
+      "soilingRatio": {
+        "mean": 0.959626,
+        "median": 0.958538,
+        "min": 0.94,
+        "max": 0.98,
+        "std": 0.014381
+      },
+      "lossDisaggregation": {
+        "method": "ml_transfer_learning",
+        "percentages": {
+          "soiling": 4.04,
+          "temperature": 2.1,
+          "spectral": 0.8,
+          "inverter": 1.2,
+          "wiringBop": 1.5,
+          "degradation": 0.5,
+          "total": 10.14
+        },
+        "energy_kWh": {
+          "reference": 45000,
+          "net": 40438.18,
+          "soilingLoss": 1816.82
+        }
+      }
+    },
+    "INV04": {
+      "inverterId": "INV04",
+      "soilingRatio": {
+        "mean": 0.959626,
+        "median": 0.958538,
+        "min": 0.94,
+        "max": 0.98,
+        "std": 0.014381
+      },
+      "lossDisaggregation": {
+        "method": "ml_transfer_learning",
+        "percentages": {
+          "soiling": 4.04,
+          "temperature": 2.1,
+          "spectral": 0.8,
+          "inverter": 1.2,
+          "wiringBop": 1.5,
+          "degradation": 0.5,
+          "total": 10.14
+        },
+        "energy_kWh": {
+          "reference": 45000,
+          "net": 40438.18,
+          "soilingLoss": 1816.82
+        }
+      }
+    },
+    "INV05": {
+      "inverterId": "INV05",
+      "soilingRatio": {
+        "mean": 0.959626,
+        "median": 0.958538,
+        "min": 0.94,
+        "max": 0.98,
+        "std": 0.014381
+      },
+      "lossDisaggregation": {
+        "method": "ml_transfer_learning",
+        "percentages": {
+          "soiling": 4.04,
+          "temperature": 2.1,
+          "spectral": 0.8,
+          "inverter": 1.2,
+          "wiringBop": 1.5,
+          "degradation": 0.5,
+          "total": 10.14
+        },
+        "energy_kWh": {
+          "reference": 45000,
+          "net": 40438.18,
+          "soilingLoss": 1816.82
+        }
+      }
+    },
+    "INV06": {
+      "inverterId": "INV06",
+      "soilingRatio": {
+        "mean": 0.959626,
+        "median": 0.958538,
+        "min": 0.94,
+        "max": 0.98,
+        "std": 0.014381
+      },
+      "lossDisaggregation": {
+        "method": "ml_transfer_learning",
+        "percentages": {
+          "soiling": 4.04,
+          "temperature": 2.1,
+          "spectral": 0.8,
+          "inverter": 1.2,
+          "wiringBop": 1.5,
+          "degradation": 0.5,
+          "total": 10.14
+        },
+        "energy_kWh": {
+          "reference": 45000,
+          "net": 40438.18,
+          "soilingLoss": 1816.82
+        }
+      }
+    },
+    "INV07": {
+      "inverterId": "INV07",
+      "soilingRatio": {
+        "mean": 0.959626,
+        "median": 0.958538,
+        "min": 0.94,
+        "max": 0.98,
+        "std": 0.014381
+      },
+      "lossDisaggregation": {
+        "method": "ml_transfer_learning",
+        "percentages": {
+          "soiling": 4.04,
+          "temperature": 2.1,
+          "spectral": 0.8,
+          "inverter": 1.2,
+          "wiringBop": 1.5,
+          "degradation": 0.5,
+          "total": 10.14
+        },
+        "energy_kWh": {
+          "reference": 45000,
+          "net": 40438.18,
+          "soilingLoss": 1816.82
+        }
+      }
+    },
+    "INV08": {
+      "inverterId": "INV08",
+      "soilingRatio": {
+        "mean": 0.959626,
+        "median": 0.958538,
+        "min": 0.94,
+        "max": 0.98,
+        "std": 0.014381
+      },
+      "lossDisaggregation": {
+        "method": "ml_transfer_learning",
+        "percentages": {
+          "soiling": 4.04,
+          "temperature": 2.1,
+          "spectral": 0.8,
+          "inverter": 1.2,
+          "wiringBop": 1.5,
+          "degradation": 0.5,
+          "total": 10.14
+        },
+        "energy_kWh": {
+          "reference": 45000,
+          "net": 40438.18,
+          "soilingLoss": 1816.82
+        }
+      }
+    },
+    "INV09": {
+      "inverterId": "INV09",
+      "soilingRatio": {
+        "mean": 0.959626,
+        "median": 0.958538,
+        "min": 0.94,
+        "max": 0.98,
+        "std": 0.014381
+      },
+      "lossDisaggregation": {
+        "method": "ml_transfer_learning",
+        "percentages": {
+          "soiling": 4.04,
+          "temperature": 2.1,
+          "spectral": 0.8,
+          "inverter": 1.2,
+          "wiringBop": 1.5,
+          "degradation": 0.5,
+          "total": 10.14
+        },
+        "energy_kWh": {
+          "reference": 45000,
+          "net": 40438.18,
+          "soilingLoss": 1816.82
+        }
+      }
+    },
+    "INV10": {
+      "inverterId": "INV10",
+      "soilingRatio": {
+        "mean": 0.959626,
+        "median": 0.958538,
+        "min": 0.94,
+        "max": 0.98,
+        "std": 0.014381
+      },
+      "lossDisaggregation": {
+        "method": "ml_transfer_learning",
+        "percentages": {
+          "soiling": 4.04,
+          "temperature": 2.1,
+          "spectral": 0.8,
+          "inverter": 1.2,
+          "wiringBop": 1.5,
+          "degradation": 0.5,
+          "total": 10.14
+        },
+        "energy_kWh": {
+          "reference": 45000,
+          "net": 40438.18,
+          "soilingLoss": 1816.82
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+ "analysisPeriod": {
+  "end": "2025-12-13",
+  "start": "2025-09-14",
+  "totalDays": 90
+ },
+ "economicImpact": {
+  "cleaningROIPotential_EUR": 123106.94,
+  "estimatedAnnualLoss_EUR": 175867.06
+ },
+ "fleetLosses": {
+  "_method": "faults_by_type aggregated from fault_detection_results.json:reactive_faults[].energy_loss_kwh (grouped by fault_type, summed, converted kWh->MWh; faults with null/missing energy_loss_kwh skipped). dustiq_soiling_ytd_mwh = mean(1 - sr_dustiq) over the dustiq_window rows \u00d7 referenceEnergy_MWh pro-rated to that window's day-span (window_days / analysisPeriod.totalDays). When dustiq_history.json has no rows for the current calendar year, the latest available year is used and noted in dustiq_window. Computed 2026-06-21. When dustiq_soiling_ytd_mwh is non-null, soiling-shaped fault_type keys (matching /soiling/i) are excluded from waterfall rendering at the UI layer to avoid double-counting against the DustIQ ground-truth bar.",
+  "dustiq_soiling_ytd_mwh": 187.5,
+  "dustiq_window": "2025 (latest year in dustiq_history.json; no rows for 2026)",
+  "faults_by_type": {
+   "bypass_diode_active": {
+    "count": 2,
+    "ytd_mwh": 8.0
+   },
+   "inverter_failure": {
+    "count": 1,
+    "ytd_mwh": 2.16
+   },
+   "inverter_overtemperature": {
+    "count": 4,
+    "ytd_mwh": 2.64
+   },
+   "soiling_detected": {
+    "count": 3,
+    "ytd_mwh": 18.25
+   },
+   "string_degradation": {
+    "count": 2,
+    "ytd_mwh": 10.4
+   }
+  },
+  "netEnergy_MWh": 28006.79,
+  "referenceEnergy_MWh": 32544.0,
+  "totalLoss_MWh": 4537.21,
+  "totalSoilingLoss_MWh": 4537.21
+ },
+ "fleetSoiling": {
+  "srMax": 1.05,
+  "srMean": 0.9067,
+  "srMin": 0.575,
+  "srStd": 0.0071
+ },
+ "healthDistribution": {
+  "critical": 0,
+  "majorIssues": 0,
+  "minorIssues": 2,
+  "normal": 118
+ },
+ "plantInfo": {
+  "capacity_MW": 7.2,
+  "inverterGroups": [
+   "INV 01",
+   "INV 02",
+   "INV 03",
+   "INV 04"
+  ],
+  "plantName": "Ribera Solar Park",
+  "totalInverters": 120
+ },
+ "provenance": {
+  "data_end": "2025-12-13",
+  "data_start": "2020-10-01",
+  "generated_at": "2026-07-17T12:20:49.397493",
+  "method": "measured_pr_selfnorm_dustiq_calibrated",
+  "source": "measured_per_inverter",
+  "stats_window": {
+   "end": "2025-12-13",
+   "start": "2025-09-14"
+  }
+ },
+ "topPerformers": [
+  {
+   "inverterId": "INV 03.076",
+   "rank": 1,
+   "srMean": 0.9206
+  },
+  {
+   "inverterId": "INV 03.085",
+   "rank": 2,
+   "srMean": 0.9191
+  },
+  {
+   "inverterId": "INV 03.080",
+   "rank": 3,
+   "srMean": 0.9186
+  },
+  {
+   "inverterId": "INV 04.112",
+   "rank": 4,
+   "srMean": 0.9186
+  },
+  {
+   "inverterId": "INV 04.114",
+   "rank": 5,
+   "srMean": 0.9183
+  }
+ ],
+ "worstPerformers": [
+  {
+   "inverterId": "INV 01.047",
+   "rank": 120,
+   "srMean": 0.8896
+  },
+  {
+   "inverterId": "INV 02.001",
+   "rank": 119,
+   "srMean": 0.89
+  },
+  {
+   "inverterId": "INV 01.034",
+   "rank": 118,
+   "srMean": 0.8929
+  },
+  {
+   "inverterId": "INV 02.020",
+   "rank": 117,
+   "srMean": 0.8948
+  },
+  {
+   "inverterId": "INV 01.043",
+   "rank": 116,
+   "srMean": 0.8958
+  }
+ ]
+}

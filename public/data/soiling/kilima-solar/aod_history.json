@@ -1,0 +1,2926 @@
+{
+ "metadata": {
+  "plant_id": "kilima-solar",
+  "generated_at": "2026-07-25T12:27:11.690774",
+  "source": "open-meteo air-quality (CAMS), plant coordinates",
+  "latitude": -1.45,
+  "longitude": 36.98
+ },
+ "daily_data": [
+  {
+   "date": "2025-07-25",
+   "pm10_mean": 12.49,
+   "pm2p5_mean": 10.18,
+   "dust_mean": 4.5,
+   "aod_mean": 0.23,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-07-26",
+   "pm10_mean": 11.93,
+   "pm2p5_mean": 11.29,
+   "dust_mean": 0.71,
+   "aod_mean": 0.18,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-07-27",
+   "pm10_mean": 7.71,
+   "pm2p5_mean": 7.22,
+   "dust_mean": 0.38,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-07-28",
+   "pm10_mean": 9.3,
+   "pm2p5_mean": 8.72,
+   "dust_mean": 0.5,
+   "aod_mean": 0.21,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-07-29",
+   "pm10_mean": 11.99,
+   "pm2p5_mean": 11.42,
+   "dust_mean": 0.5,
+   "aod_mean": 0.3,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-07-30",
+   "pm10_mean": 9.33,
+   "pm2p5_mean": 8.59,
+   "dust_mean": 0.62,
+   "aod_mean": 0.22,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-07-31",
+   "pm10_mean": 6.25,
+   "pm2p5_mean": 5.82,
+   "dust_mean": 0.0,
+   "aod_mean": 0.18,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-01",
+   "pm10_mean": 10.69,
+   "pm2p5_mean": 9.98,
+   "dust_mean": 0.46,
+   "aod_mean": 0.35,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-02",
+   "pm10_mean": 14.81,
+   "pm2p5_mean": 14.13,
+   "dust_mean": 0.54,
+   "aod_mean": 0.43,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-03",
+   "pm10_mean": 12.74,
+   "pm2p5_mean": 12.2,
+   "dust_mean": 0.21,
+   "aod_mean": 0.33,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-04",
+   "pm10_mean": 10.39,
+   "pm2p5_mean": 9.94,
+   "dust_mean": 0.33,
+   "aod_mean": 0.26,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-05",
+   "pm10_mean": 11.73,
+   "pm2p5_mean": 10.4,
+   "dust_mean": 1.33,
+   "aod_mean": 0.33,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-06",
+   "pm10_mean": 11.77,
+   "pm2p5_mean": 10.01,
+   "dust_mean": 1.79,
+   "aod_mean": 0.36,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-07",
+   "pm10_mean": 18.0,
+   "pm2p5_mean": 14.69,
+   "dust_mean": 5.0,
+   "aod_mean": 0.47,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-08",
+   "pm10_mean": 17.19,
+   "pm2p5_mean": 14.31,
+   "dust_mean": 4.29,
+   "aod_mean": 0.44,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-09",
+   "pm10_mean": 13.94,
+   "pm2p5_mean": 12.7,
+   "dust_mean": 1.08,
+   "aod_mean": 0.33,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-10",
+   "pm10_mean": 16.0,
+   "pm2p5_mean": 14.7,
+   "dust_mean": 1.29,
+   "aod_mean": 0.31,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-11",
+   "pm10_mean": 12.53,
+   "pm2p5_mean": 11.68,
+   "dust_mean": 0.5,
+   "aod_mean": 0.31,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-12",
+   "pm10_mean": 13.92,
+   "pm2p5_mean": 12.91,
+   "dust_mean": 0.0,
+   "aod_mean": 0.31,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-13",
+   "pm10_mean": 10.25,
+   "pm2p5_mean": 9.57,
+   "dust_mean": 0.0,
+   "aod_mean": 0.21,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-14",
+   "pm10_mean": 7.57,
+   "pm2p5_mean": 7.16,
+   "dust_mean": 0.04,
+   "aod_mean": 0.18,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-15",
+   "pm10_mean": 8.97,
+   "pm2p5_mean": 8.36,
+   "dust_mean": 0.21,
+   "aod_mean": 0.28,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-16",
+   "pm10_mean": 11.7,
+   "pm2p5_mean": 10.76,
+   "dust_mean": 0.04,
+   "aod_mean": 0.31,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-17",
+   "pm10_mean": 17.49,
+   "pm2p5_mean": 16.35,
+   "dust_mean": 1.0,
+   "aod_mean": 0.42,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-18",
+   "pm10_mean": 15.16,
+   "pm2p5_mean": 14.43,
+   "dust_mean": 0.46,
+   "aod_mean": 0.36,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-19",
+   "pm10_mean": 19.15,
+   "pm2p5_mean": 18.18,
+   "dust_mean": 0.67,
+   "aod_mean": 0.39,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-20",
+   "pm10_mean": 18.6,
+   "pm2p5_mean": 17.67,
+   "dust_mean": 0.58,
+   "aod_mean": 0.45,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-21",
+   "pm10_mean": 16.67,
+   "pm2p5_mean": 15.67,
+   "dust_mean": 0.5,
+   "aod_mean": 0.49,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-22",
+   "pm10_mean": 10.43,
+   "pm2p5_mean": 9.36,
+   "dust_mean": 0.12,
+   "aod_mean": 0.37,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-23",
+   "pm10_mean": 10.5,
+   "pm2p5_mean": 9.38,
+   "dust_mean": 0.38,
+   "aod_mean": 0.32,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-24",
+   "pm10_mean": 4.26,
+   "pm2p5_mean": 3.76,
+   "dust_mean": 0.0,
+   "aod_mean": 0.13,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-25",
+   "pm10_mean": 4.0,
+   "pm2p5_mean": 3.57,
+   "dust_mean": 0.0,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-26",
+   "pm10_mean": 6.02,
+   "pm2p5_mean": 5.41,
+   "dust_mean": 0.0,
+   "aod_mean": 0.13,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-27",
+   "pm10_mean": 7.64,
+   "pm2p5_mean": 6.97,
+   "dust_mean": 0.25,
+   "aod_mean": 0.18,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-28",
+   "pm10_mean": 6.02,
+   "pm2p5_mean": 5.54,
+   "dust_mean": 0.0,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-29",
+   "pm10_mean": 5.38,
+   "pm2p5_mean": 4.9,
+   "dust_mean": 0.0,
+   "aod_mean": 0.09,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-30",
+   "pm10_mean": 5.7,
+   "pm2p5_mean": 5.05,
+   "dust_mean": 0.0,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-08-31",
+   "pm10_mean": 3.95,
+   "pm2p5_mean": 3.66,
+   "dust_mean": 0.0,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-01",
+   "pm10_mean": 6.26,
+   "pm2p5_mean": 5.43,
+   "dust_mean": 0.96,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-02",
+   "pm10_mean": 9.34,
+   "pm2p5_mean": 8.84,
+   "dust_mean": 0.38,
+   "aod_mean": 0.21,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-03",
+   "pm10_mean": 10.07,
+   "pm2p5_mean": 9.35,
+   "dust_mean": 1.12,
+   "aod_mean": 0.3,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-04",
+   "pm10_mean": 12.46,
+   "pm2p5_mean": 11.25,
+   "dust_mean": 1.08,
+   "aod_mean": 0.27,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-05",
+   "pm10_mean": 10.35,
+   "pm2p5_mean": 9.89,
+   "dust_mean": 0.0,
+   "aod_mean": 0.23,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-06",
+   "pm10_mean": 6.77,
+   "pm2p5_mean": 6.08,
+   "dust_mean": 1.17,
+   "aod_mean": 0.2,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-07",
+   "pm10_mean": 5.2,
+   "pm2p5_mean": 4.7,
+   "dust_mean": 0.67,
+   "aod_mean": 0.19,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-08",
+   "pm10_mean": 7.97,
+   "pm2p5_mean": 6.81,
+   "dust_mean": 1.71,
+   "aod_mean": 0.2,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-09",
+   "pm10_mean": 5.84,
+   "pm2p5_mean": 4.85,
+   "dust_mean": 1.12,
+   "aod_mean": 0.17,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-10",
+   "pm10_mean": 5.13,
+   "pm2p5_mean": 4.49,
+   "dust_mean": 0.67,
+   "aod_mean": 0.13,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-11",
+   "pm10_mean": 5.83,
+   "pm2p5_mean": 5.1,
+   "dust_mean": 0.0,
+   "aod_mean": 0.13,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-12",
+   "pm10_mean": 5.85,
+   "pm2p5_mean": 5.23,
+   "dust_mean": 0.0,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-13",
+   "pm10_mean": 5.8,
+   "pm2p5_mean": 5.11,
+   "dust_mean": 0.17,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-14",
+   "pm10_mean": 5.5,
+   "pm2p5_mean": 5.02,
+   "dust_mean": 0.71,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-15",
+   "pm10_mean": 7.43,
+   "pm2p5_mean": 6.73,
+   "dust_mean": 0.62,
+   "aod_mean": 0.17,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-16",
+   "pm10_mean": 8.6,
+   "pm2p5_mean": 7.87,
+   "dust_mean": 0.0,
+   "aod_mean": 0.18,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-17",
+   "pm10_mean": 6.58,
+   "pm2p5_mean": 6.4,
+   "dust_mean": 0.0,
+   "aod_mean": 0.2,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-18",
+   "pm10_mean": 6.89,
+   "pm2p5_mean": 6.5,
+   "dust_mean": 0.08,
+   "aod_mean": 0.24,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-19",
+   "pm10_mean": 3.92,
+   "pm2p5_mean": 3.53,
+   "dust_mean": 0.0,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-20",
+   "pm10_mean": 4.79,
+   "pm2p5_mean": 4.0,
+   "dust_mean": 0.0,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-21",
+   "pm10_mean": 3.62,
+   "pm2p5_mean": 2.91,
+   "dust_mean": 0.0,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-22",
+   "pm10_mean": 5.41,
+   "pm2p5_mean": 4.56,
+   "dust_mean": 0.0,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-23",
+   "pm10_mean": 4.34,
+   "pm2p5_mean": 3.75,
+   "dust_mean": 0.0,
+   "aod_mean": 0.13,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-24",
+   "pm10_mean": 7.33,
+   "pm2p5_mean": 6.19,
+   "dust_mean": 0.12,
+   "aod_mean": 0.15,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-25",
+   "pm10_mean": 7.3,
+   "pm2p5_mean": 6.2,
+   "dust_mean": 0.67,
+   "aod_mean": 0.15,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-26",
+   "pm10_mean": 10.43,
+   "pm2p5_mean": 9.42,
+   "dust_mean": 0.83,
+   "aod_mean": 0.16,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-27",
+   "pm10_mean": 8.67,
+   "pm2p5_mean": 7.84,
+   "dust_mean": 0.25,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-28",
+   "pm10_mean": 9.78,
+   "pm2p5_mean": 8.27,
+   "dust_mean": 1.25,
+   "aod_mean": 0.2,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-29",
+   "pm10_mean": 9.68,
+   "pm2p5_mean": 8.63,
+   "dust_mean": 1.25,
+   "aod_mean": 0.2,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-09-30",
+   "pm10_mean": 4.93,
+   "pm2p5_mean": 4.69,
+   "dust_mean": 0.0,
+   "aod_mean": 0.15,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-01",
+   "pm10_mean": 4.52,
+   "pm2p5_mean": 4.13,
+   "dust_mean": 0.0,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-02",
+   "pm10_mean": 5.85,
+   "pm2p5_mean": 5.44,
+   "dust_mean": 0.0,
+   "aod_mean": 0.15,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-03",
+   "pm10_mean": 10.01,
+   "pm2p5_mean": 9.25,
+   "dust_mean": 0.21,
+   "aod_mean": 0.29,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-04",
+   "pm10_mean": 13.23,
+   "pm2p5_mean": 10.98,
+   "dust_mean": 4.17,
+   "aod_mean": 0.32,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-05",
+   "pm10_mean": 20.36,
+   "pm2p5_mean": 13.74,
+   "dust_mean": 12.04,
+   "aod_mean": 0.34,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-06",
+   "pm10_mean": 14.71,
+   "pm2p5_mean": 10.16,
+   "dust_mean": 7.67,
+   "aod_mean": 0.26,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-07",
+   "pm10_mean": 9.5,
+   "pm2p5_mean": 5.44,
+   "dust_mean": 8.04,
+   "aod_mean": 0.17,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-08",
+   "pm10_mean": 9.76,
+   "pm2p5_mean": 5.58,
+   "dust_mean": 8.04,
+   "aod_mean": 0.16,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-09",
+   "pm10_mean": 7.69,
+   "pm2p5_mean": 4.71,
+   "dust_mean": 4.79,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-10",
+   "pm10_mean": 3.96,
+   "pm2p5_mean": 3.26,
+   "dust_mean": 0.0,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-11",
+   "pm10_mean": 3.61,
+   "pm2p5_mean": 3.17,
+   "dust_mean": 0.0,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-12",
+   "pm10_mean": 2.7,
+   "pm2p5_mean": 2.55,
+   "dust_mean": 0.0,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-13",
+   "pm10_mean": 3.16,
+   "pm2p5_mean": 2.88,
+   "dust_mean": 0.0,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-14",
+   "pm10_mean": 4.48,
+   "pm2p5_mean": 4.03,
+   "dust_mean": 0.0,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-15",
+   "pm10_mean": 6.0,
+   "pm2p5_mean": 5.3,
+   "dust_mean": 0.0,
+   "aod_mean": 0.18,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-16",
+   "pm10_mean": 8.05,
+   "pm2p5_mean": 6.9,
+   "dust_mean": 0.0,
+   "aod_mean": 0.19,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-17",
+   "pm10_mean": 8.26,
+   "pm2p5_mean": 7.24,
+   "dust_mean": 0.0,
+   "aod_mean": 0.19,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-18",
+   "pm10_mean": 5.92,
+   "pm2p5_mean": 4.97,
+   "dust_mean": 0.0,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-19",
+   "pm10_mean": 4.9,
+   "pm2p5_mean": 4.24,
+   "dust_mean": 0.0,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-20",
+   "pm10_mean": 6.5,
+   "pm2p5_mean": 5.79,
+   "dust_mean": 0.0,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-21",
+   "pm10_mean": 8.57,
+   "pm2p5_mean": 7.92,
+   "dust_mean": 0.0,
+   "aod_mean": 0.2,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-22",
+   "pm10_mean": 9.5,
+   "pm2p5_mean": 8.82,
+   "dust_mean": 0.0,
+   "aod_mean": 0.23,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-23",
+   "pm10_mean": 16.58,
+   "pm2p5_mean": 15.76,
+   "dust_mean": 0.08,
+   "aod_mean": 0.31,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-24",
+   "pm10_mean": 11.39,
+   "pm2p5_mean": 10.77,
+   "dust_mean": 0.42,
+   "aod_mean": 0.27,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-25",
+   "pm10_mean": 15.66,
+   "pm2p5_mean": 14.62,
+   "dust_mean": 0.92,
+   "aod_mean": 0.34,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-26",
+   "pm10_mean": 18.08,
+   "pm2p5_mean": 17.03,
+   "dust_mean": 0.88,
+   "aod_mean": 0.29,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-27",
+   "pm10_mean": 10.75,
+   "pm2p5_mean": 10.4,
+   "dust_mean": 0.0,
+   "aod_mean": 0.19,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-28",
+   "pm10_mean": 6.46,
+   "pm2p5_mean": 6.27,
+   "dust_mean": 0.0,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-29",
+   "pm10_mean": 3.63,
+   "pm2p5_mean": 3.49,
+   "dust_mean": 0.04,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-30",
+   "pm10_mean": 11.24,
+   "pm2p5_mean": 8.83,
+   "dust_mean": 4.96,
+   "aod_mean": 0.25,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-10-31",
+   "pm10_mean": 6.88,
+   "pm2p5_mean": 5.65,
+   "dust_mean": 1.71,
+   "aod_mean": 0.19,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-01",
+   "pm10_mean": 5.79,
+   "pm2p5_mean": 5.17,
+   "dust_mean": 0.46,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-02",
+   "pm10_mean": 6.76,
+   "pm2p5_mean": 5.88,
+   "dust_mean": 1.17,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-03",
+   "pm10_mean": 4.49,
+   "pm2p5_mean": 3.94,
+   "dust_mean": 0.54,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-04",
+   "pm10_mean": 4.96,
+   "pm2p5_mean": 4.36,
+   "dust_mean": 0.88,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-05",
+   "pm10_mean": 5.17,
+   "pm2p5_mean": 4.7,
+   "dust_mean": 0.5,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-06",
+   "pm10_mean": 5.26,
+   "pm2p5_mean": 4.95,
+   "dust_mean": 0.0,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-07",
+   "pm10_mean": 3.79,
+   "pm2p5_mean": 3.43,
+   "dust_mean": 0.0,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-08",
+   "pm10_mean": 2.56,
+   "pm2p5_mean": 2.45,
+   "dust_mean": 0.0,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-09",
+   "pm10_mean": 5.38,
+   "pm2p5_mean": 4.94,
+   "dust_mean": 0.54,
+   "aod_mean": 0.15,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-10",
+   "pm10_mean": 7.48,
+   "pm2p5_mean": 6.64,
+   "dust_mean": 1.5,
+   "aod_mean": 0.17,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-11",
+   "pm10_mean": 6.56,
+   "pm2p5_mean": 5.75,
+   "dust_mean": 1.62,
+   "aod_mean": 0.15,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-12",
+   "pm10_mean": 4.71,
+   "pm2p5_mean": 4.33,
+   "dust_mean": 0.71,
+   "aod_mean": 0.13,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-13",
+   "pm10_mean": 2.93,
+   "pm2p5_mean": 2.83,
+   "dust_mean": 0.0,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-14",
+   "pm10_mean": 6.39,
+   "pm2p5_mean": 5.78,
+   "dust_mean": 1.04,
+   "aod_mean": 0.15,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-15",
+   "pm10_mean": 6.75,
+   "pm2p5_mean": 6.07,
+   "dust_mean": 1.0,
+   "aod_mean": 0.13,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-16",
+   "pm10_mean": 4.07,
+   "pm2p5_mean": 3.73,
+   "dust_mean": 0.54,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-17",
+   "pm10_mean": 3.93,
+   "pm2p5_mean": 3.64,
+   "dust_mean": 0.33,
+   "aod_mean": 0.09,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-18",
+   "pm10_mean": 6.7,
+   "pm2p5_mean": 6.1,
+   "dust_mean": 0.92,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-19",
+   "pm10_mean": 7.13,
+   "pm2p5_mean": 6.56,
+   "dust_mean": 1.0,
+   "aod_mean": 0.13,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-20",
+   "pm10_mean": 8.7,
+   "pm2p5_mean": 7.87,
+   "dust_mean": 1.58,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-21",
+   "pm10_mean": 9.53,
+   "pm2p5_mean": 7.21,
+   "dust_mean": 4.54,
+   "aod_mean": 0.13,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-22",
+   "pm10_mean": 12.72,
+   "pm2p5_mean": 9.63,
+   "dust_mean": 6.46,
+   "aod_mean": 0.18,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-23",
+   "pm10_mean": 7.44,
+   "pm2p5_mean": 6.48,
+   "dust_mean": 1.67,
+   "aod_mean": 0.17,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-24",
+   "pm10_mean": 6.08,
+   "pm2p5_mean": 5.55,
+   "dust_mean": 0.75,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-25",
+   "pm10_mean": 3.82,
+   "pm2p5_mean": 3.5,
+   "dust_mean": 0.08,
+   "aod_mean": 0.09,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-26",
+   "pm10_mean": 4.91,
+   "pm2p5_mean": 4.41,
+   "dust_mean": 0.38,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-27",
+   "pm10_mean": 4.13,
+   "pm2p5_mean": 3.75,
+   "dust_mean": 0.21,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-28",
+   "pm10_mean": 6.2,
+   "pm2p5_mean": 5.75,
+   "dust_mean": 0.79,
+   "aod_mean": 0.13,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-29",
+   "pm10_mean": 9.32,
+   "pm2p5_mean": 8.37,
+   "dust_mean": 1.46,
+   "aod_mean": 0.16,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-11-30",
+   "pm10_mean": 7.78,
+   "pm2p5_mean": 7.11,
+   "dust_mean": 1.0,
+   "aod_mean": 0.16,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-01",
+   "pm10_mean": 7.93,
+   "pm2p5_mean": 6.87,
+   "dust_mean": 1.75,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-02",
+   "pm10_mean": 9.86,
+   "pm2p5_mean": 7.98,
+   "dust_mean": 3.83,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-03",
+   "pm10_mean": 11.07,
+   "pm2p5_mean": 9.97,
+   "dust_mean": 1.58,
+   "aod_mean": 0.2,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-04",
+   "pm10_mean": 10.75,
+   "pm2p5_mean": 9.48,
+   "dust_mean": 2.25,
+   "aod_mean": 0.2,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-05",
+   "pm10_mean": 9.5,
+   "pm2p5_mean": 8.56,
+   "dust_mean": 1.46,
+   "aod_mean": 0.16,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-06",
+   "pm10_mean": 7.22,
+   "pm2p5_mean": 6.78,
+   "dust_mean": 0.46,
+   "aod_mean": 0.13,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-07",
+   "pm10_mean": 5.79,
+   "pm2p5_mean": 5.57,
+   "dust_mean": 0.0,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-08",
+   "pm10_mean": 7.44,
+   "pm2p5_mean": 6.98,
+   "dust_mean": 0.0,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-09",
+   "pm10_mean": 5.48,
+   "pm2p5_mean": 5.22,
+   "dust_mean": 0.0,
+   "aod_mean": 0.09,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-10",
+   "pm10_mean": 7.35,
+   "pm2p5_mean": 6.98,
+   "dust_mean": 0.12,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-11",
+   "pm10_mean": 7.99,
+   "pm2p5_mean": 7.58,
+   "dust_mean": 0.0,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-12",
+   "pm10_mean": 8.24,
+   "pm2p5_mean": 7.87,
+   "dust_mean": 0.0,
+   "aod_mean": 0.15,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-13",
+   "pm10_mean": 9.0,
+   "pm2p5_mean": 8.64,
+   "dust_mean": 0.0,
+   "aod_mean": 0.19,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-14",
+   "pm10_mean": 4.08,
+   "pm2p5_mean": 3.9,
+   "dust_mean": 0.17,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-15",
+   "pm10_mean": 6.76,
+   "pm2p5_mean": 6.05,
+   "dust_mean": 1.12,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-16",
+   "pm10_mean": 4.02,
+   "pm2p5_mean": 3.75,
+   "dust_mean": 0.21,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-17",
+   "pm10_mean": 4.37,
+   "pm2p5_mean": 4.15,
+   "dust_mean": 0.0,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-18",
+   "pm10_mean": 4.47,
+   "pm2p5_mean": 4.2,
+   "dust_mean": 0.0,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-19",
+   "pm10_mean": 5.19,
+   "pm2p5_mean": 4.81,
+   "dust_mean": 0.04,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-20",
+   "pm10_mean": 7.01,
+   "pm2p5_mean": 6.62,
+   "dust_mean": 0.0,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-21",
+   "pm10_mean": 6.8,
+   "pm2p5_mean": 6.34,
+   "dust_mean": 0.0,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-22",
+   "pm10_mean": 9.9,
+   "pm2p5_mean": 9.28,
+   "dust_mean": 0.79,
+   "aod_mean": 0.17,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-23",
+   "pm10_mean": 11.13,
+   "pm2p5_mean": 9.69,
+   "dust_mean": 2.71,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-24",
+   "pm10_mean": 11.57,
+   "pm2p5_mean": 9.41,
+   "dust_mean": 4.29,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-25",
+   "pm10_mean": 10.5,
+   "pm2p5_mean": 8.51,
+   "dust_mean": 3.25,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-26",
+   "pm10_mean": 9.64,
+   "pm2p5_mean": 8.54,
+   "dust_mean": 1.96,
+   "aod_mean": 0.2,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-27",
+   "pm10_mean": 11.79,
+   "pm2p5_mean": 10.83,
+   "dust_mean": 1.29,
+   "aod_mean": 0.34,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-28",
+   "pm10_mean": 7.48,
+   "pm2p5_mean": 7.05,
+   "dust_mean": 0.58,
+   "aod_mean": 0.2,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-29",
+   "pm10_mean": 9.87,
+   "pm2p5_mean": 9.51,
+   "dust_mean": 0.5,
+   "aod_mean": 0.19,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-30",
+   "pm10_mean": 11.39,
+   "pm2p5_mean": 10.58,
+   "dust_mean": 0.88,
+   "aod_mean": 0.26,
+   "is_high_dust": false
+  },
+  {
+   "date": "2025-12-31",
+   "pm10_mean": 7.47,
+   "pm2p5_mean": 7.12,
+   "dust_mean": 0.46,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-01",
+   "pm10_mean": 6.65,
+   "pm2p5_mean": 6.3,
+   "dust_mean": 0.12,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-02",
+   "pm10_mean": 7.71,
+   "pm2p5_mean": 7.33,
+   "dust_mean": 0.46,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-03",
+   "pm10_mean": 8.43,
+   "pm2p5_mean": 7.54,
+   "dust_mean": 1.67,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-04",
+   "pm10_mean": 11.12,
+   "pm2p5_mean": 9.34,
+   "dust_mean": 3.58,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-05",
+   "pm10_mean": 7.74,
+   "pm2p5_mean": 6.31,
+   "dust_mean": 3.0,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-06",
+   "pm10_mean": 5.28,
+   "pm2p5_mean": 4.85,
+   "dust_mean": 0.54,
+   "aod_mean": 0.08,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-07",
+   "pm10_mean": 6.1,
+   "pm2p5_mean": 5.71,
+   "dust_mean": 0.62,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-08",
+   "pm10_mean": 6.95,
+   "pm2p5_mean": 6.34,
+   "dust_mean": 0.92,
+   "aod_mean": 0.15,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-09",
+   "pm10_mean": 5.38,
+   "pm2p5_mean": 4.96,
+   "dust_mean": 0.42,
+   "aod_mean": 0.09,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-10",
+   "pm10_mean": 5.0,
+   "pm2p5_mean": 4.55,
+   "dust_mean": 0.29,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-11",
+   "pm10_mean": 8.54,
+   "pm2p5_mean": 7.35,
+   "dust_mean": 1.08,
+   "aod_mean": 0.15,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-12",
+   "pm10_mean": 10.04,
+   "pm2p5_mean": 8.4,
+   "dust_mean": 2.08,
+   "aod_mean": 0.21,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-13",
+   "pm10_mean": 9.98,
+   "pm2p5_mean": 8.51,
+   "dust_mean": 1.96,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-14",
+   "pm10_mean": 6.12,
+   "pm2p5_mean": 5.59,
+   "dust_mean": 0.58,
+   "aod_mean": 0.08,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-15",
+   "pm10_mean": 4.36,
+   "pm2p5_mean": 4.14,
+   "dust_mean": 0.0,
+   "aod_mean": 0.06,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-16",
+   "pm10_mean": 4.62,
+   "pm2p5_mean": 4.17,
+   "dust_mean": 0.46,
+   "aod_mean": 0.08,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-17",
+   "pm10_mean": 6.75,
+   "pm2p5_mean": 6.18,
+   "dust_mean": 0.5,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-18",
+   "pm10_mean": 8.31,
+   "pm2p5_mean": 7.78,
+   "dust_mean": 0.0,
+   "aod_mean": 0.17,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-19",
+   "pm10_mean": 6.76,
+   "pm2p5_mean": 6.33,
+   "dust_mean": 0.0,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-20",
+   "pm10_mean": 4.46,
+   "pm2p5_mean": 4.25,
+   "dust_mean": 0.0,
+   "aod_mean": 0.08,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-21",
+   "pm10_mean": 4.52,
+   "pm2p5_mean": 4.2,
+   "dust_mean": 0.25,
+   "aod_mean": 0.08,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-22",
+   "pm10_mean": 5.36,
+   "pm2p5_mean": 4.83,
+   "dust_mean": 0.42,
+   "aod_mean": 0.09,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-23",
+   "pm10_mean": 5.51,
+   "pm2p5_mean": 4.94,
+   "dust_mean": 0.29,
+   "aod_mean": 0.09,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-24",
+   "pm10_mean": 6.64,
+   "pm2p5_mean": 6.03,
+   "dust_mean": 1.0,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-25",
+   "pm10_mean": 8.43,
+   "pm2p5_mean": 7.47,
+   "dust_mean": 1.67,
+   "aod_mean": 0.13,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-26",
+   "pm10_mean": 8.23,
+   "pm2p5_mean": 7.21,
+   "dust_mean": 1.71,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-27",
+   "pm10_mean": 12.96,
+   "pm2p5_mean": 11.15,
+   "dust_mean": 3.04,
+   "aod_mean": 0.19,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-28",
+   "pm10_mean": 13.58,
+   "pm2p5_mean": 11.2,
+   "dust_mean": 4.54,
+   "aod_mean": 0.22,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-29",
+   "pm10_mean": 9.18,
+   "pm2p5_mean": 7.97,
+   "dust_mean": 2.12,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-30",
+   "pm10_mean": 5.2,
+   "pm2p5_mean": 4.85,
+   "dust_mean": 0.33,
+   "aod_mean": 0.09,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-01-31",
+   "pm10_mean": 5.41,
+   "pm2p5_mean": 4.88,
+   "dust_mean": 0.83,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-01",
+   "pm10_mean": 7.81,
+   "pm2p5_mean": 6.54,
+   "dust_mean": 2.67,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-02",
+   "pm10_mean": 7.72,
+   "pm2p5_mean": 6.41,
+   "dust_mean": 2.46,
+   "aod_mean": 0.09,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-03",
+   "pm10_mean": 6.81,
+   "pm2p5_mean": 5.82,
+   "dust_mean": 1.79,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-04",
+   "pm10_mean": 5.78,
+   "pm2p5_mean": 4.96,
+   "dust_mean": 1.0,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-05",
+   "pm10_mean": 6.61,
+   "pm2p5_mean": 5.39,
+   "dust_mean": 1.62,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-06",
+   "pm10_mean": 8.18,
+   "pm2p5_mean": 6.98,
+   "dust_mean": 1.38,
+   "aod_mean": 0.17,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-07",
+   "pm10_mean": 7.6,
+   "pm2p5_mean": 6.87,
+   "dust_mean": 0.88,
+   "aod_mean": 0.17,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-08",
+   "pm10_mean": 10.61,
+   "pm2p5_mean": 9.58,
+   "dust_mean": 1.08,
+   "aod_mean": 0.2,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-09",
+   "pm10_mean": 8.1,
+   "pm2p5_mean": 6.91,
+   "dust_mean": 1.88,
+   "aod_mean": 0.13,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-10",
+   "pm10_mean": 5.32,
+   "pm2p5_mean": 4.75,
+   "dust_mean": 0.96,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-11",
+   "pm10_mean": 4.36,
+   "pm2p5_mean": 4.23,
+   "dust_mean": 0.0,
+   "aod_mean": 0.08,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-12",
+   "pm10_mean": 4.14,
+   "pm2p5_mean": 3.89,
+   "dust_mean": 0.12,
+   "aod_mean": 0.08,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-13",
+   "pm10_mean": 5.52,
+   "pm2p5_mean": 5.23,
+   "dust_mean": 0.29,
+   "aod_mean": 0.13,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-14",
+   "pm10_mean": 8.69,
+   "pm2p5_mean": 7.49,
+   "dust_mean": 2.0,
+   "aod_mean": 0.16,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-15",
+   "pm10_mean": 11.85,
+   "pm2p5_mean": 9.83,
+   "dust_mean": 3.33,
+   "aod_mean": 0.19,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-16",
+   "pm10_mean": 10.42,
+   "pm2p5_mean": 8.66,
+   "dust_mean": 2.88,
+   "aod_mean": 0.19,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-17",
+   "pm10_mean": 11.46,
+   "pm2p5_mean": 10.12,
+   "dust_mean": 2.17,
+   "aod_mean": 0.29,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-18",
+   "pm10_mean": 7.63,
+   "pm2p5_mean": 6.7,
+   "dust_mean": 1.33,
+   "aod_mean": 0.18,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-19",
+   "pm10_mean": 9.29,
+   "pm2p5_mean": 7.41,
+   "dust_mean": 2.71,
+   "aod_mean": 0.16,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-20",
+   "pm10_mean": 9.94,
+   "pm2p5_mean": 7.98,
+   "dust_mean": 3.04,
+   "aod_mean": 0.21,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-21",
+   "pm10_mean": 6.73,
+   "pm2p5_mean": 5.96,
+   "dust_mean": 1.0,
+   "aod_mean": 0.22,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-22",
+   "pm10_mean": 6.22,
+   "pm2p5_mean": 5.69,
+   "dust_mean": 0.83,
+   "aod_mean": 0.21,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-23",
+   "pm10_mean": 6.61,
+   "pm2p5_mean": 6.52,
+   "dust_mean": 0.0,
+   "aod_mean": 0.19,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-24",
+   "pm10_mean": 24.17,
+   "pm2p5_mean": 18.73,
+   "dust_mean": 11.62,
+   "aod_mean": 0.49,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-25",
+   "pm10_mean": 20.36,
+   "pm2p5_mean": 17.36,
+   "dust_mean": 6.71,
+   "aod_mean": 0.44,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-26",
+   "pm10_mean": 10.21,
+   "pm2p5_mean": 9.62,
+   "dust_mean": 1.17,
+   "aod_mean": 0.26,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-27",
+   "pm10_mean": 4.8,
+   "pm2p5_mean": 4.22,
+   "dust_mean": 1.17,
+   "aod_mean": 0.17,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-02-28",
+   "pm10_mean": 6.38,
+   "pm2p5_mean": 5.46,
+   "dust_mean": 1.96,
+   "aod_mean": 0.15,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-01",
+   "pm10_mean": 12.46,
+   "pm2p5_mean": 9.05,
+   "dust_mean": 6.62,
+   "aod_mean": 0.23,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-02",
+   "pm10_mean": 10.37,
+   "pm2p5_mean": 8.13,
+   "dust_mean": 3.75,
+   "aod_mean": 0.15,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-03",
+   "pm10_mean": 7.16,
+   "pm2p5_mean": 6.21,
+   "dust_mean": 1.96,
+   "aod_mean": 0.15,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-04",
+   "pm10_mean": 4.53,
+   "pm2p5_mean": 4.2,
+   "dust_mean": 0.58,
+   "aod_mean": 0.19,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-05",
+   "pm10_mean": 5.24,
+   "pm2p5_mean": 4.98,
+   "dust_mean": 0.42,
+   "aod_mean": 0.23,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-06",
+   "pm10_mean": 7.72,
+   "pm2p5_mean": 7.32,
+   "dust_mean": 0.79,
+   "aod_mean": 0.26,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-07",
+   "pm10_mean": 11.7,
+   "pm2p5_mean": 11.38,
+   "dust_mean": 0.54,
+   "aod_mean": 0.27,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-08",
+   "pm10_mean": 7.42,
+   "pm2p5_mean": 6.99,
+   "dust_mean": 0.71,
+   "aod_mean": 0.17,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-09",
+   "pm10_mean": 3.44,
+   "pm2p5_mean": 3.23,
+   "dust_mean": 0.17,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-10",
+   "pm10_mean": 5.05,
+   "pm2p5_mean": 4.73,
+   "dust_mean": 0.0,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-11",
+   "pm10_mean": 8.32,
+   "pm2p5_mean": 7.89,
+   "dust_mean": 0.04,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-12",
+   "pm10_mean": 7.29,
+   "pm2p5_mean": 6.89,
+   "dust_mean": 0.0,
+   "aod_mean": 0.17,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-13",
+   "pm10_mean": 8.22,
+   "pm2p5_mean": 7.95,
+   "dust_mean": 0.0,
+   "aod_mean": 0.2,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-14",
+   "pm10_mean": 10.64,
+   "pm2p5_mean": 10.05,
+   "dust_mean": 0.38,
+   "aod_mean": 0.27,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-15",
+   "pm10_mean": 12.22,
+   "pm2p5_mean": 11.34,
+   "dust_mean": 1.21,
+   "aod_mean": 0.18,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-16",
+   "pm10_mean": 11.56,
+   "pm2p5_mean": 10.66,
+   "dust_mean": 1.25,
+   "aod_mean": 0.16,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-17",
+   "pm10_mean": 11.94,
+   "pm2p5_mean": 11.05,
+   "dust_mean": 1.12,
+   "aod_mean": 0.25,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-18",
+   "pm10_mean": 11.73,
+   "pm2p5_mean": 10.87,
+   "dust_mean": 0.96,
+   "aod_mean": 0.27,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-19",
+   "pm10_mean": 6.62,
+   "pm2p5_mean": 6.26,
+   "dust_mean": 0.08,
+   "aod_mean": 0.2,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-20",
+   "pm10_mean": 3.45,
+   "pm2p5_mean": 3.25,
+   "dust_mean": 0.0,
+   "aod_mean": 0.18,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-21",
+   "pm10_mean": 2.27,
+   "pm2p5_mean": 2.23,
+   "dust_mean": 0.0,
+   "aod_mean": 0.09,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-22",
+   "pm10_mean": 2.36,
+   "pm2p5_mean": 2.31,
+   "dust_mean": 0.0,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-23",
+   "pm10_mean": 5.25,
+   "pm2p5_mean": 4.5,
+   "dust_mean": 1.0,
+   "aod_mean": 0.13,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-24",
+   "pm10_mean": 3.91,
+   "pm2p5_mean": 3.07,
+   "dust_mean": 1.04,
+   "aod_mean": 0.08,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-25",
+   "pm10_mean": 4.47,
+   "pm2p5_mean": 4.14,
+   "dust_mean": 0.0,
+   "aod_mean": 0.08,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-26",
+   "pm10_mean": 4.16,
+   "pm2p5_mean": 3.95,
+   "dust_mean": 0.0,
+   "aod_mean": 0.09,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-27",
+   "pm10_mean": 3.63,
+   "pm2p5_mean": 3.5,
+   "dust_mean": 0.0,
+   "aod_mean": 0.08,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-28",
+   "pm10_mean": 3.96,
+   "pm2p5_mean": 3.84,
+   "dust_mean": 0.0,
+   "aod_mean": 0.07,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-29",
+   "pm10_mean": 6.05,
+   "pm2p5_mean": 5.93,
+   "dust_mean": 0.0,
+   "aod_mean": 0.09,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-30",
+   "pm10_mean": 3.83,
+   "pm2p5_mean": 3.78,
+   "dust_mean": 0.0,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-03-31",
+   "pm10_mean": 3.98,
+   "pm2p5_mean": 3.8,
+   "dust_mean": 0.0,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-01",
+   "pm10_mean": 4.06,
+   "pm2p5_mean": 3.86,
+   "dust_mean": 0.17,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-02",
+   "pm10_mean": 4.76,
+   "pm2p5_mean": 4.22,
+   "dust_mean": 1.08,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-03",
+   "pm10_mean": 8.61,
+   "pm2p5_mean": 7.2,
+   "dust_mean": 2.79,
+   "aod_mean": 0.13,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-04",
+   "pm10_mean": 5.33,
+   "pm2p5_mean": 4.64,
+   "dust_mean": 1.17,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-05",
+   "pm10_mean": 3.73,
+   "pm2p5_mean": 3.38,
+   "dust_mean": 0.54,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-06",
+   "pm10_mean": 3.42,
+   "pm2p5_mean": 3.01,
+   "dust_mean": 0.46,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-07",
+   "pm10_mean": 2.08,
+   "pm2p5_mean": 1.98,
+   "dust_mean": 0.04,
+   "aod_mean": 0.07,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-08",
+   "pm10_mean": 3.77,
+   "pm2p5_mean": 3.59,
+   "dust_mean": 0.0,
+   "aod_mean": 0.07,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-09",
+   "pm10_mean": 4.4,
+   "pm2p5_mean": 3.73,
+   "dust_mean": 0.5,
+   "aod_mean": 0.08,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-10",
+   "pm10_mean": 4.04,
+   "pm2p5_mean": 3.03,
+   "dust_mean": 1.25,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-11",
+   "pm10_mean": 4.16,
+   "pm2p5_mean": 3.58,
+   "dust_mean": 0.67,
+   "aod_mean": 0.09,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-12",
+   "pm10_mean": 3.19,
+   "pm2p5_mean": 2.88,
+   "dust_mean": 0.38,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-13",
+   "pm10_mean": 3.39,
+   "pm2p5_mean": 2.96,
+   "dust_mean": 0.58,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-14",
+   "pm10_mean": 4.57,
+   "pm2p5_mean": 3.55,
+   "dust_mean": 1.25,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-15",
+   "pm10_mean": 4.58,
+   "pm2p5_mean": 3.67,
+   "dust_mean": 1.33,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-16",
+   "pm10_mean": 3.18,
+   "pm2p5_mean": 2.91,
+   "dust_mean": 0.33,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-17",
+   "pm10_mean": 1.83,
+   "pm2p5_mean": 1.8,
+   "dust_mean": 0.0,
+   "aod_mean": 0.09,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-18",
+   "pm10_mean": 2.12,
+   "pm2p5_mean": 1.99,
+   "dust_mean": 0.0,
+   "aod_mean": 0.09,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-19",
+   "pm10_mean": 3.3,
+   "pm2p5_mean": 2.8,
+   "dust_mean": 0.0,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-20",
+   "pm10_mean": 3.05,
+   "pm2p5_mean": 2.72,
+   "dust_mean": 0.0,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-21",
+   "pm10_mean": 2.54,
+   "pm2p5_mean": 2.29,
+   "dust_mean": 0.0,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-22",
+   "pm10_mean": 2.21,
+   "pm2p5_mean": 1.99,
+   "dust_mean": 0.0,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-23",
+   "pm10_mean": 4.08,
+   "pm2p5_mean": 3.59,
+   "dust_mean": 0.0,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-24",
+   "pm10_mean": 4.53,
+   "pm2p5_mean": 3.99,
+   "dust_mean": 0.0,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-25",
+   "pm10_mean": 7.62,
+   "pm2p5_mean": 6.68,
+   "dust_mean": 0.12,
+   "aod_mean": 0.15,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-26",
+   "pm10_mean": 6.41,
+   "pm2p5_mean": 5.82,
+   "dust_mean": 0.0,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-27",
+   "pm10_mean": 2.98,
+   "pm2p5_mean": 2.9,
+   "dust_mean": 0.0,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-28",
+   "pm10_mean": 2.48,
+   "pm2p5_mean": 2.42,
+   "dust_mean": 0.0,
+   "aod_mean": 0.09,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-29",
+   "pm10_mean": 6.61,
+   "pm2p5_mean": 6.42,
+   "dust_mean": 0.42,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-04-30",
+   "pm10_mean": 5.82,
+   "pm2p5_mean": 5.58,
+   "dust_mean": 0.12,
+   "aod_mean": 0.15,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-01",
+   "pm10_mean": 5.81,
+   "pm2p5_mean": 5.04,
+   "dust_mean": 0.0,
+   "aod_mean": 0.19,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-02",
+   "pm10_mean": 4.98,
+   "pm2p5_mean": 4.47,
+   "dust_mean": 0.0,
+   "aod_mean": 0.13,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-03",
+   "pm10_mean": 5.11,
+   "pm2p5_mean": 4.8,
+   "dust_mean": 0.0,
+   "aod_mean": 0.08,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-04",
+   "pm10_mean": 6.39,
+   "pm2p5_mean": 5.75,
+   "dust_mean": 0.0,
+   "aod_mean": 0.08,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-05",
+   "pm10_mean": 7.88,
+   "pm2p5_mean": 6.97,
+   "dust_mean": 0.12,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-06",
+   "pm10_mean": 9.08,
+   "pm2p5_mean": 8.01,
+   "dust_mean": 0.5,
+   "aod_mean": 0.16,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-07",
+   "pm10_mean": 6.81,
+   "pm2p5_mean": 6.09,
+   "dust_mean": 0.0,
+   "aod_mean": 0.15,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-08",
+   "pm10_mean": 3.16,
+   "pm2p5_mean": 3.02,
+   "dust_mean": 0.0,
+   "aod_mean": 0.09,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-09",
+   "pm10_mean": 5.27,
+   "pm2p5_mean": 5.15,
+   "dust_mean": 0.0,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-10",
+   "pm10_mean": 5.63,
+   "pm2p5_mean": 5.32,
+   "dust_mean": 0.0,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-11",
+   "pm10_mean": 5.55,
+   "pm2p5_mean": 4.92,
+   "dust_mean": 0.0,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-12",
+   "pm10_mean": 6.08,
+   "pm2p5_mean": 5.66,
+   "dust_mean": 0.0,
+   "aod_mean": 0.11,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-13",
+   "pm10_mean": 3.7,
+   "pm2p5_mean": 3.36,
+   "dust_mean": 0.0,
+   "aod_mean": 0.08,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-14",
+   "pm10_mean": 5.11,
+   "pm2p5_mean": 4.52,
+   "dust_mean": 0.0,
+   "aod_mean": 0.09,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-15",
+   "pm10_mean": 7.37,
+   "pm2p5_mean": 5.78,
+   "dust_mean": 2.04,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-16",
+   "pm10_mean": 11.59,
+   "pm2p5_mean": 7.39,
+   "dust_mean": 7.08,
+   "aod_mean": 0.18,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-17",
+   "pm10_mean": 16.78,
+   "pm2p5_mean": 9.58,
+   "dust_mean": 12.67,
+   "aod_mean": 0.23,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-18",
+   "pm10_mean": 21.08,
+   "pm2p5_mean": 10.78,
+   "dust_mean": 19.58,
+   "aod_mean": 0.23,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-19",
+   "pm10_mean": 17.03,
+   "pm2p5_mean": 9.72,
+   "dust_mean": 14.62,
+   "aod_mean": 0.17,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-20",
+   "pm10_mean": 21.41,
+   "pm2p5_mean": 12.03,
+   "dust_mean": 18.12,
+   "aod_mean": 0.24,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-21",
+   "pm10_mean": 19.64,
+   "pm2p5_mean": 13.37,
+   "dust_mean": 9.96,
+   "aod_mean": 0.26,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-22",
+   "pm10_mean": 21.64,
+   "pm2p5_mean": 13.81,
+   "dust_mean": 14.79,
+   "aod_mean": 0.21,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-23",
+   "pm10_mean": 11.82,
+   "pm2p5_mean": 7.72,
+   "dust_mean": 6.58,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-24",
+   "pm10_mean": 19.7,
+   "pm2p5_mean": 11.21,
+   "dust_mean": 15.0,
+   "aod_mean": 0.18,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-25",
+   "pm10_mean": 13.12,
+   "pm2p5_mean": 7.29,
+   "dust_mean": 9.96,
+   "aod_mean": 0.14,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-26",
+   "pm10_mean": 15.63,
+   "pm2p5_mean": 9.35,
+   "dust_mean": 10.08,
+   "aod_mean": 0.18,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-27",
+   "pm10_mean": 17.18,
+   "pm2p5_mean": 11.22,
+   "dust_mean": 8.5,
+   "aod_mean": 0.24,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-28",
+   "pm10_mean": 11.78,
+   "pm2p5_mean": 8.0,
+   "dust_mean": 5.17,
+   "aod_mean": 0.18,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-29",
+   "pm10_mean": 6.11,
+   "pm2p5_mean": 4.95,
+   "dust_mean": 0.42,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-30",
+   "pm10_mean": 4.79,
+   "pm2p5_mean": 3.92,
+   "dust_mean": 0.0,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-05-31",
+   "pm10_mean": 4.4,
+   "pm2p5_mean": 3.49,
+   "dust_mean": 0.0,
+   "aod_mean": 0.13,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-01",
+   "pm10_mean": 4.69,
+   "pm2p5_mean": 3.65,
+   "dust_mean": 0.0,
+   "aod_mean": 0.13,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-02",
+   "pm10_mean": 4.12,
+   "pm2p5_mean": 3.27,
+   "dust_mean": 0.0,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-03",
+   "pm10_mean": 3.67,
+   "pm2p5_mean": 3.07,
+   "dust_mean": 0.0,
+   "aod_mean": 0.1,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-04",
+   "pm10_mean": 3.0,
+   "pm2p5_mean": 2.72,
+   "dust_mean": 0.0,
+   "aod_mean": 0.09,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-05",
+   "pm10_mean": 5.52,
+   "pm2p5_mean": 4.63,
+   "dust_mean": 0.0,
+   "aod_mean": 0.09,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-06",
+   "pm10_mean": 6.16,
+   "pm2p5_mean": 4.82,
+   "dust_mean": 0.5,
+   "aod_mean": 0.12,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-07",
+   "pm10_mean": 9.5,
+   "pm2p5_mean": 5.45,
+   "dust_mean": 6.62,
+   "aod_mean": 0.15,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-08",
+   "pm10_mean": 13.43,
+   "pm2p5_mean": 6.49,
+   "dust_mean": 12.67,
+   "aod_mean": 0.15,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-09",
+   "pm10_mean": 15.27,
+   "pm2p5_mean": 8.35,
+   "dust_mean": 11.58,
+   "aod_mean": 0.16,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-10",
+   "pm10_mean": 16.22,
+   "pm2p5_mean": 8.78,
+   "dust_mean": 13.42,
+   "aod_mean": 0.19,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-11",
+   "pm10_mean": 17.59,
+   "pm2p5_mean": 9.94,
+   "dust_mean": 13.08,
+   "aod_mean": 0.21,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-12",
+   "pm10_mean": 15.01,
+   "pm2p5_mean": 9.38,
+   "dust_mean": 9.62,
+   "aod_mean": 0.25,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-13",
+   "pm10_mean": 12.31,
+   "pm2p5_mean": 9.07,
+   "dust_mean": 3.17,
+   "aod_mean": 0.2,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-14",
+   "pm10_mean": 15.66,
+   "pm2p5_mean": 11.27,
+   "dust_mean": 3.38,
+   "aod_mean": 0.21,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-15",
+   "pm10_mean": 10.5,
+   "pm2p5_mean": 8.13,
+   "dust_mean": 1.88,
+   "aod_mean": 0.17,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-16",
+   "pm10_mean": 6.8,
+   "pm2p5_mean": 5.79,
+   "dust_mean": 0.17,
+   "aod_mean": 0.13,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-17",
+   "pm10_mean": 9.02,
+   "pm2p5_mean": 7.45,
+   "dust_mean": 0.0,
+   "aod_mean": 0.17,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-18",
+   "pm10_mean": 14.71,
+   "pm2p5_mean": 9.44,
+   "dust_mean": 7.5,
+   "aod_mean": 0.21,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-19",
+   "pm10_mean": 23.23,
+   "pm2p5_mean": 13.87,
+   "dust_mean": 15.79,
+   "aod_mean": 0.3,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-20",
+   "pm10_mean": 20.13,
+   "pm2p5_mean": 11.54,
+   "dust_mean": 14.58,
+   "aod_mean": 0.29,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-21",
+   "pm10_mean": 19.56,
+   "pm2p5_mean": 11.07,
+   "dust_mean": 13.92,
+   "aod_mean": 0.24,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-22",
+   "pm10_mean": 18.54,
+   "pm2p5_mean": 11.23,
+   "dust_mean": 11.42,
+   "aod_mean": 0.29,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-23",
+   "pm10_mean": 18.89,
+   "pm2p5_mean": 11.61,
+   "dust_mean": 10.71,
+   "aod_mean": 0.29,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-24",
+   "pm10_mean": 17.37,
+   "pm2p5_mean": 11.78,
+   "dust_mean": 8.04,
+   "aod_mean": 0.24,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-25",
+   "pm10_mean": 14.99,
+   "pm2p5_mean": 11.87,
+   "dust_mean": 3.21,
+   "aod_mean": 0.19,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-26",
+   "pm10_mean": 14.9,
+   "pm2p5_mean": 12.39,
+   "dust_mean": 1.67,
+   "aod_mean": 0.22,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-27",
+   "pm10_mean": 11.37,
+   "pm2p5_mean": 9.74,
+   "dust_mean": 0.75,
+   "aod_mean": 0.22,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-28",
+   "pm10_mean": 10.15,
+   "pm2p5_mean": 8.74,
+   "dust_mean": 1.12,
+   "aod_mean": 0.18,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-29",
+   "pm10_mean": 12.93,
+   "pm2p5_mean": 9.68,
+   "dust_mean": 4.25,
+   "aod_mean": 0.25,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-06-30",
+   "pm10_mean": 15.75,
+   "pm2p5_mean": 9.12,
+   "dust_mean": 11.54,
+   "aod_mean": 0.25,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-07-01",
+   "pm10_mean": 19.9,
+   "pm2p5_mean": 9.32,
+   "dust_mean": 20.08,
+   "aod_mean": 0.25,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-07-02",
+   "pm10_mean": 17.99,
+   "pm2p5_mean": 9.91,
+   "dust_mean": 15.58,
+   "aod_mean": 0.23,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-07-03",
+   "pm10_mean": 11.31,
+   "pm2p5_mean": 6.65,
+   "dust_mean": 8.79,
+   "aod_mean": 0.22,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-07-04",
+   "pm10_mean": 11.39,
+   "pm2p5_mean": 7.74,
+   "dust_mean": 5.17,
+   "aod_mean": 0.27,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-07-05",
+   "pm10_mean": 16.76,
+   "pm2p5_mean": 11.33,
+   "dust_mean": 6.92,
+   "aod_mean": 0.31,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-07-06",
+   "pm10_mean": 17.8,
+   "pm2p5_mean": 9.43,
+   "dust_mean": 15.67,
+   "aod_mean": 0.23,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-07-07",
+   "pm10_mean": 14.15,
+   "pm2p5_mean": 8.53,
+   "dust_mean": 9.21,
+   "aod_mean": 0.16,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-07-08",
+   "pm10_mean": 10.25,
+   "pm2p5_mean": 6.98,
+   "dust_mean": 4.62,
+   "aod_mean": 0.17,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-07-09",
+   "pm10_mean": 13.71,
+   "pm2p5_mean": 9.6,
+   "dust_mean": 6.08,
+   "aod_mean": 0.25,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-07-10",
+   "pm10_mean": 15.44,
+   "pm2p5_mean": 11.26,
+   "dust_mean": 5.12,
+   "aod_mean": 0.29,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-07-11",
+   "pm10_mean": 10.84,
+   "pm2p5_mean": 6.77,
+   "dust_mean": 6.29,
+   "aod_mean": 0.26,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-07-12",
+   "pm10_mean": 21.95,
+   "pm2p5_mean": 9.98,
+   "dust_mean": 24.46,
+   "aod_mean": 0.28,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-07-13",
+   "pm10_mean": 17.49,
+   "pm2p5_mean": 9.01,
+   "dust_mean": 16.54,
+   "aod_mean": 0.22,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-07-14",
+   "pm10_mean": 17.25,
+   "pm2p5_mean": 11.32,
+   "dust_mean": 9.17,
+   "aod_mean": 0.21,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-07-15",
+   "pm10_mean": 20.32,
+   "pm2p5_mean": 13.13,
+   "dust_mean": 10.33,
+   "aod_mean": 0.23,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-07-16",
+   "pm10_mean": 18.12,
+   "pm2p5_mean": 13.55,
+   "dust_mean": 4.96,
+   "aod_mean": 0.24,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-07-17",
+   "pm10_mean": 15.43,
+   "pm2p5_mean": 12.77,
+   "dust_mean": 1.33,
+   "aod_mean": 0.28,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-07-18",
+   "pm10_mean": 21.05,
+   "pm2p5_mean": 17.87,
+   "dust_mean": 1.21,
+   "aod_mean": 0.33,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-07-19",
+   "pm10_mean": 15.97,
+   "pm2p5_mean": 13.47,
+   "dust_mean": 0.38,
+   "aod_mean": 0.28,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-07-20",
+   "pm10_mean": 11.78,
+   "pm2p5_mean": 9.64,
+   "dust_mean": 0.62,
+   "aod_mean": 0.26,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-07-21",
+   "pm10_mean": 12.46,
+   "pm2p5_mean": 9.11,
+   "dust_mean": 4.42,
+   "aod_mean": 0.23,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-07-22",
+   "pm10_mean": 13.23,
+   "pm2p5_mean": 7.55,
+   "dust_mean": 9.96,
+   "aod_mean": 0.22,
+   "is_high_dust": false
+  },
+  {
+   "date": "2026-07-23",
+   "pm10_mean": 17.92,
+   "pm2p5_mean": 11.4,
+   "dust_mean": 9.96,
+   "aod_mean": 0.25,
+   "is_high_dust": false
+  }
+ ],
+ "statistics": {
+  "days": 364
+ }
+}

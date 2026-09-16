@@ -1,0 +1,150 @@
+{
+  "dataset": "Lazzaretti (test split, daylight only) \u2014 LGBM",
+  "n_samples": 99481,
+  "classes": [
+    "normal",
+    "short_circuit",
+    "degradation",
+    "open_circuit",
+    "partial_shading"
+  ],
+  "confusion_matrix": [
+    [
+      59081,
+      0,
+      1,
+      0,
+      148
+    ],
+    [
+      0,
+      1201,
+      0,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      2061,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      1183,
+      0
+    ],
+    [
+      75,
+      3,
+      1,
+      2,
+      35722
+    ]
+  ],
+  "per_class": {
+    "normal": {
+      "precision": 0.9987,
+      "recall": 0.9975,
+      "f1": 0.9981,
+      "support": 59230
+    },
+    "short_circuit": {
+      "precision": 0.9975,
+      "recall": 0.9983,
+      "f1": 0.9979,
+      "support": 1203
+    },
+    "degradation": {
+      "precision": 0.999,
+      "recall": 0.9995,
+      "f1": 0.9993,
+      "support": 2062
+    },
+    "open_circuit": {
+      "precision": 0.9983,
+      "recall": 1.0,
+      "f1": 0.9992,
+      "support": 1183
+    },
+    "partial_shading": {
+      "precision": 0.9958,
+      "recall": 0.9977,
+      "f1": 0.9968,
+      "support": 35803
+    }
+  },
+  "macro_f1": 0.9983,
+  "weighted_f1": 0.9977,
+  "accuracy": 0.9977,
+  "extras": {
+    "model": "LightGBM (200 trees, depth 8, balanced weights)",
+    "features": [
+      "poa_irradiance",
+      "module_temp",
+      "string_current_1",
+      "string_current_2",
+      "string_voltage_1",
+      "string_voltage_2",
+      "i_mean",
+      "i_imbalance",
+      "v_imbalance",
+      "v_mean",
+      "current_ratio"
+    ],
+    "split": "test (last 20%)",
+    "train_time_s": 6.1,
+    "predict_time_s": 0.6,
+    "note": "Upper-bound benchmark \u2014 Lazzaretti was the source for our production rule training intuition, so this gives the achievable ceiling with SOTA tabular ML. Compare to lazzaretti_holdout.json (rule-based macro-F1) for the interpretability vs accuracy trade-off."
+  },
+  "feature_importance": [
+    {
+      "feature": "i_imbalance",
+      "importance": 4515
+    },
+    {
+      "feature": "v_imbalance",
+      "importance": 4049
+    },
+    {
+      "feature": "module_temp",
+      "importance": 3627
+    },
+    {
+      "feature": "poa_irradiance",
+      "importance": 3111
+    },
+    {
+      "feature": "string_voltage_2",
+      "importance": 2981
+    },
+    {
+      "feature": "string_current_1",
+      "importance": 2493
+    },
+    {
+      "feature": "current_ratio",
+      "importance": 2357
+    },
+    {
+      "feature": "string_voltage_1",
+      "importance": 2059
+    },
+    {
+      "feature": "string_current_2",
+      "importance": 1763
+    },
+    {
+      "feature": "i_mean",
+      "importance": 1526
+    },
+    {
+      "feature": "v_mean",
+      "importance": 1502
+    }
+  ],
+  "generated_at": "2026-06-21T10:40:13.903089Z"
+}

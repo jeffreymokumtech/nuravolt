@@ -1,0 +1,19 @@
+{
+  "plantId": "nordic-wind-1",
+  "plantName": "Nordic Wind Farm",
+  "location": "Jutland, Denmark",
+  "country": "Denmark",
+  "latitude": 55.6,
+  "longitude": 9.5,
+  "totalCapacityMw": 10.0,
+  "turbineCount": 5,
+  "turbineModel": "Vestas V110-2.0",
+  "commissioned": "2020-09-01",
+  "currentOutputMw": 4.2,
+  "availability": 0.962,
+  "capacityFactor": 0.324,
+  "fleetHealthScore": 91,
+  "activeFaultCount": 2,
+  "criticalAlertCount": 0,
+  "lastUpdated": "2025-01-13T08:00:00Z"
+}

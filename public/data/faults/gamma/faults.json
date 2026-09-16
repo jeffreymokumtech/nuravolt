@@ -1,0 +1,34 @@
+{
+  "plant_id": "gamma",
+  "generated_at": "2025-01-15T10:00:00.000000",
+  "reactive_faults": [
+    {
+      "fault_id": "F001",
+      "equipment_id": "INV 01.003",
+      "fault_type": "underperformance",
+      "severity": "warning",
+      "detected_at": "2025-01-12T14:30:00",
+      "energy_loss_kwh": 125.5,
+      "description": "Inverter showing 8% lower output than expected"
+    },
+    {
+      "fault_id": "F002",
+      "equipment_id": "INV 02.001",
+      "fault_type": "string_mismatch",
+      "severity": "info",
+      "detected_at": "2025-01-10T09:15:00",
+      "energy_loss_kwh": 45.2,
+      "description": "String current deviation detected"
+    }
+  ],
+  "predictive_faults": [],
+  "summary": {
+    "reactive_count": 2,
+    "predictive_count": 0,
+    "critical_count": 0,
+    "current_loss_kwh": 170.7,
+    "current_loss_value": 11.10,
+    "projected_loss_kwh": 0,
+    "projected_loss_value": 0
+  }
+}

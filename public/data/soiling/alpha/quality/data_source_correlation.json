@@ -1,0 +1,251 @@
+{
+  "metadata": {
+    "plantId": "alpha1",
+    "generatedAt": "2025-12-10T22:51:49.310264Z",
+    "period": {
+      "start": "2020-10-01",
+      "end": "2025-10-21"
+    },
+    "cvThreshold": 0.1,
+    "minSampleSize": 50
+  },
+  "overallAnalysis": {
+    "uniformPeriods": {
+      "count": 1420,
+      "zoneCorrelations": [
+        {
+          "zoneId": "INV 01",
+          "onSiteCorrelation": -0.1953,
+          "openMeteoCorrelation": -0.2022,
+          "betterSource": "similar",
+          "correlationDifference": 0.0069,
+          "sampleCount": 980
+        },
+        {
+          "zoneId": "INV 02",
+          "onSiteCorrelation": -0.1884,
+          "openMeteoCorrelation": -0.1894,
+          "betterSource": "similar",
+          "correlationDifference": 0.001,
+          "sampleCount": 981
+        },
+        {
+          "zoneId": "INV 03",
+          "onSiteCorrelation": -0.2138,
+          "openMeteoCorrelation": -0.197,
+          "betterSource": "similar",
+          "correlationDifference": -0.0168,
+          "sampleCount": 969
+        },
+        {
+          "zoneId": "INV 04",
+          "onSiteCorrelation": -0.2207,
+          "openMeteoCorrelation": -0.2255,
+          "betterSource": "similar",
+          "correlationDifference": 0.0048,
+          "sampleCount": 997
+        },
+        {
+          "zoneId": "INV 05",
+          "onSiteCorrelation": -0.23,
+          "openMeteoCorrelation": -0.2835,
+          "betterSource": "on_site",
+          "correlationDifference": 0.0535,
+          "sampleCount": 997
+        }
+      ]
+    },
+    "nonUniformPeriods": {
+      "count": 198,
+      "zoneCorrelations": [
+        {
+          "zoneId": "INV 01",
+          "onSiteCorrelation": -0.181,
+          "openMeteoCorrelation": -0.5625,
+          "betterSource": "on_site",
+          "correlationDifference": 0.3815,
+          "sampleCount": 130
+        },
+        {
+          "zoneId": "INV 02",
+          "onSiteCorrelation": -0.1857,
+          "openMeteoCorrelation": -0.5557,
+          "betterSource": "on_site",
+          "correlationDifference": 0.37,
+          "sampleCount": 133
+        },
+        {
+          "zoneId": "INV 03",
+          "onSiteCorrelation": -0.1959,
+          "openMeteoCorrelation": -0.5566,
+          "betterSource": "on_site",
+          "correlationDifference": 0.3607,
+          "sampleCount": 143
+        },
+        {
+          "zoneId": "INV 04",
+          "onSiteCorrelation": -0.1865,
+          "openMeteoCorrelation": -0.5706,
+          "betterSource": "on_site",
+          "correlationDifference": 0.3841,
+          "sampleCount": 145
+        },
+        {
+          "zoneId": "INV 05",
+          "onSiteCorrelation": -0.167,
+          "openMeteoCorrelation": -0.6099,
+          "betterSource": "on_site",
+          "correlationDifference": 0.4429,
+          "sampleCount": 145
+        }
+      ]
+    }
+  },
+  "conditionalAnalysis": [
+    {
+      "condition": "uniform",
+      "description": "CV < 0.10 - spatially uniform irradiance conditions",
+      "sampleCount": 1420,
+      "zoneCorrelations": [
+        {
+          "zoneId": "INV 01",
+          "onSiteCorrelation": -0.1953,
+          "openMeteoCorrelation": -0.2022,
+          "betterSource": "similar",
+          "correlationDifference": 0.0069,
+          "sampleCount": 980
+        },
+        {
+          "zoneId": "INV 02",
+          "onSiteCorrelation": -0.1884,
+          "openMeteoCorrelation": -0.1894,
+          "betterSource": "similar",
+          "correlationDifference": 0.001,
+          "sampleCount": 981
+        },
+        {
+          "zoneId": "INV 03",
+          "onSiteCorrelation": -0.2138,
+          "openMeteoCorrelation": -0.197,
+          "betterSource": "similar",
+          "correlationDifference": -0.0168,
+          "sampleCount": 969
+        },
+        {
+          "zoneId": "INV 04",
+          "onSiteCorrelation": -0.2207,
+          "openMeteoCorrelation": -0.2255,
+          "betterSource": "similar",
+          "correlationDifference": 0.0048,
+          "sampleCount": 997
+        },
+        {
+          "zoneId": "INV 05",
+          "onSiteCorrelation": -0.23,
+          "openMeteoCorrelation": -0.2835,
+          "betterSource": "on_site",
+          "correlationDifference": 0.0535,
+          "sampleCount": 997
+        }
+      ]
+    },
+    {
+      "condition": "nonUniform",
+      "description": "CV >= 0.10 - partial clouds or localized effects",
+      "sampleCount": 198,
+      "zoneCorrelations": [
+        {
+          "zoneId": "INV 01",
+          "onSiteCorrelation": -0.181,
+          "openMeteoCorrelation": -0.5625,
+          "betterSource": "on_site",
+          "correlationDifference": 0.3815,
+          "sampleCount": 130
+        },
+        {
+          "zoneId": "INV 02",
+          "onSiteCorrelation": -0.1857,
+          "openMeteoCorrelation": -0.5557,
+          "betterSource": "on_site",
+          "correlationDifference": 0.37,
+          "sampleCount": 133
+        },
+        {
+          "zoneId": "INV 03",
+          "onSiteCorrelation": -0.1959,
+          "openMeteoCorrelation": -0.5566,
+          "betterSource": "on_site",
+          "correlationDifference": 0.3607,
+          "sampleCount": 143
+        },
+        {
+          "zoneId": "INV 04",
+          "onSiteCorrelation": -0.1865,
+          "openMeteoCorrelation": -0.5706,
+          "betterSource": "on_site",
+          "correlationDifference": 0.3841,
+          "sampleCount": 145
+        },
+        {
+          "zoneId": "INV 05",
+          "onSiteCorrelation": -0.167,
+          "openMeteoCorrelation": -0.6099,
+          "betterSource": "on_site",
+          "correlationDifference": 0.4429,
+          "sampleCount": 145
+        }
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "INV 01 correlates significantly better with Open-Meteo during winter",
+      "season": "winter",
+      "affectedZones": [
+        "INV 01"
+      ],
+      "frequency": 0.25,
+      "confidence": 0.0751
+    },
+    {
+      "pattern": "INV 02 correlates significantly better with Open-Meteo during winter",
+      "season": "winter",
+      "affectedZones": [
+        "INV 02"
+      ],
+      "frequency": 0.25,
+      "confidence": 0.0751
+    },
+    {
+      "pattern": "INV 03 correlates significantly better with Open-Meteo during winter",
+      "season": "winter",
+      "affectedZones": [
+        "INV 03"
+      ],
+      "frequency": 0.25,
+      "confidence": 0.115
+    },
+    {
+      "pattern": "INV 04 correlates significantly better with Open-Meteo during winter",
+      "season": "winter",
+      "affectedZones": [
+        "INV 04"
+      ],
+      "frequency": 0.25,
+      "confidence": 0.0874
+    },
+    {
+      "pattern": "INV 05 correlates significantly better with on-site during autumn",
+      "season": "autumn",
+      "affectedZones": [
+        "INV 05"
+      ],
+      "frequency": 0.25,
+      "confidence": 0.0631
+    }
+  ],
+  "recommendations": [
+    "On-site irradiance sensor shows low correlation with zone performance. Consider sensor calibration or repositioning.",
+    "Winter correlations differ between data sources. Low sun angle may cause sensor-specific biases."
+  ]
+}

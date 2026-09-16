@@ -1,0 +1,89 @@
+{
+  "dataset": "Lazzaretti (physics-only blind baseline)",
+  "n_samples": 99481,
+  "classes": [
+    "normal",
+    "short_circuit",
+    "degradation",
+    "open_circuit",
+    "partial_shading"
+  ],
+  "confusion_matrix": [
+    [
+      55950,
+      1,
+      0,
+      0,
+      3279
+    ],
+    [
+      1194,
+      0,
+      0,
+      0,
+      9
+    ],
+    [
+      1991,
+      0,
+      0,
+      10,
+      61
+    ],
+    [
+      0,
+      0,
+      0,
+      1183,
+      0
+    ],
+    [
+      12531,
+      126,
+      0,
+      0,
+      23146
+    ]
+  ],
+  "per_class": {
+    "normal": {
+      "precision": 0.7807,
+      "recall": 0.9446,
+      "f1": 0.8549,
+      "support": 59230
+    },
+    "short_circuit": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1203
+    },
+    "degradation": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 2062
+    },
+    "open_circuit": {
+      "precision": 0.9916,
+      "recall": 1.0,
+      "f1": 0.9958,
+      "support": 1183
+    },
+    "partial_shading": {
+      "precision": 0.8736,
+      "recall": 0.6465,
+      "f1": 0.7431,
+      "support": 35803
+    }
+  },
+  "macro_f1": 0.5188,
+  "weighted_f1": 0.7883,
+  "accuracy": 0.807,
+  "extras": {
+    "classifier": "pv_row_classifier_physics (config.py defaults only)",
+    "thresholds_source": "nuravolt/fault/config.py \u2014 production manufacturer/physics defaults, NEVER tuned to any dataset",
+    "comparison_baseline": "vs pv_row_classifier.py (tuned surrogate) which scored 0.835 macro-F1. The gap between this score and 0.835 represents the tuning headroom \u2014 i.e. what we gained from looking at Lazzaretti's per-class percentile statistics."
+  },
+  "generated_at": "2026-08-21T08:30:37.787938Z"
+}

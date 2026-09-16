@@ -1,0 +1,501 @@
+{
+  "generatedAt": "2025-12-17T14:28:19.645623",
+  "config": {
+    "maxYears": null,
+    "numModules": 20,
+    "moduleImp": 10.0,
+    "usePhysicsBaseline": true,
+    "minR2": 0.4
+  },
+  "statistics": {
+    "totalStrings": 24,
+    "successful": 4,
+    "failed": 20,
+    "skipped": 0,
+    "totalTime_s": 7.583355,
+    "avgR2": 0.5801,
+    "avgMAE_A": 0.593
+  },
+  "strings": {
+    "INV_01.001_string_01": {
+      "stringId": "INV_01.001_string_01",
+      "inverterId": "INV_01.001",
+      "success": false,
+      "metrics": {
+        "mae": 0.409,
+        "rmse": 0.535,
+        "r2": -0.106,
+        "mape": 119.39,
+        "improvementOverPhysicsPct": 43.2,
+        "trainingSamples": 62382
+      },
+      "trainingSamples": 77977,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2025-12-13"
+      },
+      "errorMessage": "R\u00b2 too low: -0.106 < 0.4",
+      "processingTime_s": 1.35
+    },
+    "INV_01.001_string_02": {
+      "stringId": "INV_01.001_string_02",
+      "inverterId": "INV_01.001",
+      "success": false,
+      "metrics": {
+        "mae": 0.397,
+        "rmse": 0.544,
+        "r2": 0.267,
+        "mape": 97.28,
+        "improvementOverPhysicsPct": 47.9,
+        "trainingSamples": 65914
+      },
+      "trainingSamples": 82392,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2025-12-13"
+      },
+      "errorMessage": "R\u00b2 too low: 0.267 < 0.4",
+      "processingTime_s": 1.42
+    },
+    "INV_01.001_string_03": {
+      "stringId": "INV_01.001_string_03",
+      "inverterId": "INV_01.001",
+      "success": false,
+      "metrics": {
+        "mae": 0.389,
+        "rmse": 0.51,
+        "r2": 0.106,
+        "mape": 100.99,
+        "improvementOverPhysicsPct": 51.0,
+        "trainingSamples": 62827
+      },
+      "trainingSamples": 78533,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2025-12-13"
+      },
+      "errorMessage": "R\u00b2 too low: 0.106 < 0.4",
+      "processingTime_s": 1.42
+    },
+    "INV_01.001_string_04": {
+      "stringId": "INV_01.001_string_04",
+      "inverterId": "INV_01.001",
+      "success": false,
+      "metrics": {
+        "mae": 0.388,
+        "rmse": 0.53,
+        "r2": 0.312,
+        "mape": 113.83,
+        "improvementOverPhysicsPct": 45.1,
+        "trainingSamples": 65627
+      },
+      "trainingSamples": 82033,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2025-12-13"
+      },
+      "errorMessage": "R\u00b2 too low: 0.312 < 0.4",
+      "processingTime_s": 1.42
+    },
+    "INV_01.001_string_05": {
+      "stringId": "INV_01.001_string_05",
+      "inverterId": "INV_01.001",
+      "success": false,
+      "metrics": {
+        "mae": 0.385,
+        "rmse": 0.512,
+        "r2": 0.144,
+        "mape": 95.98,
+        "improvementOverPhysicsPct": 50.6,
+        "trainingSamples": 62461
+      },
+      "trainingSamples": 78076,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2025-12-13"
+      },
+      "errorMessage": "R\u00b2 too low: 0.144 < 0.4",
+      "processingTime_s": 1.24
+    },
+    "INV_01.001_string_07": {
+      "stringId": "INV_01.001_string_07",
+      "inverterId": "INV_01.001",
+      "success": false,
+      "metrics": {
+        "mae": 0.444,
+        "rmse": 0.592,
+        "r2": 0.211,
+        "mape": 97.6,
+        "improvementOverPhysicsPct": 51.3,
+        "trainingSamples": 62096
+      },
+      "trainingSamples": 77619,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2025-12-13"
+      },
+      "errorMessage": "R\u00b2 too low: 0.211 < 0.4",
+      "processingTime_s": 1.22
+    },
+    "INV_01.001_string_06": {
+      "stringId": "INV_01.001_string_06",
+      "inverterId": "INV_01.001",
+      "success": false,
+      "metrics": {
+        "mae": 0.388,
+        "rmse": 0.52,
+        "r2": 0.342,
+        "mape": 112.2,
+        "improvementOverPhysicsPct": 45.8,
+        "trainingSamples": 65585
+      },
+      "trainingSamples": 81981,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2025-12-13"
+      },
+      "errorMessage": "R\u00b2 too low: 0.342 < 0.4",
+      "processingTime_s": 1.29
+    },
+    "INV_01.001_string_08": {
+      "stringId": "INV_01.001_string_08",
+      "inverterId": "INV_01.001",
+      "success": false,
+      "metrics": {
+        "mae": 0.371,
+        "rmse": 0.524,
+        "r2": 0.388,
+        "mape": 101.68,
+        "improvementOverPhysicsPct": 50.3,
+        "trainingSamples": 65517
+      },
+      "trainingSamples": 81896,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2025-12-13"
+      },
+      "errorMessage": "R\u00b2 too low: 0.388 < 0.4",
+      "processingTime_s": 1.29
+    },
+    "INV_01.001_string_09": {
+      "stringId": "INV_01.001_string_09",
+      "inverterId": "INV_01.001",
+      "success": false,
+      "metrics": {
+        "mae": 0.394,
+        "rmse": 0.518,
+        "r2": 0.114,
+        "mape": 105.19,
+        "improvementOverPhysicsPct": 48.7,
+        "trainingSamples": 62232
+      },
+      "trainingSamples": 77790,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2025-12-13"
+      },
+      "errorMessage": "R\u00b2 too low: 0.114 < 0.4",
+      "processingTime_s": 1.26
+    },
+    "INV_01.001_string_10": {
+      "stringId": "INV_01.001_string_10",
+      "inverterId": "INV_01.001",
+      "success": false,
+      "metrics": {
+        "mae": 0.393,
+        "rmse": 0.515,
+        "r2": 0.01,
+        "mape": 121.41,
+        "improvementOverPhysicsPct": 41.2,
+        "trainingSamples": 66084
+      },
+      "trainingSamples": 82605,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2025-12-13"
+      },
+      "errorMessage": "R\u00b2 too low: 0.010 < 0.4",
+      "processingTime_s": 1.25
+    },
+    "INV_01.001_string_11": {
+      "stringId": "INV_01.001_string_11",
+      "inverterId": "INV_01.001",
+      "success": false,
+      "metrics": {
+        "mae": 0.418,
+        "rmse": 0.535,
+        "r2": 0.157,
+        "mape": 106.36,
+        "improvementOverPhysicsPct": 50.9,
+        "trainingSamples": 62651
+      },
+      "trainingSamples": 78313,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2025-12-13"
+      },
+      "errorMessage": "R\u00b2 too low: 0.157 < 0.4",
+      "processingTime_s": 1.17
+    },
+    "INV_01.001_string_12": {
+      "stringId": "INV_01.001_string_12",
+      "inverterId": "INV_01.001",
+      "success": true,
+      "metrics": {
+        "mae": 0.821,
+        "rmse": 1.18,
+        "r2": 0.736,
+        "mape": 46.35,
+        "improvementOverPhysicsPct": 70.3,
+        "trainingSamples": 65791
+      },
+      "trainingSamples": 82238,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2025-12-13"
+      },
+      "errorMessage": null,
+      "processingTime_s": 1.39
+    },
+    "INV_01.002_string_01": {
+      "stringId": "INV_01.002_string_01",
+      "inverterId": "INV_01.002",
+      "success": false,
+      "metrics": {
+        "mae": 0.416,
+        "rmse": 0.543,
+        "r2": -0.007,
+        "mape": 115.01,
+        "improvementOverPhysicsPct": 45.7,
+        "trainingSamples": 57162
+      },
+      "trainingSamples": 71452,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2025-12-13"
+      },
+      "errorMessage": "R\u00b2 too low: -0.007 < 0.4",
+      "processingTime_s": 1.1
+    },
+    "INV_01.002_string_03": {
+      "stringId": "INV_01.002_string_03",
+      "inverterId": "INV_01.002",
+      "success": false,
+      "metrics": {
+        "mae": 0.413,
+        "rmse": 0.537,
+        "r2": 0.09,
+        "mape": 107.41,
+        "improvementOverPhysicsPct": 47.3,
+        "trainingSamples": 57738
+      },
+      "trainingSamples": 72172,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2025-12-13"
+      },
+      "errorMessage": "R\u00b2 too low: 0.090 < 0.4",
+      "processingTime_s": 1.17
+    },
+    "INV_01.002_string_04": {
+      "stringId": "INV_01.002_string_04",
+      "inverterId": "INV_01.002",
+      "success": false,
+      "metrics": {
+        "mae": 0.365,
+        "rmse": 0.507,
+        "r2": 0.37,
+        "mape": 102.6,
+        "improvementOverPhysicsPct": 43.7,
+        "trainingSamples": 60220
+      },
+      "trainingSamples": 75275,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2025-12-13"
+      },
+      "errorMessage": "R\u00b2 too low: 0.370 < 0.4",
+      "processingTime_s": 0.95
+    },
+    "INV_01.002_string_02": {
+      "stringId": "INV_01.002_string_02",
+      "inverterId": "INV_01.002",
+      "success": false,
+      "metrics": {
+        "mae": 0.366,
+        "rmse": 0.5,
+        "r2": 0.375,
+        "mape": 104.47,
+        "improvementOverPhysicsPct": 45.0,
+        "trainingSamples": 60296
+      },
+      "trainingSamples": 75369,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2025-12-13"
+      },
+      "errorMessage": "R\u00b2 too low: 0.375 < 0.4",
+      "processingTime_s": 1.17
+    },
+    "INV_01.002_string_07": {
+      "stringId": "INV_01.002_string_07",
+      "inverterId": "INV_01.002",
+      "success": false,
+      "metrics": {
+        "mae": 0.359,
+        "rmse": 0.48,
+        "r2": 0.102,
+        "mape": 89.41,
+        "improvementOverPhysicsPct": 51.5,
+        "trainingSamples": 57414
+      },
+      "trainingSamples": 71767,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2025-12-13"
+      },
+      "errorMessage": "R\u00b2 too low: 0.102 < 0.4",
+      "processingTime_s": 1.13
+    },
+    "INV_01.002_string_05": {
+      "stringId": "INV_01.002_string_05",
+      "inverterId": "INV_01.002",
+      "success": false,
+      "metrics": {
+        "mae": 0.426,
+        "rmse": 0.585,
+        "r2": 0.334,
+        "mape": 91.71,
+        "improvementOverPhysicsPct": 51.1,
+        "trainingSamples": 57456
+      },
+      "trainingSamples": 71819,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2025-12-13"
+      },
+      "errorMessage": "R\u00b2 too low: 0.334 < 0.4",
+      "processingTime_s": 1.29
+    },
+    "INV_01.002_string_08": {
+      "stringId": "INV_01.002_string_08",
+      "inverterId": "INV_01.002",
+      "success": false,
+      "metrics": {
+        "mae": 0.387,
+        "rmse": 0.506,
+        "r2": 0.174,
+        "mape": 116.69,
+        "improvementOverPhysicsPct": 42.5,
+        "trainingSamples": 60654
+      },
+      "trainingSamples": 75817,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2025-12-13"
+      },
+      "errorMessage": "R\u00b2 too low: 0.174 < 0.4",
+      "processingTime_s": 1.25
+    },
+    "INV_01.002_string_06": {
+      "stringId": "INV_01.002_string_06",
+      "inverterId": "INV_01.002",
+      "success": true,
+      "metrics": {
+        "mae": 0.364,
+        "rmse": 0.508,
+        "r2": 0.468,
+        "mape": 90.42,
+        "improvementOverPhysicsPct": 51.8,
+        "trainingSamples": 60308
+      },
+      "trainingSamples": 75384,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2025-12-13"
+      },
+      "errorMessage": null,
+      "processingTime_s": 1.26
+    },
+    "INV_01.002_string_09": {
+      "stringId": "INV_01.002_string_09",
+      "inverterId": "INV_01.002",
+      "success": false,
+      "metrics": {
+        "mae": 0.373,
+        "rmse": 0.51,
+        "r2": 0.283,
+        "mape": 82.3,
+        "improvementOverPhysicsPct": 53.9,
+        "trainingSamples": 56936
+      },
+      "trainingSamples": 71170,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2025-12-13"
+      },
+      "errorMessage": "R\u00b2 too low: 0.283 < 0.4",
+      "processingTime_s": 1.22
+    },
+    "INV_01.002_string_10": {
+      "stringId": "INV_01.002_string_10",
+      "inverterId": "INV_01.002",
+      "success": false,
+      "metrics": {
+        "mae": 0.402,
+        "rmse": 0.548,
+        "r2": 0.272,
+        "mape": 98.69,
+        "improvementOverPhysicsPct": 46.9,
+        "trainingSamples": 60838
+      },
+      "trainingSamples": 76047,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2025-12-13"
+      },
+      "errorMessage": "R\u00b2 too low: 0.272 < 0.4",
+      "processingTime_s": 1.22
+    },
+    "INV_01.002_string_11": {
+      "stringId": "INV_01.002_string_11",
+      "inverterId": "INV_01.002",
+      "success": true,
+      "metrics": {
+        "mae": 0.365,
+        "rmse": 0.489,
+        "r2": 0.417,
+        "mape": 86.78,
+        "improvementOverPhysicsPct": 55.7,
+        "trainingSamples": 56455
+      },
+      "trainingSamples": 70568,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2025-12-13"
+      },
+      "errorMessage": null,
+      "processingTime_s": 1.16
+    },
+    "INV_01.002_string_12": {
+      "stringId": "INV_01.002_string_12",
+      "inverterId": "INV_01.002",
+      "success": true,
+      "metrics": {
+        "mae": 0.822,
+        "rmse": 1.248,
+        "r2": 0.7,
+        "mape": 42.78,
+        "improvementOverPhysicsPct": 70.6,
+        "trainingSamples": 60834
+      },
+      "trainingSamples": 76042,
+      "trainingPeriod": {
+        "start": "2020-10-01",
+        "end": "2025-12-13"
+      },
+      "errorMessage": null,
+      "processingTime_s": 1.21
+    }
+  }
+}

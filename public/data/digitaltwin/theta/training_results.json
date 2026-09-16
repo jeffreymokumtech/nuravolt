@@ -1,0 +1,120 @@
+{
+  "plant_id": "theta",
+  "plant_name": "Industrial Rooftop Theta",
+  "n_inverters": 20,
+  "training_start": "2026-02-10T10:00:00.000000",
+  "inverter_results": {
+    "SG50CX-01": {
+      "inverterId": "SG50CX-01",
+      "groupId": "South",
+      "training_time_s": 2.14,
+      "filter": {
+        "n_original": 12800,
+        "n_filtered": 11524,
+        "retention_ratio": 0.9003,
+        "method_stats": {
+          "pr_bounds": 12756,
+          "ambient_temp": 12735,
+          "irradiance_threshold": 11982,
+          "night_filter": 11524
+        }
+      },
+      "temperature": {
+        "mae": 1.82,
+        "r2": 0.9245
+      },
+      "current": {
+        "mae": 8.45,
+        "r2": 0.9784
+      },
+      "voltage": {
+        "mae": 3.21,
+        "r2": 0.8956
+      }
+    },
+    "SG50CX-05": {
+      "inverterId": "SG50CX-05",
+      "groupId": "South",
+      "training_time_s": 2.08,
+      "filter": {
+        "n_original": 12800,
+        "n_filtered": 11487,
+        "retention_ratio": 0.8974,
+        "method_stats": {
+          "pr_bounds": 12742,
+          "ambient_temp": 12718,
+          "irradiance_threshold": 11956,
+          "night_filter": 11487
+        }
+      },
+      "temperature": {
+        "mae": 1.96,
+        "r2": 0.9189
+      },
+      "current": {
+        "mae": 9.12,
+        "r2": 0.9729
+      },
+      "voltage": {
+        "mae": 3.54,
+        "r2": 0.8823
+      }
+    },
+    "SG50CX-12": {
+      "inverterId": "SG50CX-12",
+      "groupId": "East",
+      "training_time_s": 2.21,
+      "filter": {
+        "n_original": 12800,
+        "n_filtered": 11398,
+        "retention_ratio": 0.8905,
+        "method_stats": {
+          "pr_bounds": 12698,
+          "ambient_temp": 12671,
+          "irradiance_threshold": 11894,
+          "night_filter": 11398
+        }
+      },
+      "temperature": {
+        "mae": 2.15,
+        "r2": 0.9034
+      },
+      "current": {
+        "mae": 11.23,
+        "r2": 0.9489
+      },
+      "voltage": {
+        "mae": 4.12,
+        "r2": 0.8654
+      }
+    },
+    "SG50CX-18": {
+      "inverterId": "SG50CX-18",
+      "groupId": "West",
+      "training_time_s": 2.19,
+      "filter": {
+        "n_original": 12800,
+        "n_filtered": 11403,
+        "retention_ratio": 0.8909,
+        "method_stats": {
+          "pr_bounds": 12703,
+          "ambient_temp": 12679,
+          "irradiance_threshold": 11901,
+          "night_filter": 11403
+        }
+      },
+      "temperature": {
+        "mae": 2.08,
+        "r2": 0.9067
+      },
+      "current": {
+        "mae": 10.87,
+        "r2": 0.9497
+      },
+      "voltage": {
+        "mae": 3.98,
+        "r2": 0.8701
+      }
+    }
+  }
+}

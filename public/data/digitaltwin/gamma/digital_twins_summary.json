@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2025-01-15T10:00:00.000000",
+  "plantId": "gamma",
+  "plantName": "Gamma Solar Plant",
+  "modelType": "PerInverter (Physics + CatBoost x N)",
+  "config": {
+    "maxYears": null,
+    "minPR": 0.1,
+    "useCatBoost": true,
+    "minR2": 0.7,
+    "useEnhancedSelection": true
+  },
+  "statistics": {
+    "totalInverters": 42,
+    "successful": 42,
+    "failed": 0,
+    "totalTime_s": 285.5,
+    "avgR2": 0.992,
+    "avgMAE_kW": 0.0125,
+    "plantModelR2": 0.991,
+    "physicsOnlyR2": 0.965
+  },
+  "trainingPeriod": {
+    "start": "2024-01-01 07:15:00",
+    "end": "2025-01-14 16:45:00"
+  },
+  "hybridConfig": {
+    "modelType": "PlantLevel (Physics + ML)",
+    "physicsModel": "PVWatts",
+    "mlModel": "CatBoost",
+    "physicsParams": {
+      "latitude": 39.5696,
+      "longitude": 2.6502,
+      "tilt": 30.0,
+      "azimuth": 180.0,
+      "gamma_pdc": -0.004
+    },
+    "categoricalFeature": "inverter_id"
+  },
+  "inverters": {}
+}

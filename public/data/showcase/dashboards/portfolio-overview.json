@@ -1,0 +1,49 @@
+{
+  "id": "portfolio-overview",
+  "title": "Portfolio Overview",
+  "subtitle": "Cross-plant KPIs: revenue, risk, and composite health for all assets.",
+  "scope": "All plants · last 30 days",
+  "generated_at": "2026-04-16T08:00:00.000Z",
+  "tiles": [
+    {
+      "title": "Installed Capacity",
+      "metric": "65.0",
+      "unit": "MW",
+      "note": "2 plants · 1 PV (with BESS) · 1 wind."
+    },
+    {
+      "title": "Annual Revenue",
+      "metric": "€5.95M",
+      "note": "Helios €3.85M · Zephyr €2.10M."
+    },
+    {
+      "title": "Revenue at Risk",
+      "metric": "€191.4k",
+      "note": "3.2% of annual. Driven by Helios inverter tail and WTG-08."
+    },
+    {
+      "title": "Weighted Performance",
+      "metric": "86.2",
+      "unit": "%",
+      "note": "Capacity-weighted PR across the portfolio."
+    },
+    {
+      "title": "Loss Attribution",
+      "series": [
+        { "label": "Soiling (Helios)", "value": -68.2 },
+        { "label": "Faults (Helios)", "value": -74.3 },
+        { "label": "Power curve (Zephyr)", "value": -34.1 },
+        { "label": "Gearbox RUL (Zephyr)", "value": -14.8 }
+      ],
+      "note": "Projected losses by root cause (€k, 90-day outlook)."
+    },
+    {
+      "title": "Composite Risk",
+      "series": [
+        { "label": "Helios PV", "value": 34.0 },
+        { "label": "Zephyr Wind", "value": 22.0 }
+      ],
+      "note": "Risk index 0–100. Helios medium, Zephyr low."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "plantInfo": {
+    "plantName": "Delta Solar Plant",
+    "capacity_MW": 12.9,
+    "totalInverters": 215,
+    "inverterGroups": [
+      "INV 01",
+      "INV 02",
+      "INV 03",
+      "INV 04",
+      "INV 05",
+      "INV 06",
+      "INV 07"
+    ]
+  },
+  "analysisPeriod": {
+    "start": "2024-01-15",
+    "end": "2025-01-15",
+    "totalDays": 365
+  },
+  "fleetSoiling": {
+    "srMean": 0.918,
+    "srStd": 0.041,
+    "srMin": 0.83,
+    "srMax": 0.98
+  },
+  "fleetLosses": {
+    "totalSoilingLoss_MWh": 1882.4,
+    "totalLoss_MWh": 1882.4,
+    "referenceEnergy_MWh": 22950.0,
+    "netEnergy_MWh": 21067.6
+  },
+  "healthDistribution": {
+    "normal": 185,
+    "minorIssues": 24,
+    "majorIssues": 6,
+    "critical": 0
+  },
+  "topPerformers": [
+    { "id": "INV 01", "sr": 0.96, "loss_pct": 4.0 },
+    { "id": "INV 03", "sr": 0.95, "loss_pct": 5.0 }
+  ],
+  "worstPerformers": [
+    { "id": "INV 07", "sr": 0.87, "loss_pct": 13.0 },
+    { "id": "INV 05", "sr": 0.88, "loss_pct": 12.0 }
+  ],
+  "economicImpact": {
+    "estimatedAnnualLoss_EUR": 122356.0,
+    "cleaningROIPotential_EUR": 85649.2
+  }
+}

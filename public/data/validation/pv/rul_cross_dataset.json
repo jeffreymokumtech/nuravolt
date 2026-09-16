@@ -1,0 +1,105 @@
+{
+  "dataset": "module_degradation RUL on Sandia PV-IV-EL",
+  "n_samples": 9,
+  "n_modules_validated": 9,
+  "spearman_correlation_fade_vs_eol": -0.375,
+  "expected_sign": "negative",
+  "interpretation": "WEAK NEGATIVE \u2014 partial transfer",
+  "fade_rate_distribution_pct_per_year": {
+    "mean": 0.4438,
+    "p25": 0.331,
+    "p50": 0.4643,
+    "p75": 0.5524
+  },
+  "predicted_eol_days_distribution": {
+    "mean": 29.2,
+    "p25": 28.2,
+    "p50": 29.8,
+    "p75": 29.9
+  },
+  "sample_modules": [
+    {
+      "mod_id": 3245,
+      "n_measurements": 3,
+      "exposure_span_days": 1280,
+      "latest_pr_proxy": 1.0026,
+      "observed_fade_pct_per_year": 0.5437,
+      "predicted_days_to_fault": 29.8,
+      "predicted_confidence": 0.779
+    },
+    {
+      "mod_id": 3246,
+      "n_measurements": 3,
+      "exposure_span_days": 1280,
+      "latest_pr_proxy": 1.0004,
+      "observed_fade_pct_per_year": 0.5524,
+      "predicted_days_to_fault": 29.8,
+      "predicted_confidence": 0.78
+    },
+    {
+      "mod_id": 3248,
+      "n_measurements": 3,
+      "exposure_span_days": 1296,
+      "latest_pr_proxy": 0.9863,
+      "observed_fade_pct_per_year": 0.6833,
+      "predicted_days_to_fault": 28.2,
+      "predicted_confidence": 0.792
+    },
+    {
+      "mod_id": 3249,
+      "n_measurements": 3,
+      "exposure_span_days": 1296,
+      "latest_pr_proxy": 0.986,
+      "observed_fade_pct_per_year": 0.7933,
+      "predicted_days_to_fault": 28.1,
+      "predicted_confidence": 0.792
+    },
+    {
+      "mod_id": 3253,
+      "n_measurements": 3,
+      "exposure_span_days": 1291,
+      "latest_pr_proxy": 1.0029,
+      "observed_fade_pct_per_year": 0.4317,
+      "predicted_days_to_fault": 29.9,
+      "predicted_confidence": 0.779
+    },
+    {
+      "mod_id": 3254,
+      "n_measurements": 3,
+      "exposure_span_days": 1291,
+      "latest_pr_proxy": 0.9964,
+      "observed_fade_pct_per_year": 0.4643,
+      "predicted_days_to_fault": 29.1,
+      "predicted_confidence": 0.784
+    },
+    {
+      "mod_id": 3255,
+      "n_measurements": 3,
+      "exposure_span_days": 1283,
+      "latest_pr_proxy": 1.0058,
+      "observed_fade_pct_per_year": 0.331,
+      "predicted_days_to_fault": 30.4,
+      "predicted_confidence": 0.776
+    },
+    {
+      "mod_id": 3256,
+      "n_measurements": 3,
+      "exposure_span_days": 1283,
+      "latest_pr_proxy": 1.0131,
+      "observed_fade_pct_per_year": 0.3195,
+      "predicted_days_to_fault": 31.2,
+      "predicted_confidence": 0.77
+    },
+    {
+      "mod_id": 3555,
+      "n_measurements": 3,
+      "exposure_span_days": 1352,
+      "latest_pr_proxy": 0.9681,
+      "observed_fade_pct_per_year": -0.125,
+      "predicted_days_to_fault": 26.4,
+      "predicted_confidence": 0.806
+    }
+  ],
+  "note": "Cross-dataset validation. module_degradation RUL was trained on Lazzaretti synthetic 'degradation' labels (series-resistor snapshots) \u2014 testing whether it generalizes to PV-IV-EL real outdoor fade. Spearman correlation between observed fade rate and predicted EOL is the honest transfer metric.",
+  "generated_at": "2026-06-21T10:40:18.070803Z"
+}

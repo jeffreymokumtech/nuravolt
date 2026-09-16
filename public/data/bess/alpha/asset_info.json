@@ -1,0 +1,13 @@
+{
+  "asset_id": "bess-alpha-001",
+  "plant_id": "alpha",
+  "name": "Alpha BESS Unit 1",
+  "chemistry": "LFP",
+  "nominal_capacity_kwh": 5000,
+  "nominal_power_kw": 2500,
+  "manufacturer": "BYD",
+  "model": "Battery Box",
+  "installation_date": "2024-06-01",
+  "current_soh": 0.9537,
+  "current_soc": 0.65
+}

@@ -1,0 +1,11 @@
+{
+  "bullets": [
+    "Soiling ratio sits at 96.4% and the 30 day forecast declines to 93.5%, a peak loss of 6.5%.",
+    "The forecast recommends scheduling a clean within 14 days; no rain relief is expected inside the horizon.",
+    "Digital twin tracking is nominal; no predictive faults are urgent this week."
+  ],
+  "generatedAt": "2026-01-01T00:00:00Z",
+  "scope": {
+    "plantId": "helios"
+  }
+}

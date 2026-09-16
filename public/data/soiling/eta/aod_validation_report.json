@@ -1,0 +1,37 @@
+{
+  "plant_id": "eta",
+  "validation_date": "2025-12-17T15:13:28.235744",
+  "overlap_period": {
+    "start": "2024-10-01",
+    "end": "2024-12-31",
+    "days": 92
+  },
+  "statistics": {
+    "cams_eac4": {
+      "mean": 0.08952595108695652,
+      "std": 0.07779130746926355,
+      "min": 0.005475,
+      "max": 0.3379625
+    },
+    "openmeteo": {
+      "mean": 0.08781630434782607,
+      "std": 0.06173931218397927,
+      "min": 0.0171,
+      "max": 0.2746
+    },
+    "comparison": {
+      "bias": -0.0017096467391304324,
+      "bias_percent": -1.9096661005811078,
+      "rmse": 0.02963528505994567,
+      "mae": 0.022965624999999993,
+      "correlation": 0.9356976123940515,
+      "p_value": 1.6971332460106408e-42,
+      "r_squared": 0.854870373936293
+    }
+  },
+  "assessment": {
+    "compatible": true,
+    "recommendation": "\u2705 COMPATIBLE - Safe to use together with bias correction",
+    "correction_method": "Subtract -0.0017 from Open-Meteo values"
+  }
+}

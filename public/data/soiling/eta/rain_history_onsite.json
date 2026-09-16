@@ -1,0 +1,8 @@
+{
+  "metadata": {
+    "plant_id": "eta",
+    "source": "No on-site rain sensor available",
+    "note": "Using Open-Meteo data instead"
+  },
+  "daily_data": []
+}

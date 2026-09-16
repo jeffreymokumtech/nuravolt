@@ -1,0 +1,177 @@
+{
+  "dataset": "NREL Soiling Map",
+  "n_samples": 146,
+  "n_sites": 146,
+  "metric": "soiling_rate_during_dry_intervals_pct_per_day",
+  "distribution": {
+    "min": 0.0408,
+    "p25": 0.0883,
+    "p50": 0.1075,
+    "p75": 0.1358,
+    "max": 0.2958
+  },
+  "sites_preview": [
+    {
+      "site_id": "13038_ac_power_inv_23327",
+      "lat": 36.1,
+      "lon": -119.57,
+      "n_months_observed": 12,
+      "mean_soiling_rate_pct_per_day": 0.2125,
+      "max_monthly_rate_pct_per_day": 0.29
+    },
+    {
+      "site_id": "5217_ac_power_inv_3286",
+      "lat": 34.1,
+      "lon": -118.11,
+      "n_months_observed": 12,
+      "mean_soiling_rate_pct_per_day": 0.1025,
+      "max_monthly_rate_pct_per_day": 0.16
+    },
+    {
+      "site_id": "5328_dc_power_inv_4559",
+      "lat": 33.93,
+      "lon": -118.34,
+      "n_months_observed": 12,
+      "mean_soiling_rate_pct_per_day": 0.1125,
+      "max_monthly_rate_pct_per_day": 0.17
+    },
+    {
+      "site_id": "5104_ac_power_inv_2365",
+      "lat": 33.59,
+      "lon": -112.24,
+      "n_months_observed": 12,
+      "mean_soiling_rate_pct_per_day": 0.0458,
+      "max_monthly_rate_pct_per_day": 0.07
+    },
+    {
+      "site_id": "5116_ac_power_inv_2417",
+      "lat": 34.47,
+      "lon": -118.63,
+      "n_months_observed": 12,
+      "mean_soiling_rate_pct_per_day": 0.09,
+      "max_monthly_rate_pct_per_day": 0.13
+    },
+    {
+      "site_id": "13068_ac_power_inv_23733",
+      "lat": 37.36,
+      "lon": -120.59,
+      "n_months_observed": 12,
+      "mean_soiling_rate_pct_per_day": 0.1483,
+      "max_monthly_rate_pct_per_day": 0.28
+    },
+    {
+      "site_id": "5159_ac_power_inv_2715",
+      "lat": 32.23,
+      "lon": -110.88,
+      "n_months_observed": 12,
+      "mean_soiling_rate_pct_per_day": 0.0875,
+      "max_monthly_rate_pct_per_day": 0.13
+    },
+    {
+      "site_id": "5277_ac_power_inv_4019",
+      "lat": 34.45,
+      "lon": -118.42,
+      "n_months_observed": 12,
+      "mean_soiling_rate_pct_per_day": 0.095,
+      "max_monthly_rate_pct_per_day": 0.13
+    },
+    {
+      "site_id": "5337_ac_power_inv_4639",
+      "lat": 34.03,
+      "lon": -117.59,
+      "n_months_observed": 12,
+      "mean_soiling_rate_pct_per_day": 0.1275,
+      "max_monthly_rate_pct_per_day": 0.18
+    },
+    {
+      "site_id": "7154_ac_power_inv_14845",
+      "lat": 34.08,
+      "lon": -117.23,
+      "n_months_observed": 12,
+      "mean_soiling_rate_pct_per_day": 0.1825,
+      "max_monthly_rate_pct_per_day": 0.29
+    },
+    {
+      "site_id": "5002_ac_power_inv_2012",
+      "lat": 33.37,
+      "lon": -112.58,
+      "n_months_observed": 12,
+      "mean_soiling_rate_pct_per_day": 0.1775,
+      "max_monthly_rate_pct_per_day": 0.33
+    },
+    {
+      "site_id": "13193_dc_power_inv_25624",
+      "lat": 34.27,
+      "lon": -118.45,
+      "n_months_observed": 9,
+      "mean_soiling_rate_pct_per_day": 0.0889,
+      "max_monthly_rate_pct_per_day": 0.13
+    },
+    {
+      "site_id": "5012_ac_power_inv_2051",
+      "lat": 32.68,
+      "lon": -114.67,
+      "n_months_observed": 12,
+      "mean_soiling_rate_pct_per_day": 0.1358,
+      "max_monthly_rate_pct_per_day": 0.19
+    },
+    {
+      "site_id": "5226_dc_power_inv_3360",
+      "lat": 34.12,
+      "lon": -117.6,
+      "n_months_observed": 12,
+      "mean_soiling_rate_pct_per_day": 0.1125,
+      "max_monthly_rate_pct_per_day": 0.21
+    },
+    {
+      "site_id": "5218_ac_power_inv_5860",
+      "lat": 34.1,
+      "lon": -118.11,
+      "n_months_observed": 12,
+      "mean_soiling_rate_pct_per_day": 0.0958,
+      "max_monthly_rate_pct_per_day": 0.15
+    },
+    {
+      "site_id": "5113_ac_power_inv_2395",
+      "lat": 34.05,
+      "lon": -117.53,
+      "n_months_observed": 12,
+      "mean_soiling_rate_pct_per_day": 0.1417,
+      "max_monthly_rate_pct_per_day": 0.22
+    },
+    {
+      "site_id": "5358_ac_power_inv_4839",
+      "lat": 34.13,
+      "lon": -117.88,
+      "n_months_observed": 12,
+      "mean_soiling_rate_pct_per_day": 0.1092,
+      "max_monthly_rate_pct_per_day": 0.13
+    },
+    {
+      "site_id": "13037_ac_power_inv_23325",
+      "lat": 34.06,
+      "lon": -117.75,
+      "n_months_observed": 12,
+      "mean_soiling_rate_pct_per_day": 0.1683,
+      "max_monthly_rate_pct_per_day": 0.23
+    },
+    {
+      "site_id": "13065_ac_power_inv_23707",
+      "lat": 37.34,
+      "lon": -120.6,
+      "n_months_observed": 12,
+      "mean_soiling_rate_pct_per_day": 0.2058,
+      "max_monthly_rate_pct_per_day": 0.3
+    },
+    {
+      "site_id": "5409_ac_power_inv_5344",
+      "lat": 34.11,
+      "lon": -117.25,
+      "n_months_observed": 12,
+      "mean_soiling_rate_pct_per_day": 0.0925,
+      "max_monthly_rate_pct_per_day": 0.15
+    }
+  ],
+  "note": "NREL publishes per-interval soiling RATE (loss/day during dry spells before rain resets), NOT total annual loss. NuraVolt's SR forecast should produce comparable per-day rates for the same climate. Per-day ground-truth SR validation requires DustIQ sensor data or rdtools-on-PVDAQ \u2014 both pending manual fetch.",
+  "generated_at": "2026-06-21T10:40:43.389947Z"
+}

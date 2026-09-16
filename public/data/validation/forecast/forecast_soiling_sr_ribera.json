@@ -1,0 +1,13 @@
+{
+  "dataset": "Ribera soiling-ratio forecast vs DustIQ reference",
+  "n_samples": 2799,
+  "n_windows": 36,
+  "horizon_hours": 24,
+  "driver": "endogenous",
+  "mae_sr_pp": 1.4444179083539639,
+  "mae_sr_pp_std": 0.5384765359677905,
+  "r2_footnote_only": -0.8912531524863245,
+  "note": "Soiling ratio error in percentage points (pp): 1.44 means the estimate was off by 0.0144 of soiling ratio. Only the one-day horizon is published: scripts/backtest_forecast.py currently reuses a single prediction for every horizon, so its 3/7/14/21/30-day rows are identical to the one-day row and are not real multi-horizon results. R-squared on this series is negative because the test-window variance of soiling ratio is near zero, which is why error, not R-squared, is the metric that means anything here.",
+  "source_artifact": "backenddata/outputs/backtest_ribera/backtest_report.json",
+  "generated_at": "2026-08-20T11:48:48.391514Z"
+}

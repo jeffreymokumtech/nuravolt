@@ -1,0 +1,110 @@
+[
+  {
+    "id": "test-1",
+    "test_date": "2023-12-01T00:00:00",
+    "measured_capacity_kwh": 3215,
+    "soh_result": 1.0047,
+    "capacity_retention": 1.0047,
+    "test_type": "commissioning",
+    "ambient_temp_c": 18.5,
+    "c_rate_used": 0.2,
+    "is_valid": true,
+    "notes": "Initial commissioning test - above nominal capacity"
+  },
+  {
+    "id": "test-2",
+    "test_date": "2024-03-18T00:00:00",
+    "measured_capacity_kwh": 3178,
+    "soh_result": 0.9931,
+    "capacity_retention": 0.9931,
+    "test_type": "quarterly",
+    "ambient_temp_c": 21.3,
+    "c_rate_used": 0.2,
+    "is_valid": true,
+    "notes": "Q1 2024 routine capacity test"
+  },
+  {
+    "id": "test-3",
+    "test_date": "2024-06-20T00:00:00",
+    "measured_capacity_kwh": 3152,
+    "soh_result": 0.985,
+    "capacity_retention": 0.985,
+    "test_type": "quarterly",
+    "ambient_temp_c": 32.1,
+    "c_rate_used": 0.2,
+    "is_valid": true,
+    "notes": "Q2 2024 routine - slight summer degradation noted"
+  },
+  {
+    "id": "test-4",
+    "test_date": "2024-09-15T00:00:00",
+    "measured_capacity_kwh": 3157,
+    "soh_result": 0.9866,
+    "capacity_retention": 0.9866,
+    "test_type": "quarterly",
+    "ambient_temp_c": 28.7,
+    "c_rate_used": 0.2,
+    "is_valid": true,
+    "notes": "Q3 2024 routine capacity test"
+  },
+  {
+    "id": "test-5",
+    "test_date": "2024-12-16T00:00:00",
+    "measured_capacity_kwh": 3138,
+    "soh_result": 0.9806,
+    "capacity_retention": 0.9806,
+    "test_type": "quarterly",
+    "ambient_temp_c": 15.2,
+    "c_rate_used": 0.2,
+    "is_valid": true,
+    "notes": "Q4 2024 routine capacity test"
+  },
+  {
+    "id": "test-6",
+    "test_date": "2025-03-15T00:00:00",
+    "measured_capacity_kwh": 3128,
+    "soh_result": 0.9775,
+    "capacity_retention": 0.9775,
+    "test_type": "quarterly",
+    "ambient_temp_c": 19.8,
+    "c_rate_used": 0.2,
+    "is_valid": true,
+    "notes": "Q1 2025 routine capacity test"
+  },
+  {
+    "id": "test-7",
+    "test_date": "2025-06-19T00:00:00",
+    "measured_capacity_kwh": 3106,
+    "soh_result": 0.9706,
+    "capacity_retention": 0.9706,
+    "test_type": "quarterly",
+    "ambient_temp_c": 34.5,
+    "c_rate_used": 0.2,
+    "is_valid": true,
+    "notes": "Q2 2025 routine - summer heat impact"
+  },
+  {
+    "id": "test-8",
+    "test_date": "2025-09-15T00:00:00",
+    "measured_capacity_kwh": 3088,
+    "soh_result": 0.965,
+    "capacity_retention": 0.965,
+    "test_type": "quarterly",
+    "ambient_temp_c": 27.2,
+    "c_rate_used": 0.2,
+    "is_valid": true,
+    "notes": "Q3 2025 routine capacity test"
+  },
+  {
+    "id": "test-9",
+    "test_date": "2025-12-18T00:00:00",
+    "measured_capacity_kwh": 3062,
+    "soh_result": 0.9569,
+    "capacity_retention": 0.9569,
+    "test_type": "quarterly",
+    "ambient_temp_c": 14.8,
+    "c_rate_used": 0.2,
+    "is_valid": true,
+    "notes": "Q4 2025 routine capacity test"
+  }
+]

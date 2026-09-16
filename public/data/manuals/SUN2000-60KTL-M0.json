@@ -1,0 +1,255 @@
+{
+  "model": "SUN2000-60KTL-M0",
+  "manufacturer": "Huawei",
+  "family": "SUN2000 M0 commercial series (50/60/65 KTL)",
+  "source": "https://solar.huawei.com/-/media/Solar/attachment/pdf/au/service/commercial/SUN200050KTL%2060KTL%2065KTLM0%20User%20Manual%2025%2008%2021.pdf",
+  "source_date": "2021-06-08",
+  "specs": {
+    "nominal_power_ac_kw": 60,
+    "max_apparent_power_kva": 66,
+    "max_active_power_kw": 66,
+    "max_dc_input_power_w": 67400,
+    "max_dc_input_voltage_v": 1100,
+    "operating_voltage_range_v": [
+      200,
+      1000
+    ],
+    "startup_voltage_v": 200,
+    "full_power_mppt_voltage_range_v": [
+      520,
+      800
+    ],
+    "rated_input_voltage_v": 600,
+    "max_input_current_per_mppt_a": 22,
+    "max_short_circuit_current_per_mppt_a": 30,
+    "mppt_count": 6,
+    "inputs_count": 12,
+    "strings_per_mppt": 2,
+    "max_efficiency_pct": 98.7,
+    "euro_efficiency_pct": 98.5
+  },
+  "environmental": {
+    "operating_temp_c": [
+      -25,
+      60
+    ],
+    "derating_start_temp_c": 45,
+    "ingress_protection": "IP66",
+    "relative_humidity_pct": [
+      0,
+      100
+    ],
+    "max_altitude_m": 4000
+  },
+  "fault_codes": [
+    {
+      "code": "2001",
+      "name": "High String Input Voltage",
+      "severity": "major",
+      "cause": "The PV array is incorrectly configured. Excessive PV modules are connected in series to the PV string, and hence the PV string open-circuit voltage exceeds the maximum operating voltage of the SUN2000.  Cause ID 1 corresponds to PV strings 1 and 2.  Cause ID 2 corresponds to PV strings 3 and 4.  Cause ID 3 corresponds to PV strings 5 and 6.  Cause ID 4 corresponds to PV strings 7 and 8.  Caus",
+      "action": ""
+    },
+    {
+      "code": "2011",
+      "name": "String Reverse Connection",
+      "severity": "major",
+      "cause": "The PV string is reversely connected. Cause IDs 1 to 12 respectively correspond to PV strings 1 to 12. Check whether the PV string is reversely connected to the SUN2000. If yes, wait until the solar irradiance declines at night and the PV string current reduces to below 0.5 A. Then, turn off the two DC switches and correct the PV string connection.",
+      "action": ""
+    },
+    {
+      "code": "2012",
+      "name": "String Current Backfeed",
+      "severity": "warning",
+      "cause": "1. Only a few PV modules are connected in series to the PV string, and hence the end voltage is lower than that of other PV strings. 2. The PV string is shaded. Cause IDs 1 to 12 respectively correspond to PV strings 1 to 12. 1. Check whether the number of PV modules connected in series to this PV string is less than the number of PV modules connected in series to the other PV strings. If yes, con",
+      "action": ""
+    },
+    {
+      "code": "2013",
+      "name": "Abnormal String Power",
+      "severity": "warning",
+      "cause": "1. The PV string has been shaded for a long time. 2. The PV string deteriorates abnormally. Cause IDs 1 to 12 respectively correspond to PV strings 1 to 12. 1. Check whether the current of the abnormal PV string is lower than the current of other PV strings. If yes, check that the abnormal PV string is not shaded and the actual number of PV strings is the same as the configured number. 2. If the a",
+      "action": ""
+    },
+    {
+      "code": "2031",
+      "name": "Phase Wire Short-Ci rcuitedto PE",
+      "severity": "major",
+      "cause": "Cause ID = 1 The impedance of the output phase wire to PE is low or the output phase wire is short-circuited to PE. Check the impedance of the output phase wire to PE, locate the position with lower impedance, and rectify the fault.",
+      "action": ""
+    },
+    {
+      "code": "2032",
+      "name": "Grid Loss",
+      "severity": "major",
+      "cause": "Cause ID = 1 1. The power grid experiences an outage. 2. The AC circuit is disconnected or AC switch is off. 1. The alarm disappears automatically after the power grid recovers. 2. Check that the AC power cable is connected and that the AC switch is ON.",
+      "action": ""
+    },
+    {
+      "code": "2033",
+      "name": "Grid Undervo ltage",
+      "severity": "major",
+      "cause": "Cause ID = 1 The grid voltage is below the lower threshold or the low voltage duration has lasted for more than the value specified by LVRT. 1. If the alarm occurs accidentally, the power grid may be abnormal temporarily. The SUN2000 automatically recovers after detecting that the power grid becomes normal. SUN2000-(50KTL, 60KTL, 65KTL)-M0 User Manual 8 Maintenance Issue 09 (2021-06-08) Copyright ",
+      "action": "2. If the alarm occurs frequently, check whether the power grid voltage is within the acceptable range. If no, contact the local power operator. If yes, modify the power grid undervoltage protection threshold with the consent of the local power operator. 3. If the fault persists for a long time, check the AC circuit breaker and AC output power cable."
+    },
+    {
+      "code": "2034",
+      "name": "Grid Overvoltage",
+      "severity": "major",
+      "cause": "Cause ID = 1 The grid voltage exceeds the higher threshold or the high voltage duration has lasted for more than the value specified by HVRT. 1. Check whether the grid connection voltage exceeds the upper threshold. If yes, contact the local power operator. 2. If you have confirmed that the grid connection voltage exceeds the upper threshold and obtained the consent of the local power operator, mo",
+      "action": ""
+    },
+    {
+      "code": "2035",
+      "name": "Grid Voltage Imbalance",
+      "severity": "major",
+      "cause": "Cause ID = 1 The difference between grid phase voltages exceeds the upper threshold. 1. Check that the grid voltage is within the normal range. 2. Check the connection of the AC output power cable. If the cable connection is proper but the alarm occurs frequently and affects the power production of the PV plant, contact the local power operator.",
+      "action": ""
+    },
+    {
+      "code": "2036",
+      "name": "Grid Overfre quency",
+      "severity": "major",
+      "cause": "Cause ID = 1 Power grid exception: The actual grid frequency is higher than the requirement of the local power grid standard. 1. If the alarm occurs accidentally, the power grid may be abnormal temporarily. The SUN2000 automatically recovers after detecting that the power grid becomes normal. 2. If the alarm occurs frequently, check whether the grid frequency is within the acceptable range. If no,",
+      "action": "threshold with the consent of the local power operator."
+    },
+    {
+      "code": "2037",
+      "name": "Grid Underfr equency",
+      "severity": "major",
+      "cause": "Cause ID = 1 Power grid exception: The actual power grid frequency is lower than the standard requirement for the local power grid. 1. If the alarm occurs accidentally, the power grid may be abnormal temporarily. The SUN2000 automatically recovers after detecting that the power grid becomes normal. 2. If the alarm occurs frequently, check whether the grid frequency is within the acceptable range. ",
+      "action": ""
+    },
+    {
+      "code": "2038",
+      "name": "Unstable Grid Frequency",
+      "severity": "major",
+      "cause": "Cause ID = 1 Power grid exception: The actual grid frequency change rate does not comply with the local power grid standard. 1. If the alarm occurs accidentally, the power grid may be abnormal temporarily. The SUN2000 automatically recovers after detecting that the power grid becomes normal. 2. If the alarm occurs frequently, check whether the grid frequency is within the acceptable range. If no, ",
+      "action": ""
+    },
+    {
+      "code": "2039",
+      "name": "Output Overcur rent",
+      "severity": "major",
+      "cause": "Cause ID = 1 The power grid voltage drops dramatically or the power grid is short-circuited. As a result, the inverter transient output current exceeds the upper threshold and therefore the inverter protection is triggered. 1. The inverter detects its external working conditions in real time. After the fault is rectified, the inverter automatically recovers. 2. If the alarm occurs frequently and a",
+      "action": ""
+    },
+    {
+      "code": "2040",
+      "name": "OutputDC Component Overhigh",
+      "severity": "major",
+      "cause": "Cause ID = 1 The DC component of the SUN2000 output current exceeds the specified upper threshold. 1. If the exception is caused by an external fault, the SUN2000 automatically recovers after the fault is rectified. 2. If the alarm occurs frequently and affects the power production of the PV plant, contact Huawei technical support. SUN2000-(50KTL, 60KTL, 65KTL)-M0 User Manual 8 Maintenance Issue 0",
+      "action": ""
+    },
+    {
+      "code": "2051",
+      "name": "Abnormal Residual Current",
+      "severity": "major",
+      "cause": "Cause ID = 1 The insulation impedance of the input side to PE decreases when the SUN2000 is operating. 1. If the alarm occurs accidentally, the external power cable may be abnormal temporarily. The SUN2000 automatically recovers after the fault is rectified. 2. If the alarm occurs frequently or persists, check that the impedance between the PV string and ground is not below the lower threshold.",
+      "action": ""
+    },
+    {
+      "code": "2061",
+      "name": "Abnormal Grounding",
+      "severity": "major",
+      "cause": "Cause ID = 1 1. The PE cable for the SUN2000 is not connected. 2. The SUN2000 output side does not connect to an isolation transformer when the PV string output is grounded. 1. Check that the PE cable for the SUN2000 is connected properly. 2. If the PV string output is grounded, check that the SUN2000 output side connects to an isolation transformer.",
+      "action": ""
+    },
+    {
+      "code": "2062",
+      "name": "Low Insulation Resistance",
+      "severity": "major",
+      "cause": "Cause ID = 1 1. The PV string is short-circuited to PE. 2. The PV string has been in a moist environment for a long time and the power cable is not well insulated to ground. 1. Check the impedance between the PV string and the PE cable. If a short circuit occurs, rectify the fault. 2. Check that the PE cable for the SUN2000 is correctly connected. 3. If you are sure that the impedance is less than",
+      "action": ""
+    },
+    {
+      "code": "2063",
+      "name": "Cabinet Overtem perature",
+      "severity": "major",
+      "cause": "Cause ID = 1 1. The SUN2000 is installed in a place with poor ventilation. 2. The ambient temperature exceeds the upper threshold. 3. The SUN2000 is not working properly. 1. Check the ventilation and ambient temperature at the SUN2000 installation position. If the ventilation is poor or the ambient temperature exceeds the upper threshold, improve the ventilation and heat dissipation. 2. If the ven",
+      "action": "technical support."
+    },
+    {
+      "code": "2064",
+      "name": "Device Fault",
+      "severity": "major",
+      "cause": "Cause ID = 1-15 An unrecoverable fault occurs on a circuit inside the SUN2000. Turn off the AC output switch and DC input switch, and then turn them on after 5 minutes. If the fault persists, contact Huawei technical support. NOTICE Cause ID = 1: Perform the preceding operations when the PV string current is less than 1 A.",
+      "action": ""
+    },
+    {
+      "code": "2065",
+      "name": "Upgrade Failed",
+      "severity": "minor",
+      "cause": "Cause ID = 1-5 The upgrade ends abnormally. 1. Perform an upgrade again. 2. If the upgrade fails several times, contact your dealer.",
+      "action": ""
+    },
+    {
+      "code": "2066",
+      "name": "License Expired",
+      "severity": "warning",
+      "cause": "Cause ID = 1 1. The privilege certificate has entered the grace period. 2. The privilege feature will be invalid soon. 1. Apply for a new certificate. 2. Load the new certificate. 61440 Faulty Monitori ng Unit Minor Cause ID = 1 1. The flash memory is insufficient. 2. The flash memory has bad sectors. Turn off the AC output switch and DC input switch, and then turn them on after 15 minutes. If the",
+      "action": ""
+    }
+  ],
+  "severity_definitions": {
+    "major": "Inverter is faulty. Output power decreases or grid-tied power generation stops.",
+    "minor": "Some components are faulty without affecting grid-tied power generation.",
+    "warning": "Inverter works properly. Output power decreases or some authorization functions fail due to external factors."
+  },
+  "common_patterns": [
+    {
+      "pattern": "Low string current vs neighbors",
+      "likely_causes": [
+        "Soiling",
+        "Shading",
+        "Module degradation",
+        "String mismatch"
+      ],
+      "related_alarms": [
+        "2011",
+        "2012",
+        "2061",
+        "2062"
+      ]
+    },
+    {
+      "pattern": "High inverter temperature",
+      "likely_causes": [
+        "Blocked vents",
+        "Ambient heat",
+        "Fan failure",
+        "Internal component fault"
+      ],
+      "related_alarms": [
+        "2033",
+        "2034",
+        "2035"
+      ]
+    },
+    {
+      "pattern": "DC voltage outside MPPT range",
+      "likely_causes": [
+        "Incorrect string sizing",
+        "Cold climate (too high voc)",
+        "String damage (too low)"
+      ],
+      "related_alarms": [
+        "2001"
+      ]
+    },
+    {
+      "pattern": "Power production below prediction",
+      "likely_causes": [
+        "Soiling",
+        "Thermal derating",
+        "String/module issues",
+        "Inverter derating"
+      ],
+      "related_alarms": [
+        "2011",
+        "2012",
+        "2033",
+        "2061"
+      ]
+    }
+  ]
+}

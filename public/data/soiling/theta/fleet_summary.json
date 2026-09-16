@@ -1,0 +1,37 @@
+{
+  "plantInfo": {
+    "plantName": "Industrial Rooftop Theta",
+    "capacity_MW": 1.0,
+    "totalInverters": 20,
+    "inverterGroups": ["South", "East", "West"]
+  },
+  "analysisPeriod": {
+    "start": "2025-03-01",
+    "end": "2026-02-10",
+    "totalDays": 347
+  },
+  "fleetSoiling": {
+    "srMean": 0.9420,
+    "srStd": 0.0215,
+    "srMin": 0.89,
+    "srMax": 0.98
+  },
+  "fleetLosses": {
+    "totalSoilingLoss_MWh": 82.5,
+    "totalLoss_MWh": 82.5,
+    "referenceEnergy_MWh": 1425.0,
+    "netEnergy_MWh": 1342.5
+  },
+  "healthDistribution": {
+    "normal": 17,
+    "minorIssues": 2,
+    "majorIssues": 1,
+    "critical": 0
+  },
+  "topPerformers": [],
+  "worstPerformers": [],
+  "economicImpact": {
+    "estimatedAnnualLoss_EUR": 5362.50,
+    "cleaningROIPotential_EUR": 3753.75
+  }
+}

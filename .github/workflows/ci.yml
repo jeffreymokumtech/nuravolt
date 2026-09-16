@@ -1,0 +1,50 @@
+name: ci
+
+# Lint, unit tests and a production build on every push and PR. Nothing here
+# touches a database or a vendor API: the vitest subset mocks Prisma, the
+# pytest subset is pure Python, and the build only needs syntactically valid
+# placeholder secrets.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      DATABASE_URL: postgresql://ci:ci@localhost:5432/ci
+      BETTER_AUTH_SECRET: ci-only-placeholder-secret-0123456789abcdef
+      # The Resend client throws at import time without a key.
+      RESEND_API_KEY: re_ci_placeholder
+      NEXT_PUBLIC_SITE_URL: http://localhost:3000
+      NEXT_PUBLIC_APP_URL: http://localhost:3000
+      NODE_OPTIONS: --max-old-space-size=8192
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx prisma generate
+      - run: npx next lint
+      - run: npm test
+      - run: npx next build
+
+  python:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - run: pip install -e ".[lake,dev]" psycopg2-binary python-dotenv catboost cdsapi reportlab
+      - run: pytest -q tests/fault tests/soiling tests/bess tests/validation tests/twin tests/markets tests/lake --ignore=tests/soiling/test_served_artifacts.py

@@ -1,0 +1,23 @@
+{
+  "dataset": "PVDAQ system 9069 + rdtools soiling_srr",
+  "n_samples": 2815,
+  "system_id": 9069,
+  "n_days_used": 2815,
+  "iwsr_p50": 0.92,
+  "iwsr_confidence_interval": [
+    0.8957,
+    0.944
+  ],
+  "n_soiling_intervals_detected": 183,
+  "n_valid_soiling_intervals": 12,
+  "soiling_rate_distribution_pct_per_day": {
+    "min": 0.0895,
+    "p25": 0.1632,
+    "p50": 0.3277,
+    "p75": 0.7242,
+    "max": 2.2019,
+    "mean": 0.4918
+  },
+  "note": "rdtools.soiling_srr (Deceglie et al. 2018 SRR method). IWSR (insolation-weighted SR) is what NREL Soiling Map publishes. Compares to our universal_dayone climate-prior forecast for this site's lat/lon.",
+  "generated_at": "2026-06-21T10:40:52.696986Z"
+}

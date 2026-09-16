@@ -1,0 +1,133 @@
+{
+  "plant_id": "theta",
+  "generated_at": "2026-02-10T10:00:00.000000",
+  "summary": {
+    "current_loss_kwh": 1850,
+    "projected_loss_kwh": 920,
+    "current_loss_value": 120.25,
+    "projected_loss_value": 59.8,
+    "currency": "EUR",
+    "reactive_count": 3,
+    "predictive_count": 2,
+    "critical_count": 0,
+    "urgent_count": 1,
+    "soon_count": 1,
+    "planned_count": 0,
+    "monitoring_count": 0
+  },
+  "health_score": {
+    "value": 88,
+    "status": "healthy",
+    "anomaly_penalty": 3,
+    "fault_penalty": 6,
+    "rul_penalty": 3,
+    "trend": "stable"
+  },
+  "urgency_summary": {
+    "urgent": {
+      "count": 1,
+      "total_revenue_at_risk_eur": 95
+    },
+    "soon": {
+      "count": 1,
+      "total_revenue_at_risk_eur": 65
+    }
+  },
+  "rul_predictions": [
+    {
+      "fault_type": "inverter_thermal",
+      "display_name": "Inverter Thermal Degradation",
+      "inverter_id": "SG50CX-08",
+      "days_to_fault": 18,
+      "confidence": 0.78,
+      "current_value": 76.5,
+      "threshold": 85.0,
+      "unit": "\u00b0C",
+      "trend": 0.42,
+      "is_urgent": true,
+      "urgency": "urgent",
+      "recommended_action": "Schedule fan inspection for SG50CX-08 (South zone, high solar exposure). Elevated operating temperature detected.",
+      "repair_cost_eur": 180,
+      "revenue_at_risk_eur": 95,
+      "classification_layer": "ML_CLASSIFIER",
+      "evidence": "CatBoost classifier: inverter thermal @ 78% probability, trend +42.00%/d (worsening), ~18d to fault",
+      "numeric_evidence": {
+        "model_probability": 0.78,
+        "days_to_fault": 18,
+        "trend_per_day": 0.42
+      },
+      "winner_reason": "highest confidence (0.78) via ML_CLASSIFIER",
+      "layer_chain": [
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "inverter_thermal",
+          "confidence": 0.48,
+          "evidence": "digital twin residual 8.50\u00b0C below expected; actual 76.50 vs twin band \u00b185.00",
+          "severity": "urgent"
+        },
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "inverter_thermal",
+          "confidence": 0.78,
+          "evidence": "CatBoost classifier: inverter thermal @ 78% probability, trend +42.00%/d (worsening), ~18d to fault",
+          "severity": "urgent"
+        }
+      ],
+      "severity": "urgent",
+      "asset_type": "PV_INVERTER",
+      "cascade_winning_confidence": 0.78
+    },
+    {
+      "fault_type": "string_degradation",
+      "display_name": "String Current Mismatch",
+      "inverter_id": "SG50CX-14",
+      "days_to_fault": 45,
+      "confidence": 0.71,
+      "current_value": 10.2,
+      "threshold": 15.0,
+      "unit": "%",
+      "trend": 0.08,
+      "is_urgent": false,
+      "urgency": "soon",
+      "recommended_action": "Investigate string current imbalance on SG50CX-14 (East zone). Possible partial shading from adjacent structure.",
+      "repair_cost_eur": 120,
+      "revenue_at_risk_eur": 65,
+      "classification_layer": "ML_CLASSIFIER",
+      "evidence": "CatBoost classifier: string degradation @ 71% probability, trend +8.00%/d (worsening), ~45d to fault",
+      "numeric_evidence": {
+        "model_probability": 0.71,
+        "days_to_fault": 45,
+        "trend_per_day": 0.08
+      },
+      "winner_reason": "highest confidence (0.71) via ML_CLASSIFIER",
+      "layer_chain": [
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "string_degradation",
+          "confidence": 0.436,
+          "evidence": "digital twin residual 4.80% below expected; actual 10.20 vs twin band \u00b115.00",
+          "severity": "warning"
+        },
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "string_degradation",
+          "confidence": 0.71,
+          "evidence": "CatBoost classifier: string degradation @ 71% probability, trend +8.00%/d (worsening), ~45d to fault",
+          "severity": "warning"
+        }
+      ],
+      "severity": "warning",
+      "asset_type": "PV_STRING",
+      "cascade_winning_confidence": 0.71
+    }
+  ],
+  "cascade_summary": {
+    "rows_classified": 2,
+    "layer_distribution": {
+      "ML_CLASSIFIER": 2
+    },
+    "ai_overrides": 0,
+    "ai_override_rate": 0.0
+  },
+  "cascade_generated_at": "2026-06-19T15:08:13.107711"
+}

@@ -1,0 +1,2432 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Subscription {
+  id                 String             @id @default(uuid())
+  user_email         String             @unique
+  sub_status         SubscriptionStatus @default(inactive)
+  sub_type           String
+  createdAt          DateTime           @default(now())
+  updatedAt          DateTime           @updatedAt
+  last_stripe_cs_id  String             @unique
+  stripe_customer_id String             @unique
+  sub_stripe_id      String?
+  user_clerk_id      String             @unique
+  /// Better Auth organization id — billing is per-org, one subscription each.
+  org_id               String?   @unique
+  /// 'residential' | 'business' (legacy: 'growth') | 'enterprise'
+  plan_id              String    @default("residential")
+  stripe_price_id      String?
+  current_period_end   DateTime?
+  cancel_at_period_end Boolean   @default(false)
+  /// Seats purchased (Stripe line-item quantity).
+  quantity             Int       @default(1)
+  /// Purchased business band's MW cap (from Stripe price metadata mw_cap).
+  mw_cap               Decimal?  @db.Decimal(10, 3)
+}
+
+model Project {
+  id            String  @id @default(uuid())
+  connection_id String
+  webhook_id    String
+  scenario_id   String
+  assistant_id  String?
+  user_clerk_id String
+  type          String
+  status        String  @default("default")
+
+  webhookLink String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Audiences {
+  id        String @id @default(uuid())
+  resend_id String @unique
+  name      String
+}
+
+enum SubscriptionStatus {
+  active
+  inactive
+  trialing
+  past_due
+  canceled
+  unpaid
+}
+
+model Lead {
+  id                   String   @id @default(uuid())
+  email                String   @unique
+  name                 String?
+  company_name         String?
+  role                 String?
+  region               String?
+  plant_capacity_mw    Decimal? @db.Decimal(10, 2)
+  utm_source           String?
+  utm_medium           String?
+  utm_campaign         String?
+  utm_content          String?
+  roi_calculation      Json?
+  hubspot_contact_id   String?  @unique
+  linkedin_campaign_id String?
+  created_at           DateTime @default(now())
+  updated_at           DateTime @updatedAt
+
+  conversion_events  ConversionEvent[]
+  resource_downloads ResourceDownload[]
+}
+
+model ABVariant {
+  id                 String   @id @default(uuid())
+  test_name          String
+  variant_name       String
+  is_active          Boolean  @default(true)
+  traffic_percentage Int      @default(50)
+  created_at         DateTime @default(now())
+  updated_at         DateTime @updatedAt
+
+  @@unique([test_name, variant_name])
+}
+
+model ConversionEvent {
+  id         String   @id @default(uuid())
+  lead_id    String
+  event_type String
+  event_data Json?
+  created_at DateTime @default(now())
+
+  lead Lead @relation(fields: [lead_id], references: [id])
+
+  @@index([lead_id])
+  @@index([event_type])
+}
+
+model ResourceDownload {
+  id             String   @id @default(uuid())
+  lead_id        String
+  resource_slug  String
+  resource_type  String
+  resource_title String?
+  downloaded_at  DateTime @default(now())
+  utm_params     Json?
+  ip_address     String?
+  user_agent     String?
+
+  lead Lead @relation(fields: [lead_id], references: [id], onDelete: Cascade)
+
+  @@index([lead_id])
+  @@index([resource_slug])
+  @@index([resource_type])
+  @@index([downloaded_at])
+}
+
+// Data Source Integration Models
+model DataConnection {
+  id                    String           @id @default(uuid())
+  customer_id           String
+  organization_id       String? // Link to organization
+  name                  String
+  description           String?
+  type                  ConnectionType
+  status                ConnectionStatus @default(pending)
+  config                Json // Encrypted connection details
+  secret_arn            String? // AWS Secrets Manager ARN
+  kms_key_id            String? // Customer KMS key
+  polling_interval      Int              @default(900) // seconds
+  last_poll_time        DateTime?
+  last_poll_status      String?
+  last_error            String?
+  data_start_date       DateTime? // First available data
+  data_end_date         DateTime? // Last available data
+  estimated_data_points BigInt?
+  plants_connected      Int              @default(0)
+  enabled               Boolean          @default(true)
+  created_at            DateTime         @default(now())
+  updated_at            DateTime         @updatedAt
+
+  field_mappings     FieldMapping[]
+  polling_jobs       PollingJob[]
+  discovered_plants  DiscoveredPlant[]
+  audit_logs         ConnectionAudit[]
+  organization       Organization?          @relation(fields: [organization_id], references: [id])
+  structure_analysis DataStructureAnalysis?
+  generated_configs  GeneratedPlantConfig[]
+  plant_data_sources PlantDataSource[]
+  latest_snapshots   LatestDeviceSnapshot[]
+
+  @@index([customer_id])
+  @@index([organization_id])
+  @@index([type])
+  @@index([status])
+  @@index([last_poll_time])
+}
+
+model FieldMapping {
+  id               String        @id @default(uuid())
+  connection_id    String
+  original_field   String
+  mapped_field     DataFieldType
+  field_path       String? // JSON path or table.column
+  unit             String?
+  scaling_factor   Decimal       @default(1.0) @db.Decimal(10, 6)
+  offset           Decimal       @default(0.0) @db.Decimal(10, 6)
+  validation_rules Json?
+  confidence_score Decimal?      @db.Decimal(3, 2) // 0.00 to 1.00
+  is_confirmed     Boolean       @default(false)
+  created_at       DateTime      @default(now())
+  updated_at       DateTime      @updatedAt
+
+  connection DataConnection @relation(fields: [connection_id], references: [id], onDelete: Cascade)
+
+  @@unique([connection_id, original_field])
+  @@index([connection_id])
+  @@index([mapped_field])
+}
+
+model PollingJob {
+  id                String    @id @default(uuid())
+  connection_id     String
+  started_at        DateTime  @default(now())
+  completed_at      DateTime?
+  status            String // 'running', 'completed', 'failed'
+  records_fetched   Int?
+  records_processed Int?
+  bytes_processed   BigInt?
+  error_message     String?
+  execution_time_ms Int?
+  created_at        DateTime  @default(now())
+
+  connection DataConnection @relation(fields: [connection_id], references: [id], onDelete: Cascade)
+
+  @@index([connection_id])
+  @@index([started_at])
+  @@index([status])
+}
+
+model DiscoveredPlant {
+  id                   String    @id @default(uuid())
+  connection_id        String
+  external_plant_id    String // Plant ID in source system
+  name                 String?
+  location             Json? // {lat, lng, country, region}
+  capacity_mw          Decimal?  @db.Decimal(8, 3)
+  inverter_count       Int?
+  inverter_types       String[] // Array of inverter models
+  commissioning_date   DateTime? @db.Date
+  timezone             String?
+  metadata             Json? // Additional plant info
+  first_data_timestamp DateTime?
+  last_data_timestamp  DateTime?
+  enabled              Boolean   @default(true)
+  created_at           DateTime  @default(now())
+  updated_at           DateTime  @updatedAt
+
+  // Multi-asset support
+  asset_type AssetType @default(PV)
+
+  connection DataConnection @relation(fields: [connection_id], references: [id], onDelete: Cascade)
+
+  @@unique([connection_id, external_plant_id])
+  @@index([connection_id])
+  @@index([external_plant_id])
+  @@index([asset_type])
+}
+
+// Latest realtime KPI snapshot per (connection, device). Written by the
+// cloud-connector poll path (Huawei FusionSolar today) so dashboards can show
+// live device state without scanning the S3 lake. One row per device,
+// overwritten each poll.
+model LatestDeviceSnapshot {
+  id               String   @id @default(uuid())
+  connection_id    String
+  plant_ext_id     String
+  device_ext_id    String
+  device_type      String?
+  ts               DateTime
+  active_power_kw  Float?
+  daily_energy_kwh Float?
+  extra            Json? // remaining metrics, keyed by DataFieldType name
+  updated_at       DateTime @updatedAt
+
+  connection DataConnection @relation(fields: [connection_id], references: [id], onDelete: Cascade)
+
+  @@unique([connection_id, device_ext_id])
+  @@index([connection_id])
+  @@index([plant_ext_id])
+}
+
+model ConnectionAudit {
+  id            String   @id @default(uuid())
+  connection_id String
+  action        String // 'created', 'updated', 'tested', 'deleted', 'polled'
+  user_id       String? // Clerk user ID
+  ip_address    String?
+  user_agent    String?
+  old_values    Json?
+  new_values    Json?
+  success       Boolean
+  error_message String?
+  timestamp     DateTime @default(now())
+
+  connection DataConnection @relation(fields: [connection_id], references: [id], onDelete: Cascade)
+
+  @@index([connection_id])
+  @@index([timestamp])
+  @@index([user_id])
+}
+
+// ── Data Quality persistence (Wave 3) ──────────────────────────────────
+// Denormalised stream health snapshots + operator overrides (ACK,
+// exclusions) and long-running incident grouping for the DQ Hub.
+// Models follow the schema-wide multi-tenant convention: every customer
+// row carries `org_clerk_id` and is indexed on it. No FK relations to
+// Plant — consistent with DataConnection / Ticket / PlantAccess.
+
+model DataStreamHealth {
+  id                    String    @id @default(uuid())
+  org_clerk_id          String
+  plant_id              String
+  stream_id             String
+  label                 String?
+  // inverter | met_sensor | soiling_sensor | scada | other
+  category              String
+  // low | medium | high | normal
+  severity              String
+  last_good_at          DateTime?
+  last_value            Float?
+  gap_minutes           Int       @default(0)
+  // network_outage | sensor_drift | inverter_trip | met_station_shadow |
+  // dustiq_firmware_quirk | unknown
+  attribution_cause     String?
+  attribution_narrative String?
+  // KPIs whose computation is affected by this stream (PR | SR | AC_yield | …)
+  affected_kpis         String[]  @default([])
+  updated_at            DateTime  @updatedAt
+
+  @@unique([org_clerk_id, plant_id, stream_id])
+  @@index([plant_id, severity])
+  @@index([org_clerk_id, plant_id])
+}
+
+model DataQualityAcknowledgement {
+  id              String    @id @default(uuid())
+  org_clerk_id    String
+  plant_id        String
+  stream_id       String
+  // Clerk user id or 'AM' for the asset-manager demo principal
+  acknowledged_by String
+  acknowledged_at DateTime  @default(now())
+  reason          String?
+  expires_at      DateTime?
+  incident_id     String?
+
+  @@index([org_clerk_id, plant_id, stream_id])
+  @@index([acknowledged_at])
+}
+
+model DataStreamExclusion {
+  id           String    @id @default(uuid())
+  org_clerk_id String
+  plant_id     String
+  stream_id    String
+  // KPI names to exclude this stream from (PR | SR | AC_yield | …).
+  // Empty array = exclude from ALL KPI rollups.
+  kpi_names    String[]  @default([])
+  starts_at    DateTime  @default(now())
+  // null = open-ended exclusion
+  ends_at      DateTime?
+  created_by   String
+  reason       String?
+  incident_id  String?
+
+  @@index([org_clerk_id, plant_id, stream_id])
+  @@index([starts_at, ends_at])
+}
+
+model DataQualityIncident {
+  id           String    @id @default(uuid())
+  org_clerk_id String
+  plant_id     String
+  opened_at    DateTime  @default(now())
+  closed_at    DateTime?
+  summary      String
+  // low | medium | high
+  severity     String
+  ticket_id    String?
+  opened_by    String
+
+  @@index([org_clerk_id, plant_id, opened_at])
+}
+
+// Connection templates for common SCADA vendors
+model ConnectionTemplate {
+  id              String         @id @default(uuid())
+  name            String         @unique // "SMA Sunny Portal", "Huawei FusionSolar"
+  vendor          String // "SMA", "Huawei", "Fronius"
+  connection_type ConnectionType
+  description     String?
+
+  // Auto-detection patterns
+  field_patterns     Json // [{regex, fieldType, confidence, unit}]
+  inverter_patterns  Json? // Regex patterns for inverter ID extraction
+  timestamp_formats  String[] // Common timestamp formats for this system
+  component_patterns Json? // How to extract plant/inverter hierarchy
+
+  // Template configuration
+  config_schema Json? // JSON Schema for connection config form
+
+  is_active  Boolean  @default(true)
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@index([vendor])
+  @@index([connection_type])
+}
+
+// Analyzed data structure from discovery
+model DataStructureAnalysis {
+  id            String @id @default(uuid())
+  connection_id String @unique
+
+  // Format detection
+  data_format      String // 'wide', 'long', 'mixed'
+  timestamp_format String? // Detected timestamp format (strptime)
+  timestamp_column String? // Detected timestamp column name
+
+  // Column analysis
+  total_columns    Int
+  numeric_columns  Int
+  string_columns   Int
+  datetime_columns Int
+
+  // Component detection
+  detected_plants    Json? // Array of detected plant IDs
+  detected_inverters Json? // Array of detected inverter patterns
+  hierarchy_pattern  String? // e.g., "Plant: {plant} / INV {inv} / {field}"
+
+  // Sample data for preview
+  sample_data       Json? // First 10 rows for UI preview
+  column_statistics Json? // Min/max/mean/nulls per column
+
+  analyzed_at DateTime @default(now())
+
+  connection DataConnection @relation(fields: [connection_id], references: [id], onDelete: Cascade)
+
+  @@index([connection_id])
+}
+
+// Generated Python PlantConfig for analytics integration
+model GeneratedPlantConfig {
+  id            String @id @default(uuid())
+  connection_id String
+  plant_id      String // External plant ID from DiscoveredPlant
+
+  // The generated config
+  config_json Json // PlantConfig as JSON
+  config_yaml String @db.Text // PlantConfig as YAML for Python
+
+  // Versioning
+  version   Int     @default(1)
+  is_active Boolean @default(true)
+
+  // Validation
+  validation_status String    @default("pending") // pending, valid, invalid
+  validation_errors Json? // Array of validation error messages
+  validated_at      DateTime?
+
+  // Timestamps
+  generated_at DateTime @default(now())
+  updated_at   DateTime @updatedAt
+
+  connection DataConnection @relation(fields: [connection_id], references: [id], onDelete: Cascade)
+
+  @@unique([connection_id, plant_id, version])
+  @@index([connection_id])
+  @@index([plant_id])
+  @@index([is_active])
+}
+
+enum ConnectionType {
+  influxdb
+  sql_scada
+  modbus_tcp
+  csv_upload
+  huawei_api
+  sungrow_api
+  solaredge_api
+  sample_api
+}
+
+enum ConnectionStatus {
+  pending
+  connecting
+  connected
+  error
+  disabled
+}
+
+enum DataFieldType {
+  // Power measurements
+  power_ac
+  power_dc
+  reactive_power
+
+  // Voltage measurements
+  voltage_dc
+  voltage_ac_l1
+  voltage_ac_l2
+  voltage_ac_l3
+
+  // Current measurements
+  current_dc
+  current_ac_l1
+  current_ac_l2
+  current_ac_l3
+
+  // Irradiance measurements
+  irradiance_poa
+  irradiance_ghi
+  irradiance_dni
+
+  // Temperature measurements
+  temp_module
+  temp_ambient
+  temp_inverter
+
+  // Energy measurements
+  energy_daily
+  energy_total
+  power_loss
+  financial_impact
+
+  // Environmental measurements
+  wind_speed
+  humidity
+  precipitation
+  soiling_ratio
+
+  // Electrical parameters
+  frequency
+  power_factor
+
+  // Status and alarms
+  status_code
+  alarm_code
+
+  // Identifiers
+  plant_id
+  inverter_id
+  string_id
+  timestamp
+
+  // Unmapped (requires user input)
+  unmapped
+
+  // BESS measurements
+  bess_soc
+  bess_soh
+  bess_power_charge
+  bess_power_discharge
+  bess_temp_cell
+  bess_temp_pack
+  bess_temp_ambient
+  bess_voltage_cell
+  bess_voltage_pack
+  bess_current
+  bess_c_rate
+  bess_cycle_count
+  bess_throughput
+  bess_rte
+  bess_hvac_status
+  bess_contactor_status
+
+  // BESS cell-level and rack-level telemetry (BMS/PCS)
+  bess_voltage_cell_max
+  bess_voltage_cell_min
+  bess_temp_cell_max
+  bess_temp_cell_min
+  bess_soc_rack
+  bess_available_charge_power
+  bess_available_discharge_power
+  bess_alarm_code
+  bess_insulation_resistance
+
+  // Wind measurements
+  wind_power
+  wind_direction
+  wind_rotor_rpm
+  wind_nacelle_temp
+  wind_pitch_angle
+  wind_yaw_angle
+  wind_availability
+}
+
+// Organization and Team Management Models
+model Organization {
+  id           String   @id @default(uuid())
+  clerk_org_id String   @unique
+  name         String
+  plan_type    String   @default("free")
+  max_plants   Int      @default(5)
+  max_users    Int      @default(5)
+  created_at   DateTime @default(now())
+  updated_at   DateTime @updatedAt
+
+  // Relations to existing models
+  data_connections DataConnection[]
+  plants           Plant[]
+}
+
+model UserRole {
+  id            String   @id @default(uuid())
+  user_clerk_id String
+  org_clerk_id  String
+  role          Role
+  created_at    DateTime @default(now())
+  updated_at    DateTime @updatedAt
+
+  @@unique([user_clerk_id, org_clerk_id])
+  @@index([user_clerk_id])
+  @@index([org_clerk_id])
+}
+
+enum Role {
+  SUPER_ADMIN
+  ORG_ADMIN
+  MANAGER
+  OPERATOR
+  VIEWER
+}
+
+// Plant Access Control Model
+model PlantAccess {
+  id            String           @id @default(uuid())
+  user_clerk_id String
+  org_clerk_id  String
+  plant_id      String
+  access_level  PlantAccessLevel @default(VIEW)
+  granted_by    String // User clerk ID who granted access
+  granted_at    DateTime         @default(now())
+  expires_at    DateTime? // Optional expiration
+
+  plant Plant @relation(fields: [plant_id], references: [id], onDelete: Cascade)
+
+  @@unique([user_clerk_id, plant_id])
+  @@index([user_clerk_id])
+  @@index([org_clerk_id])
+  @@index([plant_id])
+  @@index([expires_at])
+}
+
+enum PlantAccessLevel {
+  VIEW // Can view plant data
+  OPERATE // Can control plant operations
+  MANAGE // Can manage plant settings and access
+}
+
+// ============================================
+// BESS (Battery Energy Storage) Enums
+// ============================================
+
+enum AssetType {
+  PV
+  BESS
+  WIND
+  HYBRID
+  HYDROGEN
+}
+
+enum PlantStatus {
+  ONBOARDING
+  CONFIGURING
+  TRAINING
+  OPERATIONAL
+  SUSPENDED
+}
+
+enum DataSourceType {
+  SCADA
+  WEATHER_STATION
+  SATELLITE_IRR
+  DUSTIQ
+  GRID_METER
+  MANUAL_CSV
+  API_WEATHER
+}
+
+enum DataSourcePurpose {
+  INVERTER_DATA
+  WEATHER_DATA
+  IRRADIANCE_DATA
+  SOILING_MEASUREMENT
+  GRID_METERING
+  SUPPLEMENTARY
+}
+
+// ============================================
+// Plant Hierarchy Models
+// ============================================
+
+model Plant {
+  id                      String      @id @default(uuid())
+  organization_id         String?
+  slug                    String      @unique
+  name                    String
+  asset_type              AssetType   @default(PV)
+  location_name           String?
+  latitude                Decimal     @db.Decimal(9, 6)
+  longitude               Decimal     @db.Decimal(9, 6)
+  altitude                Decimal?    @db.Decimal(7, 2)
+  timezone                String      @default("UTC")
+  capacity_mw             Decimal     @db.Decimal(10, 3)
+  installed_mw            Decimal?    @db.Decimal(10, 3)
+  // Storage energy capacity. Nullable on purpose: PV plants leave this NULL so
+  // the pricing meter's max(MW, MWh/4) falls back to MW and no existing bill moves.
+  energy_capacity_mwh     Decimal?    @db.Decimal(10, 3)
+  status                  PlantStatus @default(ONBOARDING)
+  commissioning_date      DateTime?   @db.Date
+  has_weather_station     Boolean     @default(false)
+  irradiance_sensor_type  String?
+  sensor_mounted_at_tilt  Boolean     @default(false)
+  has_dustiq_sensor       Boolean     @default(false)
+  currency                String      @default("EUR")
+  country                 String?     @db.Char(2)
+  compliance_pack_version String?
+  metadata                Json?
+  created_at              DateTime    @default(now())
+  updated_at              DateTime    @updatedAt
+
+  organization    Organization?     @relation(fields: [organization_id], references: [id])
+  data_sources    PlantDataSource[]
+  inverter_groups InverterGroup[]
+  plant_access    PlantAccess[]
+  tickets         Ticket[]
+  bess_assets     BessAsset[]
+  h2_assets       H2Asset[]
+  alerts          PlantAlert[]
+  contracts       Contract[]
+
+  @@index([organization_id])
+  @@index([asset_type])
+  @@index([status])
+  @@index([country])
+}
+
+model PlantDataSource {
+  id               String            @id @default(uuid())
+  plant_id         String
+  connection_id    String?
+  name             String
+  source_type      DataSourceType
+  purpose          DataSourcePurpose
+  provides_metrics String[]
+  polling_interval Int               @default(900)
+  is_primary       Boolean           @default(false)
+  enabled          Boolean           @default(true)
+  data_start       DateTime?
+  data_end         DateTime?
+  created_at       DateTime          @default(now())
+  updated_at       DateTime          @updatedAt
+
+  plant      Plant           @relation(fields: [plant_id], references: [id], onDelete: Cascade)
+  connection DataConnection? @relation(fields: [connection_id], references: [id])
+
+  @@index([plant_id])
+  @@index([connection_id])
+}
+
+model InverterGroup {
+  id                        String   @id @default(uuid())
+  plant_id                  String
+  name                      String
+  slug                      String
+  tilt                      Decimal  @db.Decimal(5, 2)
+  azimuth                   Decimal  @db.Decimal(5, 2)
+  inverter_model            String?
+  inverter_nominal_power_kw Decimal? @db.Decimal(8, 2)
+  mppt_count                Int?
+  strings_per_mppt          Int?
+  gamma_pdc                 Decimal? @db.Decimal(6, 4)
+  metadata                  Json?
+  created_at                DateTime @default(now())
+  updated_at                DateTime @updatedAt
+
+  plant     Plant      @relation(fields: [plant_id], references: [id], onDelete: Cascade)
+  inverters Inverter[]
+
+  @@unique([plant_id, slug])
+  @@index([plant_id])
+}
+
+model Inverter {
+  id               String   @id @default(uuid())
+  group_id         String
+  external_id      String
+  name             String?
+  model            String?
+  serial_number    String?
+  nominal_power_kw Decimal? @db.Decimal(8, 2)
+  mppt_count       Int?
+  strings_per_mppt Int?
+  enabled          Boolean  @default(true)
+  created_at       DateTime @default(now())
+  updated_at       DateTime @updatedAt
+
+  group InverterGroup @relation(fields: [group_id], references: [id], onDelete: Cascade)
+
+  @@unique([group_id, external_id])
+  @@index([group_id])
+}
+
+enum BessChemistry {
+  LFP // Lithium Iron Phosphate
+  NMC // Nickel Manganese Cobalt
+  NCA // Nickel Cobalt Aluminum
+  LTO // Lithium Titanate
+}
+
+enum WarrantyViolationType {
+  TEMPERATURE_EXCEED
+  SOC_HIGH_DWELL
+  SOC_LOW_DWELL
+  CYCLING_DEPTH
+  CYCLING_FREQUENCY
+  C_RATE_EXCEED
+  VOLTAGE_VIOLATION
+  THROUGHPUT_EXCEED
+  HVAC_FAILURE
+  RTE_DEGRADATION
+  CAPACITY_DEGRADATION
+}
+
+enum WarrantyRiskLevel {
+  LOW
+  MODERATE
+  HIGH
+  CRITICAL
+}
+
+// Soiling Intelligence Models
+/// DEPRECATED — no writer exists; soiling forecasts live in the TimescaleDB
+/// `analysis_results` table (domain 'soiling'). Kept only to avoid a
+/// destructive migration; do not add new readers.
+model SoilingForecast {
+  id                  String   @id @default(uuid())
+  plant_id            String
+  inverter_id         String? // NULL = plant-level
+  forecast_date       DateTime
+  forecast_created_at DateTime @default(now())
+
+  soiling_ratio_predicted   Decimal @db.Decimal(6, 5)
+  soiling_ratio_lower_bound Decimal @db.Decimal(6, 5)
+  soiling_ratio_upper_bound Decimal @db.Decimal(6, 5)
+  soiling_loss_pct          Decimal @db.Decimal(5, 2)
+
+  model_type        String // 'physics', 'ml', 'hybrid'
+  physics_component Decimal? @db.Decimal(6, 5)
+  ml_component      Decimal? @db.Decimal(6, 5)
+  confidence_score  Decimal? @db.Decimal(3, 2)
+
+  is_cleaning_needed Boolean @default(false)
+  cleaning_priority  Int?
+
+  created_at DateTime @default(now())
+
+  @@unique([plant_id, inverter_id, forecast_date, forecast_created_at])
+  @@index([plant_id, forecast_date])
+  @@index([inverter_id, forecast_date])
+  @@index([forecast_created_at])
+}
+
+/// DEPRECATED — no writer exists; see SoilingForecast note.
+model SoilingEvent {
+  id          String   @id @default(uuid())
+  plant_id    String
+  inverter_id String?
+  event_date  DateTime
+  event_type  String // 'cleaning', 'rain', 'anomaly'
+
+  pre_event_sr  Decimal? @db.Decimal(6, 5)
+  post_event_sr Decimal? @db.Decimal(6, 5)
+  recovery_pct  Decimal? @db.Decimal(5, 2)
+
+  detection_method String // 'clearsky', 'rain_threshold', 'inferred'
+  confidence       Decimal? @db.Decimal(3, 2)
+
+  energy_recovered_kwh Decimal? @db.Decimal(10, 2)
+  revenue_impact_eur   Decimal? @db.Decimal(10, 2)
+
+  notes      String?
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@index([plant_id, event_date])
+  @@index([event_type])
+}
+
+model CleaningSchedule {
+  id            String @id @default(uuid())
+  plant_id      String
+  schedule_name String
+
+  recommended_dates Json // Array of dates
+  n_cleanings       Int
+
+  energy_recovered_mwh  Decimal @db.Decimal(10, 2)
+  revenue_recovered_eur Decimal @db.Decimal(10, 2)
+  cleaning_cost_eur     Decimal @db.Decimal(10, 2)
+  net_benefit_eur       Decimal @db.Decimal(10, 2)
+  roi_pct               Decimal @db.Decimal(6, 2)
+  payback_days          Decimal @db.Decimal(5, 1)
+
+  avg_sr_baseline  Decimal @db.Decimal(6, 5)
+  avg_sr_optimized Decimal @db.Decimal(6, 5)
+
+  is_optimal Boolean  @default(false)
+  valid_from DateTime
+  valid_to   DateTime
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@index([plant_id, valid_from])
+}
+
+/// DEPRECATED — no writer exists; see SoilingForecast note.
+model ModelPerformance {
+  id            String  @id @default(uuid())
+  plant_id      String
+  inverter_id   String?
+  model_type    String // 'physics', 'ml', 'hybrid'
+  model_version String
+
+  evaluation_start DateTime
+  evaluation_end   DateTime
+  n_samples        Int
+
+  mae       Decimal @db.Decimal(8, 6)
+  rmse      Decimal @db.Decimal(8, 6)
+  r2_score  Decimal @db.Decimal(5, 4)
+  mean_bias Decimal @db.Decimal(8, 6)
+
+  precision Decimal? @db.Decimal(5, 4)
+  recall    Decimal? @db.Decimal(5, 4)
+  f1_score  Decimal? @db.Decimal(5, 4)
+
+  backtest_type    String // 'rolling_window', 'expanding_window'
+  forecast_horizon Int // Days
+
+  created_at DateTime @default(now())
+
+  @@index([plant_id, model_type])
+}
+
+// ============================================
+// O&M Ticketing System Models
+// ============================================
+
+enum TicketStatus {
+  NEW
+  VALIDATED
+  ASSIGNED
+  IN_PROGRESS
+  DONE
+  WONT_FIX
+}
+
+enum TicketPriority {
+  CRITICAL
+  HIGH
+  MEDIUM
+  LOW
+}
+
+enum TicketTriggerType {
+  SOILING_FORECAST
+  PERFORMANCE_ANOMALY
+  THRESHOLD_ALERT
+  SCHEDULED_MAINTENANCE
+  MANUAL_CREATION
+}
+
+enum TicketValidationAction {
+  VALIDATED_CORRECT
+  VALIDATED_ADJUSTED
+  DISMISSED_FALSE_POSITIVE
+  DISMISSED_DUPLICATE
+  DISMISSED_NOT_ACTIONABLE
+}
+
+// ============================================
+// Plant Alerts (threshold breaches → email + in-app)
+// ============================================
+
+enum PlantAlertKind {
+  SOILING_LOSS
+  PERFORMANCE_RATIO
+  DATA_STALE
+  CRITICAL_FAULT // reserved — not evaluated until a real (non-synthetic) fault model ships
+  CONTRACT_OBLIGATION // breached contract term (src/lib/contracts/evaluate.ts); context carries {contract_id, field}
+  BESS_SAFETY // storage safety envelope breach (cell voltage/temperature, insulation, alarm)
+}
+
+enum PlantAlertSeverity {
+  WARNING
+  CRITICAL
+}
+
+enum PlantAlertStatus {
+  ACTIVE
+  RESOLVED
+}
+
+/// Threshold breaches evaluated by /api/cron/evaluate-alerts against
+/// Plant.metadata.settings. State machine: open → (escalate) → resolve,
+/// with reopen-within-24h flap guard; notified_at prevents re-emails for
+/// an ongoing breach. Partial unique index (one ACTIVE per plant+kind+dedup)
+/// added in the migration SQL — Prisma can't express partial indexes.
+model PlantAlert {
+  id           String             @id @default(uuid())
+  org_clerk_id String
+  plant_id     String
+  kind         PlantAlertKind
+  severity     PlantAlertSeverity
+  status       PlantAlertStatus   @default(ACTIVE)
+  dedup_key    String? // null for threshold kinds; fault id for CRITICAL_FAULT
+  metric_value Float
+  threshold    Float
+  message      String
+  context      Json?
+  triggered_at DateTime           @default(now())
+  last_seen_at DateTime           @default(now())
+  resolved_at  DateTime?
+  notified_at  DateTime?
+  ticket_id    String?
+
+  // Operator acknowledgement: metadata on a still-ACTIVE alert (an ACK does
+  // not change status, so the one-active-row dedup invariant holds).
+  acknowledged_at DateTime?
+  acknowledged_by String?
+
+  plant Plant @relation(fields: [plant_id], references: [id], onDelete: Cascade)
+
+  @@index([org_clerk_id, status])
+  @@index([plant_id, kind, status])
+  @@index([triggered_at])
+}
+
+model Ticket {
+  id           String  @id @default(uuid())
+  org_clerk_id String
+  plant_id     String
+  inverter_id  String?
+
+  status   TicketStatus   @default(NEW)
+  priority TicketPriority @default(MEDIUM)
+
+  trigger_type     TicketTriggerType
+  trigger_id       String? // Reference to source (forecast_id, alert_id, etc.)
+  trigger_metadata Json? // Additional context from trigger source
+
+  title       String
+  description String?
+
+  assigned_to_clerk_id String?
+  assigned_at          DateTime?
+  assigned_by_clerk_id String?
+
+  validated_at          DateTime?
+  validated_by_clerk_id String?
+  validation_action     TicketValidationAction?
+  validation_notes      String?
+
+  estimated_revenue_impact_eur Decimal? @db.Decimal(10, 2)
+  estimated_energy_loss_kwh    Decimal? @db.Decimal(10, 2)
+  resolution_notes             String?
+
+  // AI narration (Phase 1: LLM ticket narration with audit trail)
+  ai_narration            Json? // { summary, explanation, likely_cause, recommended_action, urgency, confidence }
+  ai_model_used           String? // e.g. 'claude-haiku-4-5', 'fallback'
+  ai_generated_at         DateTime?
+  ai_prompt_variant       String? // 'v1' | 'v2_concise' | 'v3_root_cause_first'
+  ai_approved_by_clerk_id String?
+  ai_approved_at          DateTime?
+  ai_edited               Boolean   @default(false)
+  ai_edited_narration     Json? // post-edit version (same shape as ai_narration)
+  ai_regeneration_count   Int       @default(0)
+  ai_interpretation_id    String? // soft FK to AlertInterpretation cache (no relation; cache expires)
+
+  created_at DateTime  @default(now())
+  updated_at DateTime  @updatedAt
+  closed_at  DateTime?
+
+  plant              Plant?                    @relation(fields: [plant_id], references: [id], onDelete: Cascade)
+  comments           TicketComment[]
+  history            TicketHistory[]
+  narration_feedback TicketNarrationFeedback[]
+
+  @@index([org_clerk_id])
+  @@index([plant_id])
+  @@index([status])
+  @@index([priority])
+  @@index([trigger_type])
+  @@index([assigned_to_clerk_id])
+  @@index([created_at])
+  @@index([ai_prompt_variant])
+}
+
+model TicketComment {
+  id              String   @id @default(uuid())
+  ticket_id       String
+  author_clerk_id String
+  org_clerk_id    String
+  content         String
+  created_at      DateTime @default(now())
+  updated_at      DateTime @updatedAt
+
+  ticket Ticket @relation(fields: [ticket_id], references: [id], onDelete: Cascade)
+
+  @@index([ticket_id])
+  @@index([created_at])
+}
+
+model TicketHistory {
+  id                  String          @id @default(uuid())
+  ticket_id           String
+  old_status          TicketStatus?
+  new_status          TicketStatus
+  old_priority        TicketPriority?
+  new_priority        TicketPriority?
+  changed_by_clerk_id String
+  change_reason       String?
+  changed_at          DateTime        @default(now())
+
+  ticket Ticket @relation(fields: [ticket_id], references: [id], onDelete: Cascade)
+
+  @@index([ticket_id])
+  @@index([changed_at])
+}
+
+// Per-field operator edits of the LLM-drafted narration. One row per changed
+// field at approve-time. Drives the A/B variant evaluation and the
+// training-tuples export for downstream fine-tuning.
+model TicketNarrationFeedback {
+  id                 String   @id @default(uuid())
+  ticket_id          String
+  org_clerk_id       String
+  prompt_variant     String // 'v1' | 'v2_concise' | 'v3_root_cause_first'
+  field_changed      String // 'summary' | 'explanation' | 'likely_cause' | 'recommended_action' | 'urgency' | 'confidence'
+  ai_value           String   @db.Text
+  human_value        String   @db.Text
+  resolution_time_h  Decimal? @db.Decimal(8, 2) // backfilled when ticket closes
+  resolution_correct Boolean? // operator marks if AI urgency matched reality
+  created_at         DateTime @default(now())
+
+  ticket Ticket @relation(fields: [ticket_id], references: [id], onDelete: Cascade)
+
+  @@index([ticket_id])
+  @@index([prompt_variant])
+  @@index([field_changed])
+  @@index([org_clerk_id])
+}
+
+// Nightly aggregation of narration A/B variant performance. Populated by the
+// /api/cron/narration-metrics cron. Read by ops dashboards; not user-facing.
+model NarrationVariantStats {
+  id                     String   @id @default(uuid())
+  org_clerk_id           String
+  prompt_variant         String
+  period_start           DateTime @db.Date
+  period_end             DateTime @db.Date
+  tickets_narrated       Int      @default(0)
+  tickets_accepted_clean Int      @default(0) // approved without any edit
+  tickets_edited         Int      @default(0)
+  edits_summary          Int      @default(0)
+  edits_explanation      Int      @default(0)
+  edits_likely_cause     Int      @default(0)
+  edits_recommended      Int      @default(0)
+  edits_urgency          Int      @default(0)
+  edits_confidence       Int      @default(0)
+  urgency_correct_count  Int      @default(0) // resolution time matched suggested urgency
+  urgency_total_labeled  Int      @default(0)
+  avg_resolution_time_h  Decimal? @db.Decimal(8, 2)
+  created_at             DateTime @default(now())
+
+  @@unique([org_clerk_id, prompt_variant, period_start, period_end])
+  @@index([prompt_variant])
+  @@index([period_start])
+}
+
+// Per-org Bedrock spend cap and rate-limit override. NULL row → defaults.
+// Checked before every LLM call; alerts at 80% of daily cap via a separate
+// nightly cron that scans LLMInteraction.cost_usd.
+/// Product usage audit trail: one row per meaningful user action (ticket
+/// created, alert acknowledged, cleaning plan adopted, report sent, chat
+/// turn...). Written fire-and-forget by src/lib/activity.ts; read ONLY by
+/// the founder-gated /admin/usage page. Not exposed to org users.
+model ActivityEvent {
+  id           String   @id @default(uuid())
+  org_clerk_id String
+  user_id      String?
+  /// Name/email snapshot at event time (users get renamed/deleted).
+  user_label   String?
+  /// Dotted verb, e.g. "ticket.created", "alert.acknowledged", "chat.turn".
+  action       String
+  target_type  String?
+  target_id    String?
+  plant_id     String?
+  metadata     Json?
+  created_at   DateTime @default(now())
+
+  @@index([org_clerk_id, created_at])
+  @@index([action, created_at])
+  @@index([created_at])
+}
+
+/// Persisted AI inverter diagnosis (Bedrock). Latest row per (plant, device)
+/// is the cached result the panel shows without re-running inference.
+model InverterDiagnosis {
+  id             String   @id @default(uuid())
+  org_clerk_id   String
+  plant_id       String
+  device_id      String
+  severity       String
+  summary        String
+  fault_code     String?
+  fault_name     String?
+  confidence     Float?
+  actions        Json?
+  reasoning      String?
+  stats          Json?
+  classification Json?
+  model          String?
+  latency_ms     Int?
+  created_at     DateTime @default(now())
+
+  @@index([plant_id, device_id, created_at])
+  @@index([org_clerk_id, created_at])
+}
+
+/// Server-side ack for artifact-derived predictive faults (no DB identity of
+/// their own). fault_key = stable hash of plant + fault_type + equipment +
+/// window, so an ack is shared across teammates and devices.
+model FaultAck {
+  id              String   @id @default(uuid())
+  org_clerk_id    String
+  plant_id        String
+  fault_key       String
+  acknowledged_by String?
+  acknowledged_at DateTime @default(now())
+  created_at      DateTime @default(now())
+
+  @@unique([org_clerk_id, plant_id, fault_key])
+  @@index([plant_id])
+}
+
+model OrgLLMBudget {
+  org_clerk_id        String   @id
+  daily_cap_usd       Decimal  @default(5.0) @db.Decimal(8, 2)
+  monthly_cap_usd     Decimal  @default(100.0) @db.Decimal(8, 2)
+  rate_limit_per_min  Int      @default(20)
+  alert_threshold_pct Int      @default(80) // 0-100
+  alert_email         String?
+  alert_slack_webhook String?
+  created_at          DateTime @default(now())
+  updated_at          DateTime @updatedAt
+}
+
+// ============================================
+// LLM Service Layer Models
+// ============================================
+
+enum LLMProvider {
+  AZURE_OPENAI
+  OPENROUTER
+  BEDROCK_ANTHROPIC
+  BEDROCK_QWEN
+  MOCK
+}
+
+enum LLMModel {
+  GPT_4O
+  GPT_4O_MINI
+  CLAUDE_3_5_SONNET
+  CLAUDE_3_HAIKU
+  CLAUDE_HAIKU_4_5
+  LLAMA_3_3_70B
+  QWEN3_NEXT_80B
+}
+
+enum LLMInteractionType {
+  ALERT_INTERPRETATION
+  KNOWLEDGE_QUERY
+  REPORT_GENERATION
+  EMBEDDING
+  CHAT
+  TICKET_NARRATION
+}
+
+// Track all LLM API calls for cost monitoring and debugging
+model LLMInteraction {
+  id            String  @id @default(uuid())
+  org_clerk_id  String?
+  user_clerk_id String?
+
+  provider         LLMProvider
+  model            LLMModel
+  interaction_type LLMInteractionType
+
+  input_tokens  Int
+  output_tokens Int
+  cost_usd      Decimal @db.Decimal(10, 6)
+  latency_ms    Int
+
+  // Request/response for debugging (optional, can be disabled)
+  request_hash    String? // Hash of input for deduplication
+  response_cached Boolean @default(false)
+
+  // Context for the interaction
+  plant_id  String?
+  ticket_id String?
+  alert_id  String?
+
+  success       Boolean @default(true)
+  error_message String?
+
+  created_at DateTime @default(now())
+
+  @@index([org_clerk_id])
+  @@index([created_at])
+  @@index([interaction_type])
+  @@index([model])
+  @@index([plant_id])
+}
+
+// Knowledge base documents for RAG
+model KBDocument {
+  id           String  @id @default(uuid())
+  org_clerk_id String? // NULL = global/shared documents
+  plant_id     String? // Plant-specific documents
+
+  title           String
+  file_name       String
+  file_type       String // 'pdf', 'txt', 'md', 'html'
+  file_size_bytes Int
+  file_hash       String // SHA-256 for deduplication
+
+  source_url     String? // Original URL if fetched
+  equipment_type String? // 'inverter', 'panel', 'tracker', etc.
+  manufacturer   String?
+  model_number   String?
+
+  processing_status String  @default("pending") // 'pending', 'processing', 'completed', 'failed'
+  processing_error  String?
+  chunk_count       Int     @default(0)
+
+  uploaded_by String? // Clerk user ID
+  created_at  DateTime @default(now())
+  updated_at  DateTime @updatedAt
+
+  chunks KBChunk[]
+
+  @@unique([org_clerk_id, file_hash])
+  @@index([org_clerk_id])
+  @@index([plant_id])
+  @@index([equipment_type])
+  @@index([processing_status])
+}
+
+// Document chunks with embeddings for vector search
+// Note: Requires pgvector extension enabled in PostgreSQL
+// Run: CREATE EXTENSION IF NOT EXISTS vector;
+model KBChunk {
+  id          String @id @default(uuid())
+  document_id String
+  chunk_index Int
+  content     String @db.Text
+
+  // Vector embedding - requires pgvector extension
+  // 1536 dimensions for text-embedding-3-small
+  // Uncomment after enabling pgvector:
+  // embedding         Unsupported("vector(1536)")
+
+  // Metadata for filtering and context
+  page_number   Int?
+  section_title String?
+  token_count   Int
+
+  created_at DateTime @default(now())
+
+  document KBDocument @relation(fields: [document_id], references: [id], onDelete: Cascade)
+
+  @@unique([document_id, chunk_index])
+  @@index([document_id])
+}
+
+enum AlertUrgency {
+  IMMEDIATE
+  WITHIN_24H
+  WITHIN_7D
+  MONITOR
+}
+
+enum AlertConfidence {
+  HIGH
+  MEDIUM
+  LOW
+}
+
+// Cached LLM interpretations for alerts
+model AlertInterpretation {
+  id           String  @id @default(uuid())
+  org_clerk_id String
+  plant_id     String
+  inverter_id  String?
+
+  // Link to source alert/fault
+  alert_type String // 'anomaly', 'fault', 'rul', 'soiling'
+  alert_id   String? // Reference to source
+  alert_hash String // Hash of SHAP values + context for caching
+
+  // Interpretation content
+  summary            String
+  explanation        String          @db.Text
+  likely_cause       String
+  recommended_action String          @db.Text
+  urgency            AlertUrgency
+  confidence         AlertConfidence
+
+  // Similar past events
+  similar_event_ids String[] // Array of related alert IDs
+
+  // LLM metadata
+  llm_model      String
+  llm_cost_usd   Decimal @db.Decimal(10, 6)
+  llm_latency_ms Int
+  input_tokens   Int
+  output_tokens  Int
+  used_fallback  Boolean @default(false)
+
+  // Cache management
+  cache_hit        Boolean   @default(false)
+  cache_expires_at DateTime?
+
+  created_at DateTime @default(now())
+
+  @@unique([alert_hash])
+  @@index([org_clerk_id])
+  @@index([plant_id])
+  @@index([alert_type])
+  @@index([created_at])
+  @@index([cache_expires_at])
+}
+
+// Daily/weekly cost aggregation for billing and monitoring
+model LLMUsageSummary {
+  id           String   @id @default(uuid())
+  org_clerk_id String
+  period_start DateTime @db.Date
+  period_end   DateTime @db.Date
+  period_type  String // 'daily', 'weekly', 'monthly'
+
+  // Token counts by type
+  alert_interpretation_tokens Int @default(0)
+  knowledge_query_tokens      Int @default(0)
+  report_generation_tokens    Int @default(0)
+  embedding_tokens            Int @default(0)
+  ticket_narration_tokens     Int @default(0)
+
+  // Request counts
+  total_requests  Int @default(0)
+  cached_requests Int @default(0)
+  failed_requests Int @default(0)
+
+  // Cost breakdown
+  total_cost_usd Decimal @db.Decimal(10, 4)
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@unique([org_clerk_id, period_start, period_type])
+  @@index([org_clerk_id])
+  @@index([period_start])
+}
+
+// ============================================
+// Chat (ShamsIQ Copilot)
+// ============================================
+
+enum ChatRole {
+  USER
+  ASSISTANT
+  TOOL
+  SYSTEM
+}
+
+model Conversation {
+  id                    String   @id @default(uuid())
+  org_clerk_id          String
+  user_clerk_id         String
+  title                 String   @default("New conversation")
+  pinned                Boolean  @default(false)
+  archived              Boolean  @default(false)
+  plant_id              String?
+  system_prompt_version String   @default("v1")
+  created_at            DateTime @default(now())
+  updated_at            DateTime @updatedAt
+
+  messages ChatMessage[]
+
+  @@index([user_clerk_id, updated_at(sort: Desc)])
+  @@index([org_clerk_id])
+  @@index([plant_id])
+}
+
+model ChatMessage {
+  id                 String   @id @default(uuid())
+  conversation_id    String
+  role               ChatRole
+  content            String   @db.Text
+  parts              Json?
+  tool_name          String?
+  tool_call_id       String?
+  llm_interaction_id String?
+  input_tokens       Int?
+  output_tokens      Int?
+  finish_reason      String?
+  error              String?
+  created_at         DateTime @default(now())
+
+  conversation Conversation @relation(fields: [conversation_id], references: [id], onDelete: Cascade)
+
+  @@index([conversation_id, created_at])
+  @@index([llm_interaction_id])
+}
+
+// ============================================
+// BESS (Battery Energy Storage) Models
+// ============================================
+
+model BessAsset {
+  id                String @id @default(uuid())
+  plant_id          String
+  external_asset_id String // Asset ID in source system
+
+  name                 String?
+  chemistry            BessChemistry
+  nominal_capacity_kwh Decimal       @db.Decimal(10, 2)
+  nominal_power_kw     Decimal       @db.Decimal(10, 2)
+  module_count         Int?
+  rack_count           Int?
+
+  // Commissioning info
+  installation_date DateTime? @db.Date
+  manufacturer      String?
+  model             String?
+  serial_number     String?
+
+  // Flexible metadata for manufacturer-specific fields
+  metadata Json?
+
+  // Current state (updated by polling)
+  current_soh        Decimal?  @db.Decimal(5, 4) // 0.0000 - 1.0000
+  current_soc        Decimal?  @db.Decimal(5, 4)
+  last_capacity_test DateTime?
+  last_updated       DateTime?
+
+  enabled    Boolean  @default(true)
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  plant               Plant                   @relation(fields: [plant_id], references: [id], onDelete: Cascade)
+  warranty_terms      BessWarrantyTerms?
+  warranty_status     BessWarrantyStatus[]
+  warranty_violations BessWarrantyViolation[]
+  cycle_records       BessCycleRecord[]
+  capacity_tests      BessCapacityTest[]
+  dispatch_schedules  BessDispatchSchedule[]
+  contracts           Contract[]
+
+  @@unique([plant_id, external_asset_id])
+  @@index([plant_id])
+  @@index([chemistry])
+  @@index([manufacturer])
+}
+
+model BessWarrantyTerms {
+  id       String @id @default(uuid())
+  asset_id String @unique
+
+  // Capacity guarantee
+  capacity_guarantee_pct Decimal @db.Decimal(5, 4) // e.g., 0.7000 = 70%
+  warranty_years         Int
+
+  // Cycling limits
+  max_cycles         Int? // Equivalent full cycles
+  max_throughput_mwh Decimal? @db.Decimal(12, 2)
+
+  // Efficiency guarantee
+  min_rte Decimal? @db.Decimal(5, 4) // Round-trip efficiency
+
+  // SoC operating limits
+  max_avg_soc          Decimal? @db.Decimal(5, 4) // High SoC limit
+  min_soc              Decimal? @db.Decimal(5, 4) // Low SoC limit
+  soc_hold_limit_hours Int? // Max hours at high/low SoC
+
+  // Temperature limits
+  operating_temp_min_c   Decimal? @db.Decimal(5, 2)
+  operating_temp_max_c   Decimal? @db.Decimal(5, 2)
+  temp_violation_minutes Int? // Threshold for violation
+
+  // C-rate limits
+  max_c_rate_continuous Decimal? @db.Decimal(4, 2)
+  max_c_rate_peak       Decimal? @db.Decimal(4, 2)
+  peak_duration_minutes Int?
+
+  // Cell voltage limits
+  cell_voltage_min_v Decimal? @db.Decimal(5, 3)
+  cell_voltage_max_v Decimal? @db.Decimal(5, 3)
+
+  // Manufacturer-specific terms
+  manufacturer_terms Json?
+
+  effective_from DateTime @db.Date
+  created_at     DateTime @default(now())
+  updated_at     DateTime @updatedAt
+
+  asset BessAsset @relation(fields: [asset_id], references: [id], onDelete: Cascade)
+}
+
+model BessWarrantyStatus {
+  id            String   @id @default(uuid())
+  asset_id      String
+  snapshot_date DateTime @db.Date
+
+  // Current SoH metrics
+  current_soh        Decimal @db.Decimal(5, 4)
+  warranty_threshold Decimal @db.Decimal(5, 4)
+  soh_margin         Decimal @db.Decimal(5, 4)
+
+  // Cycle metrics
+  equivalent_full_cycles Decimal @db.Decimal(10, 2)
+  total_throughput_mwh   Decimal @db.Decimal(12, 2)
+  cycle_usage_pct        Decimal @db.Decimal(5, 4)
+
+  // Time-based metrics
+  time_usage_pct  Decimal @db.Decimal(5, 4)
+  years_remaining Decimal @db.Decimal(5, 2)
+
+  // Efficiency tracking
+  avg_rte_30d Decimal? @db.Decimal(5, 4)
+
+  // Composite warranty health score (0-100)
+  warranty_health_score Decimal           @db.Decimal(5, 2)
+  risk_level            WarrantyRiskLevel
+
+  // Projections
+  projected_eol_date      DateTime? @db.Date
+  projected_cycles_to_eol Int?
+
+  // Violations count
+  active_violations Int @default(0)
+
+  // 'modelled' | 'measured'. Every BESS row today comes from the synthesised
+  // dispatch twin; per-row provenance lets charts shade the modelled window
+  // when real OEM telemetry arrives, instead of a plant-wide banner.
+  provenance String @default("modelled")
+
+  created_at DateTime @default(now())
+
+  asset BessAsset @relation(fields: [asset_id], references: [id], onDelete: Cascade)
+
+  @@unique([asset_id, snapshot_date])
+  @@index([asset_id, snapshot_date])
+  @@index([risk_level])
+}
+
+model BessWarrantyViolation {
+  id             String                @id @default(uuid())
+  asset_id       String
+  violation_type WarrantyViolationType
+
+  // Timing
+  started_at       DateTime
+  ended_at         DateTime?
+  duration_minutes Int?
+
+  // Severity
+  severity String // 'warning', 'critical'
+
+  // Measured values
+  measured_value  Decimal? @db.Decimal(10, 4)
+  threshold_value Decimal? @db.Decimal(10, 4)
+  unit            String?
+
+  // Context
+  description      String?
+  root_cause       String?
+  affected_modules String[]
+
+  // Resolution
+  is_resolved      Boolean   @default(false)
+  resolution_notes String?
+  resolved_at      DateTime?
+  resolved_by      String?
+
+  // Documentation
+  evidence_url String?
+
+  // Ticket integration
+  ticket_id String?
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  asset BessAsset @relation(fields: [asset_id], references: [id], onDelete: Cascade)
+
+  @@index([asset_id])
+  @@index([violation_type])
+  @@index([started_at])
+  @@index([severity])
+  @@index([is_resolved])
+}
+
+model BessCycleRecord {
+  id         String   @id @default(uuid())
+  asset_id   String
+  cycle_date DateTime @db.Date
+
+  // Energy metrics
+  energy_in_kwh     Decimal @db.Decimal(10, 2)
+  energy_out_kwh    Decimal @db.Decimal(10, 2)
+  equivalent_cycles Decimal @db.Decimal(8, 4)
+
+  // Cumulative metrics
+  cumulative_cycles         Decimal @db.Decimal(10, 2)
+  cumulative_throughput_kwh Decimal @db.Decimal(14, 2)
+
+  // Operating conditions
+  avg_soc Decimal? @db.Decimal(5, 4)
+  max_soc Decimal? @db.Decimal(5, 4)
+  min_soc Decimal? @db.Decimal(5, 4)
+  avg_dod Decimal? @db.Decimal(5, 4)
+
+  avg_temp_c Decimal? @db.Decimal(5, 2)
+  max_temp_c Decimal? @db.Decimal(5, 2)
+  min_temp_c Decimal? @db.Decimal(5, 2)
+
+  avg_c_rate Decimal? @db.Decimal(4, 2)
+  max_c_rate Decimal? @db.Decimal(4, 2)
+
+  // Efficiency
+  round_trip_efficiency Decimal? @db.Decimal(5, 4)
+
+  // High stress hours
+  high_soc_hours  Decimal? @db.Decimal(5, 2)
+  high_temp_hours Decimal? @db.Decimal(5, 2)
+
+  // Rainflow counting for partial cycles
+  rainflow_data Json?
+
+  // 'modelled' | 'measured'. Every BESS row today comes from the synthesised
+  // dispatch twin; per-row provenance lets charts shade the modelled window
+  // when real OEM telemetry arrives, instead of a plant-wide banner.
+  provenance String @default("modelled")
+
+  created_at DateTime @default(now())
+
+  asset BessAsset @relation(fields: [asset_id], references: [id], onDelete: Cascade)
+
+  @@unique([asset_id, cycle_date])
+  @@index([asset_id, cycle_date])
+}
+
+model BessCapacityTest {
+  id        String   @id @default(uuid())
+  asset_id  String
+  test_date DateTime
+
+  // Test results
+  measured_capacity_kwh Decimal @db.Decimal(10, 2)
+  soh_result            Decimal @db.Decimal(5, 4)
+
+  // Comparison to nominal
+  capacity_retention Decimal @db.Decimal(5, 4)
+
+  // Test conditions
+  test_type      String // 'standard', 'partial', 'estimated'
+  ambient_temp_c Decimal? @db.Decimal(5, 2)
+  initial_soc    Decimal? @db.Decimal(5, 4)
+
+  // Methodology
+  test_protocol  String?
+  c_rate_used    Decimal? @db.Decimal(4, 2)
+  duration_hours Decimal? @db.Decimal(6, 2)
+
+  // Validation
+  is_valid            Boolean @default(true)
+  invalidation_reason String?
+  notes               String?
+
+  // 'modelled' | 'measured'. Every BESS row today comes from the synthesised
+  // dispatch twin; per-row provenance lets charts shade the modelled window
+  // when real OEM telemetry arrives, instead of a plant-wide banner.
+  provenance String @default("modelled")
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  asset BessAsset @relation(fields: [asset_id], references: [id], onDelete: Cascade)
+
+  @@index([asset_id, test_date])
+}
+
+model BessDispatchSchedule {
+  id            String   @id @default(uuid())
+  asset_id      String
+  schedule_date DateTime @db.Date
+
+  // Optimization horizon
+  horizon_hours      Int @default(24)
+  resolution_minutes Int @default(60)
+
+  // Schedule data (arrays of values per time slot)
+  charge_schedule_kw    Json // Array of charge power values
+  discharge_schedule_kw Json // Array of discharge power values
+  soc_schedule          Json // Array of SoC values
+  price_forecast        Json // Array of price values (EUR/MWh)
+
+  // Economics. The three amounts below are denominated in `currency`, not
+  // necessarily euro: GB assets settle in GBP. The _eur suffix is legacy and
+  // kept only to avoid a rename across the existing readers.
+  expected_revenue_eur Decimal @db.Decimal(10, 2)
+  degradation_cost_eur Decimal @db.Decimal(10, 2)
+  net_revenue_eur      Decimal @db.Decimal(10, 2)
+  currency             String  @default("EUR")
+
+  // Cycle impact
+  expected_cycles Decimal  @db.Decimal(6, 4)
+  avg_dod         Decimal? @db.Decimal(5, 4)
+
+  // Optimization metadata
+  optimizer_type     String // 'lp', 'milp', 'mpc', 'rule_based'
+  objective_function String? // 'max_revenue', 'min_degradation', 'balanced'
+  solve_time_ms      Int?
+  status             String // 'optimal', 'suboptimal', 'infeasible', 'timeout'
+  solver_message     String?
+
+  // Constraints used
+  warranty_constrained   Boolean @default(false)
+  max_cycles_constrained Boolean @default(false)
+
+  // 'modelled' | 'measured'. Every BESS row today comes from the synthesised
+  // dispatch twin; per-row provenance lets charts shade the modelled window
+  // when real OEM telemetry arrives, instead of a plant-wide banner.
+  provenance String @default("modelled")
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  asset BessAsset @relation(fields: [asset_id], references: [id], onDelete: Cascade)
+
+  @@unique([asset_id, schedule_date])
+  @@index([asset_id, schedule_date])
+}
+
+// ============================================
+// Green Hydrogen (Electrolyzer) Models
+// ============================================
+
+model H2Asset {
+  id                String @id @default(uuid())
+  plant_id          String
+  external_asset_id String // Asset ID in source system
+
+  name           String?
+  technology     String  @default("PEM") // 'PEM' | 'ALK' | 'SOEC'
+  rated_power_kw Decimal @db.Decimal(10, 2)
+  stack_count    Int?
+  rated_kg_per_h Decimal @db.Decimal(10, 2)
+  // Specific energy consumption at beginning of life (system, rated load)
+  sec_bol_kwh_per_kg Decimal @db.Decimal(6, 2)
+
+  installation_date DateTime? @db.Date
+  manufacturer      String?
+  model             String?
+  serial_number     String?
+
+  metadata Json?
+
+  // Current state (updated by polling / synthesis)
+  current_sec_kwh_per_kg Decimal? @db.Decimal(6, 2)
+  stack_hours            Decimal? @db.Decimal(10, 1)
+  last_updated           DateTime?
+
+  enabled    Boolean  @default(true)
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  plant              Plant                @relation(fields: [plant_id], references: [id], onDelete: Cascade)
+  production_records H2ProductionRecord[]
+  stack_health       H2StackHealth[]
+
+  @@unique([plant_id, external_asset_id])
+  @@index([plant_id])
+}
+
+model H2ProductionRecord {
+  id              String   @id @default(uuid())
+  asset_id        String
+  production_date DateTime @db.Date
+
+  energy_in_kwh  Decimal  @db.Decimal(12, 1)
+  h2_out_kg      Decimal  @db.Decimal(10, 2)
+  hours_run      Decimal  @db.Decimal(4, 1)
+  avg_load_pct   Decimal? @db.Decimal(5, 1)
+  sec_kwh_per_kg Decimal  @db.Decimal(6, 2)
+  water_l        Decimal? @db.Decimal(12, 1)
+
+  // Economics of the day's production
+  h2_price_eur_per_kg Decimal? @db.Decimal(6, 2)
+  revenue_eur         Decimal? @db.Decimal(12, 2)
+  power_cost_eur      Decimal? @db.Decimal(12, 2)
+  net_margin_eur      Decimal? @db.Decimal(12, 2)
+
+  created_at DateTime @default(now())
+
+  asset H2Asset @relation(fields: [asset_id], references: [id], onDelete: Cascade)
+
+  @@unique([asset_id, production_date])
+  @@index([asset_id, production_date])
+}
+
+model H2StackHealth {
+  id          String   @id @default(uuid())
+  asset_id    String
+  measured_at DateTime @db.Date
+
+  stack_hours        Decimal @db.Decimal(10, 1)
+  sec_kwh_per_kg     Decimal @db.Decimal(6, 2)
+  efficiency_hhv_pct Decimal @db.Decimal(5, 2)
+  est_rul_hours      Decimal @db.Decimal(10, 0)
+  health_pct         Decimal @db.Decimal(5, 1)
+
+  created_at DateTime @default(now())
+
+  asset H2Asset @relation(fields: [asset_id], references: [id], onDelete: Cascade)
+
+  @@unique([asset_id, measured_at])
+  @@index([asset_id, measured_at])
+}
+
+// ─── Scheduled Reports ───────────────────────────────────────────────────
+
+enum ReportSchedule {
+  weekly
+  monthly
+}
+
+enum ReportPeriod {
+  last_7d
+  last_14d
+  last_30d
+  last_month
+  last_quarter
+  year_to_date
+  custom
+}
+
+enum ReportType {
+  portfolio
+  bess
+  combined
+}
+
+model ScheduledReport {
+  id                String         @id @default(uuid())
+  name              String
+  schedule          ReportSchedule
+  period            ReportPeriod
+  report_type       ReportType     @default(portfolio)
+  report_sections   Json           @default("[]")
+  recipient_emails  String[]
+  plant_ids         String[]
+  include_summary   Boolean        @default(true)
+  include_risk      Boolean        @default(true)
+  include_losses    Boolean        @default(true)
+  is_active         Boolean        @default(true)
+  last_sent_at      DateTime?
+  next_run_at       DateTime?
+  send_day_of_week  Int?
+  send_day_of_month Int?
+  send_time_utc     String?        @default("07:00")
+  custom_start      DateTime?
+  custom_end        DateTime?
+  created_by        String?
+  created_at        DateTime       @default(now())
+  updated_at        DateTime       @updatedAt
+
+  // Optional link to an interactive Dashboard. When set, the scheduled PDF is
+  // rendered from that dashboard (via puppeteer of the public share URL)
+  // instead of the legacy section-based renderer.
+  dashboard_id String?
+  dashboard    Dashboard? @relation(fields: [dashboard_id], references: [id], onDelete: SetNull)
+
+  @@index([is_active, next_run_at])
+  @@index([dashboard_id])
+}
+
+// ============================================
+// Interactive dashboards (Reporter)
+// ============================================
+
+model Dashboard {
+  id                String            @id @default(uuid())
+  slug              String            @unique
+  title             String
+  description       String?
+  // Ownership — Clerk user id / organisation id. Nullable in demo.
+  owner_id          String?
+  organization_id   String?
+  // Default scope; individual widgets may override.
+  scope_plant_ids   String[]          @default([])
+  scope_device_ids  String[]          @default([])
+  // Default time range — mirrors ReportPeriod values ("last_7d", "last_30d",
+  // "last_month", "last_quarter", "year_to_date", "custom"). Stored as a
+  // free-text string rather than an enum so new ranges can be added without
+  // a migration.
+  default_range     String            @default("last_30d")
+  default_from      DateTime?
+  default_to        DateTime?
+  // Widget layout: [{ id, type, x, y, w, h, config }]. JSON lets us evolve
+  // widget types without schema changes.
+  widgets           Json              @default("[]")
+  // Sharing — set to a short token for public-read access, null = private.
+  share_token       String?           @unique
+  share_expires_at  DateTime?
+  scheduled_reports ScheduledReport[]
+  created_at        DateTime          @default(now())
+  updated_at        DateTime          @updatedAt
+
+  @@index([owner_id])
+  @@index([organization_id])
+}
+
+// ============================================
+// MCP server — external API keys
+// ============================================
+//
+// Org-scoped API keys consumed by the MCP server at /api/mcp/*. Customers
+// generate keys in /dashboard/settings/api-keys, pick scopes, and paste
+// `Authorization: Bearer nv_live_<token>` into Claude Desktop / ChatGPT
+// connectors. Only the SHA-256 hash is stored; the raw token is shown once
+// at generation time.
+
+model ApiKey {
+  id           String    @id @default(uuid())
+  org_clerk_id String
+  // SHA-256 hex of the raw token (no salt — collision resistance from token
+  // entropy is sufficient).
+  hashed_key   String    @unique
+  // First 12 chars of the raw token (e.g. "nv_live_7Hx2"). Shown in the
+  // dashboard so customers can identify which key is which without re-pasting.
+  key_prefix   String
+  name         String
+  // ["plants:read", "tickets:write", "diagnosis:run", ...]
+  scopes       String[]  @default([])
+  created_by   String // Clerk user id who minted the key
+  last_used_at DateTime?
+  expires_at   DateTime?
+  revoked_at   DateTime?
+  created_at   DateTime  @default(now())
+
+  @@index([org_clerk_id])
+  @@index([hashed_key])
+}
+
+/// Audit row written for every MCP tool call (read and write). Powers the
+/// /dashboard/settings/api-keys audit panel and is the source of truth for
+/// idempotency replays.
+model McpToolCall {
+  id                   String   @id @default(uuid())
+  api_key_id           String
+  org_clerk_id         String
+  tool_name            String
+  args_json            Json
+  status               String // "success" | "error" | "forbidden" | "rate_limited"
+  error_reason         String?
+  duration_ms          Int
+  /// Caller-supplied idempotency token; unique per api_key+tool so replays
+  /// of the same (key, tool, idempotency_key) tuple return the stored result.
+  idempotency_key      String?
+  /// JSON-encoded tool result, returned verbatim on idempotent replay.
+  result_json          Json?
+  /// Optional linkage to the side effect for write tools.
+  ticket_id            String?
+  cleaning_schedule_id String?
+  created_at           DateTime @default(now())
+
+  @@unique([api_key_id, tool_name, idempotency_key])
+  @@index([api_key_id])
+  @@index([org_clerk_id])
+  @@index([created_at])
+}
+
+// ============================================
+// Better Auth (auth provider — replaced Clerk)
+// ============================================
+// Core tables managed by better-auth's Prisma adapter. The organization
+// plugin's table is named AuthOrganization because the legacy Organization
+// model (plan limits, plant relations) already owns that name; legacy tables
+// reference Better Auth ids through their user_clerk_id / org_clerk_id
+// string columns (opaque external ids).
+
+model User {
+  id            String    @id
+  name          String
+  email         String    @unique
+  emailVerified Boolean   @default(false)
+  image         String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  // Better Auth admin plugin (platform admins get role='admin' — set by hand,
+  // never by the app; enables /admin + impersonation).
+  role          String?   @default("user")
+  banned        Boolean?  @default(false)
+  banReason     String?
+  banExpires    DateTime?
+
+  sessions    Session[]
+  accounts    Account[]
+  members     Member[]
+  invitations Invitation[]
+}
+
+model Session {
+  id                   String   @id
+  expiresAt            DateTime
+  token                String   @unique
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
+  ipAddress            String?
+  userAgent            String?
+  userId               String
+  activeOrganizationId String?
+  // Better Auth admin plugin: set while a platform admin impersonates this
+  // session's user (drives the impersonation banner).
+  impersonatedBy       String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model Account {
+  id                    String    @id
+  accountId             String
+  providerId            String
+  userId                String
+  accessToken           String?
+  refreshToken          String?
+  idToken               String?
+  accessTokenExpiresAt  DateTime?
+  refreshTokenExpiresAt DateTime?
+  scope                 String?
+  password              String?
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model Verification {
+  id         String   @id
+  identifier String
+  value      String
+  expiresAt  DateTime
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([identifier])
+}
+
+model AuthOrganization {
+  id        String   @id
+  name      String
+  slug      String   @unique
+  logo      String?
+  metadata  String?
+  createdAt DateTime @default(now())
+
+  members     Member[]
+  invitations Invitation[]
+}
+
+model Member {
+  id             String   @id
+  organizationId String
+  userId         String
+  role           String   @default("member")
+  createdAt      DateTime @default(now())
+
+  organization AuthOrganization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  user         User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([organizationId, userId])
+  @@index([userId])
+}
+
+model Invitation {
+  id             String   @id
+  organizationId String
+  email          String
+  role           String?
+  status         String   @default("pending")
+  expiresAt      DateTime
+  inviterId      String
+
+  organization AuthOrganization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  user         User             @relation(fields: [inviterId], references: [id], onDelete: Cascade)
+
+  @@index([organizationId])
+  @@index([email])
+}
+
+// Better Auth OIDC/MCP provider tables (OAuth for MCP clients, Phase D).
+
+model OauthApplication {
+  id           String   @id
+  name         String
+  icon         String?
+  metadata     String?
+  clientId     String   @unique
+  clientSecret String?
+  redirectUrls String
+  type         String
+  disabled     Boolean  @default(false)
+  userId       String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([userId])
+}
+
+model OauthAccessToken {
+  id                    String    @id
+  accessToken           String    @unique
+  refreshToken          String?   @unique
+  accessTokenExpiresAt  DateTime?
+  refreshTokenExpiresAt DateTime?
+  clientId              String
+  userId                String?
+  scopes                String
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+
+  @@index([clientId])
+  @@index([userId])
+}
+
+model OauthConsent {
+  id           String   @id
+  clientId     String
+  userId       String
+  scopes       String
+  consentGiven Boolean  @default(false)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([clientId])
+  @@index([userId])
+}
+
+/// Per-plant analytics pipeline runs (onboarding cold-start + nightly
+/// refresh), written by the Python jobs via nuravolt/db/writer.py and read
+/// by the plant onboarding-status surface.
+model AnalyticsJob {
+  id            String    @id @default(uuid())
+  plant_id      String
+  /// 'onboarding' | 'nightly' | 'training'
+  job_type      String
+  /// 'queued' | 'running' | 'succeeded' | 'failed'
+  status        String    @default("queued")
+  github_run_id String?
+  detail        Json?
+  error         String?
+  started_at    DateTime  @default(now())
+  finished_at   DateTime?
+
+  @@index([plant_id, started_at])
+  @@index([status])
+}
+
+/// Per-plant nested analysis payloads that don't fit the timeseries tables:
+/// synthesized/labeled demo streams (soiling AOD/dust/DustIQ/ML history) and
+/// enhanced fault detection (RUL/cascade/health/maintenance). One row per
+/// (plant, kind); routes read it DB-first with a demo fixture fallback.
+/// Written by the Python synthesis modules (nuravolt/pipeline/*) and read by
+/// the dashboard section routes. `source` labels provenance so the UI can mark
+/// synthetic data as provisional.
+model AnalysisArtifact {
+  id            String   @id @default(uuid())
+  plant_id      String
+  /// 'soiling_streams' | 'faults_enhanced' | 'quality_correlation' | ...
+  kind          String
+  payload       Json
+  /// 'synthetic' | 'computed' | 'ingested'
+  source        String   @default("synthetic")
+  model_version String?
+  generated_at  DateTime @default(now())
+  updated_at    DateTime @updatedAt
+
+  @@unique([plant_id, kind])
+  @@index([plant_id])
+}
+
+// ── Outbound integrations (arc 9) ─────────────────────────────────────────
+// Generic signed webhooks: ticket lifecycle events POST to customer-supplied
+// endpoints (monday.com automations, Jira Automation, Make/Zapier, any CMMS).
+
+model IntegrationWebhook {
+  id           String   @id @default(uuid())
+  org_clerk_id String
+  name         String
+  url          String
+  /// HMAC-SHA256 signing secret, shown once at creation.
+  secret       String
+  /// Subscribed events, e.g. ticket.created, ticket.status_changed.
+  events       String[]
+  active       Boolean  @default(true)
+  created_by   String?
+  created_at   DateTime @default(now())
+  updated_at   DateTime @updatedAt
+
+  deliveries WebhookDelivery[]
+
+  @@index([org_clerk_id, active])
+}
+
+model WebhookDelivery {
+  id            String   @id @default(uuid())
+  webhook_id    String
+  event         String
+  payload       Json
+  status        String   @default("pending") // pending | success | failed
+  response_code Int?
+  error         String?
+  duration_ms   Int?
+  created_at    DateTime @default(now())
+
+  webhook IntegrationWebhook @relation(fields: [webhook_id], references: [id], onDelete: Cascade)
+
+  @@index([webhook_id, created_at])
+}
+
+// ── Contract intelligence (arc 11) ────────────────────────────────────────
+// Uploaded contract documents (PPA, warranties, O&M SLA) with LLM-extracted,
+// human-confirmed terms. Obligation status is computed hourly by
+// src/lib/contracts/evaluate.ts and persisted as one AnalysisArtifact per
+// plant (kind='contract_obligations'); breaches open PlantAlert rows
+// (kind=CONTRACT_OBLIGATION). For BESS_WARRANTY contracts the numeric terms
+// are one-way synced into BessWarrantyTerms on confirm (bess-sync.ts) — the
+// Contract row is the document/provenance record, not a second source of
+// truth for the BESS guardian.
+
+enum ContractType {
+  PPA
+  MODULE_WARRANTY
+  INVERTER_WARRANTY
+  OM_SLA
+  BESS_WARRANTY
+  BESS_TOLLING // offtaker rents the asset's capacity and dispatches it
+  BESS_CAPACITY_MARKET // availability payment for holding capacity (e.g. GB CM)
+  BESS_ANCILLARY // frequency response / reserve service agreement
+  OTHER
+}
+
+enum ContractStatus {
+  DRAFT // uploaded + extracted, awaiting term review
+  ACTIVE
+  EXPIRED
+  ARCHIVED
+}
+
+enum ContractTermStatus {
+  EXTRACTED // LLM draft, not yet reviewed
+  CONFIRMED
+  REJECTED
+}
+
+model Contract {
+  id            String         @id @default(uuid())
+  org_clerk_id  String? // null for demo/fixture-backed plants
+  plant_id      String
+  contract_type ContractType
+  title         String
+  counterparty  String?
+  status        ContractStatus @default(DRAFT)
+
+  effective_from DateTime? @db.Date
+  effective_to   DateTime? @db.Date
+
+  // Source document provenance (null when terms were entered without a PDF)
+  source_s3_key  String? // contracts/<plantId>/<sha256>.pdf
+  source_sha256  String?
+  kb_document_id String? // set on confirm when the text is ingested into the KB
+
+  // BESS_WARRANTY: sync target for confirmed numeric terms
+  bess_asset_id String?
+
+  extraction_model    String? // bedrock model id used for term extraction
+  extracted_at        DateTime?
+  created_by_clerk_id String?
+  created_at          DateTime  @default(now())
+  updated_at          DateTime  @updatedAt
+
+  plant      Plant          @relation(fields: [plant_id], references: [id], onDelete: Cascade)
+  bess_asset BessAsset?     @relation(fields: [bess_asset_id], references: [id], onDelete: SetNull)
+  terms      ContractTerm[]
+
+  @@index([plant_id])
+  @@index([org_clerk_id])
+  @@index([contract_type])
+}
+
+model ContractTerm {
+  id          String @id @default(uuid())
+  contract_id String
+
+  /// Closed vocabulary per contract_type (src/lib/contracts/term-fields.ts)
+  field         String
+  value_numeric Decimal? @db.Decimal(14, 4)
+  unit          String?
+  value_text    String? // for non-numeric terms (mechanism, penalty prose)
+
+  /// Extraction provenance; null confidence = manually entered term
+  confidence     Decimal? @db.Decimal(3, 2) // 0.00-1.00
+  source_excerpt String? // <=300 chars, verified substring of the parsed PDF text
+  is_explicit    Boolean  @default(true)
+
+  status    ContractTermStatus @default(EXTRACTED)
+  /// true = the obligation evaluator computes a live status for this term
+  monitored Boolean            @default(false)
+
+  confirmed_by_clerk_id String?
+  confirmed_at          DateTime?
+  created_at            DateTime  @default(now())
+  updated_at            DateTime  @updatedAt
+
+  contract Contract @relation(fields: [contract_id], references: [id], onDelete: Cascade)
+
+  @@unique([contract_id, field])
+  @@index([contract_id])
+}

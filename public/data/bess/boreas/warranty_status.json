@@ -1,0 +1,34 @@
+{
+  "asset_id": "bess-boreas-001",
+  "snapshot_date": "2026-05-02",
+  "warranty_health": {
+    "score": 88,
+    "risk_level": "LOW",
+    "component_scores": {
+      "soh": 86,
+      "cycles": 92,
+      "time": 88,
+      "efficiency": 84,
+      "violations": 90
+    },
+    "current_soh": 0.963,
+    "warranty_threshold": 0.7,
+    "soh_margin": 0.263,
+    "cycles_used": 850,
+    "cycles_remaining": 5150,
+    "years_remaining": 13.1,
+    "risk_factors": [
+      "Two minor warranty events (C-rate excursion + SoC dwell) in the last 90 days \u2014 informational, not yet impacting warranty status."
+    ],
+    "recommendation": "OK: Operating within warranty parameters. Monitor C-rate during DC low-frequency response activations."
+  },
+  "warranty_terms": {
+    "capacity_guarantee_pct": 0.7,
+    "warranty_years": 15,
+    "max_cycles": 6000,
+    "max_throughput_mwh": 800000,
+    "min_rte": 0.86,
+    "operating_temp_min_c": 0,
+    "operating_temp_max_c": 50
+  }
+}

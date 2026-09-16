@@ -1,0 +1,43 @@
+{
+  "plantInfo": {
+    "plantId": "epsilon",
+    "plantName": "Epsilon Solar Plant",
+    "capacity_MW": 10.8,
+    "totalInverters": 180
+  },
+  "currentStatus": {
+    "avgSoilingRatio": 0.935,
+    "estimatedLossPct": 6.5,
+    "lastUpdateTime": "2025-01-15T10:00:00.000000",
+    "dataSource": "ml_model",
+    "validation": {
+      "mae": 0.0145,
+      "rmse": 0.0185,
+      "r_squared": 0.668,
+      "bias": 0.0035,
+      "count": 365
+    }
+  },
+  "fleetHealth": {
+    "normalInverters": 162,
+    "minorIssues": 15,
+    "majorIssues": 3,
+    "critical": 0
+  },
+  "economicImpact": {
+    "ytdEnergyLoss_MWh": 198.5,
+    "ytdRevenueLoss_EUR": 12902.5,
+    "nextCleaningRecommended": "2025-02-05",
+    "estimatedROI_pct": 225,
+    "expectedNetBenefit_EUR": 9031.75,
+    "paybackDays": 48
+  },
+  "topPerformers": [
+    { "id": "INV 02", "sr": 0.97, "loss_pct": 3.0 },
+    { "id": "INV 04", "sr": 0.96, "loss_pct": 4.0 }
+  ],
+  "worstPerformers": [
+    { "id": "INV 05", "sr": 0.90, "loss_pct": 10.0 },
+    { "id": "INV 06", "sr": 0.91, "loss_pct": 9.0 }
+  ]
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "turbineId": "T001",
+    "name": "Turbine 01",
+    "overallHealth": 82,
+    "availability": 0.945,
+    "capacityFactor": 0.32,
+    "activeFaults": 0,
+    "lowestRUL": {
+      "component": "GEARBOX_BEARING",
+      "days": 145
+    },
+    "lastDataTimestamp": "2026-02-10T06:26:28.852204",
+    "status": "OPERATING"
+  },
+  {
+    "turbineId": "T002",
+    "name": "Turbine 02",
+    "overallHealth": 78,
+    "availability": 0.932,
+    "capacityFactor": 0.29,
+    "activeFaults": 1,
+    "lowestRUL": {
+      "component": "GENERATOR_BEARING_DE",
+      "days": 85
+    },
+    "lastDataTimestamp": "2026-02-10T06:26:28.852206",
+    "status": "OPERATING"
+  },
+  {
+    "turbineId": "T003",
+    "name": "Turbine 03",
+    "overallHealth": 88,
+    "availability": 0.958,
+    "capacityFactor": 0.31,
+    "activeFaults": 0,
+    "lowestRUL": {
+      "component": "PITCH_ACTUATOR",
+      "days": 220
+    },
+    "lastDataTimestamp": "2026-02-10T06:26:28.852208",
+    "status": "OPERATING"
+  },
+  {
+    "turbineId": "T004",
+    "name": "Turbine 04",
+    "overallHealth": 91,
+    "availability": 0.965,
+    "capacityFactor": 0.33,
+    "activeFaults": 0,
+    "lowestRUL": {
+      "component": "YAW_MOTOR",
+      "days": 310
+    },
+    "lastDataTimestamp": "2026-02-10T06:26:28.852209",
+    "status": "OPERATING"
+  },
+  {
+    "turbineId": "T005",
+    "name": "Turbine 05",
+    "overallHealth": 72,
+    "availability": 0.912,
+    "capacityFactor": 0.27,
+    "activeFaults": 1,
+    "lowestRUL": {
+      "component": "MAIN_BEARING",
+      "days": 65
+    },
+    "lastDataTimestamp": "2026-02-10T06:26:28.852210",
+    "status": "OPERATING"
+  }
+]

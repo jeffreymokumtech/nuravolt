@@ -1,0 +1,28 @@
+[
+  {
+    "id": "v-boreas-001",
+    "type": "C_RATE_EXCEED",
+    "started_at": "2026-03-12T14:22:00Z",
+    "ended_at": "2026-03-12T14:24:00Z",
+    "duration_minutes": 2,
+    "severity": "warning",
+    "measured_value": 1.06,
+    "threshold_value": 1.0,
+    "unit": "C",
+    "description": "Brief C-rate excursion during a Dynamic Containment Low-frequency response activation. Within OEM peak allowance window.",
+    "is_resolved": true
+  },
+  {
+    "id": "v-boreas-002",
+    "type": "SOC_HIGH_DWELL",
+    "started_at": "2026-04-08T03:10:00Z",
+    "ended_at": "2026-04-08T07:48:00Z",
+    "duration_minutes": 278,
+    "severity": "warning",
+    "measured_value": 0.94,
+    "threshold_value": 0.92,
+    "unit": "fraction",
+    "description": "SoC held above 92% for 4h38m after overnight wholesale charge \u2014 trader cancelled morning slot bid.",
+    "is_resolved": true
+  }
+]

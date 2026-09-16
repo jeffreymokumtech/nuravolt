@@ -1,0 +1,892 @@
+{
+  "inverter_groups": [
+    {
+      "id": "ribera-grp-inv-01",
+      "name": "INV 01",
+      "slug": "inv-01",
+      "tilt": 30,
+      "azimuth": 180,
+      "inverter_model": "Generic 250 kW",
+      "inverter_nominal_power_kw": 250,
+      "orientation_source": "default_estimate",
+      "inverters": [
+        {
+          "id": "ribera-inv-inv_01_032",
+          "external_id": "INV 01.032",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_033",
+          "external_id": "INV 01.033",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_034",
+          "external_id": "INV 01.034",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_035",
+          "external_id": "INV 01.035",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_036",
+          "external_id": "INV 01.036",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_037",
+          "external_id": "INV 01.037",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_038",
+          "external_id": "INV 01.038",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_039",
+          "external_id": "INV 01.039",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_040",
+          "external_id": "INV 01.040",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_041",
+          "external_id": "INV 01.041",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_042",
+          "external_id": "INV 01.042",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_043",
+          "external_id": "INV 01.043",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_044",
+          "external_id": "INV 01.044",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_045",
+          "external_id": "INV 01.045",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_046",
+          "external_id": "INV 01.046",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_047",
+          "external_id": "INV 01.047",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_048",
+          "external_id": "INV 01.048",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_049",
+          "external_id": "INV 01.049",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_050",
+          "external_id": "INV 01.050",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_051",
+          "external_id": "INV 01.051",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_052",
+          "external_id": "INV 01.052",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_053",
+          "external_id": "INV 01.053",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_054",
+          "external_id": "INV 01.054",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_055",
+          "external_id": "INV 01.055",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_056",
+          "external_id": "INV 01.056",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_057",
+          "external_id": "INV 01.057",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_058",
+          "external_id": "INV 01.058",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_059",
+          "external_id": "INV 01.059",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_01_060",
+          "external_id": "INV 01.060",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        }
+      ]
+    },
+    {
+      "id": "ribera-grp-inv-02",
+      "name": "INV 02",
+      "slug": "inv-02",
+      "tilt": 30,
+      "azimuth": 180,
+      "inverter_model": "Generic 250 kW",
+      "inverter_nominal_power_kw": 250,
+      "orientation_source": "default_estimate",
+      "inverters": [
+        {
+          "id": "ribera-inv-inv_02_001",
+          "external_id": "INV 02.001",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_002",
+          "external_id": "INV 02.002",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_003",
+          "external_id": "INV 02.003",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_004",
+          "external_id": "INV 02.004",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_005",
+          "external_id": "INV 02.005",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_006",
+          "external_id": "INV 02.006",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_007",
+          "external_id": "INV 02.007",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_008",
+          "external_id": "INV 02.008",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_009",
+          "external_id": "INV 02.009",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_010",
+          "external_id": "INV 02.010",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_011",
+          "external_id": "INV 02.011",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_012",
+          "external_id": "INV 02.012",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_013",
+          "external_id": "INV 02.013",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_014",
+          "external_id": "INV 02.014",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_015",
+          "external_id": "INV 02.015",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_016",
+          "external_id": "INV 02.016",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_017",
+          "external_id": "INV 02.017",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_018",
+          "external_id": "INV 02.018",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_019",
+          "external_id": "INV 02.019",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_020",
+          "external_id": "INV 02.020",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_021",
+          "external_id": "INV 02.021",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_022",
+          "external_id": "INV 02.022",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_023",
+          "external_id": "INV 02.023",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_024",
+          "external_id": "INV 02.024",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_025",
+          "external_id": "INV 02.025",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_026",
+          "external_id": "INV 02.026",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_027",
+          "external_id": "INV 02.027",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_028",
+          "external_id": "INV 02.028",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_029",
+          "external_id": "INV 02.029",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_030",
+          "external_id": "INV 02.030",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_02_031",
+          "external_id": "INV 02.031",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        }
+      ]
+    },
+    {
+      "id": "ribera-grp-inv-03",
+      "name": "INV 03",
+      "slug": "inv-03",
+      "tilt": 30,
+      "azimuth": 180,
+      "inverter_model": "Generic 250 kW",
+      "inverter_nominal_power_kw": 250,
+      "orientation_source": "default_estimate",
+      "inverters": [
+        {
+          "id": "ribera-inv-inv_03_061",
+          "external_id": "INV 03.061",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_062",
+          "external_id": "INV 03.062",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_063",
+          "external_id": "INV 03.063",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_064",
+          "external_id": "INV 03.064",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_065",
+          "external_id": "INV 03.065",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_066",
+          "external_id": "INV 03.066",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_067",
+          "external_id": "INV 03.067",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_068",
+          "external_id": "INV 03.068",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_069",
+          "external_id": "INV 03.069",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_070",
+          "external_id": "INV 03.070",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_071",
+          "external_id": "INV 03.071",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_072",
+          "external_id": "INV 03.072",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_073",
+          "external_id": "INV 03.073",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_074",
+          "external_id": "INV 03.074",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_075",
+          "external_id": "INV 03.075",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_076",
+          "external_id": "INV 03.076",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_077",
+          "external_id": "INV 03.077",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_078",
+          "external_id": "INV 03.078",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_079",
+          "external_id": "INV 03.079",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_080",
+          "external_id": "INV 03.080",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_081",
+          "external_id": "INV 03.081",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_082",
+          "external_id": "INV 03.082",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_083",
+          "external_id": "INV 03.083",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_084",
+          "external_id": "INV 03.084",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_085",
+          "external_id": "INV 03.085",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_086",
+          "external_id": "INV 03.086",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_087",
+          "external_id": "INV 03.087",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_088",
+          "external_id": "INV 03.088",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_089",
+          "external_id": "INV 03.089",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_090",
+          "external_id": "INV 03.090",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_091",
+          "external_id": "INV 03.091",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_092",
+          "external_id": "INV 03.092",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_03_093",
+          "external_id": "INV 03.093",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        }
+      ]
+    },
+    {
+      "id": "ribera-grp-inv-04",
+      "name": "INV 04",
+      "slug": "inv-04",
+      "tilt": 30,
+      "azimuth": 180,
+      "inverter_model": "Generic 250 kW",
+      "inverter_nominal_power_kw": 250,
+      "orientation_source": "default_estimate",
+      "inverters": [
+        {
+          "id": "ribera-inv-inv_04_094",
+          "external_id": "INV 04.094",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_095",
+          "external_id": "INV 04.095",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_096",
+          "external_id": "INV 04.096",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_097",
+          "external_id": "INV 04.097",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_098",
+          "external_id": "INV 04.098",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_099",
+          "external_id": "INV 04.099",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_100",
+          "external_id": "INV 04.100",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_101",
+          "external_id": "INV 04.101",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_102",
+          "external_id": "INV 04.102",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_103",
+          "external_id": "INV 04.103",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_104",
+          "external_id": "INV 04.104",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_105",
+          "external_id": "INV 04.105",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_106",
+          "external_id": "INV 04.106",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_107",
+          "external_id": "INV 04.107",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_108",
+          "external_id": "INV 04.108",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_109",
+          "external_id": "INV 04.109",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_110",
+          "external_id": "INV 04.110",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_111",
+          "external_id": "INV 04.111",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_112",
+          "external_id": "INV 04.112",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_113",
+          "external_id": "INV 04.113",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_114",
+          "external_id": "INV 04.114",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_115",
+          "external_id": "INV 04.115",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_116",
+          "external_id": "INV 04.116",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_117",
+          "external_id": "INV 04.117",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_118",
+          "external_id": "INV 04.118",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_119",
+          "external_id": "INV 04.119",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "ribera-inv-inv_04_120",
+          "external_id": "INV 04.120",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        }
+      ]
+    }
+  ]
+}

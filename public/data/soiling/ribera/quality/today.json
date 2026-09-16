@@ -1,0 +1,76 @@
+{
+  "plant_id": "ribera",
+  "generated_at": "2026-06-21T08:12:00Z",
+  "sla": {
+    "contract_pct": 99.0,
+    "mtd_pct": 99.1,
+    "projected_eom_pct": 99.0,
+    "days_remaining_in_month": 9,
+    "iec_reference": "IEC 61724-1:2021 Class A — typical ≥ 99% monthly availability"
+  },
+  "freshness_summary": {
+    "total_streams": 46,
+    "fresh": 40,
+    "stale_under_1h": 4,
+    "stale_under_24h": 2,
+    "stale_over_24h": 0
+  },
+  "top_degraded": [
+    {
+      "stream_id": "ribera.met.pyrano_a",
+      "label": "Pyranometer A (rooftop)",
+      "category": "met_sensor",
+      "severity": "high",
+      "last_good_at": "2026-06-21T08:10:00Z",
+      "last_value": 738.1,
+      "gap_minutes": 2,
+      "attribution_cause": "sensor_drift",
+      "attribution_narrative": "Pyrano-A and Pyrano-B have diverged by 12.3% over the last 3 days (rolling daily-average GHI: A=684 W/m², B=602 W/m²). Both streams fresh, so this is not a freshness issue — it's a calibration drift. Cohort z-score on Pyrano-A is +3.4 vs the 30-day baseline; Pyrano-B is unchanged. Suspected soiling on A, cable degradation, or post-cleaning recalibration drift.",
+      "affected_kpis": ["PR", "SR"],
+      "recommended_action": "Field tech to wipe Pyrano-A glass, verify cable, and recalibrate against secondary standard. KPIs currently use Pyrano-B until divergence resolved."
+    },
+    {
+      "stream_id": "ribera.met.pyrano_b",
+      "label": "Pyranometer B (ground)",
+      "category": "met_sensor",
+      "severity": "medium",
+      "last_good_at": "2026-06-21T08:11:00Z",
+      "last_value": 657.4,
+      "gap_minutes": 1,
+      "attribution_cause": "sensor_drift",
+      "attribution_narrative": "Pyrano-B is the reference for cross-validation against Pyrano-A. Z-score 0.2 (within normal). Reading currently trusted; flagged here for symmetry only.",
+      "affected_kpis": ["PR", "SR"],
+      "recommended_action": "No action — keep Pyrano-B as KPI source until Pyrano-A recovers"
+    },
+    {
+      "stream_id": "ribera.dustiq.unit_02",
+      "label": "DustIQ unit 02",
+      "category": "soiling_sensor",
+      "severity": "low",
+      "last_good_at": "2026-06-21T06:48:00Z",
+      "last_value": 0.974,
+      "gap_minutes": 84,
+      "attribution_cause": "unknown",
+      "attribution_narrative": "Single stream gap — no co-stale neighbours, no fault event, no shadow pattern, no firmware quirk. Manual investigation recommended.",
+      "affected_kpis": ["SR"],
+      "recommended_action": "Check unit 02 connectivity at next scheduled walk-down"
+    }
+  ],
+  "satellite_fallback_active": {
+    "active": false,
+    "fallback_source": null,
+    "substituting_for": null,
+    "ghi_confidence_band_pct": null,
+    "engaged_at": null
+  },
+  "kpi_impact": [
+    { "kpi": "PR", "nominal": 0.864, "band_lo": 0.842, "band_hi": 0.886, "degraded_inputs_pct": 4.8 },
+    { "kpi": "SR", "nominal": 0.971, "band_lo": 0.962, "band_hi": 0.980, "degraded_inputs_pct": 3.1 },
+    { "kpi": "AC_yield", "nominal": 4502, "band_lo": 4404, "band_hi": 4600, "degraded_inputs_pct": 5.2 }
+  ],
+  "curation_log_recent": [
+    { "ts": "2026-06-21T07:30:00Z", "actor": "system", "action": "cross_validation_alert", "stream_id": "ribera.met.pyrano_a", "reason": "3-day rolling divergence vs pyrano_b exceeded 10% threshold (12.3%)" },
+    { "ts": "2026-06-21T07:31:00Z", "actor": "system", "action": "kpi_source_switched", "stream_id": "ribera.met.pyrano_b", "reason": "Pyrano-B promoted as KPI reference; Pyrano-A excluded until recalibration" },
+    { "ts": "2026-06-20T16:14:00Z", "actor": "AM", "action": "comment", "stream_id": "ribera.met.pyrano_a", "reason": "Noticed climbing readings yesterday — opened CMMS work order #SNG-0421" }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "dataset": "Alpha 15-minute physics twin: day zero, day one, and calibrated",
+  "n_samples": 42229,
+  "n_windows": 35,
+  "normalizer": "ac_capacity_kw",
+  "normalizer_value": 9900.0,
+  "nmae_pct": 6.574,
+  "day_zero_uncalibrated_nmae_pct": 10.408,
+  "day_one_transferred_nmae_pct": 6.574,
+  "locally_calibrated_nmae_pct": 6.613,
+  "transferred_scalar_gain_pct": 36.83704842428901,
+  "local_calibration_further_gain_pct": -0.5932461210830634,
+  "local_factor_range": [
+    1.1198,
+    1.1578
+  ],
+  "by_variant": {
+    "uncalibrated": {
+      "dataset": "alpha_15min/uncalibrated",
+      "n_samples": 42229,
+      "n_windows": 35,
+      "normalizer": "ac_capacity_kw",
+      "normalizer_value": 9900.0,
+      "nmae_pct": 10.408,
+      "nrmse_pct": 15.042,
+      "mbe_pct": -4.714,
+      "model": {
+        "label": "hybrid",
+        "nmae_pct": 10.408,
+        "nrmse_pct": 15.042,
+        "mbe_pct": -4.714,
+        "r2_footnote_only": 0.7343
+      },
+      "baselines": {},
+      "retention": {
+        "n_raw": 177400,
+        "n_after_nonnull": 154017,
+        "n_after_daylight": 67045,
+        "availability_excluded": 345,
+        "n_after_availability": 66686,
+        "clipping_excluded": 373,
+        "n_after_clipping": 66313,
+        "n_after_sensor_sanity": 66313,
+        "retention_pct": 37.38
+      },
+      "extras": {}
+    },
+    "transferred": {
+      "dataset": "alpha_15min/transferred",
+      "n_samples": 42229,
+      "n_windows": 35,
+      "normalizer": "ac_capacity_kw",
+      "normalizer_value": 9900.0,
+      "nmae_pct": 6.574,
+      "nrmse_pct": 14.721,
+      "mbe_pct": 2.028,
+      "model": {
+        "label": "hybrid",
+        "nmae_pct": 6.574,
+        "nrmse_pct": 14.721,
+        "mbe_pct": 2.028,
+        "r2_footnote_only": 0.7455
+      },
+      "baselines": {},
+      "retention": {
+        "n_raw": 177400,
+        "n_after_nonnull": 154017,
+        "n_after_daylight": 67045,
+        "availability_excluded": 345,
+        "n_after_availability": 66686,
+        "clipping_excluded": 373,
+        "n_after_clipping": 66313,
+        "n_after_sensor_sanity": 66313,
+        "retention_pct": 37.38
+      },
+      "extras": {}
+    },
+    "locally_calibrated": {
+      "dataset": "alpha_15min/locally_calibrated",
+      "n_samples": 42229,
+      "n_windows": 35,
+      "normalizer": "ac_capacity_kw",
+      "normalizer_value": 9900.0,
+      "nmae_pct": 6.613,
+      "nrmse_pct": 14.555,
+      "mbe_pct": 1.823,
+      "model": {
+        "label": "hybrid",
+        "nmae_pct": 6.613,
+        "nrmse_pct": 14.555,
+        "mbe_pct": 1.823,
+        "r2_footnote_only": 0.7513
+      },
+      "baselines": {},
+      "retention": {
+        "n_raw": 177400,
+        "n_after_nonnull": 154017,
+        "n_after_daylight": 67045,
+        "availability_excluded": 345,
+        "n_after_availability": 66686,
+        "clipping_excluded": 373,
+        "n_after_clipping": 66313,
+        "n_after_sensor_sanity": 66313,
+        "retention_pct": 37.38
+      },
+      "extras": {}
+    }
+  },
+  "retention": {
+    "n_raw": 177400,
+    "n_after_nonnull": 154017,
+    "n_after_daylight": 67045,
+    "availability_excluded": 345,
+    "n_after_availability": 66686,
+    "clipping_excluded": 373,
+    "n_after_clipping": 66313,
+    "n_after_sensor_sanity": 66313,
+    "retention_pct": 37.38
+  },
+  "protocol": "Identical scoring windows for all three variants. The transferred factor for each window is the median of the factors fitted on every OTHER window, so no window is ever calibrated on itself.",
+  "what_this_shows": "The physics twin needs only metadata to run: nameplate, coordinates, tilt and azimuth. The single calibration scalar is the entire local adaptation, so day-one accuracy is measurable rather than assumed.",
+  "generated_at": "2026-08-20T18:26:46.712607Z",
+  "finding": "Day zero, with the calibration scalar fixed at 1.0 and nothing local at all, the physics twin reaches 10.41% nMAE of AC nameplate with a -4.71% bias. Supplying a single transferred scalar takes it to 6.57% and removes most of the bias. Fitting that scalar on the plant's own history instead gives 6.61%, which is marginally WORSE. Local calibration adds nothing measurable.",
+  "why_transferred_can_beat_local": "The transferred value is a median over many windows and is therefore shrunk toward the population, while a locally fitted factor is estimated from one window and carries that window's noise. This is ordinary shrinkage, and it means a fleet prior is a better default than a short local fit.",
+  "important_limitation": "The 'transferred' factor here is the median of the OTHER TIME WINDOWS OF THE SAME PLANT, not of other plants. So this measures TEMPORAL transfer, not cross-plant transfer. It shows a factor learned from other periods works as well as one learned from this period. To claim a genuine cross-plant day-one number, the factor must come from different sites, which requires the other plants' 15-minute data and is the next test.",
+  "headline": "day zero 10.41% nMAE of AC nameplate; 6.57% with one transferred scalar; 6.61% with local calibration, so local calibration adds nothing"
+}

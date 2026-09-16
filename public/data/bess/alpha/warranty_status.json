@@ -1,0 +1,32 @@
+{
+  "asset_id": "bess-alpha-001",
+  "snapshot_date": "2026-02-04",
+  "warranty_health": {
+    "score": 88,
+    "risk_level": "LOW",
+    "component_scores": {
+      "soh": 84,
+      "cycles": 89,
+      "time": 83,
+      "efficiency": 85,
+      "violations": 100
+    },
+    "current_soh": 0.9537,
+    "warranty_threshold": 0.7,
+    "soh_margin": 0.2537,
+    "cycles_used": 506.1760438056126,
+    "cycles_remaining": 4493.823956194387,
+    "years_remaining": 8.3,
+    "risk_factors": [],
+    "recommendation": "OK: Operating within warranty parameters."
+  },
+  "warranty_terms": {
+    "capacity_guarantee_pct": 0.7,
+    "warranty_years": 10,
+    "max_cycles": 5000,
+    "max_throughput_mwh": null,
+    "min_rte": 0.85,
+    "operating_temp_min_c": 15,
+    "operating_temp_max_c": 35
+  }
+}

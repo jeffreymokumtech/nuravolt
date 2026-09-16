@@ -1,0 +1,105 @@
+{
+  "inverterId": "INV 04.107",
+  "groupId": "INV 04",
+  "soilingRatio": {
+    "mean": 0.9756,
+    "median": 0.9946,
+    "min": 0.0,
+    "max": 1.05,
+    "std": 0.1161
+  },
+  "lossDisaggregation": {
+    "method": "IEA_PVPS_T13",
+    "percentages": {
+      "soiling": 2.44,
+      "temperature": 0.6,
+      "spectral": 1.0,
+      "inverter": 2.0,
+      "wiringBop": 2.0,
+      "degradation": 0.5,
+      "total": 8.54
+    },
+    "energy_kWh": {
+      "reference": 9055.7,
+      "net": 8282.4,
+      "soilingLoss": 220.6
+    }
+  },
+  "anomalyDetection": {
+    "totalAnomalies": 6,
+    "anomalyRate_pct": 0.01,
+    "periods": [
+      {
+        "start": "2025-03-08",
+        "end": "2025-03-11",
+        "duration_hours": 28.5,
+        "severity": "Critical",
+        "type": "underperformance",
+        "deviation_pct": -92.5
+      },
+      {
+        "start": "2025-03-20",
+        "end": "2025-03-28",
+        "duration_hours": 87.5,
+        "severity": "Critical",
+        "type": "overperformance",
+        "deviation_pct": 214.3
+      },
+      {
+        "start": "2025-04-19",
+        "end": "2025-04-22",
+        "duration_hours": 33.25,
+        "severity": "Critical",
+        "type": "underperformance",
+        "deviation_pct": -46.9
+      },
+      {
+        "start": "2025-04-22",
+        "end": "2025-04-23",
+        "duration_hours": 11.25,
+        "severity": "Major",
+        "type": "overperformance",
+        "deviation_pct": 22.1
+      },
+      {
+        "start": "2025-04-23",
+        "end": "2025-04-26",
+        "duration_hours": 32.0,
+        "severity": "Critical",
+        "type": "overperformance",
+        "deviation_pct": 66.4
+      },
+      {
+        "start": "2022-02-18",
+        "end": "2022-02-18",
+        "duration_hours": 2.75,
+        "severity": "Minor",
+        "type": "underperformance",
+        "deviation_pct": -16.2
+      }
+    ]
+  },
+  "performance": {
+    "performanceRatio": 0.976,
+    "avgPowerNormalized": 0.4121,
+    "capacityFactor": 0.103,
+    "availability_pct": 100.0,
+    "productionRate": 0.979
+  },
+  "fleetComparison": {
+    "rank": 142,
+    "deviationFromMean_pct": -2.6,
+    "zScore": -1.39,
+    "severity": "Minor"
+  },
+  "dataQuality": {
+    "completeness_pct": 100.0,
+    "validRecords": 67480,
+    "totalRecords": 67480
+  },
+  "metadata": {
+    "analysisStart": "2020-10-01",
+    "analysisEnd": "2025-10-21",
+    "generatedAt": "2025-11-25T15:54:07.062761"
+  }
+}

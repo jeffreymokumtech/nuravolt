@@ -1,0 +1,282 @@
+{
+  "generatedAt": "2026-02-10T10:00:00.000000",
+  "plantId": "theta",
+  "plantName": "Industrial Rooftop Theta",
+  "modelType": "PlantLevel (Physics + CatBoost)",
+  "config": {
+    "maxYears": 3,
+    "minPR": 0.1,
+    "useCatBoost": true,
+    "minR2": 0.7,
+    "useEnhancedSelection": false
+  },
+  "statistics": {
+    "totalInverters": 20,
+    "successful": 20,
+    "failed": 0,
+    "totalTime_s": 45.2,
+    "avgR2": 0.9612,
+    "avgMAE_kW": 0.82,
+    "plantModelR2": 0.9635,
+    "physicsOnlyR2": 0.9380
+  },
+  "trainingPeriod": {
+    "start": "2025-03-01 07:00:00",
+    "end": "2026-02-28 17:30:00"
+  },
+  "hybridConfig": {
+    "modelType": "PlantLevel (Physics + ML)",
+    "physicsModel": "PVWatts",
+    "mlModel": "CatBoost",
+    "physicsParams": {
+      "latitude": 41.385,
+      "longitude": 2.173,
+      "tilt": 15.0,
+      "azimuth": 180.0,
+      "gamma_pdc": -0.004
+    },
+    "categoricalFeature": "inverter_id"
+  },
+  "inverters": {
+    "SG50CX-01": {
+      "inverterId": "SG50CX-01",
+      "groupId": "South",
+      "success": true,
+      "metrics": {
+        "r2": 0.9785,
+        "mae_kW": 0.68,
+        "rmse_kW": 0.94
+      },
+      "nSamples": 11524,
+      "nominalPower_kW": 50
+    },
+    "SG50CX-02": {
+      "inverterId": "SG50CX-02",
+      "groupId": "South",
+      "success": true,
+      "metrics": {
+        "r2": 0.9742,
+        "mae_kW": 0.73,
+        "rmse_kW": 1.02
+      },
+      "nSamples": 11498,
+      "nominalPower_kW": 50
+    },
+    "SG50CX-03": {
+      "inverterId": "SG50CX-03",
+      "groupId": "South",
+      "success": true,
+      "metrics": {
+        "r2": 0.9768,
+        "mae_kW": 0.71,
+        "rmse_kW": 0.98
+      },
+      "nSamples": 11536,
+      "nominalPower_kW": 50
+    },
+    "SG50CX-04": {
+      "inverterId": "SG50CX-04",
+      "groupId": "South",
+      "success": true,
+      "metrics": {
+        "r2": 0.9801,
+        "mae_kW": 0.64,
+        "rmse_kW": 0.89
+      },
+      "nSamples": 11562,
+      "nominalPower_kW": 50
+    },
+    "SG50CX-05": {
+      "inverterId": "SG50CX-05",
+      "groupId": "South",
+      "success": true,
+      "metrics": {
+        "r2": 0.9729,
+        "mae_kW": 0.76,
+        "rmse_kW": 1.05
+      },
+      "nSamples": 11487,
+      "nominalPower_kW": 50
+    },
+    "SG50CX-06": {
+      "inverterId": "SG50CX-06",
+      "groupId": "South",
+      "success": true,
+      "metrics": {
+        "r2": 0.9756,
+        "mae_kW": 0.72,
+        "rmse_kW": 1.00
+      },
+      "nSamples": 11519,
+      "nominalPower_kW": 50
+    },
+    "SG50CX-07": {
+      "inverterId": "SG50CX-07",
+      "groupId": "South",
+      "success": true,
+      "metrics": {
+        "r2": 0.9793,
+        "mae_kW": 0.66,
+        "rmse_kW": 0.91
+      },
+      "nSamples": 11541,
+      "nominalPower_kW": 50
+    },
+    "SG50CX-08": {
+      "inverterId": "SG50CX-08",
+      "groupId": "South",
+      "success": true,
+      "metrics": {
+        "r2": 0.9718,
+        "mae_kW": 0.78,
+        "rmse_kW": 1.08
+      },
+      "nSamples": 11473,
+      "nominalPower_kW": 50
+    },
+    "SG50CX-09": {
+      "inverterId": "SG50CX-09",
+      "groupId": "South",
+      "success": true,
+      "metrics": {
+        "r2": 0.9774,
+        "mae_kW": 0.69,
+        "rmse_kW": 0.96
+      },
+      "nSamples": 11508,
+      "nominalPower_kW": 50
+    },
+    "SG50CX-10": {
+      "inverterId": "SG50CX-10",
+      "groupId": "South",
+      "success": true,
+      "metrics": {
+        "r2": 0.9787,
+        "mae_kW": 0.67,
+        "rmse_kW": 0.93
+      },
+      "nSamples": 11532,
+      "nominalPower_kW": 50
+    },
+    "SG50CX-11": {
+      "inverterId": "SG50CX-11",
+      "groupId": "East",
+      "success": true,
+      "metrics": {
+        "r2": 0.9543,
+        "mae_kW": 0.89,
+        "rmse_kW": 1.24
+      },
+      "nSamples": 11421,
+      "nominalPower_kW": 50
+    },
+    "SG50CX-12": {
+      "inverterId": "SG50CX-12",
+      "groupId": "East",
+      "success": true,
+      "metrics": {
+        "r2": 0.9489,
+        "mae_kW": 0.94,
+        "rmse_kW": 1.32
+      },
+      "nSamples": 11398,
+      "nominalPower_kW": 50
+    },
+    "SG50CX-13": {
+      "inverterId": "SG50CX-13",
+      "groupId": "East",
+      "success": true,
+      "metrics": {
+        "r2": 0.9518,
+        "mae_kW": 0.91,
+        "rmse_kW": 1.28
+      },
+      "nSamples": 11435,
+      "nominalPower_kW": 50
+    },
+    "SG50CX-14": {
+      "inverterId": "SG50CX-14",
+      "groupId": "East",
+      "success": true,
+      "metrics": {
+        "r2": 0.9562,
+        "mae_kW": 0.87,
+        "rmse_kW": 1.21
+      },
+      "nSamples": 11456,
+      "nominalPower_kW": 50
+    },
+    "SG50CX-15": {
+      "inverterId": "SG50CX-15",
+      "groupId": "East",
+      "success": true,
+      "metrics": {
+        "r2": 0.9506,
+        "mae_kW": 0.92,
+        "rmse_kW": 1.30
+      },
+      "nSamples": 11412,
+      "nominalPower_kW": 50
+    },
+    "SG50CX-16": {
+      "inverterId": "SG50CX-16",
+      "groupId": "West",
+      "success": true,
+      "metrics": {
+        "r2": 0.9531,
+        "mae_kW": 0.90,
+        "rmse_kW": 1.26
+      },
+      "nSamples": 11428,
+      "nominalPower_kW": 50
+    },
+    "SG50CX-17": {
+      "inverterId": "SG50CX-17",
+      "groupId": "West",
+      "success": true,
+      "metrics": {
+        "r2": 0.9574,
+        "mae_kW": 0.86,
+        "rmse_kW": 1.19
+      },
+      "nSamples": 11467,
+      "nominalPower_kW": 50
+    },
+    "SG50CX-18": {
+      "inverterId": "SG50CX-18",
+      "groupId": "West",
+      "success": true,
+      "metrics": {
+        "r2": 0.9497,
+        "mae_kW": 0.93,
+        "rmse_kW": 1.31
+      },
+      "nSamples": 11403,
+      "nominalPower_kW": 50
+    },
+    "SG50CX-19": {
+      "inverterId": "SG50CX-19",
+      "groupId": "West",
+      "success": true,
+      "metrics": {
+        "r2": 0.9549,
+        "mae_kW": 0.88,
+        "rmse_kW": 1.23
+      },
+      "nSamples": 11444,
+      "nominalPower_kW": 50
+    },
+    "SG50CX-20": {
+      "inverterId": "SG50CX-20",
+      "groupId": "West",
+      "success": true,
+      "metrics": {
+        "r2": 0.9513,
+        "mae_kW": 0.91,
+        "rmse_kW": 1.29
+      },
+      "nSamples": 11419,
+      "nominalPower_kW": 50
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+ "metadata": {
+  "plant_id": "kilima-solar",
+  "generated_at": "2026-07-25T12:27:09.823705",
+  "note": "Demo specimen: series derived from an anonymized European donor plant, aggregated to this fleet's 24 inverters and calendar-shifted. Not measurements from this site. Costs are estimates; update with actual values."
+ },
+ "executive_summary": {
+  "plant_capacity_MW": 6.0,
+  "forecast_period": "2026-07-01 to 2027-06-30",
+  "recommended_cleanings": 3,
+  "expected_net_benefit_EUR": 18450.0,
+  "expected_roi_pct": 170.8
+ },
+ "optimal_schedule": {
+  "cleaning_dates": [
+   "2026-08-18",
+   "2026-09-29",
+   "2027-01-26"
+  ],
+  "n_cleanings": 3,
+  "energy_recovered_MWh": 450.0,
+  "revenue_recovered_EUR": 29250.0,
+  "cleaning_cost_EUR": 10800.0,
+  "net_benefit_EUR": 18450.0,
+  "roi_pct": 170.8,
+  "avg_sr": 0.9815467693472216
+ },
+ "financial_analysis": {
+  "baseline_revenue_EUR": 77022.42,
+  "optimized_revenue_EUR": 29250.0,
+  "cleaning_investment_EUR": 10800.0,
+  "net_benefit_EUR": 18450.0,
+  "payback_days": 134.8
+ },
+ "technical_details": {
+  "avg_soiling_ratio_baseline": 0.7183849532844546,
+  "avg_soiling_ratio_optimized": 0.9815467693472216,
+  "energy_recovered_MWh": 5801.045831274896,
+  "avg_soiling_loss_baseline_pct": 28.16150467155454,
+  "avg_soiling_loss_optimized_pct": 1.8453230652778374
+ },
+ "recommendations": [
+  "Optimal spacing: Cleanings spaced 49 days apart on average.",
+  "Alternative: 2 cleanings yields \u20ac353,036 benefit (3269% ROI), \u20ac7,832 less than optimal."
+ ]
+}

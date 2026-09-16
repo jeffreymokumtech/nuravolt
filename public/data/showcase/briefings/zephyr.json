@@ -1,0 +1,11 @@
+{
+  "bullets": [
+    "Availability is 96.2% this period with a capacity factor of 32.4%.",
+    "Fleet health score is 91 across 5 turbines; no urgent RUL flags.",
+    "Power curve tracking is nominal; check the turbine health tab for per unit detail."
+  ],
+  "generatedAt": "2026-01-01T00:00:00Z",
+  "scope": {
+    "plantId": "zephyr"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "dataset": "Sandia SAT tracker faults (second real rig)",
+  "status": "pending_manual_fetch",
+  "reason": "Sandia SAT CSVs not found in backenddata/datasets/sandia_sat.",
+  "why_it_matters": "The only rig in reach whose physical configuration is documented, and the only chance at a labelled false-positive rate on hardware that is not Lazzaretti.",
+  "registered_prediction": "6 x Canadian Solar CS3U-355PB-AG in series gives Vmp near 238 V. The un-normalised cascade calls below 245 V short circuit and below 260 V degradation, both being Lazzaretti's operating point hard-coded. So this rig's HEALTHY voltage sits inside the fault band, and the fixed-reference run is expected to misclassify a large share of known-healthy rows while the self-normalised run is not. Registered before the data was in hand.",
+  "how_to_get_it": "python scripts/fetch_sandia_sat.py (prints manual steps)",
+  "generated_at": "2026-08-21T08:30:39.325201Z"
+}

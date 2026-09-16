@@ -1,0 +1,42 @@
+{
+  "plantInfo": {
+    "plantName": "Helios PV",
+    "capacity_MW": 45,
+    "totalInverters": 10,
+    "inverterGroups": [
+      "INV 01",
+      "INV 02",
+      "INV 03",
+      "INV 04"
+    ]
+  },
+  "analysisPeriod": {
+    "start": "2020-10-08",
+    "end": "2025-11-11",
+    "totalDays": 1130
+  },
+  "fleetSoiling": {
+    "srMean": 0.8606,
+    "srStd": 0.0385,
+    "srMin": 0.8,
+    "srMax": 0.9717
+  },
+  "fleetLosses": {
+    "totalSoilingLoss_MWh": 4537.21,
+    "totalLoss_MWh": 4537.21,
+    "referenceEnergy_MWh": 32544,
+    "netEnergy_MWh": 28006.79
+  },
+  "healthDistribution": {
+    "normal": 8,
+    "minorIssues": 0,
+    "majorIssues": 2,
+    "critical": 0
+  },
+  "topPerformers": [],
+  "worstPerformers": [],
+  "economicImpact": {
+    "estimatedAnnualLoss_EUR": 175867.06,
+    "cleaningROIPotential_EUR": 123106.94
+  }
+}

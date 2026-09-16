@@ -1,0 +1,3757 @@
+{
+  "metadata": {
+    "plant_id": "zeta",
+    "forecast_period": {
+      "start": "2026-06-19",
+      "end": "2027-06-18"
+    },
+    "n_days": 365,
+    "model_type": "ml_climate_aware",
+    "model_version": "climate_aware_MEDITERRANEAN_v2",
+    "climate_zone": "MEDITERRANEAN",
+    "dominant_dust_source": "Saharan dust + local agricultural",
+    "guard_rail": {
+      "tolerance_pp": 3.0,
+      "max_climatology_weight": 0.85,
+      "monthly_diagnostics": {
+        "1": {
+          "model_delta_pp": 0.12,
+          "climatology_delta_pp": 0.3,
+          "disagreement_pp": 0.18,
+          "sign_mismatch": false,
+          "blend_weight_climatology": 0.0
+        },
+        "2": {
+          "model_delta_pp": -0.03,
+          "climatology_delta_pp": -2.8,
+          "disagreement_pp": 2.77,
+          "sign_mismatch": false,
+          "blend_weight_climatology": 0.0
+        },
+        "3": {
+          "model_delta_pp": -0.18,
+          "climatology_delta_pp": 1.24,
+          "disagreement_pp": 1.42,
+          "sign_mismatch": false,
+          "blend_weight_climatology": 0.0
+        },
+        "4": {
+          "model_delta_pp": -0.17,
+          "climatology_delta_pp": -9.9,
+          "disagreement_pp": 9.73,
+          "sign_mismatch": false,
+          "blend_weight_climatology": 0.85
+        },
+        "5": {
+          "model_delta_pp": -0.1,
+          "climatology_delta_pp": 6.75,
+          "disagreement_pp": 6.85,
+          "sign_mismatch": false,
+          "blend_weight_climatology": 0.64
+        },
+        "6": {
+          "model_delta_pp": 0.04,
+          "climatology_delta_pp": -11.08,
+          "disagreement_pp": 11.12,
+          "sign_mismatch": false,
+          "blend_weight_climatology": 0.85
+        },
+        "7": {
+          "model_delta_pp": -0.33,
+          "climatology_delta_pp": -13.2,
+          "disagreement_pp": 12.87,
+          "sign_mismatch": false,
+          "blend_weight_climatology": 0.85
+        },
+        "8": {
+          "model_delta_pp": 0.01,
+          "climatology_delta_pp": 17.24,
+          "disagreement_pp": 17.23,
+          "sign_mismatch": false,
+          "blend_weight_climatology": 0.85
+        },
+        "9": {
+          "model_delta_pp": 0.4,
+          "climatology_delta_pp": -2.64,
+          "disagreement_pp": 3.04,
+          "sign_mismatch": false,
+          "blend_weight_climatology": 0.01
+        },
+        "10": {
+          "model_delta_pp": 0.53,
+          "climatology_delta_pp": 1.44,
+          "disagreement_pp": 0.91,
+          "sign_mismatch": false,
+          "blend_weight_climatology": 0.0
+        },
+        "11": {
+          "model_delta_pp": 0.09,
+          "climatology_delta_pp": -0.34,
+          "disagreement_pp": 0.43,
+          "sign_mismatch": false,
+          "blend_weight_climatology": 0.0
+        },
+        "12": {
+          "model_delta_pp": 0.09,
+          "climatology_delta_pp": 0.64,
+          "disagreement_pp": 0.55,
+          "sign_mismatch": false,
+          "blend_weight_climatology": 0.0
+        }
+      }
+    },
+    "generated_at": "2026-06-19T15:29:43.694404"
+  },
+  "forecasts": [
+    {
+      "date": "2026-06-19",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9918299396173081,
+      "soiling_loss_pct": 0.817,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9718,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2026-06-20",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9880899396173082,
+      "soiling_loss_pct": 1.191,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9681,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2026-06-21",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9843426598457543,
+      "soiling_loss_pct": 1.566,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9643,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2026-06-22",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9805967388648942,
+      "soiling_loss_pct": 1.94,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9606,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2026-06-23",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9768508172256389,
+      "soiling_loss_pct": 2.315,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9569,
+      "sr_upper_bound": 0.9969
+    },
+    {
+      "date": "2026-06-24",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9731048975762311,
+      "soiling_loss_pct": 2.69,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9531,
+      "sr_upper_bound": 0.9931
+    },
+    {
+      "date": "2026-06-25",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9693596614350429,
+      "soiling_loss_pct": 3.064,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9494,
+      "sr_upper_bound": 0.9894
+    },
+    {
+      "date": "2026-06-26",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9656026821605557,
+      "soiling_loss_pct": 3.44,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9456,
+      "sr_upper_bound": 0.9856
+    },
+    {
+      "date": "2026-06-27",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9618457028860684,
+      "soiling_loss_pct": 3.815,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9418,
+      "sr_upper_bound": 0.9818
+    },
+    {
+      "date": "2026-06-28",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9580918435136756,
+      "soiling_loss_pct": 4.191,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9381,
+      "sr_upper_bound": 0.9781
+    },
+    {
+      "date": "2026-06-29",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9543392876241875,
+      "soiling_loss_pct": 4.566,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9343,
+      "sr_upper_bound": 0.9743
+    },
+    {
+      "date": "2026-06-30",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9505884239137989,
+      "soiling_loss_pct": 4.941,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9306,
+      "sr_upper_bound": 0.9706
+    },
+    {
+      "date": "2026-07-01",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9467705723819758,
+      "soiling_loss_pct": 5.323,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9268,
+      "sr_upper_bound": 0.9668
+    },
+    {
+      "date": "2026-07-02",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9429537286703353,
+      "soiling_loss_pct": 5.705,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.923,
+      "sr_upper_bound": 0.963
+    },
+    {
+      "date": "2026-07-03",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9391438108700214,
+      "soiling_loss_pct": 6.086,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9191,
+      "sr_upper_bound": 0.9591
+    },
+    {
+      "date": "2026-07-04",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9353338930697075,
+      "soiling_loss_pct": 6.467,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9153,
+      "sr_upper_bound": 0.9553
+    },
+    {
+      "date": "2026-07-05",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9315239752693937,
+      "soiling_loss_pct": 6.848,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9115,
+      "sr_upper_bound": 0.9515
+    },
+    {
+      "date": "2026-07-06",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9277138726722625,
+      "soiling_loss_pct": 7.229,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9077,
+      "sr_upper_bound": 0.9477
+    },
+    {
+      "date": "2026-07-07",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9239037700751314,
+      "soiling_loss_pct": 7.61,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9039,
+      "sr_upper_bound": 0.9439
+    },
+    {
+      "date": "2026-07-08",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9201615615899843,
+      "soiling_loss_pct": 7.984,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9002,
+      "sr_upper_bound": 0.9402
+    },
+    {
+      "date": "2026-07-09",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9164155836554476,
+      "soiling_loss_pct": 8.358,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8964,
+      "sr_upper_bound": 0.9364
+    },
+    {
+      "date": "2026-07-10",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9126708455084438,
+      "soiling_loss_pct": 8.733,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8927,
+      "sr_upper_bound": 0.9327
+    },
+    {
+      "date": "2026-07-11",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.90892610736144,
+      "soiling_loss_pct": 9.107,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8889,
+      "sr_upper_bound": 0.9289
+    },
+    {
+      "date": "2026-07-12",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9051813692144361,
+      "soiling_loss_pct": 9.482,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8852,
+      "sr_upper_bound": 0.9252
+    },
+    {
+      "date": "2026-07-13",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9014368158642496,
+      "soiling_loss_pct": 9.856,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8814,
+      "sr_upper_bound": 0.9214
+    },
+    {
+      "date": "2026-07-14",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.897692262514063,
+      "soiling_loss_pct": 10.231,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8777,
+      "sr_upper_bound": 0.9177
+    },
+    {
+      "date": "2026-07-15",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8939484930646734,
+      "soiling_loss_pct": 10.605,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8739,
+      "sr_upper_bound": 0.9139
+    },
+    {
+      "date": "2026-07-16",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8902084930646734,
+      "soiling_loss_pct": 10.979,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8702,
+      "sr_upper_bound": 0.9102
+    },
+    {
+      "date": "2026-07-17",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8864679851923603,
+      "soiling_loss_pct": 11.353,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8665,
+      "sr_upper_bound": 0.9065
+    },
+    {
+      "date": "2026-07-18",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8827274773200471,
+      "soiling_loss_pct": 11.727,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8627,
+      "sr_upper_bound": 0.9027
+    },
+    {
+      "date": "2026-07-19",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8789869694477339,
+      "soiling_loss_pct": 12.101,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.859,
+      "sr_upper_bound": 0.899
+    },
+    {
+      "date": "2026-07-20",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8752464615754207,
+      "soiling_loss_pct": 12.475,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8552,
+      "sr_upper_bound": 0.8952
+    },
+    {
+      "date": "2026-07-21",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8715059537031076,
+      "soiling_loss_pct": 12.849,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8515,
+      "sr_upper_bound": 0.8915
+    },
+    {
+      "date": "2026-07-22",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8677654458307944,
+      "soiling_loss_pct": 13.223,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8478,
+      "sr_upper_bound": 0.8878
+    },
+    {
+      "date": "2026-07-23",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8640249379584812,
+      "soiling_loss_pct": 13.598,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.844,
+      "sr_upper_bound": 0.884
+    },
+    {
+      "date": "2026-07-24",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8602849379584812,
+      "soiling_loss_pct": 13.972,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8403,
+      "sr_upper_bound": 0.8803
+    },
+    {
+      "date": "2026-07-25",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8565411627134547,
+      "soiling_loss_pct": 14.346,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8365,
+      "sr_upper_bound": 0.8765
+    },
+    {
+      "date": "2026-07-26",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8527973874684283,
+      "soiling_loss_pct": 14.72,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8328,
+      "sr_upper_bound": 0.8728
+    },
+    {
+      "date": "2026-07-27",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8490536122234018,
+      "soiling_loss_pct": 15.095,
+      "is_cleaning_needed": true,
+      "sr_lower_bound": 0.8291,
+      "sr_upper_bound": 0.8691
+    },
+    {
+      "date": "2026-07-28",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8453098369783753,
+      "soiling_loss_pct": 15.469,
+      "is_cleaning_needed": true,
+      "sr_lower_bound": 0.8253,
+      "sr_upper_bound": 0.8653
+    },
+    {
+      "date": "2026-07-29",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8415660617333488,
+      "soiling_loss_pct": 15.843,
+      "is_cleaning_needed": true,
+      "sr_lower_bound": 0.8216,
+      "sr_upper_bound": 0.8616
+    },
+    {
+      "date": "2026-07-30",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8378223809183549,
+      "soiling_loss_pct": 16.218,
+      "is_cleaning_needed": true,
+      "sr_lower_bound": 0.8178,
+      "sr_upper_bound": 0.8578
+    },
+    {
+      "date": "2026-07-31",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8340783604596059,
+      "soiling_loss_pct": 16.592,
+      "is_cleaning_needed": true,
+      "sr_lower_bound": 0.8141,
+      "sr_upper_bound": 0.8541
+    },
+    {
+      "date": "2026-08-01",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8305085791862343,
+      "soiling_loss_pct": 16.949,
+      "is_cleaning_needed": true,
+      "sr_lower_bound": 0.8105,
+      "sr_upper_bound": 0.8505
+    },
+    {
+      "date": "2026-08-02",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8269387979128627,
+      "soiling_loss_pct": 17.306,
+      "is_cleaning_needed": true,
+      "sr_lower_bound": 0.8069,
+      "sr_upper_bound": 0.8469
+    },
+    {
+      "date": "2026-08-03",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.823369016639491,
+      "soiling_loss_pct": 17.663,
+      "is_cleaning_needed": true,
+      "sr_lower_bound": 0.8034,
+      "sr_upper_bound": 0.8434
+    },
+    {
+      "date": "2026-08-04",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8197992353661194,
+      "soiling_loss_pct": 18.02,
+      "is_cleaning_needed": true,
+      "sr_lower_bound": 0.7998,
+      "sr_upper_bound": 0.8398
+    },
+    {
+      "date": "2026-08-05",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8162294540927478,
+      "soiling_loss_pct": 18.377,
+      "is_cleaning_needed": true,
+      "sr_lower_bound": 0.7962,
+      "sr_upper_bound": 0.8362
+    },
+    {
+      "date": "2026-08-06",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8126595783893438,
+      "soiling_loss_pct": 18.734,
+      "is_cleaning_needed": true,
+      "sr_lower_bound": 0.7927,
+      "sr_upper_bound": 0.8327
+    },
+    {
+      "date": "2026-08-07",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8090900423296945,
+      "soiling_loss_pct": 19.091,
+      "is_cleaning_needed": true,
+      "sr_lower_bound": 0.7891,
+      "sr_upper_bound": 0.8291
+    },
+    {
+      "date": "2026-08-08",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8055200423296944,
+      "soiling_loss_pct": 19.448,
+      "is_cleaning_needed": true,
+      "sr_lower_bound": 0.7855,
+      "sr_upper_bound": 0.8255
+    },
+    {
+      "date": "2026-08-09",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.994900042329693,
+      "soiling_loss_pct": 0.51,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9749,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2026-08-10",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9913300423296929,
+      "soiling_loss_pct": 0.867,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9713,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2026-08-11",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.987760042329693,
+      "soiling_loss_pct": 1.224,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9678,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2026-08-12",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.984190042329693,
+      "soiling_loss_pct": 1.581,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9642,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2026-08-13",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9806200423296929,
+      "soiling_loss_pct": 1.938,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9606,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2026-08-14",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9770500423296931,
+      "soiling_loss_pct": 2.295,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9571,
+      "sr_upper_bound": 0.9971
+    },
+    {
+      "date": "2026-08-15",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.973480042329693,
+      "soiling_loss_pct": 2.652,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9535,
+      "sr_upper_bound": 0.9935
+    },
+    {
+      "date": "2026-08-16",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9699100423296931,
+      "soiling_loss_pct": 3.009,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9499,
+      "sr_upper_bound": 0.9899
+    },
+    {
+      "date": "2026-08-17",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9663400423296931,
+      "soiling_loss_pct": 3.366,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9463,
+      "sr_upper_bound": 0.9863
+    },
+    {
+      "date": "2026-08-18",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.962770042329693,
+      "soiling_loss_pct": 3.723,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9428,
+      "sr_upper_bound": 0.9828
+    },
+    {
+      "date": "2026-08-19",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.959201086191834,
+      "soiling_loss_pct": 4.08,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9392,
+      "sr_upper_bound": 0.9792
+    },
+    {
+      "date": "2026-08-20",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.955632130053975,
+      "soiling_loss_pct": 4.437,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9356,
+      "sr_upper_bound": 0.9756
+    },
+    {
+      "date": "2026-08-21",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9520631739161161,
+      "soiling_loss_pct": 4.794,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9321,
+      "sr_upper_bound": 0.9721
+    },
+    {
+      "date": "2026-08-22",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9484942177782569,
+      "soiling_loss_pct": 5.151,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9285,
+      "sr_upper_bound": 0.9685
+    },
+    {
+      "date": "2026-08-23",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9449252616403978,
+      "soiling_loss_pct": 5.507,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9249,
+      "sr_upper_bound": 0.9649
+    },
+    {
+      "date": "2026-08-24",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.941356408418687,
+      "soiling_loss_pct": 5.864,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9214,
+      "sr_upper_bound": 0.9614
+    },
+    {
+      "date": "2026-08-25",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.937787555196976,
+      "soiling_loss_pct": 6.221,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9178,
+      "sr_upper_bound": 0.9578
+    },
+    {
+      "date": "2026-08-26",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9949076581131238,
+      "soiling_loss_pct": 0.509,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9749,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2026-08-27",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9913377610292718,
+      "soiling_loss_pct": 0.866,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9713,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2026-08-28",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9877678639454199,
+      "soiling_loss_pct": 1.223,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9678,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2026-08-29",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9841979668615679,
+      "soiling_loss_pct": 1.58,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9642,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2026-08-30",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.980628069777716,
+      "soiling_loss_pct": 1.937,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9606,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2026-08-31",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.977058069777716,
+      "soiling_loss_pct": 2.294,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9571,
+      "sr_upper_bound": 0.9971
+    },
+    {
+      "date": "2026-09-01",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.96661589696211,
+      "soiling_loss_pct": 3.338,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9466,
+      "sr_upper_bound": 0.9866
+    },
+    {
+      "date": "2026-09-02",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9670020045333598,
+      "soiling_loss_pct": 3.3,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.947,
+      "sr_upper_bound": 0.987
+    },
+    {
+      "date": "2026-09-03",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9673881121046094,
+      "soiling_loss_pct": 3.261,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9474,
+      "sr_upper_bound": 0.9874
+    },
+    {
+      "date": "2026-09-04",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9677742196758593,
+      "soiling_loss_pct": 3.223,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9478,
+      "sr_upper_bound": 0.9878
+    },
+    {
+      "date": "2026-09-05",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9681595924914791,
+      "soiling_loss_pct": 3.184,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9482,
+      "sr_upper_bound": 0.9882
+    },
+    {
+      "date": "2026-09-06",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.96855090845517,
+      "soiling_loss_pct": 3.145,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9486,
+      "sr_upper_bound": 0.9886
+    },
+    {
+      "date": "2026-09-07",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9689422244188609,
+      "soiling_loss_pct": 3.106,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9489,
+      "sr_upper_bound": 0.9889
+    },
+    {
+      "date": "2026-09-08",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9690022571327923,
+      "soiling_loss_pct": 3.1,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.949,
+      "sr_upper_bound": 0.989
+    },
+    {
+      "date": "2026-09-09",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9689775479848214,
+      "soiling_loss_pct": 3.102,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.949,
+      "sr_upper_bound": 0.989
+    },
+    {
+      "date": "2026-09-10",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9689664606018603,
+      "soiling_loss_pct": 3.103,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.949,
+      "sr_upper_bound": 0.989
+    },
+    {
+      "date": "2026-09-11",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9692545486230206,
+      "soiling_loss_pct": 3.075,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9493,
+      "sr_upper_bound": 0.9893
+    },
+    {
+      "date": "2026-09-12",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9692741135361016,
+      "soiling_loss_pct": 3.073,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9493,
+      "sr_upper_bound": 0.9893
+    },
+    {
+      "date": "2026-09-13",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9692733991566732,
+      "soiling_loss_pct": 3.073,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9493,
+      "sr_upper_bound": 0.9893
+    },
+    {
+      "date": "2026-09-14",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9692726847772447,
+      "soiling_loss_pct": 3.073,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9493,
+      "sr_upper_bound": 0.9893
+    },
+    {
+      "date": "2026-09-15",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9692719703978163,
+      "soiling_loss_pct": 3.073,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9493,
+      "sr_upper_bound": 0.9893
+    },
+    {
+      "date": "2026-09-16",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9692712560183878,
+      "soiling_loss_pct": 3.073,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9493,
+      "sr_upper_bound": 0.9893
+    },
+    {
+      "date": "2026-09-17",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9692813635026005,
+      "soiling_loss_pct": 3.072,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9493,
+      "sr_upper_bound": 0.9893
+    },
+    {
+      "date": "2026-09-18",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9693043221653811,
+      "soiling_loss_pct": 3.07,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9493,
+      "sr_upper_bound": 0.9893
+    },
+    {
+      "date": "2026-09-19",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9693362523267789,
+      "soiling_loss_pct": 3.066,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9493,
+      "sr_upper_bound": 0.9893
+    },
+    {
+      "date": "2026-09-20",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9693736794802487,
+      "soiling_loss_pct": 3.063,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9494,
+      "sr_upper_bound": 0.9894
+    },
+    {
+      "date": "2026-09-21",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9694111066337181,
+      "soiling_loss_pct": 3.059,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9494,
+      "sr_upper_bound": 0.9894
+    },
+    {
+      "date": "2026-09-22",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9694485337871878,
+      "soiling_loss_pct": 3.055,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9494,
+      "sr_upper_bound": 0.9894
+    },
+    {
+      "date": "2026-09-23",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9694954317025057,
+      "soiling_loss_pct": 3.05,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9495,
+      "sr_upper_bound": 0.9895
+    },
+    {
+      "date": "2026-09-24",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.969913064874088,
+      "soiling_loss_pct": 3.009,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9499,
+      "sr_upper_bound": 0.9899
+    },
+    {
+      "date": "2026-09-25",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9699970642096918,
+      "soiling_loss_pct": 3.0,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.95,
+      "sr_upper_bound": 0.99
+    },
+    {
+      "date": "2026-09-26",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9700720920466784,
+      "soiling_loss_pct": 2.993,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9501,
+      "sr_upper_bound": 0.9901
+    },
+    {
+      "date": "2026-09-27",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9701390516440561,
+      "soiling_loss_pct": 2.986,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9501,
+      "sr_upper_bound": 0.9901
+    },
+    {
+      "date": "2026-09-28",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9702236403974622,
+      "soiling_loss_pct": 2.978,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9502,
+      "sr_upper_bound": 0.9902
+    },
+    {
+      "date": "2026-09-29",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9703251087038134,
+      "soiling_loss_pct": 2.967,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9503,
+      "sr_upper_bound": 0.9903
+    },
+    {
+      "date": "2026-09-30",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9704171062483162,
+      "soiling_loss_pct": 2.958,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9504,
+      "sr_upper_bound": 0.9904
+    },
+    {
+      "date": "2026-10-01",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9712743716621289,
+      "soiling_loss_pct": 2.873,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9513,
+      "sr_upper_bound": 0.9913
+    },
+    {
+      "date": "2026-10-02",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9721162533441906,
+      "soiling_loss_pct": 2.788,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9521,
+      "sr_upper_bound": 0.9921
+    },
+    {
+      "date": "2026-10-03",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9729581350262524,
+      "soiling_loss_pct": 2.704,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.953,
+      "sr_upper_bound": 0.993
+    },
+    {
+      "date": "2026-10-04",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9737869174925323,
+      "soiling_loss_pct": 2.621,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9538,
+      "sr_upper_bound": 0.9938
+    },
+    {
+      "date": "2026-10-05",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9745907606003373,
+      "soiling_loss_pct": 2.541,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9546,
+      "sr_upper_bound": 0.9946
+    },
+    {
+      "date": "2026-10-06",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9753776085979481,
+      "soiling_loss_pct": 2.462,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9554,
+      "sr_upper_bound": 0.9954
+    },
+    {
+      "date": "2026-10-07",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9761644565955587,
+      "soiling_loss_pct": 2.384,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9562,
+      "sr_upper_bound": 0.9962
+    },
+    {
+      "date": "2026-10-08",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9761585828267421,
+      "soiling_loss_pct": 2.384,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9562,
+      "sr_upper_bound": 0.9962
+    },
+    {
+      "date": "2026-10-09",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9761513933133195,
+      "soiling_loss_pct": 2.385,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9562,
+      "sr_upper_bound": 0.9962
+    },
+    {
+      "date": "2026-10-10",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9761442603733765,
+      "soiling_loss_pct": 2.386,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9561,
+      "sr_upper_bound": 0.9961
+    },
+    {
+      "date": "2026-10-11",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9761372312884545,
+      "soiling_loss_pct": 2.386,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9561,
+      "sr_upper_bound": 0.9961
+    },
+    {
+      "date": "2026-10-12",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9761456855238937,
+      "soiling_loss_pct": 2.385,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9561,
+      "sr_upper_bound": 0.9961
+    },
+    {
+      "date": "2026-10-13",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9761601595512522,
+      "soiling_loss_pct": 2.384,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9562,
+      "sr_upper_bound": 0.9962
+    },
+    {
+      "date": "2026-10-14",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9761746335786107,
+      "soiling_loss_pct": 2.383,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9562,
+      "sr_upper_bound": 0.9962
+    },
+    {
+      "date": "2026-10-15",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9762014678255367,
+      "soiling_loss_pct": 2.38,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9562,
+      "sr_upper_bound": 0.9962
+    },
+    {
+      "date": "2026-10-16",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9762345117933143,
+      "soiling_loss_pct": 2.377,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9562,
+      "sr_upper_bound": 0.9962
+    },
+    {
+      "date": "2026-10-17",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9762674991876122,
+      "soiling_loss_pct": 2.373,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9563,
+      "sr_upper_bound": 0.9963
+    },
+    {
+      "date": "2026-10-18",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9763003827268895,
+      "soiling_loss_pct": 2.37,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9563,
+      "sr_upper_bound": 0.9963
+    },
+    {
+      "date": "2026-10-19",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9763292627163134,
+      "soiling_loss_pct": 2.367,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9563,
+      "sr_upper_bound": 0.9963
+    },
+    {
+      "date": "2026-10-20",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9763583255813357,
+      "soiling_loss_pct": 2.364,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9564,
+      "sr_upper_bound": 0.9964
+    },
+    {
+      "date": "2026-10-21",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9763922555689576,
+      "soiling_loss_pct": 2.361,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9564,
+      "sr_upper_bound": 0.9964
+    },
+    {
+      "date": "2026-10-22",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9764202451263134,
+      "soiling_loss_pct": 2.358,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9564,
+      "sr_upper_bound": 0.9964
+    },
+    {
+      "date": "2026-10-23",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.976442024962818,
+      "soiling_loss_pct": 2.356,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9564,
+      "sr_upper_bound": 0.9964
+    },
+    {
+      "date": "2026-10-24",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9764654860101311,
+      "soiling_loss_pct": 2.353,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9565,
+      "sr_upper_bound": 0.9965
+    },
+    {
+      "date": "2026-10-25",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9764942597907565,
+      "soiling_loss_pct": 2.351,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9565,
+      "sr_upper_bound": 0.9965
+    },
+    {
+      "date": "2026-10-26",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9765227788411096,
+      "soiling_loss_pct": 2.348,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9565,
+      "sr_upper_bound": 0.9965
+    },
+    {
+      "date": "2026-10-27",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9765450952239447,
+      "soiling_loss_pct": 2.345,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9565,
+      "sr_upper_bound": 0.9965
+    },
+    {
+      "date": "2026-10-28",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.976565208651183,
+      "soiling_loss_pct": 2.343,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9566,
+      "sr_upper_bound": 0.9966
+    },
+    {
+      "date": "2026-10-29",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9765810420052855,
+      "soiling_loss_pct": 2.342,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9566,
+      "sr_upper_bound": 0.9966
+    },
+    {
+      "date": "2026-10-30",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9765968753593878,
+      "soiling_loss_pct": 2.34,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9566,
+      "sr_upper_bound": 0.9966
+    },
+    {
+      "date": "2026-10-31",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9766110275026815,
+      "soiling_loss_pct": 2.339,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9566,
+      "sr_upper_bound": 0.9966
+    },
+    {
+      "date": "2026-11-01",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9767389232402398,
+      "soiling_loss_pct": 2.326,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9567,
+      "sr_upper_bound": 0.9967
+    },
+    {
+      "date": "2026-11-02",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9768627834509849,
+      "soiling_loss_pct": 2.314,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9569,
+      "sr_upper_bound": 0.9969
+    },
+    {
+      "date": "2026-11-03",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9769968100880747,
+      "soiling_loss_pct": 2.3,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.957,
+      "sr_upper_bound": 0.997
+    },
+    {
+      "date": "2026-11-04",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9771281725581621,
+      "soiling_loss_pct": 2.287,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9571,
+      "sr_upper_bound": 0.9971
+    },
+    {
+      "date": "2026-11-05",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9772588848609362,
+      "soiling_loss_pct": 2.274,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9573,
+      "sr_upper_bound": 0.9973
+    },
+    {
+      "date": "2026-11-06",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.977387282619617,
+      "soiling_loss_pct": 2.261,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9574,
+      "sr_upper_bound": 0.9974
+    },
+    {
+      "date": "2026-11-07",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775156803782982,
+      "soiling_loss_pct": 2.248,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9575,
+      "sr_upper_bound": 0.9975
+    },
+    {
+      "date": "2026-11-08",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775250218094024,
+      "soiling_loss_pct": 2.247,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9575,
+      "sr_upper_bound": 0.9975
+    },
+    {
+      "date": "2026-11-09",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775400815673688,
+      "soiling_loss_pct": 2.246,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9575,
+      "sr_upper_bound": 0.9975
+    },
+    {
+      "date": "2026-11-10",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775449748989907,
+      "soiling_loss_pct": 2.246,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9575,
+      "sr_upper_bound": 0.9975
+    },
+    {
+      "date": "2026-11-11",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775498682306126,
+      "soiling_loss_pct": 2.245,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9575,
+      "sr_upper_bound": 0.9975
+    },
+    {
+      "date": "2026-11-12",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.977553272013382,
+      "soiling_loss_pct": 2.245,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2026-11-13",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775589903402445,
+      "soiling_loss_pct": 2.244,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2026-11-14",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775636054276274,
+      "soiling_loss_pct": 2.244,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2026-11-15",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775682205150106,
+      "soiling_loss_pct": 2.243,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2026-11-16",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.97756866716024,
+      "soiling_loss_pct": 2.243,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2026-11-17",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775691138054696,
+      "soiling_loss_pct": 2.243,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2026-11-18",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775695604506991,
+      "soiling_loss_pct": 2.243,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2026-11-19",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775700070959286,
+      "soiling_loss_pct": 2.243,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2026-11-20",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775704537411581,
+      "soiling_loss_pct": 2.243,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2026-11-21",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775720036258669,
+      "soiling_loss_pct": 2.243,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2026-11-22",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775735535105756,
+      "soiling_loss_pct": 2.243,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2026-11-23",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775735535105756,
+      "soiling_loss_pct": 2.243,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2026-11-24",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775735535105756,
+      "soiling_loss_pct": 2.243,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2026-11-25",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775735535105756,
+      "soiling_loss_pct": 2.243,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2026-11-26",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775795116900198,
+      "soiling_loss_pct": 2.242,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2026-11-27",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775854698694639,
+      "soiling_loss_pct": 2.241,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2026-11-28",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775950284561696,
+      "soiling_loss_pct": 2.24,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2026-11-29",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9776045870428752,
+      "soiling_loss_pct": 2.24,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2026-11-30",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9776141456295809,
+      "soiling_loss_pct": 2.239,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2026-12-01",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9777204037958587,
+      "soiling_loss_pct": 2.228,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9577,
+      "sr_upper_bound": 0.9977
+    },
+    {
+      "date": "2026-12-02",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9778266619621364,
+      "soiling_loss_pct": 2.217,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9578,
+      "sr_upper_bound": 0.9978
+    },
+    {
+      "date": "2026-12-03",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9779292262406702,
+      "soiling_loss_pct": 2.207,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9579,
+      "sr_upper_bound": 0.9979
+    },
+    {
+      "date": "2026-12-04",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9780317905192039,
+      "soiling_loss_pct": 2.197,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.958,
+      "sr_upper_bound": 0.998
+    },
+    {
+      "date": "2026-12-05",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9781307543904763,
+      "soiling_loss_pct": 2.187,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9581,
+      "sr_upper_bound": 0.9981
+    },
+    {
+      "date": "2026-12-06",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9782297182617484,
+      "soiling_loss_pct": 2.177,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9582,
+      "sr_upper_bound": 0.9982
+    },
+    {
+      "date": "2026-12-07",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9783286821330207,
+      "soiling_loss_pct": 2.167,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9583,
+      "sr_upper_bound": 0.9983
+    },
+    {
+      "date": "2026-12-08",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9783561147248976,
+      "soiling_loss_pct": 2.164,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9584,
+      "sr_upper_bound": 0.9984
+    },
+    {
+      "date": "2026-12-09",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9783835473167745,
+      "soiling_loss_pct": 2.162,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9584,
+      "sr_upper_bound": 0.9984
+    },
+    {
+      "date": "2026-12-10",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9784087156169513,
+      "soiling_loss_pct": 2.159,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9584,
+      "sr_upper_bound": 0.9984
+    },
+    {
+      "date": "2026-12-11",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.978433883917128,
+      "soiling_loss_pct": 2.157,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9584,
+      "sr_upper_bound": 0.9984
+    },
+    {
+      "date": "2026-12-12",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9784590522173049,
+      "soiling_loss_pct": 2.154,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9585,
+      "sr_upper_bound": 0.9985
+    },
+    {
+      "date": "2026-12-13",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9784842205174817,
+      "soiling_loss_pct": 2.152,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9585,
+      "sr_upper_bound": 0.9985
+    },
+    {
+      "date": "2026-12-14",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9785093888176585,
+      "soiling_loss_pct": 2.149,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9585,
+      "sr_upper_bound": 0.9985
+    },
+    {
+      "date": "2026-12-15",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9785093888176585,
+      "soiling_loss_pct": 2.149,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9585,
+      "sr_upper_bound": 0.9985
+    },
+    {
+      "date": "2026-12-16",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9785093888176585,
+      "soiling_loss_pct": 2.149,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9585,
+      "sr_upper_bound": 0.9985
+    },
+    {
+      "date": "2026-12-17",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9785127746330798,
+      "soiling_loss_pct": 2.149,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9585,
+      "sr_upper_bound": 0.9985
+    },
+    {
+      "date": "2026-12-18",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9785161604485014,
+      "soiling_loss_pct": 2.148,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9585,
+      "sr_upper_bound": 0.9985
+    },
+    {
+      "date": "2026-12-19",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9785195462639227,
+      "soiling_loss_pct": 2.148,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9585,
+      "sr_upper_bound": 0.9985
+    },
+    {
+      "date": "2026-12-20",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9785229320793442,
+      "soiling_loss_pct": 2.148,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9585,
+      "sr_upper_bound": 0.9985
+    },
+    {
+      "date": "2026-12-21",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9785263178947657,
+      "soiling_loss_pct": 2.147,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9585,
+      "sr_upper_bound": 0.9985
+    },
+    {
+      "date": "2026-12-22",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.978529703710187,
+      "soiling_loss_pct": 2.147,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9585,
+      "sr_upper_bound": 0.9985
+    },
+    {
+      "date": "2026-12-23",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9785330895256085,
+      "soiling_loss_pct": 2.147,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9585,
+      "sr_upper_bound": 0.9985
+    },
+    {
+      "date": "2026-12-24",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9785379732670767,
+      "soiling_loss_pct": 2.146,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9585,
+      "sr_upper_bound": 0.9985
+    },
+    {
+      "date": "2026-12-25",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9785428570085449,
+      "soiling_loss_pct": 2.146,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9585,
+      "sr_upper_bound": 0.9985
+    },
+    {
+      "date": "2026-12-26",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9785499421483165,
+      "soiling_loss_pct": 2.145,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9585,
+      "sr_upper_bound": 0.9985
+    },
+    {
+      "date": "2026-12-27",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9785582592668691,
+      "soiling_loss_pct": 2.144,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9586,
+      "sr_upper_bound": 0.9986
+    },
+    {
+      "date": "2026-12-28",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.978566576385422,
+      "soiling_loss_pct": 2.143,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9586,
+      "sr_upper_bound": 0.9986
+    },
+    {
+      "date": "2026-12-29",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9785748935039749,
+      "soiling_loss_pct": 2.143,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9586,
+      "sr_upper_bound": 0.9986
+    },
+    {
+      "date": "2026-12-30",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9785832106225277,
+      "soiling_loss_pct": 2.142,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9586,
+      "sr_upper_bound": 0.9986
+    },
+    {
+      "date": "2026-12-31",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9785949092498315,
+      "soiling_loss_pct": 2.141,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9586,
+      "sr_upper_bound": 0.9986
+    },
+    {
+      "date": "2027-01-01",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9787101455009902,
+      "soiling_loss_pct": 2.129,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9587,
+      "sr_upper_bound": 0.9987
+    },
+    {
+      "date": "2027-01-02",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9788231803538455,
+      "soiling_loss_pct": 2.118,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9588,
+      "sr_upper_bound": 0.9988
+    },
+    {
+      "date": "2027-01-03",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9789349832279195,
+      "soiling_loss_pct": 2.107,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9589,
+      "sr_upper_bound": 0.9989
+    },
+    {
+      "date": "2027-01-04",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9790467861019934,
+      "soiling_loss_pct": 2.095,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.959,
+      "sr_upper_bound": 0.999
+    },
+    {
+      "date": "2027-01-05",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9791585889760672,
+      "soiling_loss_pct": 2.084,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9592,
+      "sr_upper_bound": 0.9992
+    },
+    {
+      "date": "2027-01-06",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9792793060900525,
+      "soiling_loss_pct": 2.072,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9593,
+      "sr_upper_bound": 0.9993
+    },
+    {
+      "date": "2027-01-07",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9794007811902513,
+      "soiling_loss_pct": 2.06,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9594,
+      "sr_upper_bound": 0.9994
+    },
+    {
+      "date": "2027-01-08",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9794238938636849,
+      "soiling_loss_pct": 2.058,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9594,
+      "sr_upper_bound": 0.9994
+    },
+    {
+      "date": "2027-01-09",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9794466307770937,
+      "soiling_loss_pct": 2.055,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9594,
+      "sr_upper_bound": 0.9994
+    },
+    {
+      "date": "2027-01-10",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9794751435797092,
+      "soiling_loss_pct": 2.052,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9595,
+      "sr_upper_bound": 0.9995
+    },
+    {
+      "date": "2027-01-11",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9795123462683559,
+      "soiling_loss_pct": 2.049,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9595,
+      "sr_upper_bound": 0.9995
+    },
+    {
+      "date": "2027-01-12",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9795542453117994,
+      "soiling_loss_pct": 2.045,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9596,
+      "sr_upper_bound": 0.9996
+    },
+    {
+      "date": "2027-01-13",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9795896051624668,
+      "soiling_loss_pct": 2.041,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9596,
+      "sr_upper_bound": 0.9996
+    },
+    {
+      "date": "2027-01-14",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9796260536150295,
+      "soiling_loss_pct": 2.037,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9596,
+      "sr_upper_bound": 0.9996
+    },
+    {
+      "date": "2027-01-15",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9796595169556692,
+      "soiling_loss_pct": 2.034,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9597,
+      "sr_upper_bound": 0.9997
+    },
+    {
+      "date": "2027-01-16",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9796968771820186,
+      "soiling_loss_pct": 2.03,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9597,
+      "sr_upper_bound": 0.9997
+    },
+    {
+      "date": "2027-01-17",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9797328391056973,
+      "soiling_loss_pct": 2.027,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9597,
+      "sr_upper_bound": 0.9997
+    },
+    {
+      "date": "2027-01-18",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.979760111143345,
+      "soiling_loss_pct": 2.024,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9598,
+      "sr_upper_bound": 0.9998
+    },
+    {
+      "date": "2027-01-19",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9797877673326341,
+      "soiling_loss_pct": 2.021,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9598,
+      "sr_upper_bound": 0.9998
+    },
+    {
+      "date": "2027-01-20",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9798061074401352,
+      "soiling_loss_pct": 2.019,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9598,
+      "sr_upper_bound": 0.9998
+    },
+    {
+      "date": "2027-01-21",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9798257155825004,
+      "soiling_loss_pct": 2.017,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9598,
+      "sr_upper_bound": 0.9998
+    },
+    {
+      "date": "2027-01-22",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9798431336396992,
+      "soiling_loss_pct": 2.016,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9598,
+      "sr_upper_bound": 0.9998
+    },
+    {
+      "date": "2027-01-23",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9798592835325011,
+      "soiling_loss_pct": 2.014,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9599,
+      "sr_upper_bound": 0.9999
+    },
+    {
+      "date": "2027-01-24",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9798710558387669,
+      "soiling_loss_pct": 2.013,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9599,
+      "sr_upper_bound": 0.9999
+    },
+    {
+      "date": "2027-01-25",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9798828281450327,
+      "soiling_loss_pct": 2.012,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9599,
+      "sr_upper_bound": 0.9999
+    },
+    {
+      "date": "2027-01-26",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9798895199448604,
+      "soiling_loss_pct": 2.011,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9599,
+      "sr_upper_bound": 0.9999
+    },
+    {
+      "date": "2027-01-27",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9799030531467657,
+      "soiling_loss_pct": 2.01,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9599,
+      "sr_upper_bound": 0.9999
+    },
+    {
+      "date": "2027-01-28",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9799052064754787,
+      "soiling_loss_pct": 2.009,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9599,
+      "sr_upper_bound": 0.9999
+    },
+    {
+      "date": "2027-01-29",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9799073598041919,
+      "soiling_loss_pct": 2.009,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9599,
+      "sr_upper_bound": 0.9999
+    },
+    {
+      "date": "2027-01-30",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9798980825476405,
+      "soiling_loss_pct": 2.01,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9599,
+      "sr_upper_bound": 0.9999
+    },
+    {
+      "date": "2027-01-31",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9798888052910893,
+      "soiling_loss_pct": 2.011,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9599,
+      "sr_upper_bound": 0.9999
+    },
+    {
+      "date": "2027-02-01",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9798615862144394,
+      "soiling_loss_pct": 2.014,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9599,
+      "sr_upper_bound": 0.9999
+    },
+    {
+      "date": "2027-02-02",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9798343671377895,
+      "soiling_loss_pct": 2.017,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9598,
+      "sr_upper_bound": 0.9998
+    },
+    {
+      "date": "2027-02-03",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9798083092382781,
+      "soiling_loss_pct": 2.019,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9598,
+      "sr_upper_bound": 0.9998
+    },
+    {
+      "date": "2027-02-04",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9797822513387668,
+      "soiling_loss_pct": 2.022,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9598,
+      "sr_upper_bound": 0.9998
+    },
+    {
+      "date": "2027-02-05",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9797502352598112,
+      "soiling_loss_pct": 2.025,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9598,
+      "sr_upper_bound": 0.9998
+    },
+    {
+      "date": "2027-02-06",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.979722933593789,
+      "soiling_loss_pct": 2.028,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9597,
+      "sr_upper_bound": 0.9997
+    },
+    {
+      "date": "2027-02-07",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9796956319277669,
+      "soiling_loss_pct": 2.03,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9597,
+      "sr_upper_bound": 0.9997
+    },
+    {
+      "date": "2027-02-08",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9796862720818433,
+      "soiling_loss_pct": 2.031,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9597,
+      "sr_upper_bound": 0.9997
+    },
+    {
+      "date": "2027-02-09",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9796769122359199,
+      "soiling_loss_pct": 2.032,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9597,
+      "sr_upper_bound": 0.9997
+    },
+    {
+      "date": "2027-02-10",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9796664908454327,
+      "soiling_loss_pct": 2.033,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9597,
+      "sr_upper_bound": 0.9997
+    },
+    {
+      "date": "2027-02-11",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9796560694549455,
+      "soiling_loss_pct": 2.034,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9597,
+      "sr_upper_bound": 0.9997
+    },
+    {
+      "date": "2027-02-12",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9796516062439027,
+      "soiling_loss_pct": 2.035,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9597,
+      "sr_upper_bound": 0.9997
+    },
+    {
+      "date": "2027-02-13",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9796516062439027,
+      "soiling_loss_pct": 2.035,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9597,
+      "sr_upper_bound": 0.9997
+    },
+    {
+      "date": "2027-02-14",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9796516062439027,
+      "soiling_loss_pct": 2.035,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9597,
+      "sr_upper_bound": 0.9997
+    },
+    {
+      "date": "2027-02-15",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9796500563591939,
+      "soiling_loss_pct": 2.035,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9597,
+      "sr_upper_bound": 0.9997
+    },
+    {
+      "date": "2027-02-16",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.979648506474485,
+      "soiling_loss_pct": 2.035,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9596,
+      "sr_upper_bound": 0.9996
+    },
+    {
+      "date": "2027-02-17",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.979643893331903,
+      "soiling_loss_pct": 2.036,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9596,
+      "sr_upper_bound": 0.9996
+    },
+    {
+      "date": "2027-02-18",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.979639280189321,
+      "soiling_loss_pct": 2.036,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9596,
+      "sr_upper_bound": 0.9996
+    },
+    {
+      "date": "2027-02-19",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.979634667046739,
+      "soiling_loss_pct": 2.037,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9596,
+      "sr_upper_bound": 0.9996
+    },
+    {
+      "date": "2027-02-20",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.979630053904157,
+      "soiling_loss_pct": 2.037,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9596,
+      "sr_upper_bound": 0.9996
+    },
+    {
+      "date": "2027-02-21",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9796254407615751,
+      "soiling_loss_pct": 2.037,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9596,
+      "sr_upper_bound": 0.9996
+    },
+    {
+      "date": "2027-02-22",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9796223775037018,
+      "soiling_loss_pct": 2.038,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9596,
+      "sr_upper_bound": 0.9996
+    },
+    {
+      "date": "2027-02-23",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9796193142458287,
+      "soiling_loss_pct": 2.038,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9596,
+      "sr_upper_bound": 0.9996
+    },
+    {
+      "date": "2027-02-24",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9796193142458287,
+      "soiling_loss_pct": 2.038,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9596,
+      "sr_upper_bound": 0.9996
+    },
+    {
+      "date": "2027-02-25",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9796216287899215,
+      "soiling_loss_pct": 2.038,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9596,
+      "sr_upper_bound": 0.9996
+    },
+    {
+      "date": "2027-02-26",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9796177347861302,
+      "soiling_loss_pct": 2.038,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9596,
+      "sr_upper_bound": 0.9996
+    },
+    {
+      "date": "2027-02-27",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.979613840782339,
+      "soiling_loss_pct": 2.039,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9596,
+      "sr_upper_bound": 0.9996
+    },
+    {
+      "date": "2027-02-28",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9796005528772767,
+      "soiling_loss_pct": 2.04,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9596,
+      "sr_upper_bound": 0.9996
+    },
+    {
+      "date": "2027-03-01",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9793462407957041,
+      "soiling_loss_pct": 2.065,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9593,
+      "sr_upper_bound": 0.9993
+    },
+    {
+      "date": "2027-03-02",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9790919287141316,
+      "soiling_loss_pct": 2.091,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9591,
+      "sr_upper_bound": 0.9991
+    },
+    {
+      "date": "2027-03-03",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9788376166325591,
+      "soiling_loss_pct": 2.116,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9588,
+      "sr_upper_bound": 0.9988
+    },
+    {
+      "date": "2027-03-04",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9785809900068937,
+      "soiling_loss_pct": 2.142,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9586,
+      "sr_upper_bound": 0.9986
+    },
+    {
+      "date": "2027-03-05",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9783284322129466,
+      "soiling_loss_pct": 2.167,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9583,
+      "sr_upper_bound": 0.9983
+    },
+    {
+      "date": "2027-03-06",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9780746951423763,
+      "soiling_loss_pct": 2.193,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9581,
+      "sr_upper_bound": 0.9981
+    },
+    {
+      "date": "2027-03-07",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9778303519730771,
+      "soiling_loss_pct": 2.217,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9578,
+      "sr_upper_bound": 0.9978
+    },
+    {
+      "date": "2027-03-08",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.977822997453475,
+      "soiling_loss_pct": 2.218,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9578,
+      "sr_upper_bound": 0.9978
+    },
+    {
+      "date": "2027-03-09",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9778103302005603,
+      "soiling_loss_pct": 2.219,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9578,
+      "sr_upper_bound": 0.9978
+    },
+    {
+      "date": "2027-03-10",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9777965223353566,
+      "soiling_loss_pct": 2.22,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9578,
+      "sr_upper_bound": 0.9978
+    },
+    {
+      "date": "2027-03-11",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9777827144701526,
+      "soiling_loss_pct": 2.222,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9578,
+      "sr_upper_bound": 0.9978
+    },
+    {
+      "date": "2027-03-12",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9777653134706099,
+      "soiling_loss_pct": 2.223,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9578,
+      "sr_upper_bound": 0.9978
+    },
+    {
+      "date": "2027-03-13",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9777442246250908,
+      "soiling_loss_pct": 2.226,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9577,
+      "sr_upper_bound": 0.9977
+    },
+    {
+      "date": "2027-03-14",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.977716933112054,
+      "soiling_loss_pct": 2.228,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9577,
+      "sr_upper_bound": 0.9977
+    },
+    {
+      "date": "2027-03-15",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9777031897435355,
+      "soiling_loss_pct": 2.23,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9577,
+      "sr_upper_bound": 0.9977
+    },
+    {
+      "date": "2027-03-16",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9776947591083295,
+      "soiling_loss_pct": 2.231,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9577,
+      "sr_upper_bound": 0.9977
+    },
+    {
+      "date": "2027-03-17",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9776874690854128,
+      "soiling_loss_pct": 2.231,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9577,
+      "sr_upper_bound": 0.9977
+    },
+    {
+      "date": "2027-03-18",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9776739693416445,
+      "soiling_loss_pct": 2.233,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9577,
+      "sr_upper_bound": 0.9977
+    },
+    {
+      "date": "2027-03-19",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9776628387867221,
+      "soiling_loss_pct": 2.234,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9577,
+      "sr_upper_bound": 0.9977
+    },
+    {
+      "date": "2027-03-20",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9776565753543991,
+      "soiling_loss_pct": 2.234,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9577,
+      "sr_upper_bound": 0.9977
+    },
+    {
+      "date": "2027-03-21",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9776504947976745,
+      "soiling_loss_pct": 2.235,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9577,
+      "sr_upper_bound": 0.9977
+    },
+    {
+      "date": "2027-03-22",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9776296389561487,
+      "soiling_loss_pct": 2.237,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2027-03-23",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9776086792596022,
+      "soiling_loss_pct": 2.239,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2027-03-24",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775876629895759,
+      "soiling_loss_pct": 2.241,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2027-03-25",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.977572856440401,
+      "soiling_loss_pct": 2.243,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2027-03-26",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775614135528855,
+      "soiling_loss_pct": 2.244,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2027-03-27",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775499706653699,
+      "soiling_loss_pct": 2.245,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9575,
+      "sr_upper_bound": 0.9975
+    },
+    {
+      "date": "2027-03-28",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775445475697735,
+      "soiling_loss_pct": 2.246,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9575,
+      "sr_upper_bound": 0.9975
+    },
+    {
+      "date": "2027-03-29",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775468534314092,
+      "soiling_loss_pct": 2.245,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9575,
+      "sr_upper_bound": 0.9975
+    },
+    {
+      "date": "2027-03-30",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775492631480659,
+      "soiling_loss_pct": 2.245,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9575,
+      "sr_upper_bound": 0.9975
+    },
+    {
+      "date": "2027-03-31",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9775517294382021,
+      "soiling_loss_pct": 2.245,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9576,
+      "sr_upper_bound": 0.9976
+    },
+    {
+      "date": "2027-04-01",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.996600498291324,
+      "soiling_loss_pct": 0.34,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9766,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2027-04-02",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9927422724180229,
+      "soiling_loss_pct": 0.726,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9727,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2027-04-03",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9888840465447218,
+      "soiling_loss_pct": 1.112,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9689,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2027-04-04",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9964998124015338,
+      "soiling_loss_pct": 0.35,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9765,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2027-04-05",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9926393713014363,
+      "soiling_loss_pct": 0.736,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9726,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2027-04-06",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9964281304960987,
+      "soiling_loss_pct": 0.357,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9764,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2027-04-07",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9925668896907611,
+      "soiling_loss_pct": 0.743,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9726,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2027-04-08",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9963866940485109,
+      "soiling_loss_pct": 0.361,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9764,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2027-04-09",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9925576361245921,
+      "soiling_loss_pct": 0.744,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9726,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2027-04-10",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9887276286901716,
+      "soiling_loss_pct": 1.127,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9687,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2027-04-11",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9848986295256379,
+      "soiling_loss_pct": 1.51,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9649,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2027-04-12",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9810704673744935,
+      "soiling_loss_pct": 1.893,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9611,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2027-04-13",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9772417564856061,
+      "soiling_loss_pct": 2.276,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9572,
+      "sr_upper_bound": 0.9972
+    },
+    {
+      "date": "2027-04-14",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9734132159270903,
+      "soiling_loss_pct": 2.659,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9534,
+      "sr_upper_bound": 0.9934
+    },
+    {
+      "date": "2027-04-15",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9695859127700527,
+      "soiling_loss_pct": 3.041,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9496,
+      "sr_upper_bound": 0.9896
+    },
+    {
+      "date": "2027-04-16",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9657580609087622,
+      "soiling_loss_pct": 3.424,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9458,
+      "sr_upper_bound": 0.9858
+    },
+    {
+      "date": "2027-04-17",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9619311585579731,
+      "soiling_loss_pct": 3.807,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9419,
+      "sr_upper_bound": 0.9819
+    },
+    {
+      "date": "2027-04-18",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.958104256207184,
+      "soiling_loss_pct": 4.19,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9381,
+      "sr_upper_bound": 0.9781
+    },
+    {
+      "date": "2027-04-19",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.954277353856395,
+      "soiling_loss_pct": 4.572,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9343,
+      "sr_upper_bound": 0.9743
+    },
+    {
+      "date": "2027-04-20",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9504513037120926,
+      "soiling_loss_pct": 4.955,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9305,
+      "sr_upper_bound": 0.9705
+    },
+    {
+      "date": "2027-04-21",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9466250832374185,
+      "soiling_loss_pct": 5.337,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9266,
+      "sr_upper_bound": 0.9666
+    },
+    {
+      "date": "2027-04-22",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9427992112661052,
+      "soiling_loss_pct": 5.72,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9228,
+      "sr_upper_bound": 0.9628
+    },
+    {
+      "date": "2027-04-23",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.938973981281281,
+      "soiling_loss_pct": 6.103,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.919,
+      "sr_upper_bound": 0.959
+    },
+    {
+      "date": "2027-04-24",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9351487512964566,
+      "soiling_loss_pct": 6.485,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9151,
+      "sr_upper_bound": 0.9551
+    },
+    {
+      "date": "2027-04-25",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9313235213116322,
+      "soiling_loss_pct": 6.868,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9113,
+      "sr_upper_bound": 0.9513
+    },
+    {
+      "date": "2027-04-26",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9274982913268079,
+      "soiling_loss_pct": 7.25,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9075,
+      "sr_upper_bound": 0.9475
+    },
+    {
+      "date": "2027-04-27",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9236734096438046,
+      "soiling_loss_pct": 7.633,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9037,
+      "sr_upper_bound": 0.9437
+    },
+    {
+      "date": "2027-04-28",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9198480893831161,
+      "soiling_loss_pct": 8.015,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8998,
+      "sr_upper_bound": 0.9398
+    },
+    {
+      "date": "2027-04-29",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9160227691224276,
+      "soiling_loss_pct": 8.398,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.896,
+      "sr_upper_bound": 0.936
+    },
+    {
+      "date": "2027-04-30",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9121971826100669,
+      "soiling_loss_pct": 8.78,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8922,
+      "sr_upper_bound": 0.9322
+    },
+    {
+      "date": "2027-05-01",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9247311133549271,
+      "soiling_loss_pct": 7.527,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9047,
+      "sr_upper_bound": 0.9447
+    },
+    {
+      "date": "2027-05-02",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9217755723937202,
+      "soiling_loss_pct": 7.822,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9018,
+      "sr_upper_bound": 0.9418
+    },
+    {
+      "date": "2027-05-03",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9188200314325132,
+      "soiling_loss_pct": 8.118,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8988,
+      "sr_upper_bound": 0.9388
+    },
+    {
+      "date": "2027-05-04",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9158645668713383,
+      "soiling_loss_pct": 8.414,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8959,
+      "sr_upper_bound": 0.9359
+    },
+    {
+      "date": "2027-05-05",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9129101475883805,
+      "soiling_loss_pct": 8.709,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8929,
+      "sr_upper_bound": 0.9329
+    },
+    {
+      "date": "2027-05-06",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9099557283054227,
+      "soiling_loss_pct": 9.004,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.89,
+      "sr_upper_bound": 0.93
+    },
+    {
+      "date": "2027-05-07",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9070013090224649,
+      "soiling_loss_pct": 9.3,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.887,
+      "sr_upper_bound": 0.927
+    },
+    {
+      "date": "2027-05-08",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9041097850002311,
+      "soiling_loss_pct": 9.589,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8841,
+      "sr_upper_bound": 0.9241
+    },
+    {
+      "date": "2027-05-09",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9012182609779973,
+      "soiling_loss_pct": 9.878,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8812,
+      "sr_upper_bound": 0.9212
+    },
+    {
+      "date": "2027-05-10",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8983267369557635,
+      "soiling_loss_pct": 10.167,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8783,
+      "sr_upper_bound": 0.9183
+    },
+    {
+      "date": "2027-05-11",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8954354891116134,
+      "soiling_loss_pct": 10.456,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8754,
+      "sr_upper_bound": 0.9154
+    },
+    {
+      "date": "2027-05-12",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8925442412674636,
+      "soiling_loss_pct": 10.746,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8725,
+      "sr_upper_bound": 0.9125
+    },
+    {
+      "date": "2027-05-13",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8896529934233135,
+      "soiling_loss_pct": 11.035,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8697,
+      "sr_upper_bound": 0.9097
+    },
+    {
+      "date": "2027-05-14",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8867617455791637,
+      "soiling_loss_pct": 11.324,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8668,
+      "sr_upper_bound": 0.9068
+    },
+    {
+      "date": "2027-05-15",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8838708943890279,
+      "soiling_loss_pct": 11.613,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8639,
+      "sr_upper_bound": 0.9039
+    },
+    {
+      "date": "2027-05-16",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8809800431988921,
+      "soiling_loss_pct": 11.902,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.861,
+      "sr_upper_bound": 0.901
+    },
+    {
+      "date": "2027-05-17",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8780891920087565,
+      "soiling_loss_pct": 12.191,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8581,
+      "sr_upper_bound": 0.8981
+    },
+    {
+      "date": "2027-05-18",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8751983408186208,
+      "soiling_loss_pct": 12.48,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8552,
+      "sr_upper_bound": 0.8952
+    },
+    {
+      "date": "2027-05-19",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.872307489628485,
+      "soiling_loss_pct": 12.769,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8523,
+      "sr_upper_bound": 0.8923
+    },
+    {
+      "date": "2027-05-20",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8694166384383495,
+      "soiling_loss_pct": 13.058,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8494,
+      "sr_upper_bound": 0.8894
+    },
+    {
+      "date": "2027-05-21",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9908494445466616,
+      "soiling_loss_pct": 0.915,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9708,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2027-05-22",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9879581967025116,
+      "soiling_loss_pct": 1.204,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.968,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2027-05-23",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9908494445466616,
+      "soiling_loss_pct": 0.915,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9708,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2027-05-24",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9879581967025116,
+      "soiling_loss_pct": 1.204,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.968,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2027-05-25",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9850669488583617,
+      "soiling_loss_pct": 1.493,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9651,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2027-05-26",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9821757010142117,
+      "soiling_loss_pct": 1.782,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9622,
+      "sr_upper_bound": 1.0
+    },
+    {
+      "date": "2027-05-27",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.979286120629449,
+      "soiling_loss_pct": 2.071,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9593,
+      "sr_upper_bound": 0.9993
+    },
+    {
+      "date": "2027-05-28",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9763965402446864,
+      "soiling_loss_pct": 2.36,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9564,
+      "sr_upper_bound": 0.9964
+    },
+    {
+      "date": "2027-05-29",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9735069598599236,
+      "soiling_loss_pct": 2.649,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9535,
+      "sr_upper_bound": 0.9935
+    },
+    {
+      "date": "2027-05-30",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9706157128251501,
+      "soiling_loss_pct": 2.938,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9506,
+      "sr_upper_bound": 0.9906
+    },
+    {
+      "date": "2027-05-31",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9677244657903765,
+      "soiling_loss_pct": 3.228,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9477,
+      "sr_upper_bound": 0.9877
+    },
+    {
+      "date": "2027-06-01",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9617620096361718,
+      "soiling_loss_pct": 3.824,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9418,
+      "sr_upper_bound": 0.9818
+    },
+    {
+      "date": "2027-06-02",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9579613084474582,
+      "soiling_loss_pct": 4.204,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.938,
+      "sr_upper_bound": 0.978
+    },
+    {
+      "date": "2027-06-03",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9541612842699692,
+      "soiling_loss_pct": 4.584,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9342,
+      "sr_upper_bound": 0.9742
+    },
+    {
+      "date": "2027-06-04",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9503611656624475,
+      "soiling_loss_pct": 4.964,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9304,
+      "sr_upper_bound": 0.9704
+    },
+    {
+      "date": "2027-06-05",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.946561047054926,
+      "soiling_loss_pct": 5.344,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9266,
+      "sr_upper_bound": 0.9666
+    },
+    {
+      "date": "2027-06-06",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9427574551596751,
+      "soiling_loss_pct": 5.724,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9228,
+      "sr_upper_bound": 0.9628
+    },
+    {
+      "date": "2027-06-07",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9389538632644243,
+      "soiling_loss_pct": 6.105,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.919,
+      "sr_upper_bound": 0.959
+    },
+    {
+      "date": "2027-06-08",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9352109728974853,
+      "soiling_loss_pct": 6.479,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9152,
+      "sr_upper_bound": 0.9552
+    },
+    {
+      "date": "2027-06-09",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.931467744586353,
+      "soiling_loss_pct": 6.853,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9115,
+      "sr_upper_bound": 0.9515
+    },
+    {
+      "date": "2027-06-10",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9277231396316242,
+      "soiling_loss_pct": 7.228,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9077,
+      "sr_upper_bound": 0.9477
+    },
+    {
+      "date": "2027-06-11",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9239749339132659,
+      "soiling_loss_pct": 7.603,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.904,
+      "sr_upper_bound": 0.944
+    },
+    {
+      "date": "2027-06-12",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9202220497656335,
+      "soiling_loss_pct": 7.978,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.9002,
+      "sr_upper_bound": 0.9402
+    },
+    {
+      "date": "2027-06-13",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9164725685388244,
+      "soiling_loss_pct": 8.353,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8965,
+      "sr_upper_bound": 0.9365
+    },
+    {
+      "date": "2027-06-14",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9127230873120155,
+      "soiling_loss_pct": 8.728,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8927,
+      "sr_upper_bound": 0.9327
+    },
+    {
+      "date": "2027-06-15",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9089736060852064,
+      "soiling_loss_pct": 9.103,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.889,
+      "sr_upper_bound": 0.929
+    },
+    {
+      "date": "2027-06-16",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9052177850988412,
+      "soiling_loss_pct": 9.478,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8852,
+      "sr_upper_bound": 0.9252
+    },
+    {
+      "date": "2027-06-17",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.9014614280767022,
+      "soiling_loss_pct": 9.854,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8815,
+      "sr_upper_bound": 0.9215
+    },
+    {
+      "date": "2027-06-18",
+      "sr_physics": 0.0,
+      "sr_ml_correction": 0.0,
+      "sr_predicted": 0.8977089353523695,
+      "soiling_loss_pct": 10.229,
+      "is_cleaning_needed": false,
+      "sr_lower_bound": 0.8777,
+      "sr_upper_bound": 0.9177
+    }
+  ]
+}

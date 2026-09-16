@@ -1,0 +1,442 @@
+{
+  "generated_at": "2026-08-21T08:30:39.368361Z",
+  "datasets": {
+    "pv": {
+      "classifier_class_mix_real_plants": {
+        "n_samples": 5952959,
+        "headline": "on 3 real plants the fixed-reference cascade never emits degradation, short_circuit at all",
+        "distribution_relationship": "operability_no_labels"
+      },
+      "classifier_provenance": {
+        "n_samples": 378443,
+        "headline": "4 published fault numbers traced to their classifiers; 0.835/0.519 comparable, 0.189 is a different implementation",
+        "distribution_relationship": "provenance_audit"
+      },
+      "gpvs_cross_dataset": {
+        "n_samples": 80000,
+        "macro_f1": 0.1893,
+        "weighted_f1": 0.1893,
+        "accuracy": 0.2978,
+        "headline": "macro-F1 0.189 on 80,000 samples",
+        "distribution_relationship": "cross_dist"
+      },
+      "lazzaretti_holdout": {
+        "n_samples": 99481,
+        "macro_f1": 0.8348,
+        "weighted_f1": 0.8042,
+        "accuracy": 0.8065,
+        "headline": "macro-F1 0.835 on 99,481 samples",
+        "distribution_relationship": "in_dist_tuned_thresholds"
+      },
+      "lazzaretti_lgbm": {
+        "n_samples": 99481,
+        "macro_f1": 0.9983,
+        "weighted_f1": 0.9977,
+        "accuracy": 0.9977,
+        "headline": "macro-F1 0.998 on 99,481 samples",
+        "distribution_relationship": "in_dist_train_test_split"
+      },
+      "lazzaretti_physics_blind": {
+        "n_samples": 99481,
+        "macro_f1": 0.5188,
+        "weighted_f1": 0.7883,
+        "accuracy": 0.807,
+        "headline": "macro-F1 0.519 on 99,481 samples",
+        "distribution_relationship": "in_dist_no_tuning"
+      },
+      "peer_inverter_underperformance_fleet": {
+        "n_samples": 416,
+        "alerts_per_mw_month": 1.1391,
+        "tier": "A",
+        "passes_gate": false,
+        "null_calibrated": true,
+        "signal_to_null_ratio": 157.7,
+        "headline": "1.14 alerts/MW/month on 416 devices, FAILS the 1.0 gate | null tail 0.0020% vs theory 0.0032% (calibrated), signal 157.7x null | alert rate tracks plant size (rho +0.83)",
+        "distribution_relationship": "operability_no_labels"
+      },
+      "rul_cross_dataset": {
+        "n_samples": 9,
+        "spearman": -0.375,
+        "interpretation": "WEAK NEGATIVE \u2014 partial transfer",
+        "headline": "Spearman -0.375 on 9 modules (WEAK NEGATIVE \u2014 partial transfer)",
+        "distribution_relationship": "cross_dist"
+      },
+      "rule_firing_rates_real_plants": {
+        "n_samples": 8357802,
+        "headline": "report present",
+        "distribution_relationship": "operability_no_labels"
+      },
+      "sandia_pv_iv_el_degradation": {
+        "n_samples": 166,
+        "fade_rate_pct_per_year": {
+          "mean": 0.8865,
+          "median": 0.7239,
+          "p25": 0.4599,
+          "p75": 1.2417,
+          "min": -0.157,
+          "max": 2.4346
+        },
+        "headline": "fleet fade 0.886 %/yr mean, 0.724 %/yr median across 166 modules",
+        "distribution_relationship": "literature_comparison"
+      },
+      "sandia_sat_transfer": {
+        "n_samples": null,
+        "status": "pending_manual_fetch",
+        "headline": "\u23f8  data not yet fetched (see report.reason)",
+        "distribution_relationship": "cross_dist"
+      },
+      "scale_transfer_lazzaretti": {
+        "n_samples": 99481,
+        "headline": "macro-F1 0.8348 unperturbed falls to 0.2677 on a rig of another size; 4 classes reach F1 0.000. Normalised, invariant to within 0.0",
+        "distribution_relationship": "synthetic_perturbation"
+      },
+      "shipped_detector_lazzaretti": {
+        "n_samples": 200000,
+        "macro_f1": 0.1833,
+        "weighted_f1": 0.7748,
+        "accuracy": 0.8454,
+        "headline": "macro-F1 0.183 on 200,000 samples",
+        "distribution_relationship": "in_dist_shipped_code"
+      },
+      "shipped_detector_lazzaretti_before_fixes": {
+        "n_samples": 200000,
+        "macro_f1": 0.196,
+        "weighted_f1": 0.7697,
+        "accuracy": 0.8265,
+        "headline": "macro-F1 0.196 on 200,000 samples",
+        "distribution_relationship": "in_dist_shipped_code"
+      },
+      "shipped_detector_lazzaretti_dwell1": {
+        "n_samples": 200000,
+        "macro_f1": 0.2024,
+        "weighted_f1": 0.7749,
+        "accuracy": 0.8443,
+        "headline": "macro-F1 0.202 on 200,000 samples",
+        "distribution_relationship": "in_dist_shipped_code"
+      },
+      "shipped_detector_lazzaretti_v5": {
+        "n_samples": 200000,
+        "macro_f1": 0.2044,
+        "weighted_f1": 0.7739,
+        "accuracy": 0.8404,
+        "headline": "macro-F1 0.204 on 200,000 samples",
+        "distribution_relationship": "in_dist_shipped_code"
+      }
+    },
+    "bess": {
+      "lfp_secondlife_2025": {
+        "n_samples": 20,
+        "eol_within_10pct": 0.75,
+        "mape": 0.2085,
+        "method": "linear extrapolation from first 25% of checkpoints",
+        "is_naive_baseline": true,
+        "headline": "75% of cells within \u00b110% EOL (MAPE 21%) \u2014 naive baseline: linear extrapolation from first 25% of checkpoints",
+        "distribution_relationship": "cross_dist"
+      },
+      "nasa": {
+        "n_samples": 4,
+        "eol_within_10pct": 0.5,
+        "mape": 0.4889,
+        "method": "linear extrapolation from first 50 cycles",
+        "is_naive_baseline": true,
+        "headline": "50% of cells within \u00b110% EOL (MAPE 49%) \u2014 naive baseline: linear extrapolation from first 50 cycles",
+        "distribution_relationship": "cross_dist"
+      },
+      "severson": {
+        "n_samples": 89,
+        "eol_within_10pct": 0.011,
+        "mape": 0.3459,
+        "method": "linear extrapolation from first 200 cycles",
+        "is_naive_baseline": true,
+        "headline": "1% of cells within \u00b110% EOL (MAPE 35%) \u2014 naive baseline: linear extrapolation from first 200 cycles",
+        "distribution_relationship": "in_dist_no_tuning"
+      },
+      "severson_delta_q": {
+        "n_samples": 123,
+        "eol_within_10pct": 0.48,
+        "mape": 0.1894,
+        "method": "Ridge regression on delta-Q features (Severson 2019)",
+        "is_naive_baseline": false,
+        "headline": "48% of cells within \u00b110% EOL (MAPE 19%) \u2014 our model: Ridge regression on delta-Q features (Severson 2019), cycles 10-100",
+        "distribution_relationship": "in_dist_loo"
+      },
+      "severson_lgbm": {
+        "n_samples": 123,
+        "eol_within_10pct": 0.488,
+        "mape": 0.1722,
+        "method": "LGBMRegressor (200 trees, depth 4, min_child=5)",
+        "is_naive_baseline": false,
+        "headline": "49% of cells within \u00b110% EOL (MAPE 17%) \u2014 our model: LGBMRegressor (200 trees, depth 4, min_child=5)",
+        "distribution_relationship": "in_dist_loo"
+      }
+    },
+    "soiling": {
+      "africa_transferability": {
+        "n_samples": 9,
+        "tiers": {
+          "high_confidence_production": 2,
+          "literature_only": 4,
+          "needs_dustiq_rollout": 3
+        },
+        "headline": "9 sites triaged: 2 high_confidence_production, 4 literature_only, 3 needs_dustiq_rollout",
+        "distribution_relationship": "transfer_readiness"
+      },
+      "climate_prior_cross_check": {
+        "n_samples": 3,
+        "n_sites_within_30pct": 1,
+        "headline": "1/3 sites within +/-30% of the climate prior",
+        "distribution_relationship": "literature_vs_observed"
+      },
+      "nrel_map_sites": {
+        "n_samples": 146,
+        "distribution": {
+          "min": 0.0408,
+          "p25": 0.0883,
+          "p50": 0.1075,
+          "p75": 0.1358,
+          "max": 0.2958
+        },
+        "metric": "soiling_rate_during_dry_intervals_pct_per_day",
+        "headline": "soiling_rate_during_dry_intervals_pct_per_day: p25 0.088 / p50 0.107 / p75 0.136 across 146 sites",
+        "distribution_relationship": "literature_comparison"
+      },
+      "pvdaq_system_2107": {
+        "n_samples": 2557,
+        "iwsr": 0.9494,
+        "n_soiling_intervals": 136,
+        "headline": "IWSR = 0.949 on 2,557 days (136 soiling intervals detected)",
+        "distribution_relationship": "ground_truth_measurement"
+      },
+      "pvdaq_system_34": {
+        "n_samples": 0,
+        "status": "pending_implementation",
+        "headline": "\u23f8  harness ready, implementation pending",
+        "distribution_relationship": "ground_truth_measurement"
+      },
+      "pvdaq_system_7334": {
+        "n_samples": 1884,
+        "iwsr": 0.9595,
+        "n_soiling_intervals": 31,
+        "headline": "IWSR = 0.960 on 1,884 days (31 soiling intervals detected)",
+        "distribution_relationship": "ground_truth_measurement"
+      },
+      "pvdaq_system_9069": {
+        "n_samples": 2815,
+        "iwsr": 0.92,
+        "n_soiling_intervals": 183,
+        "headline": "IWSR = 0.920 on 2,815 days (183 soiling intervals detected)",
+        "distribution_relationship": "ground_truth_measurement"
+      },
+      "universal_dayone": {
+        "n_samples": 7,
+        "zone_resolution_accuracy": 1.0,
+        "headline": "7/7 plants resolved to the correct climate zone (100%)",
+        "distribution_relationship": "physics_check"
+      }
+    },
+    "twin": {
+      "twin_15min_dayone": {
+        "n_samples": 42229,
+        "nmae_pct": 6.574,
+        "nrmse_pct": null,
+        "mbe_pct": null,
+        "normalizer": "ac_capacity_kw",
+        "reference_baseline": null,
+        "reference_nmae_pct": null,
+        "uplift_vs_reference_pct": null,
+        "headline": "nMAE 6.57% of AC nameplate on 42,229 points, 35 walk-forward windows",
+        "distribution_relationship": "walk_forward_oos"
+      },
+      "twin_15min_alpha": {
+        "n_samples": 42229,
+        "nmae_pct": 6.685,
+        "nrmse_pct": 15.538,
+        "mbe_pct": 2.11,
+        "normalizer": "ac_capacity_kw",
+        "reference_baseline": "physics_only",
+        "reference_nmae_pct": 6.613,
+        "uplift_vs_reference_pct": -1.09,
+        "headline": "nMAE 6.68% of AC nameplate (bias +2.11%) on 42,229 points, 35 walk-forward windows | physics_only 6.61% -> ML uplift -1%",
+        "distribution_relationship": "walk_forward_oos"
+      },
+      "twin_daily_energy_es_fleet": {
+        "n_samples": 5847,
+        "nmae_pct": 9.31,
+        "nrmse_pct": 19.384,
+        "mbe_pct": 1.127,
+        "normalizer": "mean_daily_energy_kwh",
+        "reference_baseline": "irradiance_scaling",
+        "reference_nmae_pct": 8.507,
+        "uplift_vs_reference_pct": -9.44,
+        "headline": "nMAE 9.31% of mean daily energy (bias +1.13%) on 5,847 points, 248 walk-forward windows | irradiance_scaling 8.51% -> ML uplift -9%",
+        "distribution_relationship": "walk_forward_oos"
+      },
+      "twin_daily_energy_leave_one_plant_out": {
+        "n_samples": 9495,
+        "nmae_pct": 11.188,
+        "nrmse_pct": 22.234,
+        "mbe_pct": -0.041,
+        "normalizer": "mean_daily_energy_kwh",
+        "reference_baseline": "irradiance_scaling",
+        "reference_nmae_pct": 8.899,
+        "uplift_vs_reference_pct": -25.72,
+        "headline": "nMAE 11.19% of mean daily energy (bias -0.04%) on 9,495 points | irradiance_scaling 8.90% -> ML uplift -26%",
+        "distribution_relationship": "cross_plant_transfer"
+      },
+      "twin_feature_ablation": {
+        "n_samples": 10954,
+        "nmae_pct": 10.039,
+        "nrmse_pct": null,
+        "mbe_pct": null,
+        "normalizer": "mean_daily_energy_kwh",
+        "reference_baseline": null,
+        "reference_nmae_pct": 8.899,
+        "uplift_vs_reference_pct": -12.81,
+        "headline": "nMAE 10.04% of mean daily energy on 10,954 points | reference 8.90% -> ML uplift -13%",
+        "distribution_relationship": "walk_forward_oos"
+      },
+      "twin_local_data_curve": {
+        "n_samples": 10954,
+        "nmae_pct": 16.69821087103726,
+        "nrmse_pct": null,
+        "mbe_pct": null,
+        "normalizer": "mean_daily_energy_kwh",
+        "reference_baseline": null,
+        "reference_nmae_pct": null,
+        "uplift_vs_reference_pct": null,
+        "headline": "nMAE 16.70% of mean daily energy on 10,954 points",
+        "distribution_relationship": "walk_forward_oos"
+      }
+    },
+    "forecast": {
+      "forecast_dayahead_alpha_endogenous": {
+        "n_samples": 1024,
+        "skill_score": -0.0317,
+        "nmae_pct": 21.004,
+        "baseline_nmae_pct": 20.359,
+        "baseline": "persistence",
+        "driver": "endogenous",
+        "reference_nmae_pct": 13.192,
+        "reference_baseline": "physics_perfect_irradiance",
+        "headline": "skill -0.032 vs persistence (nMAE 21.00% vs 20.36%) at h=24h on 1,024 periods | physics_perfect_irradiance 13.19%",
+        "distribution_relationship": "walk_forward_oos"
+      },
+      "forecast_soiling_sr_ribera": {
+        "n_samples": 2799,
+        "mae_sr_pp": 1.4444179083539639,
+        "n_windows": 36,
+        "headline": "soiling-ratio MAE 1.44 pp (sd 0.54) at h=24h over 36 walk-forward windows",
+        "distribution_relationship": "walk_forward_oos"
+      }
+    }
+  },
+  "totals": {
+    "datasets": 37,
+    "samples": 16101021
+  },
+  "headlines": [
+    "[\u25c8 operability (no labels)] pv/classifier_class_mix_real_plants: on 3 real plants the fixed-reference cascade never emits degradation, short_circuit at all",
+    "[\u2299 provenance audit] pv/classifier_provenance: 4 published fault numbers traced to their classifiers; 0.835/0.519 comparable, 0.189 is a different implementation",
+    "[\u2605 CROSS-DIST] pv/gpvs_cross_dataset: macro-F1 0.189 on 80,000 samples",
+    "[  in-dist (tuned thresholds)] pv/lazzaretti_holdout: macro-F1 0.835 on 99,481 samples",
+    "[  in-dist (train/test split)] pv/lazzaretti_lgbm: macro-F1 0.998 on 99,481 samples",
+    "[  in-dist (no tuning)] pv/lazzaretti_physics_blind: macro-F1 0.519 on 99,481 samples",
+    "[\u25c8 operability (no labels)] pv/peer_inverter_underperformance_fleet: 1.14 alerts/MW/month on 416 devices, FAILS the 1.0 gate | null tail 0.0020% vs theory 0.0032% (calibrated), signal 157.7x null | alert rate tracks plant size (rho +0.83)",
+    "[\u2605 CROSS-DIST] pv/rul_cross_dataset: Spearman -0.375 on 9 modules (WEAK NEGATIVE \u2014 partial transfer)",
+    "[\u25c8 operability (no labels)] pv/rule_firing_rates_real_plants: report present",
+    "[\u2713 literature match] pv/sandia_pv_iv_el_degradation: fleet fade 0.886 %/yr mean, 0.724 %/yr median across 166 modules",
+    "[\u2605 CROSS-DIST] pv/sandia_sat_transfer: \u23f8  data not yet fetched (see report.reason)",
+    "[\u2697 synthetic perturbation] pv/scale_transfer_lazzaretti: macro-F1 0.8348 unperturbed falls to 0.2677 on a rig of another size; 4 classes reach F1 0.000. Normalised, invariant to within 0.0",
+    "[\u25aa in-dist, SHIPPED code] pv/shipped_detector_lazzaretti: macro-F1 0.183 on 200,000 samples",
+    "[\u25aa in-dist, SHIPPED code] pv/shipped_detector_lazzaretti_before_fixes: macro-F1 0.196 on 200,000 samples",
+    "[\u25aa in-dist, SHIPPED code] pv/shipped_detector_lazzaretti_dwell1: macro-F1 0.202 on 200,000 samples",
+    "[\u25aa in-dist, SHIPPED code] pv/shipped_detector_lazzaretti_v5: macro-F1 0.204 on 200,000 samples",
+    "[\u2605 CROSS-DIST] bess/lfp_secondlife_2025: 75% of cells within \u00b110% EOL (MAPE 21%) \u2014 naive baseline: linear extrapolation from first 25% of checkpoints",
+    "[\u2605 CROSS-DIST] bess/nasa: 50% of cells within \u00b110% EOL (MAPE 49%) \u2014 naive baseline: linear extrapolation from first 50 cycles",
+    "[  in-dist (no tuning)] bess/severson: 1% of cells within \u00b110% EOL (MAPE 35%) \u2014 naive baseline: linear extrapolation from first 200 cycles",
+    "[  in-dist (leave-one-out)] bess/severson_delta_q: 48% of cells within \u00b110% EOL (MAPE 19%) \u2014 our model: Ridge regression on delta-Q features (Severson 2019), cycles 10-100",
+    "[  in-dist (leave-one-out)] bess/severson_lgbm: 49% of cells within \u00b110% EOL (MAPE 17%) \u2014 our model: LGBMRegressor (200 trees, depth 4, min_child=5)",
+    "[\u25c7 transfer readiness] soiling/africa_transferability: 9 sites triaged: 2 high_confidence_production, 4 literature_only, 3 needs_dustiq_rollout",
+    "[\u2194 literature-vs-observed gap] soiling/climate_prior_cross_check: 1/3 sites within +/-30% of the climate prior",
+    "[\u2713 literature match] soiling/nrel_map_sites: soiling_rate_during_dry_intervals_pct_per_day: p25 0.088 / p50 0.107 / p75 0.136 across 146 sites",
+    "[\u25b7 ground truth] soiling/pvdaq_system_2107: IWSR = 0.949 on 2,557 days (136 soiling intervals detected)",
+    "[\u25b7 ground truth] soiling/pvdaq_system_34: \u23f8  harness ready, implementation pending",
+    "[\u25b7 ground truth] soiling/pvdaq_system_7334: IWSR = 0.960 on 1,884 days (31 soiling intervals detected)",
+    "[\u25b7 ground truth] soiling/pvdaq_system_9069: IWSR = 0.920 on 2,815 days (183 soiling intervals detected)",
+    "[  physics check] soiling/universal_dayone: 7/7 plants resolved to the correct climate zone (100%)",
+    "[\u25c6 walk-forward out-of-sample] twin/twin_15min_dayone: nMAE 6.57% of AC nameplate on 42,229 points, 35 walk-forward windows",
+    "[\u25c6 walk-forward out-of-sample] twin/twin_15min_alpha: nMAE 6.68% of AC nameplate (bias +2.11%) on 42,229 points, 35 walk-forward windows | physics_only 6.61% -> ML uplift -1%",
+    "[\u25c6 walk-forward out-of-sample] twin/twin_daily_energy_es_fleet: nMAE 9.31% of mean daily energy (bias +1.13%) on 5,847 points, 248 walk-forward windows | irradiance_scaling 8.51% -> ML uplift -9%",
+    "[\u2605 cross-plant (unseen site)] twin/twin_daily_energy_leave_one_plant_out: nMAE 11.19% of mean daily energy (bias -0.04%) on 9,495 points | irradiance_scaling 8.90% -> ML uplift -26%",
+    "[\u25c6 walk-forward out-of-sample] twin/twin_feature_ablation: nMAE 10.04% of mean daily energy on 10,954 points | reference 8.90% -> ML uplift -13%",
+    "[\u25c6 walk-forward out-of-sample] twin/twin_local_data_curve: nMAE 16.70% of mean daily energy on 10,954 points",
+    "[\u25c6 walk-forward out-of-sample] forecast/forecast_dayahead_alpha_endogenous: skill -0.032 vs persistence (nMAE 21.00% vs 20.36%) at h=24h on 1,024 periods | physics_perfect_irradiance 13.19%",
+    "[\u25c6 walk-forward out-of-sample] forecast/forecast_soiling_sr_ribera: soiling-ratio MAE 1.44 pp (sd 0.54) at h=24h over 36 walk-forward windows"
+  ],
+  "scoreboard": {
+    "cross_distribution": [
+      "pv/gpvs_cross_dataset: macro-F1 0.189 on 80,000 samples",
+      "pv/rul_cross_dataset: Spearman -0.375 on 9 modules (WEAK NEGATIVE \u2014 partial transfer)",
+      "pv/sandia_sat_transfer: \u23f8  data not yet fetched (see report.reason)",
+      "bess/lfp_secondlife_2025: 75% of cells within \u00b110% EOL (MAPE 21%) \u2014 naive baseline: linear extrapolation from first 25% of checkpoints",
+      "bess/nasa: 50% of cells within \u00b110% EOL (MAPE 49%) \u2014 naive baseline: linear extrapolation from first 50 cycles"
+    ],
+    "in_distribution": [
+      "pv/lazzaretti_holdout: macro-F1 0.835 on 99,481 samples",
+      "pv/lazzaretti_lgbm: macro-F1 0.998 on 99,481 samples",
+      "pv/lazzaretti_physics_blind: macro-F1 0.519 on 99,481 samples",
+      "bess/severson: 1% of cells within \u00b110% EOL (MAPE 35%) \u2014 naive baseline: linear extrapolation from first 200 cycles",
+      "bess/severson_delta_q: 48% of cells within \u00b110% EOL (MAPE 19%) \u2014 our model: Ridge regression on delta-Q features (Severson 2019), cycles 10-100",
+      "bess/severson_lgbm: 49% of cells within \u00b110% EOL (MAPE 17%) \u2014 our model: LGBMRegressor (200 trees, depth 4, min_child=5)"
+    ],
+    "literature_comparison": [
+      "pv/sandia_pv_iv_el_degradation: fleet fade 0.886 %/yr mean, 0.724 %/yr median across 166 modules",
+      "soiling/nrel_map_sites: soiling_rate_during_dry_intervals_pct_per_day: p25 0.088 / p50 0.107 / p75 0.136 across 146 sites"
+    ],
+    "ground_truth_measurement": [
+      "soiling/pvdaq_system_2107: IWSR = 0.949 on 2,557 days (136 soiling intervals detected)",
+      "soiling/pvdaq_system_34: \u23f8  harness ready, implementation pending",
+      "soiling/pvdaq_system_7334: IWSR = 0.960 on 1,884 days (31 soiling intervals detected)",
+      "soiling/pvdaq_system_9069: IWSR = 0.920 on 2,815 days (183 soiling intervals detected)"
+    ],
+    "physics_check": [
+      "soiling/universal_dayone: 7/7 plants resolved to the correct climate zone (100%)"
+    ],
+    "literature_vs_observed": [
+      "soiling/climate_prior_cross_check: 1/3 sites within +/-30% of the climate prior"
+    ],
+    "provenance_audit": [
+      "pv/classifier_provenance: 4 published fault numbers traced to their classifiers; 0.835/0.519 comparable, 0.189 is a different implementation"
+    ],
+    "synthetic_perturbation": [
+      "pv/scale_transfer_lazzaretti: macro-F1 0.8348 unperturbed falls to 0.2677 on a rig of another size; 4 classes reach F1 0.000. Normalised, invariant to within 0.0"
+    ],
+    "walk_forward_oos": [
+      "twin/twin_15min_dayone: nMAE 6.57% of AC nameplate on 42,229 points, 35 walk-forward windows",
+      "twin/twin_15min_alpha: nMAE 6.68% of AC nameplate (bias +2.11%) on 42,229 points, 35 walk-forward windows | physics_only 6.61% -> ML uplift -1%",
+      "twin/twin_daily_energy_es_fleet: nMAE 9.31% of mean daily energy (bias +1.13%) on 5,847 points, 248 walk-forward windows | irradiance_scaling 8.51% -> ML uplift -9%",
+      "twin/twin_feature_ablation: nMAE 10.04% of mean daily energy on 10,954 points | reference 8.90% -> ML uplift -13%",
+      "twin/twin_local_data_curve: nMAE 16.70% of mean daily energy on 10,954 points",
+      "forecast/forecast_dayahead_alpha_endogenous: skill -0.032 vs persistence (nMAE 21.00% vs 20.36%) at h=24h on 1,024 periods | physics_perfect_irradiance 13.19%",
+      "forecast/forecast_soiling_sr_ribera: soiling-ratio MAE 1.44 pp (sd 0.54) at h=24h over 36 walk-forward windows"
+    ],
+    "in_dist_shipped_code": [
+      "pv/shipped_detector_lazzaretti: macro-F1 0.183 on 200,000 samples",
+      "pv/shipped_detector_lazzaretti_before_fixes: macro-F1 0.196 on 200,000 samples",
+      "pv/shipped_detector_lazzaretti_dwell1: macro-F1 0.202 on 200,000 samples",
+      "pv/shipped_detector_lazzaretti_v5: macro-F1 0.204 on 200,000 samples"
+    ],
+    "cross_plant_transfer": [
+      "twin/twin_daily_energy_leave_one_plant_out: nMAE 11.19% of mean daily energy (bias -0.04%) on 9,495 points | irradiance_scaling 8.90% -> ML uplift -26%"
+    ],
+    "transfer_readiness": [
+      "soiling/africa_transferability: 9 sites triaged: 2 high_confidence_production, 4 literature_only, 3 needs_dustiq_rollout"
+    ],
+    "operability_no_labels": [
+      "pv/classifier_class_mix_real_plants: on 3 real plants the fixed-reference cascade never emits degradation, short_circuit at all",
+      "pv/peer_inverter_underperformance_fleet: 1.14 alerts/MW/month on 416 devices, FAILS the 1.0 gate | null tail 0.0020% vs theory 0.0032% (calibrated), signal 157.7x null | alert rate tracks plant size (rho +0.83)",
+      "pv/rule_firing_rates_real_plants: report present"
+    ],
+    "untagged": []
+  }
+}

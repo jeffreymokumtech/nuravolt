@@ -1,0 +1,329 @@
+{
+  "generatedAt": "2025-01-13T12:00:00Z",
+  "plants": [
+    {
+      "plantId": "alpha",
+      "plantName": "Alpha",
+      "assetType": "SOLAR",
+      "location": "Region A, Southern Europe",
+      "capacity_MW": 9.0,
+      "totalInverters": 150,
+      "inverterGroups": [
+        "PV-01",
+        "PV-02",
+        "PV-03",
+        "PV-04",
+        "PV-05"
+      ],
+      "status": "operational",
+      "healthDistribution": {
+        "normal": 142,
+        "minorIssues": 5,
+        "majorIssues": 2,
+        "critical": 1
+      },
+      "metrics": {
+        "avgR2": 0.94,
+        "avgMAE_kW": 2.3,
+        "soilingRatio": 0.96,
+        "healthScore": 92
+      },
+      "dataRange": {
+        "start": "2024-01-01",
+        "end": "2025-01-13"
+      },
+      "lastUpdated": "2025-01-13T08:00:00Z"
+    },
+    {
+      "plantId": "ribera",
+      "plantName": "Beta",
+      "assetType": "SOLAR",
+      "location": "Region A, Southern Europe",
+      "capacity_MW": 7.2,
+      "totalInverters": 120,
+      "inverterGroups": [
+        "PV-01",
+        "PV-02",
+        "PV-03",
+        "PV-04"
+      ],
+      "status": "operational",
+      "healthDistribution": {
+        "normal": 115,
+        "minorIssues": 4,
+        "majorIssues": 1,
+        "critical": 0
+      },
+      "metrics": {
+        "avgR2": 0.95,
+        "avgMAE_kW": 1.9,
+        "soilingRatio": 0.97,
+        "healthScore": 95
+      },
+      "dataRange": {
+        "start": "2024-01-01",
+        "end": "2025-01-13"
+      },
+      "lastUpdated": "2025-01-13T08:00:00Z"
+    },
+    {
+      "plantId": "gamma",
+      "plantName": "Gamma",
+      "assetType": "SOLAR",
+      "location": "Region B, Southern Europe",
+      "capacity_MW": 2.7,
+      "totalInverters": 45,
+      "inverterGroups": [
+        "PV-01",
+        "PV-02"
+      ],
+      "status": "operational",
+      "healthDistribution": {
+        "normal": 43,
+        "minorIssues": 2,
+        "majorIssues": 0,
+        "critical": 0
+      },
+      "metrics": {
+        "avgR2": 0.96,
+        "avgMAE_kW": 1.5,
+        "soilingRatio": 0.98,
+        "healthScore": 97
+      },
+      "dataRange": {
+        "start": "2024-01-01",
+        "end": "2025-01-13"
+      },
+      "lastUpdated": "2025-01-13T08:00:00Z"
+    },
+    {
+      "plantId": "delta",
+      "plantName": "Delta",
+      "assetType": "SOLAR",
+      "location": "Region C, Mediterranean",
+      "capacity_MW": 2.58,
+      "totalInverters": 43,
+      "inverterGroups": [
+        "PV-01",
+        "PV-02"
+      ],
+      "status": "operational",
+      "healthDistribution": {
+        "normal": 40,
+        "minorIssues": 2,
+        "majorIssues": 1,
+        "critical": 0
+      },
+      "metrics": {
+        "avgR2": 0.93,
+        "avgMAE_kW": 2.1,
+        "soilingRatio": 0.95,
+        "healthScore": 91
+      },
+      "dataRange": {
+        "start": "2024-01-01",
+        "end": "2025-01-13"
+      },
+      "lastUpdated": "2025-01-13T08:00:00Z"
+    },
+    {
+      "plantId": "epsilon",
+      "plantName": "Epsilon",
+      "assetType": "SOLAR",
+      "location": "Region D, Southern Europe",
+      "capacity_MW": 2.16,
+      "totalInverters": 36,
+      "inverterGroups": [
+        "PV-01",
+        "PV-02"
+      ],
+      "status": "operational",
+      "healthDistribution": {
+        "normal": 34,
+        "minorIssues": 1,
+        "majorIssues": 1,
+        "critical": 0
+      },
+      "metrics": {
+        "avgR2": 0.92,
+        "avgMAE_kW": 2.4,
+        "soilingRatio": 0.94,
+        "healthScore": 89
+      },
+      "dataRange": {
+        "start": "2024-01-01",
+        "end": "2025-01-13"
+      },
+      "lastUpdated": "2025-01-13T08:00:00Z"
+    },
+    {
+      "plantId": "zeta",
+      "plantName": "Zeta",
+      "assetType": "SOLAR",
+      "location": "Region C, Mediterranean",
+      "capacity_MW": 1.8,
+      "totalInverters": 30,
+      "inverterGroups": [
+        "PV-01"
+      ],
+      "status": "operational",
+      "healthDistribution": {
+        "normal": 28,
+        "minorIssues": 2,
+        "majorIssues": 0,
+        "critical": 0
+      },
+      "metrics": {
+        "avgR2": 0.94,
+        "avgMAE_kW": 1.8,
+        "soilingRatio": 0.96,
+        "healthScore": 93
+      },
+      "dataRange": {
+        "start": "2024-01-01",
+        "end": "2025-01-13"
+      },
+      "lastUpdated": "2025-01-13T08:00:00Z"
+    },
+    {
+      "plantId": "eta",
+      "plantName": "Eta",
+      "assetType": "SOLAR",
+      "location": "Region E, Western Europe",
+      "capacity_MW": 1.68,
+      "totalInverters": 28,
+      "inverterGroups": [
+        "PV-01"
+      ],
+      "status": "operational",
+      "healthDistribution": {
+        "normal": 26,
+        "minorIssues": 1,
+        "majorIssues": 1,
+        "critical": 0
+      },
+      "metrics": {
+        "avgR2": 0.91,
+        "avgMAE_kW": 2.6,
+        "soilingRatio": 0.93,
+        "healthScore": 88
+      },
+      "dataRange": {
+        "start": "2024-01-01",
+        "end": "2025-01-13"
+      },
+      "lastUpdated": "2025-01-13T08:00:00Z"
+    },
+    {
+      "plantId": "theta",
+      "plantName": "Industrial Rooftop Theta",
+      "assetType": "SOLAR",
+      "location": "Barcelona, Catalonia",
+      "capacity_MW": 1.0,
+      "totalInverters": 20,
+      "inverterGroups": [
+        "South",
+        "East",
+        "West"
+      ],
+      "status": "operational",
+      "healthDistribution": {
+        "normal": 17,
+        "minorIssues": 2,
+        "majorIssues": 1,
+        "critical": 0
+      },
+      "metrics": {
+        "avgR2": 0.96,
+        "avgMAE_kW": 0.8,
+        "soilingRatio": 0.95,
+        "healthScore": 88
+      },
+      "dataRange": {
+        "start": "2025-03-01",
+        "end": "2026-02-10"
+      },
+      "lastUpdated": "2026-02-10T08:00:00Z"
+    },
+    {
+      "plantId": "nordic-wind-1",
+      "plantName": "Nordic Wind",
+      "assetType": "WIND",
+      "location": "Jutland, Denmark",
+      "capacity_MW": 10.0,
+      "turbineCount": 5,
+      "turbineModel": "Vestas V110-2.0",
+      "status": "operational",
+      "healthDistribution": {
+        "normal": 4,
+        "minorIssues": 1,
+        "majorIssues": 0,
+        "critical": 0
+      },
+      "metrics": {
+        "availability": 0.96,
+        "capacityFactor": 0.32,
+        "healthScore": 91
+      },
+      "dataRange": {
+        "start": "2024-01-01",
+        "end": "2025-01-13"
+      },
+      "lastUpdated": "2025-01-13T08:00:00Z"
+    },
+    {
+      "plantId": "care-portugal",
+      "plantName": "CARE Wind Portugal",
+      "assetType": "WIND",
+      "location": "Portugal",
+      "capacity_MW": 10.0,
+      "turbineCount": 5,
+      "turbineModel": "2.0 MW Class",
+      "status": "operational",
+      "healthDistribution": {
+        "normal": 3,
+        "minorIssues": 1,
+        "majorIssues": 1,
+        "critical": 0
+      },
+      "metrics": {
+        "availability": 0.945,
+        "capacityFactor": 0.31,
+        "healthScore": 85
+      },
+      "dataRange": {
+        "start": "2019-01-01",
+        "end": "2019-12-31"
+      },
+      "lastUpdated": "2025-01-13T08:00:00Z",
+      "dataSource": "CARE Dataset (Zenodo)",
+      "hasLabeledFaults": true,
+      "labeledFaultCount": 5
+    }
+  ],
+  "summary": {
+    "totalPlants": 10,
+    "operationalPlants": 10,
+    "totalCapacity_MW": 48.12,
+    "byAssetType": {
+      "SOLAR": 8,
+      "WIND": 2,
+      "BESS": 0
+    },
+    "solarCapacity_MW": 136.6,
+    "windCapacity_MW": 20.0,
+    "totalInverters": 472,
+    "totalTurbines": 10,
+    "criticalIssues": 1,
+    "majorIssues": 7,
+    "topPerformers": [
+      "gamma",
+      "ribera",
+      "zeta"
+    ],
+    "needsAttention": [
+      "alpha",
+      "eta"
+    ]
+  }
+}

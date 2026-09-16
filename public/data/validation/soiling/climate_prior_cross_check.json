@@ -1,0 +1,55 @@
+{
+  "dataset": "Climate prior vs PVDAQ rdtools cross-validation",
+  "n_samples": 3,
+  "n_sites_compared": 3,
+  "n_sites_within_30pct": 1,
+  "sites": [
+    {
+      "system_id": 2107,
+      "name": "Farm Solar Array (Arbuckle CA)",
+      "lat": 38.996306,
+      "lon": -122.134111,
+      "zone": "DESERT_SOUTHWEST_US",
+      "climate_prior_rate_pct_day": 0.2026,
+      "rdtools_iwsr": 0.9494,
+      "rdtools_n_intervals": 136,
+      "rdtools_n_days_used": 2557,
+      "observed_rate_pct_day_approx": 0.1511,
+      "delta_abs_pct_day": -0.0515,
+      "delta_relative_to_prior_pct": -25.4,
+      "within_30pct": true
+    },
+    {
+      "system_id": 7334,
+      "name": "Shine On Solar Facility (CA utility 257MW)",
+      "lat": 37.0,
+      "lon": -120.0,
+      "zone": "DESERT_SOUTHWEST_US",
+      "climate_prior_rate_pct_day": 0.1488,
+      "rdtools_iwsr": 0.9595,
+      "rdtools_n_intervals": 31,
+      "rdtools_n_days_used": 1884,
+      "observed_rate_pct_day_approx": 0.5815,
+      "delta_abs_pct_day": 0.4327,
+      "delta_relative_to_prior_pct": 290.8,
+      "within_30pct": false
+    },
+    {
+      "system_id": 9069,
+      "name": "Simon Solar Farm (Social Circle GA)",
+      "lat": 33.6762,
+      "lon": -83.676,
+      "zone": "HUMID_SUBTROPICAL",
+      "climate_prior_rate_pct_day": 0.1402,
+      "rdtools_iwsr": 0.92,
+      "rdtools_n_intervals": 183,
+      "rdtools_n_days_used": 2815,
+      "observed_rate_pct_day_approx": 0.3277,
+      "delta_abs_pct_day": 0.1875,
+      "delta_relative_to_prior_pct": 133.7,
+      "within_30pct": false
+    }
+  ],
+  "note": "Compares climate_prior_forecast literature numbers against rdtools-observed rates per PVDAQ site. Observed rate is an approximation derived from IWSR + interval count (avg loss per interval / avg days per interval). A match within \u00b130% means our climate prior is calibrated for that climate zone.",
+  "generated_at": "2026-06-21T11:23:58.935378Z"
+}

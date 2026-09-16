@@ -1,0 +1,146 @@
+[
+ {
+  "date": "2024-06-15",
+  "soh": 0.99867,
+  "source": "commissioning",
+  "cumulative_cycles": 0.0
+ },
+ {
+  "date": "2024-07-01",
+  "soh": 0.9968,
+  "source": "estimated",
+  "cumulative_cycles": 0.0
+ },
+ {
+  "date": "2024-08-01",
+  "soh": 0.99493,
+  "source": "estimated",
+  "cumulative_cycles": 0.0
+ },
+ {
+  "date": "2024-09-01",
+  "soh": 0.9936,
+  "source": "capacity_test",
+  "cumulative_cycles": 0.0
+ },
+ {
+  "date": "2024-10-01",
+  "soh": 0.99227,
+  "source": "estimated",
+  "cumulative_cycles": 0.0
+ },
+ {
+  "date": "2024-11-01",
+  "soh": 0.99094,
+  "source": "estimated",
+  "cumulative_cycles": 0.0
+ },
+ {
+  "date": "2024-12-01",
+  "soh": 0.98967,
+  "source": "capacity_test",
+  "cumulative_cycles": 0.0
+ },
+ {
+  "date": "2025-01-01",
+  "soh": 0.9884,
+  "source": "estimated",
+  "cumulative_cycles": 0.0
+ },
+ {
+  "date": "2025-02-01",
+  "soh": 0.98713,
+  "source": "estimated",
+  "cumulative_cycles": 0.0
+ },
+ {
+  "date": "2025-03-01",
+  "soh": 0.9858,
+  "source": "capacity_test",
+  "cumulative_cycles": 0.0
+ },
+ {
+  "date": "2025-04-01",
+  "soh": 0.98447,
+  "source": "estimated",
+  "cumulative_cycles": 0.0
+ },
+ {
+  "date": "2025-05-01",
+  "soh": 0.98314,
+  "source": "estimated",
+  "cumulative_cycles": 31.5
+ },
+ {
+  "date": "2025-06-01",
+  "soh": 0.98181,
+  "source": "capacity_test",
+  "cumulative_cycles": 63.3
+ },
+ {
+  "date": "2025-07-01",
+  "soh": 0.97994,
+  "source": "estimated",
+  "cumulative_cycles": 97.1
+ },
+ {
+  "date": "2025-08-01",
+  "soh": 0.97807,
+  "source": "estimated",
+  "cumulative_cycles": 129.5
+ },
+ {
+  "date": "2025-09-01",
+  "soh": 0.97674,
+  "source": "capacity_test",
+  "cumulative_cycles": 162.9
+ },
+ {
+  "date": "2025-10-01",
+  "soh": 0.97541,
+  "source": "estimated",
+  "cumulative_cycles": 194.1
+ },
+ {
+  "date": "2025-11-01",
+  "soh": 0.97408,
+  "source": "estimated",
+  "cumulative_cycles": 227.1
+ },
+ {
+  "date": "2025-12-01",
+  "soh": 0.97281,
+  "source": "capacity_test",
+  "cumulative_cycles": 259.6
+ },
+ {
+  "date": "2026-01-01",
+  "soh": 0.97154,
+  "source": "estimated",
+  "cumulative_cycles": 293.1
+ },
+ {
+  "date": "2026-02-01",
+  "soh": 0.97027,
+  "source": "estimated",
+  "cumulative_cycles": 325.7
+ },
+ {
+  "date": "2026-03-01",
+  "soh": 0.96894,
+  "source": "capacity_test",
+  "cumulative_cycles": 355.5
+ },
+ {
+  "date": "2026-04-01",
+  "soh": 0.96761,
+  "source": "estimated",
+  "cumulative_cycles": 389.6
+ },
+ {
+  "date": "2026-05-02",
+  "soh": 0.963,
+  "source": "capacity_test",
+  "cumulative_cycles": 422.6
+ }
+]

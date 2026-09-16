@@ -1,0 +1,61 @@
+{
+  "dataset": "Alpha day-ahead plant energy (endogenous, no weather feed)",
+  "n_samples": 1024,
+  "n_windows": 35,
+  "horizon_hours": 24,
+  "driver": "endogenous",
+  "normalizer": "mean_measured",
+  "normalizer_value": 50496.759,
+  "nmae_pct": 21.004,
+  "mbe_pct": 0.917,
+  "baseline": "persistence",
+  "model": {
+    "label": "model",
+    "nmae_pct": 21.004,
+    "nrmse_pct": 27.653,
+    "mbe_pct": 0.917,
+    "r2_footnote_only": 0.5099
+  },
+  "baselines": {
+    "persistence": {
+      "label": "persistence",
+      "nmae_pct": 20.359,
+      "nrmse_pct": 29.688,
+      "mbe_pct": 0.007,
+      "r2_footnote_only": 0.4352
+    },
+    "climatology": {
+      "label": "climatology",
+      "nmae_pct": 28.781,
+      "nrmse_pct": 37.047,
+      "mbe_pct": 1.595,
+      "r2_footnote_only": 0.1204
+    },
+    "physics_perfect_irradiance": {
+      "label": "physics_perfect_irradiance",
+      "nmae_pct": 13.192,
+      "nrmse_pct": 26.272,
+      "mbe_pct": 1.977,
+      "r2_footnote_only": 0.5577
+    }
+  },
+  "retention": {
+    "n_days_scored": 1024,
+    "min_intervals_per_day": 90,
+    "note": "Days with fewer than 90 of 96 intervals dropped, and days whose predecessor is not the previous calendar day dropped so the persistence baseline is well defined on the identical sample."
+  },
+  "extras": {
+    "baseline_definitions": {
+      "persistence": "yesterday's measured energy",
+      "climatology": "day-of-year mean over the training period",
+      "physics_perfect_irradiance": "performance-ratio model fed the OBSERVED insolation. An oracle upper bound, not an achievable forecast; shown to expose how much of the remaining error is weather uncertainty rather than model error."
+    },
+    "limitation": "No numerical weather prediction (NWP) input. Every Open-Meteo call in this repo currently hits the ERA5 reanalysis archive, which is a record of what already happened and would leak if used as a forecast input. A true day-ahead skill score needs archived forecast runs."
+  },
+  "baseline_nmae_pct": 20.359,
+  "skill_score": -0.0317,
+  "reference_baseline": "physics_perfect_irradiance",
+  "reference_nmae_pct": 13.192,
+  "uplift_vs_reference_pct": -59.22,
+  "generated_at": "2026-08-20T11:55:37.664213Z"
+}

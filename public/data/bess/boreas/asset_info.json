@@ -1,0 +1,13 @@
+{
+  "asset_id": "bess-boreas-001",
+  "plant_id": "boreas",
+  "name": "Boreas Storage Hub",
+  "chemistry": "LFP",
+  "nominal_capacity_kwh": 100000,
+  "nominal_power_kw": 50000,
+  "manufacturer": "Tesla",
+  "model": "Megapack 2 XL",
+  "installation_date": "2024-06-15",
+  "current_soh": 0.963,
+  "current_soc": 0.42
+}

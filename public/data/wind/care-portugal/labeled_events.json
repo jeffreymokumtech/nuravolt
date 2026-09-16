@@ -1,0 +1,102 @@
+[
+  {
+    "id": "CARE-EVT-001",
+    "datasetId": "farm_a_t001_gearbox_fault_2019",
+    "turbineId": "T001",
+    "faultType": {
+      "id": "GB001",
+      "category": "GEARBOX",
+      "code": "GB001",
+      "name": "Gearbox Bearing Overtemperature",
+      "severity": "HIGH"
+    },
+    "eventStart": "2019-06-15T00:00:00Z",
+    "eventEnd": "2019-07-02T00:00:00Z",
+    "description": "Progressive gearbox bearing temperature increase leading to maintenance stop",
+    "careMetadata": {
+      "farm": "A",
+      "features": 86,
+      "durationDays": 17
+    }
+  },
+  {
+    "id": "CARE-EVT-002",
+    "datasetId": "farm_a_t002_generator_fault_2019",
+    "turbineId": "T002",
+    "faultType": {
+      "id": "GN001",
+      "category": "GENERATOR",
+      "code": "GN001",
+      "name": "Generator Bearing DE Overtemperature",
+      "severity": "HIGH"
+    },
+    "eventStart": "2019-08-10T00:00:00Z",
+    "eventEnd": "2019-08-25T00:00:00Z",
+    "description": "Drive-end generator bearing temperature anomaly",
+    "careMetadata": {
+      "farm": "A",
+      "features": 86,
+      "durationDays": 15
+    }
+  },
+  {
+    "id": "CARE-EVT-003",
+    "datasetId": "farm_a_t003_pitch_fault_2019",
+    "turbineId": "T003",
+    "faultType": {
+      "id": "BL001",
+      "category": "PITCH",
+      "code": "BL001",
+      "name": "Pitch System Malfunction",
+      "severity": "MEDIUM"
+    },
+    "eventStart": "2019-09-05T00:00:00Z",
+    "eventEnd": "2019-09-12T00:00:00Z",
+    "description": "Blade pitch angle deviation from setpoint",
+    "careMetadata": {
+      "farm": "A",
+      "features": 86,
+      "durationDays": 7
+    }
+  },
+  {
+    "id": "CARE-EVT-004",
+    "datasetId": "farm_a_t004_yaw_fault_2019",
+    "turbineId": "T004",
+    "faultType": {
+      "id": "YW001",
+      "category": "YAW",
+      "code": "YW001",
+      "name": "Yaw Misalignment",
+      "severity": "MEDIUM"
+    },
+    "eventStart": "2019-07-20T00:00:00Z",
+    "eventEnd": "2019-07-28T00:00:00Z",
+    "description": "Persistent yaw error causing power loss",
+    "careMetadata": {
+      "farm": "A",
+      "features": 86,
+      "durationDays": 8
+    }
+  },
+  {
+    "id": "CARE-EVT-005",
+    "datasetId": "farm_a_t005_main_bearing_2019",
+    "turbineId": "T005",
+    "faultType": {
+      "id": "MB001",
+      "category": "MAIN_BEARING",
+      "code": "MB001",
+      "name": "Main Bearing Overtemperature",
+      "severity": "CRITICAL"
+    },
+    "eventStart": "2019-10-01T00:00:00Z",
+    "eventEnd": "2019-10-20T00:00:00Z",
+    "description": "Main shaft bearing temperature exceeding limits",
+    "careMetadata": {
+      "farm": "A",
+      "features": 86,
+      "durationDays": 19
+    }
+  }
+]

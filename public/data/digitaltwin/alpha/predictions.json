@@ -1,0 +1,906 @@
+{
+  "generatedAt": "2025-11-29T23:48:07.640559",
+  "dataSource": "demo_spain/emsdt_650addffb0721062b19a6636_15_00461_Inverter_Inverter Power Normalized_training.parquet",
+  "predictions": {
+    "INV 01.001": {
+      "expected_power_kW": 0.195,
+      "actual_power_kW": 0.095,
+      "power_loss_pct": 51.38,
+      "timestamp": "2025-11-29T23:48:07.355322"
+    },
+    "INV 01.003": {
+      "expected_power_kW": 0.233,
+      "actual_power_kW": 0.094,
+      "power_loss_pct": 59.72,
+      "timestamp": "2025-11-29T23:48:07.357528"
+    },
+    "INV 01.002": {
+      "expected_power_kW": 0.213,
+      "actual_power_kW": 0.093,
+      "power_loss_pct": 56.3,
+      "timestamp": "2025-11-29T23:48:07.359313"
+    },
+    "INV 01.005": {
+      "expected_power_kW": 0.231,
+      "actual_power_kW": 0.095,
+      "power_loss_pct": 59.09,
+      "timestamp": "2025-11-29T23:48:07.361240"
+    },
+    "INV 01.004": {
+      "expected_power_kW": 0.236,
+      "actual_power_kW": 0.093,
+      "power_loss_pct": 60.33,
+      "timestamp": "2025-11-29T23:48:07.363274"
+    },
+    "INV 01.006": {
+      "expected_power_kW": 0.217,
+      "actual_power_kW": 0.094,
+      "power_loss_pct": 56.52,
+      "timestamp": "2025-11-29T23:48:07.365357"
+    },
+    "INV 01.007": {
+      "expected_power_kW": 0.217,
+      "actual_power_kW": 0.096,
+      "power_loss_pct": 55.67,
+      "timestamp": "2025-11-29T23:48:07.367100"
+    },
+    "INV 01.008": {
+      "expected_power_kW": 0.194,
+      "actual_power_kW": 0.096,
+      "power_loss_pct": 50.65,
+      "timestamp": "2025-11-29T23:48:07.369001"
+    },
+    "INV 01.009": {
+      "expected_power_kW": 0.209,
+      "actual_power_kW": 0.095,
+      "power_loss_pct": 54.44,
+      "timestamp": "2025-11-29T23:48:07.370696"
+    },
+    "INV 01.011": {
+      "expected_power_kW": 0.199,
+      "actual_power_kW": 0.095,
+      "power_loss_pct": 52.24,
+      "timestamp": "2025-11-29T23:48:07.372430"
+    },
+    "INV 01.010": {
+      "expected_power_kW": 0.205,
+      "actual_power_kW": 0.096,
+      "power_loss_pct": 53.1,
+      "timestamp": "2025-11-29T23:48:07.374245"
+    },
+    "INV 01.012": {
+      "expected_power_kW": 0.191,
+      "actual_power_kW": 0.094,
+      "power_loss_pct": 50.69,
+      "timestamp": "2025-11-29T23:48:07.376165"
+    },
+    "INV 01.013": {
+      "expected_power_kW": 0.218,
+      "actual_power_kW": 0.094,
+      "power_loss_pct": 56.73,
+      "timestamp": "2025-11-29T23:48:07.377910"
+    },
+    "INV 01.014": {
+      "expected_power_kW": 0.204,
+      "actual_power_kW": 0.093,
+      "power_loss_pct": 54.19,
+      "timestamp": "2025-11-29T23:48:07.379931"
+    },
+    "INV 01.017": {
+      "expected_power_kW": 0.201,
+      "actual_power_kW": 0.099,
+      "power_loss_pct": 50.66,
+      "timestamp": "2025-11-29T23:48:07.381679"
+    },
+    "INV 01.018": {
+      "expected_power_kW": 0.22,
+      "actual_power_kW": 0.096,
+      "power_loss_pct": 56.13,
+      "timestamp": "2025-11-29T23:48:07.383315"
+    },
+    "INV 01.015": {
+      "expected_power_kW": 0.204,
+      "actual_power_kW": 0.093,
+      "power_loss_pct": 54.39,
+      "timestamp": "2025-11-29T23:48:07.385226"
+    },
+    "INV 01.016": {
+      "expected_power_kW": 0.212,
+      "actual_power_kW": 0.093,
+      "power_loss_pct": 56.05,
+      "timestamp": "2025-11-29T23:48:07.387037"
+    },
+    "INV 01.021": {
+      "expected_power_kW": 0.198,
+      "actual_power_kW": 0.089,
+      "power_loss_pct": 54.94,
+      "timestamp": "2025-11-29T23:48:07.388711"
+    },
+    "INV 01.019": {
+      "expected_power_kW": 0.197,
+      "actual_power_kW": 0.093,
+      "power_loss_pct": 53.06,
+      "timestamp": "2025-11-29T23:48:07.393740"
+    },
+    "INV 01.020": {
+      "expected_power_kW": 0.182,
+      "actual_power_kW": 0.094,
+      "power_loss_pct": 48.64,
+      "timestamp": "2025-11-29T23:48:07.398319"
+    },
+    "INV 01.022": {
+      "expected_power_kW": 0.19,
+      "actual_power_kW": 0.086,
+      "power_loss_pct": 54.85,
+      "timestamp": "2025-11-29T23:48:07.401228"
+    },
+    "INV 01.023": {
+      "expected_power_kW": 0.199,
+      "actual_power_kW": 0.088,
+      "power_loss_pct": 55.56,
+      "timestamp": "2025-11-29T23:48:07.403027"
+    },
+    "INV 01.025": {
+      "expected_power_kW": 0.2,
+      "actual_power_kW": 0.093,
+      "power_loss_pct": 53.82,
+      "timestamp": "2025-11-29T23:48:07.404661"
+    },
+    "INV 01.024": {
+      "expected_power_kW": 0.233,
+      "actual_power_kW": 0.092,
+      "power_loss_pct": 60.58,
+      "timestamp": "2025-11-29T23:48:07.406507"
+    },
+    "INV 01.026": {
+      "expected_power_kW": 0.229,
+      "actual_power_kW": 0.092,
+      "power_loss_pct": 59.75,
+      "timestamp": "2025-11-29T23:48:07.408212"
+    },
+    "INV 01.027": {
+      "expected_power_kW": 0.214,
+      "actual_power_kW": 0.097,
+      "power_loss_pct": 54.6,
+      "timestamp": "2025-11-29T23:48:07.410140"
+    },
+    "INV 01.028": {
+      "expected_power_kW": 0.203,
+      "actual_power_kW": 0.096,
+      "power_loss_pct": 52.87,
+      "timestamp": "2025-11-29T23:48:07.412096"
+    },
+    "INV 01.029": {
+      "expected_power_kW": 0.246,
+      "actual_power_kW": 0.1,
+      "power_loss_pct": 59.37,
+      "timestamp": "2025-11-29T23:48:07.413910"
+    },
+    "INV 01.030": {
+      "expected_power_kW": 0.216,
+      "actual_power_kW": 0.099,
+      "power_loss_pct": 54.23,
+      "timestamp": "2025-11-29T23:48:07.415826"
+    },
+    "INV 02.033": {
+      "expected_power_kW": 0.214,
+      "actual_power_kW": 0.093,
+      "power_loss_pct": 56.52,
+      "timestamp": "2025-11-29T23:48:07.417585"
+    },
+    "INV 02.034": {
+      "expected_power_kW": 0.187,
+      "actual_power_kW": 0.091,
+      "power_loss_pct": 51.21,
+      "timestamp": "2025-11-29T23:48:07.419211"
+    },
+    "INV 02.032": {
+      "expected_power_kW": 0.207,
+      "actual_power_kW": 0.091,
+      "power_loss_pct": 55.93,
+      "timestamp": "2025-11-29T23:48:07.421044"
+    },
+    "INV 02.031": {
+      "expected_power_kW": 0.184,
+      "actual_power_kW": 0.091,
+      "power_loss_pct": 50.4,
+      "timestamp": "2025-11-29T23:48:07.422742"
+    },
+    "INV 02.037": {
+      "expected_power_kW": 0.205,
+      "actual_power_kW": 0.09,
+      "power_loss_pct": 56.31,
+      "timestamp": "2025-11-29T23:48:07.424714"
+    },
+    "INV 02.036": {
+      "expected_power_kW": 0.196,
+      "actual_power_kW": 0.09,
+      "power_loss_pct": 54.1,
+      "timestamp": "2025-11-29T23:48:07.426671"
+    },
+    "INV 02.035": {
+      "expected_power_kW": 0.215,
+      "actual_power_kW": 0.091,
+      "power_loss_pct": 57.75,
+      "timestamp": "2025-11-29T23:48:07.428413"
+    },
+    "INV 02.038": {
+      "expected_power_kW": 0.216,
+      "actual_power_kW": 0.089,
+      "power_loss_pct": 58.82,
+      "timestamp": "2025-11-29T23:48:07.430120"
+    },
+    "INV 02.041": {
+      "expected_power_kW": 0.187,
+      "actual_power_kW": 0.048,
+      "power_loss_pct": 74.48,
+      "timestamp": "2025-11-29T23:48:07.431887"
+    },
+    "INV 02.040": {
+      "expected_power_kW": 0.206,
+      "actual_power_kW": 0.088,
+      "power_loss_pct": 57.05,
+      "timestamp": "2025-11-29T23:48:07.433451"
+    },
+    "INV 02.039": {
+      "expected_power_kW": 0.185,
+      "actual_power_kW": 0.091,
+      "power_loss_pct": 50.68,
+      "timestamp": "2025-11-29T23:48:07.435491"
+    },
+    "INV 02.042": {
+      "expected_power_kW": 0.22,
+      "actual_power_kW": 0.089,
+      "power_loss_pct": 59.63,
+      "timestamp": "2025-11-29T23:48:07.437136"
+    },
+    "INV 02.043": {
+      "expected_power_kW": 0.181,
+      "actual_power_kW": 0.09,
+      "power_loss_pct": 50.47,
+      "timestamp": "2025-11-29T23:48:07.438842"
+    },
+    "INV 02.044": {
+      "expected_power_kW": 0.201,
+      "actual_power_kW": 0.088,
+      "power_loss_pct": 56.39,
+      "timestamp": "2025-11-29T23:48:07.440607"
+    },
+    "INV 02.045": {
+      "expected_power_kW": 0.193,
+      "actual_power_kW": 0.088,
+      "power_loss_pct": 54.45,
+      "timestamp": "2025-11-29T23:48:07.442399"
+    },
+    "INV 02.046": {
+      "expected_power_kW": 0.208,
+      "actual_power_kW": 0.09,
+      "power_loss_pct": 56.86,
+      "timestamp": "2025-11-29T23:48:07.444116"
+    },
+    "INV 02.048": {
+      "expected_power_kW": 0.218,
+      "actual_power_kW": 0.093,
+      "power_loss_pct": 57.34,
+      "timestamp": "2025-11-29T23:48:07.446071"
+    },
+    "INV 02.047": {
+      "expected_power_kW": 0.215,
+      "actual_power_kW": 0.092,
+      "power_loss_pct": 57.1,
+      "timestamp": "2025-11-29T23:48:07.447650"
+    },
+    "INV 02.049": {
+      "expected_power_kW": 0.213,
+      "actual_power_kW": 0.092,
+      "power_loss_pct": 56.89,
+      "timestamp": "2025-11-29T23:48:07.449421"
+    },
+    "INV 02.052": {
+      "expected_power_kW": 0.21,
+      "actual_power_kW": 0.094,
+      "power_loss_pct": 55.3,
+      "timestamp": "2025-11-29T23:48:07.451315"
+    },
+    "INV 02.051": {
+      "expected_power_kW": 0.208,
+      "actual_power_kW": 0.093,
+      "power_loss_pct": 55.21,
+      "timestamp": "2025-11-29T23:48:07.453081"
+    },
+    "INV 02.050": {
+      "expected_power_kW": 0.225,
+      "actual_power_kW": 0.091,
+      "power_loss_pct": 59.67,
+      "timestamp": "2025-11-29T23:48:07.454722"
+    },
+    "INV 02.054": {
+      "expected_power_kW": 0.199,
+      "actual_power_kW": 0.097,
+      "power_loss_pct": 51.43,
+      "timestamp": "2025-11-29T23:48:07.456496"
+    },
+    "INV 02.053": {
+      "expected_power_kW": 0.198,
+      "actual_power_kW": 0.097,
+      "power_loss_pct": 51.23,
+      "timestamp": "2025-11-29T23:48:07.458393"
+    },
+    "INV 02.056": {
+      "expected_power_kW": 0.199,
+      "actual_power_kW": 0.098,
+      "power_loss_pct": 50.82,
+      "timestamp": "2025-11-29T23:48:07.461307"
+    },
+    "INV 02.055": {
+      "expected_power_kW": 0.199,
+      "actual_power_kW": 0.097,
+      "power_loss_pct": 51.57,
+      "timestamp": "2025-11-29T23:48:07.463868"
+    },
+    "INV 02.057": {
+      "expected_power_kW": 0.202,
+      "actual_power_kW": 0.097,
+      "power_loss_pct": 51.74,
+      "timestamp": "2025-11-29T23:48:07.467209"
+    },
+    "INV 02.059": {
+      "expected_power_kW": 0.194,
+      "actual_power_kW": 0.099,
+      "power_loss_pct": 49.05,
+      "timestamp": "2025-11-29T23:48:07.469333"
+    },
+    "INV 02.058": {
+      "expected_power_kW": 0.229,
+      "actual_power_kW": 0.098,
+      "power_loss_pct": 57.08,
+      "timestamp": "2025-11-29T23:48:07.471113"
+    },
+    "INV 02.060": {
+      "expected_power_kW": 0.232,
+      "actual_power_kW": 0.099,
+      "power_loss_pct": 57.39,
+      "timestamp": "2025-11-29T23:48:07.472748"
+    },
+    "INV 03.062": {
+      "expected_power_kW": 0.222,
+      "actual_power_kW": 0.093,
+      "power_loss_pct": 58.07,
+      "timestamp": "2025-11-29T23:48:07.474504"
+    },
+    "INV 03.064": {
+      "expected_power_kW": 0.2,
+      "actual_power_kW": 0.095,
+      "power_loss_pct": 52.61,
+      "timestamp": "2025-11-29T23:48:07.476121"
+    },
+    "INV 03.061": {
+      "expected_power_kW": 0.212,
+      "actual_power_kW": 0.1,
+      "power_loss_pct": 52.86,
+      "timestamp": "2025-11-29T23:48:07.477693"
+    },
+    "INV 03.063": {
+      "expected_power_kW": 0.195,
+      "actual_power_kW": 0.095,
+      "power_loss_pct": 51.45,
+      "timestamp": "2025-11-29T23:48:07.479371"
+    },
+    "INV 03.065": {
+      "expected_power_kW": 0.204,
+      "actual_power_kW": 0.095,
+      "power_loss_pct": 53.64,
+      "timestamp": "2025-11-29T23:48:07.481057"
+    },
+    "INV 03.066": {
+      "expected_power_kW": 0.213,
+      "actual_power_kW": 0.093,
+      "power_loss_pct": 56.41,
+      "timestamp": "2025-11-29T23:48:07.482769"
+    },
+    "INV 03.067": {
+      "expected_power_kW": 0.229,
+      "actual_power_kW": 0.089,
+      "power_loss_pct": 61.23,
+      "timestamp": "2025-11-29T23:48:07.484808"
+    },
+    "INV 03.068": {
+      "expected_power_kW": 0.204,
+      "actual_power_kW": 0.09,
+      "power_loss_pct": 55.92,
+      "timestamp": "2025-11-29T23:48:07.486448"
+    },
+    "INV 03.069": {
+      "expected_power_kW": 0.23,
+      "actual_power_kW": 0.088,
+      "power_loss_pct": 61.62,
+      "timestamp": "2025-11-29T23:48:07.488039"
+    },
+    "INV 03.070": {
+      "expected_power_kW": 0.196,
+      "actual_power_kW": 0.092,
+      "power_loss_pct": 53.14,
+      "timestamp": "2025-11-29T23:48:07.489752"
+    },
+    "INV 03.071": {
+      "expected_power_kW": 0.186,
+      "actual_power_kW": 0.092,
+      "power_loss_pct": 50.79,
+      "timestamp": "2025-11-29T23:48:07.491249"
+    },
+    "INV 03.072": {
+      "expected_power_kW": 0.186,
+      "actual_power_kW": 0.093,
+      "power_loss_pct": 49.83,
+      "timestamp": "2025-11-29T23:48:07.492966"
+    },
+    "INV 03.073": {
+      "expected_power_kW": 0.22,
+      "actual_power_kW": 0.096,
+      "power_loss_pct": 56.21,
+      "timestamp": "2025-11-29T23:48:07.495072"
+    },
+    "INV 03.074": {
+      "expected_power_kW": 0.187,
+      "actual_power_kW": 0.098,
+      "power_loss_pct": 47.32,
+      "timestamp": "2025-11-29T23:48:07.496776"
+    },
+    "INV 03.075": {
+      "expected_power_kW": 0.215,
+      "actual_power_kW": 0.099,
+      "power_loss_pct": 53.77,
+      "timestamp": "2025-11-29T23:48:07.498544"
+    },
+    "INV 03.076": {
+      "expected_power_kW": 0.204,
+      "actual_power_kW": 0.099,
+      "power_loss_pct": 51.59,
+      "timestamp": "2025-11-29T23:48:07.500788"
+    },
+    "INV 03.077": {
+      "expected_power_kW": 0.195,
+      "actual_power_kW": 0.1,
+      "power_loss_pct": 48.56,
+      "timestamp": "2025-11-29T23:48:07.502945"
+    },
+    "INV 03.079": {
+      "expected_power_kW": 0.191,
+      "actual_power_kW": 0.096,
+      "power_loss_pct": 49.5,
+      "timestamp": "2025-11-29T23:48:07.504653"
+    },
+    "INV 03.078": {
+      "expected_power_kW": 0.205,
+      "actual_power_kW": 0.097,
+      "power_loss_pct": 52.89,
+      "timestamp": "2025-11-29T23:48:07.506209"
+    },
+    "INV 03.081": {
+      "expected_power_kW": 0.168,
+      "actual_power_kW": 0.091,
+      "power_loss_pct": 46.07,
+      "timestamp": "2025-11-29T23:48:07.507877"
+    },
+    "INV 03.080": {
+      "expected_power_kW": 0.194,
+      "actual_power_kW": 0.096,
+      "power_loss_pct": 50.64,
+      "timestamp": "2025-11-29T23:48:07.509596"
+    },
+    "INV 03.082": {
+      "expected_power_kW": 0.204,
+      "actual_power_kW": 0.091,
+      "power_loss_pct": 55.32,
+      "timestamp": "2025-11-29T23:48:07.511675"
+    },
+    "INV 03.083": {
+      "expected_power_kW": 0.202,
+      "actual_power_kW": 0.089,
+      "power_loss_pct": 55.65,
+      "timestamp": "2025-11-29T23:48:07.513533"
+    },
+    "INV 03.085": {
+      "expected_power_kW": 0.223,
+      "actual_power_kW": 0.088,
+      "power_loss_pct": 60.55,
+      "timestamp": "2025-11-29T23:48:07.515159"
+    },
+    "INV 03.084": {
+      "expected_power_kW": 0.233,
+      "actual_power_kW": 0.088,
+      "power_loss_pct": 62.13,
+      "timestamp": "2025-11-29T23:48:07.516831"
+    },
+    "INV 03.088": {
+      "expected_power_kW": 0.202,
+      "actual_power_kW": 0.096,
+      "power_loss_pct": 52.8,
+      "timestamp": "2025-11-29T23:48:07.518396"
+    },
+    "INV 03.086": {
+      "expected_power_kW": 0.225,
+      "actual_power_kW": 0.09,
+      "power_loss_pct": 60.25,
+      "timestamp": "2025-11-29T23:48:07.520306"
+    },
+    "INV 03.087": {
+      "expected_power_kW": 0.199,
+      "actual_power_kW": 0.092,
+      "power_loss_pct": 53.9,
+      "timestamp": "2025-11-29T23:48:07.521893"
+    },
+    "INV 03.090": {
+      "expected_power_kW": 0.213,
+      "actual_power_kW": 0.102,
+      "power_loss_pct": 52.17,
+      "timestamp": "2025-11-29T23:48:07.523557"
+    },
+    "INV 03.089": {
+      "expected_power_kW": 0.209,
+      "actual_power_kW": 0.1,
+      "power_loss_pct": 52.13,
+      "timestamp": "2025-11-29T23:48:07.525401"
+    },
+    "INV 04.093": {
+      "expected_power_kW": 0.187,
+      "actual_power_kW": 0.097,
+      "power_loss_pct": 48.18,
+      "timestamp": "2025-11-29T23:48:07.527093"
+    },
+    "INV 04.094": {
+      "expected_power_kW": 0.216,
+      "actual_power_kW": 0.098,
+      "power_loss_pct": 54.65,
+      "timestamp": "2025-11-29T23:48:07.528705"
+    },
+    "INV 04.091": {
+      "expected_power_kW": 0.217,
+      "actual_power_kW": 0.1,
+      "power_loss_pct": 53.8,
+      "timestamp": "2025-11-29T23:48:07.534677"
+    },
+    "INV 04.092": {
+      "expected_power_kW": 0.221,
+      "actual_power_kW": 0.098,
+      "power_loss_pct": 55.69,
+      "timestamp": "2025-11-29T23:48:07.538701"
+    },
+    "INV 04.095": {
+      "expected_power_kW": 0.189,
+      "actual_power_kW": 0.095,
+      "power_loss_pct": 49.66,
+      "timestamp": "2025-11-29T23:48:07.540495"
+    },
+    "INV 04.096": {
+      "expected_power_kW": 0.189,
+      "actual_power_kW": 0.095,
+      "power_loss_pct": 49.68,
+      "timestamp": "2025-11-29T23:48:07.542231"
+    },
+    "INV 04.097": {
+      "expected_power_kW": 0.211,
+      "actual_power_kW": 0.093,
+      "power_loss_pct": 55.91,
+      "timestamp": "2025-11-29T23:48:07.544026"
+    },
+    "INV 04.098": {
+      "expected_power_kW": 0.233,
+      "actual_power_kW": 0.091,
+      "power_loss_pct": 60.91,
+      "timestamp": "2025-11-29T23:48:07.545604"
+    },
+    "INV 04.100": {
+      "expected_power_kW": 0.201,
+      "actual_power_kW": 0.093,
+      "power_loss_pct": 53.63,
+      "timestamp": "2025-11-29T23:48:07.547124"
+    },
+    "INV 04.099": {
+      "expected_power_kW": 0.215,
+      "actual_power_kW": 0.094,
+      "power_loss_pct": 56.27,
+      "timestamp": "2025-11-29T23:48:07.548785"
+    },
+    "INV 04.101": {
+      "expected_power_kW": 0.206,
+      "actual_power_kW": 0.09,
+      "power_loss_pct": 56.08,
+      "timestamp": "2025-11-29T23:48:07.550414"
+    },
+    "INV 04.102": {
+      "expected_power_kW": 0.19,
+      "actual_power_kW": 0.094,
+      "power_loss_pct": 50.68,
+      "timestamp": "2025-11-29T23:48:07.551976"
+    },
+    "INV 04.104": {
+      "expected_power_kW": 0.2,
+      "actual_power_kW": 0.091,
+      "power_loss_pct": 54.72,
+      "timestamp": "2025-11-29T23:48:07.553546"
+    },
+    "INV 04.105": {
+      "expected_power_kW": 0.21,
+      "actual_power_kW": 0.091,
+      "power_loss_pct": 56.68,
+      "timestamp": "2025-11-29T23:48:07.555079"
+    },
+    "INV 04.103": {
+      "expected_power_kW": 0.206,
+      "actual_power_kW": 0.094,
+      "power_loss_pct": 54.48,
+      "timestamp": "2025-11-29T23:48:07.557003"
+    },
+    "INV 04.106": {
+      "expected_power_kW": 0.185,
+      "actual_power_kW": 0.091,
+      "power_loss_pct": 50.61,
+      "timestamp": "2025-11-29T23:48:07.558591"
+    },
+    "INV 04.107": {
+      "expected_power_kW": 0.203,
+      "actual_power_kW": 0.094,
+      "power_loss_pct": 53.93,
+      "timestamp": "2025-11-29T23:48:07.560231"
+    },
+    "INV 04.109": {
+      "expected_power_kW": 0.185,
+      "actual_power_kW": 0.094,
+      "power_loss_pct": 49.39,
+      "timestamp": "2025-11-29T23:48:07.561857"
+    },
+    "INV 04.108": {
+      "expected_power_kW": 0.191,
+      "actual_power_kW": 0.095,
+      "power_loss_pct": 50.03,
+      "timestamp": "2025-11-29T23:48:07.563463"
+    },
+    "INV 04.110": {
+      "expected_power_kW": 0.19,
+      "actual_power_kW": 0.095,
+      "power_loss_pct": 49.87,
+      "timestamp": "2025-11-29T23:48:07.565112"
+    },
+    "INV 04.113": {
+      "expected_power_kW": 0.193,
+      "actual_power_kW": 0.095,
+      "power_loss_pct": 50.97,
+      "timestamp": "2025-11-29T23:48:07.566854"
+    },
+    "INV 04.111": {
+      "expected_power_kW": 0.194,
+      "actual_power_kW": 0.095,
+      "power_loss_pct": 51.16,
+      "timestamp": "2025-11-29T23:48:07.568521"
+    },
+    "INV 04.114": {
+      "expected_power_kW": 0.191,
+      "actual_power_kW": 0.094,
+      "power_loss_pct": 50.52,
+      "timestamp": "2025-11-29T23:48:07.570266"
+    },
+    "INV 04.112": {
+      "expected_power_kW": 0.207,
+      "actual_power_kW": 0.094,
+      "power_loss_pct": 54.74,
+      "timestamp": "2025-11-29T23:48:07.571956"
+    },
+    "INV 04.116": {
+      "expected_power_kW": 0.217,
+      "actual_power_kW": 0.092,
+      "power_loss_pct": 57.45,
+      "timestamp": "2025-11-29T23:48:07.573823"
+    },
+    "INV 04.115": {
+      "expected_power_kW": 0.233,
+      "actual_power_kW": 0.093,
+      "power_loss_pct": 60.14,
+      "timestamp": "2025-11-29T23:48:07.575527"
+    },
+    "INV 04.118": {
+      "expected_power_kW": 0.224,
+      "actual_power_kW": 0.089,
+      "power_loss_pct": 60.2,
+      "timestamp": "2025-11-29T23:48:07.577495"
+    },
+    "INV 04.117": {
+      "expected_power_kW": 0.186,
+      "actual_power_kW": 0.092,
+      "power_loss_pct": 50.23,
+      "timestamp": "2025-11-29T23:48:07.579181"
+    },
+    "INV 04.120": {
+      "expected_power_kW": 0.192,
+      "actual_power_kW": 0.093,
+      "power_loss_pct": 51.52,
+      "timestamp": "2025-11-29T23:48:07.580957"
+    },
+    "INV 04.119": {
+      "expected_power_kW": 0.232,
+      "actual_power_kW": 0.09,
+      "power_loss_pct": 61.16,
+      "timestamp": "2025-11-29T23:48:07.583348"
+    },
+    "INV 05.122": {
+      "expected_power_kW": 0.194,
+      "actual_power_kW": 0.099,
+      "power_loss_pct": 49.12,
+      "timestamp": "2025-11-29T23:48:07.585100"
+    },
+    "INV 05.124": {
+      "expected_power_kW": 0.22,
+      "actual_power_kW": 0.1,
+      "power_loss_pct": 54.43,
+      "timestamp": "2025-11-29T23:48:07.586756"
+    },
+    "INV 05.123": {
+      "expected_power_kW": 0.216,
+      "actual_power_kW": 0.1,
+      "power_loss_pct": 53.76,
+      "timestamp": "2025-11-29T23:48:07.588421"
+    },
+    "INV 05.121": {
+      "expected_power_kW": 0.227,
+      "actual_power_kW": 0.095,
+      "power_loss_pct": 58.07,
+      "timestamp": "2025-11-29T23:48:07.590115"
+    },
+    "INV 05.128": {
+      "expected_power_kW": 0.222,
+      "actual_power_kW": 0.101,
+      "power_loss_pct": 54.47,
+      "timestamp": "2025-11-29T23:48:07.591631"
+    },
+    "INV 05.125": {
+      "expected_power_kW": 0.207,
+      "actual_power_kW": 0.101,
+      "power_loss_pct": 51.09,
+      "timestamp": "2025-11-29T23:48:07.593304"
+    },
+    "INV 05.126": {
+      "expected_power_kW": 0.2,
+      "actual_power_kW": 0.101,
+      "power_loss_pct": 49.31,
+      "timestamp": "2025-11-29T23:48:07.594932"
+    },
+    "INV 05.127": {
+      "expected_power_kW": 0.218,
+      "actual_power_kW": 0.101,
+      "power_loss_pct": 53.62,
+      "timestamp": "2025-11-29T23:48:07.596950"
+    },
+    "INV 05.129": {
+      "expected_power_kW": 0.234,
+      "actual_power_kW": 0.094,
+      "power_loss_pct": 59.87,
+      "timestamp": "2025-11-29T23:48:07.606069"
+    },
+    "INV 05.131": {
+      "expected_power_kW": 0.226,
+      "actual_power_kW": 0.101,
+      "power_loss_pct": 55.5,
+      "timestamp": "2025-11-29T23:48:07.607910"
+    },
+    "INV 05.133": {
+      "expected_power_kW": 0.213,
+      "actual_power_kW": 0.1,
+      "power_loss_pct": 52.77,
+      "timestamp": "2025-11-29T23:48:07.609527"
+    },
+    "INV 05.130": {
+      "expected_power_kW": 0.219,
+      "actual_power_kW": 0.103,
+      "power_loss_pct": 53.21,
+      "timestamp": "2025-11-29T23:48:07.611275"
+    },
+    "INV 05.134": {
+      "expected_power_kW": 0.2,
+      "actual_power_kW": 0.099,
+      "power_loss_pct": 50.36,
+      "timestamp": "2025-11-29T23:48:07.612907"
+    },
+    "INV 05.132": {
+      "expected_power_kW": 0.216,
+      "actual_power_kW": 0.101,
+      "power_loss_pct": 53.46,
+      "timestamp": "2025-11-29T23:48:07.614398"
+    },
+    "INV 05.136": {
+      "expected_power_kW": 0.205,
+      "actual_power_kW": 0.1,
+      "power_loss_pct": 51.47,
+      "timestamp": "2025-11-29T23:48:07.616282"
+    },
+    "INV 05.137": {
+      "expected_power_kW": 0.216,
+      "actual_power_kW": 0.099,
+      "power_loss_pct": 53.97,
+      "timestamp": "2025-11-29T23:48:07.617917"
+    },
+    "INV 05.138": {
+      "expected_power_kW": 0.185,
+      "actual_power_kW": 0.1,
+      "power_loss_pct": 46.24,
+      "timestamp": "2025-11-29T23:48:07.619804"
+    },
+    "INV 05.135": {
+      "expected_power_kW": 0.223,
+      "actual_power_kW": 0.099,
+      "power_loss_pct": 55.63,
+      "timestamp": "2025-11-29T23:48:07.621782"
+    },
+    "INV 05.139": {
+      "expected_power_kW": 0.22,
+      "actual_power_kW": 0.101,
+      "power_loss_pct": 54.24,
+      "timestamp": "2025-11-29T23:48:07.623529"
+    },
+    "INV 05.140": {
+      "expected_power_kW": 0.204,
+      "actual_power_kW": 0.0,
+      "power_loss_pct": 100.0,
+      "timestamp": "2025-11-29T23:48:07.625434"
+    },
+    "INV 05.142": {
+      "expected_power_kW": 0.206,
+      "actual_power_kW": 0.102,
+      "power_loss_pct": 50.48,
+      "timestamp": "2025-11-29T23:48:07.627337"
+    },
+    "INV 05.141": {
+      "expected_power_kW": 0.199,
+      "actual_power_kW": 0.1,
+      "power_loss_pct": 49.64,
+      "timestamp": "2025-11-29T23:48:07.628884"
+    },
+    "INV 05.143": {
+      "expected_power_kW": 0.206,
+      "actual_power_kW": 0.101,
+      "power_loss_pct": 50.94,
+      "timestamp": "2025-11-29T23:48:07.630390"
+    },
+    "INV 05.145": {
+      "expected_power_kW": 0.19,
+      "actual_power_kW": 0.099,
+      "power_loss_pct": 47.65,
+      "timestamp": "2025-11-29T23:48:07.631846"
+    },
+    "INV 05.147": {
+      "expected_power_kW": 0.207,
+      "actual_power_kW": 0.099,
+      "power_loss_pct": 52.18,
+      "timestamp": "2025-11-29T23:48:07.633307"
+    },
+    "INV 05.146": {
+      "expected_power_kW": 0.206,
+      "actual_power_kW": 0.098,
+      "power_loss_pct": 52.34,
+      "timestamp": "2025-11-29T23:48:07.634773"
+    },
+    "INV 05.144": {
+      "expected_power_kW": 0.178,
+      "actual_power_kW": 0.099,
+      "power_loss_pct": 44.19,
+      "timestamp": "2025-11-29T23:48:07.636219"
+    },
+    "INV 05.149": {
+      "expected_power_kW": 0.187,
+      "actual_power_kW": 0.098,
+      "power_loss_pct": 47.78,
+      "timestamp": "2025-11-29T23:48:07.637662"
+    },
+    "INV 05.148": {
+      "expected_power_kW": 0.197,
+      "actual_power_kW": 0.098,
+      "power_loss_pct": 50.39,
+      "timestamp": "2025-11-29T23:48:07.639110"
+    },
+    "INV 05.150": {
+      "expected_power_kW": 0.212,
+      "actual_power_kW": 0.098,
+      "power_loss_pct": 53.72,
+      "timestamp": "2025-11-29T23:48:07.640554"
+    }
+  }
+}

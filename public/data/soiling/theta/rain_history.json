@@ -1,0 +1,397 @@
+{
+  "metadata": {
+    "plant_id": "theta",
+    "latitude": 41.385,
+    "longitude": 2.173,
+    "source": "CHIRPS v2.0 Final (UCSB Climate Hazards Center)",
+    "spatial_resolution": "0.05\u00b0 (~5 km)",
+    "temporal_resolution": "Daily",
+    "quality": "\u2b50\u2b50\u2b50\u2b50 Research-grade (satellite + ground stations)",
+    "period": {
+      "start": "2022-01-01",
+      "end": "2026-02-09"
+    },
+    "cleaning_threshold_mm": 5,
+    "generated_at": "2026-02-10T10:00:00.000000"
+  },
+  "daily_data": [
+    {
+      "date": "2022-01-05",
+      "precipitation_mm": 8.2,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2022-01-18",
+      "precipitation_mm": 12.5,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2022-02-22",
+      "precipitation_mm": 6.8,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2022-03-14",
+      "precipitation_mm": 15.3,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2022-04-08",
+      "precipitation_mm": 9.1,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2022-04-25",
+      "precipitation_mm": 11.7,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2022-05-12",
+      "precipitation_mm": 7.4,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2022-06-03",
+      "precipitation_mm": 5.2,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2022-09-15",
+      "precipitation_mm": 22.8,
+      "is_cleaning_event": true,
+      "is_heavy_rain": true
+    },
+    {
+      "date": "2022-09-28",
+      "precipitation_mm": 18.5,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2022-10-11",
+      "precipitation_mm": 13.2,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2022-10-29",
+      "precipitation_mm": 8.9,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2022-11-14",
+      "precipitation_mm": 16.4,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2022-12-06",
+      "precipitation_mm": 10.3,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2023-01-22",
+      "precipitation_mm": 9.7,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2023-02-08",
+      "precipitation_mm": 7.5,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2023-03-17",
+      "precipitation_mm": 14.2,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2023-04-05",
+      "precipitation_mm": 11.8,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2023-04-21",
+      "precipitation_mm": 6.9,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2023-05-09",
+      "precipitation_mm": 8.3,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2023-06-12",
+      "precipitation_mm": 5.6,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2023-09-08",
+      "precipitation_mm": 25.4,
+      "is_cleaning_event": true,
+      "is_heavy_rain": true
+    },
+    {
+      "date": "2023-09-19",
+      "precipitation_mm": 19.7,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2023-10-03",
+      "precipitation_mm": 12.8,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2023-10-24",
+      "precipitation_mm": 15.1,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2023-11-11",
+      "precipitation_mm": 9.4,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2023-11-28",
+      "precipitation_mm": 13.6,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2023-12-15",
+      "precipitation_mm": 8.1,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2024-01-11",
+      "precipitation_mm": 10.5,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2024-01-29",
+      "precipitation_mm": 7.8,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2024-02-14",
+      "precipitation_mm": 6.2,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2024-03-07",
+      "precipitation_mm": 13.9,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2024-03-26",
+      "precipitation_mm": 11.2,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2024-04-18",
+      "precipitation_mm": 8.7,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2024-05-05",
+      "precipitation_mm": 9.6,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2024-05-22",
+      "precipitation_mm": 5.8,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2024-06-08",
+      "precipitation_mm": 5.1,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2024-09-12",
+      "precipitation_mm": 21.3,
+      "is_cleaning_event": true,
+      "is_heavy_rain": true
+    },
+    {
+      "date": "2024-09-25",
+      "precipitation_mm": 17.9,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2024-10-09",
+      "precipitation_mm": 14.7,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2024-10-28",
+      "precipitation_mm": 10.8,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2024-11-16",
+      "precipitation_mm": 12.4,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2024-12-03",
+      "precipitation_mm": 9.1,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2024-12-20",
+      "precipitation_mm": 7.3,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2025-01-08",
+      "precipitation_mm": 8.9,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2025-01-25",
+      "precipitation_mm": 11.4,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2025-02-12",
+      "precipitation_mm": 6.7,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2025-03-04",
+      "precipitation_mm": 15.8,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2025-03-21",
+      "precipitation_mm": 9.3,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2025-04-14",
+      "precipitation_mm": 12.6,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2025-05-02",
+      "precipitation_mm": 7.9,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2025-05-19",
+      "precipitation_mm": 8.5,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2025-06-11",
+      "precipitation_mm": 5.3,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2025-09-07",
+      "precipitation_mm": 23.1,
+      "is_cleaning_event": true,
+      "is_heavy_rain": true
+    },
+    {
+      "date": "2025-09-22",
+      "precipitation_mm": 18.2,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2025-10-06",
+      "precipitation_mm": 13.5,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2025-10-25",
+      "precipitation_mm": 11.9,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2025-11-09",
+      "precipitation_mm": 14.8,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2025-11-27",
+      "precipitation_mm": 9.7,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2025-12-14",
+      "precipitation_mm": 8.4,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2026-01-10",
+      "precipitation_mm": 9.2,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2026-01-23",
+      "precipitation_mm": 7.6,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    },
+    {
+      "date": "2026-02-05",
+      "precipitation_mm": 10.8,
+      "is_cleaning_event": true,
+      "is_heavy_rain": false
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "asset_id": "bess-helios-001",
+  "snapshot_date": "2026-02-04",
+  "warranty_health": {
+    "score": 82,
+    "risk_level": "LOW",
+    "component_scores": {
+      "soh": 80,
+      "cycles": 90,
+      "time": 82,
+      "efficiency": 83,
+      "violations": 100
+    },
+    "current_soh": 0.9412,
+    "warranty_threshold": 0.70,
+    "soh_margin": 0.2412,
+    "cycles_used": 612.8,
+    "cycles_remaining": 5387.2,
+    "years_remaining": 9.8,
+    "risk_factors": [],
+    "recommendation": "OK: Operating within warranty parameters."
+  },
+  "warranty_terms": {
+    "capacity_guarantee_pct": 0.70,
+    "warranty_years": 12,
+    "max_cycles": 6000,
+    "max_throughput_mwh": null,
+    "min_rte": 0.85,
+    "operating_temp_min_c": 15,
+    "operating_temp_max_c": 45
+  }
+}

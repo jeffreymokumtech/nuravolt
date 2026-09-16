@@ -1,0 +1,1114 @@
+{
+  "inverter_groups": [
+    {
+      "id": "alpha-grp-pv-01",
+      "name": "PV-01",
+      "slug": "pv-01",
+      "tilt": 30,
+      "azimuth": 180,
+      "inverter_model": "Generic 250 kW",
+      "inverter_nominal_power_kw": 250,
+      "orientation_source": "default_estimate",
+      "inverters": [
+        {
+          "id": "alpha-inv-pv-01_001",
+          "external_id": "PV-01.001",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_002",
+          "external_id": "PV-01.002",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_003",
+          "external_id": "PV-01.003",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_004",
+          "external_id": "PV-01.004",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_005",
+          "external_id": "PV-01.005",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_006",
+          "external_id": "PV-01.006",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_007",
+          "external_id": "PV-01.007",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_008",
+          "external_id": "PV-01.008",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_009",
+          "external_id": "PV-01.009",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_010",
+          "external_id": "PV-01.010",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_011",
+          "external_id": "PV-01.011",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_012",
+          "external_id": "PV-01.012",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_013",
+          "external_id": "PV-01.013",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_014",
+          "external_id": "PV-01.014",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_015",
+          "external_id": "PV-01.015",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_016",
+          "external_id": "PV-01.016",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_017",
+          "external_id": "PV-01.017",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_018",
+          "external_id": "PV-01.018",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_019",
+          "external_id": "PV-01.019",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_020",
+          "external_id": "PV-01.020",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_021",
+          "external_id": "PV-01.021",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_022",
+          "external_id": "PV-01.022",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_023",
+          "external_id": "PV-01.023",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_024",
+          "external_id": "PV-01.024",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_025",
+          "external_id": "PV-01.025",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_026",
+          "external_id": "PV-01.026",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_027",
+          "external_id": "PV-01.027",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_028",
+          "external_id": "PV-01.028",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_029",
+          "external_id": "PV-01.029",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-01_030",
+          "external_id": "PV-01.030",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        }
+      ]
+    },
+    {
+      "id": "alpha-grp-pv-02",
+      "name": "PV-02",
+      "slug": "pv-02",
+      "tilt": 30,
+      "azimuth": 180,
+      "inverter_model": "Generic 250 kW",
+      "inverter_nominal_power_kw": 250,
+      "orientation_source": "default_estimate",
+      "inverters": [
+        {
+          "id": "alpha-inv-pv-02_001",
+          "external_id": "PV-02.001",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_002",
+          "external_id": "PV-02.002",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_003",
+          "external_id": "PV-02.003",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_004",
+          "external_id": "PV-02.004",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_005",
+          "external_id": "PV-02.005",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_006",
+          "external_id": "PV-02.006",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_007",
+          "external_id": "PV-02.007",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_008",
+          "external_id": "PV-02.008",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_009",
+          "external_id": "PV-02.009",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_010",
+          "external_id": "PV-02.010",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_011",
+          "external_id": "PV-02.011",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_012",
+          "external_id": "PV-02.012",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_013",
+          "external_id": "PV-02.013",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_014",
+          "external_id": "PV-02.014",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_015",
+          "external_id": "PV-02.015",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_016",
+          "external_id": "PV-02.016",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_017",
+          "external_id": "PV-02.017",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_018",
+          "external_id": "PV-02.018",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_019",
+          "external_id": "PV-02.019",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_020",
+          "external_id": "PV-02.020",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_021",
+          "external_id": "PV-02.021",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_022",
+          "external_id": "PV-02.022",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_023",
+          "external_id": "PV-02.023",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_024",
+          "external_id": "PV-02.024",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_025",
+          "external_id": "PV-02.025",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_026",
+          "external_id": "PV-02.026",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_027",
+          "external_id": "PV-02.027",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_028",
+          "external_id": "PV-02.028",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_029",
+          "external_id": "PV-02.029",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-02_030",
+          "external_id": "PV-02.030",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        }
+      ]
+    },
+    {
+      "id": "alpha-grp-pv-03",
+      "name": "PV-03",
+      "slug": "pv-03",
+      "tilt": 30,
+      "azimuth": 180,
+      "inverter_model": "Generic 250 kW",
+      "inverter_nominal_power_kw": 250,
+      "orientation_source": "default_estimate",
+      "inverters": [
+        {
+          "id": "alpha-inv-pv-03_001",
+          "external_id": "PV-03.001",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_002",
+          "external_id": "PV-03.002",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_003",
+          "external_id": "PV-03.003",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_004",
+          "external_id": "PV-03.004",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_005",
+          "external_id": "PV-03.005",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_006",
+          "external_id": "PV-03.006",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_007",
+          "external_id": "PV-03.007",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_008",
+          "external_id": "PV-03.008",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_009",
+          "external_id": "PV-03.009",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_010",
+          "external_id": "PV-03.010",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_011",
+          "external_id": "PV-03.011",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_012",
+          "external_id": "PV-03.012",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_013",
+          "external_id": "PV-03.013",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_014",
+          "external_id": "PV-03.014",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_015",
+          "external_id": "PV-03.015",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_016",
+          "external_id": "PV-03.016",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_017",
+          "external_id": "PV-03.017",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_018",
+          "external_id": "PV-03.018",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_019",
+          "external_id": "PV-03.019",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_020",
+          "external_id": "PV-03.020",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_021",
+          "external_id": "PV-03.021",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_022",
+          "external_id": "PV-03.022",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_023",
+          "external_id": "PV-03.023",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_024",
+          "external_id": "PV-03.024",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_025",
+          "external_id": "PV-03.025",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_026",
+          "external_id": "PV-03.026",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_027",
+          "external_id": "PV-03.027",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_028",
+          "external_id": "PV-03.028",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_029",
+          "external_id": "PV-03.029",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-03_030",
+          "external_id": "PV-03.030",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        }
+      ]
+    },
+    {
+      "id": "alpha-grp-pv-04",
+      "name": "PV-04",
+      "slug": "pv-04",
+      "tilt": 30,
+      "azimuth": 180,
+      "inverter_model": "Generic 250 kW",
+      "inverter_nominal_power_kw": 250,
+      "orientation_source": "default_estimate",
+      "inverters": [
+        {
+          "id": "alpha-inv-pv-04_001",
+          "external_id": "PV-04.001",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_002",
+          "external_id": "PV-04.002",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_003",
+          "external_id": "PV-04.003",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_004",
+          "external_id": "PV-04.004",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_005",
+          "external_id": "PV-04.005",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_006",
+          "external_id": "PV-04.006",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_007",
+          "external_id": "PV-04.007",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_008",
+          "external_id": "PV-04.008",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_009",
+          "external_id": "PV-04.009",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_010",
+          "external_id": "PV-04.010",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_011",
+          "external_id": "PV-04.011",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_012",
+          "external_id": "PV-04.012",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_013",
+          "external_id": "PV-04.013",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_014",
+          "external_id": "PV-04.014",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_015",
+          "external_id": "PV-04.015",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_016",
+          "external_id": "PV-04.016",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_017",
+          "external_id": "PV-04.017",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_018",
+          "external_id": "PV-04.018",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_019",
+          "external_id": "PV-04.019",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_020",
+          "external_id": "PV-04.020",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_021",
+          "external_id": "PV-04.021",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_022",
+          "external_id": "PV-04.022",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_023",
+          "external_id": "PV-04.023",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_024",
+          "external_id": "PV-04.024",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_025",
+          "external_id": "PV-04.025",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_026",
+          "external_id": "PV-04.026",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_027",
+          "external_id": "PV-04.027",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_028",
+          "external_id": "PV-04.028",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_029",
+          "external_id": "PV-04.029",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-04_030",
+          "external_id": "PV-04.030",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        }
+      ]
+    },
+    {
+      "id": "alpha-grp-pv-05",
+      "name": "PV-05",
+      "slug": "pv-05",
+      "tilt": 30,
+      "azimuth": 180,
+      "inverter_model": "Generic 250 kW",
+      "inverter_nominal_power_kw": 250,
+      "orientation_source": "default_estimate",
+      "inverters": [
+        {
+          "id": "alpha-inv-pv-05_001",
+          "external_id": "PV-05.001",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_002",
+          "external_id": "PV-05.002",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_003",
+          "external_id": "PV-05.003",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_004",
+          "external_id": "PV-05.004",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_005",
+          "external_id": "PV-05.005",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_006",
+          "external_id": "PV-05.006",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_007",
+          "external_id": "PV-05.007",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_008",
+          "external_id": "PV-05.008",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_009",
+          "external_id": "PV-05.009",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_010",
+          "external_id": "PV-05.010",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_011",
+          "external_id": "PV-05.011",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_012",
+          "external_id": "PV-05.012",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_013",
+          "external_id": "PV-05.013",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_014",
+          "external_id": "PV-05.014",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_015",
+          "external_id": "PV-05.015",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_016",
+          "external_id": "PV-05.016",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_017",
+          "external_id": "PV-05.017",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_018",
+          "external_id": "PV-05.018",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_019",
+          "external_id": "PV-05.019",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_020",
+          "external_id": "PV-05.020",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_021",
+          "external_id": "PV-05.021",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_022",
+          "external_id": "PV-05.022",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_023",
+          "external_id": "PV-05.023",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_024",
+          "external_id": "PV-05.024",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_025",
+          "external_id": "PV-05.025",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_026",
+          "external_id": "PV-05.026",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_027",
+          "external_id": "PV-05.027",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_028",
+          "external_id": "PV-05.028",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_029",
+          "external_id": "PV-05.029",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        },
+        {
+          "id": "alpha-inv-pv-05_030",
+          "external_id": "PV-05.030",
+          "name": null,
+          "model": "Generic 250 kW",
+          "nominal_power_kw": 250
+        }
+      ]
+    }
+  ]
+}

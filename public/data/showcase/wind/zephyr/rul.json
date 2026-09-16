@@ -1,0 +1,208 @@
+{
+  "predictions": [
+    {
+      "turbineId": "WT-01",
+      "component": "GEARBOX_BEARING",
+      "componentName": "Gearbox Bearing",
+      "estimatedRUL": 245,
+      "confidence": 0.82,
+      "healthScore": 78,
+      "degradationRate": 0.089,
+      "lastUpdated": "2025-01-13T06:00:00Z",
+      "modelVersion": "wind-rul-v1.2",
+      "inputFeatures": {
+        "avg_bearing_temp": 62.4,
+        "temp_variance": 3.2,
+        "operating_hours": 18420,
+        "cycles": 892000
+      },
+      "trend": "STABLE",
+      "isUrgent": false
+    },
+    {
+      "turbineId": "WT-01",
+      "component": "GENERATOR_BEARING_DE",
+      "componentName": "Generator Bearing (DE)",
+      "estimatedRUL": 380,
+      "confidence": 0.88,
+      "healthScore": 85,
+      "degradationRate": 0.042,
+      "lastUpdated": "2025-01-13T06:00:00Z",
+      "modelVersion": "wind-rul-v1.2",
+      "inputFeatures": {
+        "avg_bearing_temp": 58.2,
+        "temp_variance": 2.1,
+        "operating_hours": 18420,
+        "generator_rpm_avg": 1492
+      },
+      "trend": "STABLE",
+      "isUrgent": false
+    },
+    {
+      "turbineId": "WT-02",
+      "component": "GENERATOR_BEARING_DE",
+      "componentName": "Generator Bearing (DE)",
+      "estimatedRUL": 89,
+      "confidence": 0.76,
+      "healthScore": 52,
+      "degradationRate": 0.54,
+      "lastUpdated": "2025-01-13T06:00:00Z",
+      "modelVersion": "wind-rul-v1.2",
+      "inputFeatures": {
+        "avg_bearing_temp": 78.5,
+        "temp_variance": 8.4,
+        "operating_hours": 18650,
+        "generator_rpm_avg": 1485
+      },
+      "trend": "DEGRADING",
+      "isUrgent": false
+    },
+    {
+      "turbineId": "WT-02",
+      "component": "GEARBOX_BEARING",
+      "componentName": "Gearbox Bearing",
+      "estimatedRUL": 312,
+      "confidence": 0.85,
+      "healthScore": 81,
+      "degradationRate": 0.061,
+      "lastUpdated": "2025-01-13T06:00:00Z",
+      "modelVersion": "wind-rul-v1.2",
+      "inputFeatures": {
+        "avg_bearing_temp": 59.8,
+        "temp_variance": 2.8,
+        "operating_hours": 18650,
+        "cycles": 905000
+      },
+      "trend": "STABLE",
+      "isUrgent": false
+    },
+    {
+      "turbineId": "WT-03",
+      "component": "MAIN_BEARING",
+      "componentName": "Main Bearing",
+      "estimatedRUL": 156,
+      "confidence": 0.79,
+      "healthScore": 64,
+      "degradationRate": 0.23,
+      "lastUpdated": "2025-01-13T06:00:00Z",
+      "modelVersion": "wind-rul-v1.2",
+      "inputFeatures": {
+        "avg_bearing_temp": 48.2,
+        "temp_variance": 4.5,
+        "operating_hours": 18890,
+        "rotor_rpm_avg": 14.2
+      },
+      "trend": "DEGRADING",
+      "isUrgent": false
+    },
+    {
+      "turbineId": "WT-03",
+      "component": "YAW_MOTOR",
+      "componentName": "Yaw Motor",
+      "estimatedRUL": 285,
+      "confidence": 0.81,
+      "healthScore": 72,
+      "degradationRate": 0.105,
+      "lastUpdated": "2025-01-13T06:00:00Z",
+      "modelVersion": "wind-rul-v1.2",
+      "inputFeatures": {
+        "yaw_cycles": 45200,
+        "avg_yaw_error": 4.2,
+        "operating_hours": 18890
+      },
+      "trend": "STABLE",
+      "isUrgent": false
+    },
+    {
+      "turbineId": "WT-04",
+      "component": "PITCH_ACTUATOR",
+      "componentName": "Pitch Actuator",
+      "estimatedRUL": 412,
+      "confidence": 0.91,
+      "healthScore": 92,
+      "degradationRate": 0.019,
+      "lastUpdated": "2025-01-13T06:00:00Z",
+      "modelVersion": "wind-rul-v1.2",
+      "inputFeatures": {
+        "pitch_cycles": 128000,
+        "avg_pitch_deviation": 0.8,
+        "operating_hours": 18200
+      },
+      "trend": "STABLE",
+      "isUrgent": false
+    },
+    {
+      "turbineId": "WT-04",
+      "component": "GEARBOX_BEARING",
+      "componentName": "Gearbox Bearing",
+      "estimatedRUL": 520,
+      "confidence": 0.89,
+      "healthScore": 94,
+      "degradationRate": 0.012,
+      "lastUpdated": "2025-01-13T06:00:00Z",
+      "modelVersion": "wind-rul-v1.2",
+      "inputFeatures": {
+        "avg_bearing_temp": 54.2,
+        "temp_variance": 1.8,
+        "operating_hours": 18200,
+        "cycles": 875000
+      },
+      "trend": "STABLE",
+      "isUrgent": false
+    },
+    {
+      "turbineId": "WT-05",
+      "component": "GEARBOX_OIL",
+      "componentName": "Gearbox Oil",
+      "estimatedRUL": 67,
+      "confidence": 0.73,
+      "healthScore": 45,
+      "degradationRate": 0.67,
+      "lastUpdated": "2025-01-13T06:00:00Z",
+      "modelVersion": "wind-rul-v1.2",
+      "inputFeatures": {
+        "oil_temp_avg": 68.5,
+        "oil_temp_delta": 42,
+        "operating_hours": 19100,
+        "last_oil_change_hours": 4200
+      },
+      "trend": "RAPID_DEGRADATION",
+      "isUrgent": false
+    },
+    {
+      "turbineId": "WT-05",
+      "component": "GEARBOX_BEARING",
+      "componentName": "Gearbox Bearing",
+      "estimatedRUL": 178,
+      "confidence": 0.77,
+      "healthScore": 68,
+      "degradationRate": 0.18,
+      "lastUpdated": "2025-01-13T06:00:00Z",
+      "modelVersion": "wind-rul-v1.2",
+      "inputFeatures": {
+        "avg_bearing_temp": 67.8,
+        "temp_variance": 5.2,
+        "operating_hours": 19100,
+        "cycles": 932000
+      },
+      "trend": "DEGRADING",
+      "isUrgent": false
+    }
+  ],
+  "criticalCount": 0,
+  "urgentCount": 0,
+  "summary": {
+    "totalPredictions": 10,
+    "byTrend": {
+      "STABLE": 6,
+      "DEGRADING": 3,
+      "RAPID_DEGRADATION": 1
+    },
+    "avgHealthScore": 73.1,
+    "shortestRUL": {
+      "turbineId": "WT-05",
+      "component": "GEARBOX_OIL",
+      "days": 67
+    }
+  }
+}

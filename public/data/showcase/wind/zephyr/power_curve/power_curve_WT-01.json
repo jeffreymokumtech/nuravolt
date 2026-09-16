@@ -1,0 +1,31 @@
+{
+  "turbineId": "WT-01",
+  "plantId": "zephyr",
+  "period": {
+    "start": "2024-01-01",
+    "end": "2025-01-13"
+  },
+  "binWidth": 0.5,
+  "cutInSpeed": 3.0,
+  "ratedSpeed": 11.5,
+  "cutOutSpeed": 25.0,
+  "ratedPower": 2000,
+  "points": [
+    { "windSpeedBin": 3.0, "expectedPower": 25, "actualPower": 24, "stdDev": 10, "sampleCount": 248 },
+    { "windSpeedBin": 4.0, "expectedPower": 95, "actualPower": 93, "stdDev": 22, "sampleCount": 312 },
+    { "windSpeedBin": 5.0, "expectedPower": 210, "actualPower": 205, "stdDev": 38, "sampleCount": 378 },
+    { "windSpeedBin": 6.0, "expectedPower": 385, "actualPower": 378, "stdDev": 62, "sampleCount": 432 },
+    { "windSpeedBin": 7.0, "expectedPower": 620, "actualPower": 608, "stdDev": 92, "sampleCount": 476 },
+    { "windSpeedBin": 8.0, "expectedPower": 925, "actualPower": 912, "stdDev": 118, "sampleCount": 502 },
+    { "windSpeedBin": 9.0, "expectedPower": 1290, "actualPower": 1272, "stdDev": 142, "sampleCount": 485 },
+    { "windSpeedBin": 10.0, "expectedPower": 1700, "actualPower": 1678, "stdDev": 155, "sampleCount": 447 },
+    { "windSpeedBin": 11.0, "expectedPower": 1965, "actualPower": 1952, "stdDev": 88, "sampleCount": 391 },
+    { "windSpeedBin": 12.0, "expectedPower": 2000, "actualPower": 1992, "stdDev": 32, "sampleCount": 336 },
+    { "windSpeedBin": 14.0, "expectedPower": 2000, "actualPower": 1996, "stdDev": 20, "sampleCount": 225 },
+    { "windSpeedBin": 16.0, "expectedPower": 2000, "actualPower": 1998, "stdDev": 14, "sampleCount": 122 },
+    { "windSpeedBin": 18.0, "expectedPower": 2000, "actualPower": 1999, "stdDev": 9, "sampleCount": 60 }
+  ],
+  "performanceIndex": 0.982,
+  "anomalyScore": 0.05,
+  "lastUpdated": "2025-01-13T06:00:00Z"
+}

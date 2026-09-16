@@ -1,0 +1,97 @@
+{
+  "inverterId": "INV 01.007",
+  "groupId": "INV 01",
+  "soilingRatio": {
+    "mean": 1.0004,
+    "median": 1.0165,
+    "min": 0.1068,
+    "max": 1.05,
+    "std": 0.0725
+  },
+  "lossDisaggregation": {
+    "method": "IEA_PVPS_T13",
+    "percentages": {
+      "soiling": 0.0,
+      "temperature": 0.62,
+      "spectral": 1.0,
+      "inverter": 2.0,
+      "wiringBop": 2.0,
+      "degradation": 0.5,
+      "total": 6.12
+    },
+    "energy_kWh": {
+      "reference": 8865.9,
+      "net": 8323.4,
+      "soilingLoss": 0.0
+    }
+  },
+  "anomalyDetection": {
+    "totalAnomalies": 5,
+    "anomalyRate_pct": 0.01,
+    "periods": [
+      {
+        "start": "2025-04-19",
+        "end": "2025-04-22",
+        "duration_hours": 33.75,
+        "severity": "Critical",
+        "type": "underperformance",
+        "deviation_pct": -47.7
+      },
+      {
+        "start": "2025-04-22",
+        "end": "2025-04-23",
+        "duration_hours": 10.75,
+        "severity": "Major",
+        "type": "overperformance",
+        "deviation_pct": 21.1
+      },
+      {
+        "start": "2025-04-23",
+        "end": "2025-04-26",
+        "duration_hours": 34.25,
+        "severity": "Critical",
+        "type": "overperformance",
+        "deviation_pct": 65.9
+      },
+      {
+        "start": "2022-02-17",
+        "end": "2022-02-19",
+        "duration_hours": 13.0,
+        "severity": "Major",
+        "type": "underperformance",
+        "deviation_pct": -22.4
+      },
+      {
+        "start": "2022-06-27",
+        "end": "2022-06-28",
+        "duration_hours": 16.5,
+        "severity": "Major",
+        "type": "overperformance",
+        "deviation_pct": 24.1
+      }
+    ]
+  },
+  "performance": {
+    "performanceRatio": 1.0,
+    "avgPowerNormalized": 0.4259,
+    "capacityFactor": 0.106,
+    "availability_pct": 100.0,
+    "productionRate": 0.985
+  },
+  "fleetComparison": {
+    "rank": 82,
+    "deviationFromMean_pct": -0.13,
+    "zScore": -0.07,
+    "severity": "Normal"
+  },
+  "dataQuality": {
+    "completeness_pct": 100.0,
+    "validRecords": 65924,
+    "totalRecords": 65924
+  },
+  "metadata": {
+    "analysisStart": "2020-10-01",
+    "analysisEnd": "2025-10-21",
+    "generatedAt": "2025-11-25T15:54:06.995081"
+  }
+}

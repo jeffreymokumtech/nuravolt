@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-Step PV Data Quality Validation Checklist</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 1.5cm;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.5;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #2563eb;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 28px;
+            color: #1e40af;
+            margin: 15px 0;
+            line-height: 1.2;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: #6b7280;
+            font-style: italic;
+        }
+        .intro-box {
+            background: #eff6ff;
+            border-left: 4px solid #2563eb;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        .checklist-section {
+            margin: 25px 0;
+            page-break-inside: avoid;
+        }
+        .checklist-section h2 {
+            font-size: 20px;
+            color: #1e40af;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+        .step-number {
+            background: #2563eb;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 12px;
+            font-size: 18px;
+        }
+        .checkbox-item {
+            display: flex;
+            align-items: flex-start;
+            margin: 12px 0;
+            padding: 10px;
+            background: #f9fafb;
+            border-radius: 6px;
+        }
+        .checkbox {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #2563eb;
+            border-radius: 4px;
+            margin-right: 12px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .checkbox-label {
+            flex-grow: 1;
+            font-size: 14px;
+        }
+        .checkbox-label strong {
+            color: #1e40af;
+        }
+        .threshold {
+            color: #dc2626;
+            font-weight: bold;
+        }
+        .normal {
+            color: #059669;
+            font-weight: bold;
+        }
+        .tools-note {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 10px 15px;
+            margin-top: 8px;
+            font-size: 13px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #d1d5db;
+            font-size: 12px;
+            color: #6b7280;
+        }
+        .cta-footer {
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .cta-footer a {
+            color: white;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo">NuraVolt</div>
+    <h1>5-Step PV Data Quality Validation Checklist</h1>
+    <div class="subtitle">Quick validation for sensor calibration, timestamp sync & outlier detection</div>
+</div>
+
+<div class="intro-box">
+    <strong>Purpose:</strong> Use this checklist monthly (minimum) or after any SCADA/sensor maintenance to validate irradiance data quality. Poor data quality causes 14% yield loss attribution errors and 8-15% false alarms. Print this checklist and keep results on file for warranty claims and performance guarantees.
+</div>
+
+<div class="checklist-section">
+    <h2><span class="step-number">1</span> Sensor Calibration Check</h2>
+
+    <div class="checkbox-item">
+        <div class="checkbox"></div>
+        <div class="checkbox-label">
+            <strong>Compare GHI sensor to clear-sky model</strong><br>
+            On clear day, measured GHI should be within ±10% of PVLIB clear-sky calculation for your location<br>
+            <span class="normal">✓ Pass: <10% deviation</span> | <span class="threshold">✗ Fail: >10% deviation</span>
+        </div>
+    </div>
+
+    <div class="checkbox-item">
+        <div class="checkbox"></div>
+        <div class="checkbox-label">
+            <strong>Check sensor-to-sensor agreement</strong><br>
+            If multiple sensors: all sensors should read within 5% of each other under uniform conditions<br>
+            <span class="normal">✓ Pass: <5% spread</span> | <span class="threshold">✗ Fail: >5% spread (investigate outlier)</span>
+        </div>
+    </div>
+
+    <div class="checkbox-item">
+        <div class="checkbox"></div>
+        <div class="checkbox-label">
+            <strong>Verify last factory calibration date</strong><br>
+            Sensor should have factory recalibration <2 years old (annually preferred)<br>
+            <span class="normal">✓ Pass: <24 months</span> | <span class="threshold">⚠ Warning: >24 months (schedule recalibration)</span>
+        </div>
+    </div>
+
+    <div class="tools-note">
+        <strong>Tools:</strong> PVLIB Python library for clear-sky modeling | Reference sensor for cross-check | Calibration certificates
+    </div>
+</div>
+
+<div class="checklist-section">
+    <h2><span class="step-number">2</span> Timestamp Synchronization</h2>
+
+    <div class="checkbox-item">
+        <div class="checkbox"></div>
+        <div class="checkbox-label">
+            <strong>Verify NTP server configuration</strong><br>
+            Confirm all devices (SCADA, weather station, inverters) use same NTP time source<br>
+            <span class="normal">✓ Pass: All synced to same NTP</span> | <span class="threshold">✗ Fail: Mixed time sources or manual time</span>
+        </div>
+    </div>
+
+    <div class="checkbox-item">
+        <div class="checkbox"></div>
+        <div class="checkbox-label">
+            <strong>Check SCADA-to-sensor timestamp alignment</strong><br>
+            Peak GHI timestamp should match peak inverter production timestamp within ±10 seconds<br>
+            <span class="normal">✓ Pass: <10 sec offset</span> | <span class="threshold">✗ Fail: >10 sec (causes 14% yield loss attribution error)</span>
+        </div>
+    </div>
+
+    <div class="checkbox-item">
+        <div class="checkbox"></div>
+        <div class="checkbox-label">
+            <strong>Test clock drift over 24 hours</strong><br>
+            Monitor time offset between SCADA and sensor logger over 24-hour period<br>
+            <span class="normal">✓ Pass: <5 sec drift</span> | <span class="threshold">⚠ Warning: >5 sec/day (configure NTP sync more frequently)</span>
+        </div>
+    </div>
+
+    <div class="tools-note">
+        <strong>Tools:</strong> NTP query (ntpq -p command) | SCADA timestamp logs | Cross-correlation of GHI vs production peaks
+    </div>
+</div>
+
+<div class="checklist-section">
+    <h2><span class="step-number">3</span> Outlier & Physical Limit Detection</h2>
+
+    <div class="checkbox-item">
+        <div class="checkbox"></div>
+        <div class="checkbox-label">
+            <strong>Check for physically impossible values</strong><br>
+            GHI should never exceed 1,500 W/m² (extraterrestrial limit ~1,367 W/m² plus atmospheric effects)<br>
+            <span class="normal">✓ Pass: All values <1,500</span> | <span class="threshold">✗ Fail: Values >1,500 (sensor error or data corruption)</span>
+        </div>
+    </div>
+
+    <div class="checkbox-item">
+        <div class="checkbox"></div>
+        <div class="checkbox-label">
+            <strong>Identify negative or zero values during daylight</strong><br>
+            GHI should be >0 when sun elevation >10° (no nighttime zeros during day)<br>
+            <span class="normal">✓ Pass: No daytime zeros</span> | <span class="threshold">✗ Fail: Zeros present (sensor or logger issue)</span>
+        </div>
+    </div>
+
+    <div class="checkbox-item">
+        <div class="checkbox"></div>
+        <div class="checkbox-label">
+            <strong>Check for "stuck" sensor readings</strong><br>
+            Sensor should vary continuously during day; constant value >15 minutes indicates sensor freeze<br>
+            <span class="normal">✓ Pass: No stuck values</span> | <span class="threshold">✗ Fail: Repeated identical readings >15 min</span>
+        </div>
+    </div>
+
+    <div class="tools-note">
+        <strong>Tools:</strong> Automated outlier detection script | PVLIB for sun position | Data visualization (time series plots)
+    </div>
+</div>
+
+<div class="checklist-section">
+    <h2><span class="step-number">4</span> Missing Data & Gap Analysis</h2>
+
+    <div class="checkbox-item">
+        <div class="checkbox"></div>
+        <div class="checkbox-label">
+            <strong>Calculate data completeness percentage</strong><br>
+            Irradiance data should be >98% complete over last 30 days (daylight hours only)<br>
+            <span class="normal">✓ Pass: >98% complete</span> | <span class="threshold">⚠ Warning: <98% (investigate communication or logger issues)</span>
+        </div>
+    </div>
+
+    <div class="checkbox-item">
+        <div class="checkbox"></div>
+        <div class="checkbox-label">
+            <strong>Identify gaps >15 minutes</strong><br>
+            Gaps >15 minutes require special handling (no interpolation; use clear-sky model or flag as invalid)<br>
+            <span class="normal">✓ Pass: All gaps <15 min</span> | <span class="threshold">⚠ Warning: Gaps >15 min detected (document and flag)</span>
+        </div>
+    </div>
+
+    <div class="checkbox-item">
+        <div class="checkbox"></div>
+        <div class="checkbox-label">
+            <strong>Review gap-filling protocol</strong><br>
+            Confirm SCADA uses acceptable interpolation (linear for <5 min gaps, clear-sky for 5-15 min, flag for >15 min)<br>
+            <span class="normal">✓ Pass: Protocol documented and followed</span> | <span class="threshold">✗ Fail: Gaps zero-filled or inappropriately averaged</span>
+        </div>
+    </div>
+
+    <div class="tools-note">
+        <strong>Tools:</strong> SCADA data export with timestamp analysis | Python pandas for gap detection | PVLIB for clear-sky gap filling
+    </div>
+</div>
+
+<div class="checklist-section">
+    <h2><span class="step-number">5</span> GHI-POA Consistency Validation</h2>
+
+    <div class="checkbox-item">
+        <div class="checkbox"></div>
+        <div class="checkbox-label">
+            <strong>Cross-check GHI vs POA sensor readings</strong><br>
+            POA (plane-of-array) should equal GHI × cos(angle of incidence) ± diffuse corrections (typically within 15%)<br>
+            <span class="normal">✓ Pass: <15% deviation</span> | <span class="threshold">✗ Fail: >15% (sensor placement or soiling issue)</span>
+        </div>
+    </div>
+
+    <div class="checkbox-item">
+        <div class="checkbox"></div>
+        <div class="checkbox-label">
+            <strong>Compare GHI-based expected production to actual</strong><br>
+            Calculate expected production from GHI + system specs; compare to actual inverter output (should match within 10%)<br>
+            <span class="normal">✓ Pass: <10% PR deviation</span> | <span class="threshold">⚠ Warning: >10% (investigate soiling, shading, or equipment issues)</span>
+        </div>
+    </div>
+
+    <div class="checkbox-item">
+        <div class="checkbox"></div>
+        <div class="checkbox-label">
+            <strong>Verify sensor soiling and cleaning schedule</strong><br>
+            Sensors should be cleaned weekly (more frequently than panels); check last cleaning date and visual inspection<br>
+            <span class="normal">✓ Pass: Cleaned <7 days ago</span> | <span class="threshold">⚠ Warning: >7 days (sensor reads low, false soiling indication)</span>
+        </div>
+    </div>
+
+    <div class="tools-note">
+        <strong>Tools:</strong> PVLIB for GHI→POA transposition | PVsyst or SAM for expected production | Maintenance logs for cleaning dates
+    </div>
+</div>
+
+<div class="cta-footer">
+    <p style="margin: 0 0 10px 0; font-size: 18px; font-weight: bold;">Need Help Implementing These Checks?</p>
+    <p style="margin: 0 0 10px 0;">Get a free 15-minute data quality audit from our UAE-based team</p>
+    <a href="mailto:contact@nuravolt.com">Contact Us →</a>
+</div>
+
+<div class="footer">
+    <p><strong>NuraVolt</strong> | Energy Intelligence for Solar & Storage</p>
+    <p>© 2025 NuraVolt | contact@nuravolt.com</p>
+</div>
+
+</body>
+</html>

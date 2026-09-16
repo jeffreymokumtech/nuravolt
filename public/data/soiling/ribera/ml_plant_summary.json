@@ -1,0 +1,162 @@
+{
+ "currentStatus": {
+  "avgSoilingRatio": 0.9067,
+  "dataSource": "measured_pr_selfnorm_dustiq_calibrated",
+  "estimatedLossPct": 9.33,
+  "healthScore": 99,
+  "lastUpdateTime": "2026-07-17T12:20:49.398931",
+  "validation": {
+   "config": {
+    "depth": 6,
+    "early_stopping_rounds": null,
+    "fine_tune_iterations": 500,
+    "fine_tune_learning_rate": 0.01,
+    "iterations": 100,
+    "l2_leaf_reg": 3.0,
+    "learning_rate": 0.02,
+    "loss_function": "Quantile:alpha=0.3",
+    "max_sr": 1.0,
+    "min_sr": 0.75,
+    "random_seed": 42,
+    "train_test_split": 0.2
+   },
+   "created_at": "2025-12-16T17:11:41.368956",
+   "feature_names": [
+    "rainfall_sum_7d",
+    "rainfall_max_7d",
+    "rainfall_days_7d",
+    "rainfall_sum_14d",
+    "rainfall_max_14d",
+    "rainfall_days_14d",
+    "rainfall_sum_30d",
+    "rainfall_max_30d",
+    "rainfall_days_30d",
+    "days_since_rain",
+    "is_heavy_rain",
+    "is_moderate_rain",
+    "day_of_year",
+    "month",
+    "day_of_year_sin",
+    "day_of_year_cos",
+    "month_sin",
+    "month_cos",
+    "is_dry_season",
+    "inverter_group_encoded",
+    "inverter_position",
+    "inverter_pr_7d",
+    "inverter_pr_deviation",
+    "inverter_pr_trend",
+    "inverter_anomaly_rate",
+    "inverter_sr_baseline",
+    "inverter_z_score"
+   ],
+   "fine_tuned_from": null,
+   "inverter_features": [
+    "inverter_group_encoded",
+    "inverter_position",
+    "inverter_pr_7d",
+    "inverter_pr_deviation",
+    "inverter_pr_trend",
+    "inverter_anomaly_rate",
+    "inverter_sr_baseline"
+   ],
+   "is_foundation": true,
+   "model_variant": "dustiq",
+   "n_inverters": 120,
+   "n_samples": 155400,
+   "plant_id": "ribera",
+   "pseudo_label_stats": null,
+   "training_end": "173759",
+   "training_start": "0",
+   "validation_mae": 0.01146075110981979,
+   "validation_r2": 0.2999134243473335,
+   "validation_rmse": 0.014273922337139077
+  }
+ },
+ "economicImpact": {
+  "estimatedROI_pct": null,
+  "expectedNetBenefit_EUR": null,
+  "nextCleaningRecommended": null,
+  "paybackDays": null,
+  "ytdEnergyLoss_MWh": 0.0,
+  "ytdRevenueLoss_EUR": 0.0
+ },
+ "fleetHealth": {
+  "critical": 0,
+  "majorIssues": 0,
+  "minorIssues": 2,
+  "normalInverters": 118
+ },
+ "plantInfo": {
+  "capacity_MW": 7.2,
+  "healthScore": 99,
+  "plantId": "ribera",
+  "plantName": "Ribera Solar Park",
+  "totalInverters": 120
+ },
+ "provenance": {
+  "data_end": "2025-12-13",
+  "data_start": "2020-10-01",
+  "generated_at": "2026-07-17T12:20:49.398980",
+  "method": "measured_pr_selfnorm_dustiq_calibrated",
+  "source": "measured_per_inverter",
+  "stats_window": {
+   "end": "2025-12-13",
+   "start": "2025-09-14"
+  }
+ },
+ "topPerformers": [
+  {
+   "inverterId": "INV 03.076",
+   "rank": 1,
+   "srMean": 0.9206
+  },
+  {
+   "inverterId": "INV 03.085",
+   "rank": 2,
+   "srMean": 0.9191
+  },
+  {
+   "inverterId": "INV 03.080",
+   "rank": 3,
+   "srMean": 0.9186
+  },
+  {
+   "inverterId": "INV 04.112",
+   "rank": 4,
+   "srMean": 0.9186
+  },
+  {
+   "inverterId": "INV 04.114",
+   "rank": 5,
+   "srMean": 0.9183
+  }
+ ],
+ "worstPerformers": [
+  {
+   "inverterId": "INV 01.047",
+   "rank": 120,
+   "srMean": 0.8896
+  },
+  {
+   "inverterId": "INV 02.001",
+   "rank": 119,
+   "srMean": 0.89
+  },
+  {
+   "inverterId": "INV 01.034",
+   "rank": 118,
+   "srMean": 0.8929
+  },
+  {
+   "inverterId": "INV 02.020",
+   "rank": 117,
+   "srMean": 0.8948
+  },
+  {
+   "inverterId": "INV 01.043",
+   "rank": 116,
+   "srMean": 0.8958
+  }
+ ]
+}

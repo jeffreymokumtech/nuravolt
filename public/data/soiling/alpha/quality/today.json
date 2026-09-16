@@ -1,0 +1,76 @@
+{
+  "plant_id": "alpha",
+  "generated_at": "2026-06-21T08:12:00Z",
+  "sla": {
+    "contract_pct": 99.0,
+    "mtd_pct": 98.7,
+    "projected_eom_pct": 98.9,
+    "days_remaining_in_month": 9,
+    "iec_reference": "IEC 61724-1:2021 Class A — typical ≥ 99% monthly availability"
+  },
+  "freshness_summary": {
+    "total_streams": 46,
+    "fresh": 36,
+    "stale_under_1h": 5,
+    "stale_under_24h": 1,
+    "stale_over_24h": 4
+  },
+  "top_degraded": [
+    {
+      "stream_id": "alpha.INV04.scada.poll",
+      "label": "INV-04 SCADA polling",
+      "category": "inverter",
+      "severity": "high",
+      "last_good_at": "2026-06-20T14:22:00Z",
+      "last_value": null,
+      "gap_minutes": 1070,
+      "attribution_cause": "inverter_trip",
+      "attribution_narrative": "Polling channel went stale at 14:22 yesterday — coincides with INV-04 fault entry at 14:21:48 in /api/faults",
+      "affected_kpis": ["PR", "AC_yield", "fleet_capacity_factor"],
+      "recommended_action": "Verify INV-04 reconnect or create maintenance ticket"
+    },
+    {
+      "stream_id": "alpha.met.pyrano_a",
+      "label": "Pyranometer A (rooftop)",
+      "category": "met_sensor",
+      "severity": "medium",
+      "last_good_at": "2026-06-21T07:48:00Z",
+      "last_value": 142.3,
+      "gap_minutes": 24,
+      "attribution_cause": "met_station_shadow",
+      "attribution_narrative": "Pyrano-A occluded 06:00–08:30 for 6 consecutive mornings — likely tree growth or new mounting obstruction. Pyrano-B unaffected.",
+      "affected_kpis": ["PR", "SR"],
+      "recommended_action": "On-site inspection of pyrano-A line-of-sight; meanwhile substitute Open-Meteo"
+    },
+    {
+      "stream_id": "alpha.dustiq.unit_03",
+      "label": "DustIQ unit 03",
+      "category": "soiling_sensor",
+      "severity": "low",
+      "last_good_at": "2026-06-21T05:14:00Z",
+      "last_value": 0.961,
+      "gap_minutes": 178,
+      "attribution_cause": "dustiq_firmware_quirk",
+      "attribution_narrative": "Unit 03 is pre-firmware v22000; dust-slope coefficient needs ×2 correction (Heimsath 2019). Applied automatically upstream.",
+      "affected_kpis": ["SR"],
+      "recommended_action": "Schedule firmware upgrade at next site visit"
+    }
+  ],
+  "satellite_fallback_active": {
+    "active": true,
+    "fallback_source": "Open-Meteo",
+    "substituting_for": "alpha.met.pyrano_a",
+    "ghi_confidence_band_pct": 8.0,
+    "engaged_at": "2026-06-21T07:48:00Z"
+  },
+  "kpi_impact": [
+    { "kpi": "PR", "nominal": 0.851, "band_lo": 0.836, "band_hi": 0.866, "degraded_inputs_pct": 9.4 },
+    { "kpi": "SR", "nominal": 0.962, "band_lo": 0.951, "band_hi": 0.974, "degraded_inputs_pct": 6.2 },
+    { "kpi": "AC_yield", "nominal": 4218, "band_lo": 4081, "band_hi": 4356, "degraded_inputs_pct": 11.7 }
+  ],
+  "curation_log_recent": [
+    { "ts": "2026-06-20T15:01:00Z", "actor": "AM", "action": "acknowledge", "stream_id": "alpha.INV04.scada.poll", "reason": "Aware — maintenance scheduled" },
+    { "ts": "2026-06-19T11:22:00Z", "actor": "system", "action": "satellite_fallback_engaged", "stream_id": "alpha.met.pyrano_a", "reason": "Stale > 30 min, substituting Open-Meteo" },
+    { "ts": "2026-06-17T09:48:00Z", "actor": "AM", "action": "exclude_from_kpi", "stream_id": "alpha.dustiq.unit_03", "reason": "Pre-firmware drift — excluded until upgraded" }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "executive_summary": {
+    "plant_capacity_MW": 9.0,
+    "forecast_period": "2025-10-22 to 2026-10-21",
+    "recommended_cleanings": 3,
+    "expected_net_benefit_EUR": 360867.97903286805,
+    "expected_roi_pct": 2227.5801174868398
+  },
+  "optimal_schedule": {
+    "cleaning_dates": [
+      "2025-11-05",
+      "2025-12-31",
+      "2026-02-11"
+    ],
+    "n_cleanings": 3,
+    "energy_recovered_MWh": 5801.045831274896,
+    "revenue_recovered_EUR": 377067.97903286805,
+    "cleaning_cost_EUR": 16200.0,
+    "net_benefit_EUR": 360867.97903286805,
+    "roi_pct": 2227.5801174868398,
+    "avg_sr": 0.9815467693472216
+  },
+  "financial_analysis": {
+    "baseline_revenue_EUR": 992912.3915427679,
+    "optimized_revenue_EUR": 377067.97903286805,
+    "cleaning_investment_EUR": 16200.0,
+    "net_benefit_EUR": 360867.97903286805,
+    "payback_days": 15.68152250733701
+  },
+  "technical_details": {
+    "avg_soiling_ratio_baseline": 0.7183849532844546,
+    "avg_soiling_ratio_optimized": 0.9815467693472216,
+    "energy_recovered_MWh": 5801.045831274896,
+    "avg_soiling_loss_baseline_pct": 28.16150467155454,
+    "avg_soiling_loss_optimized_pct": 1.8453230652778374
+  },
+  "recommendations": [
+    "Optimal spacing: Cleanings spaced 49 days apart on average.",
+    "Alternative: 2 cleanings yields \u20ac353,036 benefit (3269% ROI), \u20ac7,832 less than optimal."
+  ]
+}

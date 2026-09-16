@@ -1,0 +1,312 @@
+{
+  "generated_at": "2026-06-21T11:23:28.106229+00:00",
+  "router_models_available": [
+    "MEDITERRANEAN",
+    "TEMPERATE_CONTINENTAL"
+  ],
+  "tier_legend": {
+    "high_confidence_production": "T1 router hit; production-eligible with no recalibration.",
+    "usable_with_caveat": "T2 blend (70/30 model+prior); production-eligible after 90d recalibration.",
+    "literature_only": "T3 climate prior; ship with explicit literature-only banner.",
+    "needs_dustiq_rollout": "Regime unrepresented in training pool; field DustIQ required before quoting accuracy."
+  },
+  "sites": [
+    {
+      "region": "Morocco Atlas",
+      "lat": 31.79,
+      "lon": -7.09,
+      "koppen": "Csa",
+      "router_result": {
+        "model_id": "soiling_foundation_MEDITERRANEAN",
+        "confidence": 0.9648318180326492,
+        "fallback_used": false,
+        "fallback_chain_taken": [
+          "T1_high_confidence_foundation_model"
+        ],
+        "reasoning": "High-confidence match to MEDITERRANEAN foundation model (similarity 0.96).",
+        "similarity_components": {
+          "koppen": 1.0,
+          "our_zone": 1.0,
+          "distance": 0.6483181803264915,
+          "aod_cosine": 0.9999999999999999,
+          "rain_cosine": 1.0,
+          "dust_source": 1.0,
+          "total": 0.9648318180326492
+        },
+        "chosen_zone": "MEDITERRANEAN",
+        "blend_weight_prior": 0.0
+      },
+      "all_candidate_scores": {
+        "MEDITERRANEAN": 0.9648318180326492,
+        "TEMPERATE_CONTINENTAL": 0.512119834021164
+      },
+      "honest_tier": "high_confidence_production",
+      "proxy_analog": "Spanish Mediterranean DustIQ (ribera + zeta)",
+      "honest_expectation": "HIGH-confidence Mediterranean transfer; Ribera/Zeta donors directly applicable. Saharan-dust intrusion (calima) shared with donor sites; expect ~1.2-1.5x dustier on average \u2014 recalibrate after 90d."
+    },
+    {
+      "region": "Egypt Aswan",
+      "lat": 24.09,
+      "lon": 32.9,
+      "koppen": "BWh",
+      "router_result": {
+        "model_id": "climate_prior",
+        "confidence": 0.45,
+        "fallback_used": true,
+        "fallback_chain_taken": [
+          "T3_climate_prior"
+        ],
+        "reasoning": "No foundation model scores above 0.55; using literature-derived DESERT_MENA climate prior. No plant-specific learning.",
+        "similarity_components": {
+          "koppen": 0.0,
+          "our_zone": 0.0,
+          "distance": 0.16767639477694782,
+          "aod_cosine": 0.9737532863426532,
+          "rain_cosine": 0.9155644349581646,
+          "dust_source": 0.4,
+          "total": 0.3230747402420419
+        },
+        "chosen_zone": "DESERT_MENA",
+        "blend_weight_prior": 1.0
+      },
+      "all_candidate_scores": {
+        "MEDITERRANEAN": 0.3230747402420419,
+        "TEMPERATE_CONTINENTAL": 0.3085840213685228
+      },
+      "honest_tier": "literature_only",
+      "proxy_analog": "Atacama (ATAMOSTEC) + KAUST Thuwal literature priors \u2014 no US/EU analog",
+      "honest_expectation": "OUT-OF-DISTRIBUTION for US/EU trained models. Hyper-arid (<5 mm/yr); no donor captures dust cementation. Use literature priors (Atacama, KAUST) with wide error bars 0.4-1.0 %/day until field-calibrated."
+    },
+    {
+      "region": "Algeria Sahara",
+      "lat": 28.0,
+      "lon": 2.5,
+      "koppen": "BWh",
+      "router_result": {
+        "model_id": "climate_prior",
+        "confidence": 0.45,
+        "fallback_used": true,
+        "fallback_chain_taken": [
+          "T3_climate_prior"
+        ],
+        "reasoning": "No foundation model scores above 0.55; using literature-derived DESERT_NORTH_AFRICA climate prior. No plant-specific learning.",
+        "similarity_components": {
+          "koppen": 0.0,
+          "our_zone": 0.0,
+          "distance": 0.5606267812202919,
+          "aod_cosine": 0.9931137787839404,
+          "rain_cosine": 0.9910894206225139,
+          "dust_source": 0.7,
+          "total": 0.38879437594106864
+        },
+        "chosen_zone": "DESERT_NORTH_AFRICA",
+        "blend_weight_prior": 1.0
+      },
+      "all_candidate_scores": {
+        "MEDITERRANEAN": 0.38879437594106864,
+        "TEMPERATE_CONTINENTAL": 0.3190069321371485
+      },
+      "honest_tier": "literature_only",
+      "proxy_analog": "DESERT_NORTH_AFRICA prior (Boppana 2024, Ilse 2018) \u2014 literature only",
+      "honest_expectation": "Same Sahara-interior caveat as Aswan. DESERT_NORTH_AFRICA prior is literature-only; no observed validation. Pilot + calibrate, do not deploy and trust."
+    },
+    {
+      "region": "Sahel Niamey",
+      "lat": 13.5,
+      "lon": 2.1,
+      "koppen": "BSh",
+      "router_result": {
+        "model_id": "climate_prior",
+        "confidence": 0.45,
+        "fallback_used": true,
+        "fallback_chain_taken": [
+          "T3_climate_prior"
+        ],
+        "reasoning": "No foundation model scores above 0.55; using literature-derived TROPICAL_MONSOON_SAHEL climate prior. No plant-specific learning.",
+        "similarity_components": {
+          "koppen": 0.0,
+          "our_zone": 0.0,
+          "distance": 0.10787191069852974,
+          "aod_cosine": 0.9494532858360085,
+          "rain_cosine": 0.723726880142256,
+          "dust_source": 0.4,
+          "total": 0.2930505362512803
+        },
+        "chosen_zone": "TROPICAL_MONSOON_SAHEL",
+        "blend_weight_prior": 1.0
+      },
+      "all_candidate_scores": {
+        "MEDITERRANEAN": 0.25714836341640285,
+        "TEMPERATE_CONTINENTAL": 0.2930505362512803
+      },
+      "honest_tier": "needs_dustiq_rollout",
+      "proxy_analog": "TROPICAL_MONSOON_SAHEL prior + INDAAF PM10 driver (no trained donor)",
+      "honest_expectation": "Bimodal Harmattan/monsoon regime not present in any training donor. Use TROPICAL_MONSOON_SAHEL prior; flag confidence DEGRADED. Pair with INDAAF PM10 driver if available."
+    },
+    {
+      "region": "S. Africa Cape",
+      "lat": -33.92,
+      "lon": 18.42,
+      "koppen": "Csb",
+      "router_result": {
+        "model_id": "soiling_foundation_MEDITERRANEAN",
+        "confidence": 0.7816217555652553,
+        "fallback_used": false,
+        "fallback_chain_taken": [
+          "T1_high_confidence_foundation_model"
+        ],
+        "reasoning": "High-confidence match to MEDITERRANEAN foundation model (similarity 0.78).",
+        "similarity_components": {
+          "koppen": 0.6,
+          "our_zone": 1.0,
+          "distance": 0.01621755565255248,
+          "aod_cosine": 0.9999999999999999,
+          "rain_cosine": 1.0,
+          "dust_source": 1.0,
+          "total": 0.7816217555652553
+        },
+        "chosen_zone": "MEDITERRANEAN",
+        "blend_weight_prior": 0.0
+      },
+      "all_candidate_scores": {
+        "MEDITERRANEAN": 0.7816217555652553,
+        "TEMPERATE_CONTINENTAL": 0.3887153960585419
+      },
+      "honest_tier": "high_confidence_production",
+      "proxy_analog": "Spanish Mediterranean DustIQ (ribera + zeta)",
+      "honest_expectation": "HIGHEST African confidence. Csb maps to MEDITERRANEAN donors; no Saharan dust at Cape latitudes means transfer slightly over-predicts; expect ~30-50% lower magnitude. Lead with this region for African proof points."
+    },
+    {
+      "region": "S. Africa Karoo",
+      "lat": -32.0,
+      "lon": 22.0,
+      "koppen": "BSk",
+      "router_result": {
+        "model_id": "soiling_foundation_MEDITERRANEAN",
+        "confidence": 0.6017076642914234,
+        "fallback_used": true,
+        "fallback_chain_taken": [
+          "T2_degraded_foundation_model"
+        ],
+        "reasoning": "Degraded match to MEDITERRANEAN foundation model (similarity 0.60); dominant mismatch: koppen. Blending 70% model / 30% climate prior. Recalibrate after first 90 days of field data.",
+        "similarity_components": {
+          "koppen": 0.0,
+          "our_zone": 1.0,
+          "distance": 0.017076642914234542,
+          "aod_cosine": 0.9999999999999999,
+          "rain_cosine": 1.0,
+          "dust_source": 1.0,
+          "total": 0.6017076642914234
+        },
+        "chosen_zone": "MEDITERRANEAN",
+        "blend_weight_prior": 0.3
+      },
+      "all_candidate_scores": {
+        "MEDITERRANEAN": 0.6017076642914234,
+        "TEMPERATE_CONTINENTAL": 0.2987958659920799
+      },
+      "honest_tier": "literature_only",
+      "proxy_analog": "SEMIARID_COLD_STEPPE prior (Karaveli 2020, Pretorius 2020) \u2014 literature only",
+      "honest_expectation": "Maps to new SEMIARID_COLD_STEPPE prior; literature only (Pretorius 2020). S. hemisphere phase shift required at forecast generator. Confidence MEDIUM."
+    },
+    {
+      "region": "Senegal Dakar",
+      "lat": 14.69,
+      "lon": -17.44,
+      "koppen": "BSh",
+      "router_result": {
+        "model_id": "climate_prior",
+        "confidence": 0.45,
+        "fallback_used": true,
+        "fallback_chain_taken": [
+          "T3_climate_prior"
+        ],
+        "reasoning": "No foundation model scores above 0.55; using literature-derived TROPICAL_MONSOON_SAHEL climate prior. No plant-specific learning.",
+        "similarity_components": {
+          "koppen": 0.0,
+          "our_zone": 0.0,
+          "distance": 0.08174653736665248,
+          "aod_cosine": 0.9494532858360085,
+          "rain_cosine": 0.723726880142256,
+          "dust_source": 0.4,
+          "total": 0.2904379989180926
+        },
+        "chosen_zone": "TROPICAL_MONSOON_SAHEL",
+        "blend_weight_prior": 1.0
+      },
+      "all_candidate_scores": {
+        "MEDITERRANEAN": 0.25359705713532676,
+        "TEMPERATE_CONTINENTAL": 0.2904379989180926
+      },
+      "honest_tier": "needs_dustiq_rollout",
+      "proxy_analog": "TROPICAL_MONSOON_SAHEL prior + Sococim ACP-2025 literature scaling",
+      "honest_expectation": "Coastal Sahel \u2014 Harmattan dust mixed with marine sea-salt. Same caveat as Niamey but lower magnitude due to ocean moderation. Sococim ACP-2025 literature scaling recommended."
+    },
+    {
+      "region": "Kenya Nairobi",
+      "lat": -1.29,
+      "lon": 36.82,
+      "koppen": "Cwb",
+      "router_result": {
+        "model_id": "climate_prior",
+        "confidence": 0.45,
+        "fallback_used": true,
+        "fallback_chain_taken": [
+          "T3_climate_prior"
+        ],
+        "reasoning": "No foundation model scores above 0.55; using literature-derived TROPICAL_SAVANNA climate prior. No plant-specific learning.",
+        "similarity_components": {
+          "koppen": 0.3,
+          "our_zone": 0.0,
+          "distance": 0.04136473261200652,
+          "aod_cosine": 0.9858017788831965,
+          "rain_cosine": 0.7743474453342438,
+          "dust_source": 0.4,
+          "total": 0.3887315735712643
+        },
+        "chosen_zone": "TROPICAL_SAVANNA",
+        "blend_weight_prior": 1.0
+      },
+      "all_candidate_scores": {
+        "MEDITERRANEAN": 0.33211918616130104,
+        "TEMPERATE_CONTINENTAL": 0.3887315735712643
+      },
+      "honest_tier": "needs_dustiq_rollout",
+      "proxy_analog": "TROPICAL_SAVANNA prior \u2014 no trained donor for tropical-highland regime",
+      "honest_expectation": "Tropical highland (Aw boundary). Twice-yearly rainy seasons not represented in any donor. Treat as essentially uncalibrated; expect low baseline ~0.05-0.1 %/day per literature."
+    },
+    {
+      "region": "UAE Abu Dhabi",
+      "lat": 24.45,
+      "lon": 54.39,
+      "koppen": "BWh",
+      "router_result": {
+        "model_id": "climate_prior",
+        "confidence": 0.45,
+        "fallback_used": true,
+        "fallback_chain_taken": [
+          "T3_climate_prior"
+        ],
+        "reasoning": "No foundation model scores above 0.55; using literature-derived DESERT_MENA climate prior. No plant-specific learning.",
+        "similarity_components": {
+          "koppen": 0.0,
+          "our_zone": 0.0,
+          "distance": 0.0666620997569032,
+          "aod_cosine": 0.9737532863426532,
+          "rain_cosine": 0.9155644349581646,
+          "dust_source": 0.4,
+          "total": 0.3129733107400375
+        },
+        "chosen_zone": "DESERT_MENA",
+        "blend_weight_prior": 1.0
+      },
+      "all_candidate_scores": {
+        "MEDITERRANEAN": 0.3129733107400375,
+        "TEMPERATE_CONTINENTAL": 0.3015965987817588
+      },
+      "honest_tier": "literature_only",
+      "proxy_analog": "DESERT_MENA prior (Boppana 2024, Adinoyi 2013) \u2014 literature only",
+      "honest_expectation": "DESERT_MENA prior \u2014 literature only (Boppana 2024, Adinoyi 2013). Shamal-driven Arabian dust regime, similar magnitude to N. Africa but seasonally distinct. Confidence LOW-MEDIUM."
+    }
+  ]
+}

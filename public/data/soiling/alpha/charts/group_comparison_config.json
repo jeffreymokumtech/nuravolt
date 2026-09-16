@@ -1,0 +1,84 @@
+{
+  "chartType": "bar",
+  "title": {
+    "text": "Inverter Group Comparison",
+    "left": "center"
+  },
+  "tooltip": {
+    "trigger": "axis",
+    "axisPointer": {
+      "type": "shadow"
+    }
+  },
+  "legend": {
+    "data": [
+      "Avg Soiling Ratio",
+      "Health Score (%)"
+    ],
+    "bottom": "0"
+  },
+  "grid": {
+    "top": "60",
+    "left": "60",
+    "right": "60",
+    "bottom": "60"
+  },
+  "xAxis": {
+    "type": "category",
+    "data": [
+      "INV 01",
+      "INV 02",
+      "INV 03",
+      "INV 04",
+      "INV 05"
+    ]
+  },
+  "yAxis": [
+    {
+      "type": "value",
+      "name": "Soiling Ratio",
+      "min": 0.9,
+      "max": 1.0,
+      "position": "left"
+    },
+    {
+      "type": "value",
+      "name": "Health Score (%)",
+      "min": 0,
+      "max": 100,
+      "position": "right"
+    }
+  ],
+  "series": [
+    {
+      "name": "Avg Soiling Ratio",
+      "type": "bar",
+      "data": [
+        0.9999,
+        1.0003,
+        1.0026,
+        0.9919,
+        1.0138
+      ],
+      "itemStyle": {
+        "color": "#5470c6"
+      },
+      "yAxisIndex": 0
+    },
+    {
+      "name": "Health Score (%)",
+      "type": "bar",
+      "data": [
+        63.3,
+        100.0,
+        83.3,
+        63.3,
+        90.0
+      ],
+      "itemStyle": {
+        "color": "#91cc75"
+      },
+      "yAxisIndex": 1
+    }
+  ]
+}

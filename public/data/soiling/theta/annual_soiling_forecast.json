@@ -1,0 +1,136 @@
+{
+  "metadata": {
+    "plant_id": "theta",
+    "generated_at": "2026-02-10T10:00:00.000000",
+    "forecast_period": "2026-02-10 to 2027-02-09"
+  },
+  "summary": {
+    "avg_soiling_rate_pct_day": 0.18,
+    "expected_annual_loss_pct": 6.5,
+    "expected_loss_with_cleaning_pct": 2.8,
+    "recommended_cleanings": 4,
+    "optimal_cleaning_months": ["May", "July", "September", "November"]
+  },
+  "monthly_rates": [
+    {
+      "month": 1,
+      "month_name": "January",
+      "soiling_rate_pct_day": 0.08,
+      "total_soiling_loss_pct": 2.5,
+      "rain_days_expected": 5.2,
+      "seasonal_factor": 0.44,
+      "avg_aod": 0.12,
+      "recommended_cleanings": 0
+    },
+    {
+      "month": 2,
+      "month_name": "February",
+      "soiling_rate_pct_day": 0.09,
+      "total_soiling_loss_pct": 2.5,
+      "rain_days_expected": 4.8,
+      "seasonal_factor": 0.50,
+      "avg_aod": 0.13,
+      "recommended_cleanings": 0
+    },
+    {
+      "month": 3,
+      "month_name": "March",
+      "soiling_rate_pct_day": 0.12,
+      "total_soiling_loss_pct": 3.7,
+      "rain_days_expected": 4.5,
+      "seasonal_factor": 0.67,
+      "avg_aod": 0.15,
+      "recommended_cleanings": 0
+    },
+    {
+      "month": 4,
+      "month_name": "April",
+      "soiling_rate_pct_day": 0.18,
+      "total_soiling_loss_pct": 5.4,
+      "rain_days_expected": 5.8,
+      "seasonal_factor": 1.00,
+      "avg_aod": 0.18,
+      "recommended_cleanings": 0
+    },
+    {
+      "month": 5,
+      "month_name": "May",
+      "soiling_rate_pct_day": 0.22,
+      "total_soiling_loss_pct": 6.8,
+      "rain_days_expected": 4.2,
+      "seasonal_factor": 1.22,
+      "avg_aod": 0.21,
+      "recommended_cleanings": 1
+    },
+    {
+      "month": 6,
+      "month_name": "June",
+      "soiling_rate_pct_day": 0.28,
+      "total_soiling_loss_pct": 8.4,
+      "rain_days_expected": 2.1,
+      "seasonal_factor": 1.56,
+      "avg_aod": 0.24,
+      "recommended_cleanings": 0
+    },
+    {
+      "month": 7,
+      "month_name": "July",
+      "soiling_rate_pct_day": 0.32,
+      "total_soiling_loss_pct": 9.9,
+      "rain_days_expected": 1.2,
+      "seasonal_factor": 1.78,
+      "avg_aod": 0.26,
+      "recommended_cleanings": 1
+    },
+    {
+      "month": 8,
+      "month_name": "August",
+      "soiling_rate_pct_day": 0.30,
+      "total_soiling_loss_pct": 9.3,
+      "rain_days_expected": 1.8,
+      "seasonal_factor": 1.67,
+      "avg_aod": 0.25,
+      "recommended_cleanings": 0
+    },
+    {
+      "month": 9,
+      "month_name": "September",
+      "soiling_rate_pct_day": 0.20,
+      "total_soiling_loss_pct": 6.0,
+      "rain_days_expected": 4.5,
+      "seasonal_factor": 1.11,
+      "avg_aod": 0.20,
+      "recommended_cleanings": 1
+    },
+    {
+      "month": 10,
+      "month_name": "October",
+      "soiling_rate_pct_day": 0.15,
+      "total_soiling_loss_pct": 4.7,
+      "rain_days_expected": 6.8,
+      "seasonal_factor": 0.83,
+      "avg_aod": 0.17,
+      "recommended_cleanings": 0
+    },
+    {
+      "month": 11,
+      "month_name": "November",
+      "soiling_rate_pct_day": 0.12,
+      "total_soiling_loss_pct": 3.6,
+      "rain_days_expected": 5.5,
+      "seasonal_factor": 0.67,
+      "avg_aod": 0.15,
+      "recommended_cleanings": 1
+    },
+    {
+      "month": 12,
+      "month_name": "December",
+      "soiling_rate_pct_day": 0.10,
+      "total_soiling_loss_pct": 3.1,
+      "rain_days_expected": 5.0,
+      "seasonal_factor": 0.56,
+      "avg_aod": 0.13,
+      "recommended_cleanings": 0
+    }
+  ]
+}

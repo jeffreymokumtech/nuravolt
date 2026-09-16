@@ -1,0 +1,72 @@
+[
+  {
+    "id": "WT-01",
+    "name": "Turbine 01",
+    "plantId": "zephyr",
+    "ratedPowerKw": 2000,
+    "hubHeightM": 95,
+    "rotorDiameterM": 110,
+    "manufacturer": "Vestas",
+    "model": "V110-2.0",
+    "commissionDate": "2020-09-01",
+    "latitude": 55.601,
+    "longitude": 9.498,
+    "enabled": true
+  },
+  {
+    "id": "WT-02",
+    "name": "Turbine 02",
+    "plantId": "zephyr",
+    "ratedPowerKw": 2000,
+    "hubHeightM": 95,
+    "rotorDiameterM": 110,
+    "manufacturer": "Vestas",
+    "model": "V110-2.0",
+    "commissionDate": "2020-09-01",
+    "latitude": 55.603,
+    "longitude": 9.501,
+    "enabled": true
+  },
+  {
+    "id": "WT-03",
+    "name": "Turbine 03",
+    "plantId": "zephyr",
+    "ratedPowerKw": 2000,
+    "hubHeightM": 95,
+    "rotorDiameterM": 110,
+    "manufacturer": "Vestas",
+    "model": "V110-2.0",
+    "commissionDate": "2020-09-01",
+    "latitude": 55.605,
+    "longitude": 9.504,
+    "enabled": true
+  },
+  {
+    "id": "WT-04",
+    "name": "Turbine 04",
+    "plantId": "zephyr",
+    "ratedPowerKw": 2000,
+    "hubHeightM": 95,
+    "rotorDiameterM": 110,
+    "manufacturer": "Vestas",
+    "model": "V110-2.0",
+    "commissionDate": "2020-09-01",
+    "latitude": 55.607,
+    "longitude": 9.507,
+    "enabled": true
+  },
+  {
+    "id": "WT-05",
+    "name": "Turbine 05",
+    "plantId": "zephyr",
+    "ratedPowerKw": 2000,
+    "hubHeightM": 95,
+    "rotorDiameterM": 110,
+    "manufacturer": "Vestas",
+    "model": "V110-2.0",
+    "commissionDate": "2020-09-01",
+    "latitude": 55.609,
+    "longitude": 9.510,
+    "enabled": true
+  }
+]

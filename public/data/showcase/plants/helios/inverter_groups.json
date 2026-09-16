@@ -1,0 +1,58 @@
+{
+  "inverter_groups": [
+    {
+      "id": "helios-grp-01",
+      "name": "PV-01",
+      "slug": "pv-01",
+      "tilt": 25,
+      "azimuth": 180,
+      "inverter_model": "SUN2000-215KTL-H3",
+      "inverter_nominal_power_kw": 4500,
+      "inverters": [
+        { "id": "helios-inv-032", "external_id": "INV 01.032", "name": null, "model": "SUN2000-215KTL-H3", "nominal_power_kw": 4500 },
+        { "id": "helios-inv-044", "external_id": "INV 01.044", "name": null, "model": "SUN2000-215KTL-H3", "nominal_power_kw": 4500 },
+        { "id": "helios-inv-057", "external_id": "INV 01.057", "name": null, "model": "SUN2000-215KTL-H3", "nominal_power_kw": 4500 }
+      ]
+    },
+    {
+      "id": "helios-grp-02",
+      "name": "PV-02",
+      "slug": "pv-02",
+      "tilt": 25,
+      "azimuth": 180,
+      "inverter_model": "SUN2000-215KTL-H3",
+      "inverter_nominal_power_kw": 4500,
+      "inverters": [
+        { "id": "helios-inv-069", "external_id": "INV 02.069", "name": null, "model": "SUN2000-215KTL-H3", "nominal_power_kw": 4500 },
+        { "id": "helios-inv-081", "external_id": "INV 02.081", "name": null, "model": "SUN2000-215KTL-H3", "nominal_power_kw": 4500 },
+        { "id": "helios-inv-093", "external_id": "INV 02.093", "name": null, "model": "SUN2000-215KTL-H3", "nominal_power_kw": 4500 }
+      ]
+    },
+    {
+      "id": "helios-grp-03",
+      "name": "PV-03",
+      "slug": "pv-03",
+      "tilt": 25,
+      "azimuth": 180,
+      "inverter_model": "SUN2000-215KTL-H3",
+      "inverter_nominal_power_kw": 4500,
+      "inverters": [
+        { "id": "helios-inv-105", "external_id": "INV 03.105", "name": null, "model": "SUN2000-215KTL-H3", "nominal_power_kw": 4500 },
+        { "id": "helios-inv-117", "external_id": "INV 03.117", "name": null, "model": "SUN2000-215KTL-H3", "nominal_power_kw": 4500 }
+      ]
+    },
+    {
+      "id": "helios-grp-04",
+      "name": "PV-04",
+      "slug": "pv-04",
+      "tilt": 25,
+      "azimuth": 180,
+      "inverter_model": "SUN2000-215KTL-H3",
+      "inverter_nominal_power_kw": 4500,
+      "inverters": [
+        { "id": "helios-inv-129", "external_id": "INV 04.129", "name": null, "model": "SUN2000-215KTL-H3", "nominal_power_kw": 4500 },
+        { "id": "helios-inv-141", "external_id": "INV 04.141", "name": null, "model": "SUN2000-215KTL-H3", "nominal_power_kw": 4500 }
+      ]
+    }
+  ]
+}

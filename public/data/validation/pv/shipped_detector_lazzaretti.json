@@ -1,0 +1,110 @@
+{
+  "dataset": "Lazzaretti (shipped RuleBasedFaultDetector)",
+  "n_samples": 200000,
+  "classes": [
+    "normal",
+    "short_circuit",
+    "degradation",
+    "open_circuit",
+    "partial_shading"
+  ],
+  "confusion_matrix": [
+    [
+      169076,
+      40,
+      0,
+      0,
+      0
+    ],
+    [
+      933,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1484,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      887,
+      17,
+      0,
+      0,
+      0
+    ],
+    [
+      27555,
+      8,
+      0,
+      0,
+      0
+    ]
+  ],
+  "per_class": {
+    "normal": {
+      "precision": 0.8457,
+      "recall": 0.9998,
+      "f1": 0.9163,
+      "support": 169116
+    },
+    "short_circuit": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 933
+    },
+    "degradation": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 1484
+    },
+    "open_circuit": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 904
+    },
+    "partial_shading": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 27563
+    }
+  },
+  "macro_f1": 0.1833,
+  "weighted_f1": 0.7748,
+  "accuracy": 0.8454,
+  "extras": {},
+  "macro_f1_addressable_classes_only": 0.3054,
+  "addressable_classes": [
+    "normal",
+    "short_circuit",
+    "open_circuit"
+  ],
+  "unaddressed_classes": {
+    "degradation": "no rule emits MODULE_CURRENT_DEGRADATION",
+    "partial_shading": "partial shading needs a real clock for AM/PM asymmetry"
+  },
+  "alerts_emitted_by_type": {
+    "string_short_circuit": 11,
+    "mppt_imbalance": 2087,
+    "mppt_hunting": 2
+  },
+  "measures": "nuravolt/fault/rule_based.py::RuleBasedFaultDetector, the shipped code",
+  "event_gap_minutes": 60,
+  "dwell_intervals_override": null,
+  "grouping_note": "Scored with a short event gap so the result reflects per-interval decisions. Production uses a seven-day chronic gap, which changes alert VOLUME and nothing about detection.",
+  "not_comparable_to": "pv/lazzaretti_holdout.json, which scores nuravolt/validation/pv_row_classifier.py -- a separate implementation with its own thresholds fitted to this dataset's own percentiles. That artifact records thresholds_source as rule_based.py, which is incorrect.",
+  "persistence_note": "The shipped rules require a deficit to persist for several consecutive intervals. This dataset is a set of unordered independent snapshots with a synthetic clock bolted on, so a persistence requirement cannot be satisfied on it by construction. Scoring with --dwell-intervals 1 isolates the effect: the per-interval decisions are identical, and the difference between the two artifacts is entirely the dwell gate, which this benchmark cannot represent and which is what removes the false positives on real plants.",
+  "limitations": [
+    "Lazzaretti has no time axis; a synthetic 5-minute clock is supplied, so any rule depending on persistence is evaluated on a meaningless ordering.",
+    "The shipped rule set addresses 2 of 5 classes, so all-class macro-F1 is capped near 0.4 by coverage alone."
+  ],
+  "generated_at": "2026-08-21T06:43:17.529233Z"
+}

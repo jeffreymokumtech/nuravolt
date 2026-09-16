@@ -1,0 +1,116 @@
+{
+  "dataset": "Row classifier class mix on real plants",
+  "n_samples": 5952959,
+  "per_plant": {
+    "eta": {
+      "devices_scored": 28,
+      "daylight_device_intervals": 1354500,
+      "never_emitted": {
+        "fixed": [
+          "degradation",
+          "short_circuit"
+        ],
+        "self_normalised": []
+      },
+      "median_v_ref_v": 652.6,
+      "lazzaretti_v_ref_v": 270.38,
+      "class_mix_fixed_refs": {
+        "normal": 0.900912,
+        "open_circuit": 1e-06,
+        "short_circuit": 0.0,
+        "partial_shading": 0.099087,
+        "degradation": 0.0
+      },
+      "class_mix_self_normalised": {
+        "normal": 0.930807,
+        "open_circuit": 1e-06,
+        "short_circuit": 7e-06,
+        "partial_shading": 0.063926,
+        "degradation": 0.005259
+      },
+      "implausible_classes": {
+        "fixed": [],
+        "self_normalised": []
+      }
+    },
+    "delta": {
+      "devices_scored": 43,
+      "daylight_device_intervals": 2251394,
+      "never_emitted": {
+        "fixed": [
+          "degradation",
+          "short_circuit"
+        ],
+        "self_normalised": []
+      },
+      "median_v_ref_v": 701.8,
+      "lazzaretti_v_ref_v": 270.38,
+      "class_mix_fixed_refs": {
+        "normal": 0.882181,
+        "open_circuit": 4.4e-05,
+        "short_circuit": 0.0,
+        "partial_shading": 0.117775,
+        "degradation": 0.0
+      },
+      "class_mix_self_normalised": {
+        "normal": 0.849037,
+        "open_circuit": 4.4e-05,
+        "short_circuit": 0.005971,
+        "partial_shading": 0.102341,
+        "degradation": 0.042608
+      },
+      "implausible_classes": {
+        "fixed": [],
+        "self_normalised": []
+      }
+    },
+    "gamma": {
+      "devices_scored": 45,
+      "daylight_device_intervals": 2347065,
+      "never_emitted": {
+        "fixed": [
+          "degradation",
+          "short_circuit"
+        ],
+        "self_normalised": []
+      },
+      "median_v_ref_v": 788.4,
+      "lazzaretti_v_ref_v": 270.38,
+      "class_mix_fixed_refs": {
+        "normal": 0.89047,
+        "open_circuit": 9e-06,
+        "short_circuit": 0.0,
+        "partial_shading": 0.10952,
+        "degradation": 0.0
+      },
+      "class_mix_self_normalised": {
+        "normal": 0.784581,
+        "open_circuit": 9e-06,
+        "short_circuit": 0.005302,
+        "partial_shading": 0.115438,
+        "degradation": 0.094669
+      },
+      "implausible_classes": {
+        "fixed": [],
+        "self_normalised": []
+      }
+    },
+    "zeta": {
+      "status": "incompatible_channel_shape",
+      "reason": "fewer than 2 string_voltage_N columns"
+    }
+  },
+  "plausible_max_share": {
+    "normal": 1.0,
+    "open_circuit": 0.02,
+    "short_circuit": 0.01,
+    "partial_shading": 0.3,
+    "degradation": 0.1
+  },
+  "method": "The Lazzaretti-tuned cascade run over real plant SCADA under two scale references: the hard-coded Lazzaretti operating point, and one estimated from each inverter's own record using no labels. No fault labels exist, so precision cannot be computed; instead each class's declared share of daylight device-intervals is compared against a stated plausible bound.",
+  "finding": "With the Lazzaretti scale references hard-coded -- which is what ships -- open_circuit, short_circuit and degradation are emitted ZERO times across every plant scored. Not rarely: never. These plants run at 653 to 788 V per string against Lazzaretti's 270, so the per-unit voltage sits permanently above every threshold in the cascade that has a voltage ceiling, and three of the four fault classes become structurally unreachable. A silent detector is worse than a noisy one, because a plant with no alerts looks like a healthy plant.",
+  "with_normalisation": "Estimating the reference from each inverter's own record restores all four classes and leaves the mix inside the stated plausible bounds. That is a necessary condition for transfer, not proof of it: these plants carry no labels, so nothing here says the restored detections are CORRECT, only that the classifier is no longer incapable of making them.",
+  "open_circuit_caveat": "open_circuit stays at zero under both references. Its test requires a voltage spread exceeding the median, which on a 12-input inverter the median-based statistic rarely reaches. That is a channel-count effect and is not fixed by scale normalisation.",
+  "what_this_is_not": "Not accuracy, and not a false-positive rate. It is evidence of transfer failure where a class is declared far more often than that failure mode can plausibly occur.",
+  "generated_at": "2026-08-21T08:21:17.136585Z"
+}

@@ -1,0 +1,71 @@
+{
+  "predictions": [
+    {
+      "turbineId": "T001",
+      "component": "GEARBOX_BEARING",
+      "componentName": "Gearbox Bearing",
+      "estimatedRUL": 145,
+      "confidence": 0.82,
+      "healthScore": 72,
+      "degradationRate": 0.15,
+      "lastUpdated": "2026-02-10T06:26:28.852369",
+      "modelVersion": "care-nbm-v1.0",
+      "inputFeatures": {
+        "avg_temp": 68.5,
+        "temp_variance": 4.2
+      },
+      "trend": "DEGRADING",
+      "isUrgent": false
+    },
+    {
+      "turbineId": "T002",
+      "component": "GENERATOR_BEARING_DE",
+      "componentName": "Generator Bearing (DE)",
+      "estimatedRUL": 85,
+      "confidence": 0.75,
+      "healthScore": 58,
+      "degradationRate": 0.42,
+      "lastUpdated": "2026-02-10T06:26:28.852371",
+      "modelVersion": "care-nbm-v1.0",
+      "inputFeatures": {
+        "avg_temp": 78.2,
+        "temp_variance": 6.8
+      },
+      "trend": "DEGRADING",
+      "isUrgent": false
+    },
+    {
+      "turbineId": "T005",
+      "component": "MAIN_BEARING",
+      "componentName": "Main Bearing",
+      "estimatedRUL": 65,
+      "confidence": 0.71,
+      "healthScore": 48,
+      "degradationRate": 0.55,
+      "lastUpdated": "2026-02-10T06:26:28.852373",
+      "modelVersion": "care-nbm-v1.0",
+      "inputFeatures": {
+        "avg_temp": 52.1,
+        "temp_variance": 5.5
+      },
+      "trend": "RAPID_DEGRADATION",
+      "isUrgent": false
+    }
+  ],
+  "criticalCount": 0,
+  "urgentCount": 0,
+  "summary": {
+    "totalPredictions": 3,
+    "byTrend": {
+      "STABLE": 0,
+      "DEGRADING": 2,
+      "RAPID_DEGRADATION": 1
+    },
+    "avgHealthScore": 59.333333333333336,
+    "shortestRUL": {
+      "turbineId": "T005",
+      "component": "MAIN_BEARING",
+      "days": 65
+    }
+  }
+}

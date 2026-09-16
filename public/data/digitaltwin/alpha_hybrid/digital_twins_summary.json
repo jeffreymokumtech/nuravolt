@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2025-12-08T10:25:54.364757",
+  "config": {
+    "maxYears": 2.0,
+    "minPR": 0.1,
+    "useCatBoost": true,
+    "minR2": 0.7
+  },
+  "statistics": {
+    "totalInverters": 150,
+    "successful": 150,
+    "failed": 0,
+    "skipped": 0,
+    "totalTime_s": 128.767515,
+    "avgR2": 0.9903,
+    "avgMAE_kW": 0.02
+  },
+  "trainingPeriod": {
+    "start": "2020-10-01",
+    "end": "2022-09-29"
+  },
+  "hybridConfig": {
+    "modelType": "Hybrid (Physics + ML)",
+    "physicsModel": "PVWatts",
+    "mlModel": "CatBoost",
+    "physicsParams": {
+      "latitude": 37.8145,
+      "longitude": -3.8047,
+      "tilt": 30.0,
+      "azimuth": 180.0,
+      "gamma_pdc": -0.004
+    },
+    "enhancedSelection": true
+  }
+}

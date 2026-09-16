@@ -1,0 +1,62 @@
+[
+  {
+    "id": "test-1",
+    "test_date": "2024-06-15T00:00:00",
+    "measured_capacity_kwh": 100000,
+    "soh_result": 1.0,
+    "capacity_retention": 1.0,
+    "test_type": "commissioning",
+    "ambient_temp_c": 13.5,
+    "c_rate_used": 0.2,
+    "is_valid": true,
+    "notes": "Commissioning test \u2014 Tesla Megapack 2 XL string-level acceptance."
+  },
+  {
+    "id": "test-2",
+    "test_date": "2024-09-15T00:00:00",
+    "measured_capacity_kwh": 99200,
+    "soh_result": 0.992,
+    "capacity_retention": 0.992,
+    "test_type": "quarterly",
+    "ambient_temp_c": 17.0,
+    "c_rate_used": 0.2,
+    "is_valid": true,
+    "notes": "Q1 2025 routine \u2014 within spec."
+  },
+  {
+    "id": "test-3",
+    "test_date": "2025-03-15T00:00:00",
+    "measured_capacity_kwh": 98200,
+    "soh_result": 0.982,
+    "capacity_retention": 0.982,
+    "test_type": "quarterly",
+    "ambient_temp_c": 22.5,
+    "c_rate_used": 0.2,
+    "is_valid": true,
+    "notes": "Q3 2025 routine \u2014 slight summer-related fade noted."
+  },
+  {
+    "id": "test-4",
+    "test_date": "2025-09-15T00:00:00",
+    "measured_capacity_kwh": 97300,
+    "soh_result": 0.973,
+    "capacity_retention": 0.973,
+    "test_type": "quarterly",
+    "ambient_temp_c": 9.0,
+    "c_rate_used": 0.2,
+    "is_valid": true,
+    "notes": "Q1 2026 routine \u2014 within spec."
+  },
+  {
+    "id": "test-5",
+    "test_date": "2026-03-15T00:00:00",
+    "measured_capacity_kwh": 96300,
+    "soh_result": 0.963,
+    "capacity_retention": 0.963,
+    "test_type": "quarterly",
+    "ambient_temp_c": 14.0,
+    "c_rate_used": 0.2,
+    "is_valid": true,
+    "notes": "Q2 2026 routine \u2014 current state-of-health baseline."
+  }
+]

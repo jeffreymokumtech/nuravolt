@@ -1,0 +1,37 @@
+{
+  "plant_id": "alpha1",
+  "validation_date": "2025-12-17T15:13:18.343902",
+  "overlap_period": {
+    "start": "2024-10-01",
+    "end": "2024-12-31",
+    "days": 92
+  },
+  "statistics": {
+    "cams_eac4": {
+      "mean": 0.08947866847826087,
+      "std": 0.0775183626899935,
+      "min": 0.0053875,
+      "max": 0.4275125
+    },
+    "openmeteo": {
+      "mean": 0.08752608695652174,
+      "std": 0.057900609874322786,
+      "min": 0.0196,
+      "max": 0.2917
+    },
+    "comparison": {
+      "bias": -0.0019525815217391323,
+      "bias_percent": -2.1821754334816883,
+      "rmse": 0.03317019228027366,
+      "mae": 0.022939266304347825,
+      "correlation": 0.9207290880995063,
+      "p_value": 1.4953239798576095e-38,
+      "r_squared": 0.816900652868895
+    }
+  },
+  "assessment": {
+    "compatible": true,
+    "recommendation": "\u2705 COMPATIBLE - Safe to use together with bias correction",
+    "correction_method": "Subtract -0.0020 from Open-Meteo values"
+  }
+}

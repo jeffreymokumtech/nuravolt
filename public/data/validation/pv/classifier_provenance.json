@@ -1,0 +1,110 @@
+{
+  "dataset": "Provenance of the published PV fault classification numbers",
+  "n_samples": 378443,
+  "artifacts": [
+    {
+      "artifact": "pv/lazzaretti_holdout.json",
+      "macro_f1": 0.8348,
+      "n_samples": 99481,
+      "n_classes": 5,
+      "classifier": "pv_row_classifier (cascade surrogate)",
+      "thresholds_source": "nuravolt/validation/pv_row_classifier.py (NOT the shipped detector)",
+      "classes_with_zero_f1": []
+    },
+    {
+      "artifact": "pv/lazzaretti_physics_blind.json",
+      "macro_f1": 0.5188,
+      "n_samples": 99481,
+      "n_classes": 5,
+      "classifier": "pv_row_classifier_physics (config.py defaults only)",
+      "thresholds_source": "nuravolt/fault/config.py \u2014 production manufacturer/physics defaults, NEVER tuned to any dataset",
+      "classes_with_zero_f1": [
+        "degradation",
+        "short_circuit"
+      ]
+    },
+    {
+      "artifact": "pv/gpvs_cross_dataset.json",
+      "macro_f1": 0.1893,
+      "n_samples": 80000,
+      "n_classes": 8,
+      "classifier": "gpvs_row_classifier (cascade-aligned, GPVS-shape features)",
+      "thresholds_source": null,
+      "classes_with_zero_f1": [
+        "grid_voltage_swell",
+        "inverter_overtemperature",
+        "irradiance_sensor_drift",
+        "string_open_circuit",
+        "string_short_circuit"
+      ]
+    },
+    {
+      "artifact": "pv/lazzaretti_lgbm.json",
+      "macro_f1": 0.9983,
+      "n_samples": 99481,
+      "n_classes": 5,
+      "classifier": null,
+      "thresholds_source": null,
+      "classes_with_zero_f1": []
+    }
+  ],
+  "finding": "The three headline numbers come from three DIFFERENT classifier implementations, not one detector under three conditions.",
+  "which_comparisons_are_valid": {
+    "0.835_vs_0.519": "VALID. Identical rows (the same load_lazzaretti call), identical 5-class taxonomy, identical metric. The only thing that changes is which module's thresholds are used, so the 37.9% gap really is the cost of tuning thresholds on the data they are scored on.",
+    "0.519_vs_0.189": "NOT VALID, on four counts at once. (1) Different classifier module: gpvs_row_classifier, which shares no code with the other two. (2) Disjoint input columns -- the Lazzaretti cascade reads per-string voltage and current plus irradiance; GPVS has none of those, only system-level Ipv/Vpv/Vdc and three-phase AC. The surrogate could not be run on GPVS even if someone wanted to. (3) Different taxonomy, 5 classes against 8, and five of the eight cannot be emitted by that classifier at all, so they score F1 0.000 and drag the unweighted macro mean down mechanically. (4) GPVS's own thresholds are fitted to GPVS percentiles, making 0.189 a second in-sample number rather than a transfer number."
+  },
+  "what_has_never_been_measured": "How the tuned surrogate behaves on any dataset other than Lazzaretti. No second labelled dataset with per-string current, per-string voltage and irradiance exists in this repo. See pv/scale_transfer_lazzaretti.json for what could be measured instead.",
+  "classifier_required_columns": {
+    "pv_row_classifier (cascade surrogate)": [
+      "poa_irradiance",
+      "module_temp",
+      "string_voltage_1",
+      "string_voltage_2",
+      "string_current_1",
+      "string_current_2"
+    ],
+    "pv_row_classifier_physics (config.py defaults only)": [
+      "poa_irradiance",
+      "module_temp",
+      "string_voltage_1",
+      "string_voltage_2",
+      "string_current_1",
+      "string_current_2"
+    ],
+    "gpvs_row_classifier (cascade-aligned, GPVS-shape features)": [
+      "Ipv",
+      "Vpv",
+      "Vdc",
+      "dc_ratio"
+    ]
+  },
+  "dataset_available_columns": {
+    "Lazzaretti": [
+      "fault_class",
+      "poa_irradiance",
+      "module_temp",
+      "string_current_1",
+      "string_current_2",
+      "string_voltage_1",
+      "string_voltage_2"
+    ],
+    "GPVS": [
+      "Time",
+      "Ipv",
+      "Vpv",
+      "Vdc",
+      "ia",
+      "ib",
+      "ic",
+      "va",
+      "vb",
+      "vc",
+      "Iabc",
+      "If",
+      "Vabc",
+      "Vf"
+    ]
+  },
+  "superseded_by": "nuravolt/validation/row_classifier.py -- one parameterised cascade. An artifact from it records the threshold set and the scale references by value, so this class of confusion cannot recur.",
+  "generated_at": "2026-08-21T08:30:38.106936Z"
+}

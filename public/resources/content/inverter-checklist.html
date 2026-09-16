@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Hidden Causes of Inverter Underperformance</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 1.5cm;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.5;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #2563eb;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 28px;
+            color: #1e40af;
+            margin: 15px 0;
+            line-height: 1.2;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: #6b7280;
+            font-style: italic;
+        }
+        .intro-box {
+            background: #eff6ff;
+            border-left: 4px solid #2563eb;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        .checklist-item {
+            margin: 20px 0;
+            page-break-inside: avoid;
+            background: #f9fafb;
+            border-radius: 8px;
+            padding: 15px;
+        }
+        .item-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .item-number {
+            background: #2563eb;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 12px;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1e40af;
+            flex-grow: 1;
+        }
+        .checkbox {
+            width: 18px;
+            height: 18px;
+            border: 2px solid #2563eb;
+            border-radius: 4px;
+            margin-left: auto;
+            flex-shrink: 0;
+        }
+        .item-content {
+            margin-left: 44px;
+            font-size: 14px;
+        }
+        .symptom {
+            color: #dc2626;
+            font-weight: bold;
+        }
+        .diagnostic {
+            color: #1e40af;
+            font-weight: bold;
+        }
+        .action {
+            color: #059669;
+            font-weight: bold;
+        }
+        .impact {
+            background: #fef3c7;
+            border-left: 3px solid #f59e0b;
+            padding: 8px 12px;
+            margin: 8px 0;
+            font-size: 13px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #d1d5db;
+            font-size: 12px;
+            color: #6b7280;
+        }
+        .cta-footer {
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .cta-footer a {
+            color: white;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo">NuraVolt</div>
+    <h1>7 Hidden Causes of Inverter Underperformance</h1>
+    <div class="subtitle">Diagnostic checklist for phase imbalance, MPPT drift & efficiency loss</div>
+</div>
+
+<div class="intro-box">
+    <strong>Purpose:</strong> Use this checklist quarterly or when inverter production falls below 90% of expected output. These issues cause 8-15% silent underperformance without SCADA alarms. Check each box after investigating and documenting findings. Keep completed checklists for warranty claims and performance trend analysis.
+</div>
+
+<div class="checklist-item">
+    <div class="item-header">
+        <span class="item-number">1</span>
+        <span class="item-title">Phase Imbalance</span>
+        <div class="checkbox"></div>
+    </div>
+    <div class="item-content">
+        <p><span class="symptom">Symptom:</span> One or two phases produce 5-12% less power than the third phase</p>
+
+        <p><span class="diagnostic">Diagnostic:</span></p>
+        <ul style="margin: 5px 0; padding-left: 20px;">
+            <li>Compare 3-phase AC output during midday (11am-1pm) under clear sky conditions</li>
+            <li>Calculate: (Max Phase - Min Phase) / Max Phase × 100%</li>
+            <li>Normal: <3% difference | Warning: 3-8% | Critical: >8%</li>
+        </ul>
+
+        <p><span class="action">Action:</span></p>
+        <ul style="margin: 5px 0; padding-left: 20px;">
+            <li>Check AC contactor condition (contacts may be degraded on one phase)</li>
+            <li>Verify string allocation is balanced across all three phases</li>
+            <li>Inspect phase-specific cable connections and terminations</li>
+        </ul>
+
+        <div class="impact">
+            <strong>Impact:</strong> 8% phase imbalance = 2.7% total inverter capacity loss (~$2,700/year per MW)
+        </div>
+    </div>
+</div>
+
+<div class="checklist-item">
+    <div class="item-header">
+        <span class="item-number">2</span>
+        <span class="item-title">MPPT Drift</span>
+        <div class="checkbox"></div>
+    </div>
+    <div class="item-content">
+        <p><span class="symptom">Symptom:</span> DC voltage consistently 5-15V below optimal operating point</p>
+
+        <p><span class="diagnostic">Diagnostic:</span></p>
+        <ul style="margin: 5px 0; padding-left: 20px;">
+            <li>Record DC voltage during steady-state operation (clear conditions, stable irradiance)</li>
+            <li>Compare to expected Vmp from module datasheet adjusted for temperature: Vmp_actual = Vmp_stc + (Temp - 25°C) × temp_coeff × Vmp_stc</li>
+            <li>Normal: ±5V from expected | Warning: 5-10V | Critical: >10V deviation</li>
+        </ul>
+
+        <p><span class="action">Action:</span></p>
+        <ul style="margin: 5px 0; padding-left: 20px;">
+            <li>Reset MPPT algorithm (power cycle inverter or initiate MPPT re-scan)</li>
+            <li>Check for firmware updates addressing MPPT stability</li>
+            <li>Verify string configuration matches inverter settings (number of modules per string)</li>
+        </ul>
+
+        <div class="impact">
+            <strong>Impact:</strong> 5% MPPT deviation = 3-5% power loss (~$3,000-$5,000/year per MW)
+        </div>
+    </div>
+</div>
+
+<div class="checklist-item">
+    <div class="item-header">
+        <span class="item-number">3</span>
+        <span class="item-title">Component Degradation</span>
+        <div class="checkbox"></div>
+    </div>
+    <div class="item-content">
+        <p><span class="symptom">Symptom:</span> Gradual efficiency decline over months/years without obvious cause</p>
+
+        <p><span class="diagnostic">Diagnostic:</span></p>
+        <ul style="margin: 5px 0; padding-left: 20px;">
+            <li>Calculate monthly DC-to-AC efficiency: (AC Energy Out / DC Energy In) × 100%</li>
+            <li>Plot trend over 12+ months and calculate degradation rate (%/year)</li>
+            <li>Normal: <0.5%/year | Warning: 0.5-1.5%/year | Critical: >1.5%/year</li>
+        </ul>
+
+        <p><span class="action">Action:</span></p>
+        <ul style="margin: 5px 0; padding-left: 20px;">
+            <li>Schedule thermal imaging inspection to identify hot spots (capacitor, IGBT degradation)</li>
+            <li>Review maintenance logs for dust accumulation in cooling system</li>
+            <li>Consider proactive component replacement if degradation accelerating</li>
+        </ul>
+
+        <div class="impact">
+            <strong>Impact:</strong> 1%/year degradation = $10K cumulative loss over 10-year warranty period per MW
+        </div>
+    </div>
+</div>
+
+<div class="checklist-item">
+    <div class="item-header">
+        <span class="item-number">4</span>
+        <span class="item-title">Reactive Power Mismanagement</span>
+        <div class="checkbox"></div>
+    </div>
+    <div class="item-content">
+        <p><span class="symptom">Symptom:</span> Inverter derates active power or fails grid compliance checks</p>
+
+        <p><span class="diagnostic">Diagnostic:</span></p>
+        <ul style="margin: 5px 0; padding-left: 20px;">
+            <li>Compare commanded power factor (from SCADA setpoint) to actual (measured Q/P ratio)</li>
+            <li>Calculate: Actual PF = P / √(P² + Q²) where P=active power, Q=reactive power</li>
+            <li>Normal: <0.02 PF error | Warning: 0.02-0.05 | Critical: >0.05 or grid penalties</li>
+        </ul>
+
+        <p><span class="action">Action:</span></p>
+        <ul style="margin: 5px 0; padding-left: 20px;">
+            <li>Verify reactive power control mode (fixed PF, Q(U), cos φ(P), etc.)</li>
+            <li>Check for conflicting commands from SCADA vs local controller settings</li>
+            <li>Ensure inverter apparent power rating not limiting active power delivery</li>
+        </ul>
+
+        <div class="impact">
+            <strong>Impact:</strong> 0.05 PF error can reduce active power by 5% + grid compliance penalties ($500-$2,000/incident)
+        </div>
+    </div>
+</div>
+
+<div class="checklist-item">
+    <div class="item-header">
+        <span class="item-number">5</span>
+        <span class="item-title">Excessive Thermal Derating</span>
+        <div class="checkbox"></div>
+    </div>
+    <div class="item-content">
+        <p><span class="symptom">Symptom:</span> Power output drops below DC input capacity during high ambient temperatures</p>
+
+        <p><span class="diagnostic">Diagnostic:</span></p>
+        <ul style="margin: 5px 0; padding-left: 20px;">
+            <li>Record ambient temperature, internal inverter temperature, and AC output power</li>
+            <li>Compare to manufacturer derating curve (usually in datasheet or manual)</li>
+            <li>Normal: Matches curve ±5% | Warning: 5-10% more aggressive | Critical: >10% below expected</li>
+        </ul>
+
+        <p><span class="action">Action:</span></p>
+        <ul style="margin: 5px 0; padding-left: 20px;">
+            <li>Check cooling system: fans operational, air filters clean, ventilation unobstructed</li>
+            <li>Review derating settings in inverter configuration (may be set too conservatively)</li>
+            <li>Consider external shading or improved ventilation for inverters in hot locations</li>
+        </ul>
+
+        <div class="impact">
+            <strong>Impact:</strong> 10% excess derating during peak hours = 3-5% daily energy loss in summer months (~$3,000-$5,000/year per MW)
+        </div>
+    </div>
+</div>
+
+<div class="checklist-item">
+    <div class="item-header">
+        <span class="item-number">6</span>
+        <span class="item-title">String-Level Mismatch</span>
+        <div class="checkbox"></div>
+    </div>
+    <div class="item-content">
+        <p><span class="symptom">Symptom:</span> Inverter consistently underperforms vs identical neighbors with same irradiance</p>
+
+        <p><span class="diagnostic">Diagnostic:</span></p>
+        <ul style="margin: 5px 0; padding-left: 20px;">
+            <li>Compare inverter output to 3-5 identical neighbors (same model, string config, exposure)</li>
+            <li>Calculate: (Target Inverter / Avg of Neighbors) × 100%</li>
+            <li>Normal: 95-105% | Warning: 90-95% | Critical: <90%</li>
+        </ul>
+
+        <p><span class="action">Action:</span></p>
+        <ul style="margin: 5px 0; padding-left: 20px;">
+            <li>Inspect DC combiner box connections and fuses for one weak string</li>
+            <li>Check individual string open-circuit voltage (Voc) to identify underperforming string</li>
+            <li>Investigate shading, soiling, or module failures on specific string</li>
+        </ul>
+
+        <div class="impact">
+            <strong>Impact:</strong> One string 15% underperforming = 5-8% total inverter loss if 8-12 strings (~$5,000-$8,000/year per MW)
+        </div>
+    </div>
+</div>
+
+<div class="checklist-item">
+    <div class="item-header">
+        <span class="item-number">7</span>
+        <span class="item-title">Intermittent Communication Loss</span>
+        <div class="checkbox"></div>
+    </div>
+    <div class="item-content">
+        <p><span class="symptom">Symptom:</span> Missing data points during peak production hours, daily totals seem low</p>
+
+        <p><span class="diagnostic">Diagnostic:</span></p>
+        <ul style="margin: 5px 0; padding-left: 20px;">
+            <li>Review SCADA data completeness: count missing timestamps during daylight hours</li>
+            <li>Correlate data gaps with peak irradiance times (10am-2pm most critical)</li>
+            <li>Normal: >99% complete | Warning: 95-99% | Critical: <95% or pattern of peak-hour gaps</li>
+        </ul>
+
+        <p><span class="action">Action:</span></p>
+        <ul style="margin: 5px 0; padding-left: 20px;">
+            <li>Check communication cable quality (RS485/Ethernet) for noise or damage</li>
+            <li>Verify network topology: avoid daisy-chain lengths >1km without repeaters</li>
+            <li>Review SCADA polling frequency and buffer capacity (may be saturated during high data periods)</li>
+        </ul>
+
+        <div class="impact">
+            <strong>Impact:</strong> 5% data loss during peak hours = 3-4% underestimation of production + false performance issues (~$3,000-$4,000/year per MW)
+        </div>
+    </div>
+</div>
+
+<div class="cta-footer">
+    <p style="margin: 0 0 10px 0; font-size: 18px; font-weight: bold;">Need Help Diagnosing Your Inverters?</p>
+    <p style="margin: 0 0 10px 0;">Get a free 15-minute inverter performance audit from our UAE-based team</p>
+    <a href="mailto:contact@nuravolt.com">Contact Us →</a>
+</div>
+
+<div class="footer">
+    <p><strong>NuraVolt</strong> | Energy Intelligence for Solar & Storage</p>
+    <p>© 2025 NuraVolt | contact@nuravolt.com</p>
+</div>
+
+</body>
+</html>

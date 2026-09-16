@@ -1,0 +1,280 @@
+# ShamsIQ QA - full page sweep
+# Covers every routable page under src/app/ that has a concrete URL
+# (skips dynamic-only routes that require a real ID like blog/[articleId],
+# and skips deep demo drilldowns that need inverter/mppt/string IDs).
+#
+# All cases share the same generic rubric so 24 rubrics don't have to be
+# hand-written. If a specific page warrants tighter criteria, move it to
+# smoke.yaml with a bespoke rubric.
+
+# -------- Marketing / public landing pages --------
+
+- id: page-home
+  type: ui
+  description: Landing page (/)
+  url: /
+  actions:
+    - wait_for_selector: "h1, main, header"
+      timeout: 15000
+    - wait_for_timeout: 1500
+  rubric: &generic_rubric |
+    PASS if the screenshot shows the intended page rendered with real content
+    (headings, copy, images, or interactive UI) and no error overlay, no
+    "Something went wrong", no 404/500 message, no blank white page, and
+    no unexpected Clerk sign-in wall on a page that should be public.
+    FAIL on: blank page, full-page error overlay, 404/500 text, Next.js
+    error boundary, unexpected auth redirect, or a page that is clearly the
+    wrong route (e.g. the marketing homepage when the URL asks for a
+    blog post).
+
+- id: page-demo-index
+  type: ui
+  description: Demo index (/demo)
+  url: /demo
+  actions:
+    - wait_for_selector: "h1, main, [role=main]"
+      timeout: 15000
+    - wait_for_timeout: 1500
+  rubric: *generic_rubric
+
+- id: page-one-pager
+  type: ui
+  description: One-pager sales collateral
+  url: /one-pager
+  actions:
+    - wait_for_selector: "h1, main, [role=main]"
+      timeout: 15000
+    - wait_for_timeout: 1000
+  rubric: *generic_rubric
+
+- id: page-brochure
+  type: ui
+  description: Brochure page
+  url: /brochure
+  actions:
+    - wait_for_selector: "h1, main, [role=main]"
+      timeout: 15000
+    - wait_for_timeout: 1000
+  rubric: *generic_rubric
+
+- id: page-waiting-list
+  type: ui
+  description: Waiting list signup
+  url: /waiting-list
+  actions:
+    - wait_for_selector: "h1, form, main"
+      timeout: 15000
+    - wait_for_timeout: 1000
+  rubric: *generic_rubric
+
+- id: page-success
+  type: ui
+  description: Success / thank-you page
+  url: /success
+  actions:
+    - wait_for_selector: "h1, main"
+      timeout: 15000
+    - wait_for_timeout: 1000
+  rubric: *generic_rubric
+
+- id: page-case-studies
+  type: ui
+  description: Case studies index
+  url: /case-studies
+  actions:
+    - wait_for_selector: "h1, main"
+      timeout: 15000
+    - wait_for_timeout: 1000
+  rubric: *generic_rubric
+
+- id: page-resources
+  type: ui
+  description: Resources index
+  url: /resources
+  actions:
+    - wait_for_selector: "h1, main"
+      timeout: 15000
+    - wait_for_timeout: 1000
+  rubric: *generic_rubric
+
+- id: page-blog-index
+  type: ui
+  description: Blog index
+  url: /blog
+  actions:
+    - wait_for_selector: "h1, main, article"
+      timeout: 15000
+    - wait_for_timeout: 1000
+  rubric: *generic_rubric
+
+- id: page-blog-cost-of-irradiation
+  type: ui
+  description: Blog post - cost of poor irradiation data
+  url: /blog/cost-of-poor-irradiation-data
+  actions:
+    - wait_for_selector: "article, h1, main"
+      timeout: 15000
+    - wait_for_timeout: 1000
+  rubric: *generic_rubric
+
+- id: page-blog-bess-faults
+  type: ui
+  description: Blog post - BESS faults ML value
+  url: /blog/bess-faults-ml-adds-value
+  actions:
+    - wait_for_selector: "article, h1, main"
+      timeout: 15000
+    - wait_for_timeout: 1000
+  rubric: *generic_rubric
+
+# -------- Solutions --------
+
+- id: page-solutions-pv
+  type: ui
+  description: PV monitoring solution page
+  url: /solutions/pv-monitoring
+  actions:
+    - wait_for_selector: "h1, main"
+      timeout: 15000
+    - wait_for_timeout: 1000
+  rubric: *generic_rubric
+
+- id: page-solutions-wind
+  type: ui
+  description: Wind monitoring solution page
+  url: /solutions/wind-monitoring
+  actions:
+    - wait_for_selector: "h1, main"
+      timeout: 15000
+    - wait_for_timeout: 1000
+  rubric: *generic_rubric
+
+- id: page-solutions-bess
+  type: ui
+  description: BESS monitoring solution page
+  url: /solutions/bess-monitoring
+  actions:
+    - wait_for_selector: "h1, main"
+      timeout: 15000
+    - wait_for_timeout: 1000
+  rubric: *generic_rubric
+
+# -------- Legal --------
+
+- id: page-privacy-policy
+  type: ui
+  description: Privacy policy
+  url: /privacy-policy
+  actions:
+    - wait_for_selector: "h1, main"
+      timeout: 15000
+    - wait_for_timeout: 500
+  rubric: *generic_rubric
+
+- id: page-privacy
+  type: ui
+  description: Privacy (short)
+  url: /privacy
+  actions:
+    - wait_for_selector: "h1, main"
+      timeout: 15000
+    - wait_for_timeout: 500
+  rubric: *generic_rubric
+
+- id: page-tos
+  type: ui
+  description: Terms of Service (short)
+  url: /tos
+  actions:
+    - wait_for_selector: "h1, main"
+      timeout: 15000
+    - wait_for_timeout: 500
+  rubric: *generic_rubric
+
+- id: page-terms
+  type: ui
+  description: Terms (long)
+  url: /terms
+  actions:
+    - wait_for_selector: "h1, main"
+      timeout: 15000
+    - wait_for_timeout: 500
+  rubric: *generic_rubric
+
+# -------- Compliance --------
+
+- id: page-compliance-reference
+  type: ui
+  description: Compliance reference
+  url: /compliance/reference
+  actions:
+    - wait_for_selector: "h1, main"
+      timeout: 15000
+    - wait_for_timeout: 1000
+  rubric: *generic_rubric
+
+# -------- ROI + demo portfolio + dashboard (already in smoke, include for completeness) --------
+
+- id: page-roi-calculator
+  type: ui
+  description: ROI calculator
+  url: /roi-calculator
+  actions:
+    - wait_for_selector: "h1, form"
+      timeout: 15000
+    - wait_for_timeout: 1000
+  rubric: *generic_rubric
+
+- id: page-demo-portfolio
+  type: ui
+  description: Demo portfolio dashboard
+  url: /demo/portfolio
+  actions:
+    - wait_for_selector: "h1, main"
+      timeout: 15000
+    - wait_for_timeout: 1500
+  rubric: *generic_rubric
+
+- id: page-dashboard-data-hub
+  type: ui
+  description: Data hub dashboard
+  url: /dashboard/data-hub
+  actions:
+    - wait_for_selector: "h1, main"
+      timeout: 20000
+    - wait_for_timeout: 1500
+  rubric: *generic_rubric
+
+# -------- Dynamic demo (concrete plant id from public/data/soiling/) --------
+
+- id: page-demo-plant-alpha
+  type: ui
+  description: Demo plant detail (alpha)
+  url: /demo/plant/alpha
+  actions:
+    - wait_for_selector: "h1, main"
+      timeout: 20000
+    - wait_for_timeout: 2000
+  rubric: *generic_rubric
+
+# -------- Auth pages (in dev middleware bypasses protection, but Clerk UI may still render) --------
+
+- id: page-sign-in
+  type: ui
+  description: Sign-in page (Clerk)
+  url: /sign-in
+  actions:
+    - wait_for_selector: "h1, main, form, [data-clerk]"
+      timeout: 15000
+    - wait_for_timeout: 2000
+  rubric: *generic_rubric
+
+- id: page-sign-up
+  type: ui
+  description: Sign-up page (Clerk)
+  url: /sign-up
+  actions:
+    - wait_for_selector: "h1, main, form, [data-clerk]"
+      timeout: 15000
+    - wait_for_timeout: 2000
+  rubric: *generic_rubric

@@ -1,0 +1,51 @@
+# Combined requirements for both crash-course notebooks:
+#   - bess_analytics_crash_course.ipynb
+#   - pv_dt_pm_crash_course.ipynb
+#
+# Setup:
+#   python -m venv .venv
+#   source .venv/bin/activate          # Linux / macOS
+#   # .venv\Scripts\activate           # Windows
+#   pip install -r notebooks/requirements.txt
+#   pip install -e .                   # install the nuravolt package itself (editable)
+#   python -m ipykernel install --user --name nuravolt-notebooks --display-name "NuraVolt Notebooks"
+#
+# Then launch JupyterLab from the repo root and pick the "NuraVolt Notebooks" kernel:
+#   jupyter lab notebooks/
+
+# ----- Data wrangling ---------------------------------------------------------
+numpy>=1.24
+pandas>=2.0
+polars>=0.19
+pyarrow>=14            # parquet I/O for polars/pandas
+
+# ----- Plotting ---------------------------------------------------------------
+plotly>=5.17
+matplotlib>=3.7
+seaborn>=0.12
+
+# ----- Notebook stack ---------------------------------------------------------
+jupyter>=1.0
+jupyterlab>=4.0
+ipywidgets>=8.1
+ipykernel>=6.29
+nbformat>=5.10
+nbconvert>=7.16
+
+# ----- Solar / PV physics -----------------------------------------------------
+pvlib>=0.11
+scipy>=1.11             # NASA .mat parsing + numerical routines
+
+# ----- ML stack ---------------------------------------------------------------
+scikit-learn>=1.3
+lightgbm>=4.0
+catboost>=1.2           # foundation soiling model uses CatBoost
+shap>=0.44              # SHAP explainability (Ch 28 of PV notebook)
+
+# ----- Networking (live data fetches with try/except fallback) ---------------
+requests>=2.31
+certifi>=2023.0
+
+# ----- Misc -------------------------------------------------------------------
+python-dateutil>=2.8
+tqdm>=4.66

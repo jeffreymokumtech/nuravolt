@@ -1,0 +1,122 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nuravolt"
+version = "0.1.0"
+description = "Solar energy intelligence platform for soiling detection, fault detection, and digital twin modeling"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Jeffrey de Jong", email = "jeffrey@mokumtech.io"}
+]
+keywords = ["solar", "pv", "soiling", "machine-learning", "digital-twin", "energy"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+dependencies = [
+    "polars>=0.19.0",
+    "pandas>=2.0.0",
+    "numpy>=1.24.0",
+    "pvlib>=0.10.0",
+    "lightgbm>=4.0.0",
+    "scikit-learn>=1.3.0",
+    "plotly>=5.17.0",
+    "matplotlib>=3.7.0",
+    "seaborn>=0.12.0",
+    "requests>=2.31.0",
+    "certifi>=2023.0.0",
+    "python-dateutil>=2.8.0",
+]
+
+[project.optional-dependencies]
+# Phase 1+ — Iceberg lakehouse read/write stack (docs/DATA_ARCHITECTURE_GUIDE.md).
+# duckdb + pyarrow are the embedded compute engine; pyiceberg is the table format.
+# sql-sqlite ships the local/SQLite-on-S3 catalog. s3fs/glue/boto3 are pulled in
+# only when writing to S3 (Phase 2+) — local dev needs no AWS.
+lake = [
+    "duckdb>=1.1.0",
+    "pyarrow>=14.0.0",
+    # sql-sqlite = local dev filesystem catalog; glue = shared AWS-native catalog
+    # (production). Both backends sit behind nuravolt/lake/catalog.py::get_catalog().
+    "pyiceberg[sql-sqlite,glue]>=0.7.0",
+]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.7.0",
+    "isort>=5.12.0",
+    "flake8>=6.1.0",
+    "mypy>=1.5.0",
+]
+notebook = [
+    "jupyter>=1.0.0",
+    "jupyterlab>=4.0.0",
+    "ipywidgets>=8.1.0",
+    "nbformat>=5.9.0",
+]
+# Phase 2/3/4 — foundation-model serving stack. Adds ~1 GB of disk
+# (torch CPU wheel + Chronos-2 weights). Install for the dedicated ml-serve
+# container or local backtesting only; not pulled by the default install.
+# CPU wheels: pip install -e .[ml-foundation] --extra-index-url https://download.pytorch.org/whl/cpu
+ml-foundation = [
+    "torch>=2.4.0",
+    "transformers>=4.45.0",
+    "huggingface_hub>=0.24.0",
+    "chronos-forecasting>=1.5.0",
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/jeffreymokumtech/nuravolt"
+Documentation = "https://nuravolt.readthedocs.io"
+Repository = "https://github.com/jeffreymokumtech/nuravolt"
+Issues = "https://github.com/jeffreymokumtech/nuravolt/issues"
+
+[tool.black]
+line-length = 100
+target-version = ["py39", "py310", "py311"]
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+# NOTE: coverage flags removed — pytest-cov is not installed in the nuravolt
+# conda env and the --cov addopts made `pytest tests` error out entirely,
+# which is why the Python suite never ran in any automation lane.
+addopts = "-v"

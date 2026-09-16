@@ -1,0 +1,222 @@
+{
+ "source": "Open-Meteo ERA5 archive, hourly 100 m wind, 2025",
+ "sampleHours": 8760,
+ "meanSpeedMs": 5.11,
+ "speedClasses": [
+  "0-3 m/s",
+  "3-6 m/s",
+  "6-9 m/s",
+  "9-12 m/s",
+  "12-+ m/s"
+ ],
+ "sectors": [
+  {
+   "sector": "N",
+   "centerDeg": 0.0,
+   "frequencyPct": 2.0,
+   "meanSpeedMs": 3.36,
+   "speedClassesPct": [
+    0.96,
+    0.81,
+    0.23,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "sector": "NNE",
+   "centerDeg": 22.5,
+   "frequencyPct": 2.12,
+   "meanSpeedMs": 3.17,
+   "speedClassesPct": [
+    1.07,
+    0.88,
+    0.16,
+    0.01,
+    0.0
+   ]
+  },
+  {
+   "sector": "NE",
+   "centerDeg": 45.0,
+   "frequencyPct": 7.5,
+   "meanSpeedMs": 5.52,
+   "speedClassesPct": [
+    1.42,
+    2.88,
+    2.35,
+    0.86,
+    0.0
+   ]
+  },
+  {
+   "sector": "ENE",
+   "centerDeg": 67.5,
+   "frequencyPct": 12.87,
+   "meanSpeedMs": 5.96,
+   "speedClassesPct": [
+    1.64,
+    4.33,
+    5.82,
+    1.07,
+    0.0
+   ]
+  },
+  {
+   "sector": "E",
+   "centerDeg": 90.0,
+   "frequencyPct": 2.6,
+   "meanSpeedMs": 3.75,
+   "speedClassesPct": [
+    1.02,
+    1.27,
+    0.29,
+    0.03,
+    0.0
+   ]
+  },
+  {
+   "sector": "ESE",
+   "centerDeg": 112.5,
+   "frequencyPct": 2.11,
+   "meanSpeedMs": 3.82,
+   "speedClassesPct": [
+    0.82,
+    0.95,
+    0.34,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "sector": "SE",
+   "centerDeg": 135.0,
+   "frequencyPct": 3.68,
+   "meanSpeedMs": 4.86,
+   "speedClassesPct": [
+    0.95,
+    1.69,
+    0.82,
+    0.14,
+    0.08
+   ]
+  },
+  {
+   "sector": "SSE",
+   "centerDeg": 157.5,
+   "frequencyPct": 4.82,
+   "meanSpeedMs": 5.57,
+   "speedClassesPct": [
+    0.96,
+    1.79,
+    1.47,
+    0.49,
+    0.1
+   ]
+  },
+  {
+   "sector": "S",
+   "centerDeg": 180.0,
+   "frequencyPct": 5.1,
+   "meanSpeedMs": 5.87,
+   "speedClassesPct": [
+    0.96,
+    1.83,
+    1.53,
+    0.64,
+    0.15
+   ]
+  },
+  {
+   "sector": "SSW",
+   "centerDeg": 202.5,
+   "frequencyPct": 5.18,
+   "meanSpeedMs": 5.42,
+   "speedClassesPct": [
+    1.36,
+    1.74,
+    1.37,
+    0.64,
+    0.08
+   ]
+  },
+  {
+   "sector": "SW",
+   "centerDeg": 225.0,
+   "frequencyPct": 5.94,
+   "meanSpeedMs": 4.93,
+   "speedClassesPct": [
+    1.58,
+    2.53,
+    1.3,
+    0.41,
+    0.11
+   ]
+  },
+  {
+   "sector": "WSW",
+   "centerDeg": 247.5,
+   "frequencyPct": 6.85,
+   "meanSpeedMs": 4.62,
+   "speedClassesPct": [
+    1.97,
+    2.87,
+    1.62,
+    0.35,
+    0.03
+   ]
+  },
+  {
+   "sector": "W",
+   "centerDeg": 270.0,
+   "frequencyPct": 7.73,
+   "meanSpeedMs": 4.47,
+   "speedClassesPct": [
+    1.66,
+    4.65,
+    1.15,
+    0.25,
+    0.02
+   ]
+  },
+  {
+   "sector": "WNW",
+   "centerDeg": 292.5,
+   "frequencyPct": 11.77,
+   "meanSpeedMs": 4.98,
+   "speedClassesPct": [
+    1.94,
+    6.29,
+    3.24,
+    0.3,
+    0.0
+   ]
+  },
+  {
+   "sector": "NW",
+   "centerDeg": 315.0,
+   "frequencyPct": 15.29,
+   "meanSpeedMs": 5.52,
+   "speedClassesPct": [
+    1.59,
+    7.24,
+    6.24,
+    0.22,
+    0.0
+   ]
+  },
+  {
+   "sector": "NNW",
+   "centerDeg": 337.5,
+   "frequencyPct": 4.45,
+   "meanSpeedMs": 4.62,
+   "speedClassesPct": [
+    1.12,
+    2.13,
+    1.1,
+    0.1,
+    0.0
+   ]
+  }
+ ]
+}

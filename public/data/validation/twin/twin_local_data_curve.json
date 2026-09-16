@@ -1,0 +1,86 @@
+{
+  "dataset": "Twin accuracy against days of local history",
+  "n_samples": 10954,
+  "n_plants": 7,
+  "normalizer": "mean_daily_energy_kwh",
+  "nmae_pct": 16.69821087103726,
+  "protocol": "Each plant held out entirely. At k=0 every model is built from the other plants only. At k>0 the model sees the held-out plant's first k days. The scoring window is the plant's final 365 days and is identical for every k, so the curve isolates what local data buys.",
+  "day_one_nmae_pct": 16.69821087103726,
+  "best_after_local_nmae_pct": 16.462775957204926,
+  "best_model_after_local": "ml_local",
+  "error_reduction_pct": 1.4099409550558093,
+  "curve": {
+    "0": {
+      "ml_transfer": 16.69821087103726,
+      "physics_calibrated": 17.010721607193855,
+      "irradiance_line": 17.010721607193855
+    },
+    "7": {
+      "ml_transfer": 16.69821087103726,
+      "physics_calibrated": 17.010721607193855,
+      "irradiance_line": 17.667957054699524
+    },
+    "14": {
+      "ml_transfer": 16.69821087103726,
+      "physics_calibrated": 17.010721607193855,
+      "irradiance_line": 18.86048533588802
+    },
+    "30": {
+      "ml_transfer": 16.69821087103726,
+      "physics_calibrated": 17.010721607193855,
+      "irradiance_line": 17.36375250252183,
+      "ml_local": 33.82040359605278,
+      "ml_hybrid": 16.7510117454171
+    },
+    "60": {
+      "ml_transfer": 16.69821087103726,
+      "physics_calibrated": 17.010721607193855,
+      "irradiance_line": 16.810450978157437,
+      "ml_local": 21.995140322693842,
+      "ml_hybrid": 16.776601788494393
+    },
+    "90": {
+      "ml_transfer": 16.69821087103726,
+      "physics_calibrated": 17.010721607193855,
+      "irradiance_line": 16.31515324552487,
+      "ml_local": 19.904406537988834,
+      "ml_hybrid": 16.769449553610137
+    },
+    "180": {
+      "ml_transfer": 16.69821087103726,
+      "physics_calibrated": 17.010721607193855,
+      "irradiance_line": 16.3624982146339,
+      "ml_local": 18.35584608025253,
+      "ml_hybrid": 16.777499238412137
+    },
+    "365": {
+      "ml_transfer": 16.69821087103726,
+      "physics_calibrated": 17.010721607193855,
+      "irradiance_line": 16.48879445156866,
+      "ml_local": 16.462775957204926,
+      "ml_hybrid": 16.57871789558394
+    }
+  },
+  "local_days": [
+    0,
+    7,
+    14,
+    30,
+    60,
+    90,
+    180,
+    365
+  ],
+  "excluded_from_headline": [
+    "gamma"
+  ],
+  "generated_at": "2026-08-20T18:17:04.737127Z",
+  "finding": "At daily-energy resolution a full year of the plant's own history buys about 1% error reduction: 16.70% nMAE on day one against 16.46% after 365 local days. Local machine learning is far WORSE than transfer until it has seen a full seasonal cycle: 33.8% at 30 days, 22.0% at 60, 19.9% at 90, converging to transfer only at 365. A model trained on a customer's first month is actively harmful.",
+  "why": "The irradiance-to-power relationship is close to universal, so at daily aggregation there is little site-specific signal left to learn. What varies between plants is mostly a scale factor, and that comes from the nameplate rather than from history.",
+  "caveats": [
+    "Daily-energy resolution only. The 15-minute twin reaches 6.61% nMAE of AC nameplate, a different metric on a different normaliser, and is not comparable to these numbers.",
+    "The scoring window here is each plant's final 365 days, which is a harder and different window from the walk-forward and leave-one-plant-out runs. Compare rows within this table, not across artifacts.",
+    "Says nothing about faults or soiling, where local reference data is known to matter a great deal."
+  ],
+  "headline": "day one 16.70% nMAE, 16.46% after a year of local data: local history buys ~1% at daily resolution, and local-only ML is worse than transfer below 365 days"
+}

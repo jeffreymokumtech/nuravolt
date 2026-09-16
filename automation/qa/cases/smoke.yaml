@@ -1,0 +1,85 @@
+# ShamsIQ QA - smoke suite
+# Run with: python -m automation.qa.collect --cases automation/qa/cases/smoke.yaml
+# Then: /qa-judge
+
+- id: demo-portfolio
+  type: ui
+  description: Demo portfolio page renders plant cards and KPIs
+  url: /demo/portfolio
+  actions:
+    - wait_for_selector: "h1, main, [data-testid=plant-card]"
+      timeout: 15000
+    # Let client-side hydration and any charts settle before the shot
+    - wait_for_timeout: 1500
+  rubric: |
+    PASS if the screenshot clearly shows a solar portfolio dashboard with
+    either multiple plant cards/rows or a ranked list of plants, plus visible
+    KPI metrics (capacity, performance, soiling, or similar numeric values),
+    and no visible error banners, "Something went wrong", "404", "500", or
+    empty-state placeholders covering the whole page.
+    FAIL on blank pages, error overlays, or pages that look like a wrong
+    route (e.g. the marketing homepage instead of the portfolio view).
+
+- id: roi-calculator
+  type: ui
+  description: Public ROI calculator landing renders its form
+  url: /roi-calculator
+  actions:
+    - wait_for_selector: "h1, form, input"
+      timeout: 15000
+    - wait_for_timeout: 1000
+  rubric: |
+    PASS if the screenshot shows the ROI Calculator page with a visible form
+    (capacity input or region selector), a "Calculate" / "Simple" / "Advanced"
+    mode toggle or CTA, and the overall layout looks intentional (headline,
+    supporting copy, calculator UI). FAIL on blank page, JS error overlay,
+    or a page that redirected to auth/sign-in.
+
+- id: dashboard-data-hub
+  type: ui
+  description: Data hub dashboard loads connection manager UI
+  url: /dashboard/data-hub
+  actions:
+    - wait_for_selector: "h1, main, [role=main]"
+      timeout: 20000
+    - wait_for_timeout: 2000
+  rubric: |
+    PASS if the screenshot shows the data-hub / data-integration dashboard -
+    typically a list of data connections (SCADA, InfluxDB, CSV, etc.) OR an
+    empty-state with an "Add connection" CTA. Header/nav chrome should be
+    visible. FAIL if it shows a Clerk sign-in page, a generic 404, a
+    full-page error, or the marketing site.
+
+- id: api-soiling-forecast-alpha1
+  type: api
+  method: GET
+  path: /api/soiling/plants/alpha1/forecast
+  rubric: |
+    PASS if the JSON response is a valid object (not an error envelope like
+    {"error": ...}) that contains forecast data - either a top-level array
+    of daily entries with dates and numeric soiling/ratio values, or an
+    object with a "forecast" / "data" / "predictions" key containing such
+    an array. Roughly 30+ daily entries is plausible (the full year is
+    365-ish). FAIL on empty string, HTML responses, 4xx/5xx status (check
+    meta.status_code), or obviously malformed payloads.
+
+- id: api-soiling-summary-alpha1
+  type: api
+  method: GET
+  path: /api/soiling/plants/alpha1/summary
+  rubric: |
+    PASS if the JSON is a structured summary object with at least a few
+    keys describing plant-level soiling metrics (e.g. current soiling ratio,
+    recent cleaning, next recommended cleaning, or similar). FAIL on error
+    envelopes, empty object {}, or non-2xx status.
+
+- id: api-tickets-list
+  type: api
+  method: GET
+  path: /api/tickets
+  rubric: |
+    PASS if the response is a valid JSON list of tickets OR an object with
+    a "tickets" / "data" / "items" array (possibly empty on a fresh DB).
+    An empty list is acceptable as long as it is a well-formed JSON array
+    or container. FAIL on auth redirects (HTML), 5xx status, or error
+    envelopes like {"error": "..."}.

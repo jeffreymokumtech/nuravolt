@@ -1,0 +1,153 @@
+{
+  "metadata": {
+    "plantId": "ribera",
+    "generatedAt": "2025-12-17T07:00:41.791313Z",
+    "period": {
+      "start": "2020-10-01",
+      "end": "2025-12-13"
+    },
+    "cvThreshold": 0.1,
+    "minSampleSize": 50
+  },
+  "overallAnalysis": {
+    "uniformPeriods": {
+      "count": 1721,
+      "zoneCorrelations": [
+        {
+          "zoneId": "INV 01",
+          "onSiteCorrelation": 0.0331,
+          "openMeteoCorrelation": 0.0327,
+          "betterSource": "similar",
+          "correlationDifference": 0.0004,
+          "sampleCount": 658
+        },
+        {
+          "zoneId": "INV 02",
+          "onSiteCorrelation": 0.0499,
+          "openMeteoCorrelation": 0.0367,
+          "betterSource": "similar",
+          "correlationDifference": 0.0132,
+          "sampleCount": 658
+        },
+        {
+          "zoneId": "INV 03",
+          "onSiteCorrelation": -0.0003,
+          "openMeteoCorrelation": 0.0479,
+          "betterSource": "open_meteo",
+          "correlationDifference": -0.0482,
+          "sampleCount": 664
+        },
+        {
+          "zoneId": "INV 04",
+          "onSiteCorrelation": -0.019,
+          "openMeteoCorrelation": 0.0335,
+          "betterSource": "open_meteo",
+          "correlationDifference": -0.0525,
+          "sampleCount": 664
+        }
+      ]
+    },
+    "nonUniformPeriods": {
+      "count": 10,
+      "zoneCorrelations": []
+    }
+  },
+  "conditionalAnalysis": [
+    {
+      "condition": "uniform",
+      "description": "CV < 0.10 - spatially uniform irradiance conditions",
+      "sampleCount": 1721,
+      "zoneCorrelations": [
+        {
+          "zoneId": "INV 01",
+          "onSiteCorrelation": 0.0331,
+          "openMeteoCorrelation": 0.0327,
+          "betterSource": "similar",
+          "correlationDifference": 0.0004,
+          "sampleCount": 658
+        },
+        {
+          "zoneId": "INV 02",
+          "onSiteCorrelation": 0.0499,
+          "openMeteoCorrelation": 0.0367,
+          "betterSource": "similar",
+          "correlationDifference": 0.0132,
+          "sampleCount": 658
+        },
+        {
+          "zoneId": "INV 03",
+          "onSiteCorrelation": -0.0003,
+          "openMeteoCorrelation": 0.0479,
+          "betterSource": "open_meteo",
+          "correlationDifference": -0.0482,
+          "sampleCount": 664
+        },
+        {
+          "zoneId": "INV 04",
+          "onSiteCorrelation": -0.019,
+          "openMeteoCorrelation": 0.0335,
+          "betterSource": "open_meteo",
+          "correlationDifference": -0.0525,
+          "sampleCount": 664
+        }
+      ]
+    },
+    {
+      "condition": "nonUniform",
+      "description": "CV >= 0.10 - partial clouds or localized effects",
+      "sampleCount": 10,
+      "zoneCorrelations": []
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "INV 03 correlates better with Open-Meteo during winter",
+      "season": "winter",
+      "affectedZones": [
+        "INV 03"
+      ],
+      "frequency": 0.25,
+      "confidence": 0.0848
+    },
+    {
+      "pattern": "INV 04 correlates better with Open-Meteo during winter",
+      "season": "winter",
+      "affectedZones": [
+        "INV 04"
+      ],
+      "frequency": 0.25,
+      "confidence": 0.0848
+    },
+    {
+      "pattern": "INV 01 correlates better with Open-Meteo during spring",
+      "season": "spring",
+      "affectedZones": [
+        "INV 01"
+      ],
+      "frequency": 0.25,
+      "confidence": 0.0586
+    },
+    {
+      "pattern": "INV 02 correlates better with on-site during summer",
+      "season": "summer",
+      "affectedZones": [
+        "INV 02"
+      ],
+      "frequency": 0.25,
+      "confidence": 0.1204
+    },
+    {
+      "pattern": "INV 01 correlates better with on-site during autumn",
+      "season": "autumn",
+      "affectedZones": [
+        "INV 01"
+      ],
+      "frequency": 0.25,
+      "confidence": 0.0506
+    }
+  ],
+  "recommendations": [
+    "On-site irradiance sensor shows low correlation with zone performance. Consider sensor calibration or repositioning.",
+    "Winter correlations differ between data sources. Low sun angle may cause sensor-specific biases."
+  ]
+}

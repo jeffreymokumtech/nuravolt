@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worst 20 Inverters - Alpha1 9MW</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        body { margin: 0; padding: 20px; background: #1a1a2e; font-family: system-ui, -apple-system, sans-serif; }
+        h1 { color: #eee; text-align: center; margin-bottom: 10px; }
+        .subtitle { color: #888; text-align: center; margin-bottom: 20px; }
+        #chart { width: 100%; height: 600px; }
+    </style>
+</head>
+<body>
+    <h1>Bottom 20 Inverters by Soiling Ratio</h1>
+    <p class="subtitle">Alpha1 9MW - Priority for Cleaning</p>
+    <div id="chart"></div>
+    <script>
+        fetch('ranking_worst20_config.json')
+            .then(response => response.json())
+            .then(config => {
+                const chart = echarts.init(document.getElementById('chart'), 'dark');
+                chart.setOption(config);
+                window.addEventListener('resize', () => chart.resize());
+            })
+            .catch(err => {
+                document.getElementById('chart').innerHTML = '<p style="color:red;">Error loading chart: ' + err.message + '</p>';
+            });
+    </script>
+</body>
+</html>

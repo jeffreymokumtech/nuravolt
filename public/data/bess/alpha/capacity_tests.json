@@ -1,0 +1,68 @@
+[
+  {
+    "id": "test-1",
+    "test_date": "2024-08-30T00:00:00",
+    "measured_capacity_kwh": 5042.5,
+    "soh_result": 1.0085,
+    "capacity_retention": 1.0085,
+    "test_type": "standard",
+    "ambient_temp_c": 23.0,
+    "c_rate_used": 0.2,
+    "is_valid": true
+  },
+  {
+    "id": "test-2",
+    "test_date": "2024-11-28T00:00:00",
+    "measured_capacity_kwh": 4950.0,
+    "soh_result": 0.99,
+    "capacity_retention": 0.99,
+    "test_type": "standard",
+    "ambient_temp_c": 22.9,
+    "c_rate_used": 0.2,
+    "is_valid": true
+  },
+  {
+    "id": "test-3",
+    "test_date": "2025-02-26T00:00:00",
+    "measured_capacity_kwh": 4877.5,
+    "soh_result": 0.9755,
+    "capacity_retention": 0.9755,
+    "test_type": "standard",
+    "ambient_temp_c": 21.9,
+    "c_rate_used": 0.2,
+    "is_valid": true
+  },
+  {
+    "id": "test-4",
+    "test_date": "2025-05-27T00:00:00",
+    "measured_capacity_kwh": 4984.3,
+    "soh_result": 0.9968,
+    "capacity_retention": 0.9968,
+    "test_type": "standard",
+    "ambient_temp_c": 21.7,
+    "c_rate_used": 0.2,
+    "is_valid": true
+  },
+  {
+    "id": "test-5",
+    "test_date": "2025-08-25T00:00:00",
+    "measured_capacity_kwh": 4856.0,
+    "soh_result": 0.9712,
+    "capacity_retention": 0.9712,
+    "test_type": "standard",
+    "ambient_temp_c": 18.8,
+    "c_rate_used": 0.2,
+    "is_valid": true
+  },
+  {
+    "id": "test-6",
+    "test_date": "2025-11-23T00:00:00",
+    "measured_capacity_kwh": 4886.0,
+    "soh_result": 0.9772,
+    "capacity_retention": 0.9772,
+    "test_type": "standard",
+    "ambient_temp_c": 26.4,
+    "c_rate_used": 0.2,
+    "is_valid": true
+  }
+]

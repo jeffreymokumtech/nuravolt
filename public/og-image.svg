@@ -1,0 +1,60 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="sunGradient" cx="50%" cy="50%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="dataGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+
+  <!-- Logo Container -->
+  <g transform="translate(450, 165)">
+    <!-- Background circle for sun -->
+    <circle cx="150" cy="150" r="120" fill="url(#sunGradient)" opacity="0.1"/>
+
+    <!-- Main sun symbol -->
+    <circle cx="150" cy="150" r="60" fill="url(#sunGradient)"/>
+
+    <!-- Sun rays -->
+    <g stroke="#f59e0b" stroke-width="6" stroke-linecap="round">
+      <line x1="150" y1="30" x2="150" y2="50"/>
+      <line x1="235" y1="65" x2="221" y2="79"/>
+      <line x1="270" y1="150" x2="250" y2="150"/>
+      <line x1="235" y1="235" x2="221" y2="221"/>
+      <line x1="150" y1="270" x2="150" y2="250"/>
+      <line x1="65" y1="235" x2="79" y2="221"/>
+      <line x1="30" y1="150" x2="50" y2="150"/>
+      <line x1="65" y1="65" x2="79" y2="79"/>
+    </g>
+
+    <!-- Neural network nodes -->
+    <circle cx="120" cy="120" r="8" fill="url(#dataGradient)" opacity="0.8"/>
+    <circle cx="180" cy="120" r="8" fill="url(#dataGradient)" opacity="0.8"/>
+    <circle cx="120" cy="180" r="8" fill="url(#dataGradient)" opacity="0.8"/>
+    <circle cx="180" cy="180" r="8" fill="url(#dataGradient)" opacity="0.8"/>
+
+    <!-- Connecting lines -->
+    <path d="M120 120 L150 150 L180 120 M150 150 L180 180 M150 150 L120 180"
+          stroke="url(#dataGradient)"
+          stroke-width="4"
+          fill="none"
+          opacity="0.6"/>
+  </g>
+
+  <!-- Brand Name -->
+  <text x="600" y="480" font-family="Arial, sans-serif" font-size="64" font-weight="bold" text-anchor="middle" fill="#1e293b">NuraVolt</text>
+
+  <!-- Tagline -->
+  <text x="600" y="530" font-family="Arial, sans-serif" font-size="28" text-anchor="middle" fill="#64748b">Energy Intelligence for Solar &amp; Storage</text>
+</svg>

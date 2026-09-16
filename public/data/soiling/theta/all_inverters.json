@@ -1,0 +1,289 @@
+{
+  "metadata": {
+    "plant_id": "theta",
+    "generated_at": "2026-02-10T10:00:00.000000",
+    "total_inverters": 20
+  },
+  "inverters": [
+    {
+      "inverterId": "SG50CX-01",
+      "groupId": "South",
+      "powerLoss": 4.8,
+      "performanceRatio": 0.95,
+      "soilingRatio": {
+        "mean": 0.952,
+        "std": 0.018
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": 0.5
+      }
+    },
+    {
+      "inverterId": "SG50CX-02",
+      "groupId": "South",
+      "powerLoss": 5.2,
+      "performanceRatio": 0.95,
+      "soilingRatio": {
+        "mean": 0.948,
+        "std": 0.018
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": 0.3
+      }
+    },
+    {
+      "inverterId": "SG50CX-03",
+      "groupId": "South",
+      "powerLoss": 4.5,
+      "performanceRatio": 0.95,
+      "soilingRatio": {
+        "mean": 0.955,
+        "std": 0.018
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": 0.6
+      }
+    },
+    {
+      "inverterId": "SG50CX-04",
+      "groupId": "South",
+      "powerLoss": 5.0,
+      "performanceRatio": 0.95,
+      "soilingRatio": {
+        "mean": 0.95,
+        "std": 0.018
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": 0.4
+      }
+    },
+    {
+      "inverterId": "SG50CX-05",
+      "groupId": "South",
+      "powerLoss": 4.7,
+      "performanceRatio": 0.95,
+      "soilingRatio": {
+        "mean": 0.953,
+        "std": 0.018
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": 0.5
+      }
+    },
+    {
+      "inverterId": "SG50CX-06",
+      "groupId": "South",
+      "powerLoss": 5.3,
+      "performanceRatio": 0.95,
+      "soilingRatio": {
+        "mean": 0.947,
+        "std": 0.018
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": 0.2
+      }
+    },
+    {
+      "inverterId": "SG50CX-07",
+      "groupId": "South",
+      "powerLoss": 4.6,
+      "performanceRatio": 0.95,
+      "soilingRatio": {
+        "mean": 0.954,
+        "std": 0.018
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": 0.6
+      }
+    },
+    {
+      "inverterId": "SG50CX-08",
+      "groupId": "South",
+      "powerLoss": 4.9,
+      "performanceRatio": 0.95,
+      "soilingRatio": {
+        "mean": 0.951,
+        "std": 0.018
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": 0.4
+      }
+    },
+    {
+      "inverterId": "SG50CX-09",
+      "groupId": "South",
+      "powerLoss": 5.1,
+      "performanceRatio": 0.95,
+      "soilingRatio": {
+        "mean": 0.949,
+        "std": 0.018
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": 0.3
+      }
+    },
+    {
+      "inverterId": "SG50CX-10",
+      "groupId": "South",
+      "powerLoss": 4.4,
+      "performanceRatio": 0.95,
+      "soilingRatio": {
+        "mean": 0.956,
+        "std": 0.018
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": 0.7
+      }
+    },
+    {
+      "inverterId": "SG50CX-11",
+      "groupId": "East",
+      "powerLoss": 6.8,
+      "performanceRatio": 0.94,
+      "soilingRatio": {
+        "mean": 0.932,
+        "std": 0.019
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": -0.5
+      }
+    },
+    {
+      "inverterId": "SG50CX-12",
+      "groupId": "East",
+      "powerLoss": 8.2,
+      "performanceRatio": 0.93,
+      "soilingRatio": {
+        "mean": 0.918,
+        "std": 0.022
+      },
+      "fleetComparison": {
+        "severity": "minorIssues",
+        "zScore": -1.1
+      }
+    },
+    {
+      "inverterId": "SG50CX-13",
+      "groupId": "East",
+      "powerLoss": 7.5,
+      "performanceRatio": 0.94,
+      "soilingRatio": {
+        "mean": 0.925,
+        "std": 0.019
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": -0.8
+      }
+    },
+    {
+      "inverterId": "SG50CX-14",
+      "groupId": "East",
+      "powerLoss": 6.2,
+      "performanceRatio": 0.94,
+      "soilingRatio": {
+        "mean": 0.938,
+        "std": 0.019
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": -0.2
+      }
+    },
+    {
+      "inverterId": "SG50CX-15",
+      "groupId": "East",
+      "powerLoss": 7.9,
+      "performanceRatio": 0.94,
+      "soilingRatio": {
+        "mean": 0.921,
+        "std": 0.022
+      },
+      "fleetComparison": {
+        "severity": "minorIssues",
+        "zScore": -1.0
+      }
+    },
+    {
+      "inverterId": "SG50CX-16",
+      "groupId": "West",
+      "powerLoss": 5.5,
+      "performanceRatio": 0.95,
+      "soilingRatio": {
+        "mean": 0.945,
+        "std": 0.02
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": 0.1
+      }
+    },
+    {
+      "inverterId": "SG50CX-17",
+      "groupId": "West",
+      "powerLoss": 6.5,
+      "performanceRatio": 0.94,
+      "soilingRatio": {
+        "mean": 0.935,
+        "std": 0.02
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": -0.3
+      }
+    },
+    {
+      "inverterId": "SG50CX-18",
+      "groupId": "West",
+      "powerLoss": 10.8,
+      "performanceRatio": 0.92,
+      "soilingRatio": {
+        "mean": 0.892,
+        "std": 0.032
+      },
+      "fleetComparison": {
+        "severity": "majorIssues",
+        "zScore": -2.3
+      }
+    },
+    {
+      "inverterId": "SG50CX-19",
+      "groupId": "West",
+      "powerLoss": 5.9,
+      "performanceRatio": 0.95,
+      "soilingRatio": {
+        "mean": 0.941,
+        "std": 0.02
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": -0.0
+      }
+    },
+    {
+      "inverterId": "SG50CX-20",
+      "groupId": "West",
+      "powerLoss": 6.2,
+      "performanceRatio": 0.94,
+      "soilingRatio": {
+        "mean": 0.938,
+        "std": 0.02
+      },
+      "fleetComparison": {
+        "severity": "normal",
+        "zScore": -0.2
+      }
+    }
+  ]
+}

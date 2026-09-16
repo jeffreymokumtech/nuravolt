@@ -1,0 +1,1587 @@
+{
+  "report_type": "warranty_dossier",
+  "generated_at": "2026-07-03T16:22:50.908266+00:00",
+  "asset": {
+    "asset_id": "nv-demo-bess-1",
+    "name": "NV Demo BESS 1",
+    "chemistry": "lfp",
+    "nominal_capacity_kwh": 2000.0,
+    "nominal_power_kw": 1000.0,
+    "manufacturer": null,
+    "model": null,
+    "installation_date": "2024-04-04T16:22:50.824053"
+  },
+  "warranty_terms": {
+    "capacity_guarantee_pct": 0.7,
+    "warranty_years": 10,
+    "max_cycles": 5000,
+    "max_throughput_mwh": null,
+    "min_rte": 0.85,
+    "operating_temp_max_c": 35.0,
+    "max_c_rate_continuous": 1.0
+  },
+  "contract_extraction": null,
+  "health_score": {
+    "score": 72,
+    "risk_level": "MODERATE",
+    "component_scores": {
+      "soh": 87,
+      "cycles": 98,
+      "time": 77,
+      "efficiency": 66,
+      "violations": 0
+    },
+    "current_soh": 0.962,
+    "soh_margin": 0.262,
+    "cycles_used": 50.6,
+    "cycles_remaining": 4949.4,
+    "years_remaining": 7.75,
+    "projected_eol_date": null,
+    "risk_factors": [],
+    "recommendation": "OK: Operating within warranty parameters."
+  },
+  "violations": [
+    {
+      "type": "TEMPERATURE_EXCEED",
+      "severity": "critical",
+      "started_at": "2026-06-03T11:00:00",
+      "ended_at": "2026-06-03T16:45:00",
+      "duration_minutes": 345,
+      "measured_value": 44.17,
+      "threshold_value": 35.0,
+      "unit": "\u00b0C",
+      "description": "Temperature exceeded 35.0\u00b0C for 345 minutes. Max: 44.2\u00b0C"
+    },
+    {
+      "type": "TEMPERATURE_EXCEED",
+      "severity": "critical",
+      "started_at": "2026-06-08T11:00:00",
+      "ended_at": "2026-06-08T16:45:00",
+      "duration_minutes": 345,
+      "measured_value": 48.25,
+      "threshold_value": 35.0,
+      "unit": "\u00b0C",
+      "description": "Temperature exceeded 35.0\u00b0C for 345 minutes. Max: 48.2\u00b0C"
+    },
+    {
+      "type": "TEMPERATURE_EXCEED",
+      "severity": "critical",
+      "started_at": "2026-06-15T11:00:00",
+      "ended_at": "2026-06-15T16:45:00",
+      "duration_minutes": 345,
+      "measured_value": 44.63,
+      "threshold_value": 35.0,
+      "unit": "\u00b0C",
+      "description": "Temperature exceeded 35.0\u00b0C for 345 minutes. Max: 44.6\u00b0C"
+    },
+    {
+      "type": "TEMPERATURE_EXCEED",
+      "severity": "critical",
+      "started_at": "2026-06-20T11:00:00",
+      "ended_at": "2026-06-20T16:45:00",
+      "duration_minutes": 345,
+      "measured_value": 44.48,
+      "threshold_value": 35.0,
+      "unit": "\u00b0C",
+      "description": "Temperature exceeded 35.0\u00b0C for 345 minutes. Max: 44.5\u00b0C"
+    },
+    {
+      "type": "TEMPERATURE_EXCEED",
+      "severity": "critical",
+      "started_at": "2026-06-21T11:00:00",
+      "ended_at": "2026-06-21T16:45:00",
+      "duration_minutes": 345,
+      "measured_value": 43.88,
+      "threshold_value": 35.0,
+      "unit": "\u00b0C",
+      "description": "Temperature exceeded 35.0\u00b0C for 345 minutes. Max: 43.9\u00b0C"
+    },
+    {
+      "type": "TEMPERATURE_EXCEED",
+      "severity": "critical",
+      "started_at": "2026-06-23T11:00:00",
+      "ended_at": "2026-06-23T16:45:00",
+      "duration_minutes": 345,
+      "measured_value": 45.51,
+      "threshold_value": 35.0,
+      "unit": "\u00b0C",
+      "description": "Temperature exceeded 35.0\u00b0C for 345 minutes. Max: 45.5\u00b0C"
+    },
+    {
+      "type": "TEMPERATURE_EXCEED",
+      "severity": "critical",
+      "started_at": "2026-06-27T11:00:00",
+      "ended_at": "2026-06-27T16:45:00",
+      "duration_minutes": 345,
+      "measured_value": 45.21,
+      "threshold_value": 35.0,
+      "unit": "\u00b0C",
+      "description": "Temperature exceeded 35.0\u00b0C for 345 minutes. Max: 45.2\u00b0C"
+    },
+    {
+      "type": "SOC_HIGH_DWELL",
+      "severity": "warning",
+      "started_at": "2026-05-02T04:00:00",
+      "ended_at": "2026-05-04T02:45:00",
+      "duration_minutes": 2805,
+      "measured_value": 0.985,
+      "threshold_value": 0.95,
+      "unit": "%",
+      "description": "Battery at >95% SoC for 46.8 hours. Warranty risk."
+    },
+    {
+      "type": "SOC_LOW_DWELL",
+      "severity": "critical",
+      "started_at": "2026-04-16T20:00:00",
+      "ended_at": "2026-04-18T00:30:00",
+      "duration_minutes": 1710,
+      "measured_value": 0.1473,
+      "threshold_value": 0.15,
+      "unit": "%",
+      "description": "Battery at <15% SoC for 28.5 hours. Risk of deep discharge damage."
+    },
+    {
+      "type": "SOC_LOW_DWELL",
+      "severity": "critical",
+      "started_at": "2026-04-22T20:30:00",
+      "ended_at": "2026-04-24T09:15:00",
+      "duration_minutes": 2205,
+      "measured_value": 0.1238,
+      "threshold_value": 0.15,
+      "unit": "%",
+      "description": "Battery at <15% SoC for 36.8 hours. Risk of deep discharge damage."
+    },
+    {
+      "type": "SOC_LOW_DWELL",
+      "severity": "critical",
+      "started_at": "2026-05-06T19:45:00",
+      "ended_at": "2026-05-08T09:00:00",
+      "duration_minutes": 2235,
+      "measured_value": 0.1238,
+      "threshold_value": 0.15,
+      "unit": "%",
+      "description": "Battery at <15% SoC for 37.2 hours. Risk of deep discharge damage."
+    },
+    {
+      "type": "SOC_LOW_DWELL",
+      "severity": "critical",
+      "started_at": "2026-05-20T20:30:00",
+      "ended_at": "2026-05-22T08:00:00",
+      "duration_minutes": 2130,
+      "measured_value": 0.1238,
+      "threshold_value": 0.15,
+      "unit": "%",
+      "description": "Battery at <15% SoC for 35.5 hours. Risk of deep discharge damage."
+    },
+    {
+      "type": "HVAC_FAILURE",
+      "severity": "critical",
+      "started_at": "2026-06-03T11:00:00",
+      "ended_at": "2026-06-27T11:00:00",
+      "duration_minutes": 34560,
+      "measured_value": 45.51,
+      "threshold_value": 35.0,
+      "unit": "\u00b0C",
+      "description": "Temperature rise detected with HVAC system offline. Potential thermal management failure."
+    }
+  ],
+  "cycling": {
+    "total_equivalent_cycles": 50.6,
+    "total_throughput_mwh": 336.0,
+    "avg_round_trip_efficiency": 0.9062,
+    "daily": [
+      {
+        "date": "2026-03-30T00:00:00",
+        "equivalent_cycles": 1.503,
+        "energy_in_kwh": 3400.0,
+        "energy_out_kwh": 3800.0,
+        "avg_dod": 0.184,
+        "avg_c_rate": 0.15,
+        "round_trip_efficiency": 1.1176
+      },
+      {
+        "date": "2026-03-31T00:00:00",
+        "equivalent_cycles": 1.21,
+        "energy_in_kwh": 3800.0,
+        "energy_out_kwh": 3000.0,
+        "avg_dod": 0.17,
+        "avg_c_rate": 0.142,
+        "round_trip_efficiency": 0.7895
+      },
+      {
+        "date": "2026-04-01T00:00:00",
+        "equivalent_cycles": 1.382,
+        "energy_in_kwh": 3600.0,
+        "energy_out_kwh": 3400.0,
+        "avg_dod": 0.193,
+        "avg_c_rate": 0.146,
+        "round_trip_efficiency": 0.9444
+      },
+      {
+        "date": "2026-04-02T00:00:00",
+        "equivalent_cycles": 1.69,
+        "energy_in_kwh": 3200.0,
+        "energy_out_kwh": 2800.0,
+        "avg_dod": 0.227,
+        "avg_c_rate": 0.125,
+        "round_trip_efficiency": 0.875
+      },
+      {
+        "date": "2026-04-03T00:00:00",
+        "equivalent_cycles": 0.704,
+        "energy_in_kwh": 2600.0,
+        "energy_out_kwh": 2600.0,
+        "avg_dod": 0.113,
+        "avg_c_rate": 0.108,
+        "round_trip_efficiency": 1.0
+      },
+      {
+        "date": "2026-04-04T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 2125.0,
+        "energy_out_kwh": 0.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.044,
+        "round_trip_efficiency": 0.0
+      },
+      {
+        "date": "2026-04-05T00:00:00",
+        "equivalent_cycles": 0.81,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 3600.0,
+        "avg_dod": 0.158,
+        "avg_c_rate": 0.117,
+        "round_trip_efficiency": 1.8
+      },
+      {
+        "date": "2026-04-06T00:00:00",
+        "equivalent_cycles": 0.522,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.23,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-04-07T00:00:00",
+        "equivalent_cycles": 1.29,
+        "energy_in_kwh": 2400.0,
+        "energy_out_kwh": 2200.0,
+        "avg_dod": 0.657,
+        "avg_c_rate": 0.096,
+        "round_trip_efficiency": 0.9167
+      },
+      {
+        "date": "2026-04-08T00:00:00",
+        "equivalent_cycles": 0.938,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.75,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-04-09T00:00:00",
+        "equivalent_cycles": 0.544,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.254,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-04-10T00:00:00",
+        "equivalent_cycles": 0.879,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.704,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-04-11T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 2125.0,
+        "energy_out_kwh": 0.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.044,
+        "round_trip_efficiency": 0.0
+      },
+      {
+        "date": "2026-04-12T00:00:00",
+        "equivalent_cycles": 0.911,
+        "energy_in_kwh": 1600.0,
+        "energy_out_kwh": 3000.0,
+        "avg_dod": 0.22,
+        "avg_c_rate": 0.096,
+        "round_trip_efficiency": 1.875
+      },
+      {
+        "date": "2026-04-13T00:00:00",
+        "equivalent_cycles": 1.29,
+        "energy_in_kwh": 2200.0,
+        "energy_out_kwh": 2200.0,
+        "avg_dod": 0.469,
+        "avg_c_rate": 0.092,
+        "round_trip_efficiency": 1.0
+      },
+      {
+        "date": "2026-04-14T00:00:00",
+        "equivalent_cycles": 0.997,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.797,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-04-15T00:00:00",
+        "equivalent_cycles": 0.997,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.797,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-04-16T00:00:00",
+        "equivalent_cycles": 0.133,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.107,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-04-17T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 0.0,
+        "energy_out_kwh": 0.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.0,
+        "round_trip_efficiency": 0.0
+      },
+      {
+        "date": "2026-04-18T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 2125.0,
+        "energy_out_kwh": 0.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.044,
+        "round_trip_efficiency": 0.0
+      },
+      {
+        "date": "2026-04-19T00:00:00",
+        "equivalent_cycles": 0.807,
+        "energy_in_kwh": 1600.0,
+        "energy_out_kwh": 3200.0,
+        "avg_dod": 0.246,
+        "avg_c_rate": 0.1,
+        "round_trip_efficiency": 2.0
+      },
+      {
+        "date": "2026-04-20T00:00:00",
+        "equivalent_cycles": 0.133,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.107,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-04-21T00:00:00",
+        "equivalent_cycles": 0.253,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.149,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-04-22T00:00:00",
+        "equivalent_cycles": 0.528,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.235,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-04-23T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 0.0,
+        "energy_out_kwh": 0.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.0,
+        "round_trip_efficiency": 0.0
+      },
+      {
+        "date": "2026-04-24T00:00:00",
+        "equivalent_cycles": 0.576,
+        "energy_in_kwh": 2200.0,
+        "energy_out_kwh": 2000.0,
+        "avg_dod": 0.169,
+        "avg_c_rate": 0.088,
+        "round_trip_efficiency": 0.9091
+      },
+      {
+        "date": "2026-04-25T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 2125.0,
+        "energy_out_kwh": 0.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.044,
+        "round_trip_efficiency": 0.0
+      },
+      {
+        "date": "2026-04-26T00:00:00",
+        "equivalent_cycles": 1.298,
+        "energy_in_kwh": 1600.0,
+        "energy_out_kwh": 3200.0,
+        "avg_dod": 0.472,
+        "avg_c_rate": 0.1,
+        "round_trip_efficiency": 2.0
+      },
+      {
+        "date": "2026-04-27T00:00:00",
+        "equivalent_cycles": 1.157,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.586,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-04-28T00:00:00",
+        "equivalent_cycles": 1.114,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.891,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-04-29T00:00:00",
+        "equivalent_cycles": 0.253,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.099,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-04-30T00:00:00",
+        "equivalent_cycles": 0.592,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.222,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-05-01T00:00:00",
+        "equivalent_cycles": 1.231,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.625,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-05-02T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 2125.0,
+        "energy_out_kwh": 0.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.044,
+        "round_trip_efficiency": 0.0
+      },
+      {
+        "date": "2026-05-03T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 0.0,
+        "energy_out_kwh": 0.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.0,
+        "round_trip_efficiency": 0.0
+      },
+      {
+        "date": "2026-05-04T00:00:00",
+        "equivalent_cycles": 1.17,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 3600.0,
+        "avg_dod": 0.483,
+        "avg_c_rate": 0.117,
+        "round_trip_efficiency": 1.8
+      },
+      {
+        "date": "2026-05-05T00:00:00",
+        "equivalent_cycles": 1.29,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.657,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-05-06T00:00:00",
+        "equivalent_cycles": 1.114,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.891,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-05-07T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 0.0,
+        "energy_out_kwh": 0.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.0,
+        "round_trip_efficiency": 0.0
+      },
+      {
+        "date": "2026-05-08T00:00:00",
+        "equivalent_cycles": 0.704,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.344,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-05-09T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 2125.0,
+        "energy_out_kwh": 0.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.044,
+        "round_trip_efficiency": 0.0
+      },
+      {
+        "date": "2026-05-10T00:00:00",
+        "equivalent_cycles": 1.018,
+        "energy_in_kwh": 1000.0,
+        "energy_out_kwh": 2600.0,
+        "avg_dod": 0.207,
+        "avg_c_rate": 0.075,
+        "round_trip_efficiency": 2.6
+      },
+      {
+        "date": "2026-05-11T00:00:00",
+        "equivalent_cycles": 0.091,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.073,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-05-12T00:00:00",
+        "equivalent_cycles": 0.426,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.288,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-05-13T00:00:00",
+        "equivalent_cycles": 0.938,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.75,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-05-14T00:00:00",
+        "equivalent_cycles": 0.485,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.335,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-05-15T00:00:00",
+        "equivalent_cycles": 1.29,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.657,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-05-16T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 2125.0,
+        "energy_out_kwh": 0.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.044,
+        "round_trip_efficiency": 0.0
+      },
+      {
+        "date": "2026-05-17T00:00:00",
+        "equivalent_cycles": 0.866,
+        "energy_in_kwh": 1600.0,
+        "energy_out_kwh": 3200.0,
+        "avg_dod": 0.27,
+        "avg_c_rate": 0.1,
+        "round_trip_efficiency": 2.0
+      },
+      {
+        "date": "2026-05-18T00:00:00",
+        "equivalent_cycles": 0.352,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.281,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-05-19T00:00:00",
+        "equivalent_cycles": 0.309,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.194,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-05-20T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-05-21T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 0.0,
+        "energy_out_kwh": 0.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.0,
+        "round_trip_efficiency": 0.0
+      },
+      {
+        "date": "2026-05-22T00:00:00",
+        "equivalent_cycles": 0.879,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.704,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-05-23T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 2125.0,
+        "energy_out_kwh": 0.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.044,
+        "round_trip_efficiency": 0.0
+      },
+      {
+        "date": "2026-05-24T00:00:00",
+        "equivalent_cycles": 0.919,
+        "energy_in_kwh": 1600.0,
+        "energy_out_kwh": 3200.0,
+        "avg_dod": 0.196,
+        "avg_c_rate": 0.1,
+        "round_trip_efficiency": 2.0
+      },
+      {
+        "date": "2026-05-25T00:00:00",
+        "equivalent_cycles": 0.192,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.1,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-05-26T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-05-27T00:00:00",
+        "equivalent_cycles": 0.469,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.188,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-05-28T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-05-29T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-05-30T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 2125.0,
+        "energy_out_kwh": 0.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.044,
+        "round_trip_efficiency": 0.0
+      },
+      {
+        "date": "2026-05-31T00:00:00",
+        "equivalent_cycles": 0.938,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 3600.0,
+        "avg_dod": 0.469,
+        "avg_c_rate": 0.117,
+        "round_trip_efficiency": 1.8
+      },
+      {
+        "date": "2026-06-01T00:00:00",
+        "equivalent_cycles": 0.133,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.107,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-06-02T00:00:00",
+        "equivalent_cycles": 0.57,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.178,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-06-03T00:00:00",
+        "equivalent_cycles": 1.29,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.657,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-06-04T00:00:00",
+        "equivalent_cycles": 0.333,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.142,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-06-05T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-06-06T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 2125.0,
+        "energy_out_kwh": 0.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.044,
+        "round_trip_efficiency": 0.0
+      },
+      {
+        "date": "2026-06-07T00:00:00",
+        "equivalent_cycles": 1.124,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 3600.0,
+        "avg_dod": 0.401,
+        "avg_c_rate": 0.117,
+        "round_trip_efficiency": 1.8
+      },
+      {
+        "date": "2026-06-08T00:00:00",
+        "equivalent_cycles": 0.821,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.375,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-06-09T00:00:00",
+        "equivalent_cycles": 1.29,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.657,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-06-10T00:00:00",
+        "equivalent_cycles": 0.645,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.281,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-06-11T00:00:00",
+        "equivalent_cycles": 0.762,
+        "energy_in_kwh": 2200.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.375,
+        "avg_c_rate": 0.083,
+        "round_trip_efficiency": 0.8182
+      },
+      {
+        "date": "2026-06-12T00:00:00",
+        "equivalent_cycles": 0.41,
+        "energy_in_kwh": 2200.0,
+        "energy_out_kwh": 2200.0,
+        "avg_dod": 0.234,
+        "avg_c_rate": 0.092,
+        "round_trip_efficiency": 1.0
+      },
+      {
+        "date": "2026-06-13T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 2125.0,
+        "energy_out_kwh": 0.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.044,
+        "round_trip_efficiency": 0.0
+      },
+      {
+        "date": "2026-06-14T00:00:00",
+        "equivalent_cycles": 1.047,
+        "energy_in_kwh": 1400.0,
+        "energy_out_kwh": 3000.0,
+        "avg_dod": 0.342,
+        "avg_c_rate": 0.092,
+        "round_trip_efficiency": 2.1429
+      },
+      {
+        "date": "2026-06-15T00:00:00",
+        "equivalent_cycles": 0.266,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.213,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-06-16T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-06-17T00:00:00",
+        "equivalent_cycles": 0.133,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.107,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-06-18T00:00:00",
+        "equivalent_cycles": 0.386,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.171,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-06-19T00:00:00",
+        "equivalent_cycles": 0.853,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.576,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-06-20T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 2125.0,
+        "energy_out_kwh": 0.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.044,
+        "round_trip_efficiency": 0.0
+      },
+      {
+        "date": "2026-06-21T00:00:00",
+        "equivalent_cycles": 0.829,
+        "energy_in_kwh": 1600.0,
+        "energy_out_kwh": 3200.0,
+        "avg_dod": 0.318,
+        "avg_c_rate": 0.1,
+        "round_trip_efficiency": 2.0
+      },
+      {
+        "date": "2026-06-22T00:00:00",
+        "equivalent_cycles": 0.133,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.107,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-06-23T00:00:00",
+        "equivalent_cycles": 1.114,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.891,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-06-24T00:00:00",
+        "equivalent_cycles": 0.368,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.097,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-06-25T00:00:00",
+        "equivalent_cycles": 0.192,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.1,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-06-26T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 1800.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.079,
+        "round_trip_efficiency": 0.9
+      },
+      {
+        "date": "2026-06-27T00:00:00",
+        "equivalent_cycles": 0,
+        "energy_in_kwh": 2125.0,
+        "energy_out_kwh": 0.0,
+        "avg_dod": 0.0,
+        "avg_c_rate": 0.044,
+        "round_trip_efficiency": 0.0
+      },
+      {
+        "date": "2026-06-28T00:00:00",
+        "equivalent_cycles": 0.714,
+        "energy_in_kwh": 2000.0,
+        "energy_out_kwh": 3600.0,
+        "avg_dod": 0.347,
+        "avg_c_rate": 0.117,
+        "round_trip_efficiency": 1.8
+      }
+    ],
+    "rainflow_histogram": [
+      {
+        "dod_bin": "0-10%",
+        "cycles": 70.0
+      },
+      {
+        "dod_bin": "10-20%",
+        "cycles": 41.5
+      },
+      {
+        "dod_bin": "20-30%",
+        "cycles": 9.0
+      },
+      {
+        "dod_bin": "30-40%",
+        "cycles": 4.5
+      },
+      {
+        "dod_bin": "40-50%",
+        "cycles": 4.0
+      },
+      {
+        "dod_bin": "50-60%",
+        "cycles": 3.0
+      },
+      {
+        "dod_bin": "60-70%",
+        "cycles": 3.0
+      },
+      {
+        "dod_bin": "70-80%",
+        "cycles": 4.0
+      },
+      {
+        "dod_bin": "80-90%",
+        "cycles": 3.5
+      },
+      {
+        "dod_bin": "90-100%",
+        "cycles": 14.5
+      }
+    ]
+  },
+  "soh_trajectory": {
+    "model": "empirical_degradation",
+    "chemistry": "lfp",
+    "assumptions": {
+      "cycles_per_year": 203.0,
+      "avg_temp_c": 22.7,
+      "avg_dod": 0.259
+    },
+    "warranty_threshold": 0.7,
+    "projected_threshold_crossing": null,
+    "points": [
+      {
+        "date": "2024-04-04",
+        "soh": 1.0
+      },
+      {
+        "date": "2024-05-04",
+        "soh": 0.9987
+      },
+      {
+        "date": "2024-06-04",
+        "soh": 0.9973
+      },
+      {
+        "date": "2024-07-04",
+        "soh": 0.996
+      },
+      {
+        "date": "2024-08-04",
+        "soh": 0.9946
+      },
+      {
+        "date": "2024-09-04",
+        "soh": 0.9933
+      },
+      {
+        "date": "2024-10-04",
+        "soh": 0.992
+      },
+      {
+        "date": "2024-11-04",
+        "soh": 0.9906
+      },
+      {
+        "date": "2024-12-04",
+        "soh": 0.9893
+      },
+      {
+        "date": "2025-01-04",
+        "soh": 0.988
+      },
+      {
+        "date": "2025-02-04",
+        "soh": 0.9866
+      },
+      {
+        "date": "2025-03-04",
+        "soh": 0.9853
+      },
+      {
+        "date": "2025-04-04",
+        "soh": 0.9839
+      },
+      {
+        "date": "2025-05-04",
+        "soh": 0.9826
+      },
+      {
+        "date": "2025-06-04",
+        "soh": 0.9813
+      },
+      {
+        "date": "2025-07-04",
+        "soh": 0.9799
+      },
+      {
+        "date": "2025-08-04",
+        "soh": 0.9786
+      },
+      {
+        "date": "2025-09-04",
+        "soh": 0.9773
+      },
+      {
+        "date": "2025-10-04",
+        "soh": 0.9759
+      },
+      {
+        "date": "2025-11-04",
+        "soh": 0.9746
+      },
+      {
+        "date": "2025-12-04",
+        "soh": 0.9732
+      },
+      {
+        "date": "2026-01-04",
+        "soh": 0.9719
+      },
+      {
+        "date": "2026-02-04",
+        "soh": 0.9706
+      },
+      {
+        "date": "2026-03-04",
+        "soh": 0.9692
+      },
+      {
+        "date": "2026-04-04",
+        "soh": 0.9679
+      },
+      {
+        "date": "2026-05-04",
+        "soh": 0.9666
+      },
+      {
+        "date": "2026-06-04",
+        "soh": 0.9652
+      },
+      {
+        "date": "2026-07-04",
+        "soh": 0.9639
+      },
+      {
+        "date": "2026-08-04",
+        "soh": 0.9625
+      },
+      {
+        "date": "2026-09-04",
+        "soh": 0.9612
+      },
+      {
+        "date": "2026-10-04",
+        "soh": 0.9599
+      },
+      {
+        "date": "2026-11-04",
+        "soh": 0.9585
+      },
+      {
+        "date": "2026-12-04",
+        "soh": 0.9572
+      },
+      {
+        "date": "2027-01-04",
+        "soh": 0.9559
+      },
+      {
+        "date": "2027-02-04",
+        "soh": 0.9545
+      },
+      {
+        "date": "2027-03-04",
+        "soh": 0.9532
+      },
+      {
+        "date": "2027-04-04",
+        "soh": 0.9518
+      },
+      {
+        "date": "2027-05-04",
+        "soh": 0.9505
+      },
+      {
+        "date": "2027-06-04",
+        "soh": 0.9492
+      },
+      {
+        "date": "2027-07-04",
+        "soh": 0.9478
+      },
+      {
+        "date": "2027-08-04",
+        "soh": 0.9465
+      },
+      {
+        "date": "2027-09-04",
+        "soh": 0.9452
+      },
+      {
+        "date": "2027-10-04",
+        "soh": 0.9438
+      },
+      {
+        "date": "2027-11-04",
+        "soh": 0.9425
+      },
+      {
+        "date": "2027-12-04",
+        "soh": 0.9411
+      },
+      {
+        "date": "2028-01-04",
+        "soh": 0.9398
+      },
+      {
+        "date": "2028-02-04",
+        "soh": 0.9385
+      },
+      {
+        "date": "2028-03-04",
+        "soh": 0.9371
+      },
+      {
+        "date": "2028-04-04",
+        "soh": 0.9358
+      },
+      {
+        "date": "2028-05-04",
+        "soh": 0.9345
+      },
+      {
+        "date": "2028-06-04",
+        "soh": 0.9331
+      },
+      {
+        "date": "2028-07-04",
+        "soh": 0.9318
+      },
+      {
+        "date": "2028-08-04",
+        "soh": 0.9304
+      },
+      {
+        "date": "2028-09-04",
+        "soh": 0.9291
+      },
+      {
+        "date": "2028-10-04",
+        "soh": 0.9278
+      },
+      {
+        "date": "2028-11-04",
+        "soh": 0.9264
+      },
+      {
+        "date": "2028-12-04",
+        "soh": 0.9251
+      },
+      {
+        "date": "2029-01-04",
+        "soh": 0.9237
+      },
+      {
+        "date": "2029-02-04",
+        "soh": 0.9224
+      },
+      {
+        "date": "2029-03-04",
+        "soh": 0.9211
+      },
+      {
+        "date": "2029-04-04",
+        "soh": 0.9197
+      },
+      {
+        "date": "2029-05-04",
+        "soh": 0.9184
+      },
+      {
+        "date": "2029-06-04",
+        "soh": 0.9171
+      },
+      {
+        "date": "2029-07-04",
+        "soh": 0.9157
+      },
+      {
+        "date": "2029-08-04",
+        "soh": 0.9144
+      },
+      {
+        "date": "2029-09-04",
+        "soh": 0.913
+      },
+      {
+        "date": "2029-10-04",
+        "soh": 0.9117
+      },
+      {
+        "date": "2029-11-04",
+        "soh": 0.9104
+      },
+      {
+        "date": "2029-12-04",
+        "soh": 0.909
+      },
+      {
+        "date": "2030-01-04",
+        "soh": 0.9077
+      },
+      {
+        "date": "2030-02-04",
+        "soh": 0.9064
+      },
+      {
+        "date": "2030-03-04",
+        "soh": 0.905
+      },
+      {
+        "date": "2030-04-04",
+        "soh": 0.9037
+      },
+      {
+        "date": "2030-05-04",
+        "soh": 0.9023
+      },
+      {
+        "date": "2030-06-04",
+        "soh": 0.901
+      },
+      {
+        "date": "2030-07-04",
+        "soh": 0.8997
+      },
+      {
+        "date": "2030-08-04",
+        "soh": 0.8983
+      },
+      {
+        "date": "2030-09-04",
+        "soh": 0.897
+      },
+      {
+        "date": "2030-10-04",
+        "soh": 0.8957
+      },
+      {
+        "date": "2030-11-04",
+        "soh": 0.8943
+      },
+      {
+        "date": "2030-12-04",
+        "soh": 0.893
+      },
+      {
+        "date": "2031-01-04",
+        "soh": 0.8916
+      },
+      {
+        "date": "2031-02-04",
+        "soh": 0.8903
+      },
+      {
+        "date": "2031-03-04",
+        "soh": 0.889
+      },
+      {
+        "date": "2031-04-04",
+        "soh": 0.8876
+      },
+      {
+        "date": "2031-05-04",
+        "soh": 0.8863
+      },
+      {
+        "date": "2031-06-04",
+        "soh": 0.885
+      },
+      {
+        "date": "2031-07-04",
+        "soh": 0.8836
+      },
+      {
+        "date": "2031-08-04",
+        "soh": 0.8823
+      },
+      {
+        "date": "2031-09-04",
+        "soh": 0.8809
+      },
+      {
+        "date": "2031-10-04",
+        "soh": 0.8796
+      },
+      {
+        "date": "2031-11-04",
+        "soh": 0.8783
+      },
+      {
+        "date": "2031-12-04",
+        "soh": 0.8769
+      },
+      {
+        "date": "2032-01-04",
+        "soh": 0.8756
+      },
+      {
+        "date": "2032-02-04",
+        "soh": 0.8743
+      },
+      {
+        "date": "2032-03-04",
+        "soh": 0.8729
+      },
+      {
+        "date": "2032-04-04",
+        "soh": 0.8716
+      },
+      {
+        "date": "2032-05-04",
+        "soh": 0.8702
+      },
+      {
+        "date": "2032-06-04",
+        "soh": 0.8689
+      },
+      {
+        "date": "2032-07-04",
+        "soh": 0.8676
+      },
+      {
+        "date": "2032-08-04",
+        "soh": 0.8662
+      },
+      {
+        "date": "2032-09-04",
+        "soh": 0.8649
+      },
+      {
+        "date": "2032-10-04",
+        "soh": 0.8635
+      },
+      {
+        "date": "2032-11-04",
+        "soh": 0.8622
+      },
+      {
+        "date": "2032-12-04",
+        "soh": 0.8609
+      },
+      {
+        "date": "2033-01-04",
+        "soh": 0.8595
+      },
+      {
+        "date": "2033-02-04",
+        "soh": 0.8582
+      },
+      {
+        "date": "2033-03-04",
+        "soh": 0.8569
+      },
+      {
+        "date": "2033-04-04",
+        "soh": 0.8555
+      },
+      {
+        "date": "2033-05-04",
+        "soh": 0.8542
+      },
+      {
+        "date": "2033-06-04",
+        "soh": 0.8528
+      },
+      {
+        "date": "2033-07-04",
+        "soh": 0.8515
+      },
+      {
+        "date": "2033-08-04",
+        "soh": 0.8502
+      },
+      {
+        "date": "2033-09-04",
+        "soh": 0.8488
+      },
+      {
+        "date": "2033-10-04",
+        "soh": 0.8475
+      },
+      {
+        "date": "2033-11-04",
+        "soh": 0.8462
+      },
+      {
+        "date": "2033-12-04",
+        "soh": 0.8448
+      },
+      {
+        "date": "2034-01-04",
+        "soh": 0.8435
+      },
+      {
+        "date": "2034-02-04",
+        "soh": 0.8421
+      },
+      {
+        "date": "2034-03-04",
+        "soh": 0.8408
+      },
+      {
+        "date": "2034-04-04",
+        "soh": 0.8395
+      }
+    ],
+    "capacity_tests": [
+      {
+        "date": "2024-10-11T16:22:50.824053",
+        "measured_capacity_kwh": 1970.0,
+        "soh": 0.985,
+        "test_type": "commissioning_retest"
+      },
+      {
+        "date": "2025-10-16T16:22:50.824053",
+        "measured_capacity_kwh": 1924.0,
+        "soh": 0.962,
+        "test_type": "annual_capacity_test"
+      }
+    ]
+  },
+  "evidence": {
+    "telemetry_profile": {
+      "rows": 8736,
+      "start": "2026-03-30T00:00:00",
+      "end": "2026-06-28T23:45:00",
+      "median_interval_seconds": 900,
+      "gap_count": 0,
+      "coverage": 1.0
+    },
+    "column_mapping": {
+      "timestamp": "timestamp",
+      "soc": "soc",
+      "power": "power_kw",
+      "temp": "temperature_c",
+      "voltage": "cell_voltage_v",
+      "hvac_status": "hvac_status"
+    },
+    "source_files": [],
+    "methodology": "Cycle counts reconstructed with ASTM E1049 four-point rainflow counting on state-of-charge; equivalent full cycles normalized to 100% depth of discharge. Violations detected rule-based against the warranty terms listed above. SoH trajectory from a semi-empirical calendar-plus-cyclic fade model calibrated per chemistry; capacity test measurements override model values where available."
+  }
+}

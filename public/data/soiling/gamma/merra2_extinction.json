@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "latitude": 39.489,
+    "longitude": 2.916,
+    "period": {
+      "start": "2024-01-01",
+      "end": "2024-01-10"
+    },
+    "source": "MERRA-2 M2T1NXAER",
+    "generated_at": "2025-12-29T11:47:33.428705"
+  },
+  "daily_data": [],
+  "statistics": {
+    "total_days": 0,
+    "avg_dust_extinction": null,
+    "max_dust_extinction": null,
+    "avg_seasalt_extinction": null
+  }
+}

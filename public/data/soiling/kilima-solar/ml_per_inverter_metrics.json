@@ -1,0 +1,655 @@
+{
+ "plantId": "kilima-solar",
+ "generatedAt": "2026-07-25T12:27:11",
+ "note": "Demo specimen: series derived from an anonymized European donor plant, aggregated to this fleet's 24 inverters and calendar-shifted. Not measurements from this site.",
+ "inverters": {
+  "INV-01": {
+   "inverterId": "INV-01",
+   "soilingRatio": {
+    "mean": 0.9028,
+    "median": 0.9028,
+    "min": 0.8828,
+    "max": 0.9228,
+    "std": 0.013029
+   },
+   "lossDisaggregation": {
+    "method": "ml_transfer_learning",
+    "percentages": {
+     "soiling": 9.72,
+     "temperature": 2.48,
+     "spectral": 0.69,
+     "inverter": 1.47,
+     "wiringBop": 1.13,
+     "degradation": 0.59,
+     "total": 16.08
+    },
+    "energy_kWh": {
+     "reference": 38700.0,
+     "net": 32477.04,
+     "soilingLoss": 3761.64
+    }
+   }
+  },
+  "INV-02": {
+   "inverterId": "INV-02",
+   "soilingRatio": {
+    "mean": 0.908,
+    "median": 0.908,
+    "min": 0.888,
+    "max": 0.928,
+    "std": 0.009417
+   },
+   "lossDisaggregation": {
+    "method": "ml_transfer_learning",
+    "percentages": {
+     "soiling": 9.2,
+     "temperature": 2.55,
+     "spectral": 0.62,
+     "inverter": 0.91,
+     "wiringBop": 1.52,
+     "degradation": 0.47,
+     "total": 15.27
+    },
+    "energy_kWh": {
+     "reference": 38700.0,
+     "net": 32790.51,
+     "soilingLoss": 3560.4
+    }
+   }
+  },
+  "INV-03": {
+   "inverterId": "INV-03",
+   "soilingRatio": {
+    "mean": 0.8954,
+    "median": 0.8954,
+    "min": 0.8754,
+    "max": 0.9154,
+    "std": 0.014959
+   },
+   "lossDisaggregation": {
+    "method": "ml_transfer_learning",
+    "percentages": {
+     "soiling": 10.46,
+     "temperature": 2.34,
+     "spectral": 0.64,
+     "inverter": 1.22,
+     "wiringBop": 1.56,
+     "degradation": 0.35,
+     "total": 16.57
+    },
+    "energy_kWh": {
+     "reference": 38700.0,
+     "net": 32287.41,
+     "soilingLoss": 4048.02
+    }
+   }
+  },
+  "INV-04": {
+   "inverterId": "INV-04",
+   "soilingRatio": {
+    "mean": 0.9096,
+    "median": 0.9096,
+    "min": 0.8896,
+    "max": 0.9296,
+    "std": 0.008432
+   },
+   "lossDisaggregation": {
+    "method": "ml_transfer_learning",
+    "percentages": {
+     "soiling": 9.04,
+     "temperature": 2.25,
+     "spectral": 0.61,
+     "inverter": 1.17,
+     "wiringBop": 1.51,
+     "degradation": 0.46,
+     "total": 15.04
+    },
+    "energy_kWh": {
+     "reference": 38700.0,
+     "net": 32879.52,
+     "soilingLoss": 3498.48
+    }
+   }
+  },
+  "INV-05": {
+   "inverterId": "INV-05",
+   "soilingRatio": {
+    "mean": 0.9138,
+    "median": 0.9138,
+    "min": 0.8938,
+    "max": 0.9338,
+    "std": 0.009698
+   },
+   "lossDisaggregation": {
+    "method": "ml_transfer_learning",
+    "percentages": {
+     "soiling": 8.62,
+     "temperature": 3.05,
+     "spectral": 0.75,
+     "inverter": 1.04,
+     "wiringBop": 1.6,
+     "degradation": 0.59,
+     "total": 15.65
+    },
+    "energy_kWh": {
+     "reference": 38700.0,
+     "net": 32643.45,
+     "soilingLoss": 3335.94
+    }
+   }
+  },
+  "INV-06": {
+   "inverterId": "INV-06",
+   "soilingRatio": {
+    "mean": 0.9103,
+    "median": 0.9103,
+    "min": 0.8903,
+    "max": 0.9303,
+    "std": 0.009417
+   },
+   "lossDisaggregation": {
+    "method": "ml_transfer_learning",
+    "percentages": {
+     "soiling": 8.97,
+     "temperature": 2.5,
+     "spectral": 0.76,
+     "inverter": 1.44,
+     "wiringBop": 1.41,
+     "degradation": 0.38,
+     "total": 15.46
+    },
+    "energy_kWh": {
+     "reference": 38700.0,
+     "net": 32716.98,
+     "soilingLoss": 3471.39
+    }
+   }
+  },
+  "INV-07": {
+   "inverterId": "INV-07",
+   "soilingRatio": {
+    "mean": 0.9121,
+    "median": 0.9121,
+    "min": 0.8921,
+    "max": 0.9321,
+    "std": 0.012613
+   },
+   "lossDisaggregation": {
+    "method": "ml_transfer_learning",
+    "percentages": {
+     "soiling": 8.79,
+     "temperature": 2.28,
+     "spectral": 0.81,
+     "inverter": 1.0,
+     "wiringBop": 1.32,
+     "degradation": 0.49,
+     "total": 14.69
+    },
+    "energy_kWh": {
+     "reference": 38700.0,
+     "net": 33014.97,
+     "soilingLoss": 3401.73
+    }
+   }
+  },
+  "INV-08": {
+   "inverterId": "INV-08",
+   "soilingRatio": {
+    "mean": 0.9108,
+    "median": 0.9108,
+    "min": 0.8908,
+    "max": 0.9308,
+    "std": 0.013574
+   },
+   "lossDisaggregation": {
+    "method": "ml_transfer_learning",
+    "percentages": {
+     "soiling": 8.92,
+     "temperature": 2.6,
+     "spectral": 0.7,
+     "inverter": 1.2,
+     "wiringBop": 1.33,
+     "degradation": 0.44,
+     "total": 15.19
+    },
+    "energy_kWh": {
+     "reference": 38700.0,
+     "net": 32821.47,
+     "soilingLoss": 3452.04
+    }
+   }
+  },
+  "INV-09": {
+   "inverterId": "INV-09",
+   "soilingRatio": {
+    "mean": 0.9,
+    "median": 0.9,
+    "min": 0.88,
+    "max": 0.92,
+    "std": 0.0123
+   },
+   "lossDisaggregation": {
+    "method": "ml_transfer_learning",
+    "percentages": {
+     "soiling": 10.0,
+     "temperature": 3.01,
+     "spectral": 0.8,
+     "inverter": 1.25,
+     "wiringBop": 1.34,
+     "degradation": 0.56,
+     "total": 16.96
+    },
+    "energy_kWh": {
+     "reference": 38700.0,
+     "net": 32136.48,
+     "soilingLoss": 3870.0
+    }
+   }
+  },
+  "INV-10": {
+   "inverterId": "INV-10",
+   "soilingRatio": {
+    "mean": 0.8993,
+    "median": 0.8993,
+    "min": 0.8793,
+    "max": 0.9193,
+    "std": 0.008953
+   },
+   "lossDisaggregation": {
+    "method": "ml_transfer_learning",
+    "percentages": {
+     "soiling": 10.07,
+     "temperature": 2.56,
+     "spectral": 0.84,
+     "inverter": 1.4,
+     "wiringBop": 1.15,
+     "degradation": 0.49,
+     "total": 16.51
+    },
+    "energy_kWh": {
+     "reference": 38700.0,
+     "net": 32310.63,
+     "soilingLoss": 3897.09
+    }
+   }
+  },
+  "INV-11": {
+   "inverterId": "INV-11",
+   "soilingRatio": {
+    "mean": 0.9161,
+    "median": 0.9161,
+    "min": 0.8961,
+    "max": 0.9361,
+    "std": 0.008521
+   },
+   "lossDisaggregation": {
+    "method": "ml_transfer_learning",
+    "percentages": {
+     "soiling": 8.39,
+     "temperature": 2.49,
+     "spectral": 0.7,
+     "inverter": 2.8,
+     "wiringBop": 1.19,
+     "degradation": 0.56,
+     "total": 16.13
+    },
+    "energy_kWh": {
+     "reference": 38700.0,
+     "net": 32457.69,
+     "soilingLoss": 3246.93
+    }
+   }
+  },
+  "INV-12": {
+   "inverterId": "INV-12",
+   "soilingRatio": {
+    "mean": 0.9184,
+    "median": 0.9184,
+    "min": 0.8984,
+    "max": 0.9384,
+    "std": 0.012805
+   },
+   "lossDisaggregation": {
+    "method": "ml_transfer_learning",
+    "percentages": {
+     "soiling": 8.16,
+     "temperature": 2.28,
+     "spectral": 0.84,
+     "inverter": 1.25,
+     "wiringBop": 1.16,
+     "degradation": 0.51,
+     "total": 14.2
+    },
+    "energy_kWh": {
+     "reference": 38700.0,
+     "net": 33204.6,
+     "soilingLoss": 3157.92
+    }
+   }
+  },
+  "INV-13": {
+   "inverterId": "INV-13",
+   "soilingRatio": {
+    "mean": 0.9844,
+    "median": 0.9844,
+    "min": 0.9644,
+    "max": 1.0,
+    "std": 0.013405
+   },
+   "lossDisaggregation": {
+    "method": "ml_transfer_learning",
+    "percentages": {
+     "soiling": 1.56,
+     "temperature": 3.02,
+     "spectral": 0.89,
+     "inverter": 1.0,
+     "wiringBop": 1.14,
+     "degradation": 0.52,
+     "total": 8.13
+    },
+    "energy_kWh": {
+     "reference": 38700.0,
+     "net": 35553.69,
+     "soilingLoss": 603.72
+    }
+   }
+  },
+  "INV-14": {
+   "inverterId": "INV-14",
+   "soilingRatio": {
+    "mean": 0.9856,
+    "median": 0.9856,
+    "min": 0.9656,
+    "max": 1.0,
+    "std": 0.009602
+   },
+   "lossDisaggregation": {
+    "method": "ml_transfer_learning",
+    "percentages": {
+     "soiling": 1.44,
+     "temperature": 2.8,
+     "spectral": 0.61,
+     "inverter": 1.43,
+     "wiringBop": 1.15,
+     "degradation": 0.42,
+     "total": 7.85
+    },
+    "energy_kWh": {
+     "reference": 38700.0,
+     "net": 35662.05,
+     "soilingLoss": 557.28
+    }
+   }
+  },
+  "INV-15": {
+   "inverterId": "INV-15",
+   "soilingRatio": {
+    "mean": 0.9849,
+    "median": 0.9849,
+    "min": 0.9649,
+    "max": 1.0,
+    "std": 0.01045
+   },
+   "lossDisaggregation": {
+    "method": "ml_transfer_learning",
+    "percentages": {
+     "soiling": 1.51,
+     "temperature": 2.4,
+     "spectral": 0.85,
+     "inverter": 1.49,
+     "wiringBop": 1.23,
+     "degradation": 0.49,
+     "total": 7.97
+    },
+    "energy_kWh": {
+     "reference": 38700.0,
+     "net": 35615.61,
+     "soilingLoss": 584.37
+    }
+   }
+  },
+  "INV-16": {
+   "inverterId": "INV-16",
+   "soilingRatio": {
+    "mean": 0.9876,
+    "median": 0.9876,
+    "min": 0.9676,
+    "max": 1.0,
+    "std": 0.011756
+   },
+   "lossDisaggregation": {
+    "method": "ml_transfer_learning",
+    "percentages": {
+     "soiling": 1.24,
+     "temperature": 2.32,
+     "spectral": 0.7,
+     "inverter": 1.47,
+     "wiringBop": 1.5,
+     "degradation": 0.46,
+     "total": 7.69
+    },
+    "energy_kWh": {
+     "reference": 38700.0,
+     "net": 35723.97,
+     "soilingLoss": 479.88
+    }
+   }
+  },
+  "INV-17": {
+   "inverterId": "INV-17",
+   "soilingRatio": {
+    "mean": 0.9827,
+    "median": 0.9827,
+    "min": 0.9627,
+    "max": 1.0,
+    "std": 0.015624
+   },
+   "lossDisaggregation": {
+    "method": "ml_transfer_learning",
+    "percentages": {
+     "soiling": 1.73,
+     "temperature": 2.63,
+     "spectral": 0.7,
+     "inverter": 6.5,
+     "wiringBop": 1.33,
+     "degradation": 0.54,
+     "total": 13.43
+    },
+    "energy_kWh": {
+     "reference": 38700.0,
+     "net": 33502.59,
+     "soilingLoss": 669.51
+    }
+   }
+  },
+  "INV-18": {
+   "inverterId": "INV-18",
+   "soilingRatio": {
+    "mean": 0.9801,
+    "median": 0.9801,
+    "min": 0.9601,
+    "max": 1.0,
+    "std": 0.014222
+   },
+   "lossDisaggregation": {
+    "method": "ml_transfer_learning",
+    "percentages": {
+     "soiling": 1.99,
+     "temperature": 2.95,
+     "spectral": 0.79,
+     "inverter": 1.48,
+     "wiringBop": 1.58,
+     "degradation": 0.31,
+     "total": 9.1
+    },
+    "energy_kWh": {
+     "reference": 38700.0,
+     "net": 35178.3,
+     "soilingLoss": 770.13
+    }
+   }
+  },
+  "INV-19": {
+   "inverterId": "INV-19",
+   "soilingRatio": {
+    "mean": 0.9776,
+    "median": 0.9776,
+    "min": 0.9576,
+    "max": 0.9976,
+    "std": 0.008889
+   },
+   "lossDisaggregation": {
+    "method": "ml_transfer_learning",
+    "percentages": {
+     "soiling": 2.24,
+     "temperature": 2.52,
+     "spectral": 0.74,
+     "inverter": 0.92,
+     "wiringBop": 1.57,
+     "degradation": 0.33,
+     "total": 8.32
+    },
+    "energy_kWh": {
+     "reference": 38700.0,
+     "net": 35480.16,
+     "soilingLoss": 866.88
+    }
+   }
+  },
+  "INV-20": {
+   "inverterId": "INV-20",
+   "soilingRatio": {
+    "mean": 0.951,
+    "median": 0.951,
+    "min": 0.931,
+    "max": 0.971,
+    "std": 0.010939
+   },
+   "lossDisaggregation": {
+    "method": "ml_transfer_learning",
+    "percentages": {
+     "soiling": 4.9,
+     "temperature": 2.4,
+     "spectral": 0.85,
+     "inverter": 1.34,
+     "wiringBop": 1.15,
+     "degradation": 0.33,
+     "total": 10.97
+    },
+    "energy_kWh": {
+     "reference": 38700.0,
+     "net": 34454.61,
+     "soilingLoss": 1896.3
+    }
+   }
+  },
+  "INV-21": {
+   "inverterId": "INV-21",
+   "soilingRatio": {
+    "mean": 0.9568,
+    "median": 0.9568,
+    "min": 0.9368,
+    "max": 0.9768,
+    "std": 0.012356
+   },
+   "lossDisaggregation": {
+    "method": "ml_transfer_learning",
+    "percentages": {
+     "soiling": 4.32,
+     "temperature": 2.47,
+     "spectral": 0.79,
+     "inverter": 10.0,
+     "wiringBop": 1.1,
+     "degradation": 0.44,
+     "total": 19.12
+    },
+    "energy_kWh": {
+     "reference": 38700.0,
+     "net": 31300.56,
+     "soilingLoss": 1671.84
+    }
+   }
+  },
+  "INV-22": {
+   "inverterId": "INV-22",
+   "soilingRatio": {
+    "mean": 0.9697,
+    "median": 0.9697,
+    "min": 0.9497,
+    "max": 0.9897,
+    "std": 0.012252
+   },
+   "lossDisaggregation": {
+    "method": "ml_transfer_learning",
+    "percentages": {
+     "soiling": 3.03,
+     "temperature": 2.52,
+     "spectral": 0.86,
+     "inverter": 1.4,
+     "wiringBop": 1.49,
+     "degradation": 0.37,
+     "total": 9.67
+    },
+    "energy_kWh": {
+     "reference": 38700.0,
+     "net": 34957.71,
+     "soilingLoss": 1172.61
+    }
+   }
+  },
+  "INV-23": {
+   "inverterId": "INV-23",
+   "soilingRatio": {
+    "mean": 0.9671,
+    "median": 0.9671,
+    "min": 0.9471,
+    "max": 0.9871,
+    "std": 0.015736
+   },
+   "lossDisaggregation": {
+    "method": "ml_transfer_learning",
+    "percentages": {
+     "soiling": 3.29,
+     "temperature": 2.58,
+     "spectral": 0.87,
+     "inverter": 1.21,
+     "wiringBop": 1.11,
+     "degradation": 0.41,
+     "total": 9.47
+    },
+    "energy_kWh": {
+     "reference": 38700.0,
+     "net": 35035.11,
+     "soilingLoss": 1273.23
+    }
+   }
+  },
+  "INV-24": {
+   "inverterId": "INV-24",
+   "soilingRatio": {
+    "mean": 0.9667,
+    "median": 0.9667,
+    "min": 0.9467,
+    "max": 0.9867,
+    "std": 0.008256
+   },
+   "lossDisaggregation": {
+    "method": "ml_transfer_learning",
+    "percentages": {
+     "soiling": 3.33,
+     "temperature": 2.91,
+     "spectral": 0.83,
+     "inverter": 1.01,
+     "wiringBop": 1.59,
+     "degradation": 0.56,
+     "total": 10.23
+    },
+    "energy_kWh": {
+     "reference": 38700.0,
+     "net": 34740.99,
+     "soilingLoss": 1288.71
+    }
+   }
+  }
+ }
+}

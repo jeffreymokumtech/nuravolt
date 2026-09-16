@@ -1,0 +1,206 @@
+{
+  "faults": [
+    {
+      "id": "WF-2025-001",
+      "turbineId": "WT-02",
+      "plantId": "zephyr",
+      "faultType": {
+        "id": "GN001",
+        "category": "GENERATOR",
+        "code": "GN001",
+        "name": "Generator Bearing DE Overtemperature",
+        "description": "Drive-end generator bearing temperature anomaly",
+        "severity": "HIGH",
+        "indicators": ["generator_bearing_temp_de", "generator_rpm"],
+        "thresholds": { "generator_bearing_temp_de_max": 95 }
+      },
+      "detectedAt": "2025-01-12T14:23:00Z",
+      "status": "ACTIVE",
+      "confidence": 0.87,
+      "evidence": [
+        {
+          "indicator": "generator_bearing_temp_de",
+          "value": 98.2,
+          "threshold": 95,
+          "deviation": 3.4,
+          "timestamp": "2025-01-12T14:23:00Z"
+        },
+        {
+          "indicator": "generator_rpm",
+          "value": 1485,
+          "threshold": 1500,
+          "deviation": -1.0,
+          "timestamp": "2025-01-12T14:23:00Z"
+        }
+      ],
+      "estimatedImpact": {
+        "lostEnergyKwh": 2450,
+        "repairCostUsd": 8500,
+        "downtimeHours": 12
+      }
+    },
+    {
+      "id": "WF-2025-002",
+      "turbineId": "WT-03",
+      "plantId": "zephyr",
+      "faultType": {
+        "id": "YW001",
+        "category": "YAW",
+        "code": "YW001",
+        "name": "Yaw Misalignment",
+        "description": "Nacelle not properly aligned with wind direction",
+        "severity": "MEDIUM",
+        "indicators": ["yaw_angle", "wind_direction", "active_power"],
+        "thresholds": { "yaw_error_max": 15 }
+      },
+      "detectedAt": "2025-01-11T09:45:00Z",
+      "status": "ACKNOWLEDGED",
+      "confidence": 0.92,
+      "evidence": [
+        {
+          "indicator": "yaw_error",
+          "value": 18.5,
+          "threshold": 15,
+          "deviation": 23.3,
+          "timestamp": "2025-01-11T09:45:00Z"
+        },
+        {
+          "indicator": "power_deficit",
+          "value": 8.2,
+          "threshold": 5,
+          "deviation": 64.0,
+          "timestamp": "2025-01-11T09:45:00Z"
+        }
+      ],
+      "estimatedImpact": {
+        "lostEnergyKwh": 1820,
+        "repairCostUsd": 2200,
+        "downtimeHours": 4
+      }
+    },
+    {
+      "id": "WF-2024-089",
+      "turbineId": "WT-01",
+      "plantId": "zephyr",
+      "faultType": {
+        "id": "GB002",
+        "category": "GEARBOX",
+        "code": "GB002",
+        "name": "Gearbox Oil Degradation",
+        "description": "Gearbox oil temperature pattern indicates degraded lubricant",
+        "severity": "MEDIUM",
+        "indicators": ["gearbox_oil_temp", "ambient_temp"],
+        "thresholds": { "oil_temp_delta_max": 45 }
+      },
+      "detectedAt": "2024-12-28T16:30:00Z",
+      "resolvedAt": "2024-12-30T10:15:00Z",
+      "status": "RESOLVED",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "indicator": "gearbox_oil_temp",
+          "value": 72,
+          "threshold": 65,
+          "deviation": 10.8,
+          "timestamp": "2024-12-28T16:30:00Z"
+        }
+      ],
+      "estimatedImpact": {
+        "lostEnergyKwh": 890,
+        "repairCostUsd": 3500,
+        "downtimeHours": 6
+      }
+    },
+    {
+      "id": "WF-2024-076",
+      "turbineId": "WT-04",
+      "plantId": "zephyr",
+      "faultType": {
+        "id": "BL002",
+        "category": "BLADE",
+        "code": "BL002",
+        "name": "Blade Icing Detected",
+        "description": "Power output significantly below expected, suggesting icing",
+        "severity": "MEDIUM",
+        "indicators": ["active_power", "wind_speed", "ambient_temp"],
+        "thresholds": { "power_deficit_pct": 20, "ambient_temp_max": 3 }
+      },
+      "detectedAt": "2024-12-15T06:12:00Z",
+      "resolvedAt": "2024-12-15T11:45:00Z",
+      "status": "RESOLVED",
+      "confidence": 0.94,
+      "evidence": [
+        {
+          "indicator": "power_deficit_pct",
+          "value": 32,
+          "threshold": 20,
+          "deviation": 60.0,
+          "timestamp": "2024-12-15T06:12:00Z"
+        },
+        {
+          "indicator": "ambient_temp",
+          "value": -2.1,
+          "threshold": 3,
+          "deviation": -170.0,
+          "timestamp": "2024-12-15T06:12:00Z"
+        }
+      ],
+      "estimatedImpact": {
+        "lostEnergyKwh": 1450,
+        "repairCostUsd": 0,
+        "downtimeHours": 5.5
+      }
+    },
+    {
+      "id": "WF-2024-052",
+      "turbineId": "WT-05",
+      "plantId": "zephyr",
+      "faultType": {
+        "id": "GB001",
+        "category": "GEARBOX",
+        "code": "GB001",
+        "name": "Gearbox Bearing Overtemperature",
+        "description": "Gearbox bearing temperature exceeds normal operating range",
+        "severity": "HIGH",
+        "indicators": ["gearbox_bearing_temp", "gearbox_oil_temp"],
+        "thresholds": { "gearbox_bearing_temp_max": 85, "temp_rise_rate": 5 }
+      },
+      "detectedAt": "2024-11-22T13:18:00Z",
+      "resolvedAt": "2024-11-24T09:30:00Z",
+      "status": "RESOLVED",
+      "confidence": 0.91,
+      "evidence": [
+        {
+          "indicator": "gearbox_bearing_temp",
+          "value": 89,
+          "threshold": 85,
+          "deviation": 4.7,
+          "timestamp": "2024-11-22T13:18:00Z"
+        }
+      ],
+      "estimatedImpact": {
+        "lostEnergyKwh": 4200,
+        "repairCostUsd": 12500,
+        "downtimeHours": 44
+      }
+    }
+  ],
+  "summary": {
+    "total": 5,
+    "active": 2,
+    "acknowledged": 0,
+    "resolved": 3,
+    "bySeverity": {
+      "CRITICAL": 0,
+      "HIGH": 2,
+      "MEDIUM": 3,
+      "LOW": 0
+    },
+    "byCategory": {
+      "GEARBOX": 2,
+      "GENERATOR": 1,
+      "YAW": 1,
+      "BLADE": 1
+    }
+  }
+}

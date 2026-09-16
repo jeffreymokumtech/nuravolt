@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BESS Performance Health Checklist</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 1.5cm;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.5;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #7c3aed;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #7c3aed;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 28px;
+            color: #6d28d9;
+            margin: 15px 0;
+            line-height: 1.2;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: #6b7280;
+            font-style: italic;
+        }
+        .intro-box {
+            background: #f5f3ff;
+            border-left: 4px solid #7c3aed;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        .warning-banner {
+            background: #fef2f2;
+            border: 2px solid #dc2626;
+            border-radius: 8px;
+            padding: 12px;
+            margin: 15px 0;
+            font-size: 13px;
+            font-weight: bold;
+            color: #dc2626;
+        }
+        .checklist-item {
+            margin: 20px 0;
+            page-break-inside: avoid;
+            background: #f9fafb;
+            border-radius: 8px;
+            padding: 15px;
+        }
+        .item-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .item-number {
+            background: #7c3aed;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 12px;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+        .item-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #6d28d9;
+            flex-grow: 1;
+        }
+        .checkbox {
+            width: 18px;
+            height: 18px;
+            border: 2px solid #7c3aed;
+            border-radius: 4px;
+            margin-left: auto;
+            flex-shrink: 0;
+        }
+        .item-content {
+            margin-left: 44px;
+            font-size: 14px;
+        }
+        .threshold-table {
+            width: 100%;
+            font-size: 13px;
+            margin: 10px 0;
+            border-collapse: collapse;
+        }
+        .threshold-table td {
+            padding: 6px;
+            border: 1px solid #d1d5db;
+        }
+        .normal {
+            background: #d1fae5;
+            color: #065f46;
+            font-weight: bold;
+        }
+        .warning {
+            background: #fef3c7;
+            color: #92400e;
+            font-weight: bold;
+        }
+        .critical {
+            background: #fee;
+            color: #991b1b;
+            font-weight: bold;
+        }
+        .action-item {
+            background: #eff6ff;
+            border-left: 3px solid #2563eb;
+            padding: 8px 12px;
+            margin: 8px 0;
+            font-size: 13px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #d1d5db;
+            font-size: 12px;
+            color: #6b7280;
+        }
+        .cta-footer {
+            background: linear-gradient(135deg, #7c3aed 0%, #2563eb 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .cta-footer a {
+            color: white;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="logo">NuraVolt</div>
+    <h1>BESS Performance Health Checklist</h1>
+    <div class="subtitle">Monitor SOC drift, temperature gradients, voltage imbalance & efficiency loss</div>
+</div>
+
+<div class="intro-box">
+    <strong>Purpose:</strong> Use this checklist monthly (minimum) to detect early warning signs of battery degradation and thermal runaway risk. These indicators prevent warranty invalidation and catastrophic thermal events. Complete this checklist during routine operation and after any charge/discharge anomalies. Keep records for warranty claims and insurance compliance.
+</div>
+
+<div class="warning-banner">
+    ⚠️ CRITICAL: Any parameter in "Critical" range requires immediate investigation and may necessitate module isolation to prevent thermal runaway and warranty invalidation.
+</div>
+
+<div class="checklist-item">
+    <div class="item-header">
+        <span class="item-number">1</span>
+        <span class="item-title">Cell Voltage Imbalance</span>
+        <div class="checkbox"></div>
+    </div>
+    <div class="item-content">
+        <p><strong>What to Check:</strong> Maximum voltage spread between highest and lowest cell within each module</p>
+
+        <table class="threshold-table">
+            <tr>
+                <td class="normal">Normal: <50 mV during operation</td>
+                <td class="warning">Warning: 50-100 mV or increasing >10 mV/week</td>
+                <td class="critical">Critical: >100 mV or >150 mV at rest</td>
+            </tr>
+        </table>
+
+        <p><strong>When to Check:</strong></p>
+        <ul style="margin: 5px 0; padding-left: 20px; font-size: 13px;">
+            <li>During steady-state charge or discharge (0.5C rate preferred)</li>
+            <li>After full equalization charge (100% SOC, held until balanced)</li>
+            <li>Monthly trend analysis (plot max spread over time)</li>
+        </ul>
+
+        <div class="action-item">
+            <strong>Action if Warning/Critical:</strong> Identify which cell(s) are outliers; check BMS sensor calibration; review module temperature distribution; inspect for signs of internal short circuit or dendrite formation; initiate warranty claim process if imbalance >150 mV and accelerating.
+        </div>
+    </div>
+</div>
+
+<div class="checklist-item">
+    <div class="item-header">
+        <span class="item-number">2</span>
+        <span class="item-title">Temperature Gradient Across Cells</span>
+        <div class="checkbox"></div>
+    </div>
+    <div class="item-content">
+        <p><strong>What to Check:</strong> Temperature difference between hottest cell and module average temperature</p>
+
+        <table class="threshold-table">
+            <tr>
+                <td class="normal">Normal: <3°C gradient</td>
+                <td class="warning">Warning: 3-5°C sustained >15 min</td>
+                <td class="critical">Critical: >5°C or any cell >45°C</td>
+            </tr>
+        </table>
+
+        <p><strong>When to Check:</strong></p>
+        <ul style="margin: 5px 0; padding-left: 20px; font-size: 13px;">
+            <li>During peak charge/discharge operations (1C rate)</li>
+            <li>Continuous monitoring during summer months (ambient >40°C)</li>
+            <li>After any BMS temperature alarm or HVAC fault</li>
+        </ul>
+
+        <div class="action-item">
+            <strong>Action if Warning/Critical:</strong> Reduce charge/discharge rate immediately (derate to 0.5C); verify HVAC cooling system operational and unobstructed; check thermal paste on cell connections; consider module isolation if hotspot >48°C; thermal imaging inspection to identify exact hot cell location; document for warranty claim if recurring issue.
+        </div>
+    </div>
+</div>
+
+<div class="checklist-item">
+    <div class="item-header">
+        <span class="item-number">3</span>
+        <span class="item-title">State of Charge (SOC) Drift</span>
+        <div class="checkbox"></div>
+    </div>
+    <div class="item-content">
+        <p><strong>What to Check:</strong> SOC difference between cells after full equalization cycle</p>
+
+        <table class="threshold-table">
+            <tr>
+                <td class="normal">Normal: <2% after equalization</td>
+                <td class="warning">Warning: 2-5% persistent drift</td>
+                <td class="critical">Critical: >5% or cannot equalize</td>
+            </tr>
+        </table>
+
+        <p><strong>When to Check:</strong></p>
+        <ul style="margin: 5px 0; padding-left: 20px; font-size: 13px;">
+            <li>Weekly for NMC chemistry; monthly for LFP chemistry</li>
+            <li>After equalization charge cycle (100% SOC hold for 2+ hours)</li>
+            <li>Before any capacity testing or warranty claim</li>
+        </ul>
+
+        <div class="action-item">
+            <strong>Action if Warning/Critical:</strong> Perform additional equalization cycles (may take 2-3 cycles for LFP); if drift persists >5% after 3 equalization attempts, indicates cell-level capacity loss or BMS Coulomb counting error; recalibrate BMS SOC algorithm; document for warranty claim as evidence of premature capacity degradation.
+        </div>
+    </div>
+</div>
+
+<div class="checklist-item">
+    <div class="item-header">
+        <span class="item-number">4</span>
+        <span class="item-title">State of Health (SOH) Degradation Rate</span>
+        <div class="checkbox"></div>
+    </div>
+    <div class="item-content">
+        <p><strong>What to Check:</strong> Monthly capacity fade rate compared to expected degradation</p>
+
+        <table class="threshold-table">
+            <tr>
+                <td class="normal">Normal: 1-3%/yr (LFP), 2-5%/yr (NMC)</td>
+                <td class="warning">Warning: 1.5-2x expected rate</td>
+                <td class="critical">Critical: >2x expected or sudden 5% drop</td>
+            </tr>
+        </table>
+
+        <p><strong>When to Check:</strong></p>
+        <ul style="margin: 5px 0; padding-left: 20px; font-size: 13px;">
+            <li>Monthly via full 0.2C discharge cycle (from 100% to 20% SOC)</li>
+            <li>Calculate: (Current Capacity / Nameplate Capacity) × 100%</li>
+            <li>Track trend over 12+ months to identify acceleration</li>
+        </ul>
+
+        <div class="action-item">
+            <strong>Action if Warning/Critical:</strong> Review operating conditions: temperature excursions >45°C, C-rate violations >1C, SOC window violations; reduce charge/discharge rates by 30% to slow degradation; investigate warranty claim if SOH falls below manufacturer guarantee curve (typically 80% at 10 years or 10,000 cycles); document capacity tests with independent witness for warranty evidence.
+        </div>
+    </div>
+</div>
+
+<div class="checklist-item">
+    <div class="item-header">
+        <span class="item-number">5</span>
+        <span class="item-title">Round-Trip Efficiency Loss</span>
+        <div class="checkbox"></div>
+    </div>
+    <div class="item-content">
+        <p><strong>What to Check:</strong> Energy efficiency = (Discharge Energy / Charge Energy) × 100%</p>
+
+        <table class="threshold-table">
+            <tr>
+                <td class="normal">Normal: 88-95% (chemistry dependent)</td>
+                <td class="warning">Warning: 85-88% or declining >3% in 6 months</td>
+                <td class="critical">Critical: <85% or rapid 5% drop</td>
+            </tr>
+        </table>
+
+        <p><strong>When to Check:</strong></p>
+        <ul style="margin: 5px 0; padding-left: 20px; font-size: 13px;">
+            <li>Weekly calculation from SCADA energy meters</li>
+            <li>Normalize for ambient temperature (efficiency decreases ~0.5%/10°C increase)</li>
+            <li>Track monthly moving average to filter out daily noise</li>
+        </ul>
+
+        <div class="action-item">
+            <strong>Action if Warning/Critical:</strong> Efficiency loss indicates internal resistance increase from cell degradation, connection resistance, or cooling system inadequacy; measure DC resistance of modules (should be <0.5 mΩ per cell); check busbar connection torque (thermal cycling loosens connections); review HVAC performance (high cell temperature increases losses); efficiency <85% may indicate accelerated warranty degradation.
+        </div>
+    </div>
+</div>
+
+<div class="checklist-item">
+    <div class="item-header">
+        <span class="item-number">6</span>
+        <span class="item-title">Charge/Discharge Response Time</span>
+        <div class="checkbox"></div>
+    </div>
+    <div class="item-content">
+        <p><strong>What to Check:</strong> Time from power command to 90% power delivery</p>
+
+        <table class="threshold-table">
+            <tr>
+                <td class="normal">Normal: <500 ms (typically <200 ms)</td>
+                <td class="warning">Warning: 500-1000 ms or increasing trend</td>
+                <td class="critical">Critical: >1000 ms or power oscillations</td>
+            </tr>
+        </table>
+
+        <p><strong>When to Check:</strong></p>
+        <ul style="margin: 5px 0; padding-left: 20px; font-size: 13px;">
+            <li>During commissioning and quarterly thereafter</li>
+            <li>After any firmware updates or BMS configuration changes</li>
+            <li>When BESS fails to meet grid frequency response requirements</li>
+        </ul>
+
+        <div class="action-item">
+            <strong>Action if Warning/Critical:</strong> Slow response indicates BMS control loop instability, contactor degradation, or DC link capacitor aging; review BMS control parameters and update firmware if available; test contactors for switching time and contact resistance; for grid services (frequency regulation), response >500ms may violate contractual requirements and result in revenue loss.
+        </div>
+    </div>
+</div>
+
+<div class="checklist-item">
+    <div class="item-header">
+        <span class="item-number">7</span>
+        <span class="item-title">HVAC System Performance</span>
+        <div class="checkbox"></div>
+    </div>
+    <div class="item-content">
+        <p><strong>What to Check:</strong> Cell temperature vs ambient temperature during operation</p>
+
+        <table class="threshold-table">
+            <tr>
+                <td class="normal">Normal: Cell temp <ambient + 15°C at 1C rate</td>
+                <td class="warning">Warning: Cell temp = ambient + 15-25°C</td>
+                <td class="critical">Critical: Cell temp >ambient + 25°C or >45°C absolute</td>
+            </tr>
+        </table>
+
+        <p><strong>When to Check:</strong></p>
+        <ul style="margin: 5px 0; padding-left: 20px; font-size: 13px;">
+            <li>Daily during summer months (ambient >35°C)</li>
+            <li>After HVAC maintenance or filter replacement</li>
+            <li>When any cell temperature alarm occurs</li>
+        </ul>
+
+        <div class="action-item">
+            <strong>Action if Warning/Critical:</strong> Check HVAC compressor operation, refrigerant levels, and airflow (fans running, ducts unobstructed); replace HVAC filters if clogged (should be changed every 3 months in dusty environments); verify thermal insulation of container is intact; consider HVAC capacity upgrade if system cannot maintain <ambient + 15°C during peak operations; reduce charge/discharge rate until HVAC resolved.
+        </div>
+    </div>
+</div>
+
+<div class="cta-footer">
+    <p style="margin: 0 0 10px 0; font-size: 18px; font-weight: bold;">Need Help Interpreting Your BESS Data?</p>
+    <p style="margin: 0 0 10px 0;">Get a free 15-minute BESS health assessment from our UAE-based energy storage team</p>
+    <a href="mailto:contact@nuravolt.com">Contact Us →</a>
+</div>
+
+<div class="footer">
+    <p><strong>NuraVolt</strong> | Energy Intelligence for Solar & Storage</p>
+    <p>© 2025 NuraVolt | contact@nuravolt.com</p>
+</div>
+
+</body>
+</html>

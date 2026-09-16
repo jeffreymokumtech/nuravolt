@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NuraVolt Per-Inverter Soiling Analysis - Alpha1 9MW</title>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            font-family: system-ui, -apple-system, sans-serif;
+            min-height: 100vh;
+            color: #eee;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+        }
+        h1 { margin: 0 0 10px 0; font-size: 2em; }
+        .subtitle { color: #888; margin: 0; }
+
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .kpi-card {
+            background: rgba(255,255,255,0.08);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .kpi-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .kpi-label { color: #888; font-size: 0.9em; text-transform: uppercase; letter-spacing: 1px; }
+        .kpi-sub { color: #666; font-size: 0.8em; }
+
+        .kpi-value.success { color: #91cc75; }
+        .kpi-value.warning { color: #fac858; }
+        .kpi-value.danger { color: #ee6666; }
+        .kpi-value.primary { color: #5470c6; }
+
+        .chart-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .chart-card {
+            background: rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .chart-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .chart-card h3 { margin: 0 0 10px 0; font-size: 1.1em; }
+        .chart-card p { color: #888; font-size: 0.85em; margin: 0 0 15px 0; }
+        .chart-card a {
+            display: inline-block;
+            background: #5470c6;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: background 0.2s;
+        }
+        .chart-card a:hover { background: #4060b6; }
+
+        .performers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .performers-card {
+            background: rgba(255,255,255,0.08);
+            border-radius: 12px;
+            padding: 20px;
+        }
+        .performers-card h3 { margin: 0 0 15px 0; }
+        .performer-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .performer-item:last-child { border-bottom: none; }
+        .performer-name { font-family: monospace; }
+        .performer-sr { font-weight: bold; }
+        .performer-sr.good { color: #91cc75; }
+        .performer-sr.bad { color: #fac858; }
+
+        .mini-chart { height: 200px; margin-top: 15px; }
+
+        footer {
+            text-align: center;
+            color: #666;
+            padding: 20px;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>NuraVolt Per-Inverter Soiling Analysis</h1>
+        <p class="subtitle">Alpha1 (ES) - 9 MW Solar Plant</p>
+    </div>
+
+    <div class="kpi-grid" id="kpis">
+        <!-- KPIs loaded dynamically -->
+    </div>
+
+    <h2>Visualizations</h2>
+    <div class="chart-grid">
+        <div class="chart-card">
+            <h3>Per-Inverter Heatmap</h3>
+            <p>150 inverters x 12 months soiling ratio visualization</p>
+            <a href="charts/heatmap.html">View Heatmap</a>
+        </div>
+        <div class="chart-card">
+            <h3>Health Distribution</h3>
+            <p>Fleet health status breakdown (Normal/Minor/Major/Critical)</p>
+            <a href="charts/health_distribution.html">View Distribution</a>
+        </div>
+        <div class="chart-card">
+            <h3>Group Comparison</h3>
+            <p>Compare 5 inverter groups by SR and health score</p>
+            <a href="charts/group_comparison.html">View Comparison</a>
+        </div>
+        <div class="chart-card">
+            <h3>Worst 20 Inverters</h3>
+            <p>Bottom performers requiring attention</p>
+            <a href="charts/ranking_worst.html">View Worst</a>
+        </div>
+        <div class="chart-card">
+            <h3>Best 20 Inverters</h3>
+            <p>Top performers for benchmarking</p>
+            <a href="charts/ranking_best.html">View Best</a>
+        </div>
+        <div class="chart-card">
+            <h3>SR vs Loss Scatter</h3>
+            <p>Relationship between soiling ratio and total loss</p>
+            <a href="charts/scatter_sr_loss.html">View Scatter</a>
+        </div>
+        <div class="chart-card">
+            <h3>IEA Loss Waterfall</h3>
+            <p>Loss breakdown for worst inverter (IEA PVPS T13)</p>
+            <a href="charts/waterfall_loss.html">View Waterfall</a>
+        </div>
+        <div class="chart-card">
+            <h3>Time Series</h3>
+            <p>SR trends over time for sample inverters</p>
+            <a href="charts/timeseries.html">View Trends</a>
+        </div>
+    </div>
+
+    <div class="performers" id="performers">
+        <!-- Performers loaded dynamically -->
+    </div>
+
+    <div id="health-chart-container" style="background: rgba(255,255,255,0.08); border-radius: 12px; padding: 20px; margin-bottom: 30px;">
+        <h3 style="margin: 0 0 10px 0;">Health Distribution</h3>
+        <div id="health-chart" class="mini-chart"></div>
+    </div>
+
+    <footer>
+        Generated by NuraVolt Analytics Backend | Analysis Period: 2020-10-01 to 2025-10-21 (1,846 days)
+    </footer>
+
+    <script>
+        // Load fleet summary and populate page
+        fetch('fleet_summary.json')
+            .then(response => response.json())
+            .then(data => {
+                // Populate KPIs
+                const kpisHtml = `
+                    <div class="kpi-card">
+                        <div class="kpi-label">Fleet SR Mean</div>
+                        <div class="kpi-value primary">${(data.fleetSoiling.srMean * 100).toFixed(1)}%</div>
+                        <div class="kpi-sub">&plusmn; ${(data.fleetSoiling.srStd * 100).toFixed(2)}% std</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Total Inverters</div>
+                        <div class="kpi-value">${data.plantInfo.totalInverters}</div>
+                        <div class="kpi-sub">${data.plantInfo.inverterGroups.length} groups</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Plant Capacity</div>
+                        <div class="kpi-value">${data.plantInfo.capacity_MW}</div>
+                        <div class="kpi-sub">MW</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Healthy Inverters</div>
+                        <div class="kpi-value success">${data.healthDistribution.normal}</div>
+                        <div class="kpi-sub">${((data.healthDistribution.normal / data.plantInfo.totalInverters) * 100).toFixed(0)}% of fleet</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Soiling Loss</div>
+                        <div class="kpi-value danger">${data.fleetLosses.totalSoilingLoss_MWh.toFixed(0)}</div>
+                        <div class="kpi-sub">MWh (${((data.fleetLosses.totalSoilingLoss_MWh / data.fleetLosses.referenceEnergy_MWh) * 100).toFixed(1)}%)</div>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Analysis Period</div>
+                        <div class="kpi-value" style="font-size: 1.5em;">${data.analysisPeriod.totalDays}</div>
+                        <div class="kpi-sub">days analyzed</div>
+                    </div>
+                `;
+                document.getElementById('kpis').innerHTML = kpisHtml;
+
+                // Populate performers
+                const topHtml = data.topPerformers.map(inv => `
+                    <div class="performer-item">
+                        <span class="performer-name">${inv.inverterId}</span>
+                        <span class="performer-sr good">${(inv.srMean * 100).toFixed(2)}%</span>
+                    </div>
+                `).join('');
+
+                const worstHtml = data.worstPerformers.map(inv => `
+                    <div class="performer-item">
+                        <span class="performer-name">${inv.inverterId}</span>
+                        <span class="performer-sr bad">${(inv.srMean * 100).toFixed(2)}%</span>
+                    </div>
+                `).join('');
+
+                document.getElementById('performers').innerHTML = `
+                    <div class="performers-card">
+                        <h3 style="color: #91cc75;">Top 5 Performers</h3>
+                        ${topHtml}
+                    </div>
+                    <div class="performers-card">
+                        <h3 style="color: #fac858;">Bottom 5 Performers</h3>
+                        ${worstHtml}
+                    </div>
+                `;
+
+                // Mini health chart
+                const healthChart = echarts.init(document.getElementById('health-chart'), 'dark');
+                healthChart.setOption({
+                    tooltip: { trigger: 'item' },
+                    series: [{
+                        type: 'pie',
+                        radius: ['40%', '70%'],
+                        data: [
+                            { value: data.healthDistribution.normal, name: 'Normal', itemStyle: { color: '#91cc75' } },
+                            { value: data.healthDistribution.minorIssues, name: 'Minor', itemStyle: { color: '#fac858' } },
+                            { value: data.healthDistribution.majorIssues, name: 'Major', itemStyle: { color: '#fc8452' } },
+                            { value: data.healthDistribution.critical, name: 'Critical', itemStyle: { color: '#ee6666' } }
+                        ].filter(d => d.value > 0),
+                        label: { formatter: '{b}: {c} ({d}%)' }
+                    }]
+                });
+                window.addEventListener('resize', () => healthChart.resize());
+            })
+            .catch(err => {
+                console.error('Error loading fleet summary:', err);
+            });
+    </script>
+</body>
+</html>

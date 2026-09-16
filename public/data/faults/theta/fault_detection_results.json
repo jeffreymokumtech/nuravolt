@@ -1,0 +1,107 @@
+{
+  "plant_id": "theta",
+  "timestamp": "2026-02-10T10:00:00.000000",
+  "summary": {
+    "current_loss_kwh": 1850.0,
+    "projected_loss_kwh": 920.0,
+    "current_loss_value": 120.25,
+    "projected_loss_value": 59.80,
+    "currency": "EUR",
+    "reactive_count": 3,
+    "predictive_count": 2,
+    "critical_count": 0,
+    "urgent_count": 1
+  },
+  "reactive_faults": [
+    {
+      "id": "rf-bcn-001",
+      "fault_type": "inverter_comm_loss",
+      "severity": "warning",
+      "equipment_id": "SG50CX-08",
+      "equipment_name": "SG50CX-08",
+      "timestamp_start": "2026.02.08 14:00",
+      "timestamp_end": "2026.02.08 16:30",
+      "value": 0,
+      "threshold": 1,
+      "message": "Communication timeout: SG50CX-08 iSolarCloud data gap (2.5 hours)",
+      "duration_minutes": 150,
+      "power_loss_kw": 50.0,
+      "energy_loss_kwh": 125.0,
+      "is_chronic": false,
+      "chronic_note": "",
+      "loss_computation": {
+        "method": "affected_records",
+        "power_formula": "rated_power / n_inverters * loss_factor",
+        "energy_formula": "power_loss * affected_records * interval_hours * capacity_factor",
+        "factors": {
+          "rated_ac_power_kw": 1000.0,
+          "n_inverters": 20,
+          "loss_factor_pct": 100,
+          "affected_records": 10,
+          "fault_duration_hours": 2.5,
+          "rationale": "Based on 10 affected records × 15 min interval"
+        }
+      }
+    },
+    {
+      "id": "rf-bcn-002",
+      "fault_type": "string_undervoltage",
+      "severity": "warning",
+      "equipment_id": "SG50CX-14",
+      "equipment_name": "SG50CX-14",
+      "timestamp_start": "2026.02.09 08:30",
+      "timestamp_end": "2026.02.09 11:00",
+      "value": 520,
+      "threshold": 600,
+      "message": "String voltage below threshold on SG50CX-14: 520V (expected >600V). Partial shading from adjacent building detected during morning hours.",
+      "duration_minutes": 150,
+      "power_loss_kw": 8.5,
+      "energy_loss_kwh": 21.25,
+      "is_chronic": true,
+      "chronic_note": "Recurring morning shading pattern from East-facing orientation. Structural constraint - no remediation possible.",
+      "loss_computation": {
+        "method": "affected_records",
+        "power_formula": "rated_power / n_inverters * loss_factor",
+        "energy_formula": "power_loss * affected_records * interval_hours * capacity_factor",
+        "factors": {
+          "rated_ac_power_kw": 1000.0,
+          "n_inverters": 20,
+          "loss_factor_pct": 17,
+          "affected_records": 10,
+          "fault_duration_hours": 2.5,
+          "rationale": "Partial shading affects 1 inverter with ~17% power reduction during morning hours"
+        }
+      }
+    },
+    {
+      "id": "rf-bcn-003",
+      "fault_type": "bypass_diode_active",
+      "severity": "info",
+      "equipment_id": "SG50CX-19",
+      "equipment_name": "SG50CX-19",
+      "timestamp_start": "2026.02.10 09:15",
+      "timestamp_end": "2026.02.10 09:45",
+      "value": 1,
+      "threshold": 0,
+      "message": "Bypass diode activation detected on SG50CX-19 (West zone). Minor cell-level shading or soiling. Module-level monitoring recommended.",
+      "duration_minutes": 30,
+      "power_loss_kw": 2.1,
+      "energy_loss_kwh": 1.05,
+      "is_chronic": false,
+      "chronic_note": "",
+      "loss_computation": {
+        "method": "affected_records",
+        "power_formula": "rated_power / n_inverters * loss_factor",
+        "energy_formula": "power_loss * affected_records * interval_hours * capacity_factor",
+        "factors": {
+          "rated_ac_power_kw": 1000.0,
+          "n_inverters": 20,
+          "loss_factor_pct": 4.2,
+          "affected_records": 2,
+          "fault_duration_hours": 0.5,
+          "rationale": "Minor bypass diode activation with localized impact on single string"
+        }
+      }
+    }
+  ]
+}

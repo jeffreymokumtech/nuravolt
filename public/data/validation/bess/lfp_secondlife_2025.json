@@ -1,0 +1,160 @@
+{
+  "dataset": "LFP second-life 2025 (Recherche Data Gouv, 20 cells)",
+  "n_samples": 20,
+  "n_cells": 20,
+  "predictions": [
+    {
+      "cell_id": "Cell1a",
+      "actual_eol": 800.0,
+      "predicted_eol": 1.0,
+      "error_cycles": -799.0,
+      "error_pct": 0.999
+    },
+    {
+      "cell_id": "Cell1b",
+      "actual_eol": 600.0,
+      "predicted_eol": 542.0,
+      "error_cycles": -58.0,
+      "error_pct": 0.097
+    },
+    {
+      "cell_id": "Cell1c",
+      "actual_eol": 800.0,
+      "predicted_eol": 677.0,
+      "error_cycles": -123.0,
+      "error_pct": 0.154
+    },
+    {
+      "cell_id": "Cell2a",
+      "actual_eol": 500.0,
+      "predicted_eol": 1.0,
+      "error_cycles": -499.0,
+      "error_pct": 0.998
+    },
+    {
+      "cell_id": "Cell2b",
+      "actual_eol": 500.0,
+      "predicted_eol": 539.0,
+      "error_cycles": 39.0,
+      "error_pct": 0.078
+    },
+    {
+      "cell_id": "Cell2c",
+      "actual_eol": 500.0,
+      "predicted_eol": 1.0,
+      "error_cycles": -499.0,
+      "error_pct": 0.998
+    },
+    {
+      "cell_id": "Cell3a",
+      "actual_eol": 600.0,
+      "predicted_eol": 576.0,
+      "error_cycles": -24.0,
+      "error_pct": 0.04
+    },
+    {
+      "cell_id": "Cell3b",
+      "actual_eol": 600.0,
+      "predicted_eol": 543.0,
+      "error_cycles": -57.0,
+      "error_pct": 0.095
+    },
+    {
+      "cell_id": "Cell4a",
+      "actual_eol": 800.0,
+      "predicted_eol": 786.0,
+      "error_cycles": -14.0,
+      "error_pct": 0.018
+    },
+    {
+      "cell_id": "Cell4b",
+      "actual_eol": 600.0,
+      "predicted_eol": 550.0,
+      "error_cycles": -50.0,
+      "error_pct": 0.083
+    },
+    {
+      "cell_id": "Cell4c",
+      "actual_eol": 900.0,
+      "predicted_eol": 840.0,
+      "error_cycles": -60.0,
+      "error_pct": 0.067
+    },
+    {
+      "cell_id": "Cell5a",
+      "actual_eol": 600.0,
+      "predicted_eol": 610.0,
+      "error_cycles": 10.0,
+      "error_pct": 0.017
+    },
+    {
+      "cell_id": "Cell5b",
+      "actual_eol": 800.0,
+      "predicted_eol": 737.0,
+      "error_cycles": -63.0,
+      "error_pct": 0.079
+    },
+    {
+      "cell_id": "Cell5c",
+      "actual_eol": 600.0,
+      "predicted_eol": 595.0,
+      "error_cycles": -5.0,
+      "error_pct": 0.008
+    },
+    {
+      "cell_id": "Cell6a",
+      "actual_eol": 800.0,
+      "predicted_eol": 841.0,
+      "error_cycles": 41.0,
+      "error_pct": 0.051
+    },
+    {
+      "cell_id": "Cell6b",
+      "actual_eol": 1100.0,
+      "predicted_eol": 1028.0,
+      "error_cycles": -72.0,
+      "error_pct": 0.065
+    },
+    {
+      "cell_id": "Cell6c",
+      "actual_eol": 1100.0,
+      "predicted_eol": 1096.0,
+      "error_cycles": -4.0,
+      "error_pct": 0.004
+    },
+    {
+      "cell_id": "Cell7a",
+      "actual_eol": 500.0,
+      "predicted_eol": 455.0,
+      "error_cycles": -45.0,
+      "error_pct": 0.09
+    },
+    {
+      "cell_id": "Cell7b",
+      "actual_eol": 700.0,
+      "predicted_eol": 586.0,
+      "error_cycles": -114.0,
+      "error_pct": 0.163
+    },
+    {
+      "cell_id": "Cell7c",
+      "actual_eol": 600.0,
+      "predicted_eol": 559.0,
+      "error_cycles": -41.0,
+      "error_pct": 0.068
+    }
+  ],
+  "mape": 0.2085,
+  "rmse_cycles": 244.4,
+  "eol_within_10pct_fraction": 0.75,
+  "eol_within_25pct_fraction": 0.85,
+  "extras": {
+    "method": "linear extrapolation from first 25% of checkpoints",
+    "eol_threshold_ah": 0.88,
+    "source": "DOI 10.57745/OLBXKT (extractedData.mat summary file only)",
+    "n_cells_total": 20,
+    "n_cells_reached_eol": 20,
+    "note": "Cross-dataset baseline test. Different cell vendor than Severson (this dataset uses different LFP cycling protocol). Linear extrapolation only \u2014 bess_lfp_v1 LightGBM model requires per-timestep voltage curves not in the summary file."
+  },
+  "generated_at": "2026-08-20T19:36:27.125604Z"
+}

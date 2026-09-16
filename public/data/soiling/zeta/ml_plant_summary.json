@@ -1,0 +1,43 @@
+{
+  "plantInfo": {
+    "plantId": "zeta",
+    "plantName": "Zeta Solar Plant",
+    "capacity_MW": 9.0,
+    "totalInverters": 150
+  },
+  "currentStatus": {
+    "avgSoilingRatio": 0.928,
+    "estimatedLossPct": 7.2,
+    "lastUpdateTime": "2025-01-15T10:00:00.000000",
+    "dataSource": "ml_model",
+    "validation": {
+      "mae": 0.0142,
+      "rmse": 0.0182,
+      "r_squared": 0.658,
+      "bias": 0.0038,
+      "count": 365
+    }
+  },
+  "fleetHealth": {
+    "normalInverters": 135,
+    "minorIssues": 12,
+    "majorIssues": 3,
+    "critical": 0
+  },
+  "economicImpact": {
+    "ytdEnergyLoss_MWh": 172.8,
+    "ytdRevenueLoss_EUR": 11232.0,
+    "nextCleaningRecommended": "2025-02-01",
+    "estimatedROI_pct": 210,
+    "expectedNetBenefit_EUR": 7862.4,
+    "paybackDays": 50
+  },
+  "topPerformers": [
+    { "id": "INV 02", "sr": 0.97, "loss_pct": 3.0 },
+    { "id": "INV 01", "sr": 0.96, "loss_pct": 4.0 }
+  ],
+  "worstPerformers": [
+    { "id": "INV 04", "sr": 0.89, "loss_pct": 11.0 },
+    { "id": "INV 05", "sr": 0.90, "loss_pct": 10.0 }
+  ]
+}

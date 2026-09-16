@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "plantId": "eta",
+    "generatedAt": "2025-12-17T06:59:52.385889Z",
+    "period": {
+      "start": "2020-10-01",
+      "end": "2025-12-14"
+    },
+    "cvThreshold": 0.1,
+    "minSampleSize": 50
+  },
+  "overallAnalysis": {
+    "uniformPeriods": {
+      "count": 1873,
+      "zoneCorrelations": [
+        {
+          "zoneId": "INV 01A",
+          "onSiteCorrelation": -0.0086,
+          "openMeteoCorrelation": -0.014,
+          "betterSource": "similar",
+          "correlationDifference": 0.0054,
+          "sampleCount": 665
+        },
+        {
+          "zoneId": "INV 01B",
+          "onSiteCorrelation": -0.0098,
+          "openMeteoCorrelation": -0.0142,
+          "betterSource": "similar",
+          "correlationDifference": 0.0044,
+          "sampleCount": 665
+        }
+      ]
+    },
+    "nonUniformPeriods": {
+      "count": 0,
+      "zoneCorrelations": []
+    }
+  },
+  "conditionalAnalysis": [
+    {
+      "condition": "uniform",
+      "description": "CV < 0.10 - spatially uniform irradiance conditions",
+      "sampleCount": 1873,
+      "zoneCorrelations": [
+        {
+          "zoneId": "INV 01A",
+          "onSiteCorrelation": -0.0086,
+          "openMeteoCorrelation": -0.014,
+          "betterSource": "similar",
+          "correlationDifference": 0.0054,
+          "sampleCount": 665
+        },
+        {
+          "zoneId": "INV 01B",
+          "onSiteCorrelation": -0.0098,
+          "openMeteoCorrelation": -0.0142,
+          "betterSource": "similar",
+          "correlationDifference": 0.0044,
+          "sampleCount": 665
+        }
+      ]
+    },
+    {
+      "condition": "nonUniform",
+      "description": "CV >= 0.10 - partial clouds or localized effects",
+      "sampleCount": 0,
+      "zoneCorrelations": []
+    }
+  ],
+  "patterns": [],
+  "recommendations": [
+    "On-site irradiance sensor shows low correlation with zone performance. Consider sensor calibration or repositioning."
+  ]
+}

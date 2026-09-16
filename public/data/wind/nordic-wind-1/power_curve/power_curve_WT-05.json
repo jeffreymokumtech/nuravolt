@@ -1,0 +1,31 @@
+{
+  "turbineId": "WT-05",
+  "plantId": "nordic-wind-1",
+  "period": {
+    "start": "2024-01-01",
+    "end": "2025-01-13"
+  },
+  "binWidth": 0.5,
+  "cutInSpeed": 3.0,
+  "ratedSpeed": 11.5,
+  "cutOutSpeed": 25.0,
+  "ratedPower": 2000,
+  "points": [
+    { "windSpeedBin": 3.0, "expectedPower": 25, "actualPower": 20, "stdDev": 15, "sampleCount": 242 },
+    { "windSpeedBin": 4.0, "expectedPower": 95, "actualPower": 82, "stdDev": 30, "sampleCount": 305 },
+    { "windSpeedBin": 5.0, "expectedPower": 210, "actualPower": 185, "stdDev": 52, "sampleCount": 368 },
+    { "windSpeedBin": 6.0, "expectedPower": 385, "actualPower": 345, "stdDev": 82, "sampleCount": 420 },
+    { "windSpeedBin": 7.0, "expectedPower": 620, "actualPower": 562, "stdDev": 115, "sampleCount": 462 },
+    { "windSpeedBin": 8.0, "expectedPower": 925, "actualPower": 852, "stdDev": 145, "sampleCount": 488 },
+    { "windSpeedBin": 9.0, "expectedPower": 1290, "actualPower": 1198, "stdDev": 168, "sampleCount": 472 },
+    { "windSpeedBin": 10.0, "expectedPower": 1700, "actualPower": 1592, "stdDev": 185, "sampleCount": 435 },
+    { "windSpeedBin": 11.0, "expectedPower": 1965, "actualPower": 1872, "stdDev": 125, "sampleCount": 380 },
+    { "windSpeedBin": 12.0, "expectedPower": 2000, "actualPower": 1945, "stdDev": 58, "sampleCount": 325 },
+    { "windSpeedBin": 14.0, "expectedPower": 2000, "actualPower": 1975, "stdDev": 35, "sampleCount": 218 },
+    { "windSpeedBin": 16.0, "expectedPower": 2000, "actualPower": 1988, "stdDev": 22, "sampleCount": 118 },
+    { "windSpeedBin": 18.0, "expectedPower": 2000, "actualPower": 1994, "stdDev": 15, "sampleCount": 55 }
+  ],
+  "performanceIndex": 0.928,
+  "anomalyScore": 0.32,
+  "lastUpdated": "2025-01-13T06:00:00Z"
+}

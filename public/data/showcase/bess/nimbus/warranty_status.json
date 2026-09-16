@@ -1,0 +1,36 @@
+{
+  "asset_id": "bess-nimbus-001",
+  "snapshot_date": "2026-02-04",
+  "warranty_health": {
+    "score": 71,
+    "risk_level": "MODERATE",
+    "component_scores": {
+      "soh": 78,
+      "cycles": 72,
+      "time": 88,
+      "efficiency": 64,
+      "violations": 55
+    },
+    "current_soh": 0.9302,
+    "warranty_threshold": 0.70,
+    "soh_margin": 0.2302,
+    "cycles_used": 1142.6,
+    "cycles_remaining": 4857.4,
+    "years_remaining": 8.1,
+    "risk_factors": [
+      "Average RTE drifting 2.8pp below contractual minimum since Q4 2025",
+      "3 high-SoC dwell events logged in the last 60 days",
+      "Cycle pace tracking 22% ahead of straight-line warranty budget"
+    ],
+    "recommendation": "REVIEW: Operating within warranty but with stress trends worth investigating. Consider tightening dispatch SoC ceiling to 90% and capturing a fresh capacity test in March 2026."
+  },
+  "warranty_terms": {
+    "capacity_guarantee_pct": 0.70,
+    "warranty_years": 10,
+    "max_cycles": 6000,
+    "max_throughput_mwh": null,
+    "min_rte": 0.86,
+    "operating_temp_min_c": -10,
+    "operating_temp_max_c": 45
+  }
+}

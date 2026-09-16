@@ -1,0 +1,1482 @@
+{
+  "generatedAt": "2025-12-18T15:57:34.551775",
+  "plantId": "ribera",
+  "plantName": "Ribera Solar Park",
+  "modelType": "PlantLevel (Physics + CatBoost)",
+  "config": {
+    "maxYears": 3,
+    "minPR": 0.1,
+    "useCatBoost": true,
+    "minR2": 0.7,
+    "useEnhancedSelection": false
+  },
+  "statistics": {
+    "totalInverters": 120,
+    "successful": 120,
+    "failed": 0,
+    "totalTime_s": 578.55,
+    "avgR2": 0.9802,
+    "avgMAE_kW": 0.0181,
+    "plantModelR2": 0.9806,
+    "physicsOnlyR2": 0.9545
+  },
+  "trainingPeriod": {
+    "start": "2020-10-01 07:00:00",
+    "end": "2023-09-30 17:30:00"
+  },
+  "hybridConfig": {
+    "modelType": "PlantLevel (Physics + ML)",
+    "physicsModel": "PVWatts",
+    "mlModel": "CatBoost",
+    "physicsParams": {
+      "latitude": 37.927,
+      "longitude": -1.233,
+      "tilt": 30.0,
+      "azimuth": 180.0,
+      "gamma_pdc": -0.004
+    },
+    "categoricalFeature": "inverter_id"
+  },
+  "inverters": {
+    "INV 03.061": {
+      "inverterId": "INV 03.061",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9693,
+        "mae_kW": 0.0171,
+        "rmse_kW": 0.0418
+      },
+      "nSamples": 8067,
+      "nominalPower_kW": 60
+    },
+    "INV 03.062": {
+      "inverterId": "INV 03.062",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.993,
+        "mae_kW": 0.0134,
+        "rmse_kW": 0.02
+      },
+      "nSamples": 8162,
+      "nominalPower_kW": 60
+    },
+    "INV 03.063": {
+      "inverterId": "INV 03.063",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9945,
+        "mae_kW": 0.0113,
+        "rmse_kW": 0.0174
+      },
+      "nSamples": 8073,
+      "nominalPower_kW": 60
+    },
+    "INV 03.064": {
+      "inverterId": "INV 03.064",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9955,
+        "mae_kW": 0.0112,
+        "rmse_kW": 0.0161
+      },
+      "nSamples": 8058,
+      "nominalPower_kW": 60
+    },
+    "INV 03.065": {
+      "inverterId": "INV 03.065",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9948,
+        "mae_kW": 0.0119,
+        "rmse_kW": 0.0173
+      },
+      "nSamples": 8023,
+      "nominalPower_kW": 60
+    },
+    "INV 03.066": {
+      "inverterId": "INV 03.066",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9954,
+        "mae_kW": 0.0114,
+        "rmse_kW": 0.0162
+      },
+      "nSamples": 8228,
+      "nominalPower_kW": 60
+    },
+    "INV 03.067": {
+      "inverterId": "INV 03.067",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9951,
+        "mae_kW": 0.0109,
+        "rmse_kW": 0.0169
+      },
+      "nSamples": 7942,
+      "nominalPower_kW": 60
+    },
+    "INV 03.068": {
+      "inverterId": "INV 03.068",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9948,
+        "mae_kW": 0.0108,
+        "rmse_kW": 0.0173
+      },
+      "nSamples": 8116,
+      "nominalPower_kW": 60
+    },
+    "INV 03.069": {
+      "inverterId": "INV 03.069",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9953,
+        "mae_kW": 0.0106,
+        "rmse_kW": 0.0164
+      },
+      "nSamples": 8153,
+      "nominalPower_kW": 60
+    },
+    "INV 03.070": {
+      "inverterId": "INV 03.070",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9956,
+        "mae_kW": 0.0107,
+        "rmse_kW": 0.0159
+      },
+      "nSamples": 8098,
+      "nominalPower_kW": 60
+    },
+    "INV 03.071": {
+      "inverterId": "INV 03.071",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9947,
+        "mae_kW": 0.0109,
+        "rmse_kW": 0.0174
+      },
+      "nSamples": 8083,
+      "nominalPower_kW": 60
+    },
+    "INV 03.072": {
+      "inverterId": "INV 03.072",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9952,
+        "mae_kW": 0.0111,
+        "rmse_kW": 0.0166
+      },
+      "nSamples": 8133,
+      "nominalPower_kW": 60
+    },
+    "INV 03.073": {
+      "inverterId": "INV 03.073",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9947,
+        "mae_kW": 0.011,
+        "rmse_kW": 0.0175
+      },
+      "nSamples": 8154,
+      "nominalPower_kW": 60
+    },
+    "INV 03.074": {
+      "inverterId": "INV 03.074",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9959,
+        "mae_kW": 0.0103,
+        "rmse_kW": 0.0153
+      },
+      "nSamples": 8044,
+      "nominalPower_kW": 60
+    },
+    "INV 03.075": {
+      "inverterId": "INV 03.075",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9955,
+        "mae_kW": 0.0108,
+        "rmse_kW": 0.0159
+      },
+      "nSamples": 8098,
+      "nominalPower_kW": 60
+    },
+    "INV 03.076": {
+      "inverterId": "INV 03.076",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9956,
+        "mae_kW": 0.011,
+        "rmse_kW": 0.0157
+      },
+      "nSamples": 8065,
+      "nominalPower_kW": 60
+    },
+    "INV 03.077": {
+      "inverterId": "INV 03.077",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9954,
+        "mae_kW": 0.0109,
+        "rmse_kW": 0.0161
+      },
+      "nSamples": 8116,
+      "nominalPower_kW": 60
+    },
+    "INV 03.078": {
+      "inverterId": "INV 03.078",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9952,
+        "mae_kW": 0.0114,
+        "rmse_kW": 0.0167
+      },
+      "nSamples": 8180,
+      "nominalPower_kW": 60
+    },
+    "INV 03.079": {
+      "inverterId": "INV 03.079",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9944,
+        "mae_kW": 0.0111,
+        "rmse_kW": 0.0178
+      },
+      "nSamples": 8060,
+      "nominalPower_kW": 60
+    },
+    "INV 03.080": {
+      "inverterId": "INV 03.080",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9956,
+        "mae_kW": 0.0107,
+        "rmse_kW": 0.0157
+      },
+      "nSamples": 8150,
+      "nominalPower_kW": 60
+    },
+    "INV 03.081": {
+      "inverterId": "INV 03.081",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9949,
+        "mae_kW": 0.0116,
+        "rmse_kW": 0.017
+      },
+      "nSamples": 8083,
+      "nominalPower_kW": 60
+    },
+    "INV 03.082": {
+      "inverterId": "INV 03.082",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9951,
+        "mae_kW": 0.0109,
+        "rmse_kW": 0.0168
+      },
+      "nSamples": 7919,
+      "nominalPower_kW": 60
+    },
+    "INV 03.083": {
+      "inverterId": "INV 03.083",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9902,
+        "mae_kW": 0.0121,
+        "rmse_kW": 0.0236
+      },
+      "nSamples": 8119,
+      "nominalPower_kW": 60
+    },
+    "INV 03.084": {
+      "inverterId": "INV 03.084",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9933,
+        "mae_kW": 0.0127,
+        "rmse_kW": 0.0195
+      },
+      "nSamples": 8068,
+      "nominalPower_kW": 60
+    },
+    "INV 03.085": {
+      "inverterId": "INV 03.085",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9923,
+        "mae_kW": 0.0123,
+        "rmse_kW": 0.0207
+      },
+      "nSamples": 8095,
+      "nominalPower_kW": 60
+    },
+    "INV 03.086": {
+      "inverterId": "INV 03.086",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.99,
+        "mae_kW": 0.0122,
+        "rmse_kW": 0.0237
+      },
+      "nSamples": 8042,
+      "nominalPower_kW": 60
+    },
+    "INV 03.087": {
+      "inverterId": "INV 03.087",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9944,
+        "mae_kW": 0.012,
+        "rmse_kW": 0.0182
+      },
+      "nSamples": 8027,
+      "nominalPower_kW": 60
+    },
+    "INV 03.088": {
+      "inverterId": "INV 03.088",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.8833,
+        "mae_kW": 0.036,
+        "rmse_kW": 0.0789
+      },
+      "nSamples": 8022,
+      "nominalPower_kW": 60
+    },
+    "INV 03.089": {
+      "inverterId": "INV 03.089",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9941,
+        "mae_kW": 0.0122,
+        "rmse_kW": 0.0184
+      },
+      "nSamples": 8057,
+      "nominalPower_kW": 60
+    },
+    "INV 03.090": {
+      "inverterId": "INV 03.090",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9874,
+        "mae_kW": 0.0127,
+        "rmse_kW": 0.0267
+      },
+      "nSamples": 8141,
+      "nominalPower_kW": 60
+    },
+    "INV 03.091": {
+      "inverterId": "INV 03.091",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.991,
+        "mae_kW": 0.015,
+        "rmse_kW": 0.0225
+      },
+      "nSamples": 8100,
+      "nominalPower_kW": 60
+    },
+    "INV 03.092": {
+      "inverterId": "INV 03.092",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.9943,
+        "mae_kW": 0.0113,
+        "rmse_kW": 0.0179
+      },
+      "nSamples": 8152,
+      "nominalPower_kW": 60
+    },
+    "INV 03.093": {
+      "inverterId": "INV 03.093",
+      "groupId": "INV 03",
+      "success": true,
+      "metrics": {
+        "r2": 0.957,
+        "mae_kW": 0.0314,
+        "rmse_kW": 0.046
+      },
+      "nSamples": 7926,
+      "nominalPower_kW": 60
+    },
+    "INV 04.094": {
+      "inverterId": "INV 04.094",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.992,
+        "mae_kW": 0.0149,
+        "rmse_kW": 0.022
+      },
+      "nSamples": 8780,
+      "nominalPower_kW": 60
+    },
+    "INV 04.095": {
+      "inverterId": "INV 04.095",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.991,
+        "mae_kW": 0.0156,
+        "rmse_kW": 0.0232
+      },
+      "nSamples": 8762,
+      "nominalPower_kW": 60
+    },
+    "INV 04.096": {
+      "inverterId": "INV 04.096",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9908,
+        "mae_kW": 0.0154,
+        "rmse_kW": 0.0232
+      },
+      "nSamples": 8914,
+      "nominalPower_kW": 60
+    },
+    "INV 04.097": {
+      "inverterId": "INV 04.097",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9917,
+        "mae_kW": 0.0148,
+        "rmse_kW": 0.0223
+      },
+      "nSamples": 8856,
+      "nominalPower_kW": 60
+    },
+    "INV 04.098": {
+      "inverterId": "INV 04.098",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9902,
+        "mae_kW": 0.0164,
+        "rmse_kW": 0.0242
+      },
+      "nSamples": 8738,
+      "nominalPower_kW": 60
+    },
+    "INV 04.099": {
+      "inverterId": "INV 04.099",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9903,
+        "mae_kW": 0.0148,
+        "rmse_kW": 0.0241
+      },
+      "nSamples": 8781,
+      "nominalPower_kW": 60
+    },
+    "INV 04.100": {
+      "inverterId": "INV 04.100",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9921,
+        "mae_kW": 0.0142,
+        "rmse_kW": 0.0218
+      },
+      "nSamples": 8842,
+      "nominalPower_kW": 60
+    },
+    "INV 04.101": {
+      "inverterId": "INV 04.101",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9921,
+        "mae_kW": 0.0137,
+        "rmse_kW": 0.0216
+      },
+      "nSamples": 8816,
+      "nominalPower_kW": 60
+    },
+    "INV 04.102": {
+      "inverterId": "INV 04.102",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.992,
+        "mae_kW": 0.0141,
+        "rmse_kW": 0.0217
+      },
+      "nSamples": 8858,
+      "nominalPower_kW": 60
+    },
+    "INV 04.103": {
+      "inverterId": "INV 04.103",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9906,
+        "mae_kW": 0.0152,
+        "rmse_kW": 0.0233
+      },
+      "nSamples": 8763,
+      "nominalPower_kW": 60
+    },
+    "INV 04.104": {
+      "inverterId": "INV 04.104",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.992,
+        "mae_kW": 0.0142,
+        "rmse_kW": 0.0217
+      },
+      "nSamples": 8818,
+      "nominalPower_kW": 60
+    },
+    "INV 04.105": {
+      "inverterId": "INV 04.105",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9908,
+        "mae_kW": 0.0151,
+        "rmse_kW": 0.0234
+      },
+      "nSamples": 8731,
+      "nominalPower_kW": 60
+    },
+    "INV 04.106": {
+      "inverterId": "INV 04.106",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9917,
+        "mae_kW": 0.0139,
+        "rmse_kW": 0.0221
+      },
+      "nSamples": 8833,
+      "nominalPower_kW": 60
+    },
+    "INV 04.107": {
+      "inverterId": "INV 04.107",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9894,
+        "mae_kW": 0.0159,
+        "rmse_kW": 0.0249
+      },
+      "nSamples": 8829,
+      "nominalPower_kW": 60
+    },
+    "INV 04.108": {
+      "inverterId": "INV 04.108",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9894,
+        "mae_kW": 0.0145,
+        "rmse_kW": 0.025
+      },
+      "nSamples": 8694,
+      "nominalPower_kW": 60
+    },
+    "INV 04.109": {
+      "inverterId": "INV 04.109",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9907,
+        "mae_kW": 0.0149,
+        "rmse_kW": 0.0233
+      },
+      "nSamples": 8748,
+      "nominalPower_kW": 60
+    },
+    "INV 04.110": {
+      "inverterId": "INV 04.110",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9907,
+        "mae_kW": 0.014,
+        "rmse_kW": 0.0232
+      },
+      "nSamples": 8814,
+      "nominalPower_kW": 60
+    },
+    "INV 04.111": {
+      "inverterId": "INV 04.111",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9895,
+        "mae_kW": 0.015,
+        "rmse_kW": 0.0246
+      },
+      "nSamples": 8714,
+      "nominalPower_kW": 60
+    },
+    "INV 04.112": {
+      "inverterId": "INV 04.112",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9892,
+        "mae_kW": 0.0147,
+        "rmse_kW": 0.0251
+      },
+      "nSamples": 8805,
+      "nominalPower_kW": 60
+    },
+    "INV 04.113": {
+      "inverterId": "INV 04.113",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9899,
+        "mae_kW": 0.0147,
+        "rmse_kW": 0.0244
+      },
+      "nSamples": 8671,
+      "nominalPower_kW": 60
+    },
+    "INV 04.114": {
+      "inverterId": "INV 04.114",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9889,
+        "mae_kW": 0.0147,
+        "rmse_kW": 0.0255
+      },
+      "nSamples": 8714,
+      "nominalPower_kW": 60
+    },
+    "INV 04.115": {
+      "inverterId": "INV 04.115",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9902,
+        "mae_kW": 0.0146,
+        "rmse_kW": 0.0238
+      },
+      "nSamples": 8972,
+      "nominalPower_kW": 60
+    },
+    "INV 04.116": {
+      "inverterId": "INV 04.116",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9903,
+        "mae_kW": 0.014,
+        "rmse_kW": 0.0235
+      },
+      "nSamples": 8820,
+      "nominalPower_kW": 60
+    },
+    "INV 04.117": {
+      "inverterId": "INV 04.117",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9904,
+        "mae_kW": 0.0144,
+        "rmse_kW": 0.0235
+      },
+      "nSamples": 9018,
+      "nominalPower_kW": 60
+    },
+    "INV 04.118": {
+      "inverterId": "INV 04.118",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.986,
+        "mae_kW": 0.0177,
+        "rmse_kW": 0.0279
+      },
+      "nSamples": 8732,
+      "nominalPower_kW": 60
+    },
+    "INV 04.119": {
+      "inverterId": "INV 04.119",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.7975,
+        "mae_kW": 0.0579,
+        "rmse_kW": 0.0967
+      },
+      "nSamples": 8705,
+      "nominalPower_kW": 60
+    },
+    "INV 04.120": {
+      "inverterId": "INV 04.120",
+      "groupId": "INV 04",
+      "success": true,
+      "metrics": {
+        "r2": 0.9893,
+        "mae_kW": 0.0154,
+        "rmse_kW": 0.0247
+      },
+      "nSamples": 8701,
+      "nominalPower_kW": 60
+    },
+    "INV 01.032": {
+      "inverterId": "INV 01.032",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9727,
+        "mae_kW": 0.0223,
+        "rmse_kW": 0.0399
+      },
+      "nSamples": 8552,
+      "nominalPower_kW": 60
+    },
+    "INV 01.033": {
+      "inverterId": "INV 01.033",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.977,
+        "mae_kW": 0.02,
+        "rmse_kW": 0.036
+      },
+      "nSamples": 8409,
+      "nominalPower_kW": 60
+    },
+    "INV 01.034": {
+      "inverterId": "INV 01.034",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9746,
+        "mae_kW": 0.0222,
+        "rmse_kW": 0.0383
+      },
+      "nSamples": 8614,
+      "nominalPower_kW": 60
+    },
+    "INV 01.035": {
+      "inverterId": "INV 01.035",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9747,
+        "mae_kW": 0.0209,
+        "rmse_kW": 0.0381
+      },
+      "nSamples": 8550,
+      "nominalPower_kW": 60
+    },
+    "INV 01.036": {
+      "inverterId": "INV 01.036",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9745,
+        "mae_kW": 0.0213,
+        "rmse_kW": 0.0383
+      },
+      "nSamples": 8512,
+      "nominalPower_kW": 60
+    },
+    "INV 01.037": {
+      "inverterId": "INV 01.037",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.974,
+        "mae_kW": 0.0226,
+        "rmse_kW": 0.0386
+      },
+      "nSamples": 8502,
+      "nominalPower_kW": 60
+    },
+    "INV 01.038": {
+      "inverterId": "INV 01.038",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9758,
+        "mae_kW": 0.0202,
+        "rmse_kW": 0.0374
+      },
+      "nSamples": 8567,
+      "nominalPower_kW": 60
+    },
+    "INV 01.039": {
+      "inverterId": "INV 01.039",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9754,
+        "mae_kW": 0.0202,
+        "rmse_kW": 0.0375
+      },
+      "nSamples": 8482,
+      "nominalPower_kW": 60
+    },
+    "INV 01.040": {
+      "inverterId": "INV 01.040",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9735,
+        "mae_kW": 0.0221,
+        "rmse_kW": 0.0389
+      },
+      "nSamples": 8515,
+      "nominalPower_kW": 60
+    },
+    "INV 01.041": {
+      "inverterId": "INV 01.041",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9731,
+        "mae_kW": 0.0215,
+        "rmse_kW": 0.0394
+      },
+      "nSamples": 8477,
+      "nominalPower_kW": 60
+    },
+    "INV 01.042": {
+      "inverterId": "INV 01.042",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9767,
+        "mae_kW": 0.0206,
+        "rmse_kW": 0.0366
+      },
+      "nSamples": 8354,
+      "nominalPower_kW": 60
+    },
+    "INV 01.043": {
+      "inverterId": "INV 01.043",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9743,
+        "mae_kW": 0.0217,
+        "rmse_kW": 0.0385
+      },
+      "nSamples": 8492,
+      "nominalPower_kW": 60
+    },
+    "INV 01.044": {
+      "inverterId": "INV 01.044",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9763,
+        "mae_kW": 0.0202,
+        "rmse_kW": 0.0371
+      },
+      "nSamples": 8390,
+      "nominalPower_kW": 60
+    },
+    "INV 01.045": {
+      "inverterId": "INV 01.045",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9738,
+        "mae_kW": 0.0209,
+        "rmse_kW": 0.0388
+      },
+      "nSamples": 8347,
+      "nominalPower_kW": 60
+    },
+    "INV 01.046": {
+      "inverterId": "INV 01.046",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9743,
+        "mae_kW": 0.0208,
+        "rmse_kW": 0.0385
+      },
+      "nSamples": 8540,
+      "nominalPower_kW": 60
+    },
+    "INV 01.047": {
+      "inverterId": "INV 01.047",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.931,
+        "mae_kW": 0.0292,
+        "rmse_kW": 0.0624
+      },
+      "nSamples": 8458,
+      "nominalPower_kW": 60
+    },
+    "INV 01.048": {
+      "inverterId": "INV 01.048",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9724,
+        "mae_kW": 0.0216,
+        "rmse_kW": 0.04
+      },
+      "nSamples": 8377,
+      "nominalPower_kW": 60
+    },
+    "INV 01.049": {
+      "inverterId": "INV 01.049",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9745,
+        "mae_kW": 0.0217,
+        "rmse_kW": 0.0378
+      },
+      "nSamples": 8562,
+      "nominalPower_kW": 60
+    },
+    "INV 01.050": {
+      "inverterId": "INV 01.050",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9767,
+        "mae_kW": 0.0216,
+        "rmse_kW": 0.0368
+      },
+      "nSamples": 8425,
+      "nominalPower_kW": 60
+    },
+    "INV 01.051": {
+      "inverterId": "INV 01.051",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.975,
+        "mae_kW": 0.021,
+        "rmse_kW": 0.0374
+      },
+      "nSamples": 8477,
+      "nominalPower_kW": 60
+    },
+    "INV 01.052": {
+      "inverterId": "INV 01.052",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9748,
+        "mae_kW": 0.0213,
+        "rmse_kW": 0.038
+      },
+      "nSamples": 8429,
+      "nominalPower_kW": 60
+    },
+    "INV 01.053": {
+      "inverterId": "INV 01.053",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9743,
+        "mae_kW": 0.0219,
+        "rmse_kW": 0.0384
+      },
+      "nSamples": 8398,
+      "nominalPower_kW": 60
+    },
+    "INV 01.054": {
+      "inverterId": "INV 01.054",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9772,
+        "mae_kW": 0.0201,
+        "rmse_kW": 0.036
+      },
+      "nSamples": 8518,
+      "nominalPower_kW": 60
+    },
+    "INV 01.055": {
+      "inverterId": "INV 01.055",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9754,
+        "mae_kW": 0.0209,
+        "rmse_kW": 0.0377
+      },
+      "nSamples": 8538,
+      "nominalPower_kW": 60
+    },
+    "INV 01.056": {
+      "inverterId": "INV 01.056",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9762,
+        "mae_kW": 0.0208,
+        "rmse_kW": 0.0369
+      },
+      "nSamples": 8503,
+      "nominalPower_kW": 60
+    },
+    "INV 01.057": {
+      "inverterId": "INV 01.057",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9735,
+        "mae_kW": 0.0239,
+        "rmse_kW": 0.0389
+      },
+      "nSamples": 8510,
+      "nominalPower_kW": 60
+    },
+    "INV 01.058": {
+      "inverterId": "INV 01.058",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9737,
+        "mae_kW": 0.0209,
+        "rmse_kW": 0.0389
+      },
+      "nSamples": 8555,
+      "nominalPower_kW": 60
+    },
+    "INV 01.059": {
+      "inverterId": "INV 01.059",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9766,
+        "mae_kW": 0.0204,
+        "rmse_kW": 0.0368
+      },
+      "nSamples": 8393,
+      "nominalPower_kW": 60
+    },
+    "INV 01.060": {
+      "inverterId": "INV 01.060",
+      "groupId": "INV 01",
+      "success": true,
+      "metrics": {
+        "r2": 0.9673,
+        "mae_kW": 0.0216,
+        "rmse_kW": 0.0428
+      },
+      "nSamples": 8618,
+      "nominalPower_kW": 60
+    },
+    "INV 02.001": {
+      "inverterId": "INV 02.001",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9727,
+        "mae_kW": 0.0246,
+        "rmse_kW": 0.0393
+      },
+      "nSamples": 8164,
+      "nominalPower_kW": 60
+    },
+    "INV 02.002": {
+      "inverterId": "INV 02.002",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9714,
+        "mae_kW": 0.0239,
+        "rmse_kW": 0.0403
+      },
+      "nSamples": 8180,
+      "nominalPower_kW": 60
+    },
+    "INV 02.003": {
+      "inverterId": "INV 02.003",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9755,
+        "mae_kW": 0.0217,
+        "rmse_kW": 0.0371
+      },
+      "nSamples": 8478,
+      "nominalPower_kW": 60
+    },
+    "INV 02.004": {
+      "inverterId": "INV 02.004",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.976,
+        "mae_kW": 0.0218,
+        "rmse_kW": 0.0371
+      },
+      "nSamples": 8247,
+      "nominalPower_kW": 60
+    },
+    "INV 02.005": {
+      "inverterId": "INV 02.005",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9759,
+        "mae_kW": 0.0219,
+        "rmse_kW": 0.0371
+      },
+      "nSamples": 8225,
+      "nominalPower_kW": 60
+    },
+    "INV 02.006": {
+      "inverterId": "INV 02.006",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9748,
+        "mae_kW": 0.0224,
+        "rmse_kW": 0.0382
+      },
+      "nSamples": 8223,
+      "nominalPower_kW": 60
+    },
+    "INV 02.007": {
+      "inverterId": "INV 02.007",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9734,
+        "mae_kW": 0.0227,
+        "rmse_kW": 0.0394
+      },
+      "nSamples": 8189,
+      "nominalPower_kW": 60
+    },
+    "INV 02.008": {
+      "inverterId": "INV 02.008",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.973,
+        "mae_kW": 0.0233,
+        "rmse_kW": 0.0392
+      },
+      "nSamples": 8431,
+      "nominalPower_kW": 60
+    },
+    "INV 02.009": {
+      "inverterId": "INV 02.009",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9755,
+        "mae_kW": 0.0216,
+        "rmse_kW": 0.0377
+      },
+      "nSamples": 8256,
+      "nominalPower_kW": 60
+    },
+    "INV 02.010": {
+      "inverterId": "INV 02.010",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9756,
+        "mae_kW": 0.0223,
+        "rmse_kW": 0.0378
+      },
+      "nSamples": 8395,
+      "nominalPower_kW": 60
+    },
+    "INV 02.011": {
+      "inverterId": "INV 02.011",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9737,
+        "mae_kW": 0.021,
+        "rmse_kW": 0.038
+      },
+      "nSamples": 8402,
+      "nominalPower_kW": 60
+    },
+    "INV 02.012": {
+      "inverterId": "INV 02.012",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.974,
+        "mae_kW": 0.0223,
+        "rmse_kW": 0.0389
+      },
+      "nSamples": 8060,
+      "nominalPower_kW": 60
+    },
+    "INV 02.013": {
+      "inverterId": "INV 02.013",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9763,
+        "mae_kW": 0.0213,
+        "rmse_kW": 0.0372
+      },
+      "nSamples": 8270,
+      "nominalPower_kW": 60
+    },
+    "INV 02.014": {
+      "inverterId": "INV 02.014",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9749,
+        "mae_kW": 0.0208,
+        "rmse_kW": 0.0378
+      },
+      "nSamples": 8240,
+      "nominalPower_kW": 60
+    },
+    "INV 02.015": {
+      "inverterId": "INV 02.015",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9754,
+        "mae_kW": 0.0204,
+        "rmse_kW": 0.0374
+      },
+      "nSamples": 8368,
+      "nominalPower_kW": 60
+    },
+    "INV 02.016": {
+      "inverterId": "INV 02.016",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9747,
+        "mae_kW": 0.0215,
+        "rmse_kW": 0.0376
+      },
+      "nSamples": 8218,
+      "nominalPower_kW": 60
+    },
+    "INV 02.017": {
+      "inverterId": "INV 02.017",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9775,
+        "mae_kW": 0.0198,
+        "rmse_kW": 0.0356
+      },
+      "nSamples": 8334,
+      "nominalPower_kW": 60
+    },
+    "INV 02.018": {
+      "inverterId": "INV 02.018",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9731,
+        "mae_kW": 0.0231,
+        "rmse_kW": 0.0387
+      },
+      "nSamples": 8243,
+      "nominalPower_kW": 60
+    },
+    "INV 02.019": {
+      "inverterId": "INV 02.019",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9765,
+        "mae_kW": 0.0209,
+        "rmse_kW": 0.0363
+      },
+      "nSamples": 8306,
+      "nominalPower_kW": 60
+    },
+    "INV 02.020": {
+      "inverterId": "INV 02.020",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.974,
+        "mae_kW": 0.0212,
+        "rmse_kW": 0.0386
+      },
+      "nSamples": 8336,
+      "nominalPower_kW": 60
+    },
+    "INV 02.021": {
+      "inverterId": "INV 02.021",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9749,
+        "mae_kW": 0.0216,
+        "rmse_kW": 0.0379
+      },
+      "nSamples": 8294,
+      "nominalPower_kW": 60
+    },
+    "INV 02.022": {
+      "inverterId": "INV 02.022",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9748,
+        "mae_kW": 0.0212,
+        "rmse_kW": 0.0379
+      },
+      "nSamples": 8286,
+      "nominalPower_kW": 60
+    },
+    "INV 02.023": {
+      "inverterId": "INV 02.023",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9767,
+        "mae_kW": 0.0217,
+        "rmse_kW": 0.0363
+      },
+      "nSamples": 8206,
+      "nominalPower_kW": 60
+    },
+    "INV 02.024": {
+      "inverterId": "INV 02.024",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9762,
+        "mae_kW": 0.0203,
+        "rmse_kW": 0.0363
+      },
+      "nSamples": 8320,
+      "nominalPower_kW": 60
+    },
+    "INV 02.025": {
+      "inverterId": "INV 02.025",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9741,
+        "mae_kW": 0.0222,
+        "rmse_kW": 0.0381
+      },
+      "nSamples": 8289,
+      "nominalPower_kW": 60
+    },
+    "INV 02.026": {
+      "inverterId": "INV 02.026",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9757,
+        "mae_kW": 0.022,
+        "rmse_kW": 0.0371
+      },
+      "nSamples": 8279,
+      "nominalPower_kW": 60
+    },
+    "INV 02.027": {
+      "inverterId": "INV 02.027",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9756,
+        "mae_kW": 0.0203,
+        "rmse_kW": 0.0368
+      },
+      "nSamples": 7680,
+      "nominalPower_kW": 60
+    },
+    "INV 02.028": {
+      "inverterId": "INV 02.028",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9756,
+        "mae_kW": 0.0209,
+        "rmse_kW": 0.0372
+      },
+      "nSamples": 8345,
+      "nominalPower_kW": 60
+    },
+    "INV 02.029": {
+      "inverterId": "INV 02.029",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9766,
+        "mae_kW": 0.0207,
+        "rmse_kW": 0.036
+      },
+      "nSamples": 8523,
+      "nominalPower_kW": 60
+    },
+    "INV 02.030": {
+      "inverterId": "INV 02.030",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9713,
+        "mae_kW": 0.0224,
+        "rmse_kW": 0.0387
+      },
+      "nSamples": 8257,
+      "nominalPower_kW": 60
+    },
+    "INV 02.031": {
+      "inverterId": "INV 02.031",
+      "groupId": "INV 02",
+      "success": true,
+      "metrics": {
+        "r2": 0.9769,
+        "mae_kW": 0.0205,
+        "rmse_kW": 0.0362
+      },
+      "nSamples": 8263,
+      "nominalPower_kW": 60
+    }
+  }
+}

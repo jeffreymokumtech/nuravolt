@@ -1,0 +1,1425 @@
+{
+ "generatedAt": "2025-07-15T12:00:00Z",
+ "plants": [
+  {
+   "plantId": "alpha",
+   "plantName": "Alpha",
+   "assetType": "SOLAR",
+   "location": "Region A, Southern Europe",
+   "capacity_MW": 9.0,
+   "totalInverters": 150,
+   "inverterGroups": [
+    "PV-01",
+    "PV-02",
+    "PV-03",
+    "PV-04",
+    "PV-05"
+   ],
+   "status": "operational",
+   "healthDistribution": {
+    "normal": 142,
+    "minorIssues": 5,
+    "majorIssues": 2,
+    "critical": 1
+   },
+   "metrics": {
+    "avgR2": 0.94,
+    "avgMAE_kW": 2.3,
+    "soilingRatio": 0.96,
+    "healthScore": 92
+   },
+   "dataRange": {
+    "start": "2024-01-01",
+    "end": "2025-07-15"
+   },
+   "lastUpdated": "2025-07-15T08:00:00Z",
+   "financials": {
+    "ppa_price_per_MWh": 52,
+    "budget_generation_MWh": 12960.0,
+    "actual_generation_MWh": 11858.4,
+    "budget_deviation_pct": -8.5,
+    "annual_opex_eur": 162000.0,
+    "soiling_loss_eur": 26956.8,
+    "fault_loss_eur": 20217.6,
+    "degradation_loss_eur": 6739.2,
+    "curtailment_loss_eur": 3369.6,
+    "total_loss_eur": 57283.2,
+    "availability_pct": 96.5,
+    "performance_ratio": 0.78,
+    "revenue_at_risk_eur": 57283.2,
+    "annual_revenue_eur": 616636.8,
+    "ytd_revenue_eur": 332983.8
+   },
+   "riskScore": {
+    "overall": 25,
+    "components": {
+     "health": 8,
+     "soiling": 20,
+     "fault_frequency": 60,
+     "budget_deviation": 17,
+     "availability": 7
+    },
+    "trend": "stable",
+    "level": "medium"
+   },
+   "monthlyGeneration": [
+    {
+     "month": "Jan",
+     "budget_MWh": 2851,
+     "actual_MWh": 2709,
+     "deviation_pct": -5.0
+    },
+    {
+     "month": "Feb",
+     "budget_MWh": 3694,
+     "actual_MWh": 3509,
+     "deviation_pct": -5.0
+    },
+    {
+     "month": "Mar",
+     "budget_MWh": 5119,
+     "actual_MWh": 4812,
+     "deviation_pct": -6.0
+    },
+    {
+     "month": "Apr",
+     "budget_MWh": 6091,
+     "actual_MWh": 5604,
+     "deviation_pct": -8.0
+    },
+    {
+     "month": "May",
+     "budget_MWh": 7063,
+     "actual_MWh": 6498,
+     "deviation_pct": -8.0
+    },
+    {
+     "month": "Jun",
+     "budget_MWh": 7970,
+     "actual_MWh": 7173,
+     "deviation_pct": -10.0
+    },
+    {
+     "month": "Jul",
+     "budget_MWh": 8294,
+     "actual_MWh": 7299,
+     "deviation_pct": -12.0
+    },
+    {
+     "month": "Aug",
+     "budget_MWh": 7646,
+     "actual_MWh": 6882,
+     "deviation_pct": -10.0
+    },
+    {
+     "month": "Sep",
+     "budget_MWh": 6286,
+     "actual_MWh": 5657,
+     "deviation_pct": -10.0
+    },
+    {
+     "month": "Oct",
+     "budget_MWh": 4601,
+     "actual_MWh": 4233,
+     "deviation_pct": -8.0
+    },
+    {
+     "month": "Nov",
+     "budget_MWh": 2851,
+     "actual_MWh": 2680,
+     "deviation_pct": -6.0
+    },
+    {
+     "month": "Dec",
+     "budget_MWh": 2333,
+     "actual_MWh": 2216,
+     "deviation_pct": -5.0
+    }
+   ]
+  },
+  {
+   "plantId": "ribera",
+   "plantName": "Beta",
+   "assetType": "SOLAR",
+   "location": "Region A, Southern Europe",
+   "capacity_MW": 7.2,
+   "totalInverters": 120,
+   "inverterGroups": [
+    "PV-01",
+    "PV-02",
+    "PV-03",
+    "PV-04"
+   ],
+   "status": "operational",
+   "healthDistribution": {
+    "normal": 115,
+    "minorIssues": 4,
+    "majorIssues": 1,
+    "critical": 0
+   },
+   "metrics": {
+    "avgR2": 0.95,
+    "avgMAE_kW": 1.9,
+    "soilingRatio": 0.97,
+    "healthScore": 95
+   },
+   "dataRange": {
+    "start": "2024-01-01",
+    "end": "2025-07-15"
+   },
+   "lastUpdated": "2025-07-15T08:00:00Z",
+   "financials": {
+    "ppa_price_per_MWh": 54,
+    "budget_generation_MWh": 10368.0,
+    "actual_generation_MWh": 9860.0,
+    "budget_deviation_pct": -4.9,
+    "annual_opex_eur": 122400.0,
+    "soiling_loss_eur": 16787.6,
+    "fault_loss_eur": 5598.8,
+    "degradation_loss_eur": 3359.2,
+    "curtailment_loss_eur": 1679.6,
+    "total_loss_eur": 27425.2,
+    "availability_pct": 97.5,
+    "performance_ratio": 0.81,
+    "revenue_at_risk_eur": 27425.2,
+    "annual_revenue_eur": 532440.0,
+    "ytd_revenue_eur": 287517.6
+   },
+   "riskScore": {
+    "overall": 10,
+    "components": {
+     "health": 5,
+     "soiling": 15,
+     "fault_frequency": 15,
+     "budget_deviation": 10,
+     "availability": 5
+    },
+    "trend": "improving",
+    "level": "low"
+   },
+   "monthlyGeneration": [
+    {
+     "month": "Jan",
+     "budget_MWh": 2281,
+     "actual_MWh": 2212,
+     "deviation_pct": -3.0
+    },
+    {
+     "month": "Feb",
+     "budget_MWh": 2955,
+     "actual_MWh": 2866,
+     "deviation_pct": -3.0
+    },
+    {
+     "month": "Mar",
+     "budget_MWh": 4095,
+     "actual_MWh": 3931,
+     "deviation_pct": -4.0
+    },
+    {
+     "month": "Apr",
+     "budget_MWh": 4873,
+     "actual_MWh": 4629,
+     "deviation_pct": -5.0
+    },
+    {
+     "month": "May",
+     "budget_MWh": 5651,
+     "actual_MWh": 5368,
+     "deviation_pct": -5.0
+    },
+    {
+     "month": "Jun",
+     "budget_MWh": 6376,
+     "actual_MWh": 5930,
+     "deviation_pct": -7.0
+    },
+    {
+     "month": "Jul",
+     "budget_MWh": 6636,
+     "actual_MWh": 6105,
+     "deviation_pct": -8.0
+    },
+    {
+     "month": "Aug",
+     "budget_MWh": 6117,
+     "actual_MWh": 5689,
+     "deviation_pct": -7.0
+    },
+    {
+     "month": "Sep",
+     "budget_MWh": 5029,
+     "actual_MWh": 4728,
+     "deviation_pct": -6.0
+    },
+    {
+     "month": "Oct",
+     "budget_MWh": 3681,
+     "actual_MWh": 3497,
+     "deviation_pct": -5.0
+    },
+    {
+     "month": "Nov",
+     "budget_MWh": 2281,
+     "actual_MWh": 2212,
+     "deviation_pct": -3.0
+    },
+    {
+     "month": "Dec",
+     "budget_MWh": 1866,
+     "actual_MWh": 1810,
+     "deviation_pct": -3.0
+    }
+   ]
+  },
+  {
+   "plantId": "gamma",
+   "plantName": "Gamma",
+   "assetType": "SOLAR",
+   "location": "Region B, Southern Europe",
+   "capacity_MW": 2.7,
+   "totalInverters": 45,
+   "inverterGroups": [
+    "PV-01",
+    "PV-02"
+   ],
+   "status": "operational",
+   "healthDistribution": {
+    "normal": 43,
+    "minorIssues": 2,
+    "majorIssues": 0,
+    "critical": 0
+   },
+   "metrics": {
+    "avgR2": 0.96,
+    "avgMAE_kW": 1.5,
+    "soilingRatio": 0.98,
+    "healthScore": 97
+   },
+   "dataRange": {
+    "start": "2024-01-01",
+    "end": "2025-07-15"
+   },
+   "lastUpdated": "2025-07-15T08:00:00Z",
+   "financials": {
+    "ppa_price_per_MWh": 56,
+    "budget_generation_MWh": 3888.0,
+    "actual_generation_MWh": 3779.2,
+    "budget_deviation_pct": -2.8,
+    "annual_opex_eur": 43200.0,
+    "soiling_loss_eur": 4354.6,
+    "fault_loss_eur": 0.0,
+    "degradation_loss_eur": 1088.6,
+    "curtailment_loss_eur": 653.2,
+    "total_loss_eur": 6096.4,
+    "availability_pct": 98.8,
+    "performance_ratio": 0.83,
+    "revenue_at_risk_eur": 6096.4,
+    "annual_revenue_eur": 211635.2,
+    "ytd_revenue_eur": 114283.0
+   },
+   "riskScore": {
+    "overall": 4,
+    "components": {
+     "health": 3,
+     "soiling": 10,
+     "fault_frequency": 0,
+     "budget_deviation": 6,
+     "availability": 2
+    },
+    "trend": "improving",
+    "level": "low"
+   },
+   "monthlyGeneration": [
+    {
+     "month": "Jan",
+     "budget_MWh": 855,
+     "actual_MWh": 843,
+     "deviation_pct": -1.4
+    },
+    {
+     "month": "Feb",
+     "budget_MWh": 1108,
+     "actual_MWh": 1086,
+     "deviation_pct": -2.0
+    },
+    {
+     "month": "Mar",
+     "budget_MWh": 1536,
+     "actual_MWh": 1505,
+     "deviation_pct": -2.0
+    },
+    {
+     "month": "Apr",
+     "budget_MWh": 1827,
+     "actual_MWh": 1781,
+     "deviation_pct": -2.5
+    },
+    {
+     "month": "May",
+     "budget_MWh": 2119,
+     "actual_MWh": 2055,
+     "deviation_pct": -3.0
+    },
+    {
+     "month": "Jun",
+     "budget_MWh": 2391,
+     "actual_MWh": 2296,
+     "deviation_pct": -4.0
+    },
+    {
+     "month": "Jul",
+     "budget_MWh": 2488,
+     "actual_MWh": 2389,
+     "deviation_pct": -4.0
+    },
+    {
+     "month": "Aug",
+     "budget_MWh": 2294,
+     "actual_MWh": 2225,
+     "deviation_pct": -3.0
+    },
+    {
+     "month": "Sep",
+     "budget_MWh": 1886,
+     "actual_MWh": 1830,
+     "deviation_pct": -3.0
+    },
+    {
+     "month": "Oct",
+     "budget_MWh": 1380,
+     "actual_MWh": 1352,
+     "deviation_pct": -2.0
+    },
+    {
+     "month": "Nov",
+     "budget_MWh": 855,
+     "actual_MWh": 843,
+     "deviation_pct": -1.4
+    },
+    {
+     "month": "Dec",
+     "budget_MWh": 700,
+     "actual_MWh": 690,
+     "deviation_pct": -1.4
+    }
+   ]
+  },
+  {
+   "plantId": "delta",
+   "plantName": "Delta",
+   "assetType": "SOLAR",
+   "location": "Region C, Mediterranean",
+   "capacity_MW": 2.58,
+   "totalInverters": 43,
+   "inverterGroups": [
+    "PV-01",
+    "PV-02"
+   ],
+   "status": "operational",
+   "healthDistribution": {
+    "normal": 40,
+    "minorIssues": 2,
+    "majorIssues": 1,
+    "critical": 0
+   },
+   "metrics": {
+    "avgR2": 0.93,
+    "avgMAE_kW": 2.1,
+    "soilingRatio": 0.95,
+    "healthScore": 91
+   },
+   "dataRange": {
+    "start": "2024-01-01",
+    "end": "2025-07-15"
+   },
+   "lastUpdated": "2025-07-15T08:00:00Z",
+   "financials": {
+    "ppa_price_per_MWh": 48,
+    "budget_generation_MWh": 3715.2,
+    "actual_generation_MWh": 3444.0,
+    "budget_deviation_pct": -7.3,
+    "annual_opex_eur": 46440.0,
+    "soiling_loss_eur": 8916.4,
+    "fault_loss_eur": 2675.0,
+    "degradation_loss_eur": 1426.6,
+    "curtailment_loss_eur": 0.0,
+    "total_loss_eur": 13018.0,
+    "availability_pct": 96.0,
+    "performance_ratio": 0.77,
+    "revenue_at_risk_eur": 13018.0,
+    "annual_revenue_eur": 165312.0,
+    "ytd_revenue_eur": 89268.4
+   },
+   "riskScore": {
+    "overall": 14,
+    "components": {
+     "health": 9,
+     "soiling": 25,
+     "fault_frequency": 15,
+     "budget_deviation": 15,
+     "availability": 8
+    },
+    "trend": "improving",
+    "level": "low"
+   },
+   "monthlyGeneration": [
+    {
+     "month": "Jan",
+     "budget_MWh": 817,
+     "actual_MWh": 776,
+     "deviation_pct": -5.0
+    },
+    {
+     "month": "Feb",
+     "budget_MWh": 1059,
+     "actual_MWh": 996,
+     "deviation_pct": -6.0
+    },
+    {
+     "month": "Mar",
+     "budget_MWh": 1468,
+     "actual_MWh": 1380,
+     "deviation_pct": -6.0
+    },
+    {
+     "month": "Apr",
+     "budget_MWh": 1746,
+     "actual_MWh": 1607,
+     "deviation_pct": -8.0
+    },
+    {
+     "month": "May",
+     "budget_MWh": 2025,
+     "actual_MWh": 1863,
+     "deviation_pct": -8.0
+    },
+    {
+     "month": "Jun",
+     "budget_MWh": 2285,
+     "actual_MWh": 2056,
+     "deviation_pct": -10.0
+    },
+    {
+     "month": "Jul",
+     "budget_MWh": 2378,
+     "actual_MWh": 2092,
+     "deviation_pct": -12.0
+    },
+    {
+     "month": "Aug",
+     "budget_MWh": 2192,
+     "actual_MWh": 1973,
+     "deviation_pct": -10.0
+    },
+    {
+     "month": "Sep",
+     "budget_MWh": 1802,
+     "actual_MWh": 1622,
+     "deviation_pct": -10.0
+    },
+    {
+     "month": "Oct",
+     "budget_MWh": 1319,
+     "actual_MWh": 1213,
+     "deviation_pct": -8.0
+    },
+    {
+     "month": "Nov",
+     "budget_MWh": 817,
+     "actual_MWh": 776,
+     "deviation_pct": -5.0
+    },
+    {
+     "month": "Dec",
+     "budget_MWh": 669,
+     "actual_MWh": 636,
+     "deviation_pct": -5.0
+    }
+   ]
+  },
+  {
+   "plantId": "epsilon",
+   "plantName": "Epsilon",
+   "assetType": "SOLAR",
+   "location": "Region D, Southern Europe",
+   "capacity_MW": 2.16,
+   "totalInverters": 36,
+   "inverterGroups": [
+    "PV-01",
+    "PV-02"
+   ],
+   "status": "operational",
+   "healthDistribution": {
+    "normal": 34,
+    "minorIssues": 1,
+    "majorIssues": 1,
+    "critical": 0
+   },
+   "metrics": {
+    "avgR2": 0.92,
+    "avgMAE_kW": 2.4,
+    "soilingRatio": 0.94,
+    "healthScore": 89
+   },
+   "dataRange": {
+    "start": "2024-01-01",
+    "end": "2025-07-15"
+   },
+   "lastUpdated": "2025-07-15T08:00:00Z",
+   "financials": {
+    "ppa_price_per_MWh": 50,
+    "budget_generation_MWh": 3110.4,
+    "actual_generation_MWh": 2815.0,
+    "budget_deviation_pct": -9.5,
+    "annual_opex_eur": 38880.0,
+    "soiling_loss_eur": 9331.2,
+    "fault_loss_eur": 3110.4,
+    "degradation_loss_eur": 1555.2,
+    "curtailment_loss_eur": 777.6,
+    "total_loss_eur": 14774.4,
+    "availability_pct": 95.5,
+    "performance_ratio": 0.76,
+    "revenue_at_risk_eur": 14774.4,
+    "annual_revenue_eur": 140750.0,
+    "ytd_revenue_eur": 76005.0
+   },
+   "riskScore": {
+    "overall": 17,
+    "components": {
+     "health": 11,
+     "soiling": 30,
+     "fault_frequency": 15,
+     "budget_deviation": 19,
+     "availability": 9
+    },
+    "trend": "stable",
+    "level": "low"
+   },
+   "monthlyGeneration": [
+    {
+     "month": "Jan",
+     "budget_MWh": 684,
+     "actual_MWh": 643,
+     "deviation_pct": -6.0
+    },
+    {
+     "month": "Feb",
+     "budget_MWh": 886,
+     "actual_MWh": 833,
+     "deviation_pct": -6.0
+    },
+    {
+     "month": "Mar",
+     "budget_MWh": 1229,
+     "actual_MWh": 1131,
+     "deviation_pct": -8.0
+    },
+    {
+     "month": "Apr",
+     "budget_MWh": 1462,
+     "actual_MWh": 1330,
+     "deviation_pct": -9.0
+    },
+    {
+     "month": "May",
+     "budget_MWh": 1695,
+     "actual_MWh": 1525,
+     "deviation_pct": -10.0
+    },
+    {
+     "month": "Jun",
+     "budget_MWh": 1913,
+     "actual_MWh": 1683,
+     "deviation_pct": -12.0
+    },
+    {
+     "month": "Jul",
+     "budget_MWh": 1991,
+     "actual_MWh": 1713,
+     "deviation_pct": -14.0
+    },
+    {
+     "month": "Aug",
+     "budget_MWh": 1835,
+     "actual_MWh": 1596,
+     "deviation_pct": -13.0
+    },
+    {
+     "month": "Sep",
+     "budget_MWh": 1509,
+     "actual_MWh": 1343,
+     "deviation_pct": -11.0
+    },
+    {
+     "month": "Oct",
+     "budget_MWh": 1104,
+     "actual_MWh": 993,
+     "deviation_pct": -10.0
+    },
+    {
+     "month": "Nov",
+     "budget_MWh": 684,
+     "actual_MWh": 643,
+     "deviation_pct": -6.0
+    },
+    {
+     "month": "Dec",
+     "budget_MWh": 560,
+     "actual_MWh": 527,
+     "deviation_pct": -6.0
+    }
+   ]
+  },
+  {
+   "plantId": "zeta",
+   "plantName": "Zeta",
+   "assetType": "SOLAR",
+   "location": "Region C, Mediterranean",
+   "capacity_MW": 1.8,
+   "totalInverters": 30,
+   "inverterGroups": [
+    "PV-01"
+   ],
+   "status": "operational",
+   "healthDistribution": {
+    "normal": 28,
+    "minorIssues": 2,
+    "majorIssues": 0,
+    "critical": 0
+   },
+   "metrics": {
+    "avgR2": 0.94,
+    "avgMAE_kW": 1.8,
+    "soilingRatio": 0.96,
+    "healthScore": 93
+   },
+   "dataRange": {
+    "start": "2024-01-01",
+    "end": "2025-07-15"
+   },
+   "lastUpdated": "2025-07-15T08:00:00Z",
+   "financials": {
+    "ppa_price_per_MWh": 48,
+    "budget_generation_MWh": 2592.0,
+    "actual_generation_MWh": 2467.6,
+    "budget_deviation_pct": -4.8,
+    "annual_opex_eur": 32400.0,
+    "soiling_loss_eur": 4976.6,
+    "fault_loss_eur": 0.0,
+    "degradation_loss_eur": 746.4,
+    "curtailment_loss_eur": 248.8,
+    "total_loss_eur": 5971.8,
+    "availability_pct": 97.2,
+    "performance_ratio": 0.8,
+    "revenue_at_risk_eur": 5971.8,
+    "annual_revenue_eur": 118444.8,
+    "ytd_revenue_eur": 63960.2
+   },
+   "riskScore": {
+    "overall": 8,
+    "components": {
+     "health": 7,
+     "soiling": 20,
+     "fault_frequency": 0,
+     "budget_deviation": 10,
+     "availability": 6
+    },
+    "trend": "improving",
+    "level": "low"
+   },
+   "monthlyGeneration": [
+    {
+     "month": "Jan",
+     "budget_MWh": 570,
+     "actual_MWh": 553,
+     "deviation_pct": -3.0
+    },
+    {
+     "month": "Feb",
+     "budget_MWh": 739,
+     "actual_MWh": 717,
+     "deviation_pct": -3.0
+    },
+    {
+     "month": "Mar",
+     "budget_MWh": 1024,
+     "actual_MWh": 983,
+     "deviation_pct": -4.0
+    },
+    {
+     "month": "Apr",
+     "budget_MWh": 1218,
+     "actual_MWh": 1157,
+     "deviation_pct": -5.0
+    },
+    {
+     "month": "May",
+     "budget_MWh": 1413,
+     "actual_MWh": 1342,
+     "deviation_pct": -5.0
+    },
+    {
+     "month": "Jun",
+     "budget_MWh": 1594,
+     "actual_MWh": 1483,
+     "deviation_pct": -7.0
+    },
+    {
+     "month": "Jul",
+     "budget_MWh": 1659,
+     "actual_MWh": 1527,
+     "deviation_pct": -8.0
+    },
+    {
+     "month": "Aug",
+     "budget_MWh": 1529,
+     "actual_MWh": 1422,
+     "deviation_pct": -7.0
+    },
+    {
+     "month": "Sep",
+     "budget_MWh": 1257,
+     "actual_MWh": 1182,
+     "deviation_pct": -6.0
+    },
+    {
+     "month": "Oct",
+     "budget_MWh": 920,
+     "actual_MWh": 874,
+     "deviation_pct": -5.0
+    },
+    {
+     "month": "Nov",
+     "budget_MWh": 570,
+     "actual_MWh": 553,
+     "deviation_pct": -3.0
+    },
+    {
+     "month": "Dec",
+     "budget_MWh": 467,
+     "actual_MWh": 453,
+     "deviation_pct": -3.0
+    }
+   ]
+  },
+  {
+   "plantId": "eta",
+   "plantName": "Eta",
+   "assetType": "SOLAR",
+   "location": "Region E, Western Europe",
+   "capacity_MW": 1.68,
+   "totalInverters": 28,
+   "inverterGroups": [
+    "PV-01"
+   ],
+   "status": "operational",
+   "healthDistribution": {
+    "normal": 26,
+    "minorIssues": 1,
+    "majorIssues": 1,
+    "critical": 0
+   },
+   "metrics": {
+    "avgR2": 0.91,
+    "avgMAE_kW": 2.6,
+    "soilingRatio": 0.93,
+    "healthScore": 88
+   },
+   "dataRange": {
+    "start": "2024-01-01",
+    "end": "2025-07-15"
+   },
+   "lastUpdated": "2025-07-15T08:00:00Z",
+   "financials": {
+    "ppa_price_per_MWh": 62,
+    "budget_generation_MWh": 2419.2,
+    "actual_generation_MWh": 2160.4,
+    "budget_deviation_pct": -10.7,
+    "annual_opex_eur": 30240.0,
+    "soiling_loss_eur": 10499.4,
+    "fault_loss_eur": 3749.8,
+    "degradation_loss_eur": 1799.8,
+    "curtailment_loss_eur": 0.0,
+    "total_loss_eur": 16049.0,
+    "availability_pct": 94.8,
+    "performance_ratio": 0.75,
+    "revenue_at_risk_eur": 16049.0,
+    "annual_revenue_eur": 133944.8,
+    "ytd_revenue_eur": 72330.2
+   },
+   "riskScore": {
+    "overall": 18,
+    "components": {
+     "health": 12,
+     "soiling": 35,
+     "fault_frequency": 15,
+     "budget_deviation": 21,
+     "availability": 10
+    },
+    "trend": "stable",
+    "level": "low"
+   },
+   "monthlyGeneration": [
+    {
+     "month": "Jan",
+     "budget_MWh": 532,
+     "actual_MWh": 494,
+     "deviation_pct": -7.2
+    },
+    {
+     "month": "Feb",
+     "budget_MWh": 689,
+     "actual_MWh": 641,
+     "deviation_pct": -7.0
+    },
+    {
+     "month": "Mar",
+     "budget_MWh": 956,
+     "actual_MWh": 870,
+     "deviation_pct": -9.0
+    },
+    {
+     "month": "Apr",
+     "budget_MWh": 1137,
+     "actual_MWh": 1023,
+     "deviation_pct": -10.0
+    },
+    {
+     "month": "May",
+     "budget_MWh": 1318,
+     "actual_MWh": 1166,
+     "deviation_pct": -11.5
+    },
+    {
+     "month": "Jun",
+     "budget_MWh": 1488,
+     "actual_MWh": 1279,
+     "deviation_pct": -14.0
+    },
+    {
+     "month": "Jul",
+     "budget_MWh": 1548,
+     "actual_MWh": 1285,
+     "deviation_pct": -17.0
+    },
+    {
+     "month": "Aug",
+     "budget_MWh": 1427,
+     "actual_MWh": 1213,
+     "deviation_pct": -15.0
+    },
+    {
+     "month": "Sep",
+     "budget_MWh": 1173,
+     "actual_MWh": 1020,
+     "deviation_pct": -13.0
+    },
+    {
+     "month": "Oct",
+     "budget_MWh": 859,
+     "actual_MWh": 764,
+     "deviation_pct": -11.0
+    },
+    {
+     "month": "Nov",
+     "budget_MWh": 532,
+     "actual_MWh": 494,
+     "deviation_pct": -7.2
+    },
+    {
+     "month": "Dec",
+     "budget_MWh": 436,
+     "actual_MWh": 405,
+     "deviation_pct": -7.0
+    }
+   ]
+  },
+  {
+   "plantId": "theta",
+   "plantName": "Industrial Rooftop Theta",
+   "assetType": "SOLAR",
+   "location": "Barcelona, Catalonia",
+   "capacity_MW": 1.0,
+   "totalInverters": 20,
+   "inverterGroups": [
+    "South",
+    "East",
+    "West"
+   ],
+   "status": "operational",
+   "healthDistribution": {
+    "normal": 17,
+    "minorIssues": 2,
+    "majorIssues": 1,
+    "critical": 0
+   },
+   "metrics": {
+    "avgR2": 0.96,
+    "avgMAE_kW": 0.8,
+    "soilingRatio": 0.95,
+    "healthScore": 88
+   },
+   "dataRange": {
+    "start": "2025-03-01",
+    "end": "2026-02-10"
+   },
+   "lastUpdated": "2026-02-10T08:00:00Z",
+   "financials": {
+    "ppa_price_per_MWh": 65,
+    "budget_generation_MWh": 1440,
+    "actual_generation_MWh": 1382,
+    "budget_deviation_pct": -4.0,
+    "annual_opex_eur": 18000,
+    "soiling_loss_eur": 5362,
+    "fault_loss_eur": 1248,
+    "degradation_loss_eur": 936,
+    "curtailment_loss_eur": 0,
+    "total_loss_eur": 7546,
+    "availability_pct": 97.8,
+    "performance_ratio": 0.82,
+    "revenue_at_risk_eur": 7546,
+    "annual_revenue_eur": 89830,
+    "ytd_revenue_eur": 10478
+   },
+   "riskScore": {
+    "overall": 8,
+    "components": {
+     "health": 6,
+     "soiling": 15,
+     "fault_frequency": 5,
+     "budget_deviation": 8,
+     "availability": 4
+    },
+    "trend": "stable",
+    "level": "low"
+   },
+   "monthlyGeneration": [
+    {
+     "month": "Jan",
+     "budget_MWh": 80,
+     "actual_MWh": 77,
+     "deviation_pct": -3.8
+    },
+    {
+     "month": "Feb",
+     "budget_MWh": 95,
+     "actual_MWh": 91,
+     "deviation_pct": -4.2
+    },
+    {
+     "month": "Mar",
+     "budget_MWh": 125,
+     "actual_MWh": 121,
+     "deviation_pct": -3.2
+    },
+    {
+     "month": "Apr",
+     "budget_MWh": 140,
+     "actual_MWh": 134,
+     "deviation_pct": -4.3
+    },
+    {
+     "month": "May",
+     "budget_MWh": 155,
+     "actual_MWh": 148,
+     "deviation_pct": -4.5
+    },
+    {
+     "month": "Jun",
+     "budget_MWh": 165,
+     "actual_MWh": 155,
+     "deviation_pct": -6.1
+    },
+    {
+     "month": "Jul",
+     "budget_MWh": 170,
+     "actual_MWh": 159,
+     "deviation_pct": -6.5
+    },
+    {
+     "month": "Aug",
+     "budget_MWh": 160,
+     "actual_MWh": 151,
+     "deviation_pct": -5.6
+    },
+    {
+     "month": "Sep",
+     "budget_MWh": 135,
+     "actual_MWh": 130,
+     "deviation_pct": -3.7
+    },
+    {
+     "month": "Oct",
+     "budget_MWh": 105,
+     "actual_MWh": 101,
+     "deviation_pct": -3.8
+    },
+    {
+     "month": "Nov",
+     "budget_MWh": 70,
+     "actual_MWh": 68,
+     "deviation_pct": -2.9
+    },
+    {
+     "month": "Dec",
+     "budget_MWh": 60,
+     "actual_MWh": 58,
+     "deviation_pct": -3.3
+    }
+   ]
+  },
+  {
+   "plantId": "nordic-wind-1",
+   "plantName": "Nordic Wind",
+   "assetType": "WIND",
+   "location": "Jutland, Denmark",
+   "capacity_MW": 10.0,
+   "turbineCount": 5,
+   "turbineModel": "Vestas V110-2.0",
+   "status": "operational",
+   "healthDistribution": {
+    "normal": 4,
+    "minorIssues": 1,
+    "majorIssues": 0,
+    "critical": 0
+   },
+   "metrics": {
+    "availability": 0.96,
+    "capacityFactor": 0.32,
+    "healthScore": 91
+   },
+   "dataRange": {
+    "start": "2024-01-01",
+    "end": "2025-07-15"
+   },
+   "lastUpdated": "2025-07-15T08:00:00Z",
+   "financials": {
+    "ppa_price_per_MWh": 58,
+    "budget_generation_MWh": 28032,
+    "actual_generation_MWh": 27135,
+    "budget_deviation_pct": -3.2,
+    "annual_opex_eur": 200000,
+    "soiling_loss_eur": 0,
+    "fault_loss_eur": 8120,
+    "degradation_loss_eur": 11368,
+    "curtailment_loss_eur": 32538,
+    "total_loss_eur": 52026,
+    "availability_pct": 96.0,
+    "performance_ratio": 0.91,
+    "revenue_at_risk_eur": 52026,
+    "annual_revenue_eur": 1573830,
+    "ytd_revenue_eur": 849868
+   },
+   "riskScore": {
+    "overall": 4,
+    "components": {
+     "health": 9,
+     "soiling": 0,
+     "fault_frequency": 0,
+     "budget_deviation": 6,
+     "availability": 8
+    },
+    "trend": "improving",
+    "level": "low"
+   },
+   "monthlyGeneration": [
+    {
+     "month": "Jan",
+     "budget_MWh": 3084,
+     "actual_MWh": 2936,
+     "deviation_pct": -4.8
+    },
+    {
+     "month": "Feb",
+     "budget_MWh": 2803,
+     "actual_MWh": 2703,
+     "deviation_pct": -3.6
+    },
+    {
+     "month": "Mar",
+     "budget_MWh": 2523,
+     "actual_MWh": 2432,
+     "deviation_pct": -3.6
+    },
+    {
+     "month": "Apr",
+     "budget_MWh": 2102,
+     "actual_MWh": 2060,
+     "deviation_pct": -2.0
+    },
+    {
+     "month": "May",
+     "budget_MWh": 1682,
+     "actual_MWh": 1648,
+     "deviation_pct": -2.0
+    },
+    {
+     "month": "Jun",
+     "budget_MWh": 1402,
+     "actual_MWh": 1388,
+     "deviation_pct": -1.0
+    },
+    {
+     "month": "Jul",
+     "budget_MWh": 1402,
+     "actual_MWh": 1388,
+     "deviation_pct": -1.0
+    },
+    {
+     "month": "Aug",
+     "budget_MWh": 1682,
+     "actual_MWh": 1648,
+     "deviation_pct": -2.0
+    },
+    {
+     "month": "Sep",
+     "budget_MWh": 2102,
+     "actual_MWh": 2060,
+     "deviation_pct": -2.0
+    },
+    {
+     "month": "Oct",
+     "budget_MWh": 2803,
+     "actual_MWh": 2703,
+     "deviation_pct": -3.6
+    },
+    {
+     "month": "Nov",
+     "budget_MWh": 3224,
+     "actual_MWh": 3069,
+     "deviation_pct": -4.8
+    },
+    {
+     "month": "Dec",
+     "budget_MWh": 3224,
+     "actual_MWh": 3030,
+     "deviation_pct": -6.0
+    }
+   ]
+  },
+  {
+   "plantId": "care-portugal",
+   "plantName": "CARE Wind Portugal",
+   "assetType": "WIND",
+   "location": "Portugal",
+   "capacity_MW": 10.0,
+   "turbineCount": 5,
+   "turbineModel": "2.0 MW Class",
+   "status": "operational",
+   "healthDistribution": {
+    "normal": 3,
+    "minorIssues": 1,
+    "majorIssues": 1,
+    "critical": 0
+   },
+   "metrics": {
+    "availability": 0.945,
+    "capacityFactor": 0.31,
+    "healthScore": 85
+   },
+   "dataRange": {
+    "start": "2019-01-01",
+    "end": "2019-12-31"
+   },
+   "lastUpdated": "2025-07-15T08:00:00Z",
+   "financials": {
+    "ppa_price_per_MWh": 60,
+    "budget_generation_MWh": 27156,
+    "actual_generation_MWh": 25662,
+    "budget_deviation_pct": -5.5,
+    "annual_opex_eur": 210000,
+    "soiling_loss_eur": 0,
+    "fault_loss_eur": 32587,
+    "degradation_loss_eur": 16320,
+    "curtailment_loss_eur": 40740,
+    "total_loss_eur": 89647,
+    "availability_pct": 94.5,
+    "performance_ratio": 0.88,
+    "revenue_at_risk_eur": 89647,
+    "annual_revenue_eur": 1539720,
+    "ytd_revenue_eur": 831449
+   },
+   "riskScore": {
+    "overall": 11,
+    "components": {
+     "health": 15,
+     "soiling": 0,
+     "fault_frequency": 15,
+     "budget_deviation": 11,
+     "availability": 11
+    },
+    "trend": "stable",
+    "level": "low"
+   },
+   "monthlyGeneration": [
+    {
+     "month": "Jan",
+     "budget_MWh": 2987,
+     "actual_MWh": 2742,
+     "deviation_pct": -8.2
+    },
+    {
+     "month": "Feb",
+     "budget_MWh": 2716,
+     "actual_MWh": 2550,
+     "deviation_pct": -6.1
+    },
+    {
+     "month": "Mar",
+     "budget_MWh": 2444,
+     "actual_MWh": 2295,
+     "deviation_pct": -6.1
+    },
+    {
+     "month": "Apr",
+     "budget_MWh": 2037,
+     "actual_MWh": 1953,
+     "deviation_pct": -4.1
+    },
+    {
+     "month": "May",
+     "budget_MWh": 1629,
+     "actual_MWh": 1562,
+     "deviation_pct": -4.1
+    },
+    {
+     "month": "Jun",
+     "budget_MWh": 1358,
+     "actual_MWh": 1331,
+     "deviation_pct": -2.0
+    },
+    {
+     "month": "Jul",
+     "budget_MWh": 1358,
+     "actual_MWh": 1331,
+     "deviation_pct": -2.0
+    },
+    {
+     "month": "Aug",
+     "budget_MWh": 1629,
+     "actual_MWh": 1562,
+     "deviation_pct": -4.1
+    },
+    {
+     "month": "Sep",
+     "budget_MWh": 2037,
+     "actual_MWh": 1953,
+     "deviation_pct": -4.1
+    },
+    {
+     "month": "Oct",
+     "budget_MWh": 2716,
+     "actual_MWh": 2550,
+     "deviation_pct": -6.1
+    },
+    {
+     "month": "Nov",
+     "budget_MWh": 3123,
+     "actual_MWh": 2867,
+     "deviation_pct": -8.2
+    },
+    {
+     "month": "Dec",
+     "budget_MWh": 3123,
+     "actual_MWh": 2805,
+     "deviation_pct": -10.2
+    }
+   ]
+  },
+  {
+   "plantId": "iberia-h2",
+   "plantName": "Iberia Hydrogen Valley",
+   "assetType": "HYDROGEN",
+   "location": "Arag\u00f3n, Spain",
+   "capacity_MW": 5.0,
+   "electrolyzerTechnology": "PEM",
+   "status": "operational",
+   "healthDistribution": {
+    "normal": 4,
+    "minorIssues": 0,
+    "majorIssues": 0,
+    "critical": 0
+   },
+   "metrics": {
+    "availability": 0.98,
+    "capacityFactor": 0.5,
+    "healthScore": 95
+   },
+   "dataRange": {
+    "start": "2026-06-11",
+    "end": "2026-07-11"
+   },
+   "lastUpdated": "2026-07-11T08:00:00Z",
+   "financials": {
+    "ppa_price_per_MWh": 0,
+    "budget_generation_MWh": 0,
+    "actual_generation_MWh": 0,
+    "budget_deviation_pct": -1.2,
+    "annual_opex_eur": 250000,
+    "soiling_loss_eur": 0,
+    "fault_loss_eur": 0,
+    "degradation_loss_eur": 21000,
+    "curtailment_loss_eur": 0,
+    "total_loss_eur": 21000,
+    "availability_pct": 98.0,
+    "performance_ratio": 0.75,
+    "revenue_at_risk_eur": 14000,
+    "annual_revenue_eur": 2340000,
+    "ytd_revenue_eur": 1220000
+   },
+   "riskScore": {
+    "overall": 5,
+    "components": {
+     "health": 5,
+     "soiling": 0,
+     "fault_frequency": 0,
+     "budget_deviation": 3,
+     "availability": 4
+    },
+    "trend": "stable",
+    "level": "low"
+   },
+   "monthlyGeneration": []
+  }
+ ],
+ "summary": {
+  "totalPlants": 10,
+  "operationalPlants": 10,
+  "totalCapacity_MW": 48.12,
+  "byAssetType": {
+   "SOLAR": 8,
+   "WIND": 2,
+   "BESS": 0
+  },
+  "totalInverters": 472,
+  "totalTurbines": 10,
+  "criticalIssues": 1,
+  "majorIssues": 6,
+  "topPerformers": [
+   "gamma",
+   "ribera",
+   "zeta"
+  ],
+  "needsAttention": [
+   "alpha",
+   "eta"
+  ],
+  "financials": {
+   "total_capacity_MW": 48.12,
+   "total_budget_generation_MWh": 95680.8,
+   "total_actual_generation_MWh": 90563.6,
+   "overall_budget_deviation_pct": -5.3,
+   "total_annual_revenue_eur": 5122543.6,
+   "total_ytd_revenue_eur": 2728143.2,
+   "total_revenue_at_risk_eur": 289837.0,
+   "total_soiling_loss_eur": 87184.6,
+   "total_fault_loss_eur": 77306.6,
+   "total_degradation_loss_eur": 45339.0,
+   "total_curtailment_loss_eur": 80006.8,
+   "total_opex_eur": 903560.0,
+   "portfolio_risk_score": 15,
+   "portfolio_risk_level": "low"
+  }
+ }
+}

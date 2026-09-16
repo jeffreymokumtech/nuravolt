@@ -1,0 +1,256 @@
+{
+  "dataset": "Leave-one-plant-out daily-energy twin (unseen site, day one)",
+  "n_samples": 9495,
+  "n_windows": null,
+  "normalizer": "mean_daily_energy_kwh",
+  "normalizer_value": 2323.841,
+  "nmae_pct": 11.188,
+  "nrmse_pct": 22.234,
+  "mbe_pct": -0.041,
+  "model": {
+    "label": "hybrid",
+    "nmae_pct": 11.188,
+    "nrmse_pct": 22.234,
+    "mbe_pct": -0.041,
+    "r2_footnote_only": 0.9571
+  },
+  "baselines": {
+    "irradiance_scaling": {
+      "label": "irradiance_scaling",
+      "nmae_pct": 8.899,
+      "nrmse_pct": 18.687,
+      "mbe_pct": 0.309,
+      "r2_footnote_only": 0.9697
+    }
+  },
+  "retention": {},
+  "extras": {
+    "per_plant": {
+      "gamma": {
+        "dataset": "held-out: gamma",
+        "n_samples": 1459,
+        "n_windows": null,
+        "normalizer": "mean_daily_energy_kwh",
+        "normalizer_value": 742.218,
+        "nmae_pct": 25.691,
+        "nrmse_pct": 29.949,
+        "mbe_pct": -7.081,
+        "model": {
+          "label": "hybrid",
+          "nmae_pct": 25.691,
+          "nrmse_pct": 29.949,
+          "mbe_pct": -7.081,
+          "r2_footnote_only": 0.4216
+        },
+        "baselines": {
+          "irradiance_scaling": {
+            "label": "irradiance_scaling",
+            "nmae_pct": 25.388,
+            "nrmse_pct": 29.386,
+            "mbe_pct": -7.242,
+            "r2_footnote_only": 0.4432
+          }
+        },
+        "retention": {},
+        "extras": {},
+        "reference_baseline": "irradiance_scaling",
+        "reference_nmae_pct": 25.388,
+        "uplift_vs_reference_pct": -1.2
+      },
+      "eta": {
+        "dataset": "held-out: eta",
+        "n_samples": 1637,
+        "n_windows": null,
+        "normalizer": "mean_daily_energy_kwh",
+        "normalizer_value": 403.81,
+        "nmae_pct": 13.979,
+        "nrmse_pct": 26.725,
+        "mbe_pct": 1.13,
+        "model": {
+          "label": "hybrid",
+          "nmae_pct": 13.979,
+          "nrmse_pct": 26.725,
+          "mbe_pct": 1.13,
+          "r2_footnote_only": 0.3899
+        },
+        "baselines": {
+          "irradiance_scaling": {
+            "label": "irradiance_scaling",
+            "nmae_pct": 13.469,
+            "nrmse_pct": 26.644,
+            "mbe_pct": 0.87,
+            "r2_footnote_only": 0.3936
+          }
+        },
+        "retention": {},
+        "extras": {},
+        "reference_baseline": "irradiance_scaling",
+        "reference_nmae_pct": 13.469,
+        "uplift_vs_reference_pct": -3.78
+      },
+      "epsilon": {
+        "dataset": "held-out: epsilon",
+        "n_samples": 2069,
+        "n_windows": null,
+        "normalizer": "mean_daily_energy_kwh",
+        "normalizer_value": 6328.492,
+        "nmae_pct": 10.514,
+        "nrmse_pct": 15.05,
+        "mbe_pct": -0.21,
+        "model": {
+          "label": "hybrid",
+          "nmae_pct": 10.514,
+          "nrmse_pct": 15.05,
+          "mbe_pct": -0.21,
+          "r2_footnote_only": 0.8314
+        },
+        "baselines": {
+          "irradiance_scaling": {
+            "label": "irradiance_scaling",
+            "nmae_pct": 7.427,
+            "nrmse_pct": 11.894,
+            "mbe_pct": 0.439,
+            "r2_footnote_only": 0.8947
+          }
+        },
+        "retention": {},
+        "extras": {},
+        "reference_baseline": "irradiance_scaling",
+        "reference_nmae_pct": 7.427,
+        "uplift_vs_reference_pct": -41.57
+      },
+      "alpha": {
+        "dataset": "held-out: alpha",
+        "n_samples": 1526,
+        "n_windows": null,
+        "normalizer": "mean_daily_energy_kwh",
+        "normalizer_value": 2275.624,
+        "nmae_pct": 13.852,
+        "nrmse_pct": 22.766,
+        "mbe_pct": -1.579,
+        "model": {
+          "label": "hybrid",
+          "nmae_pct": 13.852,
+          "nrmse_pct": 22.766,
+          "mbe_pct": -1.579,
+          "r2_footnote_only": 0.4421
+        },
+        "baselines": {
+          "irradiance_scaling": {
+            "label": "irradiance_scaling",
+            "nmae_pct": 12.63,
+            "nrmse_pct": 21.991,
+            "mbe_pct": 0.146,
+            "r2_footnote_only": 0.4794
+          }
+        },
+        "retention": {},
+        "extras": {},
+        "reference_baseline": "irradiance_scaling",
+        "reference_nmae_pct": 12.63,
+        "uplift_vs_reference_pct": -9.68
+      },
+      "delta": {
+        "dataset": "held-out: delta",
+        "n_samples": 1487,
+        "n_windows": null,
+        "normalizer": "mean_daily_energy_kwh",
+        "normalizer_value": 691.441,
+        "nmae_pct": 8.833,
+        "nrmse_pct": 15.827,
+        "mbe_pct": 3.092,
+        "model": {
+          "label": "hybrid",
+          "nmae_pct": 8.833,
+          "nrmse_pct": 15.827,
+          "mbe_pct": 3.092,
+          "r2_footnote_only": 0.7703
+        },
+        "baselines": {
+          "irradiance_scaling": {
+            "label": "irradiance_scaling",
+            "nmae_pct": 5.625,
+            "nrmse_pct": 13.565,
+            "mbe_pct": 1.805,
+            "r2_footnote_only": 0.8313
+          }
+        },
+        "retention": {},
+        "extras": {},
+        "reference_baseline": "irradiance_scaling",
+        "reference_nmae_pct": 5.625,
+        "uplift_vs_reference_pct": -57.05
+      },
+      "ribera": {
+        "dataset": "held-out: ribera",
+        "n_samples": 1659,
+        "n_windows": null,
+        "normalizer": "mean_daily_energy_kwh",
+        "normalizer_value": 1840.428,
+        "nmae_pct": 12.26,
+        "nrmse_pct": 19.213,
+        "mbe_pct": 0.081,
+        "model": {
+          "label": "hybrid",
+          "nmae_pct": 12.26,
+          "nrmse_pct": 19.213,
+          "mbe_pct": 0.081,
+          "r2_footnote_only": 0.5794
+        },
+        "baselines": {
+          "irradiance_scaling": {
+            "label": "irradiance_scaling",
+            "nmae_pct": 12.062,
+            "nrmse_pct": 18.963,
+            "mbe_pct": -1.223,
+            "r2_footnote_only": 0.5903
+          }
+        },
+        "retention": {},
+        "extras": {},
+        "reference_baseline": "irradiance_scaling",
+        "reference_nmae_pct": 12.062,
+        "uplift_vs_reference_pct": -1.64
+      },
+      "zeta": {
+        "dataset": "held-out: zeta",
+        "n_samples": 1117,
+        "n_windows": null,
+        "normalizer": "mean_daily_energy_kwh",
+        "normalizer_value": 676.939,
+        "nmae_pct": 7.064,
+        "nrmse_pct": 9.087,
+        "mbe_pct": 4.183,
+        "model": {
+          "label": "hybrid",
+          "nmae_pct": 7.064,
+          "nrmse_pct": 9.087,
+          "mbe_pct": 4.183,
+          "r2_footnote_only": 0.9188
+        },
+        "baselines": {
+          "irradiance_scaling": {
+            "label": "irradiance_scaling",
+            "nmae_pct": 4.946,
+            "nrmse_pct": 6.515,
+            "mbe_pct": 2.474,
+            "r2_footnote_only": 0.9583
+          }
+        },
+        "retention": {},
+        "extras": {},
+        "reference_baseline": "irradiance_scaling",
+        "reference_nmae_pct": 4.946,
+        "uplift_vs_reference_pct": -42.81
+      }
+    },
+    "protocol": "Train on every plant except one, score the held-out plant with no history from it. Only the held-out plant's nameplate scale is assumed known, which is what is available on day one.",
+    "exclusions": {
+      "gamma": "Measured output level shifts mid-record (bias -27.8%), consistent with a capacity change or irradiance-sensor swap rather than twin error. Excluded from the fleet headline; its own row is still published."
+    }
+  },
+  "reference_baseline": "irradiance_scaling",
+  "reference_nmae_pct": 8.899,
+  "uplift_vs_reference_pct": -25.72,
+  "generated_at": "2026-08-20T12:14:07.083654Z"
+}

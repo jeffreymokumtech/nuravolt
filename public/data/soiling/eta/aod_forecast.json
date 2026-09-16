@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "plant_id": "eta",
+    "latitude": 38.7,
+    "longitude": -5.3999996,
+    "elevation": 523.0,
+    "forecast_period": {
+      "start": "2025-12-17",
+      "end": "2025-12-21",
+      "days": 5
+    },
+    "source": "Open-Meteo Air Quality API (CAMS Global Forecast)",
+    "bias_correction_applied": 0.0017,
+    "generated_at": "2025-12-17T15:18:31.024554",
+    "note": "5-day AOD forecast with validated bias correction (+0.0017) applied to align with CAMS EAC4 Reanalysis baseline. Daily values show mean, min, max from hourly forecasts."
+  },
+  "statistics": {
+    "forecast_days": 5,
+    "mean_aod": 0.0943,
+    "min_aod": 0.0434,
+    "max_aod": 0.2034
+  },
+  "daily_forecast": [
+    {
+      "date": "2025-12-17",
+      "aod_550nm_mean": 0.0434,
+      "aod_550nm_min": 0.0317,
+      "aod_550nm_max": 0.0617,
+      "hourly_count": 24
+    },
+    {
+      "date": "2025-12-18",
+      "aod_550nm_mean": 0.0475,
+      "aod_550nm_min": 0.0317,
+      "aod_550nm_max": 0.1017,
+      "hourly_count": 24
+    },
+    {
+      "date": "2025-12-19",
+      "aod_550nm_mean": 0.2034,
+      "aod_550nm_min": 0.1117,
+      "aod_550nm_max": 0.2817,
+      "hourly_count": 24
+    },
+    {
+      "date": "2025-12-20",
+      "aod_550nm_mean": 0.1009,
+      "aod_550nm_min": 0.0517,
+      "aod_550nm_max": 0.2417,
+      "hourly_count": 24
+    },
+    {
+      "date": "2025-12-21",
+      "aod_550nm_mean": 0.0763,
+      "aod_550nm_min": 0.0517,
+      "aod_550nm_max": 0.1317,
+      "hourly_count": 24
+    }
+  ]
+}

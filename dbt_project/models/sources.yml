@@ -1,0 +1,85 @@
+version: 2
+
+# Bronze tables live in the AWS Glue Iceberg catalog (attached as `glue_cat` in
+# dbt_project.yml on-run-start). Adding a plant = add a table entry here.
+sources:
+  - name: bronze
+    database: glue_cat
+    schema: bronze
+    tables:
+      - name: twin_power_ribera
+        description: "Per-inverter hourly AC power (long format: time, device_id, metric, value)."
+        columns:
+          - name: value
+            tests: [not_null]
+
+      # Written by scripts/lake_compact_bronze.py (one part per connection-day),
+      # registered by nuravolt/lake/register.py. Long format, one row per
+      # (device, metric, sample). `dt` and `connection_id` are Hive path tokens
+      # AND real columns, so a part is self-describing.
+      - name: live_readings
+        description: >
+          Compacted poller output at bronze/compact/live/dt={D}/connection_id={C}/part-0.parquet.
+          `metric` is a DataFieldType member name as emitted by the connectors
+          (src/lib/services/cloud-connector.ts), not a raw vendor tag.
+        columns:
+          - name: ts
+            description: "Sample timestamp, UTC."
+          - name: plant_ext_id
+            description: "Vendor plant id, exactly as the vendor said it."
+          - name: device_ext_id
+            description: "Vendor device id; canonical 'BESS <asset>[.U-n][.R-k]...' for battery devices."
+          - name: device_type
+            description: "Normalized device class (battery, string_inverter, emi, ...). Nullable."
+          - name: metric
+            description: "DataFieldType member name, or a vendor tag that slipped through unmapped."
+          - name: value
+          - name: unit
+            description: "Unit as reported. Nullable; a null means the taxonomy's declared unit."
+          - name: dt
+            description: "Partition day (UTC)."
+          - name: connection_id
+
+      # Written + registered by nuravolt/lake/export_dim.py. One snapshot per
+      # day, never mutated: yesterday's telemetry stays resolvable against
+      # yesterday's mapping after a device is renamed or a plant changes hands.
+      - name: dim_device_map
+        description: >
+          Daily snapshot resolving (connection_id, plant_ext_id, device_ext_id) to a plant
+          and a BESS asset. `resolution` and `asset_match` record HOW each row was resolved;
+          an unresolvable row keeps a null plant_id rather than being attached to a guess.
+        columns:
+          - name: dt
+            description: "Snapshot day."
+          - name: connection_id
+          - name: plant_ext_id
+          - name: device_ext_id
+          - name: plant_id
+            description: "NuraVolt Plant uuid, or null when the vendor plant id could not be resolved."
+          - name: plant_slug
+          - name: country
+          - name: currency
+          - name: resolution
+            description: "promoted_from | data_source_sole | unresolved."
+          - name: canonical_device_id
+            description: "The canonical BESS id when device_ext_id parses as one, else null."
+          - name: device_grain
+            description: "asset | unit | rack | module | cell."
+          - name: asset_token
+          - name: unit_no
+          - name: rack_no
+          - name: module_no
+          - name: cell_no
+          - name: bess_asset_id
+            description: "BessAsset uuid the device belongs to, or null."
+          - name: asset_match
+            description: "external_id | name | sole_asset | none."
+          - name: asset_external_id
+          - name: nominal_capacity_kwh
+          - name: nominal_power_kw
+
+# No column tests on the two BESS bronze tables on purpose: they are registered
+# by the nightly lake jobs, and a fleet with no battery telemetry yet
+# legitimately has no rows. A not_null test here would turn "nothing to do" into
+# a red pipeline, and the models below already refuse to attribute a row they
+# cannot resolve.

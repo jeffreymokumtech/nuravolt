@@ -1,0 +1,7 @@
+{
+  "dataset": "PVDAQ + rdtools (single-site per-day SR)",
+  "status": "pending_implementation",
+  "reason": "Requires rdtools install and resolution of PVDAQ metric_id schema. Available systems on disk: 34 (Las Vegas, 146kW, 10yr), 1430, 2107, 7334, 9069. Next step: fetch the metric_id catalog from OEDI or DataWatts, then run rdtools.soiling_srr per site.",
+  "n_samples": 0,
+  "generated_at": "2026-06-21T09:33:22.648616Z"
+}

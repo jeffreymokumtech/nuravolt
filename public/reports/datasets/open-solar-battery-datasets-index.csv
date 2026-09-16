@@ -1,0 +1,9 @@
+dataset,domain,scope,license_access,benchmarked_here,our_result
+Lazzaretti UTFPR,PV faults,5 classes ~497K labeled rows 5kW site,CC BY 4.0,yes,0.998 macro-F1
+GPVS-Faults,PV faults,8 classes x 2 modes ~320K rows grid-connected,Open (Mendeley Data),yes,0.766 macro-F1
+Severson 2019,LFP battery,124 A123 cells cycled to end of life,Open (data.matr.io),yes,17.2% MAPE
+NASA PCoE,NMC battery,13 well-formed cells of 42,Public domain (NASA),yes,29.5% MAPE
+NREL PVDAQ,PV production,Multi-site inverter and string time series,Open (NREL),no,
+DKASC Alice Springs,PV performance,Multiple module technologies long time series,Open,no,
+Raptor Maps IR modules,PV thermal,Labeled infrared module images across anomaly types,Open (GitHub),no,
+Battery Archive,Battery cycling,Aggregated public cell datasets across chemistries,Open,no,

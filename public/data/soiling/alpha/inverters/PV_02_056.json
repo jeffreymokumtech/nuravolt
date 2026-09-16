@@ -1,0 +1,89 @@
+{
+  "inverterId": "INV 02.056",
+  "groupId": "INV 02",
+  "soilingRatio": {
+    "mean": 0.9963,
+    "median": 1.0127,
+    "min": 0.4107,
+    "max": 1.05,
+    "std": 0.0705
+  },
+  "lossDisaggregation": {
+    "method": "IEA_PVPS_T13",
+    "percentages": {
+      "soiling": 0.37,
+      "temperature": 0.57,
+      "spectral": 1.0,
+      "inverter": 2.0,
+      "wiringBop": 2.0,
+      "degradation": 0.5,
+      "total": 6.43
+    },
+    "energy_kWh": {
+      "reference": 8810.4,
+      "net": 8243.4,
+      "soilingLoss": 32.3
+    }
+  },
+  "anomalyDetection": {
+    "totalAnomalies": 4,
+    "anomalyRate_pct": 0.01,
+    "periods": [
+      {
+        "start": "2022-02-17",
+        "end": "2022-06-23",
+        "duration_hours": 18.5,
+        "severity": "Major",
+        "type": "underperformance",
+        "deviation_pct": -25.0
+      },
+      {
+        "start": "2022-06-23",
+        "end": "2022-06-24",
+        "duration_hours": 3.25,
+        "severity": "Minor",
+        "type": "underperformance",
+        "deviation_pct": -19.2
+      },
+      {
+        "start": "2022-06-27",
+        "end": "2022-06-28",
+        "duration_hours": 19.0,
+        "severity": "Critical",
+        "type": "overperformance",
+        "deviation_pct": 32.4
+      },
+      {
+        "start": "2022-07-02",
+        "end": "2022-07-03",
+        "duration_hours": 2.75,
+        "severity": "Minor",
+        "type": "overperformance",
+        "deviation_pct": 15.2
+      }
+    ]
+  },
+  "performance": {
+    "performanceRatio": 0.996,
+    "avgPowerNormalized": 0.4355,
+    "capacityFactor": 0.109,
+    "availability_pct": 100.0,
+    "productionRate": 0.988
+  },
+  "fleetComparison": {
+    "rank": 104,
+    "deviationFromMean_pct": -0.54,
+    "zScore": -0.29,
+    "severity": "Normal"
+  },
+  "dataQuality": {
+    "completeness_pct": 100.0,
+    "validRecords": 65764,
+    "totalRecords": 65764
+  },
+  "metadata": {
+    "analysisStart": "2020-10-01",
+    "analysisEnd": "2025-10-21",
+    "generatedAt": "2025-11-25T15:54:07.023695"
+  }
+}

@@ -1,0 +1,1010 @@
+{
+  "metadata": {
+    "plant_id": "alpha1",
+    "n_scenarios": 3644,
+    "sorted_by": "net_benefit_eur"
+  },
+  "scenarios": [
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-31', '2026-02-11']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5801.045831274896,
+      "revenue_recovered_eur": 377067.97903286805,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 360867.97903286805,
+      "roi_pct": 2227.58011748684,
+      "avg_sr": 0.9815467693472216
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2026-01-14', '2026-02-11']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5791.1363479267275,
+      "revenue_recovered_eur": 376423.8626152375,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 360223.8626152375,
+      "roi_pct": 2223.604090217515,
+      "avg_sr": 0.9805039930770942
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-17', '2026-02-11']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5788.386423008102,
+      "revenue_recovered_eur": 376245.117495527,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 360045.117495527,
+      "roi_pct": 2222.500725281031,
+      "avg_sr": 0.9813142031515956
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-01-14', '2026-02-11']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5866.862285628646,
+      "revenue_recovered_eur": 381346.04856586223,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 359746.04856586223,
+      "roi_pct": 1665.4909655826957,
+      "avg_sr": 0.9855959043852888
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-01-28', '2026-02-11']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5860.774294624629,
+      "revenue_recovered_eur": 380950.3291506008,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 359350.3291506008,
+      "roi_pct": 1663.6589312527817,
+      "avg_sr": 0.9848157955375356
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2026-01-14', '2026-02-25']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5771.648142604485,
+      "revenue_recovered_eur": 375157.1292692917,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 358957.12926929165,
+      "roi_pct": 2215.7847485758743,
+      "avg_sr": 0.9794565500428452
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-01-28', '2026-02-25']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5853.987846541706,
+      "revenue_recovered_eur": 380509.21002521086,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 358909.21002521086,
+      "roi_pct": 1661.61671307968,
+      "avg_sr": 0.984451040668926
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-31', '2026-02-25']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5770.286641151906,
+      "revenue_recovered_eur": 375068.6316748734,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 358868.6316748734,
+      "roi_pct": 2215.238467128848,
+      "avg_sr": 0.97989353864174
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2025-12-31', '2026-02-11']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5852.926817896536,
+      "revenue_recovered_eur": 380440.2431632746,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 358840.2431632746,
+      "roi_pct": 1661.2974220521974,
+      "avg_sr": 0.985100670767288
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2026-01-14', '2026-02-11']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5852.682171949513,
+      "revenue_recovered_eur": 380424.341176718,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 358824.341176718,
+      "roi_pct": 1661.223801744065,
+      "avg_sr": 0.9845716010321284
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-01-14', '2026-02-25']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5848.804852744972,
+      "revenue_recovered_eur": 380172.3154284232,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 358572.31542842323,
+      "roi_pct": 1660.0570158723297,
+      "avg_sr": 0.984625361845446
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2025-12-31', '2026-02-11']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5848.138696750786,
+      "revenue_recovered_eur": 380129.0152888014,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 358529.0152888014,
+      "roi_pct": 1659.8565522629694,
+      "avg_sr": 0.9846821550853608
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-01-28', '2026-03-11']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5846.086530038705,
+      "revenue_recovered_eur": 379995.624452516,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 358395.624452516,
+      "roi_pct": 1659.2390020949815,
+      "avg_sr": 0.9840862858003164
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2026-01-28', '2026-02-11']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5761.056805290402,
+      "revenue_recovered_eur": 374468.69234387577,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 358268.69234387577,
+      "roi_pct": 2211.535137925159,
+      "avg_sr": 0.9781858743412136
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-02-11']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5757.534724757417,
+      "revenue_recovered_eur": 374239.7571092318,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 358039.7571092318,
+      "roi_pct": 2210.1219574643937,
+      "avg_sr": 0.9798062944902158
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-01-28', '2026-03-25']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5837.739266167679,
+      "revenue_recovered_eur": 379453.0523008988,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 357853.0523008988,
+      "roi_pct": 1656.7270939856428,
+      "avg_sr": 0.9837215309317068
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2026-01-28', '2026-02-11']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5837.144445735863,
+      "revenue_recovered_eur": 379414.3889728307,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 357814.3889728307,
+      "roi_pct": 1656.5480970964386,
+      "avg_sr": 0.9831857045131426
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2026-01-28', '2026-02-25']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5752.83958476891,
+      "revenue_recovered_eur": 373934.57300997875,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 357734.57300997875,
+      "roi_pct": 2208.238104999869,
+      "avg_sr": 0.9777442189781976
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2026-01-14', '2026-02-25']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5834.061189825799,
+      "revenue_recovered_eur": 379213.9773386768,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 357613.9773386768,
+      "roi_pct": 1655.620265456837,
+      "avg_sr": 0.9835707691087244
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2026-01-14', '2026-03-11']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5748.958441534807,
+      "revenue_recovered_eur": 373682.2986997624,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 357482.29869976244,
+      "roi_pct": 2206.6808561713733,
+      "avg_sr": 0.9784091070085964
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2026-01-28', '2026-02-25']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5829.794448412897,
+      "revenue_recovered_eur": 378936.6391468381,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 357336.6391468381,
+      "roi_pct": 1654.3362923464726,
+      "avg_sr": 0.9827906602609714
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-17', '2026-02-25']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5746.356248084361,
+      "revenue_recovered_eur": 373513.1561254836,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 357313.15612548357,
+      "roi_pct": 2205.6367662066887,
+      "avg_sr": 0.979055184774881
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-01-28', '2026-04-08']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5828.991547969497,
+      "revenue_recovered_eur": 378884.45061801746,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 357284.45061801746,
+      "roi_pct": 1654.0946787871178,
+      "avg_sr": 0.9833567760630972
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-01-14', '2026-03-11']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5827.780969455489,
+      "revenue_recovered_eur": 378805.76301460667,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 357205.76301460667,
+      "roi_pct": 1653.7303843268826,
+      "avg_sr": 0.9836548193056036
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2026-01-28', '2026-03-11']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5743.272450485714,
+      "revenue_recovered_eur": 373312.7092815712,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 357112.7092815712,
+      "roi_pct": 2204.399440009699,
+      "avg_sr": 0.9773025636151818
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2025-12-31', '2026-02-25']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5823.598400212111,
+      "revenue_recovered_eur": 378533.896013787,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 356933.896013787,
+      "roi_pct": 1652.4717408045697,
+      "avg_sr": 0.9835243405562124
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2025-12-17', '2026-02-11']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5822.181482322452,
+      "revenue_recovered_eur": 378441.79635095946,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 356841.79635095946,
+      "roi_pct": 1652.045353476664,
+      "avg_sr": 0.9835173666728398
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2026-01-28', '2026-03-11']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5821.237003570575,
+      "revenue_recovered_eur": 378380.4052320872,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 356780.40523208724,
+      "roi_pct": 1651.7611353337372,
+      "avg_sr": 0.9823956160088
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-01-28', '2026-04-22']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5819.843375444172,
+      "revenue_recovered_eur": 378289.81940387096,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 356689.81940387096,
+      "roi_pct": 1651.3417564994024,
+      "avg_sr": 0.9829920211944876
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2025-12-17', '2026-02-11']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5818.328265725835,
+      "revenue_recovered_eur": 378191.3372721793,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 356591.3372721793,
+      "roi_pct": 1650.885820704534,
+      "avg_sr": 0.9833300946835344
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2025-12-31', '2026-02-25']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5818.2467298263255,
+      "revenue_recovered_eur": 378186.0374387111,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 356586.03743871115,
+      "roi_pct": 1650.8612844384777,
+      "avg_sr": 0.9830755354907236
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-31', '2026-03-11']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5734.474373295743,
+      "revenue_recovered_eur": 372740.8342642228,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 356540.83426422277,
+      "roi_pct": 2200.869347310017,
+      "avg_sr": 0.9782403079362582
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2025-12-17', '2026-01-28', '2026-02-11']",
+      "n_cleanings": 5,
+      "energy_recovered_mwh": 5899.8272956737055,
+      "revenue_recovered_eur": 383488.7742187907,
+      "cleaning_cost_eur": 27000.0,
+      "net_benefit_eur": 356488.7742187907,
+      "roi_pct": 1320.3287934029286,
+      "avg_sr": 0.9872849800385616
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-02-11', '2026-02-25']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5816.416316492654,
+      "revenue_recovered_eur": 378067.0605720226,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 356467.0605720226,
+      "roi_pct": 1650.3104656112157,
+      "avg_sr": 0.9822516110811425
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2026-01-28', '2026-03-25']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5733.165350697844,
+      "revenue_recovered_eur": 372655.7477953597,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 356455.7477953597,
+      "roi_pct": 2200.344122193578,
+      "avg_sr": 0.9768609082521656
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-02-11', '2026-03-11']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5813.313446421198,
+      "revenue_recovered_eur": 377865.37401737785,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 356265.37401737785,
+      "roi_pct": 1649.3767315619343,
+      "avg_sr": 0.982108370778745
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2025-12-17', '2026-01-14', '2026-02-11']",
+      "n_cleanings": 5,
+      "energy_recovered_mwh": 5895.738460646953,
+      "revenue_recovered_eur": 383222.9999420522,
+      "cleaning_cost_eur": 27000.0,
+      "net_benefit_eur": 356222.9999420522,
+      "roi_pct": 1319.344444229823,
+      "avg_sr": 0.9874126901042372
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2026-01-14', '2026-03-11']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5812.381178196989,
+      "revenue_recovered_eur": 377804.7765828043,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 356204.7765828043,
+      "roi_pct": 1649.0961878833532,
+      "avg_sr": 0.98256993718532
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2026-01-28', '2026-03-25']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5812.196579720505,
+      "revenue_recovered_eur": 377792.77768183267,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 356192.77768183267,
+      "roi_pct": 1649.040637415892,
+      "avg_sr": 0.9820005717566288
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-01-28', '2026-05-06']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5810.620546328231,
+      "revenue_recovered_eur": 377690.3355113347,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 356090.3355113347,
+      "roi_pct": 1648.5663681080312,
+      "avg_sr": 0.982627266325878
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2025-12-17', '2026-01-28', '2026-02-25']",
+      "n_cleanings": 5,
+      "energy_recovered_mwh": 5893.647757990744,
+      "revenue_recovered_eur": 383087.1042693984,
+      "cleaning_cost_eur": 27000.0,
+      "net_benefit_eur": 356087.1042693984,
+      "roi_pct": 1318.8411269236976,
+      "avg_sr": 0.9869528451090558
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-02-11', '2026-03-25']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5810.035451515647,
+      "revenue_recovered_eur": 377652.304348517,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 356052.304348517,
+      "roi_pct": 1648.390297909801,
+      "avg_sr": 0.9819651304763476
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-31', '2026-01-28']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5726.058421360143,
+      "revenue_recovered_eur": 372193.79738840926,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 355993.79738840926,
+      "roi_pct": 2197.492576471662,
+      "avg_sr": 0.9787530534979164
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2026-01-14', '2026-03-25']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5724.988142166152,
+      "revenue_recovered_eur": 372124.2292408,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 355924.2292408,
+      "roi_pct": 2197.0631434617285,
+      "avg_sr": 0.9773616639743476
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-17', '2026-01-28']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5724.149640868069,
+      "revenue_recovered_eur": 372069.7266564248,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 355869.7266564248,
+      "roi_pct": 2196.7267077557085,
+      "avg_sr": 0.9791262749735228
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-02-11', '2026-04-08']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5806.600197026048,
+      "revenue_recovered_eur": 377429.0128066931,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 355829.0128066931,
+      "roi_pct": 1647.3565407717274,
+      "avg_sr": 0.9818218901739504
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-01-28', '2026-05-13']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5805.941940838704,
+      "revenue_recovered_eur": 377386.2261545155,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 355786.2261545155,
+      "roi_pct": 1647.1584544190534,
+      "avg_sr": 0.982444888891573
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2026-01-28', '2026-04-08']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5722.57336964738,
+      "revenue_recovered_eur": 371967.26902707946,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 355767.26902707946,
+      "roi_pct": 2196.094253253577,
+      "avg_sr": 0.9764192528891495
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-01-14', '2026-03-25']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5805.570506003678,
+      "revenue_recovered_eur": 377362.0828902391,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 355762.0828902391,
+      "roi_pct": 1647.0466800474032,
+      "avg_sr": 0.9826842767657612
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2025-12-31', '2026-01-14', '2026-02-11']",
+      "n_cleanings": 5,
+      "energy_recovered_mwh": 5888.480748108988,
+      "revenue_recovered_eur": 382751.24862708384,
+      "cleaning_cost_eur": 27000.0,
+      "net_benefit_eur": 355751.24862708384,
+      "roi_pct": 1317.5972171373476,
+      "avg_sr": 0.9868185307427852
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2025-12-17', '2026-01-28', '2026-03-11']",
+      "n_cleanings": 5,
+      "energy_recovered_mwh": 5886.453054299112,
+      "revenue_recovered_eur": 382619.4485294423,
+      "cleaning_cost_eur": 27000.0,
+      "net_benefit_eur": 355619.4485294423,
+      "roi_pct": 1317.109068627564,
+      "avg_sr": 0.98662071017955
+    },
+    {
+      "cleaning_dates": "['2025-11-19', '2025-12-31', '2026-02-11']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5720.144484601107,
+      "revenue_recovered_eur": 371809.3914990721,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 355609.3914990721,
+      "roi_pct": 2195.119700611556,
+      "avg_sr": 0.9767119365816628
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-02-11', '2026-04-22']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5803.007682952404,
+      "revenue_recovered_eur": 377195.4993919059,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 355595.49939190596,
+      "roi_pct": 1646.2754601477127,
+      "avg_sr": 0.981678649871553
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2026-01-28', '2026-04-08']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5802.722447663058,
+      "revenue_recovered_eur": 377176.9590980988,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 355576.9590980988,
+      "roi_pct": 1646.189625454161,
+      "avg_sr": 0.9816055275044576
+    },
+    {
+      "cleaning_dates": "['2025-11-19', '2026-01-14', '2026-02-11']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5719.626993786336,
+      "revenue_recovered_eur": 371775.75459611206,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 355575.75459611206,
+      "roi_pct": 2194.9120654080994,
+      "avg_sr": 0.9762749479827684
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2025-12-03', '2026-01-14', '2026-02-11']",
+      "n_cleanings": 5,
+      "energy_recovered_mwh": 5884.803883201028,
+      "revenue_recovered_eur": 382512.252408067,
+      "cleaning_cost_eur": 27000.0,
+      "net_benefit_eur": 355512.252408067,
+      "roi_pct": 1316.7120459558037,
+      "avg_sr": 0.9867315069999354
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-01-28', '2026-05-20']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5801.2633353491765,
+      "revenue_recovered_eur": 377082.11679769633,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 355482.11679769633,
+      "roi_pct": 1645.7505407300755,
+      "avg_sr": 0.9822625114572684
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-02-11', '2026-05-06']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5799.385851017541,
+      "revenue_recovered_eur": 376960.08031613985,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 355360.08031613985,
+      "roi_pct": 1645.185557019166,
+      "avg_sr": 0.9815354095691556
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-02-11', '2026-05-13']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5797.548548975014,
+      "revenue_recovered_eur": 376840.6556833759,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 355240.6556833759,
+      "roi_pct": 1644.6326652008142,
+      "avg_sr": 0.9814637894179568
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-01-28', '2026-05-27']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5796.584729859653,
+      "revenue_recovered_eur": 376778.00744087715,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 355178.00744087715,
+      "roi_pct": 1644.3426270410978,
+      "avg_sr": 0.9820801340229636
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2025-12-03', '2026-01-28', '2026-02-11']",
+      "n_cleanings": 5,
+      "energy_recovered_mwh": 5879.44298301814,
+      "revenue_recovered_eur": 382163.7938961794,
+      "cleaning_cost_eur": 27000.0,
+      "net_benefit_eur": 355163.7938961794,
+      "roi_pct": 1315.4214588747386,
+      "avg_sr": 0.9859980092630266
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2025-12-17', '2026-01-28', '2026-03-25']",
+      "n_cleanings": 5,
+      "energy_recovered_mwh": 5878.852284204015,
+      "revenue_recovered_eur": 382125.3984732609,
+      "cleaning_cost_eur": 27000.0,
+      "net_benefit_eur": 355125.3984732609,
+      "roi_pct": 1315.27925360467,
+      "avg_sr": 0.9862885752500444
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-02-11', '2026-05-20']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5795.711246932486,
+      "revenue_recovered_eur": 376721.2310506117,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 355121.2310506117,
+      "roi_pct": 1644.0797733824618,
+      "avg_sr": 0.9813921692667582
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2025-12-17', '2026-01-14', '2026-02-25']",
+      "n_cleanings": 5,
+      "energy_recovered_mwh": 5878.287938163245,
+      "revenue_recovered_eur": 382088.7159806108,
+      "cleaning_cost_eur": 27000.0,
+      "net_benefit_eur": 355088.7159806108,
+      "roi_pct": 1315.1433925207807,
+      "avg_sr": 0.9864747675034986
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2026-01-28', '2026-04-22']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5711.496507334319,
+      "revenue_recovered_eur": 371247.2729767307,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 355047.2729767307,
+      "roi_pct": 2191.6498331896955,
+      "avg_sr": 0.9759775975261336
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-02-11', '2026-05-27']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5793.873944889965,
+      "revenue_recovered_eur": 376601.8064178475,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 355001.8064178475,
+      "roi_pct": 1643.5268815641089,
+      "avg_sr": 0.9813205491155595
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2026-02-11']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5710.139684111957,
+      "revenue_recovered_eur": 371159.0794672775,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 354959.0794672775,
+      "roi_pct": 2191.105428810355,
+      "avg_sr": 0.9770230433630832
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2026-01-28', '2026-04-22']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5792.814607398235,
+      "revenue_recovered_eur": 376532.9494808852,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 354932.9494808852,
+      "roi_pct": 1643.2080994485425,
+      "avg_sr": 0.9812104832522864
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-02-11', '2026-06-03']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5792.029988517897,
+      "revenue_recovered_eur": 376481.94925366296,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 354881.94925366296,
+      "roi_pct": 1642.9719872854764,
+      "avg_sr": 0.9812489289643608
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-01-28', '2026-06-03']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5791.889179424765,
+      "revenue_recovered_eur": 376472.7966626096,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 354872.79666260956,
+      "roi_pct": 1642.929614178748,
+      "avg_sr": 0.9818977565886586
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-02-11', '2026-06-10']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5790.169396321973,
+      "revenue_recovered_eur": 376361.010760928,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 354761.01076092804,
+      "roi_pct": 1642.4120868561483,
+      "avg_sr": 0.981177308813162
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2025-12-03', '2026-01-28', '2026-02-25']",
+      "n_cleanings": 5,
+      "energy_recovered_mwh": 5872.699896095139,
+      "revenue_recovered_eur": 381725.4932461844,
+      "cleaning_cost_eur": 27000.0,
+      "net_benefit_eur": 354725.49324618443,
+      "roi_pct": 1313.7981231340166,
+      "avg_sr": 0.9856355849499594
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2026-01-14', '2026-03-25']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5789.477554766141,
+      "revenue_recovered_eur": 376316.041059799,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 354716.041059799,
+      "roi_pct": 1642.2038937953655,
+      "avg_sr": 0.981569105261916
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2025-12-31', '2026-03-11']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5789.451950136139,
+      "revenue_recovered_eur": 376314.3767588488,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 354714.3767588488,
+      "roi_pct": 1642.196188698374,
+      "avg_sr": 0.9819480103451372
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2025-12-17', '2025-12-31', '2026-02-11']",
+      "n_cleanings": 5,
+      "energy_recovered_mwh": 5871.6883524541045,
+      "revenue_recovered_eur": 381659.7429095167,
+      "cleaning_cost_eur": 27000.0,
+      "net_benefit_eur": 354659.7429095167,
+      "roi_pct": 1313.5546033685805,
+      "avg_sr": 0.986265057704159
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2025-12-31', '2026-01-14', '2026-02-25']",
+      "n_cleanings": 5,
+      "energy_recovered_mwh": 5871.593774865316,
+      "revenue_recovered_eur": 381653.59536624514,
+      "cleaning_cost_eur": 27000.0,
+      "net_benefit_eur": 354653.59536624514,
+      "roi_pct": 1313.5318346897968,
+      "avg_sr": 0.9859108975256085
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2026-01-14', '2026-01-28']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5705.398310237262,
+      "revenue_recovered_eur": 370850.8901654221,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 354650.8901654221,
+      "roi_pct": 2189.2030257124825,
+      "avg_sr": 0.9771044895565558
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-02-11', '2026-06-17']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5788.308804126049,
+      "revenue_recovered_eur": 376240.0722681931,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 354640.0722681931,
+      "roi_pct": 1641.85218642682,
+      "avg_sr": 0.9811056886619636
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2025-12-17', '2026-01-28', '2026-04-08']",
+      "n_cleanings": 5,
+      "energy_recovered_mwh": 5870.886872314753,
+      "revenue_recovered_eur": 381607.64670045907,
+      "cleaning_cost_eur": 27000.0,
+      "net_benefit_eur": 354607.64670045907,
+      "roi_pct": 1313.3616544461447,
+      "avg_sr": 0.9859564403205386
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-02-25']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5704.233565032926,
+      "revenue_recovered_eur": 370775.18172714,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 354575.18172714,
+      "roi_pct": 2188.7356896737037,
+      "avg_sr": 0.9769414884422684
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-01-28', '2026-06-10']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5787.151266626472,
+      "revenue_recovered_eur": 376164.8323307205,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 354564.8323307205,
+      "roi_pct": 1641.5038533829652,
+      "avg_sr": 0.981715379154354
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-01-28']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5704.048570392093,
+      "revenue_recovered_eur": 370763.15707548615,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 354563.15707548615,
+      "roi_pct": 2188.661463428927,
+      "avg_sr": 0.978224153983376
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2025-12-03', '2025-12-31', '2026-02-11']",
+      "n_cleanings": 5,
+      "energy_recovered_mwh": 5870.145767541573,
+      "revenue_recovered_eur": 381559.4748902018,
+      "cleaning_cost_eur": 27000.0,
+      "net_benefit_eur": 354559.4748902018,
+      "roi_pct": 1313.183240334081,
+      "avg_sr": 0.9861896622710898
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-02-11', '2026-06-24']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5786.448211930125,
+      "revenue_recovered_eur": 376119.1337754582,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 354519.1337754582,
+      "roi_pct": 1641.2922859974915,
+      "avg_sr": 0.9810340685107648
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-02-11', '2026-07-01']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5784.5876197342,
+      "revenue_recovered_eur": 375998.1952827233,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 354398.1952827233,
+      "roi_pct": 1640.7323855681632,
+      "avg_sr": 0.980962448359566
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2025-12-17', '2026-02-11', '2026-02-25']",
+      "n_cleanings": 5,
+      "energy_recovered_mwh": 5867.654041092828,
+      "revenue_recovered_eur": 381397.51267103385,
+      "cleaning_cost_eur": 27000.0,
+      "net_benefit_eur": 354397.51267103385,
+      "roi_pct": 1312.5833802630882,
+      "avg_sr": 0.9854058143033502
+    },
+    {
+      "cleaning_dates": "['2025-11-19', '2026-01-14', '2026-02-25']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5700.70233770413,
+      "revenue_recovered_eur": 370545.65195076866,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 354345.65195076866,
+      "roi_pct": 2187.3188392022757,
+      "avg_sr": 0.9752577943320812
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2025-12-03', '2026-01-14', '2026-02-25']",
+      "n_cleanings": 5,
+      "energy_recovered_mwh": 5866.78981147728,
+      "revenue_recovered_eur": 381341.3377460232,
+      "cleaning_cost_eur": 27000.0,
+      "net_benefit_eur": 354341.3377460232,
+      "roi_pct": 1312.3753249852712,
+      "avg_sr": 0.9857632950156352
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2025-12-31', '2026-03-11']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5783.444151411029,
+      "revenue_recovered_eur": 375923.8698417172,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 354323.8698417172,
+      "roi_pct": 1640.388286304246,
+      "avg_sr": 0.9814689158960868
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2026-01-28', '2026-05-06']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5700.329248740178,
+      "revenue_recovered_eur": 370521.4011681115,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 354321.4011681115,
+      "roi_pct": 2187.1691430130336,
+      "avg_sr": 0.9755359421631176
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2026-01-14', '2026-04-08']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5699.867883930314,
+      "revenue_recovered_eur": 370491.4124554703,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 354291.4124554703,
+      "roi_pct": 2186.9840275029032,
+      "avg_sr": 0.9763142209400986
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2026-01-28', '2026-05-06']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5782.825911031003,
+      "revenue_recovered_eur": 375883.68421701505,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 354283.68421701505,
+      "roi_pct": 1640.20224174544,
+      "avg_sr": 0.980815439000115
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-02-11', '2026-07-08']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5782.756002843213,
+      "revenue_recovered_eur": 375879.140184809,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 354279.140184809,
+      "roi_pct": 1640.1812045593008,
+      "avg_sr": 0.9808908282083674
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-01-28', '2026-06-17']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5782.4133538281785,
+      "revenue_recovered_eur": 375856.86799883144,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 354256.86799883144,
+      "roi_pct": 1640.0780925871825,
+      "avg_sr": 0.9815330017200492
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-12-03', '2026-01-14', '2026-04-08']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5782.294510620126,
+      "revenue_recovered_eur": 375849.143190308,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 354249.143190308,
+      "roi_pct": 1640.0423295847593,
+      "avg_sr": 0.9817137342259186
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2025-12-17', '2026-02-11', '2026-03-11']",
+      "n_cleanings": 5,
+      "energy_recovered_mwh": 5865.257783832742,
+      "revenue_recovered_eur": 381241.7559491279,
+      "cleaning_cost_eur": 27000.0,
+      "net_benefit_eur": 354241.75594912795,
+      "roi_pct": 1312.0065035152886,
+      "avg_sr": 0.9852951939400568
+    },
+    {
+      "cleaning_dates": "['2025-11-19', '2026-01-28', '2026-02-11']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5698.997186359644,
+      "revenue_recovered_eur": 370434.8171133767,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 354234.8171133767,
+      "roi_pct": 2186.634673539362,
+      "avg_sr": 0.9745626169181204
+    },
+    {
+      "cleaning_dates": "['2025-11-19', '2025-12-17', '2026-02-11']",
+      "n_cleanings": 3,
+      "energy_recovered_mwh": 5698.843738591961,
+      "revenue_recovered_eur": 370424.8430084777,
+      "cleaning_cost_eur": 16200.0,
+      "net_benefit_eur": 354224.8430084777,
+      "roi_pct": 2186.573104990603,
+      "avg_sr": 0.9758735827148036
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2025-12-03', '2026-01-28', '2026-03-11']",
+      "n_cleanings": 5,
+      "energy_recovered_mwh": 5864.849064064183,
+      "revenue_recovered_eur": 381215.1891641724,
+      "cleaning_cost_eur": 27000.0,
+      "net_benefit_eur": 354215.1891641724,
+      "roi_pct": 1311.9081080154533,
+      "avg_sr": 0.985273160636892
+    },
+    {
+      "cleaning_dates": "['2025-11-05', '2025-11-19', '2026-02-11', '2026-02-25']",
+      "n_cleanings": 4,
+      "energy_recovered_mwh": 5781.472290589139,
+      "revenue_recovered_eur": 375795.69888829393,
+      "cleaning_cost_eur": 21600.0,
+      "net_benefit_eur": 354195.69888829393,
+      "roi_pct": 1639.79490226062,
+      "avg_sr": 0.9799854430019548
+    }
+  ],
+  "note": "Full dataset contains {len(data)} scenarios. Showing top 100."
+}

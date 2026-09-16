@@ -1,0 +1,18 @@
+{
+  "plant_id": "helios",
+  "trained_at": "2025-12-29T09:22:09.391373",
+  "metrics": {
+    "r2": 0.4017,
+    "mae_kW": 0.12,
+    "rmse_kW": 0.19,
+    "mape_pct": 98.3,
+    "physics_r2": -12843.7371,
+    "physics_mae_kW": 23.81,
+    "ml_r2": 0.9998,
+    "ml_mae_kW": 0.12,
+    "trainingSamples": 57253,
+    "validationSamples": 14314,
+    "trainingTime_s": 3.07,
+    "calibrationFactor": 1.0
+  }
+}

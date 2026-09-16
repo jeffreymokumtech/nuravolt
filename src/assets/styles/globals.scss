@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Monochrome Blue Scale — kept for primary CTA and link states */
+    --blue-50: 210 100% 95%;
+    --blue-100: 210 100% 90%;
+    --blue-200: 210 100% 80%;
+    --blue-300: 210 100% 70%;
+    --blue-400: 210 100% 60%;
+    --blue-500: 210 100% 47%;   /* #006FEE — primary CTA */
+    --blue-600: 210 100% 37%;
+    --blue-700: 210 100% 28%;
+    --blue-800: 210 100% 18%;
+    --blue-900: 210 100% 9%;
+
+    /* Paper + ink — neutral near-white, primary surface (was hue=40 warm cream; cooled for less-parchmenty operator dashboards) */
+    --paper:    0 0% 99%;     /* #FCFCFC */
+    --paper-2:  0 0% 96%;     /* #F5F5F5 */
+    --ink:      220 30% 10%;  /* #11141E */
+    --ink-2:    220 16% 32%;  /* #444A5C */
+    --ink-3:    220 10% 55%;  /* #7C8294 */
+    --divider:  220 12% 88%;  /* #D8DBE2 */
+
+    /* Dark data surface — embedded instrument panels */
+    --data-bg:    220 35% 7%;   /* #0B0E18 */
+    --data-bg-2:  220 28% 11%;  /* #141826 */
+    --data-fg:    40 22% 96%;   /* #F5F2EC */
+    --data-fg-2:  220 14% 65%;  /* #9098AB */
+    --data-rule:  220 18% 22%;  /* #2D344A */
+
+    /* Signal — only on state, never decoratively */
+    --signal-positive: 152 50% 36%;  /* #2E8754 */
+    --signal-warning:  36 68% 45%;   /* #C8932B */
+    --signal-critical: 358 65% 50%;  /* #D63A3A */
+
+    /* Semantic shadcn tokens — remapped to paper/ink */
+    --background: var(--paper);
+    --foreground: var(--ink);
+    --card: 0 0% 100%;
+    --card-foreground: var(--ink);
+    --popover: 0 0% 100%;
+    --popover-foreground: var(--ink);
+    --primary: var(--blue-500);
+    --primary-foreground: 0 0% 100%;
+    --secondary: var(--paper-2);
+    --secondary-foreground: var(--ink);
+    --muted: var(--paper-2);
+    --muted-foreground: var(--ink-3);
+    --accent: var(--paper-2);
+    --accent-foreground: var(--ink);
+    --destructive: var(--signal-critical);
+    --destructive-foreground: 0 0% 100%;
+    --border: var(--divider);
+    --input: var(--divider);
+    --ring: var(--blue-500);
+
+    /* Radii — sharper than before */
+    --radius-sm: 2px;
+    --radius:    4px;
+    --radius-lg: 6px;
+  }
+
+  .dark {
+    --background: var(--data-bg);
+    --foreground: var(--data-fg);
+    --card: var(--data-bg-2);
+    --card-foreground: var(--data-fg);
+    --popover: var(--data-bg-2);
+    --popover-foreground: var(--data-fg);
+    --primary: var(--blue-400);
+    --primary-foreground: var(--data-bg);
+    --secondary: var(--data-bg-2);
+    --secondary-foreground: var(--data-fg);
+    --muted: var(--data-bg-2);
+    --muted-foreground: var(--data-fg-2);
+    --accent: var(--data-bg-2);
+    --accent-foreground: var(--data-fg);
+    --destructive: var(--signal-critical);
+    --destructive-foreground: var(--data-fg);
+    --border: var(--data-rule);
+    --input: var(--data-rule);
+    --ring: var(--blue-400);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+// .lucide {
+//     stroke: white;
+//     fill: white;
+//     width: 24px;
+//     height: 24px;
+// }
+
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+.blocks-class a {
+	color: #0000ee !important;
+	text-decoration: underline;
+}
+
+.blocks-class a:hover {
+	color: darkblue !important;
+}
+
+.video-class iframe {
+	max-width: 1050px;
+	width: 100%;
+	height: 550px;
+	border-radius: 16px;
+	margin: 0 auto;
+}
+
+@media (max-width: 1023px) {
+	.video-class iframe {
+		height: 450px;
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.video-class iframe {
+		height: 400px;
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 600px) {
+	.video-class iframe {
+		height: 330px;
+		max-width: 100%;
+	}
+}
+
+#theme-toggle:checked {
+	background-color: #373c53;
+}
+
+#theme-toggle:checked ~ span:last-child {
+	--tw-translate-x: 1.75rem;
+}
+
+.close-div button {
+	color: #fff;
+	display: none;
+}
+
+.glass {
+	background: #121a32;
+	background: linear-gradient(
+		155deg,
+		rgba(5, 0, 107, 0) 0%,
+		rgba(0, 50, 69, 0.18) 57%,
+		rgba(0, 30, 54, 0.24) 100%
+	);
+}

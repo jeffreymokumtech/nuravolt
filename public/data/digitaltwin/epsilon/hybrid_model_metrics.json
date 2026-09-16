@@ -1,0 +1,18 @@
+{
+  "plant_id": "epsilon",
+  "trained_at": "2025-12-29T09:22:03.076573",
+  "metrics": {
+    "r2": 0.7245,
+    "mae_kW": 0.08,
+    "rmse_kW": 0.12,
+    "mape_pct": 39.29,
+    "physics_r2": -10630.9423,
+    "physics_mae_kW": 19.5,
+    "ml_r2": 0.9999,
+    "ml_mae_kW": 0.08,
+    "trainingSamples": 94773,
+    "validationSamples": 23694,
+    "trainingTime_s": 4.17,
+    "calibrationFactor": 1.0
+  }
+}

@@ -1,0 +1,119 @@
+{
+ "analysisPeriod": {
+  "end": "2025-12-14",
+  "start": "2025-09-15",
+  "totalDays": 90
+ },
+ "economicImpact": {
+  "cleaningROIPotential_EUR": 28724.95,
+  "estimatedAnnualLoss_EUR": 41035.65
+ },
+ "fleetLosses": {
+  "_method": "faults_by_type aggregated from fault_detection_results.json:reactive_faults[].energy_loss_kwh (grouped by fault_type, summed, converted kWh->MWh; faults with null/missing energy_loss_kwh skipped). dustiq_soiling_ytd_mwh = mean(1 - sr_dustiq) over the dustiq_window rows \u00d7 referenceEnergy_MWh pro-rated to that window's day-span (window_days / analysisPeriod.totalDays). When dustiq_history.json has no rows for the current calendar year, the latest available year is used and noted in dustiq_window. Computed 2026-06-21. When dustiq_soiling_ytd_mwh is non-null, soiling-shaped fault_type keys (matching /soiling/i) are excluded from waterfall rendering at the UI layer to avoid double-counting against the DustIQ ground-truth bar.",
+  "dustiq_soiling_ytd_mwh": -13.013,
+  "dustiq_window": "2025 (latest year in dustiq_history.json; no rows for 2026)",
+  "faults_by_type": {
+   "bypass_diode_active": {
+    "count": 20,
+    "ytd_mwh": 27.864
+   },
+   "inverter_overtemperature": {
+    "count": 10,
+    "ytd_mwh": 5.667
+   },
+   "soiling_detected": {
+    "count": 20,
+    "ytd_mwh": 128.368
+   }
+  },
+  "netEnergy_MWh": 6534.92,
+  "referenceEnergy_MWh": 7593.6,
+  "totalLoss_MWh": 1058.68,
+  "totalSoilingLoss_MWh": 1058.68
+ },
+ "fleetSoiling": {
+  "srMax": 1.0442,
+  "srMean": 0.8719,
+  "srMin": 0.575,
+  "srStd": 0.0026
+ },
+ "healthDistribution": {
+  "critical": 0,
+  "majorIssues": 0,
+  "minorIssues": 2,
+  "normal": 26
+ },
+ "plantInfo": {
+  "capacity_MW": 1.68,
+  "inverterGroups": [
+   "INV 01"
+  ],
+  "plantName": "Eta Solar Plant",
+  "totalInverters": 28
+ },
+ "provenance": {
+  "data_end": "2025-12-14",
+  "data_start": "2020-10-01",
+  "generated_at": "2026-07-17T12:20:59.276056",
+  "method": "measured_pr_selfnorm_dustiq_calibrated",
+  "source": "measured_per_inverter",
+  "stats_window": {
+   "end": "2025-12-14",
+   "start": "2025-09-15"
+  }
+ },
+ "topPerformers": [
+  {
+   "inverterId": "INV 01.015",
+   "rank": 1,
+   "srMean": 0.8757
+  },
+  {
+   "inverterId": "INV 01.013",
+   "rank": 2,
+   "srMean": 0.8751
+  },
+  {
+   "inverterId": "INV 01.019",
+   "rank": 3,
+   "srMean": 0.8743
+  },
+  {
+   "inverterId": "INV 01.001",
+   "rank": 4,
+   "srMean": 0.8743
+  },
+  {
+   "inverterId": "INV 01.007",
+   "rank": 5,
+   "srMean": 0.8741
+  }
+ ],
+ "worstPerformers": [
+  {
+   "inverterId": "INV 01.011",
+   "rank": 28,
+   "srMean": 0.8636
+  },
+  {
+   "inverterId": "INV 01.026",
+   "rank": 27,
+   "srMean": 0.8661
+  },
+  {
+   "inverterId": "INV 01.024",
+   "rank": 26,
+   "srMean": 0.8692
+  },
+  {
+   "inverterId": "INV 01.028",
+   "rank": 25,
+   "srMean": 0.87
+  },
+  {
+   "inverterId": "INV 01.023",
+   "rank": 24,
+   "srMean": 0.87
+  }
+ ]
+}

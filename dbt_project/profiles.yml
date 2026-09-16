@@ -1,0 +1,24 @@
+nuravolt:
+  target: prod
+  outputs:
+    # Single embedded DuckDB connection (threads:1) so on-run-start ATTACH/SECRET
+    # persist across all models, and so the seeds a `dbt build` loads are still
+    # in `main` when the models that ref() them run. Reads bronze from the Glue
+    # catalog over S3 and writes silver/gold external Parquet back to S3 — no
+    # warehouse to run.
+    prod:
+      type: duckdb
+      path: ":memory:"
+      threads: 1
+      extensions: [httpfs, iceberg, aws]
+
+    # dev is deliberately NOT an alias of prod. It used to be, which meant a
+    # local `dbt run` published straight into production S3 gold. Same engine and
+    # same bronze reads, but macros/lake_location.sql sends every write under
+    # LAKE_DEV_ROOT (default dbt_project/dev_lake/) because the target is not
+    # named prod.
+    dev:
+      type: duckdb
+      path: ":memory:"
+      threads: 1
+      extensions: [httpfs, iceberg, aws]

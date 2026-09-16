@@ -1,0 +1,1277 @@
+{
+  "plant_id": "zeta",
+  "plant_name": "Zeta (ES)",
+  "n_inverters": 30,
+  "training_start": "2025-12-24T19:01:43.878056",
+  "inverter_results": {
+    "INV 01.001": {
+      "training_time_s": 21.278577089309692,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "46054",
+        "retention_ratio": 0.38784928668878743,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 50910,
+            "removed": 67832,
+            "ratio": 0.42874467332536087
+          },
+          "pr_envelope": {
+            "kept": 115543,
+            "removed": 3199,
+            "ratio": 0.9730592376749592
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 46054,
+            "removed": 2474,
+            "ratio": 0.9490191229805474
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.145230952052053,
+        "r2": 0.9827870577538018
+      },
+      "current": {
+        "mae": 0.1304108640522628,
+        "r2": 0.8525266590821243
+      },
+      "voltage": {
+        "mae": 11.911943282094096,
+        "r2": 0.9921825640940025
+      }
+    },
+    "INV 01.002": {
+      "training_time_s": 13.798703908920288,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "45694",
+        "retention_ratio": 0.3848175034949723,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 50394,
+            "removed": 68348,
+            "ratio": 0.4243991174142258
+          },
+          "pr_envelope": {
+            "kept": 115217,
+            "removed": 3525,
+            "ratio": 0.9703137895605599
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 45694,
+            "removed": 2454,
+            "ratio": 0.9490321508681565
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.06841066588716,
+        "r2": 0.9841695554272739
+      },
+      "current": {
+        "mae": 0.14101244929794324,
+        "r2": 0.838721391736049
+      },
+      "voltage": {
+        "mae": 13.100666951264929,
+        "r2": 0.9911696885395757
+      }
+    },
+    "INV 01.003": {
+      "training_time_s": 15.755218029022217,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "45842",
+        "retention_ratio": 0.3860639032524296,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 50691,
+            "removed": 68051,
+            "ratio": 0.4269003385491233
+          },
+          "pr_envelope": {
+            "kept": 115395,
+            "removed": 3347,
+            "ratio": 0.9718128379175018
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 45842,
+            "removed": 2514,
+            "ratio": 0.9480105881379767
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.3216304982377527,
+        "r2": 0.9802101428112875
+      },
+      "current": {
+        "mae": 0.13181840534389927,
+        "r2": 0.8611665475321111
+      },
+      "voltage": {
+        "mae": 14.397737776240291,
+        "r2": 0.9897175548784557
+      }
+    },
+    "INV 01.004": {
+      "training_time_s": 18.773740768432617,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "46233",
+        "retention_ratio": 0.38935675666571223,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 50401,
+            "removed": 68341,
+            "ratio": 0.4244580687541055
+          },
+          "pr_envelope": {
+            "kept": 115796,
+            "removed": 2946,
+            "ratio": 0.9751899075306126
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 46233,
+            "removed": 2534,
+            "ratio": 0.9480386326819366
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.248153033657474,
+        "r2": 0.9778177500748406
+      },
+      "current": {
+        "mae": 0.13925222112248656,
+        "r2": 0.8164456011885632
+      },
+      "voltage": {
+        "mae": 14.642910407120953,
+        "r2": 0.9873924833753567
+      }
+    },
+    "INV 01.005": {
+      "training_time_s": 18.23738694190979,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "45855",
+        "retention_ratio": 0.38617338431220627,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 50976,
+            "removed": 67766,
+            "ratio": 0.429300500244227
+          },
+          "pr_envelope": {
+            "kept": 115446,
+            "removed": 3296,
+            "ratio": 0.9722423405366256
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 45855,
+            "removed": 2572,
+            "ratio": 0.9468891320957317
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.103503274832074,
+        "r2": 0.9835027484154258
+      },
+      "current": {
+        "mae": 0.1327996685756807,
+        "r2": 0.854259603231113
+      },
+      "voltage": {
+        "mae": 12.164670028325062,
+        "r2": 0.9920800211907516
+      }
+    },
+    "INV 01.006": {
+      "training_time_s": 15.131507873535156,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "46016",
+        "retention_ratio": 0.3875292651294403,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 51069,
+            "removed": 67673,
+            "ratio": 0.43008371090262926
+          },
+          "pr_envelope": {
+            "kept": 115593,
+            "removed": 3149,
+            "ratio": 0.9734803186741001
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 46016,
+            "removed": 2568,
+            "ratio": 0.9471430923760908
+          }
+        }
+      },
+      "temperature": {
+        "mae": 1.9935975595982658,
+        "r2": 0.9846935907136668
+      },
+      "current": {
+        "mae": 0.12409137188800216,
+        "r2": 0.8582393463105992
+      },
+      "voltage": {
+        "mae": 13.004439593623243,
+        "r2": 0.9911930245257892
+      }
+    },
+    "INV 01.007": {
+      "training_time_s": 18.57703185081482,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "44848",
+        "retention_ratio": 0.3776928129895067,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 49574,
+            "removed": 69168,
+            "ratio": 0.4174933890283135
+          },
+          "pr_envelope": {
+            "kept": 114331,
+            "removed": 4411,
+            "ratio": 0.9628522342557815
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 44848,
+            "removed": 2431,
+            "ratio": 0.9485818227965904
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.2457791639241034,
+        "r2": 0.9816211332702063
+      },
+      "current": {
+        "mae": 0.1330657967647344,
+        "r2": 0.860752618494221
+      },
+      "voltage": {
+        "mae": 12.560634538053245,
+        "r2": 0.9917799651274829
+      }
+    },
+    "INV 01.008": {
+      "training_time_s": 20.728883981704712,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "45490",
+        "retention_ratio": 0.383099493018477,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 50226,
+            "removed": 68516,
+            "ratio": 0.42298428525711207
+          },
+          "pr_envelope": {
+            "kept": 115003,
+            "removed": 3739,
+            "ratio": 0.9685115628842365
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 45490,
+            "removed": 2447,
+            "ratio": 0.9489538352420885
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.0939626287980495,
+        "r2": 0.982160376028816
+      },
+      "current": {
+        "mae": 0.1444578325117206,
+        "r2": 0.836866954549454
+      },
+      "voltage": {
+        "mae": 12.593157544683635,
+        "r2": 0.9918823119995285
+      }
+    },
+    "INV 01.009": {
+      "training_time_s": 16.58828091621399,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "45589",
+        "retention_ratio": 0.3839332333967762,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 50735,
+            "removed": 68007,
+            "ratio": 0.42727088982836736
+          },
+          "pr_envelope": {
+            "kept": 115192,
+            "removed": 3550,
+            "ratio": 0.9701032490609893
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 45589,
+            "removed": 2525,
+            "ratio": 0.9475204722118302
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.120487086850437,
+        "r2": 0.982378691714211
+      },
+      "current": {
+        "mae": 0.1476458237719545,
+        "r2": 0.8514984056714765
+      },
+      "voltage": {
+        "mae": 12.022423995318233,
+        "r2": 0.9923593076881181
+      }
+    },
+    "INV 01.010": {
+      "training_time_s": 17.158312797546387,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "45642",
+        "retention_ratio": 0.38437957925586563,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 50813,
+            "removed": 67929,
+            "ratio": 0.4279277761870273
+          },
+          "pr_envelope": {
+            "kept": 115194,
+            "removed": 3548,
+            "ratio": 0.970120092300955
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 45642,
+            "removed": 2531,
+            "ratio": 0.9474601955452224
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.229381451603706,
+        "r2": 0.9774510341834495
+      },
+      "current": {
+        "mae": 0.12831790430834913,
+        "r2": 0.849209408666479
+      },
+      "voltage": {
+        "mae": 12.267911513809667,
+        "r2": 0.9919645488062938
+      }
+    },
+    "INV 01.011": {
+      "training_time_s": 11.468035697937012,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "45049",
+        "retention_ratio": 0.37938555860605344,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 50424,
+            "removed": 68318,
+            "ratio": 0.4246517660137104
+          },
+          "pr_envelope": {
+            "kept": 114548,
+            "removed": 4194,
+            "ratio": 0.9646797257920534
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 45049,
+            "removed": 2422,
+            "ratio": 0.9489793768827284
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.340442470294177,
+        "r2": 0.9749179266646154
+      },
+      "current": {
+        "mae": 0.152010785428983,
+        "r2": 0.8323617223822564
+      },
+      "voltage": {
+        "mae": 13.569415096631948,
+        "r2": 0.9901621065415336
+      }
+    },
+    "INV 01.012": {
+      "training_time_s": 8.053956985473633,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "45343",
+        "retention_ratio": 0.3818615148810025,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 49887,
+            "removed": 68855,
+            "ratio": 0.4201293560829361
+          },
+          "pr_envelope": {
+            "kept": 114888,
+            "removed": 3854,
+            "ratio": 0.9675430765862121
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 45343,
+            "removed": 2464,
+            "ratio": 0.948459430627314
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.1690305825056786,
+        "r2": 0.9808718237352387
+      },
+      "current": {
+        "mae": 0.1511319287223454,
+        "r2": 0.8713241427635297
+      },
+      "voltage": {
+        "mae": 12.400350101347062,
+        "r2": 0.9918003947481219
+      }
+    },
+    "INV 01.013": {
+      "training_time_s": 15.520825862884521,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "45964",
+        "retention_ratio": 0.38709134089033365,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 50983,
+            "removed": 67759,
+            "ratio": 0.4293594515841067
+          },
+          "pr_envelope": {
+            "kept": 115518,
+            "removed": 3224,
+            "ratio": 0.9728486971753887
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 45964,
+            "removed": 2543,
+            "ratio": 0.9475745768651948
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.2242954613533166,
+        "r2": 0.9780817729400423
+      },
+      "current": {
+        "mae": 0.1390809790577968,
+        "r2": 0.8597106566188358
+      },
+      "voltage": {
+        "mae": 12.28578191767596,
+        "r2": 0.9920312492953711
+      }
+    },
+    "INV 02.014": {
+      "training_time_s": 15.520936250686646,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "45907",
+        "retention_ratio": 0.3866113085513129,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 50806,
+            "removed": 67936,
+            "ratio": 0.4278688248471476
+          },
+          "pr_envelope": {
+            "kept": 115471,
+            "removed": 3271,
+            "ratio": 0.9724528810361961
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 45907,
+            "removed": 2531,
+            "ratio": 0.9477476361534333
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.270853499554711,
+        "r2": 0.9741255890620415
+      },
+      "current": {
+        "mae": 0.14137711061298802,
+        "r2": 0.855532508043658
+      },
+      "voltage": {
+        "mae": 12.593410207498184,
+        "r2": 0.9916185591068885
+      }
+    },
+    "INV 02.015": {
+      "training_time_s": 13.455204963684082,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "45607",
+        "retention_ratio": 0.384084822556467,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 50252,
+            "removed": 68490,
+            "ratio": 0.42320324737666537
+          },
+          "pr_envelope": {
+            "kept": 115088,
+            "removed": 3654,
+            "ratio": 0.9692274005827761
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 45607,
+            "removed": 2415,
+            "ratio": 0.9497105493315564
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.062682373821183,
+        "r2": 0.9821243021403351
+      },
+      "current": {
+        "mae": 0.14803334794548617,
+        "r2": 0.880184291361782
+      },
+      "voltage": {
+        "mae": 13.296298484987206,
+        "r2": 0.99007912143327
+      }
+    },
+    "INV 02.016": {
+      "training_time_s": 19.898042678833008,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "45457",
+        "retention_ratio": 0.382821579559044,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 49874,
+            "removed": 68868,
+            "ratio": 0.42001987502315946
+          },
+          "pr_envelope": {
+            "kept": 114952,
+            "removed": 3790,
+            "ratio": 0.9680820602651126
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 45457,
+            "removed": 2431,
+            "ratio": 0.9492357166722352
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.205448094103449,
+        "r2": 0.9767922269361127
+      },
+      "current": {
+        "mae": 0.1504280545650346,
+        "r2": 0.8590102701939202
+      },
+      "voltage": {
+        "mae": 12.481305702842716,
+        "r2": 0.9914072594783442
+      }
+    },
+    "INV 02.017": {
+      "training_time_s": 14.730720043182373,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "45648",
+        "retention_ratio": 0.3844301089757626,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 50374,
+            "removed": 68368,
+            "ratio": 0.4242306850145694
+          },
+          "pr_envelope": {
+            "kept": 115216,
+            "removed": 3526,
+            "ratio": 0.9703053679405771
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 45648,
+            "removed": 2448,
+            "ratio": 0.9491017964071856
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.647094928125149,
+        "r2": 0.966615091589194
+      },
+      "current": {
+        "mae": 0.14602207115751537,
+        "r2": 0.8583395545915249
+      },
+      "voltage": {
+        "mae": 12.78734375206806,
+        "r2": 0.9905231133259528
+      }
+    },
+    "INV 02.018": {
+      "training_time_s": 18.108083963394165,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "45402",
+        "retention_ratio": 0.3823583904599889,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 49939,
+            "removed": 68803,
+            "ratio": 0.42056728032204277
+          },
+          "pr_envelope": {
+            "kept": 114924,
+            "removed": 3818,
+            "ratio": 0.9678462549055936
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 45402,
+            "removed": 2477,
+            "ratio": 0.9482654190772573
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.2418953999480875,
+        "r2": 0.9764318210022123
+      },
+      "current": {
+        "mae": 0.1324138603767456,
+        "r2": 0.8831688741388196
+      },
+      "voltage": {
+        "mae": 15.70178400618744,
+        "r2": 0.982163660541849
+      }
+    },
+    "INV 02.019": {
+      "training_time_s": 15.485168695449829,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "45459",
+        "retention_ratio": 0.3828384227990096,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 49935,
+            "removed": 68807,
+            "ratio": 0.4205335938421115
+          },
+          "pr_envelope": {
+            "kept": 115015,
+            "removed": 3727,
+            "ratio": 0.9686126223240302
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 45459,
+            "removed": 2506,
+            "ratio": 0.9477535703116856
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.3291207224312234,
+        "r2": 0.9751855568203877
+      },
+      "current": {
+        "mae": 0.1452930372161714,
+        "r2": 0.8574477883045772
+      },
+      "voltage": {
+        "mae": 13.8398924908998,
+        "r2": 0.9900320217511024
+      }
+    },
+    "INV 02.020": {
+      "training_time_s": 24.144827842712402,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "44353",
+        "retention_ratio": 0.3735241110980108,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 48729,
+            "removed": 70013,
+            "ratio": 0.4103771201428307
+          },
+          "pr_envelope": {
+            "kept": 113861,
+            "removed": 4881,
+            "ratio": 0.9588940728638561
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 44353,
+            "removed": 2426,
+            "ratio": 0.9481391222557131
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.4153528396547572,
+        "r2": 0.9745670438164966
+      },
+      "current": {
+        "mae": 0.15063881695653064,
+        "r2": 0.8670052857130659
+      },
+      "voltage": {
+        "mae": 14.661147383854674,
+        "r2": 0.9886584303340555
+      }
+    },
+    "INV 02.021": {
+      "training_time_s": 18.900519132614136,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "45361",
+        "retention_ratio": 0.3820131040406933,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 49918,
+            "removed": 68824,
+            "ratio": 0.42039042630240353
+          },
+          "pr_envelope": {
+            "kept": 115032,
+            "removed": 3710,
+            "ratio": 0.9687557898637382
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 45361,
+            "removed": 2568,
+            "ratio": 0.9464207473554633
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.319790919175486,
+        "r2": 0.9754625373780991
+      },
+      "current": {
+        "mae": 0.15202729681706448,
+        "r2": 0.857277558339424
+      },
+      "voltage": {
+        "mae": 13.557279247530252,
+        "r2": 0.9906210643308686
+      }
+    },
+    "INV 02.022": {
+      "training_time_s": 16.68182897567749,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "44726",
+        "retention_ratio": 0.37666537535160266,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 48804,
+            "removed": 69938,
+            "ratio": 0.41100874164154216
+          },
+          "pr_envelope": {
+            "kept": 114232,
+            "removed": 4510,
+            "ratio": 0.9620184938774823
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 44726,
+            "removed": 2413,
+            "ratio": 0.9488109633212415
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.2980687014186505,
+        "r2": 0.9757619058372562
+      },
+      "current": {
+        "mae": 0.15807229602122402,
+        "r2": 0.8673971603032047
+      },
+      "voltage": {
+        "mae": 11.802900358453353,
+        "r2": 0.9923224639065226
+      }
+    },
+    "INV 02.023": {
+      "training_time_s": 17.417824029922485,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "44640",
+        "retention_ratio": 0.3759411160330801,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 48637,
+            "removed": 70105,
+            "ratio": 0.40960233110441124
+          },
+          "pr_envelope": {
+            "kept": 114136,
+            "removed": 4606,
+            "ratio": 0.9612100183591316
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 44640,
+            "removed": 2409,
+            "ratio": 0.9487980615953581
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.6723390482113882,
+        "r2": 0.974223481763947
+      },
+      "current": {
+        "mae": 0.15303898733685797,
+        "r2": 0.8990430274732282
+      },
+      "voltage": {
+        "mae": 13.557025100305497,
+        "r2": 0.9896191104982789
+      }
+    },
+    "INV 02.024": {
+      "training_time_s": 14.35092306137085,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "45600",
+        "retention_ratio": 0.3840258712165872,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 50055,
+            "removed": 68687,
+            "ratio": 0.42154418824004986
+          },
+          "pr_envelope": {
+            "kept": 115148,
+            "removed": 3594,
+            "ratio": 0.9697326977817453
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 45600,
+            "removed": 2486,
+            "ratio": 0.948300960778605
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.2786453320734634,
+        "r2": 0.9770398255544724
+      },
+      "current": {
+        "mae": 0.14456764341331735,
+        "r2": 0.8758817693909446
+      },
+      "voltage": {
+        "mae": 14.530384176997627,
+        "r2": 0.989245294856668
+      }
+    },
+    "INV 02.025": {
+      "training_time_s": 11.835600137710571,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "44146",
+        "retention_ratio": 0.3717808357615671,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 48744,
+            "removed": 69998,
+            "ratio": 0.410503444442573
+          },
+          "pr_envelope": {
+            "kept": 113611,
+            "removed": 5131,
+            "ratio": 0.9567886678681511
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 44146,
+            "removed": 2355,
+            "ratio": 0.9493559278295091
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.0458664480286393,
+        "r2": 0.984234862276636
+      },
+      "current": {
+        "mae": 0.1569762483295072,
+        "r2": 0.8827299188871217
+      },
+      "voltage": {
+        "mae": 14.304479776926033,
+        "r2": 0.9893874803324038
+      }
+    },
+    "INV 02.026": {
+      "training_time_s": 13.341540098190308,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "45201",
+        "retention_ratio": 0.38066564484344206,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 49921,
+            "removed": 68821,
+            "ratio": 0.420415691162352
+          },
+          "pr_envelope": {
+            "kept": 114728,
+            "removed": 4014,
+            "ratio": 0.966195617388961
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 45201,
+            "removed": 2458,
+            "ratio": 0.9484252711974653
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.11484187567928,
+        "r2": 0.9817895731292919
+      },
+      "current": {
+        "mae": 0.1413378712008762,
+        "r2": 0.8737514395334194
+      },
+      "voltage": {
+        "mae": 13.168432650410965,
+        "r2": 0.9906540305509929
+      }
+    },
+    "INV 02.027": {
+      "training_time_s": 8.90321397781372,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "45411",
+        "retention_ratio": 0.3824341850398343,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 50742,
+            "removed": 68000,
+            "ratio": 0.4273298411682471
+          },
+          "pr_envelope": {
+            "kept": 115042,
+            "removed": 3700,
+            "ratio": 0.9688400060635664
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 45411,
+            "removed": 2581,
+            "ratio": 0.9462202033672279
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.112478874458691,
+        "r2": 0.9812730192436521
+      },
+      "current": {
+        "mae": 0.12735540785859106,
+        "r2": 0.8703539937418017
+      },
+      "voltage": {
+        "mae": 13.59336467025898,
+        "r2": 0.9902601268618926
+      }
+    },
+    "INV 02.028": {
+      "training_time_s": 19.076498985290527,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "45612",
+        "retention_ratio": 0.38412693065638104,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 50635,
+            "removed": 68107,
+            "ratio": 0.4264287278300854
+          },
+          "pr_envelope": {
+            "kept": 115194,
+            "removed": 3548,
+            "ratio": 0.970120092300955
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 45612,
+            "removed": 2512,
+            "ratio": 0.9478015127587067
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.681030394554487,
+        "r2": 0.9722900531353854
+      },
+      "current": {
+        "mae": 0.13302134913603872,
+        "r2": 0.8772096263627442
+      },
+      "voltage": {
+        "mae": 12.263507989778557,
+        "r2": 0.9916692849568722
+      }
+    },
+    "INV 02.029": {
+      "training_time_s": 12.315923929214478,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "45667",
+        "retention_ratio": 0.38459011975543617,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 50438,
+            "removed": 68304,
+            "ratio": 0.4247696686934699
+          },
+          "pr_envelope": {
+            "kept": 115248,
+            "removed": 3494,
+            "ratio": 0.9705748597800273
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 45667,
+            "removed": 2527,
+            "ratio": 0.9475660870647798
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.224894891855932,
+        "r2": 0.9774868873212472
+      },
+      "current": {
+        "mae": 0.12759549325988906,
+        "r2": 0.8960584150121111
+      },
+      "voltage": {
+        "mae": 12.491154776111895,
+        "r2": 0.9901200964427357
+      }
+    },
+    "INV 02.030": {
+      "training_time_s": 20.048042058944702,
+      "filter": {
+        "n_original": 118742,
+        "n_filtered": "45557",
+        "retention_ratio": 0.38366374155732597,
+        "method_stats": {
+          "physics_bounds": {
+            "kept": 50574,
+            "removed": 68168,
+            "ratio": 0.4259150090111334
+          },
+          "pr_envelope": {
+            "kept": 115090,
+            "removed": 3652,
+            "ratio": 0.9692442438227418
+          },
+          "variability": {
+            "kept": 118742,
+            "removed": 0,
+            "ratio": 1.0
+          },
+          "iterative_outliers": {
+            "kept": 45557,
+            "removed": 2489,
+            "ratio": 0.9481954793323065
+          }
+        }
+      },
+      "temperature": {
+        "mae": 2.27932131820594,
+        "r2": 0.9774598463838642
+      },
+      "current": {
+        "mae": 0.1238132118513757,
+        "r2": 0.8883899766842388
+      },
+      "voltage": {
+        "mae": 11.131836218768218,
+        "r2": 0.993172952501032
+      }
+    }
+  },
+  "summary": {
+    "successful": 30,
+    "failed": 0,
+    "avg_retention_ratio": 0.3827269766945704,
+    "avg_temp_r2": 0.9784509075707836,
+    "avg_current_r2": 0.8630621505434133,
+    "avg_voltage_r2": 0.990575643067337
+  },
+  "training_end": "2025-12-24T19:09:50.561353"
+}

@@ -1,0 +1,319 @@
+{
+  "test_date": "2025-12-25T09:14:50.830590",
+  "results": [
+    {
+      "status": "success",
+      "plant_id": "epsilon",
+      "n_inverters_analyzed": 3,
+      "n_days": 517,
+      "n_matched": 517,
+      "metrics": {
+        "daily": {
+          "mae": 0.0887,
+          "rmse": 0.1162,
+          "bias": -0.0881,
+          "correlation": 0.383,
+          "r2": -25.199,
+          "n_samples": 517
+        },
+        "3-day": {
+          "mae": 0.0888,
+          "rmse": 0.1084,
+          "bias": -0.0883,
+          "correlation": 0.371,
+          "r2": -21.808,
+          "n_samples": 517
+        },
+        "7-day": {
+          "mae": 0.0891,
+          "rmse": 0.105,
+          "bias": -0.0888,
+          "correlation": 0.396,
+          "r2": -20.333,
+          "n_samples": 516
+        },
+        "14-day": {
+          "mae": 0.0903,
+          "rmse": 0.1034,
+          "bias": -0.0901,
+          "correlation": 0.371,
+          "r2": -19.681,
+          "n_samples": 515
+        }
+      },
+      "soiling_events": {
+        "n_days": 33,
+        "mae": 0.0961,
+        "r2": -3.48
+      }
+    },
+    {
+      "status": "success",
+      "plant_id": "alpha",
+      "n_inverters_analyzed": 3,
+      "n_days": 475,
+      "n_matched": 475,
+      "metrics": {
+        "daily": {
+          "mae": 0.0406,
+          "rmse": 0.0708,
+          "bias": -0.0404,
+          "correlation": 0.517,
+          "r2": -222.348,
+          "n_samples": 475
+        },
+        "3-day": {
+          "mae": 0.0404,
+          "rmse": 0.062,
+          "bias": -0.0404,
+          "correlation": 0.644,
+          "r2": -170.022,
+          "n_samples": 475
+        },
+        "7-day": {
+          "mae": 0.0404,
+          "rmse": 0.0561,
+          "bias": -0.0404,
+          "correlation": 0.727,
+          "r2": -139.14,
+          "n_samples": 474
+        },
+        "14-day": {
+          "mae": 0.0404,
+          "rmse": 0.0528,
+          "bias": -0.0404,
+          "correlation": 0.697,
+          "r2": -122.755,
+          "n_samples": 473
+        }
+      },
+      "soiling_events": null
+    },
+    {
+      "status": "success",
+      "plant_id": "ribera",
+      "n_inverters_analyzed": 3,
+      "n_days": 472,
+      "n_matched": 431,
+      "metrics": {
+        "daily": {
+          "mae": 0.0688,
+          "rmse": 0.1109,
+          "bias": -0.0601,
+          "correlation": 0.44,
+          "r2": -29.989,
+          "n_samples": 431
+        },
+        "3-day": {
+          "mae": 0.0654,
+          "rmse": 0.0988,
+          "bias": -0.0599,
+          "correlation": 0.491,
+          "r2": -23.614,
+          "n_samples": 431
+        },
+        "7-day": {
+          "mae": 0.0621,
+          "rmse": 0.0907,
+          "bias": -0.0586,
+          "correlation": 0.526,
+          "r2": -19.715,
+          "n_samples": 430
+        },
+        "14-day": {
+          "mae": 0.0583,
+          "rmse": 0.0831,
+          "bias": -0.0571,
+          "correlation": 0.536,
+          "r2": -16.735,
+          "n_samples": 429
+        }
+      },
+      "soiling_events": {
+        "n_days": 221,
+        "mae": 0.0755,
+        "r2": -58.108
+      }
+    },
+    {
+      "status": "success",
+      "plant_id": "eta",
+      "n_inverters_analyzed": 3,
+      "n_days": 476,
+      "n_matched": 207,
+      "metrics": {
+        "daily": {
+          "mae": 0.0246,
+          "rmse": 0.0319,
+          "bias": -0.0246,
+          "correlation": 0.018,
+          "r2": -38.631,
+          "n_samples": 207
+        },
+        "3-day": {
+          "mae": 0.0247,
+          "rmse": 0.0291,
+          "bias": -0.0247,
+          "correlation": 0.029,
+          "r2": -31.911,
+          "n_samples": 207
+        },
+        "7-day": {
+          "mae": 0.0248,
+          "rmse": 0.0281,
+          "bias": -0.0248,
+          "correlation": -0.003,
+          "r2": -29.564,
+          "n_samples": 206
+        },
+        "14-day": {
+          "mae": 0.0247,
+          "rmse": 0.0274,
+          "bias": -0.0247,
+          "correlation": -0.053,
+          "r2": -28.087,
+          "n_samples": 205
+        }
+      },
+      "soiling_events": null
+    },
+    {
+      "status": "success",
+      "plant_id": "zeta",
+      "n_inverters_analyzed": 3,
+      "n_days": 463,
+      "n_matched": 463,
+      "metrics": {
+        "daily": {
+          "mae": 0.0801,
+          "rmse": 0.104,
+          "bias": -0.0797,
+          "correlation": -0.258,
+          "r2": -352.989,
+          "n_samples": 463
+        },
+        "3-day": {
+          "mae": 0.0797,
+          "rmse": 0.099,
+          "bias": -0.0795,
+          "correlation": -0.3,
+          "r2": -319.789,
+          "n_samples": 463
+        },
+        "7-day": {
+          "mae": 0.0794,
+          "rmse": 0.0966,
+          "bias": -0.0792,
+          "correlation": -0.315,
+          "r2": -304.48,
+          "n_samples": 462
+        },
+        "14-day": {
+          "mae": 0.0786,
+          "rmse": 0.095,
+          "bias": -0.0785,
+          "correlation": -0.341,
+          "r2": -294.269,
+          "n_samples": 461
+        }
+      },
+      "soiling_events": {
+        "n_days": 10,
+        "mae": 0.0279,
+        "r2": -37.773
+      }
+    },
+    {
+      "status": "success",
+      "plant_id": "delta",
+      "n_inverters_analyzed": 3,
+      "n_days": 453,
+      "n_matched": 443,
+      "metrics": {
+        "daily": {
+          "mae": 0.0229,
+          "rmse": 0.0663,
+          "bias": -0.0101,
+          "correlation": 0.048,
+          "r2": -44.558,
+          "n_samples": 443
+        },
+        "3-day": {
+          "mae": 0.0221,
+          "rmse": 0.0572,
+          "bias": -0.0101,
+          "correlation": 0.074,
+          "r2": -32.892,
+          "n_samples": 443
+        },
+        "7-day": {
+          "mae": 0.0205,
+          "rmse": 0.047,
+          "bias": -0.0101,
+          "correlation": 0.145,
+          "r2": -21.868,
+          "n_samples": 443
+        },
+        "14-day": {
+          "mae": 0.0187,
+          "rmse": 0.0365,
+          "bias": -0.0102,
+          "correlation": 0.214,
+          "r2": -12.826,
+          "n_samples": 443
+        }
+      },
+      "soiling_events": {
+        "n_days": 47,
+        "mae": 0.042,
+        "r2": -36.042
+      }
+    },
+    {
+      "status": "success",
+      "plant_id": "gamma",
+      "n_inverters_analyzed": 3,
+      "n_days": 442,
+      "n_matched": 417,
+      "metrics": {
+        "daily": {
+          "mae": 0.0328,
+          "rmse": 0.0594,
+          "bias": -0.0196,
+          "correlation": -0.221,
+          "r2": -12.294,
+          "n_samples": 417
+        },
+        "3-day": {
+          "mae": 0.0317,
+          "rmse": 0.0522,
+          "bias": -0.0201,
+          "correlation": -0.272,
+          "r2": -9.257,
+          "n_samples": 417
+        },
+        "7-day": {
+          "mae": 0.0312,
+          "rmse": 0.0487,
+          "bias": -0.0207,
+          "correlation": -0.301,
+          "r2": -7.933,
+          "n_samples": 417
+        },
+        "14-day": {
+          "mae": 0.0297,
+          "rmse": 0.0442,
+          "bias": -0.02,
+          "correlation": -0.311,
+          "r2": -6.355,
+          "n_samples": 417
+        }
+      },
+      "soiling_events": {
+        "n_days": 127,
+        "mae": 0.0231,
+        "r2": -5.069
+      }
+    }
+  ]
+}

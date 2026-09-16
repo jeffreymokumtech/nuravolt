@@ -1,0 +1,2780 @@
+{
+ "inverters": [
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -1.1,
+    "rank": 113,
+    "severity": "normal",
+    "zScore": -1.4
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.032",
+   "performanceRatio": 0.7356,
+   "powerLoss": 0.1033,
+   "soilingRatio": {
+    "max": 1.0202,
+    "mean": 0.8967,
+    "median": 0.9624,
+    "min": 0.575,
+    "std": 0.1468
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.6,
+    "rank": 91,
+    "severity": "normal",
+    "zScore": -0.76
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.033",
+   "performanceRatio": 0.7375,
+   "powerLoss": 0.0988,
+   "soilingRatio": {
+    "max": 1.0485,
+    "mean": 0.9012,
+    "median": 0.9723,
+    "min": 0.575,
+    "std": 0.147
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -1.52,
+    "rank": 118,
+    "severity": "normal",
+    "zScore": -1.94
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.034",
+   "performanceRatio": 0.7278,
+   "powerLoss": 0.1071,
+   "soilingRatio": {
+    "max": 1.0173,
+    "mean": 0.8929,
+    "median": 0.9531,
+    "min": 0.575,
+    "std": 0.1451
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.57,
+    "rank": 90,
+    "severity": "normal",
+    "zScore": -0.73
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.035",
+   "performanceRatio": 0.7401,
+   "powerLoss": 0.0986,
+   "soilingRatio": {
+    "max": 1.0489,
+    "mean": 0.9014,
+    "median": 0.9741,
+    "min": 0.575,
+    "std": 0.1478
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.45,
+    "rank": 82,
+    "severity": "normal",
+    "zScore": -0.58
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.036",
+   "performanceRatio": 0.7419,
+   "powerLoss": 0.0974,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9026,
+    "median": 0.9761,
+    "min": 0.575,
+    "std": 0.1478
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -1.09,
+    "rank": 112,
+    "severity": "normal",
+    "zScore": -1.39
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.037",
+   "performanceRatio": 0.7227,
+   "powerLoss": 0.1032,
+   "soilingRatio": {
+    "max": 1.0183,
+    "mean": 0.8968,
+    "median": 0.961,
+    "min": 0.575,
+    "std": 0.1449
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.29,
+    "rank": 65,
+    "severity": "normal",
+    "zScore": -0.37
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.038",
+   "performanceRatio": 0.7364,
+   "powerLoss": 0.096,
+   "soilingRatio": {
+    "max": 1.0464,
+    "mean": 0.904,
+    "median": 0.9725,
+    "min": 0.575,
+    "std": 0.1476
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 1.11
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.64,
+    "rank": 93,
+    "severity": "normal",
+    "zScore": -0.82
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.039",
+   "performanceRatio": 0.7362,
+   "powerLoss": 0.0992,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9008,
+    "median": 0.9745,
+    "min": 0.575,
+    "std": 0.151
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.49,
+    "rank": 86,
+    "severity": "normal",
+    "zScore": -0.62
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.040",
+   "performanceRatio": 0.7388,
+   "powerLoss": 0.0978,
+   "soilingRatio": {
+    "max": 1.0485,
+    "mean": 0.9022,
+    "median": 0.976,
+    "min": 0.575,
+    "std": 0.1479
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.75,
+    "rank": 100,
+    "severity": "normal",
+    "zScore": -0.96
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.041",
+   "performanceRatio": 0.7361,
+   "powerLoss": 0.1002,
+   "soilingRatio": {
+    "max": 1.046,
+    "mean": 0.8998,
+    "median": 0.971,
+    "min": 0.575,
+    "std": 0.148
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.36,
+    "rank": 73,
+    "severity": "normal",
+    "zScore": -0.46
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.042",
+   "performanceRatio": 0.7427,
+   "powerLoss": 0.0966,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9034,
+    "median": 0.9756,
+    "min": 0.575,
+    "std": 0.1477
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 1.11
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -1.19,
+    "rank": 116,
+    "severity": "normal",
+    "zScore": -1.52
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.043",
+   "performanceRatio": 0.7295,
+   "powerLoss": 0.1042,
+   "soilingRatio": {
+    "max": 1.0331,
+    "mean": 0.8958,
+    "median": 0.9671,
+    "min": 0.575,
+    "std": 0.1482
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 1.11
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.94,
+    "rank": 110,
+    "severity": "normal",
+    "zScore": -1.2
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.044",
+   "performanceRatio": 0.7351,
+   "powerLoss": 0.1019,
+   "soilingRatio": {
+    "max": 1.0463,
+    "mean": 0.8981,
+    "median": 0.971,
+    "min": 0.575,
+    "std": 0.1511
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 1.11
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.39,
+    "rank": 76,
+    "severity": "normal",
+    "zScore": -0.49
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.045",
+   "performanceRatio": 0.7451,
+   "powerLoss": 0.0968,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9032,
+    "median": 0.9746,
+    "min": 0.575,
+    "std": 0.1505
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 1.11
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.37,
+    "rank": 74,
+    "severity": "normal",
+    "zScore": -0.47
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.046",
+   "performanceRatio": 0.748,
+   "powerLoss": 0.0967,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9033,
+    "median": 0.9762,
+    "min": 0.575,
+    "std": 0.151
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 5.56
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -1.89,
+    "rank": 120,
+    "severity": "minor",
+    "zScore": -2.4
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.047",
+   "performanceRatio": 0.7266,
+   "powerLoss": 0.1104,
+   "soilingRatio": {
+    "max": 1.0329,
+    "mean": 0.8896,
+    "median": 0.9677,
+    "min": 0.575,
+    "std": 0.1517
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 1.11
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.5,
+    "rank": 87,
+    "severity": "normal",
+    "zScore": -0.64
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.048",
+   "performanceRatio": 0.7493,
+   "powerLoss": 0.0979,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9021,
+    "median": 0.975,
+    "min": 0.575,
+    "std": 0.1514
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.67,
+    "rank": 94,
+    "severity": "normal",
+    "zScore": -0.85
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.049",
+   "performanceRatio": 0.7385,
+   "powerLoss": 0.0994,
+   "soilingRatio": {
+    "max": 1.027,
+    "mean": 0.9006,
+    "median": 0.9698,
+    "min": 0.575,
+    "std": 0.1467
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.78,
+    "rank": 103,
+    "severity": "normal",
+    "zScore": -1.0
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.050",
+   "performanceRatio": 0.7405,
+   "powerLoss": 0.1004,
+   "soilingRatio": {
+    "max": 1.0222,
+    "mean": 0.8996,
+    "median": 0.9639,
+    "min": 0.575,
+    "std": 0.1467
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.42,
+    "rank": 80,
+    "severity": "normal",
+    "zScore": -0.54
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.051",
+   "performanceRatio": 0.7412,
+   "powerLoss": 0.0972,
+   "soilingRatio": {
+    "max": 1.047,
+    "mean": 0.9028,
+    "median": 0.9736,
+    "min": 0.575,
+    "std": 0.1477
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.13,
+    "rank": 52,
+    "severity": "normal",
+    "zScore": 0.17
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.052",
+   "performanceRatio": 0.759,
+   "powerLoss": 0.0921,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9079,
+    "median": 0.9819,
+    "min": 0.575,
+    "std": 0.1502
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.7,
+    "rank": 97,
+    "severity": "normal",
+    "zScore": -0.89
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.053",
+   "performanceRatio": 0.7193,
+   "powerLoss": 0.0997,
+   "soilingRatio": {
+    "max": 1.0292,
+    "mean": 0.9003,
+    "median": 0.9689,
+    "min": 0.575,
+    "std": 0.1469
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.32,
+    "rank": 67,
+    "severity": "normal",
+    "zScore": -0.41
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.054",
+   "performanceRatio": 0.7232,
+   "powerLoss": 0.0962,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9038,
+    "median": 0.9677,
+    "min": 0.575,
+    "std": 0.1476
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.48,
+    "rank": 85,
+    "severity": "normal",
+    "zScore": -0.61
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.055",
+   "performanceRatio": 0.7444,
+   "powerLoss": 0.0977,
+   "soilingRatio": {
+    "max": 1.0493,
+    "mean": 0.9023,
+    "median": 0.9761,
+    "min": 0.575,
+    "std": 0.1492
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.36,
+    "rank": 72,
+    "severity": "normal",
+    "zScore": -0.46
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.056",
+   "performanceRatio": 0.7501,
+   "powerLoss": 0.0966,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9034,
+    "median": 0.9741,
+    "min": 0.575,
+    "std": 0.1481
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.52,
+    "rank": 88,
+    "severity": "normal",
+    "zScore": -0.66
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.057",
+   "performanceRatio": 0.7466,
+   "powerLoss": 0.098,
+   "soilingRatio": {
+    "max": 1.0462,
+    "mean": 0.902,
+    "median": 0.9691,
+    "min": 0.575,
+    "std": 0.1481
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 1.11
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.77,
+    "rank": 102,
+    "severity": "normal",
+    "zScore": -0.98
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.058",
+   "performanceRatio": 0.7471,
+   "powerLoss": 0.1003,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.8997,
+    "median": 0.969,
+    "min": 0.575,
+    "std": 0.1522
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.67,
+    "rank": 95,
+    "severity": "normal",
+    "zScore": -0.86
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.059",
+   "performanceRatio": 0.7403,
+   "powerLoss": 0.0994,
+   "soilingRatio": {
+    "max": 1.0442,
+    "mean": 0.9006,
+    "median": 0.9743,
+    "min": 0.575,
+    "std": 0.1481
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 2.22
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -1.02,
+    "rank": 111,
+    "severity": "normal",
+    "zScore": -1.3
+   },
+   "groupId": "INV 01",
+   "inverterId": "INV 01.060",
+   "performanceRatio": 0.7413,
+   "powerLoss": 0.1026,
+   "soilingRatio": {
+    "max": 1.049,
+    "mean": 0.8974,
+    "median": 0.9696,
+    "min": 0.575,
+    "std": 0.1519
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -1.83,
+    "rank": 119,
+    "severity": "minor",
+    "zScore": -2.34
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.001",
+   "performanceRatio": 0.7109,
+   "powerLoss": 0.11,
+   "soilingRatio": {
+    "max": 1.0154,
+    "mean": 0.89,
+    "median": 0.9496,
+    "min": 0.575,
+    "std": 0.14
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -1.17,
+    "rank": 115,
+    "severity": "normal",
+    "zScore": -1.49
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.002",
+   "performanceRatio": 0.7149,
+   "powerLoss": 0.104,
+   "soilingRatio": {
+    "max": 1.0227,
+    "mean": 0.896,
+    "median": 0.9595,
+    "min": 0.575,
+    "std": 0.142
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 1.11
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.42,
+    "rank": 79,
+    "severity": "normal",
+    "zScore": -0.53
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.003",
+   "performanceRatio": 0.7296,
+   "powerLoss": 0.0971,
+   "soilingRatio": {
+    "max": 1.041,
+    "mean": 0.9029,
+    "median": 0.9716,
+    "min": 0.575,
+    "std": 0.1449
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.24,
+    "rank": 60,
+    "severity": "normal",
+    "zScore": -0.31
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.004",
+   "performanceRatio": 0.7323,
+   "powerLoss": 0.0956,
+   "soilingRatio": {
+    "max": 1.0375,
+    "mean": 0.9044,
+    "median": 0.9701,
+    "min": 0.575,
+    "std": 0.1431
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.72,
+    "rank": 99,
+    "severity": "normal",
+    "zScore": -0.92
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.005",
+   "performanceRatio": 0.7322,
+   "powerLoss": 0.0999,
+   "soilingRatio": {
+    "max": 1.0229,
+    "mean": 0.9001,
+    "median": 0.9657,
+    "min": 0.575,
+    "std": 0.1436
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.3,
+    "rank": 66,
+    "severity": "normal",
+    "zScore": -0.38
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.006",
+   "performanceRatio": 0.7395,
+   "powerLoss": 0.0961,
+   "soilingRatio": {
+    "max": 1.0455,
+    "mean": 0.9039,
+    "median": 0.9741,
+    "min": 0.575,
+    "std": 0.1446
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 1.11
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.63,
+    "rank": 92,
+    "severity": "normal",
+    "zScore": -0.81
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.007",
+   "performanceRatio": 0.7433,
+   "powerLoss": 0.0991,
+   "soilingRatio": {
+    "max": 1.0389,
+    "mean": 0.9009,
+    "median": 0.9698,
+    "min": 0.575,
+    "std": 0.1462
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.7,
+    "rank": 98,
+    "severity": "normal",
+    "zScore": -0.89
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.008",
+   "performanceRatio": 0.7389,
+   "powerLoss": 0.0997,
+   "soilingRatio": {
+    "max": 1.0196,
+    "mean": 0.9003,
+    "median": 0.9651,
+    "min": 0.575,
+    "std": 0.1424
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 1.11
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.34,
+    "rank": 69,
+    "severity": "normal",
+    "zScore": -0.44
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.009",
+   "performanceRatio": 0.7473,
+   "powerLoss": 0.0965,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9035,
+    "median": 0.9742,
+    "min": 0.575,
+    "std": 0.1473
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.56,
+    "rank": 89,
+    "severity": "normal",
+    "zScore": -0.72
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.010",
+   "performanceRatio": 0.7409,
+   "powerLoss": 0.0985,
+   "soilingRatio": {
+    "max": 1.0344,
+    "mean": 0.9015,
+    "median": 0.967,
+    "min": 0.575,
+    "std": 0.1445
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.28,
+    "rank": 63,
+    "severity": "normal",
+    "zScore": -0.35
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.011",
+   "performanceRatio": 0.7286,
+   "powerLoss": 0.0959,
+   "soilingRatio": {
+    "max": 1.042,
+    "mean": 0.9041,
+    "median": 0.9728,
+    "min": 0.575,
+    "std": 0.1442
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.35,
+    "rank": 70,
+    "severity": "normal",
+    "zScore": -0.45
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.012",
+   "performanceRatio": 0.7472,
+   "powerLoss": 0.0965,
+   "soilingRatio": {
+    "max": 1.0391,
+    "mean": 0.9035,
+    "median": 0.9707,
+    "min": 0.575,
+    "std": 0.144
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 1.11
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.77,
+    "rank": 101,
+    "severity": "normal",
+    "zScore": -0.98
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.013",
+   "performanceRatio": 0.7441,
+   "powerLoss": 0.1003,
+   "soilingRatio": {
+    "max": 1.0341,
+    "mean": 0.8997,
+    "median": 0.9665,
+    "min": 0.575,
+    "std": 0.1453
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.34,
+    "rank": 68,
+    "severity": "normal",
+    "zScore": -0.44
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.014",
+   "performanceRatio": 0.728,
+   "powerLoss": 0.0965,
+   "soilingRatio": {
+    "max": 1.0354,
+    "mean": 0.9035,
+    "median": 0.9663,
+    "min": 0.575,
+    "std": 0.142
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.48,
+    "rank": 84,
+    "severity": "normal",
+    "zScore": -0.61
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.015",
+   "performanceRatio": 0.7335,
+   "powerLoss": 0.0977,
+   "soilingRatio": {
+    "max": 1.0367,
+    "mean": 0.9023,
+    "median": 0.9676,
+    "min": 0.575,
+    "std": 0.1445
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -1.15,
+    "rank": 114,
+    "severity": "normal",
+    "zScore": -1.47
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.016",
+   "performanceRatio": 0.7169,
+   "powerLoss": 0.1038,
+   "soilingRatio": {
+    "max": 1.0138,
+    "mean": 0.8962,
+    "median": 0.9584,
+    "min": 0.575,
+    "std": 0.1429
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.36,
+    "rank": 71,
+    "severity": "normal",
+    "zScore": -0.45
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.017",
+   "performanceRatio": 0.7321,
+   "powerLoss": 0.0966,
+   "soilingRatio": {
+    "max": 1.0327,
+    "mean": 0.9034,
+    "median": 0.9719,
+    "min": 0.575,
+    "std": 0.1451
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.9,
+    "rank": 109,
+    "severity": "normal",
+    "zScore": -1.15
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.018",
+   "performanceRatio": 0.7285,
+   "powerLoss": 0.1015,
+   "soilingRatio": {
+    "max": 1.0163,
+    "mean": 0.8985,
+    "median": 0.9639,
+    "min": 0.575,
+    "std": 0.1437
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.45,
+    "rank": 81,
+    "severity": "normal",
+    "zScore": -0.58
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.019",
+   "performanceRatio": 0.7352,
+   "powerLoss": 0.0974,
+   "soilingRatio": {
+    "max": 1.0307,
+    "mean": 0.9026,
+    "median": 0.9668,
+    "min": 0.575,
+    "std": 0.1445
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -1.31,
+    "rank": 117,
+    "severity": "normal",
+    "zScore": -1.67
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.020",
+   "performanceRatio": 0.7328,
+   "powerLoss": 0.1052,
+   "soilingRatio": {
+    "max": 1.0305,
+    "mean": 0.8948,
+    "median": 0.9562,
+    "min": 0.575,
+    "std": 0.1447
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.69,
+    "rank": 96,
+    "severity": "normal",
+    "zScore": -0.88
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.021",
+   "performanceRatio": 0.746,
+   "powerLoss": 0.0996,
+   "soilingRatio": {
+    "max": 1.0322,
+    "mean": 0.9004,
+    "median": 0.9632,
+    "min": 0.575,
+    "std": 0.1456
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.89,
+    "rank": 107,
+    "severity": "normal",
+    "zScore": -1.13
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.022",
+   "performanceRatio": 0.7374,
+   "powerLoss": 0.1014,
+   "soilingRatio": {
+    "max": 1.0159,
+    "mean": 0.8986,
+    "median": 0.9643,
+    "min": 0.575,
+    "std": 0.1442
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 1.11
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.9,
+    "rank": 108,
+    "severity": "normal",
+    "zScore": -1.14
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.023",
+   "performanceRatio": 0.7438,
+   "powerLoss": 0.1015,
+   "soilingRatio": {
+    "max": 1.0411,
+    "mean": 0.8985,
+    "median": 0.9748,
+    "min": 0.575,
+    "std": 0.15
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.4,
+    "rank": 78,
+    "severity": "normal",
+    "zScore": -0.51
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.024",
+   "performanceRatio": 0.7442,
+   "powerLoss": 0.097,
+   "soilingRatio": {
+    "max": 1.0497,
+    "mean": 0.903,
+    "median": 0.9793,
+    "min": 0.575,
+    "std": 0.148
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.83,
+    "rank": 106,
+    "severity": "normal",
+    "zScore": -1.06
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.025",
+   "performanceRatio": 0.7352,
+   "powerLoss": 0.1009,
+   "soilingRatio": {
+    "max": 1.0235,
+    "mean": 0.8991,
+    "median": 0.9709,
+    "min": 0.575,
+    "std": 0.1446
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.83,
+    "rank": 105,
+    "severity": "normal",
+    "zScore": -1.05
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.026",
+   "performanceRatio": 0.733,
+   "powerLoss": 0.1008,
+   "soilingRatio": {
+    "max": 1.0343,
+    "mean": 0.8992,
+    "median": 0.9712,
+    "min": 0.575,
+    "std": 0.1448
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.39,
+    "rank": 77,
+    "severity": "normal",
+    "zScore": -0.5
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.027",
+   "performanceRatio": 0.7324,
+   "powerLoss": 0.0969,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9031,
+    "median": 0.9742,
+    "min": 0.575,
+    "std": 0.1463
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.21,
+    "rank": 59,
+    "severity": "normal",
+    "zScore": -0.26
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.028",
+   "performanceRatio": 0.7517,
+   "powerLoss": 0.0952,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9048,
+    "median": 0.9776,
+    "min": 0.575,
+    "std": 0.1474
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.37,
+    "rank": 75,
+    "severity": "normal",
+    "zScore": -0.47
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.029",
+   "performanceRatio": 0.7369,
+   "powerLoss": 0.0967,
+   "soilingRatio": {
+    "max": 1.0429,
+    "mean": 0.9033,
+    "median": 0.9739,
+    "min": 0.575,
+    "std": 0.1461
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.28,
+    "rank": 64,
+    "severity": "normal",
+    "zScore": -0.36
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.030",
+   "performanceRatio": 0.7153,
+   "powerLoss": 0.0959,
+   "soilingRatio": {
+    "max": 1.0485,
+    "mean": 0.9041,
+    "median": 0.9757,
+    "min": 0.575,
+    "std": 0.1465
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 1.11
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.26,
+    "rank": 61,
+    "severity": "normal",
+    "zScore": -0.33
+   },
+   "groupId": "INV 02",
+   "inverterId": "INV 02.031",
+   "performanceRatio": 0.7551,
+   "powerLoss": 0.0957,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9043,
+    "median": 0.9817,
+    "min": 0.575,
+    "std": 0.1521
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 1.06,
+    "rank": 13,
+    "severity": "normal",
+    "zScore": 1.36
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.061",
+   "performanceRatio": 0.7596,
+   "powerLoss": 0.0837,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9163,
+    "median": 0.9852,
+    "min": 0.575,
+    "std": 0.153
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.81,
+    "rank": 104,
+    "severity": "normal",
+    "zScore": -1.04
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.062",
+   "performanceRatio": 0.7312,
+   "powerLoss": 0.1007,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.8993,
+    "median": 0.963,
+    "min": 0.575,
+    "std": 0.1472
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.77,
+    "rank": 28,
+    "severity": "normal",
+    "zScore": 0.98
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.063",
+   "performanceRatio": 0.7301,
+   "powerLoss": 0.0864,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9136,
+    "median": 0.9827,
+    "min": 0.575,
+    "std": 0.1514
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.12,
+    "rank": 58,
+    "severity": "normal",
+    "zScore": -0.15
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.064",
+   "performanceRatio": 0.73,
+   "powerLoss": 0.0944,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9056,
+    "median": 0.9721,
+    "min": 0.575,
+    "std": 0.1488
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.48,
+    "rank": 83,
+    "severity": "normal",
+    "zScore": -0.61
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.065",
+   "performanceRatio": 0.7173,
+   "powerLoss": 0.0977,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9023,
+    "median": 0.9682,
+    "min": 0.575,
+    "std": 0.1474
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.07,
+    "rank": 56,
+    "severity": "normal",
+    "zScore": -0.08
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.066",
+   "performanceRatio": 0.7257,
+   "powerLoss": 0.0939,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9061,
+    "median": 0.9716,
+    "min": 0.575,
+    "std": 0.1484
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.02,
+    "rank": 54,
+    "severity": "normal",
+    "zScore": 0.02
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.067",
+   "performanceRatio": 0.7315,
+   "powerLoss": 0.0932,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9068,
+    "median": 0.9751,
+    "min": 0.575,
+    "std": 0.1491
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.62,
+    "rank": 37,
+    "severity": "normal",
+    "zScore": 0.79
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.068",
+   "performanceRatio": 0.7461,
+   "powerLoss": 0.0877,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9123,
+    "median": 0.9815,
+    "min": 0.575,
+    "std": 0.1509
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.41,
+    "rank": 44,
+    "severity": "normal",
+    "zScore": 0.52
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.069",
+   "performanceRatio": 0.7399,
+   "powerLoss": 0.0896,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9104,
+    "median": 0.9789,
+    "min": 0.575,
+    "std": 0.1503
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.21,
+    "rank": 50,
+    "severity": "normal",
+    "zScore": 0.26
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.070",
+   "performanceRatio": 0.7344,
+   "powerLoss": 0.0915,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9085,
+    "median": 0.9755,
+    "min": 0.575,
+    "std": 0.1496
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.45,
+    "rank": 42,
+    "severity": "normal",
+    "zScore": 0.57
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.071",
+   "performanceRatio": 0.7351,
+   "powerLoss": 0.0893,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9107,
+    "median": 0.9803,
+    "min": 0.575,
+    "std": 0.1502
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.8,
+    "rank": 27,
+    "severity": "normal",
+    "zScore": 1.02
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.072",
+   "performanceRatio": 0.742,
+   "powerLoss": 0.0861,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9139,
+    "median": 0.9849,
+    "min": 0.575,
+    "std": 0.1516
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.93,
+    "rank": 20,
+    "severity": "normal",
+    "zScore": 1.19
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.073",
+   "performanceRatio": 0.7535,
+   "powerLoss": 0.0849,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9151,
+    "median": 0.9887,
+    "min": 0.575,
+    "std": 0.152
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 1.15,
+    "rank": 10,
+    "severity": "normal",
+    "zScore": 1.46
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.074",
+   "performanceRatio": 0.7548,
+   "powerLoss": 0.0829,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9171,
+    "median": 0.99,
+    "min": 0.575,
+    "std": 0.1523
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.95,
+    "rank": 18,
+    "severity": "normal",
+    "zScore": 1.21
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.075",
+   "performanceRatio": 0.7506,
+   "powerLoss": 0.0847,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9153,
+    "median": 0.9885,
+    "min": 0.575,
+    "std": 0.1518
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 1.54,
+    "rank": 1,
+    "severity": "normal",
+    "zScore": 1.96
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.076",
+   "performanceRatio": 0.7582,
+   "powerLoss": 0.0794,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9206,
+    "median": 0.9961,
+    "min": 0.575,
+    "std": 0.1543
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.5,
+    "rank": 39,
+    "severity": "normal",
+    "zScore": 0.63
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.077",
+   "performanceRatio": 0.7409,
+   "powerLoss": 0.0888,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9112,
+    "median": 0.9826,
+    "min": 0.575,
+    "std": 0.1512
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.43,
+    "rank": 43,
+    "severity": "normal",
+    "zScore": 0.54
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.078",
+   "performanceRatio": 0.7349,
+   "powerLoss": 0.0895,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9105,
+    "median": 0.9792,
+    "min": 0.575,
+    "std": 0.1505
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.9,
+    "rank": 22,
+    "severity": "normal",
+    "zScore": 1.14
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.079",
+   "performanceRatio": 0.7473,
+   "powerLoss": 0.0852,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9148,
+    "median": 0.9842,
+    "min": 0.575,
+    "std": 0.1516
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 1.32,
+    "rank": 3,
+    "severity": "normal",
+    "zScore": 1.68
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.080",
+   "performanceRatio": 0.7516,
+   "powerLoss": 0.0814,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9186,
+    "median": 0.989,
+    "min": 0.575,
+    "std": 0.1531
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.65,
+    "rank": 33,
+    "severity": "normal",
+    "zScore": 0.83
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.081",
+   "performanceRatio": 0.7413,
+   "powerLoss": 0.0874,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9126,
+    "median": 0.9817,
+    "min": 0.575,
+    "std": 0.1507
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.99,
+    "rank": 17,
+    "severity": "normal",
+    "zScore": 1.27
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.082",
+   "performanceRatio": 0.7494,
+   "powerLoss": 0.0843,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9157,
+    "median": 0.9875,
+    "min": 0.575,
+    "std": 0.152
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 1.07,
+    "rank": 11,
+    "severity": "normal",
+    "zScore": 1.37
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.083",
+   "performanceRatio": 0.7479,
+   "powerLoss": 0.0836,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9164,
+    "median": 0.9924,
+    "min": 0.575,
+    "std": 0.1519
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.1,
+    "rank": 53,
+    "severity": "normal",
+    "zScore": 0.12
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.084",
+   "performanceRatio": 0.7233,
+   "powerLoss": 0.0925,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9075,
+    "median": 0.9722,
+    "min": 0.575,
+    "std": 0.1484
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 1.37,
+    "rank": 2,
+    "severity": "normal",
+    "zScore": 1.75
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.085",
+   "performanceRatio": 0.7534,
+   "powerLoss": 0.0809,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9191,
+    "median": 0.9929,
+    "min": 0.575,
+    "std": 0.1531
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.81,
+    "rank": 26,
+    "severity": "normal",
+    "zScore": 1.03
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.086",
+   "performanceRatio": 0.731,
+   "powerLoss": 0.086,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.914,
+    "median": 0.987,
+    "min": 0.575,
+    "std": 0.1508
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.56,
+    "rank": 38,
+    "severity": "normal",
+    "zScore": 0.72
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.087",
+   "performanceRatio": 0.7389,
+   "powerLoss": 0.0882,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9118,
+    "median": 0.9831,
+    "min": 0.575,
+    "std": 0.1503
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 1.11
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.08,
+    "rank": 57,
+    "severity": "normal",
+    "zScore": -0.1
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.088",
+   "performanceRatio": 0.7304,
+   "powerLoss": 0.094,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.906,
+    "median": 0.9792,
+    "min": 0.575,
+    "std": 0.152
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.38,
+    "rank": 46,
+    "severity": "normal",
+    "zScore": 0.49
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.089",
+   "performanceRatio": 0.7338,
+   "powerLoss": 0.0899,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9101,
+    "median": 0.9778,
+    "min": 0.575,
+    "std": 0.1499
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 1.17,
+    "rank": 9,
+    "severity": "normal",
+    "zScore": 1.5
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.090",
+   "performanceRatio": 0.7492,
+   "powerLoss": 0.0827,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9173,
+    "median": 0.9935,
+    "min": 0.575,
+    "std": 0.1523
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.49,
+    "rank": 40,
+    "severity": "normal",
+    "zScore": 0.62
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.091",
+   "performanceRatio": 0.7393,
+   "powerLoss": 0.0889,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9111,
+    "median": 0.9813,
+    "min": 0.575,
+    "std": 0.1504
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 1.04,
+    "rank": 14,
+    "severity": "normal",
+    "zScore": 1.32
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.092",
+   "performanceRatio": 0.7517,
+   "powerLoss": 0.0839,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9161,
+    "median": 0.9897,
+    "min": 0.575,
+    "std": 0.1524
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.32,
+    "rank": 47,
+    "severity": "normal",
+    "zScore": 0.41
+   },
+   "groupId": "INV 03",
+   "inverterId": "INV 03.093",
+   "performanceRatio": 0.6863,
+   "powerLoss": 0.0905,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9095,
+    "median": 0.9783,
+    "min": 0.575,
+    "std": 0.1479
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.95,
+    "rank": 19,
+    "severity": "normal",
+    "zScore": 1.21
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.094",
+   "performanceRatio": 0.7606,
+   "powerLoss": 0.0847,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9153,
+    "median": 0.9851,
+    "min": 0.575,
+    "std": 0.1494
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.27,
+    "rank": 62,
+    "severity": "normal",
+    "zScore": -0.34
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.095",
+   "performanceRatio": 0.7275,
+   "powerLoss": 0.0958,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9042,
+    "median": 0.969,
+    "min": 0.575,
+    "std": 0.1463
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": -0.04,
+    "rank": 55,
+    "severity": "normal",
+    "zScore": -0.06
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.096",
+   "performanceRatio": 0.728,
+   "powerLoss": 0.0937,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9063,
+    "median": 0.9693,
+    "min": 0.575,
+    "std": 0.1458
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.23,
+    "rank": 49,
+    "severity": "normal",
+    "zScore": 0.29
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.097",
+   "performanceRatio": 0.7438,
+   "powerLoss": 0.0912,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9088,
+    "median": 0.979,
+    "min": 0.575,
+    "std": 0.147
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.14,
+    "rank": 51,
+    "severity": "normal",
+    "zScore": 0.18
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.098",
+   "performanceRatio": 0.7303,
+   "powerLoss": 0.0921,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9079,
+    "median": 0.9735,
+    "min": 0.575,
+    "std": 0.1468
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 1.02,
+    "rank": 15,
+    "severity": "normal",
+    "zScore": 1.3
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.099",
+   "performanceRatio": 0.7588,
+   "powerLoss": 0.0841,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9159,
+    "median": 0.985,
+    "min": 0.575,
+    "std": 0.1503
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.83,
+    "rank": 24,
+    "severity": "normal",
+    "zScore": 1.06
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.100",
+   "performanceRatio": 0.7605,
+   "powerLoss": 0.0858,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9142,
+    "median": 0.9837,
+    "min": 0.575,
+    "std": 0.149
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.67,
+    "rank": 31,
+    "severity": "normal",
+    "zScore": 0.86
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.101",
+   "performanceRatio": 0.7512,
+   "powerLoss": 0.0872,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9128,
+    "median": 0.9818,
+    "min": 0.575,
+    "std": 0.1478
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.64,
+    "rank": 34,
+    "severity": "normal",
+    "zScore": 0.82
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.102",
+   "performanceRatio": 0.7477,
+   "powerLoss": 0.0875,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9125,
+    "median": 0.9827,
+    "min": 0.575,
+    "std": 0.148
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.4,
+    "rank": 45,
+    "severity": "normal",
+    "zScore": 0.51
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.103",
+   "performanceRatio": 0.747,
+   "powerLoss": 0.0897,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9103,
+    "median": 0.9773,
+    "min": 0.575,
+    "std": 0.1471
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.93,
+    "rank": 21,
+    "severity": "normal",
+    "zScore": 1.19
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.104",
+   "performanceRatio": 0.7588,
+   "powerLoss": 0.0849,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9151,
+    "median": 0.9872,
+    "min": 0.575,
+    "std": 0.1489
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.25,
+    "rank": 48,
+    "severity": "normal",
+    "zScore": 0.31
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.105",
+   "performanceRatio": 0.7453,
+   "powerLoss": 0.0911,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9089,
+    "median": 0.9792,
+    "min": 0.575,
+    "std": 0.1466
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 1.18,
+    "rank": 8,
+    "severity": "normal",
+    "zScore": 1.5
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.106",
+   "performanceRatio": 0.756,
+   "powerLoss": 0.0827,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9173,
+    "median": 0.9894,
+    "min": 0.575,
+    "std": 0.1497
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.48,
+    "rank": 41,
+    "severity": "normal",
+    "zScore": 0.62
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.107",
+   "performanceRatio": 0.7401,
+   "powerLoss": 0.089,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.911,
+    "median": 0.9782,
+    "min": 0.575,
+    "std": 0.1472
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 1.25,
+    "rank": 7,
+    "severity": "normal",
+    "zScore": 1.59
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.108",
+   "performanceRatio": 0.7596,
+   "powerLoss": 0.082,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.918,
+    "median": 0.9898,
+    "min": 0.575,
+    "std": 0.1499
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.75,
+    "rank": 29,
+    "severity": "normal",
+    "zScore": 0.95
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.109",
+   "performanceRatio": 0.7438,
+   "powerLoss": 0.0866,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9134,
+    "median": 0.984,
+    "min": 0.575,
+    "std": 0.148
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 1.07,
+    "rank": 12,
+    "severity": "normal",
+    "zScore": 1.36
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.110",
+   "performanceRatio": 0.7531,
+   "powerLoss": 0.0836,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9164,
+    "median": 0.9868,
+    "min": 0.575,
+    "std": 0.1489
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.85,
+    "rank": 23,
+    "severity": "normal",
+    "zScore": 1.08
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.111",
+   "performanceRatio": 0.7452,
+   "powerLoss": 0.0856,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9144,
+    "median": 0.9845,
+    "min": 0.575,
+    "std": 0.1482
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 1.32,
+    "rank": 4,
+    "severity": "normal",
+    "zScore": 1.68
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.112",
+   "performanceRatio": 0.7514,
+   "powerLoss": 0.0814,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9186,
+    "median": 0.9893,
+    "min": 0.575,
+    "std": 0.1493
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 1.28,
+    "rank": 6,
+    "severity": "normal",
+    "zScore": 1.63
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.113",
+   "performanceRatio": 0.7591,
+   "powerLoss": 0.0818,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9182,
+    "median": 0.9878,
+    "min": 0.575,
+    "std": 0.1499
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 1.28,
+    "rank": 5,
+    "severity": "normal",
+    "zScore": 1.63
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.114",
+   "performanceRatio": 0.7556,
+   "powerLoss": 0.0817,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9183,
+    "median": 0.9892,
+    "min": 0.575,
+    "std": 0.1498
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.62,
+    "rank": 36,
+    "severity": "normal",
+    "zScore": 0.79
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.115",
+   "performanceRatio": 0.744,
+   "powerLoss": 0.0877,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9123,
+    "median": 0.9832,
+    "min": 0.575,
+    "std": 0.1508
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 1.01,
+    "rank": 16,
+    "severity": "normal",
+    "zScore": 1.29
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.116",
+   "performanceRatio": 0.7532,
+   "powerLoss": 0.0842,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9158,
+    "median": 0.9889,
+    "min": 0.575,
+    "std": 0.1518
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.67,
+    "rank": 32,
+    "severity": "normal",
+    "zScore": 0.85
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.117",
+   "performanceRatio": 0.7475,
+   "powerLoss": 0.0873,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9127,
+    "median": 0.9837,
+    "min": 0.575,
+    "std": 0.1505
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.63,
+    "rank": 35,
+    "severity": "normal",
+    "zScore": 0.8
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.118",
+   "performanceRatio": 0.7407,
+   "powerLoss": 0.0877,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9123,
+    "median": 0.9855,
+    "min": 0.575,
+    "std": 0.1507
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.82,
+    "rank": 25,
+    "severity": "normal",
+    "zScore": 1.04
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.119",
+   "performanceRatio": 0.7471,
+   "powerLoss": 0.0859,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9141,
+    "median": 0.9853,
+    "min": 0.575,
+    "std": 0.1514
+   }
+  },
+  {
+   "anomalyDetection": {
+    "anomalyRate_pct": 0.0
+   },
+   "dataCompleteness_pct": 100.0,
+   "fleetComparison": {
+    "deviationPct": 0.69,
+    "rank": 30,
+    "severity": "normal",
+    "zScore": 0.88
+   },
+   "groupId": "INV 04",
+   "inverterId": "INV 04.120",
+   "performanceRatio": 0.7485,
+   "powerLoss": 0.0871,
+   "soilingRatio": {
+    "max": 1.05,
+    "mean": 0.9129,
+    "median": 0.9847,
+    "min": 0.575,
+    "std": 0.1512
+   }
+  }
+ ],
+ "metadata": {
+  "generated_at": "2026-07-17T12:20:49.238873",
+  "plant_id": "ribera",
+  "provenance": {
+   "data_end": "2025-12-13",
+   "data_start": "2020-10-01",
+   "generated_at": "2026-07-17T12:20:49.238880",
+   "method": "measured_pr_selfnorm_dustiq_calibrated",
+   "source": "measured_per_inverter",
+   "stats_window": {
+    "end": "2025-12-13",
+    "start": "2025-09-14"
+   }
+  },
+  "total_inverters": 120
+ }
+}

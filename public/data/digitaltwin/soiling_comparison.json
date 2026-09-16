@@ -1,0 +1,205 @@
+{
+  "analysis_date": "2025-12-24T22:47:43.702872",
+  "plants": [
+    {
+      "plant_id": "alpha",
+      "dustiq": {
+        "n_days": 1680,
+        "date_range": "2020-09-30 to 2025-12-13",
+        "avg_soiling_ratio": 0.9989,
+        "avg_soiling_loss_pct": 0.11,
+        "max_soiling_loss_pct": 2.76,
+        "min_soiling_ratio": 0.9724
+      },
+      "ml_model": {
+        "n_predictions": 2534,
+        "date_range": "2019-01-01 to 2025-12-08",
+        "avg_soiling_ratio": 0.9976,
+        "avg_soiling_loss_pct": 0.24,
+        "max_soiling_loss_pct": 2.76
+      },
+      "twin_based": {
+        "quality": 0.68,
+        "confidence": "MEDIUM",
+        "temp_r2": 0.399,
+        "current_r2": 0.724,
+        "voltage_r2": 0.993,
+        "n_inverters": 150
+      },
+      "comparison": {
+        "dustiq_avg_loss_pct": 0.11,
+        "twin_isolation_quality": 0.68,
+        "estimated_detectable_loss_pct": 0.07,
+        "detection_potential": "68% of soiling can be isolated"
+      }
+    },
+    {
+      "plant_id": "ribera",
+      "dustiq": {
+        "n_days": 1781,
+        "date_range": "2020-10-01 to 2025-12-14",
+        "avg_soiling_ratio": 0.9823,
+        "avg_soiling_loss_pct": 1.77,
+        "max_soiling_loss_pct": 12.06,
+        "min_soiling_ratio": 0.8794
+      },
+      "ml_model": {
+        "n_predictions": 1096,
+        "date_range": "2022-12-17 to 2025-12-16",
+        "avg_soiling_ratio": 0.9132,
+        "avg_soiling_loss_pct": 8.68,
+        "max_soiling_loss_pct": 21.1
+      },
+      "twin_based": {
+        "quality": 0.841,
+        "confidence": "MEDIUM",
+        "temp_r2": 0.774,
+        "current_r2": 0.82,
+        "voltage_r2": 0.994,
+        "n_inverters": 120
+      },
+      "comparison": {
+        "dustiq_avg_loss_pct": 1.77,
+        "twin_isolation_quality": 0.841,
+        "estimated_detectable_loss_pct": 1.49,
+        "detection_potential": "84% of soiling can be isolated"
+      }
+    },
+    {
+      "plant_id": "eta",
+      "dustiq": {
+        "n_days": 1580,
+        "date_range": "2020-10-01 to 2025-12-14",
+        "avg_soiling_ratio": 1.0018,
+        "avg_soiling_loss_pct": -0.18,
+        "max_soiling_loss_pct": 9.95,
+        "min_soiling_ratio": 0.9005
+      },
+      "ml_model": {
+        "n_predictions": 1096,
+        "date_range": "2022-12-17 to 2025-12-16",
+        "avg_soiling_ratio": 0.9182,
+        "avg_soiling_loss_pct": 8.18,
+        "max_soiling_loss_pct": 21.97
+      },
+      "twin_based": {
+        "quality": 0.901,
+        "confidence": "HIGH",
+        "temp_r2": 0.872,
+        "current_r2": 0.88,
+        "voltage_r2": 0.997,
+        "n_inverters": 28
+      },
+      "comparison": {
+        "dustiq_avg_loss_pct": -0.18,
+        "twin_isolation_quality": 0.901,
+        "estimated_detectable_loss_pct": -0.16,
+        "detection_potential": "90% of soiling can be isolated"
+      }
+    },
+    {
+      "plant_id": "epsilon",
+      "dustiq": {
+        "n_days": 1610,
+        "date_range": "2021-07-26 to 2025-12-22",
+        "avg_soiling_ratio": 0.9915,
+        "avg_soiling_loss_pct": 0.85,
+        "max_soiling_loss_pct": 26.73,
+        "min_soiling_ratio": 0.7327
+      },
+      "ml_model": null,
+      "twin_based": {
+        "quality": 0.989,
+        "confidence": "HIGH",
+        "temp_r2": 1.0,
+        "current_r2": 0.983,
+        "voltage_r2": 0.987,
+        "n_inverters": 36
+      },
+      "comparison": {
+        "dustiq_avg_loss_pct": 0.85,
+        "twin_isolation_quality": 0.989,
+        "estimated_detectable_loss_pct": 0.84,
+        "detection_potential": "99% of soiling can be isolated"
+      }
+    },
+    {
+      "plant_id": "zeta",
+      "dustiq": {
+        "n_days": 1235,
+        "date_range": "2022-08-03 to 2025-12-21",
+        "avg_soiling_ratio": 0.986,
+        "avg_soiling_loss_pct": 1.4,
+        "max_soiling_loss_pct": 10.35,
+        "min_soiling_ratio": 0.8965
+      },
+      "ml_model": null,
+      "twin_based": {
+        "quality": 0.923,
+        "confidence": "HIGH",
+        "temp_r2": 0.978,
+        "current_r2": 0.863,
+        "voltage_r2": 0.991,
+        "n_inverters": 30
+      },
+      "comparison": {
+        "dustiq_avg_loss_pct": 1.4,
+        "twin_isolation_quality": 0.923,
+        "estimated_detectable_loss_pct": 1.29,
+        "detection_potential": "92% of soiling can be isolated"
+      }
+    },
+    {
+      "plant_id": "delta",
+      "dustiq": {
+        "n_days": 1652,
+        "date_range": "2021-05-17 to 2025-12-21",
+        "avg_soiling_ratio": 0.9957,
+        "avg_soiling_loss_pct": 0.43,
+        "max_soiling_loss_pct": 4.65,
+        "min_soiling_ratio": 0.9535
+      },
+      "ml_model": null,
+      "twin_based": {
+        "quality": 0.552,
+        "confidence": "LOW",
+        "temp_r2": -0.894,
+        "current_r2": 0.709,
+        "voltage_r2": 0.989,
+        "n_inverters": 43
+      },
+      "comparison": {
+        "dustiq_avg_loss_pct": 0.43,
+        "twin_isolation_quality": 0.552,
+        "estimated_detectable_loss_pct": 0.24,
+        "detection_potential": "55% of soiling can be isolated"
+      }
+    },
+    {
+      "plant_id": "gamma",
+      "dustiq": {
+        "n_days": 1618,
+        "date_range": "2021-05-28 to 2025-12-21",
+        "avg_soiling_ratio": 1.214,
+        "avg_soiling_loss_pct": -21.4,
+        "max_soiling_loss_pct": 50.13,
+        "min_soiling_ratio": 0.4987
+      },
+      "ml_model": null,
+      "twin_based": {
+        "quality": 0.588,
+        "confidence": "LOW",
+        "temp_r2": 0.29,
+        "current_r2": 0.613,
+        "voltage_r2": 0.973,
+        "n_inverters": 45
+      },
+      "comparison": {
+        "dustiq_avg_loss_pct": -21.4,
+        "twin_isolation_quality": 0.588,
+        "estimated_detectable_loss_pct": -12.58,
+        "detection_potential": "59% of soiling can be isolated"
+      }
+    }
+  ]
+}

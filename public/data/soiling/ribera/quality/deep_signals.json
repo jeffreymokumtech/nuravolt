@@ -1,0 +1,37 @@
+{
+  "plant_id": "ribera",
+  "generated_at": "2025-12-24T23:44:32.575086",
+  "method": "offline soiling-sensor research analysis (DustIQ reference series)",
+  "quality": {
+    "coverage_pct": 93.7,
+    "outlier_pct": 0.0,
+    "max_gap_days": 1,
+    "seasonal_coverage": {
+      "DJF": 78.7,
+      "MAM": 100.0,
+      "JJA": 100.0,
+      "SON": 95.9
+    },
+    "date_range": [
+      "2020-10-01",
+      "2025-12-14"
+    ],
+    "mean_sr": 0.9851,
+    "std_sr": 0.015,
+    "sensor_agreement": 0.163
+  },
+  "cleaning": {
+    "events_total": 73,
+    "rate_per_year": 14.0,
+    "rain_cleanings": 68,
+    "manual_cleanings": 38,
+    "avg_sr_recovery": 0.024,
+    "avg_soiling_period_days": 25.3,
+    "avg_sr_loss_per_period": 0.0232
+  },
+  "drivers": {
+    "days_since_rain_1mm_r": -0.3723,
+    "precip_30d_r": 0.3767,
+    "temp_mean_7d_r": -0.3473
+  }
+}

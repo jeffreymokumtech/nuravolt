@@ -1,0 +1,333 @@
+{
+  "turbineId": "T004",
+  "plantId": "care-portugal",
+  "period": {
+    "start": "2019-01-01",
+    "end": "2019-12-31"
+  },
+  "binWidth": 0.5,
+  "cutInSpeed": 3.0,
+  "ratedSpeed": 12.0,
+  "cutOutSpeed": 25.0,
+  "ratedPower": 2000,
+  "points": [
+    {
+      "windSpeedBin": 3.0,
+      "expectedPower": 0.0,
+      "actualPower": 0,
+      "stdDev": 6.6,
+      "sampleCount": 817
+    },
+    {
+      "windSpeedBin": 3.5,
+      "expectedPower": 0.3,
+      "actualPower": 0.3,
+      "stdDev": 9.7,
+      "sampleCount": 1274
+    },
+    {
+      "windSpeedBin": 4.0,
+      "expectedPower": 2.7,
+      "actualPower": 2.7,
+      "stdDev": 15.9,
+      "sampleCount": 853
+    },
+    {
+      "windSpeedBin": 4.5,
+      "expectedPower": 9.3,
+      "actualPower": 9.0,
+      "stdDev": 15.8,
+      "sampleCount": 1239
+    },
+    {
+      "windSpeedBin": 5.0,
+      "expectedPower": 21.9,
+      "actualPower": 21.6,
+      "stdDev": 18.9,
+      "sampleCount": 1220
+    },
+    {
+      "windSpeedBin": 5.5,
+      "expectedPower": 42.9,
+      "actualPower": 42.0,
+      "stdDev": 9.0,
+      "sampleCount": 1488
+    },
+    {
+      "windSpeedBin": 6.0,
+      "expectedPower": 74.1,
+      "actualPower": 72.0,
+      "stdDev": 15.1,
+      "sampleCount": 1059
+    },
+    {
+      "windSpeedBin": 6.5,
+      "expectedPower": 117.6,
+      "actualPower": 113.3,
+      "stdDev": 18.5,
+      "sampleCount": 1038
+    },
+    {
+      "windSpeedBin": 7.0,
+      "expectedPower": 175.6,
+      "actualPower": 172.2,
+      "stdDev": 15.4,
+      "sampleCount": 1472
+    },
+    {
+      "windSpeedBin": 7.5,
+      "expectedPower": 250.0,
+      "actualPower": 239.5,
+      "stdDev": 27.0,
+      "sampleCount": 1380
+    },
+    {
+      "windSpeedBin": 8.0,
+      "expectedPower": 342.9,
+      "actualPower": 332.1,
+      "stdDev": 33.2,
+      "sampleCount": 1475
+    },
+    {
+      "windSpeedBin": 8.5,
+      "expectedPower": 456.4,
+      "actualPower": 439.1,
+      "stdDev": 31.9,
+      "sampleCount": 1365
+    },
+    {
+      "windSpeedBin": 9.0,
+      "expectedPower": 592.6,
+      "actualPower": 569.7,
+      "stdDev": 41.2,
+      "sampleCount": 1311
+    },
+    {
+      "windSpeedBin": 9.5,
+      "expectedPower": 753.4,
+      "actualPower": 729.8,
+      "stdDev": 46.7,
+      "sampleCount": 1396
+    },
+    {
+      "windSpeedBin": 10.0,
+      "expectedPower": 941.0,
+      "actualPower": 915.4,
+      "stdDev": 65.3,
+      "sampleCount": 970
+    },
+    {
+      "windSpeedBin": 10.5,
+      "expectedPower": 1157.4,
+      "actualPower": 1120.1,
+      "stdDev": 69.8,
+      "sampleCount": 1227
+    },
+    {
+      "windSpeedBin": 11.0,
+      "expectedPower": 1404.7,
+      "actualPower": 1361.8,
+      "stdDev": 88.0,
+      "sampleCount": 927
+    },
+    {
+      "windSpeedBin": 11.5,
+      "expectedPower": 1684.8,
+      "actualPower": 1638.4,
+      "stdDev": 92.4,
+      "sampleCount": 1358
+    },
+    {
+      "windSpeedBin": 12.0,
+      "expectedPower": 2000,
+      "actualPower": 1922.7,
+      "stdDev": 115.5,
+      "sampleCount": 993
+    },
+    {
+      "windSpeedBin": 12.5,
+      "expectedPower": 2000,
+      "actualPower": 1972.2,
+      "stdDev": 105.2,
+      "sampleCount": 1463
+    },
+    {
+      "windSpeedBin": 13.0,
+      "expectedPower": 2000,
+      "actualPower": 1965.8,
+      "stdDev": 112.3,
+      "sampleCount": 1330
+    },
+    {
+      "windSpeedBin": 13.5,
+      "expectedPower": 2000,
+      "actualPower": 1956.2,
+      "stdDev": 115.4,
+      "sampleCount": 1252
+    },
+    {
+      "windSpeedBin": 14.0,
+      "expectedPower": 2000,
+      "actualPower": 1911.2,
+      "stdDev": 106.4,
+      "sampleCount": 955
+    },
+    {
+      "windSpeedBin": 14.5,
+      "expectedPower": 2000,
+      "actualPower": 1943.8,
+      "stdDev": 115.4,
+      "sampleCount": 1014
+    },
+    {
+      "windSpeedBin": 15.0,
+      "expectedPower": 2000,
+      "actualPower": 1924.8,
+      "stdDev": 113.0,
+      "sampleCount": 1097
+    },
+    {
+      "windSpeedBin": 15.5,
+      "expectedPower": 2000,
+      "actualPower": 1932.3,
+      "stdDev": 116.2,
+      "sampleCount": 1031
+    },
+    {
+      "windSpeedBin": 16.0,
+      "expectedPower": 2000,
+      "actualPower": 1938.0,
+      "stdDev": 108.8,
+      "sampleCount": 884
+    },
+    {
+      "windSpeedBin": 16.5,
+      "expectedPower": 2000,
+      "actualPower": 1928.8,
+      "stdDev": 107.9,
+      "sampleCount": 883
+    },
+    {
+      "windSpeedBin": 17.0,
+      "expectedPower": 2000,
+      "actualPower": 1913.3,
+      "stdDev": 107.8,
+      "sampleCount": 951
+    },
+    {
+      "windSpeedBin": 17.5,
+      "expectedPower": 2000,
+      "actualPower": 1935.4,
+      "stdDev": 112.3,
+      "sampleCount": 1307
+    },
+    {
+      "windSpeedBin": 18.0,
+      "expectedPower": 2000,
+      "actualPower": 1963.0,
+      "stdDev": 109.2,
+      "sampleCount": 870
+    },
+    {
+      "windSpeedBin": 18.5,
+      "expectedPower": 2000,
+      "actualPower": 1938.9,
+      "stdDev": 107.9,
+      "sampleCount": 959
+    },
+    {
+      "windSpeedBin": 19.0,
+      "expectedPower": 2000,
+      "actualPower": 1943.3,
+      "stdDev": 113.0,
+      "sampleCount": 992
+    },
+    {
+      "windSpeedBin": 19.5,
+      "expectedPower": 2000,
+      "actualPower": 1944.7,
+      "stdDev": 119.6,
+      "sampleCount": 1187
+    },
+    {
+      "windSpeedBin": 20.0,
+      "expectedPower": 2000,
+      "actualPower": 1939.1,
+      "stdDev": 118.0,
+      "sampleCount": 1143
+    },
+    {
+      "windSpeedBin": 20.5,
+      "expectedPower": 2000,
+      "actualPower": 1933.4,
+      "stdDev": 118.1,
+      "sampleCount": 1201
+    },
+    {
+      "windSpeedBin": 21.0,
+      "expectedPower": 2000,
+      "actualPower": 1923.6,
+      "stdDev": 107.8,
+      "sampleCount": 835
+    },
+    {
+      "windSpeedBin": 21.5,
+      "expectedPower": 2000,
+      "actualPower": 1945.6,
+      "stdDev": 119.1,
+      "sampleCount": 1134
+    },
+    {
+      "windSpeedBin": 22.0,
+      "expectedPower": 2000,
+      "actualPower": 1949.7,
+      "stdDev": 106.1,
+      "sampleCount": 1240
+    },
+    {
+      "windSpeedBin": 22.5,
+      "expectedPower": 2000,
+      "actualPower": 1926.2,
+      "stdDev": 105.8,
+      "sampleCount": 904
+    },
+    {
+      "windSpeedBin": 23.0,
+      "expectedPower": 2000,
+      "actualPower": 1928.3,
+      "stdDev": 119.9,
+      "sampleCount": 882
+    },
+    {
+      "windSpeedBin": 23.5,
+      "expectedPower": 2000,
+      "actualPower": 1936.3,
+      "stdDev": 116.5,
+      "sampleCount": 1224
+    },
+    {
+      "windSpeedBin": 24.0,
+      "expectedPower": 2000,
+      "actualPower": 1945.2,
+      "stdDev": 112.8,
+      "sampleCount": 1115
+    },
+    {
+      "windSpeedBin": 24.5,
+      "expectedPower": 2000,
+      "actualPower": 1930.0,
+      "stdDev": 111.6,
+      "sampleCount": 1402
+    },
+    {
+      "windSpeedBin": 25.0,
+      "expectedPower": 2000,
+      "actualPower": 1956.8,
+      "stdDev": 114.3,
+      "sampleCount": 1226
+    }
+  ],
+  "performanceIndex": 0.971,
+  "anomalyScore": 0.05800000000000005,
+  "lastUpdated": "2026-02-10T06:26:28.851294"
+}

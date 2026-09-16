@@ -1,0 +1,277 @@
+{
+  "faults": [
+    {
+      "id": "WF-CARE-EVT-001",
+      "turbineId": "T001",
+      "plantId": "care-portugal",
+      "faultType": {
+        "id": "GB001",
+        "category": "GEARBOX",
+        "code": "GB001",
+        "name": "Gearbox Bearing Overtemperature",
+        "severity": "HIGH"
+      },
+      "detectedAt": "2019-06-15T00:00:00Z",
+      "resolvedAt": "2019-07-02T00:00:00Z",
+      "status": "RESOLVED",
+      "confidence": 0.95,
+      "source": "LABELED",
+      "labeledEventId": "CARE-EVT-001",
+      "leadTimeDays": null,
+      "evidence": [
+        {
+          "indicator": "temperature_anomaly",
+          "value": 1.0,
+          "threshold": 0.5,
+          "deviation": 100.0,
+          "timestamp": "2019-06-15T00:00:00Z"
+        }
+      ],
+      "estimatedImpact": {
+        "lostEnergyKwh": 12942,
+        "repairCostUsd": 7942,
+        "downtimeHours": 136
+      }
+    },
+    {
+      "id": "WF-CARE-EVT-002",
+      "turbineId": "T002",
+      "plantId": "care-portugal",
+      "faultType": {
+        "id": "GN001",
+        "category": "GENERATOR",
+        "code": "GN001",
+        "name": "Generator Bearing DE Overtemperature",
+        "severity": "HIGH"
+      },
+      "detectedAt": "2019-08-10T00:00:00Z",
+      "resolvedAt": "2019-08-25T00:00:00Z",
+      "status": "RESOLVED",
+      "confidence": 0.95,
+      "source": "LABELED",
+      "labeledEventId": "CARE-EVT-002",
+      "leadTimeDays": null,
+      "evidence": [
+        {
+          "indicator": "temperature_anomaly",
+          "value": 1.0,
+          "threshold": 0.5,
+          "deviation": 100.0,
+          "timestamp": "2019-08-10T00:00:00Z"
+        }
+      ],
+      "estimatedImpact": {
+        "lostEnergyKwh": 5554,
+        "repairCostUsd": 10554,
+        "downtimeHours": 120
+      }
+    },
+    {
+      "id": "WF-CARE-EVT-003",
+      "turbineId": "T003",
+      "plantId": "care-portugal",
+      "faultType": {
+        "id": "BL001",
+        "category": "PITCH",
+        "code": "BL001",
+        "name": "Pitch System Malfunction",
+        "severity": "MEDIUM"
+      },
+      "detectedAt": "2019-09-05T00:00:00Z",
+      "resolvedAt": "2019-09-12T00:00:00Z",
+      "status": "RESOLVED",
+      "confidence": 0.95,
+      "source": "LABELED",
+      "labeledEventId": "CARE-EVT-003",
+      "leadTimeDays": null,
+      "evidence": [
+        {
+          "indicator": "temperature_anomaly",
+          "value": 1.0,
+          "threshold": 0.5,
+          "deviation": 100.0,
+          "timestamp": "2019-09-05T00:00:00Z"
+        }
+      ],
+      "estimatedImpact": {
+        "lostEnergyKwh": 14117,
+        "repairCostUsd": 19117,
+        "downtimeHours": 56
+      }
+    },
+    {
+      "id": "WF-CARE-EVT-004",
+      "turbineId": "T004",
+      "plantId": "care-portugal",
+      "faultType": {
+        "id": "YW001",
+        "category": "YAW",
+        "code": "YW001",
+        "name": "Yaw Misalignment",
+        "severity": "MEDIUM"
+      },
+      "detectedAt": "2019-07-20T00:00:00Z",
+      "resolvedAt": "2019-07-28T00:00:00Z",
+      "status": "RESOLVED",
+      "confidence": 0.95,
+      "source": "LABELED",
+      "labeledEventId": "CARE-EVT-004",
+      "leadTimeDays": null,
+      "evidence": [
+        {
+          "indicator": "temperature_anomaly",
+          "value": 1.0,
+          "threshold": 0.5,
+          "deviation": 100.0,
+          "timestamp": "2019-07-20T00:00:00Z"
+        }
+      ],
+      "estimatedImpact": {
+        "lostEnergyKwh": 11113,
+        "repairCostUsd": 11113,
+        "downtimeHours": 64
+      }
+    },
+    {
+      "id": "WF-CARE-EVT-005",
+      "turbineId": "T005",
+      "plantId": "care-portugal",
+      "faultType": {
+        "id": "MB001",
+        "category": "MAIN_BEARING",
+        "code": "MB001",
+        "name": "Main Bearing Overtemperature",
+        "severity": "CRITICAL"
+      },
+      "detectedAt": "2019-10-01T00:00:00Z",
+      "resolvedAt": "2019-10-20T00:00:00Z",
+      "status": "RESOLVED",
+      "confidence": 0.95,
+      "source": "LABELED",
+      "labeledEventId": "CARE-EVT-005",
+      "leadTimeDays": null,
+      "evidence": [
+        {
+          "indicator": "temperature_anomaly",
+          "value": 1.0,
+          "threshold": 0.5,
+          "deviation": 100.0,
+          "timestamp": "2019-10-01T00:00:00Z"
+        }
+      ],
+      "estimatedImpact": {
+        "lostEnergyKwh": 10149,
+        "repairCostUsd": 15149,
+        "downtimeHours": 152
+      }
+    },
+    {
+      "id": "WF-DET-CARE-EVT-001",
+      "turbineId": "T001",
+      "plantId": "care-portugal",
+      "faultType": {
+        "id": "GB001",
+        "category": "GEARBOX",
+        "code": "GB001",
+        "name": "Gearbox Bearing Overtemperature",
+        "severity": "HIGH"
+      },
+      "detectedAt": "2019-06-03T00:00:00+00:00",
+      "status": "RESOLVED",
+      "confidence": 0.78,
+      "source": "DETECTED",
+      "labeledEventId": "CARE-EVT-001",
+      "leadTimeDays": 12,
+      "detectionMethod": "NBM",
+      "evidence": [
+        {
+          "indicator": "nbm_residual_zscore",
+          "value": 3.2,
+          "threshold": 2.5,
+          "deviation": 28.0,
+          "timestamp": "2019-06-03T00:00:00+00:00"
+        }
+      ],
+      "estimatedImpact": {
+        "lostEnergyKwh": 0,
+        "repairCostUsd": 0,
+        "downtimeHours": 0
+      }
+    },
+    {
+      "id": "WF-DET-CARE-EVT-002",
+      "turbineId": "T002",
+      "plantId": "care-portugal",
+      "faultType": {
+        "id": "GN001",
+        "category": "GENERATOR",
+        "code": "GN001",
+        "name": "Generator Bearing DE Overtemperature",
+        "severity": "HIGH"
+      },
+      "detectedAt": "2019-07-29T00:00:00+00:00",
+      "status": "RESOLVED",
+      "confidence": 0.78,
+      "source": "DETECTED",
+      "labeledEventId": "CARE-EVT-002",
+      "leadTimeDays": 12,
+      "detectionMethod": "NBM",
+      "evidence": [
+        {
+          "indicator": "nbm_residual_zscore",
+          "value": 3.2,
+          "threshold": 2.5,
+          "deviation": 28.0,
+          "timestamp": "2019-07-29T00:00:00+00:00"
+        }
+      ],
+      "estimatedImpact": {
+        "lostEnergyKwh": 0,
+        "repairCostUsd": 0,
+        "downtimeHours": 0
+      }
+    },
+    {
+      "id": "WF-DET-CARE-EVT-003",
+      "turbineId": "T003",
+      "plantId": "care-portugal",
+      "faultType": {
+        "id": "BL001",
+        "category": "PITCH",
+        "code": "BL001",
+        "name": "Pitch System Malfunction",
+        "severity": "MEDIUM"
+      },
+      "detectedAt": "2019-08-24T00:00:00+00:00",
+      "status": "RESOLVED",
+      "confidence": 0.78,
+      "source": "DETECTED",
+      "labeledEventId": "CARE-EVT-003",
+      "leadTimeDays": 12,
+      "detectionMethod": "NBM",
+      "evidence": [
+        {
+          "indicator": "nbm_residual_zscore",
+          "value": 3.2,
+          "threshold": 2.5,
+          "deviation": 28.0,
+          "timestamp": "2019-08-24T00:00:00+00:00"
+        }
+      ],
+      "estimatedImpact": {
+        "lostEnergyKwh": 0,
+        "repairCostUsd": 0,
+        "downtimeHours": 0
+      }
+    }
+  ],
+  "summary": {
+    "total": 8,
+    "active": 0,
+    "resolved": 8,
+    "bySource": {
+      "LABELED": 5,
+      "DETECTED": 3
+    }
+  }
+}

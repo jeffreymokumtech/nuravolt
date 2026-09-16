@@ -1,0 +1,38 @@
+{
+  "plantInfo": {
+    "plantId": "cold_start_demo",
+    "plantName": "New Plant (Cold-Start Demo)",
+    "capacity_MW": 12.0,
+    "totalInverters": 200
+  },
+  "currentStatus": {
+    "avgSoilingRatio": 0.9365524605559248,
+    "estimatedLossPct": 6.344753944407522,
+    "lastUpdateTime": "2026-06-17T13:35:15.212314+00:00",
+    "dataSource": "ml_model",
+    "validation": {
+      "mae": null,
+      "rmse": null,
+      "r_squared": null,
+      "bias": null,
+      "count": 30,
+      "model_version": "chronos2_zeroshot"
+    }
+  },
+  "fleetHealth": {
+    "normalInverters": 200,
+    "minorIssues": 0,
+    "majorIssues": 0,
+    "critical": 0
+  },
+  "economicImpact": {
+    "ytdEnergyLoss_MWh": 0,
+    "ytdRevenueLoss_EUR": 0,
+    "nextCleaningRecommended": null,
+    "estimatedROI_pct": null,
+    "expectedNetBenefit_EUR": null,
+    "paybackDays": null
+  },
+  "topPerformers": [],
+  "worstPerformers": []
+}

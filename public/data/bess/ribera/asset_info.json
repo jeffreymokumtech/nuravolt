@@ -1,0 +1,13 @@
+{
+  "asset_id": "bess-ribera-001",
+  "plant_id": "ribera",
+  "name": "Ribera BESS Unit 1",
+  "chemistry": "NMC",
+  "nominal_capacity_kwh": 3200,
+  "nominal_power_kw": 1600,
+  "manufacturer": "Samsung SDI",
+  "model": "SBB 3.2 C&I",
+  "installation_date": "2023-11-15",
+  "current_soh": 0.9412,
+  "current_soc": 0.72
+}

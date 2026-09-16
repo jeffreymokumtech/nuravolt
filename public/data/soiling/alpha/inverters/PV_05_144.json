@@ -1,0 +1,89 @@
+{
+  "inverterId": "INV 05.144",
+  "groupId": "INV 05",
+  "soilingRatio": {
+    "mean": 1.021,
+    "median": 1.0404,
+    "min": 0.1236,
+    "max": 1.05,
+    "std": 0.0577
+  },
+  "lossDisaggregation": {
+    "method": "IEA_PVPS_T13",
+    "percentages": {
+      "soiling": 0.0,
+      "temperature": 0.6,
+      "spectral": 1.0,
+      "inverter": 2.0,
+      "wiringBop": 2.0,
+      "degradation": 0.5,
+      "total": 6.1
+    },
+    "energy_kWh": {
+      "reference": 9055.7,
+      "net": 8503.0,
+      "soilingLoss": 0.0
+    }
+  },
+  "anomalyDetection": {
+    "totalAnomalies": 4,
+    "anomalyRate_pct": 0.01,
+    "periods": [
+      {
+        "start": "2025-04-19",
+        "end": "2025-04-22",
+        "duration_hours": 33.0,
+        "severity": "Critical",
+        "type": "underperformance",
+        "deviation_pct": -49.7
+      },
+      {
+        "start": "2025-04-22",
+        "end": "2025-04-26",
+        "duration_hours": 44.75,
+        "severity": "Critical",
+        "type": "overperformance",
+        "deviation_pct": 55.6
+      },
+      {
+        "start": "2022-06-26",
+        "end": "2022-06-26",
+        "duration_hours": 2.5,
+        "severity": "Minor",
+        "type": "underperformance",
+        "deviation_pct": -18.5
+      },
+      {
+        "start": "2022-06-27",
+        "end": "2022-06-28",
+        "duration_hours": 5.75,
+        "severity": "Minor",
+        "type": "overperformance",
+        "deviation_pct": 16.0
+      }
+    ]
+  },
+  "performance": {
+    "performanceRatio": 1.021,
+    "avgPowerNormalized": 0.4325,
+    "capacityFactor": 0.108,
+    "availability_pct": 100.0,
+    "productionRate": 0.985
+  },
+  "fleetComparison": {
+    "rank": 20,
+    "deviationFromMean_pct": 1.92,
+    "zScore": 1.03,
+    "severity": "Normal"
+  },
+  "dataQuality": {
+    "completeness_pct": 100.0,
+    "validRecords": 67481,
+    "totalRecords": 67481
+  },
+  "metadata": {
+    "analysisStart": "2020-10-01",
+    "analysisEnd": "2025-10-21",
+    "generatedAt": "2025-11-25T15:54:06.935180"
+  }
+}

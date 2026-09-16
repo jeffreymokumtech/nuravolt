@@ -1,0 +1,12 @@
+{
+  "metadata": {
+    "plant_id": "ribera",
+    "generated_at": "2025-12-16T14:57:07.582775"
+  },
+  "models": [
+    "RdTools SRR",
+    "DustIQ",
+    "ML NoDustIQ"
+  ],
+  "comparison": {}
+}

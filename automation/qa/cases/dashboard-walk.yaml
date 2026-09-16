@@ -1,0 +1,285 @@
+# Authenticated /dashboard walk + /demo·/showcase regression.
+#
+# Deterministic assertions (collector sets passed/failed, no LLM needed):
+#   forbid_requests   - no /data fixture fetches or /demo fetches on the real app
+#   forbid_selectors  - no leaked /demo links; nav gating (wrong tabs absent)
+#   expect_selectors  - nav gating (right tabs present)
+#   allow_console_substrings - the framer-motion PopChild forwardRef dev warning
+#                              is benign and pre-existing (untouched TicketsSection)
+#
+# Auth: export QA_SESSION_COOKIE (a signed-in Better Auth cookie for the org
+# that owns the fixture plants). Locally:
+#   COOKIE=$(curl -s -D - -o /dev/null -X POST localhost:3000/api/auth/sign-in/email \
+#     -H 'Content-Type: application/json' -H 'Origin: http://localhost:3000' \
+#     -d '{"email":"smoke@nuravolt.test","password":"smoketest-passw0rd"}' \
+#     | grep -i '^set-cookie:' | sed 's/^set-cookie: //I' | cut -d';' -f1 | paste -sd';' -)
+#   QA_SESSION_COOKIE="$COOKIE" npm run qa:ui
+#
+# Fixtures: smoke-park-one (PV, Smoke Solar Ops) + region_a-storage (BESS, same org).
+# Regenerate their data with:
+#   python scripts/seed_e2e_demo_data.py --plant-id smoke-park-one --operational
+#   python -m nuravolt.pipeline.onboard_plant --plant-id smoke-park-one
+
+# ------------------------------------------------------------------ dashboard
+- id: dash-fleet-home
+  type: ui
+  authed: true
+  url: /dashboard
+  actions:
+    - wait_for_selector: "main, [class*='ops']"
+      timeout: 20000
+    - wait_for_timeout: 1200
+  forbid_requests: ["/data/", "/demo"]
+  forbid_selectors: ['a[href^="/demo"]']
+  max_console_errors: 0
+  rubric: |
+    PASS if the fleet home shows a plant grid, an MW-usage meter, and an
+    open-tickets KPI on live data. FAIL on an empty shell, an error boundary,
+    or any /demo chrome.
+
+- id: dash-pv-overview
+  type: ui
+  authed: true
+  url: /dashboard/plant/smoke-park-one
+  actions:
+    - wait_for_selector: "main, [class*='ops']"
+      timeout: 20000
+    - wait_for_timeout: 1500
+  forbid_requests: ["/data/", "/demo"]
+  # PV plant: nav must NOT offer Battery/Revenue; MUST offer Soiling.
+  forbid_selectors:
+    - 'a[href^="/demo"]'
+    - 'a[href$="/smoke-park-one/bess"]'
+    - 'a[href$="/smoke-park-one/revenue"]'
+  expect_selectors: ['a[href$="/smoke-park-one/soiling"]']
+  allow_console_substrings: ["PopChild", "Function components cannot be given refs"]
+  max_console_errors: 0
+  rubric: |
+    PASS if the overview shows a live-power KPI, a twin expected-vs-actual chart
+    (physics-v1), a soiling forecast, and per-inverter fleet health with a
+    plausible (non-zero, non-100%) twin loss. FAIL on a fixture 404, empty
+    charts, or a twin loss that looks like a missing-data artifact.
+
+- id: dash-pv-soiling
+  type: ui
+  authed: true
+  url: /dashboard/plant/smoke-park-one/soiling
+  actions:
+    - wait_for_selector: "main, [class*='ops']"
+      timeout: 20000
+    - wait_for_timeout: 1500
+  forbid_requests: ["/data/", "/demo"]
+  forbid_selectors: ['a[href^="/demo"]']
+  max_console_errors: 0
+  rubric: |
+    PASS if the soiling page shows fleet SR, estimated loss, a cleaning
+    recommendation, a forecast with confidence bounds, and a per-inverter
+    ranking (dirtiest first). FAIL on empty tables or a fixture 404.
+
+- id: dash-pv-group
+  type: ui
+  authed: true
+  url: /dashboard/plant/smoke-park-one/group/Block%20A
+  actions:
+    - wait_for_selector: "main, [class*='ops']"
+      timeout: 20000
+    - wait_for_timeout: 1200
+  forbid_requests: ["/data/", "/demo"]
+  forbid_selectors: ['a[href^="/demo"]']
+  max_console_errors: 0
+  rubric: |
+    PASS if the group detail renders per-inverter telemetry for the group with
+    prefix-aware breadcrumbs. FAIL on a /demo breadcrumb or a fixture 404.
+
+- id: dash-pv-inverter
+  type: ui
+  authed: true
+  url: /dashboard/plant/smoke-park-one/inverter/INV-01
+  actions:
+    - wait_for_selector: "main, [class*='ops']"
+      timeout: 20000
+    - wait_for_timeout: 1500
+  forbid_requests: ["/data/", "/demo"]
+  forbid_selectors: ['a[href^="/demo"]']
+  max_console_errors: 0
+  rubric: |
+    PASS if the inverter drilldown shows live twin/rank data. FAIL on a /demo
+    breadcrumb, a maintenance-horizon /demo link, or a fixture 404.
+
+- id: dash-bess-overview
+  type: ui
+  authed: true
+  url: /dashboard/plant/region_a-storage
+  actions:
+    - wait_for_selector: "main, [class*='ops']"
+      timeout: 20000
+    - wait_for_timeout: 1500
+  forbid_requests: ["/data/", "/demo"]
+  # BESS plant: nav must NOT offer Soiling/Faults; MUST offer Revenue/Battery.
+  # The overview must not fire PV soiling/twin fetches (asset-gated).
+  forbid_selectors:
+    - 'a[href^="/demo"]'
+    - 'a[href$="/region_a-storage/soiling"]'
+    - 'a[href$="/region_a-storage/faults"]'
+  expect_selectors:
+    - 'a[href$="/region_a-storage/revenue"]'
+    - 'a[href$="/region_a-storage/bess"]'
+  max_console_errors: 0
+  rubric: |
+    PASS if the BESS overview shows SoH, usable capacity, and a battery-state
+    panel (chemistry/power/energy/SoC) with Battery + Revenue links, and NO PV
+    soiling/twin panels. FAIL if it renders PV empty-states or fetches PV
+    endpoints for a battery plant.
+
+- id: dash-bess-battery
+  type: ui
+  authed: true
+  url: /dashboard/plant/region_a-storage/bess
+  actions:
+    - wait_for_selector: "main, [class*='ops']"
+      timeout: 20000
+    - wait_for_timeout: 1800
+  forbid_requests: ["/data/", "/demo"]
+  forbid_selectors: ['a[href^="/demo"]']
+  max_console_errors: 0
+  rubric: |
+    PASS if the battery page shows DB-sourced SoH, safety indicators, cycling,
+    throughput and residual value. A "warranty unavailable" empty-state is
+    acceptable for a synthesized asset (no warranty contract). FAIL on a
+    /data soh_history 404 or a crash.
+
+- id: dash-bess-revenue
+  type: ui
+  authed: true
+  url: /dashboard/plant/region_a-storage/revenue
+  actions:
+    - wait_for_selector: "main, [class*='ops']"
+      timeout: 20000
+    - wait_for_timeout: 1500
+  forbid_requests: ["/data/", "/demo"]
+  forbid_selectors: ['a[href^="/demo"]']
+  max_console_errors: 0
+  rubric: |
+    PASS if the revenue cockpit shows a daily dispatch-revenue stack derived
+    from DB dispatch rows. FAIL on empty charts or a crash.
+
+- id: dash-bess-curtailment
+  type: ui
+  authed: true
+  url: /dashboard/plant/region_a-storage/curtailment
+  actions:
+    - wait_for_selector: "main, [class*='ops']"
+      timeout: 20000
+    - wait_for_timeout: 1500
+  forbid_requests: ["/data/", "/demo"]
+  forbid_selectors: ['a[href^="/demo"]']
+  max_console_errors: 0
+  rubric: |
+    PASS if the pure-BESS plant shows the honest "no PV to curtail" empty state
+    with a prefix-aware Revenue CTA. FAIL on a crash or a /demo link.
+
+- id: dash-data-hub
+  type: ui
+  authed: true
+  url: /dashboard/data-hub
+  actions:
+    - wait_for_selector: "h1, h2, button, [class*='min-h-screen']"
+      timeout: 20000
+    - wait_for_timeout: 1200
+  forbid_requests: ["/data/", "/demo"]
+  forbid_selectors: ['a[href^="/demo"]']
+  max_console_errors: 0
+  rubric: |
+    PASS if the data hub renders the connection wizard entry. FAIL on a crash.
+
+- id: dash-agent
+  type: ui
+  authed: true
+  url: /chat?plant=smoke-park-one
+  actions:
+    - wait_for_selector: "textarea[data-chat-input='true']"
+      timeout: 20000
+    - wait_for_timeout: 1200
+  forbid_requests: ["/data/", "/demo"]
+  # Shams shares the ops chrome: switcher present, no /demo bleed.
+  forbid_selectors: ['a[href^="/demo"]']
+  expect_selectors: ['a[href="/dashboard/plant/smoke-park-one"]']
+  max_console_errors: 0
+  rubric: |
+    PASS if the full-screen Shams view renders inside the ops chrome (command
+    bar with the Dashboard/Shams switcher), a conversation sidebar, the Shams
+    header with the plant context chip, and an empty-state or message list plus
+    the input. FAIL on the old standalone white layout (no command bar), an
+    upgrade lock (the smoke org is Business), or a crash.
+
+# ------------------------------------------------------- demo / showcase regression
+# Fixtures are EXPECTED here (no forbid_requests). Just confirm they still render
+# and the links stay on /demo (no /dashboard bleed).
+- id: demo-portfolio
+  type: ui
+  url: /demo/portfolio
+  actions:
+    - wait_for_selector: "main, [class*='ops']"
+      timeout: 20000
+    - wait_for_timeout: 1200
+  forbid_selectors: ['a[href^="/dashboard"]']
+  allow_console_substrings: ["PopChild", "Function components cannot be given refs"]
+  max_console_errors: 0
+  rubric: |
+    PASS if the marketing demo portfolio still renders on fixtures. FAIL on a
+    crash or any /dashboard link leaking into the demo surface.
+
+- id: showcase-overview
+  type: ui
+  url: /showcase/plant/helios
+  actions:
+    - wait_for_selector: "main, [class*='ops']"
+      timeout: 20000
+    - wait_for_timeout: 1500
+  forbid_selectors: ['a[href^="/dashboard"]']
+  max_console_errors: 0
+  rubric: |
+    PASS if the showcase plant overview renders on fixtures without an error
+    boundary (regression guard for the predictive_faults null crash). FAIL on
+    "Something went wrong" or a console TypeError.
+
+- id: demo-soiling-per-inverter
+  type: ui
+  url: /demo/plant/alpha/soiling
+  actions:
+    - wait_for_selector: "main, [class*='ops']"
+      timeout: 20000
+    - wait_for_timeout: 2500
+  # The zone soiling map must render MEASURED per-inverter tiles (150 for
+  # alpha) — this walk previously never exercised the demo plants where
+  # the fleet-mean+jitter placeholder lived.
+  expect_selectors: ['[data-zone-cell]']
+  forbid_selectors: ['a[href^="/dashboard"]']
+  allow_console_substrings: ["PopChild", "Function components cannot be given refs"]
+  max_console_errors: 0
+  rubric: |
+    PASS if the soiling overview renders the KPI strip with real values (no
+    mulberry-style placeholders), an SR forecast chart, and a zone soiling map
+    with per-inverter tiles across several inverter groups; the cleaning
+    optimiser panel either shows a saved optimisation or an explicit
+    "run the optimiser" call-to-action. FAIL on fixture 404s, an empty zone
+    map, a literal "Jun 22" optimal date, or any /dashboard link on the demo
+    surface.
+
+- id: dash-settings-integrations
+  type: ui
+  authed: true
+  url: /dashboard/settings/integrations
+  actions:
+    - wait_for_selector: "input[placeholder='https://hook.example.com/nuravolt']"
+      timeout: 20000
+    - wait_for_timeout: 2000
+  forbid_requests: ["/data/"]
+  forbid_selectors: ['a[href^="/demo"]']
+  max_console_errors: 0
+  rubric: |
+    PASS if the integrations settings page renders inside the ops chrome with
+    the "Generic webhook" create form (name, endpoint URL, event checkboxes)
+    and the O&M catalog cards (monday.com, TabTool, Jira, Make and Zapier),
+    honest copy that the vendor cards work via the generic webhook. FAIL on an
+    upgrade lock (the smoke org is Business), a crash, or any /demo link.

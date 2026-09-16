@@ -1,0 +1,2170 @@
+{
+  "plant_id": "alpha",
+  "generated_at": "2025-12-13T00:00:00+00:00",
+  "summary": {
+    "current_loss_kwh": 43.1,
+    "projected_loss_kwh": 93.5,
+    "current_loss_value": 3,
+    "projected_loss_value": 6,
+    "currency": "EUR",
+    "reactive_count": 54,
+    "predictive_count": 9,
+    "critical_count": 2,
+    "urgent_count": 1,
+    "soon_count": 3,
+    "planned_count": 0,
+    "monitoring_count": 0
+  },
+  "health_score": {
+    "value": 60,
+    "status": "attention_needed",
+    "anomaly_penalty": 0,
+    "fault_penalty": 20,
+    "rul_penalty": 20,
+    "trend": "stable"
+  },
+  "rul_predictions": [
+    {
+      "fault_type": "string_degradation",
+      "display_name": "String Degradation",
+      "days_to_fault": 7,
+      "confidence": 0.75,
+      "current_value": -2.03,
+      "threshold": 5.0,
+      "unit": "% voltage deviation",
+      "trend": -0.4103,
+      "urgency": "urgent",
+      "is_urgent": true,
+      "recommended_action": "IV-curve trace the strings on this inverter; check connectors and isolation.",
+      "repair_cost_eur": 800,
+      "estimated_date": "2025-12-20T00:00:00+00:00",
+      "projected_power_loss_kw": 1.47,
+      "projected_energy_loss_kwh": 8.1,
+      "revenue_at_risk_eur": 4,
+      "inverter_id": "PV-03.089",
+      "classification_layer": "AI_OVERRIDE",
+      "evidence": "Voltage deviation trend of -0.4103%/d with 7 days to fault aligns with progressive string degradation pattern.",
+      "numeric_evidence": {
+        "ai_reasoning": "The negative voltage deviation trend and the projected time to fault are consistent with string degradation. While the upstream ML classifier assigned 75% confidence, the clear trend and alignment with degradation signatures justify a slight increase in confidence. No other fault type in the taxonomy better matches the observed pattern.",
+        "model_id": "qwen.qwen3-32b-v1:0"
+      },
+      "winner_reason": "AI override: ML_CLASSIFIER @ 0.75 \u2192 AI @ 0.82 reclassified as string_degradation",
+      "layer_chain": [
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "string_degradation",
+          "confidence": 0.75,
+          "evidence": "CatBoost classifier: string degradation @ 75% probability, trend -41.03%/d (improving), ~7d to fault",
+          "severity": "urgent"
+        },
+        {
+          "layer": "AI_OVERRIDE",
+          "fault_type": "string_degradation",
+          "confidence": 0.82,
+          "evidence": "Voltage deviation trend of -0.4103%/d with 7 days to fault aligns with progressive string degradation pattern.",
+          "severity": "warning"
+        }
+      ],
+      "severity": "warning",
+      "asset_type": "PV_STRING",
+      "cascade_winning_confidence": 0.82,
+      "confidence_cascade": 0.82
+    },
+    {
+      "fault_type": "string_degradation",
+      "display_name": "String Degradation",
+      "days_to_fault": 1,
+      "confidence": 0.9,
+      "current_value": -53.68,
+      "threshold": 5.0,
+      "unit": "% voltage deviation",
+      "trend": 0.3814,
+      "urgency": "critical",
+      "is_urgent": true,
+      "recommended_action": "IV-curve trace the strings on this inverter; check connectors and isolation.",
+      "repair_cost_eur": 800,
+      "estimated_date": "2025-12-14T00:00:00+00:00",
+      "projected_power_loss_kw": 6.32,
+      "projected_energy_loss_kwh": 34.8,
+      "revenue_at_risk_eur": 2,
+      "inverter_id": "PV-04.099",
+      "classification_layer": "RULE",
+      "evidence": "string degradation: actual -53.68% voltage deviation severely exceeds rule threshold 5.00% voltage deviation (+974%, rule R-39)",
+      "numeric_evidence": {
+        "actual": -53.68,
+        "threshold": 5.0,
+        "unit": "% voltage deviation",
+        "overage_pct": 973.6
+      },
+      "winner_reason": "highest confidence (0.95) via RULE",
+      "layer_chain": [
+        {
+          "layer": "RULE",
+          "fault_type": "string_degradation",
+          "confidence": 0.95,
+          "evidence": "string degradation: actual -53.68% voltage deviation severely exceeds rule threshold 5.00% voltage deviation (+974%, rule R-39)",
+          "severity": "critical"
+        },
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "string_degradation",
+          "confidence": 0.85,
+          "evidence": "digital twin residual 48.68% voltage deviation above expected; actual -53.68 vs twin band \u00b15.00",
+          "severity": "critical"
+        },
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "string_degradation",
+          "confidence": 0.85,
+          "evidence": "CatBoost classifier: string degradation @ 85% probability, trend +38.14%/d (worsening), ~1d to fault",
+          "severity": "critical"
+        }
+      ],
+      "severity": "critical",
+      "asset_type": "PV_STRING",
+      "confidence_cascade": 0.95,
+      "cascade_winning_confidence": 0.95
+    },
+    {
+      "fault_type": "string_degradation",
+      "display_name": "String Degradation",
+      "days_to_fault": 10,
+      "confidence": 0.78,
+      "current_value": -2.4,
+      "threshold": 5.0,
+      "unit": "% voltage deviation",
+      "trend": -0.2684,
+      "urgency": "soon",
+      "is_urgent": false,
+      "recommended_action": "IV-curve trace the strings on this inverter; check connectors and isolation.",
+      "repair_cost_eur": 800,
+      "estimated_date": "2025-12-23T00:00:00+00:00",
+      "projected_power_loss_kw": 0.04,
+      "projected_energy_loss_kwh": 0.2,
+      "revenue_at_risk_eur": 0,
+      "inverter_id": "PV-04.103",
+      "classification_layer": "AI_OVERRIDE",
+      "evidence": "Voltage deviation trend is consistent with progressive string degradation, with a -0.2684%/d decline and ~10 days to fault threshold.",
+      "numeric_evidence": {
+        "ai_reasoning": "The negative voltage deviation trend and the projected time to fault align with known signatures of string degradation. While the upstream ML model already flagged this as string degradation with 78% confidence, the clear and consistent trend in the raw signal supports a higher confidence level. No other fault type in the taxonomy better matches this pattern of gradual performance decline.",
+        "model_id": "qwen.qwen3-32b-v1:0"
+      },
+      "winner_reason": "AI override: ML_CLASSIFIER @ 0.78 \u2192 AI @ 0.85 reclassified as string_degradation",
+      "layer_chain": [
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "string_degradation",
+          "confidence": 0.78,
+          "evidence": "CatBoost classifier: string degradation @ 78% probability, trend -26.84%/d (improving), ~10d to fault",
+          "severity": "warning"
+        },
+        {
+          "layer": "AI_OVERRIDE",
+          "fault_type": "string_degradation",
+          "confidence": 0.85,
+          "evidence": "Voltage deviation trend is consistent with progressive string degradation, with a -0.2684%/d decline and ~10 days to fault threshold.",
+          "severity": "warning"
+        }
+      ],
+      "severity": "warning",
+      "asset_type": "PV_STRING",
+      "cascade_winning_confidence": 0.85,
+      "confidence_cascade": 0.85
+    },
+    {
+      "fault_type": "string_degradation",
+      "display_name": "String Degradation",
+      "days_to_fault": 1,
+      "confidence": 0.9,
+      "current_value": 5.55,
+      "threshold": 5.0,
+      "unit": "% voltage deviation",
+      "trend": -0.2882,
+      "urgency": "critical",
+      "is_urgent": true,
+      "recommended_action": "IV-curve trace the strings on this inverter; check connectors and isolation.",
+      "repair_cost_eur": 800,
+      "estimated_date": "2025-12-14T00:00:00+00:00",
+      "projected_power_loss_kw": 0.0,
+      "projected_energy_loss_kwh": 0.0,
+      "revenue_at_risk_eur": 0,
+      "inverter_id": "PV-05.148",
+      "classification_layer": "ML_CLASSIFIER",
+      "evidence": "CatBoost classifier: string degradation @ 85% probability, trend -28.82%/d (improving), ~1d to fault",
+      "numeric_evidence": {
+        "model_probability": 0.85,
+        "days_to_fault": 1,
+        "trend_per_day": -0.2882
+      },
+      "winner_reason": "highest confidence (0.85) via ML_CLASSIFIER",
+      "layer_chain": [
+        {
+          "layer": "RULE",
+          "fault_type": "string_degradation",
+          "confidence": 0.772,
+          "evidence": "string degradation: actual 5.55% voltage deviation moderately exceeds rule threshold 5.00% voltage deviation (+11%, rule R-39)",
+          "severity": "critical"
+        },
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "string_degradation",
+          "confidence": 0.472,
+          "evidence": "digital twin residual 0.55% voltage deviation above expected; actual 5.55 vs twin band \u00b15.00",
+          "severity": "critical"
+        },
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "string_degradation",
+          "confidence": 0.85,
+          "evidence": "CatBoost classifier: string degradation @ 85% probability, trend -28.82%/d (improving), ~1d to fault",
+          "severity": "critical"
+        }
+      ],
+      "severity": "critical",
+      "asset_type": "PV_STRING",
+      "cascade_winning_confidence": 0.85
+    },
+    {
+      "id": "bess-reactive-soc_high_dwell-bess-alpha-001-0",
+      "fault_type": "soc_high_dwell",
+      "display_name": "Prolonged High SoC",
+      "equipment_id": "bess-alpha-001",
+      "equipment_name": "Alpha BESS Unit 1",
+      "asset_type": "BESS_PACK",
+      "days_to_fault": 0.0,
+      "confidence": 1.0,
+      "current_value": 55.8,
+      "threshold": 24.0,
+      "unit": "h cumulative",
+      "trend": null,
+      "urgency": "soon",
+      "is_urgent": false,
+      "recommended_action": "Dispatch energy to reduce SoC below 95%",
+      "estimated_date": "2026-06-16",
+      "projected_power_loss_kw": 0.0,
+      "projected_energy_loss_kwh": 0.0,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 0.0,
+      "is_reactive": true,
+      "bess_source": true,
+      "classification_layer": "RULE",
+      "evidence": "soc high dwell: actual 55.80h cumulative severely exceeds rule threshold 24.00h cumulative (+132%, rule R-28)",
+      "numeric_evidence": {
+        "actual": 55.8,
+        "threshold": 24.0,
+        "unit": "h cumulative",
+        "overage_pct": 132.5
+      },
+      "winner_reason": "highest confidence (0.95) via RULE",
+      "layer_chain": [
+        {
+          "layer": "RULE",
+          "fault_type": "soc_high_dwell",
+          "confidence": 0.95,
+          "evidence": "soc high dwell: actual 55.80h cumulative severely exceeds rule threshold 24.00h cumulative (+132%, rule R-28)",
+          "severity": "warning"
+        },
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "soc_high_dwell",
+          "confidence": 0.715,
+          "evidence": "digital twin residual 31.80h cumulative above expected; actual 55.80 vs twin band \u00b124.00",
+          "severity": "warning"
+        }
+      ],
+      "severity": "warning",
+      "cascade_winning_confidence": 0.95
+    },
+    {
+      "id": "bess-reactive-temperature_exceed-bess-alpha-001-1",
+      "fault_type": "temperature_exceed",
+      "display_name": "Inverter Overtemperature",
+      "equipment_id": "bess-alpha-001",
+      "equipment_name": "Alpha BESS Unit 1",
+      "asset_type": "BESS_PACK",
+      "days_to_fault": 0.0,
+      "confidence": 1.0,
+      "current_value": 37.3,
+      "threshold": 35.0,
+      "unit": "\u00b0C",
+      "trend": null,
+      "urgency": "soon",
+      "is_urgent": false,
+      "recommended_action": "Check HVAC, reduce power to lower cell temperature",
+      "estimated_date": "2026-06-17",
+      "projected_power_loss_kw": 575.0,
+      "projected_energy_loss_kwh": 13800.0,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 1035.0,
+      "is_reactive": true,
+      "bess_source": true,
+      "classification_layer": "AI_OVERRIDE",
+      "evidence": "Inverter temperature of 37.30\u00b0C moderately exceeds the threshold of 35.00\u00b0C, indicating a potential overtemperature condition.",
+      "numeric_evidence": {
+        "ai_reasoning": "The rule-based and digital twin residual layers both identified a temperature exceedance, with the rule-based layer showing higher confidence. The temperature threshold is a known indicator of inverter overtemperature, and the absence of a clear trend or degradation pattern suggests a transient or operational fault rather than a systemic aging issue. Therefore, the most specific and accurate classification is inverter_overtemperature.",
+        "model_id": "qwen.qwen3-32b-v1:0"
+      },
+      "winner_reason": "AI override: RULE @ 0.76 \u2192 AI @ 0.82 reclassified as inverter_overtemperature",
+      "layer_chain": [
+        {
+          "layer": "RULE",
+          "fault_type": "temperature_exceed",
+          "confidence": 0.763,
+          "evidence": "temperature exceed: actual 37.30\u00b0C moderately exceeds rule threshold 35.00\u00b0C (+7%, rule R-53)",
+          "severity": "warning"
+        },
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "temperature_exceed",
+          "confidence": 0.463,
+          "evidence": "digital twin residual 2.30\u00b0C above expected; actual 37.30 vs twin band \u00b135.00",
+          "severity": "warning"
+        },
+        {
+          "layer": "AI_OVERRIDE",
+          "fault_type": "inverter_overtemperature",
+          "confidence": 0.82,
+          "evidence": "Inverter temperature of 37.30\u00b0C moderately exceeds the threshold of 35.00\u00b0C, indicating a potential overtemperature condition.",
+          "severity": "warning"
+        }
+      ],
+      "severity": "warning",
+      "fault_type_original": "temperature_exceed",
+      "fault_type_reclassified": "inverter_overtemperature",
+      "cascade_winning_confidence": 0.82
+    },
+    {
+      "id": "bess-pred-rte_decay-bess-alpha-001",
+      "fault_type": "rte_decay",
+      "display_name": "Round-Trip Efficiency Decay",
+      "equipment_id": "bess-alpha-001",
+      "equipment_name": "Alpha BESS Unit 1",
+      "asset_type": "BESS_PACK",
+      "days_to_fault": 79.1,
+      "confidence": 0.741,
+      "current_value": 0.881,
+      "threshold": 0.85,
+      "unit": "%",
+      "trend": -0.000376,
+      "urgency": "monitoring",
+      "is_urgent": false,
+      "recommended_action": "Investigate internal resistance increase. Check connections, BMS calibration, and consider capacity test to confirm degradation.",
+      "estimated_date": "2026-09-06",
+      "projected_power_loss_kw": 0.0,
+      "projected_energy_loss_kwh": 0.0,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 0.0,
+      "is_reactive": false,
+      "bess_source": true,
+      "classification_layer": "AI_OVERRIDE",
+      "evidence": "AI: confirms rte decay with higher confidence (RULE @ 76% \u2192 AI @ 86%); signal pattern matches known fault signature",
+      "numeric_evidence": {
+        "prior_best_confidence": 0.757,
+        "ai_synthesised_confidence": 0.865,
+        "reclassified_from": null,
+        "source": "synthetic"
+      },
+      "winner_reason": "AI override: RULE @ 0.76 \u2192 AI @ 0.86 reclassified as rte_decay",
+      "layer_chain": [
+        {
+          "layer": "RULE",
+          "fault_type": "rte_decay",
+          "confidence": 0.757,
+          "evidence": "rte decay: actual 0.88% marginally exceeds rule threshold 0.85% (+4%, rule R-03)",
+          "severity": "info"
+        },
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "rte_decay",
+          "confidence": 0.457,
+          "evidence": "digital twin residual 0.03% above expected; actual 0.88 vs twin band \u00b10.85",
+          "severity": "info"
+        },
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "rte_decay",
+          "confidence": 0.741,
+          "evidence": "CatBoost classifier: rte decay @ 74% probability, ~79d to fault",
+          "severity": "info"
+        },
+        {
+          "layer": "AI_OVERRIDE",
+          "fault_type": "rte_decay",
+          "confidence": 0.865,
+          "evidence": "AI: confirms rte decay with higher confidence (RULE @ 76% \u2192 AI @ 86%); signal pattern matches known fault signature",
+          "severity": "info"
+        }
+      ],
+      "severity": "info",
+      "confidence_cascade": 0.865,
+      "cascade_winning_confidence": 0.865
+    },
+    {
+      "id": "bess-pred-cell_imbalance-bess-alpha-001",
+      "fault_type": "cell_imbalance",
+      "display_name": "Cell Voltage Imbalance Warning",
+      "equipment_id": "bess-alpha-001",
+      "equipment_name": "Alpha BESS Unit 1",
+      "asset_type": "BESS_MODULE",
+      "days_to_fault": 121.0,
+      "confidence": 0.991,
+      "current_value": 14.8,
+      "threshold": 50.0,
+      "unit": "mV",
+      "trend": 0.29033,
+      "urgency": "monitoring",
+      "is_urgent": false,
+      "recommended_action": "Schedule a full balance cycle. If spread continues growing, inspect individual cells for early-stage failure.",
+      "estimated_date": "2026-10-18",
+      "projected_power_loss_kw": 100.0,
+      "projected_energy_loss_kwh": 2400.0,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 180.0,
+      "is_reactive": false,
+      "bess_source": true,
+      "classification_layer": "ML_CLASSIFIER",
+      "evidence": "CatBoost classifier: cell imbalance @ 85% probability, trend +29.03%/d (worsening), ~121d to fault",
+      "numeric_evidence": {
+        "model_probability": 0.85,
+        "days_to_fault": 121.0,
+        "trend_per_day": 0.29033
+      },
+      "winner_reason": "highest confidence (0.85) via ML_CLASSIFIER",
+      "layer_chain": [
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "cell_imbalance",
+          "confidence": 0.85,
+          "evidence": "CatBoost classifier: cell imbalance @ 85% probability, trend +29.03%/d (worsening), ~121d to fault",
+          "severity": "info"
+        }
+      ],
+      "severity": "info",
+      "cascade_winning_confidence": 0.85
+    },
+    {
+      "id": "bess-pred-capacity_fade-bess-alpha-001",
+      "fault_type": "capacity_fade",
+      "display_name": "Capacity Fade Warning",
+      "equipment_id": "bess-alpha-001",
+      "equipment_name": "Alpha BESS Unit 1",
+      "asset_type": "BESS_PACK",
+      "days_to_fault": 3650.0,
+      "confidence": 0.822,
+      "current_value": 0.9537,
+      "threshold": 0.7,
+      "unit": "%",
+      "trend": -6.6e-05,
+      "urgency": "monitoring",
+      "is_urgent": false,
+      "recommended_action": "Review dispatch strategy to reduce cycling stress and calendar aging",
+      "estimated_date": "2036-06-16",
+      "projected_power_loss_kw": 231.5,
+      "projected_energy_loss_kwh": 5556.0,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 416.7,
+      "is_reactive": false,
+      "bess_source": true,
+      "classification_layer": "AI_OVERRIDE",
+      "evidence": "AI: confirms capacity fade with higher confidence (RULE @ 82% \u2192 AI @ 90%); signal pattern matches known fault signature",
+      "numeric_evidence": {
+        "prior_best_confidence": 0.822,
+        "ai_synthesised_confidence": 0.9,
+        "reclassified_from": null,
+        "source": "synthetic"
+      },
+      "winner_reason": "AI override: RULE @ 0.82 \u2192 AI @ 0.90 reclassified as capacity_fade",
+      "layer_chain": [
+        {
+          "layer": "RULE",
+          "fault_type": "capacity_fade",
+          "confidence": 0.822,
+          "evidence": "capacity fade: actual 0.95% substantially exceeds rule threshold 0.70% (+36%, rule R-95)",
+          "severity": "info"
+        },
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "capacity_fade",
+          "confidence": 0.522,
+          "evidence": "digital twin residual 0.25% above expected; actual 0.95 vs twin band \u00b10.70",
+          "severity": "info"
+        },
+        {
+          "layer": "AI_OVERRIDE",
+          "fault_type": "capacity_fade",
+          "confidence": 0.9,
+          "evidence": "AI: confirms capacity fade with higher confidence (RULE @ 82% \u2192 AI @ 90%); signal pattern matches known fault signature",
+          "severity": "info"
+        }
+      ],
+      "severity": "info",
+      "confidence_cascade": 0.9,
+      "cascade_winning_confidence": 0.9
+    },
+    {
+      "id": "bess-pred-thermal_stress-bess-alpha-001",
+      "fault_type": "thermal_stress",
+      "display_name": "Thermal Stress Warning",
+      "equipment_id": "bess-alpha-001",
+      "equipment_name": "Alpha BESS Unit 1",
+      "asset_type": "BESS_MODULE",
+      "days_to_fault": 3650.0,
+      "confidence": 0.421,
+      "current_value": 29.1446,
+      "threshold": 45.0,
+      "unit": "\u00b0C",
+      "trend": 0.109221,
+      "urgency": "monitoring",
+      "is_urgent": false,
+      "recommended_action": "Inspect HVAC / cooling system. Reduce peak power during hottest hours to lower cell temperature.",
+      "estimated_date": "2036-06-16",
+      "projected_power_loss_kw": 250.0,
+      "projected_energy_loss_kwh": 6000.0,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 450.0,
+      "is_reactive": false,
+      "bess_source": true,
+      "classification_layer": "AI_OVERRIDE",
+      "evidence": "AI: confirms thermal stress with higher confidence (ML_CLASSIFIER @ 45% \u2192 AI @ 60%); signal pattern matches known fault signature",
+      "numeric_evidence": {
+        "prior_best_confidence": 0.45,
+        "ai_synthesised_confidence": 0.6,
+        "reclassified_from": null,
+        "source": "synthetic"
+      },
+      "winner_reason": "AI override: ML_CLASSIFIER @ 0.45 \u2192 AI @ 0.60 reclassified as thermal_stress",
+      "layer_chain": [
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "thermal_stress",
+          "confidence": 0.43,
+          "evidence": "digital twin residual 15.86\u00b0C below expected; actual 29.14 vs twin band \u00b145.00",
+          "severity": "info"
+        },
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "thermal_stress",
+          "confidence": 0.45,
+          "evidence": "CatBoost classifier: thermal stress @ 45% probability, trend +10.92%/d (worsening), ~3650d to fault",
+          "severity": "info"
+        },
+        {
+          "layer": "AI_OVERRIDE",
+          "fault_type": "thermal_stress",
+          "confidence": 0.6,
+          "evidence": "AI: confirms thermal stress with higher confidence (ML_CLASSIFIER @ 45% \u2192 AI @ 60%); signal pattern matches known fault signature",
+          "severity": "info"
+        }
+      ],
+      "severity": "info",
+      "confidence_cascade": 0.6,
+      "cascade_winning_confidence": 0.6
+    },
+    {
+      "id": "bess-pred-cycle_life-bess-alpha-001",
+      "fault_type": "cycle_life",
+      "display_name": "Cycle Life Warning",
+      "equipment_id": "bess-alpha-001",
+      "equipment_name": "Alpha BESS Unit 1",
+      "asset_type": "BESS_PACK",
+      "days_to_fault": 3650.0,
+      "confidence": 0.996,
+      "current_value": 75.4,
+      "threshold": 6000.0,
+      "unit": "EFC",
+      "trend": 0.785161,
+      "urgency": "monitoring",
+      "is_urgent": false,
+      "recommended_action": "Reduce daily cycling frequency. Consider partial-cycle dispatching to stay within warranty budget.",
+      "estimated_date": "2036-06-16",
+      "projected_power_loss_kw": 0.0,
+      "projected_energy_loss_kwh": 0.0,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 0.0,
+      "is_reactive": false,
+      "bess_source": true,
+      "classification_layer": "ML_CLASSIFIER",
+      "evidence": "CatBoost classifier: cycle life @ 85% probability, trend +78.52%/d (worsening), ~3650d to fault",
+      "numeric_evidence": {
+        "model_probability": 0.85,
+        "days_to_fault": 3650.0,
+        "trend_per_day": 0.785161
+      },
+      "winner_reason": "highest confidence (0.85) via ML_CLASSIFIER",
+      "layer_chain": [
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "cycle_life",
+          "confidence": 0.85,
+          "evidence": "CatBoost classifier: cycle life @ 85% probability, trend +78.52%/d (worsening), ~3650d to fault",
+          "severity": "info"
+        }
+      ],
+      "severity": "info",
+      "cascade_winning_confidence": 0.85
+    }
+  ],
+  "urgency_summary": {
+    "urgent": {
+      "count": 1,
+      "total_revenue_at_risk_eur": 4
+    },
+    "critical": {
+      "count": 2,
+      "total_revenue_at_risk_eur": 2
+    },
+    "soon": {
+      "count": 1,
+      "total_revenue_at_risk_eur": 0
+    },
+    "planned": {
+      "count": 0,
+      "total_revenue_at_risk_eur": 0
+    },
+    "monitoring": {
+      "count": 0,
+      "total_revenue_at_risk_eur": 0
+    }
+  },
+  "maintenance_schedule": {
+    "next_7_days": [
+      {
+        "date": "2025-12-13",
+        "tasks": [
+          {
+            "fault_type": "string_degradation",
+            "inverter_id": "PV-04.099",
+            "priority_score": 106
+          },
+          {
+            "fault_type": "string_degradation",
+            "inverter_id": "PV-05.148",
+            "priority_score": 106
+          }
+        ]
+      },
+      {
+        "date": "2025-12-14",
+        "tasks": [
+          {
+            "fault_type": "string_degradation",
+            "inverter_id": "PV-04.099",
+            "priority_score": 106
+          },
+          {
+            "fault_type": "string_degradation",
+            "inverter_id": "PV-05.148",
+            "priority_score": 106
+          }
+        ]
+      },
+      {
+        "date": "2025-12-15",
+        "tasks": [
+          {
+            "fault_type": "string_degradation",
+            "inverter_id": "PV-04.099",
+            "priority_score": 106
+          },
+          {
+            "fault_type": "string_degradation",
+            "inverter_id": "PV-05.148",
+            "priority_score": 106
+          }
+        ]
+      },
+      {
+        "date": "2025-12-16",
+        "tasks": [
+          {
+            "fault_type": "string_degradation",
+            "inverter_id": "PV-04.099",
+            "priority_score": 106
+          },
+          {
+            "fault_type": "string_degradation",
+            "inverter_id": "PV-05.148",
+            "priority_score": 106
+          }
+        ]
+      },
+      {
+        "date": "2025-12-17",
+        "tasks": [
+          {
+            "fault_type": "string_degradation",
+            "inverter_id": "PV-04.099",
+            "priority_score": 106
+          },
+          {
+            "fault_type": "string_degradation",
+            "inverter_id": "PV-05.148",
+            "priority_score": 106
+          }
+        ]
+      },
+      {
+        "date": "2025-12-18",
+        "tasks": [
+          {
+            "fault_type": "string_degradation",
+            "inverter_id": "PV-04.099",
+            "priority_score": 106
+          },
+          {
+            "fault_type": "string_degradation",
+            "inverter_id": "PV-05.148",
+            "priority_score": 106
+          }
+        ]
+      },
+      {
+        "date": "2025-12-19",
+        "tasks": [
+          {
+            "fault_type": "string_degradation",
+            "inverter_id": "PV-03.089",
+            "priority_score": 86
+          },
+          {
+            "fault_type": "string_degradation",
+            "inverter_id": "PV-04.099",
+            "priority_score": 106
+          },
+          {
+            "fault_type": "string_degradation",
+            "inverter_id": "PV-05.148",
+            "priority_score": 106
+          }
+        ]
+      }
+    ],
+    "total_repair_cost_eur": 3200,
+    "total_revenue_saved_eur": 6,
+    "roi_pct": -99.8
+  },
+  "loss_disaggregation": {
+    "reference_energy_kwh": 2450000,
+    "net_energy_kwh": 2155265.0,
+    "losses": {
+      "soiling": {
+        "kwh": 76685.0,
+        "pct": 3.13
+      },
+      "temperature": {
+        "kwh": 71540.0,
+        "pct": 2.92
+      },
+      "spectral": {
+        "kwh": 15925.0,
+        "pct": 0.65
+      },
+      "inverter": {
+        "kwh": 43365.0,
+        "pct": 1.77
+      },
+      "wiring_bop": {
+        "kwh": 48755.0,
+        "pct": 1.99
+      },
+      "degradation": {
+        "kwh": 16905.0,
+        "pct": 0.69
+      },
+      "curtailment": {
+        "kwh": 21560.0,
+        "pct": 0.88
+      }
+    }
+  },
+  "reactive_faults": [
+    {
+      "id": "RF-0001",
+      "fault_type": "string_mismatch_coarse",
+      "severity": "warning",
+      "equipment_id": "PV-04.027",
+      "equipment_name": "PV-04.027",
+      "timestamp_start": "2026-01-02T20:06:23.068565",
+      "timestamp_end": "2026-01-03T04:58:23.068565",
+      "value": 0.93,
+      "threshold": 1.0,
+      "message": "String Mismatch Coarse detected on INV 04.027",
+      "duration_minutes": 532,
+      "power_loss_kw": 0.59,
+      "energy_loss_kwh": 8.71
+    },
+    {
+      "id": "RF-0002",
+      "fault_type": "string_open_circuit",
+      "severity": "critical",
+      "equipment_id": "PV-01.020",
+      "equipment_name": "PV-01.020",
+      "timestamp_start": "2025-12-29T00:06:23.068565",
+      "timestamp_end": "2025-12-29T10:30:23.068565",
+      "value": 0.61,
+      "threshold": 1.0,
+      "message": "String Open Circuit detected on INV 01.020",
+      "duration_minutes": 624,
+      "power_loss_kw": 1.02,
+      "energy_loss_kwh": 59.82
+    },
+    {
+      "id": "RF-0003",
+      "fault_type": "string_open_circuit",
+      "severity": "critical",
+      "equipment_id": "PV-02.013",
+      "equipment_name": "PV-02.013",
+      "timestamp_start": "2025-12-27T09:06:23.068565",
+      "timestamp_end": null,
+      "value": 0.97,
+      "threshold": 1.0,
+      "message": "String Open Circuit detected on INV 02.013",
+      "duration_minutes": 421,
+      "power_loss_kw": 0.86,
+      "energy_loss_kwh": 17.06
+    },
+    {
+      "id": "RF-0004",
+      "fault_type": "inverter_efficiency_degradation",
+      "severity": "warning",
+      "equipment_id": "PV-05.017",
+      "equipment_name": "PV-05.017",
+      "timestamp_start": "2026-01-02T20:06:23.068565",
+      "timestamp_end": "2026-01-03T01:29:23.068565",
+      "value": 1.46,
+      "threshold": 1.0,
+      "message": "Inverter Efficiency Degradation detected on INV 05.017",
+      "duration_minutes": 323,
+      "power_loss_kw": 0.64,
+      "energy_loss_kwh": 23.02
+    },
+    {
+      "id": "RF-0005",
+      "fault_type": "inverter_overtemperature",
+      "severity": "critical",
+      "equipment_id": "PV-05.028",
+      "equipment_name": "PV-05.028",
+      "timestamp_start": "2026-01-02T16:06:23.068565",
+      "timestamp_end": "2026-01-02T17:06:23.068565",
+      "value": 0.84,
+      "threshold": 1.0,
+      "message": "Inverter Overtemperature detected on INV 05.028",
+      "duration_minutes": 60,
+      "power_loss_kw": 1.21,
+      "energy_loss_kwh": 3.89
+    },
+    {
+      "id": "RF-0006",
+      "fault_type": "communication_partial",
+      "severity": "info",
+      "equipment_id": "PV-04.016",
+      "equipment_name": "PV-04.016",
+      "timestamp_start": "2025-12-28T20:06:23.068565",
+      "timestamp_end": null,
+      "value": 0.86,
+      "threshold": 1.0,
+      "message": "Communication Partial detected on INV 04.016",
+      "duration_minutes": 507,
+      "power_loss_kw": 0.06,
+      "energy_loss_kwh": 3.15
+    },
+    {
+      "id": "RF-0007",
+      "fault_type": "string_mismatch_coarse",
+      "severity": "warning",
+      "equipment_id": "PV-04.009",
+      "equipment_name": "PV-04.009",
+      "timestamp_start": "2025-12-31T20:06:23.068565",
+      "timestamp_end": "2025-12-31T21:31:23.068565",
+      "value": 1.11,
+      "threshold": 1.0,
+      "message": "String Mismatch Coarse detected on INV 04.009",
+      "duration_minutes": 85,
+      "power_loss_kw": 0.54,
+      "energy_loss_kwh": 1.55
+    },
+    {
+      "id": "RF-0008",
+      "fault_type": "mppt_imbalance",
+      "severity": "info",
+      "equipment_id": "PV-01.021",
+      "equipment_name": "PV-01.021",
+      "timestamp_start": "2025-12-30T03:06:23.068565",
+      "timestamp_end": null,
+      "value": 1.24,
+      "threshold": 1.0,
+      "message": "Mppt Imbalance detected on INV 01.021",
+      "duration_minutes": 134,
+      "power_loss_kw": 0.29,
+      "energy_loss_kwh": 1.73
+    },
+    {
+      "id": "RF-0009",
+      "fault_type": "inverter_overtemperature",
+      "severity": "critical",
+      "equipment_id": "PV-05.015",
+      "equipment_name": "PV-05.015",
+      "timestamp_start": "2025-12-29T02:06:23.068565",
+      "timestamp_end": null,
+      "value": 1.16,
+      "threshold": 1.0,
+      "message": "Inverter Overtemperature detected on INV 05.015",
+      "duration_minutes": 629,
+      "power_loss_kw": 0.75,
+      "energy_loss_kwh": 38.84
+    },
+    {
+      "id": "RF-0010",
+      "fault_type": "inverter_clipping",
+      "severity": "warning",
+      "equipment_id": "PV-02.024",
+      "equipment_name": "PV-02.024",
+      "timestamp_start": "2026-01-02T15:06:23.068565",
+      "timestamp_end": null,
+      "value": 0.79,
+      "threshold": 1.0,
+      "message": "Inverter Clipping detected on INV 02.024",
+      "duration_minutes": 509,
+      "power_loss_kw": 0.71,
+      "energy_loss_kwh": 22.23
+    },
+    {
+      "id": "RF-0011",
+      "fault_type": "inverter_efficiency_degradation",
+      "severity": "warning",
+      "equipment_id": "PV-02.025",
+      "equipment_name": "PV-02.025",
+      "timestamp_start": "2026-01-02T06:06:23.068565",
+      "timestamp_end": "2026-01-02T06:42:23.068565",
+      "value": 1.32,
+      "threshold": 1.0,
+      "message": "Inverter Efficiency Degradation detected on INV 02.025",
+      "duration_minutes": 36,
+      "power_loss_kw": 1.17,
+      "energy_loss_kwh": 1.08
+    },
+    {
+      "id": "RF-0012",
+      "fault_type": "soiling_detected",
+      "severity": "info",
+      "equipment_id": "PV-03.014",
+      "equipment_name": "PV-03.014",
+      "timestamp_start": "2025-12-29T14:06:23.068565",
+      "timestamp_end": "2025-12-29T19:20:23.068565",
+      "value": 1.48,
+      "threshold": 1.0,
+      "message": "Soiling Detected detected on INV 03.014",
+      "duration_minutes": 314,
+      "power_loss_kw": 0.31,
+      "energy_loss_kwh": 9.49
+    },
+    {
+      "id": "RF-0013",
+      "fault_type": "inverter_clipping",
+      "severity": "warning",
+      "equipment_id": "PV-03.016",
+      "equipment_name": "PV-03.016",
+      "timestamp_start": "2025-12-28T02:06:23.068565",
+      "timestamp_end": "2025-12-28T04:48:23.068565",
+      "value": 1.09,
+      "threshold": 1.0,
+      "message": "Inverter Clipping detected on INV 03.016",
+      "duration_minutes": 162,
+      "power_loss_kw": 0.65,
+      "energy_loss_kwh": 3.44
+    },
+    {
+      "id": "RF-0014",
+      "fault_type": "mppt_imbalance",
+      "severity": "info",
+      "equipment_id": "PV-03.012",
+      "equipment_name": "PV-03.012",
+      "timestamp_start": "2026-01-01T19:06:23.068565",
+      "timestamp_end": null,
+      "value": 1.39,
+      "threshold": 1.0,
+      "message": "Mppt Imbalance detected on INV 03.012",
+      "duration_minutes": 288,
+      "power_loss_kw": 0.24,
+      "energy_loss_kwh": 6.85
+    },
+    {
+      "id": "RF-0015",
+      "fault_type": "string_open_circuit",
+      "severity": "critical",
+      "equipment_id": "PV-03.023",
+      "equipment_name": "PV-03.023",
+      "timestamp_start": "2025-12-28T14:06:23.068565",
+      "timestamp_end": "2025-12-29T00:56:23.068565",
+      "value": 1.21,
+      "threshold": 1.0,
+      "message": "String Open Circuit detected on INV 03.023",
+      "duration_minutes": 650,
+      "power_loss_kw": 1.34,
+      "energy_loss_kwh": 38.2
+    },
+    {
+      "id": "RF-0016",
+      "fault_type": "grid_curtailment",
+      "severity": "info",
+      "equipment_id": "PV-02.024",
+      "equipment_name": "PV-02.024",
+      "timestamp_start": "2025-12-30T14:06:23.068565",
+      "timestamp_end": "2025-12-30T16:29:23.068565",
+      "value": 1.43,
+      "threshold": 1.0,
+      "message": "Grid Curtailment detected on INV 02.024",
+      "duration_minutes": 143,
+      "power_loss_kw": 0.93,
+      "energy_loss_kwh": 9.77
+    },
+    {
+      "id": "RF-0017",
+      "fault_type": "mppt_imbalance",
+      "severity": "info",
+      "equipment_id": "PV-02.030",
+      "equipment_name": "PV-02.030",
+      "timestamp_start": "2026-01-02T13:06:23.068565",
+      "timestamp_end": null,
+      "value": 0.77,
+      "threshold": 1.0,
+      "message": "Mppt Imbalance detected on INV 02.030",
+      "duration_minutes": 509,
+      "power_loss_kw": 0.19,
+      "energy_loss_kwh": 4.35
+    },
+    {
+      "id": "RF-0018",
+      "fault_type": "string_open_circuit",
+      "severity": "critical",
+      "equipment_id": "PV-02.023",
+      "equipment_name": "PV-02.023",
+      "timestamp_start": "2025-12-30T10:06:23.068565",
+      "timestamp_end": null,
+      "value": 1.07,
+      "threshold": 1.0,
+      "message": "String Open Circuit detected on INV 02.023",
+      "duration_minutes": 286,
+      "power_loss_kw": 0.51,
+      "energy_loss_kwh": 22.34
+    },
+    {
+      "id": "RF-0019",
+      "fault_type": "string_open_circuit",
+      "severity": "critical",
+      "equipment_id": "PV-05.019",
+      "equipment_name": "PV-05.019",
+      "timestamp_start": "2025-12-27T13:06:23.068565",
+      "timestamp_end": "2025-12-27T19:39:23.068565",
+      "value": 0.74,
+      "threshold": 1.0,
+      "message": "String Open Circuit detected on INV 05.019",
+      "duration_minutes": 393,
+      "power_loss_kw": 1.59,
+      "energy_loss_kwh": 26.16
+    },
+    {
+      "id": "RF-0020",
+      "fault_type": "inverter_overtemperature",
+      "severity": "critical",
+      "equipment_id": "PV-05.025",
+      "equipment_name": "PV-05.025",
+      "timestamp_start": "2026-01-01T18:06:23.068565",
+      "timestamp_end": "2026-01-02T03:42:23.068565",
+      "value": 0.68,
+      "threshold": 1.0,
+      "message": "Inverter Overtemperature detected on INV 05.025",
+      "duration_minutes": 576,
+      "power_loss_kw": 1.38,
+      "energy_loss_kwh": 34.03
+    },
+    {
+      "id": "RF-0021",
+      "fault_type": "communication_partial",
+      "severity": "info",
+      "equipment_id": "PV-05.001",
+      "equipment_name": "PV-05.001",
+      "timestamp_start": "2026-01-02T10:06:23.068565",
+      "timestamp_end": null,
+      "value": 1.31,
+      "threshold": 1.0,
+      "message": "Communication Partial detected on INV 05.001",
+      "duration_minutes": 644,
+      "power_loss_kw": 0.06,
+      "energy_loss_kwh": 7.98
+    },
+    {
+      "id": "RF-0022",
+      "fault_type": "inverter_clipping",
+      "severity": "warning",
+      "equipment_id": "PV-01.012",
+      "equipment_name": "PV-01.012",
+      "timestamp_start": "2025-12-27T09:06:23.068565",
+      "timestamp_end": "2025-12-27T16:38:23.068565",
+      "value": 1.43,
+      "threshold": 1.0,
+      "message": "Inverter Clipping detected on INV 01.012",
+      "duration_minutes": 452,
+      "power_loss_kw": 0.86,
+      "energy_loss_kwh": 14.86
+    },
+    {
+      "id": "RF-0023",
+      "fault_type": "mppt_imbalance",
+      "severity": "info",
+      "equipment_id": "PV-05.030",
+      "equipment_name": "PV-05.030",
+      "timestamp_start": "2025-12-31T14:06:23.068565",
+      "timestamp_end": "2026-01-01T00:15:23.068565",
+      "value": 0.53,
+      "threshold": 1.0,
+      "message": "Mppt Imbalance detected on INV 05.030",
+      "duration_minutes": 609,
+      "power_loss_kw": 0.12,
+      "energy_loss_kwh": 10.86
+    },
+    {
+      "id": "RF-0024",
+      "fault_type": "inverter_overtemperature",
+      "severity": "critical",
+      "equipment_id": "PV-01.001",
+      "equipment_name": "PV-01.001",
+      "timestamp_start": "2025-12-29T15:06:23.068565",
+      "timestamp_end": "2025-12-29T20:35:23.068565",
+      "value": 1.34,
+      "threshold": 1.0,
+      "message": "Inverter Overtemperature detected on INV 01.001",
+      "duration_minutes": 329,
+      "power_loss_kw": 1.58,
+      "energy_loss_kwh": 30.12
+    },
+    {
+      "id": "RF-0025",
+      "fault_type": "inverter_overtemperature",
+      "severity": "critical",
+      "equipment_id": "PV-02.023",
+      "equipment_name": "PV-02.023",
+      "timestamp_start": "2025-12-29T18:06:23.068565",
+      "timestamp_end": null,
+      "value": 1.25,
+      "threshold": 1.0,
+      "message": "Inverter Overtemperature detected on INV 02.023",
+      "duration_minutes": 711,
+      "power_loss_kw": 1.44,
+      "energy_loss_kwh": 62.44
+    },
+    {
+      "id": "RF-0026",
+      "fault_type": "string_mismatch_coarse",
+      "severity": "warning",
+      "equipment_id": "PV-03.007",
+      "equipment_name": "PV-03.007",
+      "timestamp_start": "2025-12-29T06:06:23.068565",
+      "timestamp_end": "2025-12-29T08:44:23.068565",
+      "value": 1.08,
+      "threshold": 1.0,
+      "message": "String Mismatch Coarse detected on INV 03.007",
+      "duration_minutes": 158,
+      "power_loss_kw": 0.54,
+      "energy_loss_kwh": 3.3
+    },
+    {
+      "id": "RF-0027",
+      "fault_type": "inverter_clipping",
+      "severity": "warning",
+      "equipment_id": "PV-05.013",
+      "equipment_name": "PV-05.013",
+      "timestamp_start": "2026-01-01T11:06:23.068565",
+      "timestamp_end": null,
+      "value": 0.63,
+      "threshold": 1.0,
+      "message": "Inverter Clipping detected on INV 05.013",
+      "duration_minutes": 60,
+      "power_loss_kw": 0.69,
+      "energy_loss_kwh": 2.48
+    },
+    {
+      "id": "RF-0028",
+      "fault_type": "string_mismatch_coarse",
+      "severity": "warning",
+      "equipment_id": "PV-05.023",
+      "equipment_name": "PV-05.023",
+      "timestamp_start": "2025-12-27T12:06:23.068565",
+      "timestamp_end": null,
+      "value": 1.43,
+      "threshold": 1.0,
+      "message": "String Mismatch Coarse detected on INV 05.023",
+      "duration_minutes": 492,
+      "power_loss_kw": 0.19,
+      "energy_loss_kwh": 18.26
+    },
+    {
+      "id": "RF-0029",
+      "fault_type": "inverter_clipping",
+      "severity": "warning",
+      "equipment_id": "PV-04.006",
+      "equipment_name": "PV-04.006",
+      "timestamp_start": "2025-12-28T06:06:23.068565",
+      "timestamp_end": "2025-12-28T09:08:23.068565",
+      "value": 0.81,
+      "threshold": 1.0,
+      "message": "Inverter Clipping detected on INV 04.006",
+      "duration_minutes": 182,
+      "power_loss_kw": 0.67,
+      "energy_loss_kwh": 6.35
+    },
+    {
+      "id": "RF-0030",
+      "fault_type": "inverter_clipping",
+      "severity": "warning",
+      "equipment_id": "PV-02.008",
+      "equipment_name": "PV-02.008",
+      "timestamp_start": "2025-12-28T16:06:23.068565",
+      "timestamp_end": null,
+      "value": 1.28,
+      "threshold": 1.0,
+      "message": "Inverter Clipping detected on INV 02.008",
+      "duration_minutes": 542,
+      "power_loss_kw": 0.26,
+      "energy_loss_kwh": 19.08
+    },
+    {
+      "id": "RF-0031",
+      "fault_type": "inverter_overtemperature",
+      "severity": "critical",
+      "equipment_id": "PV-04.006",
+      "equipment_name": "PV-04.006",
+      "timestamp_start": "2025-12-30T09:06:23.068565",
+      "timestamp_end": "2025-12-30T10:54:23.068565",
+      "value": 0.65,
+      "threshold": 1.0,
+      "message": "Inverter Overtemperature detected on INV 04.006",
+      "duration_minutes": 108,
+      "power_loss_kw": 1.82,
+      "energy_loss_kwh": 8.05
+    },
+    {
+      "id": "RF-0032",
+      "fault_type": "soiling_detected",
+      "severity": "info",
+      "equipment_id": "PV-05.017",
+      "equipment_name": "PV-05.017",
+      "timestamp_start": "2026-01-01T06:06:23.068565",
+      "timestamp_end": "2026-01-01T17:59:23.068565",
+      "value": 1.2,
+      "threshold": 1.0,
+      "message": "Soiling Detected detected on INV 05.017",
+      "duration_minutes": 713,
+      "power_loss_kw": 0.68,
+      "energy_loss_kwh": 23.5
+    },
+    {
+      "id": "RF-0033",
+      "fault_type": "string_open_circuit",
+      "severity": "critical",
+      "equipment_id": "PV-01.003",
+      "equipment_name": "PV-01.003",
+      "timestamp_start": "2025-12-27T14:06:23.068565",
+      "timestamp_end": null,
+      "value": 1.46,
+      "threshold": 1.0,
+      "message": "String Open Circuit detected on INV 01.003",
+      "duration_minutes": 495,
+      "power_loss_kw": 1.26,
+      "energy_loss_kwh": 33.68
+    },
+    {
+      "id": "RF-0034",
+      "fault_type": "inverter_efficiency_degradation",
+      "severity": "warning",
+      "equipment_id": "PV-03.009",
+      "equipment_name": "PV-03.009",
+      "timestamp_start": "2025-12-30T11:06:23.068565",
+      "timestamp_end": "2025-12-30T18:59:23.068565",
+      "value": 0.98,
+      "threshold": 1.0,
+      "message": "Inverter Efficiency Degradation detected on INV 03.009",
+      "duration_minutes": 473,
+      "power_loss_kw": 1.01,
+      "energy_loss_kwh": 28.04
+    },
+    {
+      "id": "RF-0035",
+      "fault_type": "inverter_clipping",
+      "severity": "warning",
+      "equipment_id": "PV-04.023",
+      "equipment_name": "PV-04.023",
+      "timestamp_start": "2025-12-29T20:06:23.068565",
+      "timestamp_end": "2025-12-29T23:40:23.068565",
+      "value": 0.64,
+      "threshold": 1.0,
+      "message": "Inverter Clipping detected on INV 04.023",
+      "duration_minutes": 214,
+      "power_loss_kw": 0.45,
+      "energy_loss_kwh": 5.7
+    },
+    {
+      "id": "RF-0036",
+      "fault_type": "soiling_detected",
+      "severity": "info",
+      "equipment_id": "PV-03.016",
+      "equipment_name": "PV-03.016",
+      "timestamp_start": "2026-01-02T06:06:23.068565",
+      "timestamp_end": "2026-01-02T14:17:23.068565",
+      "value": 1.37,
+      "threshold": 1.0,
+      "message": "Soiling Detected detected on INV 03.016",
+      "duration_minutes": 491,
+      "power_loss_kw": 0.56,
+      "energy_loss_kwh": 21.47
+    },
+    {
+      "id": "RF-0037",
+      "fault_type": "grid_curtailment",
+      "severity": "info",
+      "equipment_id": "PV-05.028",
+      "equipment_name": "PV-05.028",
+      "timestamp_start": "2025-12-31T20:06:23.068565",
+      "timestamp_end": "2025-12-31T22:59:23.068565",
+      "value": 1.15,
+      "threshold": 1.0,
+      "message": "Grid Curtailment detected on INV 05.028",
+      "duration_minutes": 173,
+      "power_loss_kw": 0.41,
+      "energy_loss_kwh": 15.81
+    },
+    {
+      "id": "RF-0038",
+      "fault_type": "inverter_efficiency_degradation",
+      "severity": "warning",
+      "equipment_id": "PV-01.011",
+      "equipment_name": "PV-01.011",
+      "timestamp_start": "2025-12-27T23:06:23.068565",
+      "timestamp_end": "2025-12-28T00:29:23.068565",
+      "value": 0.86,
+      "threshold": 1.0,
+      "message": "Inverter Efficiency Degradation detected on INV 01.011",
+      "duration_minutes": 83,
+      "power_loss_kw": 0.92,
+      "energy_loss_kwh": 5.2
+    },
+    {
+      "id": "RF-0039",
+      "fault_type": "grid_curtailment",
+      "severity": "info",
+      "equipment_id": "PV-04.015",
+      "equipment_name": "PV-04.015",
+      "timestamp_start": "2025-12-27T19:06:23.068565",
+      "timestamp_end": "2025-12-27T20:25:23.068565",
+      "value": 1.44,
+      "threshold": 1.0,
+      "message": "Grid Curtailment detected on INV 04.015",
+      "duration_minutes": 79,
+      "power_loss_kw": 1.17,
+      "energy_loss_kwh": 5.35
+    },
+    {
+      "id": "RF-0040",
+      "fault_type": "string_mismatch_coarse",
+      "severity": "warning",
+      "equipment_id": "PV-01.016",
+      "equipment_name": "PV-01.016",
+      "timestamp_start": "2025-12-27T13:06:23.068565",
+      "timestamp_end": null,
+      "value": 1.31,
+      "threshold": 1.0,
+      "message": "String Mismatch Coarse detected on INV 01.016",
+      "duration_minutes": 165,
+      "power_loss_kw": 0.31,
+      "energy_loss_kwh": 2.43
+    },
+    {
+      "id": "RF-0041",
+      "fault_type": "communication_partial",
+      "severity": "info",
+      "equipment_id": "PV-03.028",
+      "equipment_name": "PV-03.028",
+      "timestamp_start": "2026-01-01T05:06:23.068565",
+      "timestamp_end": "2026-01-01T11:26:23.068565",
+      "value": 1.02,
+      "threshold": 1.0,
+      "message": "Communication Partial detected on INV 03.028",
+      "duration_minutes": 380,
+      "power_loss_kw": 0.09,
+      "energy_loss_kwh": 2.82
+    },
+    {
+      "id": "RF-0042",
+      "fault_type": "string_open_circuit",
+      "severity": "critical",
+      "equipment_id": "PV-03.002",
+      "equipment_name": "PV-03.002",
+      "timestamp_start": "2025-12-31T19:06:23.068565",
+      "timestamp_end": "2026-01-01T04:30:23.068565",
+      "value": 0.67,
+      "threshold": 1.0,
+      "message": "String Open Circuit detected on INV 03.002",
+      "duration_minutes": 564,
+      "power_loss_kw": 0.83,
+      "energy_loss_kwh": 61.6
+    },
+    {
+      "id": "RF-0043",
+      "fault_type": "inverter_efficiency_degradation",
+      "severity": "warning",
+      "equipment_id": "PV-02.026",
+      "equipment_name": "PV-02.026",
+      "timestamp_start": "2026-01-01T17:06:23.068565",
+      "timestamp_end": "2026-01-01T18:59:23.068565",
+      "value": 1.13,
+      "threshold": 1.0,
+      "message": "Inverter Efficiency Degradation detected on INV 02.026",
+      "duration_minutes": 113,
+      "power_loss_kw": 0.51,
+      "energy_loss_kwh": 7.94
+    },
+    {
+      "id": "RF-0044",
+      "fault_type": "communication_partial",
+      "severity": "info",
+      "equipment_id": "PV-01.001",
+      "equipment_name": "PV-01.001",
+      "timestamp_start": "2025-12-28T11:06:23.068565",
+      "timestamp_end": "2025-12-28T15:33:23.068565",
+      "value": 1.01,
+      "threshold": 1.0,
+      "message": "Communication Partial detected on INV 01.001",
+      "duration_minutes": 267,
+      "power_loss_kw": 0.11,
+      "energy_loss_kwh": 2.27
+    },
+    {
+      "id": "RF-0045",
+      "fault_type": "inverter_clipping",
+      "severity": "warning",
+      "equipment_id": "PV-01.027",
+      "equipment_name": "PV-01.027",
+      "timestamp_start": "2025-12-29T09:06:23.068565",
+      "timestamp_end": "2025-12-29T11:16:23.068565",
+      "value": 0.92,
+      "threshold": 1.0,
+      "message": "Inverter Clipping detected on INV 01.027",
+      "duration_minutes": 130,
+      "power_loss_kw": 0.65,
+      "energy_loss_kwh": 5.53
+    },
+    {
+      "id": "RF-0046",
+      "fault_type": "soiling_detected",
+      "severity": "info",
+      "equipment_id": "PV-05.025",
+      "equipment_name": "PV-05.025",
+      "timestamp_start": "2026-01-02T17:06:23.068565",
+      "timestamp_end": null,
+      "value": 1.33,
+      "threshold": 1.0,
+      "message": "Soiling Detected detected on INV 05.025",
+      "duration_minutes": 659,
+      "power_loss_kw": 0.79,
+      "energy_loss_kwh": 18.57
+    },
+    {
+      "id": "RF-0047",
+      "fault_type": "grid_curtailment",
+      "severity": "info",
+      "equipment_id": "PV-02.030",
+      "equipment_name": "PV-02.030",
+      "timestamp_start": "2025-12-29T13:06:23.068565",
+      "timestamp_end": "2025-12-30T00:10:23.068565",
+      "value": 0.91,
+      "threshold": 1.0,
+      "message": "Grid Curtailment detected on INV 02.030",
+      "duration_minutes": 664,
+      "power_loss_kw": 0.59,
+      "energy_loss_kwh": 61.81
+    },
+    {
+      "id": "RF-0048",
+      "fault_type": "communication_partial",
+      "severity": "info",
+      "equipment_id": "PV-01.008",
+      "equipment_name": "PV-01.008",
+      "timestamp_start": "2025-12-27T13:06:23.068565",
+      "timestamp_end": null,
+      "value": 0.5,
+      "threshold": 1.0,
+      "message": "Communication Partial detected on INV 01.008",
+      "duration_minutes": 96,
+      "power_loss_kw": 0.2,
+      "energy_loss_kwh": 0.9
+    },
+    {
+      "id": "RF-0049",
+      "fault_type": "inverter_overtemperature",
+      "severity": "critical",
+      "equipment_id": "PV-04.024",
+      "equipment_name": "PV-04.024",
+      "timestamp_start": "2025-12-30T00:06:23.068565",
+      "timestamp_end": "2025-12-30T07:44:23.068565",
+      "value": 1.38,
+      "threshold": 1.0,
+      "message": "Inverter Overtemperature detected on INV 04.024",
+      "duration_minutes": 458,
+      "power_loss_kw": 1.15,
+      "energy_loss_kwh": 46.26
+    },
+    {
+      "id": "RF-0050",
+      "fault_type": "string_mismatch_coarse",
+      "severity": "warning",
+      "equipment_id": "PV-05.029",
+      "equipment_name": "PV-05.029",
+      "timestamp_start": "2026-01-03T00:06:23.068565",
+      "timestamp_end": "2026-01-03T02:04:23.068565",
+      "value": 1.3,
+      "threshold": 1.0,
+      "message": "String Mismatch Coarse detected on INV 05.029",
+      "duration_minutes": 118,
+      "power_loss_kw": 0.54,
+      "energy_loss_kwh": 1.93
+    },
+    {
+      "id": "RF-0051",
+      "fault_type": "string_open_circuit",
+      "severity": "critical",
+      "equipment_id": "PV-02.002",
+      "equipment_name": "PV-02.002",
+      "timestamp_start": "2025-12-28T18:06:23.068565",
+      "timestamp_end": "2025-12-28T20:13:23.068565",
+      "value": 1.36,
+      "threshold": 1.0,
+      "message": "String Open Circuit detected on INV 02.002",
+      "duration_minutes": 127,
+      "power_loss_kw": 1.39,
+      "energy_loss_kwh": 8.16
+    },
+    {
+      "id": "RF-0052",
+      "fault_type": "sensor_frozen",
+      "severity": "info",
+      "equipment_id": "PV-01.015",
+      "equipment_name": "PV-01.015",
+      "timestamp_start": "2026-01-01T10:06:23.068565",
+      "timestamp_end": null,
+      "value": 1.35,
+      "threshold": 1.0,
+      "message": "Sensor Frozen detected on INV 01.015",
+      "duration_minutes": 447,
+      "power_loss_kw": 0.06,
+      "energy_loss_kwh": 0.86
+    }
+  ],
+  "predictive_faults": [
+    {
+      "id": "PF-0001",
+      "fault_type": "string_degradation",
+      "display_name": "String Degradation",
+      "equipment_id": "PV-03.089",
+      "days_to_fault": 7,
+      "confidence": 0.75,
+      "current_value": -2.03,
+      "threshold": 5.0,
+      "unit": "% voltage deviation",
+      "trend": -0.4103,
+      "urgency": "urgent",
+      "is_urgent": true,
+      "recommended_action": "IV-curve trace the strings on this inverter; check connectors and isolation.",
+      "repair_cost_eur": 800,
+      "estimated_date": "2025-12-20T00:00:00+00:00",
+      "projected_power_loss_kw": 1.47,
+      "projected_energy_loss_kwh": 8.1,
+      "revenue_at_risk_eur": 4,
+      "equipment_name": "PV-03.089",
+      "classification_layer": "AI_OVERRIDE",
+      "evidence": "Voltage deviation trend of -0.4103%/d with 7 days to fault aligns with progressive string degradation pattern.",
+      "numeric_evidence": {
+        "ai_reasoning": "The negative voltage deviation trend and the projected time to fault are consistent with string degradation. While the upstream ML classifier assigned 75% confidence, the clear trend and alignment with degradation signatures justify a slight increase in confidence. No other fault type in the taxonomy better matches the observed pattern.",
+        "model_id": "qwen.qwen3-32b-v1:0"
+      },
+      "winner_reason": "AI override: ML_CLASSIFIER @ 0.75 \u2192 AI @ 0.82 reclassified as string_degradation",
+      "layer_chain": [
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "string_degradation",
+          "confidence": 0.75,
+          "evidence": "CatBoost classifier: string degradation @ 75% probability, trend -41.03%/d (improving), ~7d to fault",
+          "severity": "urgent"
+        },
+        {
+          "layer": "AI_OVERRIDE",
+          "fault_type": "string_degradation",
+          "confidence": 0.82,
+          "evidence": "Voltage deviation trend of -0.4103%/d with 7 days to fault aligns with progressive string degradation pattern.",
+          "severity": "warning"
+        }
+      ],
+      "severity": "warning",
+      "asset_type": "PV_STRING",
+      "cascade_winning_confidence": 0.82,
+      "confidence_cascade": 0.82
+    },
+    {
+      "id": "PF-0002",
+      "fault_type": "string_degradation",
+      "display_name": "String Degradation",
+      "equipment_id": "PV-04.099",
+      "days_to_fault": 1,
+      "confidence": 0.9,
+      "current_value": -53.68,
+      "threshold": 5.0,
+      "unit": "% voltage deviation",
+      "trend": 0.3814,
+      "urgency": "critical",
+      "is_urgent": true,
+      "recommended_action": "IV-curve trace the strings on this inverter; check connectors and isolation.",
+      "repair_cost_eur": 800,
+      "estimated_date": "2025-12-14T00:00:00+00:00",
+      "projected_power_loss_kw": 6.32,
+      "projected_energy_loss_kwh": 34.8,
+      "revenue_at_risk_eur": 2,
+      "equipment_name": "PV-04.099",
+      "classification_layer": "RULE",
+      "evidence": "string degradation: actual -53.68% voltage deviation severely exceeds rule threshold 5.00% voltage deviation (+974%, rule R-39)",
+      "numeric_evidence": {
+        "actual": -53.68,
+        "threshold": 5.0,
+        "unit": "% voltage deviation",
+        "overage_pct": 973.6
+      },
+      "winner_reason": "highest confidence (0.95) via RULE",
+      "layer_chain": [
+        {
+          "layer": "RULE",
+          "fault_type": "string_degradation",
+          "confidence": 0.95,
+          "evidence": "string degradation: actual -53.68% voltage deviation severely exceeds rule threshold 5.00% voltage deviation (+974%, rule R-39)",
+          "severity": "critical"
+        },
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "string_degradation",
+          "confidence": 0.85,
+          "evidence": "digital twin residual 48.68% voltage deviation above expected; actual -53.68 vs twin band \u00b15.00",
+          "severity": "critical"
+        },
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "string_degradation",
+          "confidence": 0.85,
+          "evidence": "CatBoost classifier: string degradation @ 85% probability, trend +38.14%/d (worsening), ~1d to fault",
+          "severity": "critical"
+        }
+      ],
+      "severity": "critical",
+      "asset_type": "PV_STRING",
+      "confidence_cascade": 0.95,
+      "cascade_winning_confidence": 0.95
+    },
+    {
+      "id": "PF-0003",
+      "fault_type": "string_degradation",
+      "display_name": "String Degradation",
+      "equipment_id": "PV-04.103",
+      "days_to_fault": 10,
+      "confidence": 0.78,
+      "current_value": -2.4,
+      "threshold": 5.0,
+      "unit": "% voltage deviation",
+      "trend": -0.2684,
+      "urgency": "soon",
+      "is_urgent": false,
+      "recommended_action": "IV-curve trace the strings on this inverter; check connectors and isolation.",
+      "repair_cost_eur": 800,
+      "estimated_date": "2025-12-23T00:00:00+00:00",
+      "projected_power_loss_kw": 0.04,
+      "projected_energy_loss_kwh": 0.2,
+      "revenue_at_risk_eur": 0,
+      "equipment_name": "PV-04.103",
+      "classification_layer": "AI_OVERRIDE",
+      "evidence": "Voltage deviation trend is consistent with progressive string degradation, with a -0.2684%/d decline and ~10 days to fault threshold.",
+      "numeric_evidence": {
+        "ai_reasoning": "The negative voltage deviation trend and the projected time to fault align with known signatures of string degradation. While the upstream ML model already flagged this as string degradation with 78% confidence, the clear and consistent trend in the raw signal supports a higher confidence level. No other fault type in the taxonomy better matches this pattern of gradual performance decline.",
+        "model_id": "qwen.qwen3-32b-v1:0"
+      },
+      "winner_reason": "AI override: ML_CLASSIFIER @ 0.78 \u2192 AI @ 0.85 reclassified as string_degradation",
+      "layer_chain": [
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "string_degradation",
+          "confidence": 0.78,
+          "evidence": "CatBoost classifier: string degradation @ 78% probability, trend -26.84%/d (improving), ~10d to fault",
+          "severity": "warning"
+        },
+        {
+          "layer": "AI_OVERRIDE",
+          "fault_type": "string_degradation",
+          "confidence": 0.85,
+          "evidence": "Voltage deviation trend is consistent with progressive string degradation, with a -0.2684%/d decline and ~10 days to fault threshold.",
+          "severity": "warning"
+        }
+      ],
+      "severity": "warning",
+      "asset_type": "PV_STRING",
+      "cascade_winning_confidence": 0.85,
+      "confidence_cascade": 0.85
+    },
+    {
+      "id": "PF-0004",
+      "fault_type": "string_degradation",
+      "display_name": "String Degradation",
+      "equipment_id": "PV-05.148",
+      "days_to_fault": 1,
+      "confidence": 0.9,
+      "current_value": 5.55,
+      "threshold": 5.0,
+      "unit": "% voltage deviation",
+      "trend": -0.2882,
+      "urgency": "critical",
+      "is_urgent": true,
+      "recommended_action": "IV-curve trace the strings on this inverter; check connectors and isolation.",
+      "repair_cost_eur": 800,
+      "estimated_date": "2025-12-14T00:00:00+00:00",
+      "projected_power_loss_kw": 0.0,
+      "projected_energy_loss_kwh": 0.0,
+      "revenue_at_risk_eur": 0,
+      "equipment_name": "PV-05.148",
+      "classification_layer": "ML_CLASSIFIER",
+      "evidence": "CatBoost classifier: string degradation @ 85% probability, trend -28.82%/d (improving), ~1d to fault",
+      "numeric_evidence": {
+        "model_probability": 0.85,
+        "days_to_fault": 1,
+        "trend_per_day": -0.2882
+      },
+      "winner_reason": "highest confidence (0.85) via ML_CLASSIFIER",
+      "layer_chain": [
+        {
+          "layer": "RULE",
+          "fault_type": "string_degradation",
+          "confidence": 0.772,
+          "evidence": "string degradation: actual 5.55% voltage deviation moderately exceeds rule threshold 5.00% voltage deviation (+11%, rule R-39)",
+          "severity": "critical"
+        },
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "string_degradation",
+          "confidence": 0.472,
+          "evidence": "digital twin residual 0.55% voltage deviation above expected; actual 5.55 vs twin band \u00b15.00",
+          "severity": "critical"
+        },
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "string_degradation",
+          "confidence": 0.85,
+          "evidence": "CatBoost classifier: string degradation @ 85% probability, trend -28.82%/d (improving), ~1d to fault",
+          "severity": "critical"
+        }
+      ],
+      "severity": "critical",
+      "asset_type": "PV_STRING",
+      "cascade_winning_confidence": 0.85
+    },
+    {
+      "id": "bess-reactive-soc_high_dwell-bess-alpha-001-0",
+      "fault_type": "soc_high_dwell",
+      "display_name": "Prolonged High SoC",
+      "equipment_id": "bess-alpha-001",
+      "equipment_name": "Alpha BESS Unit 1",
+      "asset_type": "BESS_PACK",
+      "days_to_fault": 0.0,
+      "confidence": 1.0,
+      "current_value": 55.8,
+      "threshold": 24.0,
+      "unit": "h cumulative",
+      "trend": null,
+      "urgency": "soon",
+      "is_urgent": false,
+      "recommended_action": "Dispatch energy to reduce SoC below 95%",
+      "estimated_date": "2026-06-16",
+      "projected_power_loss_kw": 0.0,
+      "projected_energy_loss_kwh": 0.0,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 0.0,
+      "is_reactive": true,
+      "bess_source": true,
+      "classification_layer": "RULE",
+      "evidence": "soc high dwell: actual 55.80h cumulative severely exceeds rule threshold 24.00h cumulative (+132%, rule R-28)",
+      "numeric_evidence": {
+        "actual": 55.8,
+        "threshold": 24.0,
+        "unit": "h cumulative",
+        "overage_pct": 132.5
+      },
+      "winner_reason": "highest confidence (0.95) via RULE",
+      "layer_chain": [
+        {
+          "layer": "RULE",
+          "fault_type": "soc_high_dwell",
+          "confidence": 0.95,
+          "evidence": "soc high dwell: actual 55.80h cumulative severely exceeds rule threshold 24.00h cumulative (+132%, rule R-28)",
+          "severity": "warning"
+        },
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "soc_high_dwell",
+          "confidence": 0.715,
+          "evidence": "digital twin residual 31.80h cumulative above expected; actual 55.80 vs twin band \u00b124.00",
+          "severity": "warning"
+        }
+      ],
+      "severity": "warning",
+      "cascade_winning_confidence": 0.95
+    },
+    {
+      "id": "bess-reactive-temperature_exceed-bess-alpha-001-1",
+      "fault_type": "temperature_exceed",
+      "display_name": "Inverter Overtemperature",
+      "equipment_id": "bess-alpha-001",
+      "equipment_name": "Alpha BESS Unit 1",
+      "asset_type": "BESS_PACK",
+      "days_to_fault": 0.0,
+      "confidence": 1.0,
+      "current_value": 37.3,
+      "threshold": 35.0,
+      "unit": "\u00b0C",
+      "trend": null,
+      "urgency": "soon",
+      "is_urgent": false,
+      "recommended_action": "Check HVAC, reduce power to lower cell temperature",
+      "estimated_date": "2026-06-17",
+      "projected_power_loss_kw": 575.0,
+      "projected_energy_loss_kwh": 13800.0,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 1035.0,
+      "is_reactive": true,
+      "bess_source": true,
+      "classification_layer": "AI_OVERRIDE",
+      "evidence": "Inverter temperature of 37.30\u00b0C moderately exceeds the threshold of 35.00\u00b0C, indicating a potential overtemperature condition.",
+      "numeric_evidence": {
+        "ai_reasoning": "The rule-based and digital twin residual layers both identified a temperature exceedance, with the rule-based layer showing higher confidence. The temperature threshold is a known indicator of inverter overtemperature, and the absence of a clear trend or degradation pattern suggests a transient or operational fault rather than a systemic aging issue. Therefore, the most specific and accurate classification is inverter_overtemperature.",
+        "model_id": "qwen.qwen3-32b-v1:0"
+      },
+      "winner_reason": "AI override: RULE @ 0.76 \u2192 AI @ 0.82 reclassified as inverter_overtemperature",
+      "layer_chain": [
+        {
+          "layer": "RULE",
+          "fault_type": "temperature_exceed",
+          "confidence": 0.763,
+          "evidence": "temperature exceed: actual 37.30\u00b0C moderately exceeds rule threshold 35.00\u00b0C (+7%, rule R-53)",
+          "severity": "warning"
+        },
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "temperature_exceed",
+          "confidence": 0.463,
+          "evidence": "digital twin residual 2.30\u00b0C above expected; actual 37.30 vs twin band \u00b135.00",
+          "severity": "warning"
+        },
+        {
+          "layer": "AI_OVERRIDE",
+          "fault_type": "inverter_overtemperature",
+          "confidence": 0.82,
+          "evidence": "Inverter temperature of 37.30\u00b0C moderately exceeds the threshold of 35.00\u00b0C, indicating a potential overtemperature condition.",
+          "severity": "warning"
+        }
+      ],
+      "severity": "warning",
+      "fault_type_original": "temperature_exceed",
+      "fault_type_reclassified": "inverter_overtemperature",
+      "cascade_winning_confidence": 0.82
+    },
+    {
+      "id": "bess-pred-rte_decay-bess-alpha-001",
+      "fault_type": "rte_decay",
+      "display_name": "Round-Trip Efficiency Decay",
+      "equipment_id": "bess-alpha-001",
+      "equipment_name": "Alpha BESS Unit 1",
+      "asset_type": "BESS_PACK",
+      "days_to_fault": 79.1,
+      "confidence": 0.741,
+      "current_value": 0.881,
+      "threshold": 0.85,
+      "unit": "%",
+      "trend": -0.000376,
+      "urgency": "monitoring",
+      "is_urgent": false,
+      "recommended_action": "Investigate internal resistance increase. Check connections, BMS calibration, and consider capacity test to confirm degradation.",
+      "estimated_date": "2026-09-06",
+      "projected_power_loss_kw": 0.0,
+      "projected_energy_loss_kwh": 0.0,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 0.0,
+      "is_reactive": false,
+      "bess_source": true,
+      "classification_layer": "AI_OVERRIDE",
+      "evidence": "AI: confirms rte decay with higher confidence (RULE @ 76% \u2192 AI @ 86%); signal pattern matches known fault signature",
+      "numeric_evidence": {
+        "prior_best_confidence": 0.757,
+        "ai_synthesised_confidence": 0.865,
+        "reclassified_from": null,
+        "source": "synthetic"
+      },
+      "winner_reason": "AI override: RULE @ 0.76 \u2192 AI @ 0.86 reclassified as rte_decay",
+      "layer_chain": [
+        {
+          "layer": "RULE",
+          "fault_type": "rte_decay",
+          "confidence": 0.757,
+          "evidence": "rte decay: actual 0.88% marginally exceeds rule threshold 0.85% (+4%, rule R-03)",
+          "severity": "info"
+        },
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "rte_decay",
+          "confidence": 0.457,
+          "evidence": "digital twin residual 0.03% above expected; actual 0.88 vs twin band \u00b10.85",
+          "severity": "info"
+        },
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "rte_decay",
+          "confidence": 0.741,
+          "evidence": "CatBoost classifier: rte decay @ 74% probability, ~79d to fault",
+          "severity": "info"
+        },
+        {
+          "layer": "AI_OVERRIDE",
+          "fault_type": "rte_decay",
+          "confidence": 0.865,
+          "evidence": "AI: confirms rte decay with higher confidence (RULE @ 76% \u2192 AI @ 86%); signal pattern matches known fault signature",
+          "severity": "info"
+        }
+      ],
+      "severity": "info",
+      "confidence_cascade": 0.865,
+      "cascade_winning_confidence": 0.865
+    },
+    {
+      "id": "bess-pred-cell_imbalance-bess-alpha-001",
+      "fault_type": "cell_imbalance",
+      "display_name": "Cell Voltage Imbalance Warning",
+      "equipment_id": "bess-alpha-001",
+      "equipment_name": "Alpha BESS Unit 1",
+      "asset_type": "BESS_MODULE",
+      "days_to_fault": 121.0,
+      "confidence": 0.991,
+      "current_value": 14.8,
+      "threshold": 50.0,
+      "unit": "mV",
+      "trend": 0.29033,
+      "urgency": "monitoring",
+      "is_urgent": false,
+      "recommended_action": "Schedule a full balance cycle. If spread continues growing, inspect individual cells for early-stage failure.",
+      "estimated_date": "2026-10-18",
+      "projected_power_loss_kw": 100.0,
+      "projected_energy_loss_kwh": 2400.0,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 180.0,
+      "is_reactive": false,
+      "bess_source": true,
+      "classification_layer": "ML_CLASSIFIER",
+      "evidence": "CatBoost classifier: cell imbalance @ 85% probability, trend +29.03%/d (worsening), ~121d to fault",
+      "numeric_evidence": {
+        "model_probability": 0.85,
+        "days_to_fault": 121.0,
+        "trend_per_day": 0.29033
+      },
+      "winner_reason": "highest confidence (0.85) via ML_CLASSIFIER",
+      "layer_chain": [
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "cell_imbalance",
+          "confidence": 0.85,
+          "evidence": "CatBoost classifier: cell imbalance @ 85% probability, trend +29.03%/d (worsening), ~121d to fault",
+          "severity": "info"
+        }
+      ],
+      "severity": "info",
+      "cascade_winning_confidence": 0.85
+    },
+    {
+      "id": "bess-pred-capacity_fade-bess-alpha-001",
+      "fault_type": "capacity_fade",
+      "display_name": "Capacity Fade Warning",
+      "equipment_id": "bess-alpha-001",
+      "equipment_name": "Alpha BESS Unit 1",
+      "asset_type": "BESS_PACK",
+      "days_to_fault": 3650.0,
+      "confidence": 0.822,
+      "current_value": 0.9537,
+      "threshold": 0.7,
+      "unit": "%",
+      "trend": -6.6e-05,
+      "urgency": "monitoring",
+      "is_urgent": false,
+      "recommended_action": "Review dispatch strategy to reduce cycling stress and calendar aging",
+      "estimated_date": "2036-06-16",
+      "projected_power_loss_kw": 231.5,
+      "projected_energy_loss_kwh": 5556.0,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 416.7,
+      "is_reactive": false,
+      "bess_source": true,
+      "classification_layer": "AI_OVERRIDE",
+      "evidence": "AI: confirms capacity fade with higher confidence (RULE @ 82% \u2192 AI @ 90%); signal pattern matches known fault signature",
+      "numeric_evidence": {
+        "prior_best_confidence": 0.822,
+        "ai_synthesised_confidence": 0.9,
+        "reclassified_from": null,
+        "source": "synthetic"
+      },
+      "winner_reason": "AI override: RULE @ 0.82 \u2192 AI @ 0.90 reclassified as capacity_fade",
+      "layer_chain": [
+        {
+          "layer": "RULE",
+          "fault_type": "capacity_fade",
+          "confidence": 0.822,
+          "evidence": "capacity fade: actual 0.95% substantially exceeds rule threshold 0.70% (+36%, rule R-95)",
+          "severity": "info"
+        },
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "capacity_fade",
+          "confidence": 0.522,
+          "evidence": "digital twin residual 0.25% above expected; actual 0.95 vs twin band \u00b10.70",
+          "severity": "info"
+        },
+        {
+          "layer": "AI_OVERRIDE",
+          "fault_type": "capacity_fade",
+          "confidence": 0.9,
+          "evidence": "AI: confirms capacity fade with higher confidence (RULE @ 82% \u2192 AI @ 90%); signal pattern matches known fault signature",
+          "severity": "info"
+        }
+      ],
+      "severity": "info",
+      "confidence_cascade": 0.9,
+      "cascade_winning_confidence": 0.9
+    },
+    {
+      "id": "bess-pred-thermal_stress-bess-alpha-001",
+      "fault_type": "thermal_stress",
+      "display_name": "Thermal Stress Warning",
+      "equipment_id": "bess-alpha-001",
+      "equipment_name": "Alpha BESS Unit 1",
+      "asset_type": "BESS_MODULE",
+      "days_to_fault": 3650.0,
+      "confidence": 0.421,
+      "current_value": 29.1446,
+      "threshold": 45.0,
+      "unit": "\u00b0C",
+      "trend": 0.109221,
+      "urgency": "monitoring",
+      "is_urgent": false,
+      "recommended_action": "Inspect HVAC / cooling system. Reduce peak power during hottest hours to lower cell temperature.",
+      "estimated_date": "2036-06-16",
+      "projected_power_loss_kw": 250.0,
+      "projected_energy_loss_kwh": 6000.0,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 450.0,
+      "is_reactive": false,
+      "bess_source": true,
+      "classification_layer": "AI_OVERRIDE",
+      "evidence": "AI: confirms thermal stress with higher confidence (ML_CLASSIFIER @ 45% \u2192 AI @ 60%); signal pattern matches known fault signature",
+      "numeric_evidence": {
+        "prior_best_confidence": 0.45,
+        "ai_synthesised_confidence": 0.6,
+        "reclassified_from": null,
+        "source": "synthetic"
+      },
+      "winner_reason": "AI override: ML_CLASSIFIER @ 0.45 \u2192 AI @ 0.60 reclassified as thermal_stress",
+      "layer_chain": [
+        {
+          "layer": "TWIN_RESIDUAL",
+          "fault_type": "thermal_stress",
+          "confidence": 0.43,
+          "evidence": "digital twin residual 15.86\u00b0C below expected; actual 29.14 vs twin band \u00b145.00",
+          "severity": "info"
+        },
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "thermal_stress",
+          "confidence": 0.45,
+          "evidence": "CatBoost classifier: thermal stress @ 45% probability, trend +10.92%/d (worsening), ~3650d to fault",
+          "severity": "info"
+        },
+        {
+          "layer": "AI_OVERRIDE",
+          "fault_type": "thermal_stress",
+          "confidence": 0.6,
+          "evidence": "AI: confirms thermal stress with higher confidence (ML_CLASSIFIER @ 45% \u2192 AI @ 60%); signal pattern matches known fault signature",
+          "severity": "info"
+        }
+      ],
+      "severity": "info",
+      "confidence_cascade": 0.6,
+      "cascade_winning_confidence": 0.6
+    },
+    {
+      "id": "bess-pred-cycle_life-bess-alpha-001",
+      "fault_type": "cycle_life",
+      "display_name": "Cycle Life Warning",
+      "equipment_id": "bess-alpha-001",
+      "equipment_name": "Alpha BESS Unit 1",
+      "asset_type": "BESS_PACK",
+      "days_to_fault": 3650.0,
+      "confidence": 0.996,
+      "current_value": 75.4,
+      "threshold": 6000.0,
+      "unit": "EFC",
+      "trend": 0.785161,
+      "urgency": "monitoring",
+      "is_urgent": false,
+      "recommended_action": "Reduce daily cycling frequency. Consider partial-cycle dispatching to stay within warranty budget.",
+      "estimated_date": "2036-06-16",
+      "projected_power_loss_kw": 0.0,
+      "projected_energy_loss_kwh": 0.0,
+      "repair_cost_eur": 1500,
+      "revenue_at_risk_eur": 0.0,
+      "is_reactive": false,
+      "bess_source": true,
+      "classification_layer": "ML_CLASSIFIER",
+      "evidence": "CatBoost classifier: cycle life @ 85% probability, trend +78.52%/d (worsening), ~3650d to fault",
+      "numeric_evidence": {
+        "model_probability": 0.85,
+        "days_to_fault": 3650.0,
+        "trend_per_day": 0.785161
+      },
+      "winner_reason": "highest confidence (0.85) via ML_CLASSIFIER",
+      "layer_chain": [
+        {
+          "layer": "ML_CLASSIFIER",
+          "fault_type": "cycle_life",
+          "confidence": 0.85,
+          "evidence": "CatBoost classifier: cycle life @ 85% probability, trend +78.52%/d (worsening), ~3650d to fault",
+          "severity": "info"
+        }
+      ],
+      "severity": "info",
+      "cascade_winning_confidence": 0.85
+    }
+  ],
+  "generator": "scripts/regenerate_fault_rul.py \u2014 derived from analysis_daily twin residuals",
+  "cascade_summary": {
+    "rows_classified": 22,
+    "layer_distribution": {
+      "AI_OVERRIDE": 12,
+      "RULE": 4,
+      "ML_CLASSIFIER": 6
+    },
+    "ai_overrides": 12,
+    "ai_override_rate": 0.545
+  },
+  "cascade_generated_at": "2026-06-19T18:05:56.212956",
+  "bess_summary": {
+    "reactive_count": 2,
+    "predictive_count": 5,
+    "synthesised_violations": 2,
+    "asset_id": "bess-alpha-001",
+    "generated_at": "2026-06-19T18:05:26.697801"
+  }
+}

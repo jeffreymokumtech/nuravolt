@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "plant_id": "eta",
+    "generated_at": "2025-12-16T14:47:54.888980",
+    "note": "Using estimated costs - update with actual values"
+  },
+  "cleaning_costs": {
+    "cost_per_cleaning_eur": 500,
+    "crew_size": 4,
+    "cleaning_duration_hours": 4,
+    "water_cost_eur": 50
+  },
+  "recommendations": {
+    "optimal_frequency_days": 60,
+    "estimated_annual_cleanings": 6,
+    "estimated_annual_cost_eur": 3000
+  }
+}

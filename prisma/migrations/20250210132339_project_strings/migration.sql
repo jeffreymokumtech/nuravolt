@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE "Project" ALTER COLUMN "connection_id" SET DATA TYPE TEXT,
+ALTER COLUMN "webhook_id" SET DATA TYPE TEXT,
+ALTER COLUMN "scenario_id" SET DATA TYPE TEXT;

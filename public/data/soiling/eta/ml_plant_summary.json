@@ -1,0 +1,162 @@
+{
+ "currentStatus": {
+  "avgSoilingRatio": 0.8719,
+  "dataSource": "measured_pr_selfnorm_dustiq_calibrated",
+  "estimatedLossPct": 12.81,
+  "healthScore": 98,
+  "lastUpdateTime": "2026-07-17T12:20:59.277479",
+  "validation": {
+   "config": {
+    "depth": 6,
+    "early_stopping_rounds": null,
+    "fine_tune_iterations": 500,
+    "fine_tune_learning_rate": 0.01,
+    "iterations": 2000,
+    "l2_leaf_reg": 3.0,
+    "learning_rate": 0.02,
+    "loss_function": "Quantile:alpha=0.3",
+    "max_sr": 1.0,
+    "min_sr": 0.75,
+    "random_seed": 42,
+    "train_test_split": 0.2
+   },
+   "created_at": "2026-07-16T14:31:30.998173",
+   "feature_names": [
+    "rainfall_sum_7d",
+    "rainfall_max_7d",
+    "rainfall_days_7d",
+    "rainfall_sum_14d",
+    "rainfall_max_14d",
+    "rainfall_days_14d",
+    "rainfall_sum_30d",
+    "rainfall_max_30d",
+    "rainfall_days_30d",
+    "days_since_rain",
+    "is_heavy_rain",
+    "is_moderate_rain",
+    "day_of_year",
+    "month",
+    "day_of_year_sin",
+    "day_of_year_cos",
+    "month_sin",
+    "month_cos",
+    "is_dry_season",
+    "inverter_group_encoded",
+    "inverter_position",
+    "inverter_pr_7d",
+    "inverter_pr_deviation",
+    "inverter_pr_trend",
+    "inverter_anomaly_rate",
+    "inverter_sr_baseline",
+    "inverter_z_score"
+   ],
+   "fine_tuned_from": null,
+   "inverter_features": [
+    "inverter_group_encoded",
+    "inverter_position",
+    "inverter_pr_7d",
+    "inverter_pr_deviation",
+    "inverter_pr_trend",
+    "inverter_anomaly_rate",
+    "inverter_sr_baseline"
+   ],
+   "is_foundation": true,
+   "model_variant": "dustiq",
+   "n_inverters": 28,
+   "n_samples": 2240,
+   "plant_id": "eta",
+   "pseudo_label_stats": null,
+   "training_end": "21391",
+   "training_start": "1092",
+   "validation_mae": 0.000432505424848674,
+   "validation_r2": 0.9695155358442882,
+   "validation_rmse": 0.001009223656390492
+  }
+ },
+ "economicImpact": {
+  "estimatedROI_pct": null,
+  "expectedNetBenefit_EUR": null,
+  "nextCleaningRecommended": null,
+  "paybackDays": null,
+  "ytdEnergyLoss_MWh": 0.0,
+  "ytdRevenueLoss_EUR": 0.0
+ },
+ "fleetHealth": {
+  "critical": 0,
+  "majorIssues": 0,
+  "minorIssues": 2,
+  "normalInverters": 26
+ },
+ "plantInfo": {
+  "capacity_MW": 1.68,
+  "healthScore": 98,
+  "plantId": "eta",
+  "plantName": "Eta Solar Plant",
+  "totalInverters": 28
+ },
+ "provenance": {
+  "data_end": "2025-12-14",
+  "data_start": "2020-10-01",
+  "generated_at": "2026-07-17T12:20:59.277506",
+  "method": "measured_pr_selfnorm_dustiq_calibrated",
+  "source": "measured_per_inverter",
+  "stats_window": {
+   "end": "2025-12-14",
+   "start": "2025-09-15"
+  }
+ },
+ "topPerformers": [
+  {
+   "inverterId": "INV 01.015",
+   "rank": 1,
+   "srMean": 0.8757
+  },
+  {
+   "inverterId": "INV 01.013",
+   "rank": 2,
+   "srMean": 0.8751
+  },
+  {
+   "inverterId": "INV 01.019",
+   "rank": 3,
+   "srMean": 0.8743
+  },
+  {
+   "inverterId": "INV 01.001",
+   "rank": 4,
+   "srMean": 0.8743
+  },
+  {
+   "inverterId": "INV 01.007",
+   "rank": 5,
+   "srMean": 0.8741
+  }
+ ],
+ "worstPerformers": [
+  {
+   "inverterId": "INV 01.011",
+   "rank": 28,
+   "srMean": 0.8636
+  },
+  {
+   "inverterId": "INV 01.026",
+   "rank": 27,
+   "srMean": 0.8661
+  },
+  {
+   "inverterId": "INV 01.024",
+   "rank": 26,
+   "srMean": 0.8692
+  },
+  {
+   "inverterId": "INV 01.028",
+   "rank": 25,
+   "srMean": 0.87
+  },
+  {
+   "inverterId": "INV 01.023",
+   "rank": 24,
+   "srMean": 0.87
+  }
+ ]
+}

@@ -1,0 +1,84 @@
+{
+  "plantId": "theta",
+  "generatedAt": "2026-02-10T12:00:00Z",
+  "totalAnomalies": 7,
+  "anomalies": [
+    {
+      "id": "ANO-001",
+      "inverterId": "SG50CX-08",
+      "mpptId": "MPPT-3",
+      "stringId": "STR-2",
+      "type": "OPEN_CIRCUIT",
+      "severity": "critical",
+      "currentDrop_pct": 100.0,
+      "detectedAt": "2026-02-09T08:15:00Z",
+      "description": "String STR-2 on MPPT-3 shows zero current — open circuit detected"
+    },
+    {
+      "id": "ANO-002",
+      "inverterId": "SG50CX-18",
+      "mpptId": "MPPT-2",
+      "stringId": "STR-1",
+      "type": "DEGRADATION",
+      "severity": "warning",
+      "currentDrop_pct": 18.4,
+      "detectedAt": "2026-02-07T10:30:00Z",
+      "description": "String current 18.4% below expected — progressive degradation"
+    },
+    {
+      "id": "ANO-003",
+      "inverterId": "SG50CX-18",
+      "mpptId": "MPPT-2",
+      "stringId": "STR-2",
+      "type": "DEGRADATION",
+      "severity": "warning",
+      "currentDrop_pct": 15.2,
+      "detectedAt": "2026-02-07T10:30:00Z",
+      "description": "String current 15.2% below expected — progressive degradation"
+    },
+    {
+      "id": "ANO-004",
+      "inverterId": "SG50CX-18",
+      "mpptId": "MPPT-5",
+      "stringId": "STR-1",
+      "type": "MISMATCH",
+      "severity": "warning",
+      "currentDrop_pct": 12.1,
+      "detectedAt": "2026-02-08T14:00:00Z",
+      "description": "Current mismatch between strings on MPPT-5 exceeds 10% threshold"
+    },
+    {
+      "id": "ANO-005",
+      "inverterId": "SG50CX-18",
+      "mpptId": "MPPT-5",
+      "stringId": "STR-2",
+      "type": "MISMATCH",
+      "severity": "info",
+      "currentDrop_pct": 8.7,
+      "detectedAt": "2026-02-08T14:00:00Z",
+      "description": "Minor current mismatch on MPPT-5 — monitor for progression"
+    },
+    {
+      "id": "ANO-006",
+      "inverterId": "SG50CX-08",
+      "mpptId": "MPPT-6",
+      "stringId": "STR-1",
+      "type": "DEGRADATION",
+      "severity": "warning",
+      "currentDrop_pct": 14.8,
+      "detectedAt": "2026-02-09T09:00:00Z",
+      "description": "String current 14.8% below expected on MPPT-6"
+    },
+    {
+      "id": "ANO-007",
+      "inverterId": "SG50CX-03",
+      "mpptId": "MPPT-4",
+      "stringId": "STR-2",
+      "type": "MISMATCH",
+      "severity": "info",
+      "currentDrop_pct": 6.3,
+      "detectedAt": "2026-02-10T11:00:00Z",
+      "description": "Slight current imbalance between strings on MPPT-4"
+    }
+  ]
+}

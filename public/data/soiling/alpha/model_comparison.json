@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "plant_id": "alpha1",
+    "n_models": 2
+  },
+  "models": [
+    {
+      "model": "LIGHTGBM",
+      "mae_train": 0.0162686219224447,
+      "mae_test": 0.0596121329231381,
+      "rmse_train": 0.0225480479048401,
+      "rmse_test": 0.0922657700456658,
+      "r2_train": 0.9601995931923972,
+      "r2_test": 0.4058857838869673,
+      "best_iteration": 62
+    },
+    {
+      "model": "CATBOOST",
+      "mae_train": 0.0269605392138578,
+      "mae_test": 0.0567127295020247,
+      "rmse_train": 0.0456944498475473,
+      "rmse_test": 0.0898018282401717,
+      "r2_train": 0.8365456363559584,
+      "r2_test": 0.437193532111784,
+      "best_iteration": 72
+    }
+  ]
+}

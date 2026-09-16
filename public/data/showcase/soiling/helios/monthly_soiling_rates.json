@@ -1,0 +1,150 @@
+{
+  "metadata": {
+    "plant_id": "helios",
+    "generated_at": "2026-04-17T12:25:46.948Z",
+    "data_source": "CAMS climatology + site calibration",
+    "base_soiling_rate_per_day": 0.003,
+    "calibration_method": "linear_regression_aod_correlation"
+  },
+  "calibration": {
+    "intercept": 0.001,
+    "slope": 0.008,
+    "r_squared": 0.72,
+    "data_points": 24,
+    "calibration_date": "2026-04-17T12:25:46.948Z"
+  },
+  "monthly_rates": [
+    {
+      "month": "2026-01",
+      "month_name": "January",
+      "aod_avg": 0.18,
+      "aod_dust_avg": 0.09,
+      "soiling_rate_per_day": 0.00244,
+      "soiling_rate_pct_per_day": 0.244,
+      "seasonal_factor": 0.72,
+      "confidence": 0.8,
+      "notes": "Wet season — reduced soiling"
+    },
+    {
+      "month": "2026-02",
+      "month_name": "February",
+      "aod_avg": 0.19,
+      "aod_dust_avg": 0.095,
+      "soiling_rate_per_day": 0.00252,
+      "soiling_rate_pct_per_day": 0.252,
+      "seasonal_factor": 0.76,
+      "confidence": 0.8,
+      "notes": "Wet season — reduced soiling"
+    },
+    {
+      "month": "2026-03",
+      "month_name": "March",
+      "aod_avg": 0.22,
+      "aod_dust_avg": 0.11,
+      "soiling_rate_per_day": 0.00276,
+      "soiling_rate_pct_per_day": 0.276,
+      "seasonal_factor": 0.88,
+      "confidence": 0.8,
+      "notes": "Transition — moderate soiling"
+    },
+    {
+      "month": "2026-04",
+      "month_name": "April",
+      "aod_avg": 0.25,
+      "aod_dust_avg": 0.125,
+      "soiling_rate_per_day": 0.003,
+      "soiling_rate_pct_per_day": 0.3,
+      "seasonal_factor": 1,
+      "confidence": 0.8,
+      "notes": "Transition — moderate soiling"
+    },
+    {
+      "month": "2026-05",
+      "month_name": "May",
+      "aod_avg": 0.28,
+      "aod_dust_avg": 0.14,
+      "soiling_rate_per_day": 0.00324,
+      "soiling_rate_pct_per_day": 0.324,
+      "seasonal_factor": 1.12,
+      "confidence": 0.8,
+      "notes": "Dry season beginning"
+    },
+    {
+      "month": "2026-06",
+      "month_name": "June",
+      "aod_avg": 0.32,
+      "aod_dust_avg": 0.16,
+      "soiling_rate_per_day": 0.00356,
+      "soiling_rate_pct_per_day": 0.356,
+      "seasonal_factor": 1.28,
+      "confidence": 0.8,
+      "notes": "Dry season peak — high soiling"
+    },
+    {
+      "month": "2026-07",
+      "month_name": "July",
+      "aod_avg": 0.34,
+      "aod_dust_avg": 0.17,
+      "soiling_rate_per_day": 0.00372,
+      "soiling_rate_pct_per_day": 0.372,
+      "seasonal_factor": 1.36,
+      "confidence": 0.8,
+      "notes": "Dry season peak — high soiling"
+    },
+    {
+      "month": "2026-08",
+      "month_name": "August",
+      "aod_avg": 0.33,
+      "aod_dust_avg": 0.165,
+      "soiling_rate_per_day": 0.00364,
+      "soiling_rate_pct_per_day": 0.364,
+      "seasonal_factor": 1.32,
+      "confidence": 0.8,
+      "notes": "Dry season peak — high soiling"
+    },
+    {
+      "month": "2026-09",
+      "month_name": "September",
+      "aod_avg": 0.28,
+      "aod_dust_avg": 0.14,
+      "soiling_rate_per_day": 0.00324,
+      "soiling_rate_pct_per_day": 0.324,
+      "seasonal_factor": 1.12,
+      "confidence": 0.8,
+      "notes": "Dry season wane"
+    },
+    {
+      "month": "2026-10",
+      "month_name": "October",
+      "aod_avg": 0.24,
+      "aod_dust_avg": 0.12,
+      "soiling_rate_per_day": 0.00292,
+      "soiling_rate_pct_per_day": 0.292,
+      "seasonal_factor": 0.96,
+      "confidence": 0.8,
+      "notes": "Transition — moderate soiling"
+    },
+    {
+      "month": "2026-11",
+      "month_name": "November",
+      "aod_avg": 0.2,
+      "aod_dust_avg": 0.1,
+      "soiling_rate_per_day": 0.0026,
+      "soiling_rate_pct_per_day": 0.26,
+      "seasonal_factor": 0.8,
+      "confidence": 0.8,
+      "notes": "Wet season beginning"
+    },
+    {
+      "month": "2026-12",
+      "month_name": "December",
+      "aod_avg": 0.17,
+      "aod_dust_avg": 0.085,
+      "soiling_rate_per_day": 0.00236,
+      "soiling_rate_pct_per_day": 0.236,
+      "seasonal_factor": 0.68,
+      "confidence": 0.8,
+      "notes": "Wet season — reduced soiling"
+    }
+  ]
+}

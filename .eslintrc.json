@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "next/core-web-vitals",               // Next.js core web vitals recommendations
+    "eslint:recommended",                 // ESLint recommended rules
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint" // TypeScript plugin for linting TypeScript code
+  ],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-non-null-asserted-optional-chain": "off",
+    "no-extra-boolean-cast": "off",                            // Allow explicit boolean casting
+    "@typescript-eslint/no-explicit-any": "off",               // Allow usage of 'any' type
+    "react-hooks/exhaustive-deps": "off",                      // Disable exhaustive deps rule for React Hooks
+    "prefer-const": "off",                                     // Do not enforce the use of 'const' over 'let'
+    "react/prop-types": "off",                                 // Disable prop-types validation (using TypeScript instead)
+    "no-empty": "off",                                         // Allow empty blocks
+    "no-prototype-builtins": "off",                            // Allow direct calls to Object.prototype methods
+    "@next/next/no-img-element": "off",                        // Allow the use of <img> instead of Next.js <Image>
+    "react/no-unescaped-entities": "off"                       // Marketing copy uses literal apostrophes/quotes in JSX text
+  }
+}

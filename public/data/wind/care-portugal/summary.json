@@ -1,0 +1,21 @@
+{
+  "plantId": "care-portugal",
+  "plantName": "CARE Wind Farm Portugal",
+  "location": "Portugal",
+  "country": "Portugal",
+  "latitude": 39.5,
+  "longitude": -8.0,
+  "totalCapacityMw": 10.0,
+  "turbineCount": 5,
+  "turbineModel": "2.0 MW Class",
+  "commissioned": "2017-01-01",
+  "currentOutputMw": 4.5,
+  "availability": 0.945,
+  "capacityFactor": 0.31,
+  "fleetHealthScore": 85,
+  "activeFaultCount": 2,
+  "criticalAlertCount": 0,
+  "lastUpdated": "2026-02-10T06:26:28.846846",
+  "dataSource": "CARE Dataset (Zenodo)",
+  "dataSourceUrl": "https://zenodo.org/records/10958775"
+}

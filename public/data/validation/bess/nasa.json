@@ -1,0 +1,100 @@
+{
+  "dataset": "NASA Ames PCoE Battery Aging (4 cells)",
+  "n_samples": 4,
+  "n_cells": 4,
+  "predictions": [
+    {
+      "cell_id": "B0007",
+      "actual_eol": 168.0,
+      "predicted_eol": 279.0,
+      "error_cycles": 111.0,
+      "error_pct": 0.661
+    },
+    {
+      "cell_id": "B0018",
+      "actual_eol": 96.0,
+      "predicted_eol": 95.0,
+      "error_cycles": -1.0,
+      "error_pct": 0.01
+    },
+    {
+      "cell_id": "B0005",
+      "actual_eol": 124.0,
+      "predicted_eol": 281.0,
+      "error_cycles": 157.0,
+      "error_pct": 1.266
+    },
+    {
+      "cell_id": "B0006",
+      "actual_eol": 108.0,
+      "predicted_eol": 106.0,
+      "error_cycles": -2.0,
+      "error_pct": 0.019
+    }
+  ],
+  "mape": 0.4889,
+  "rmse_cycles": 96.1,
+  "eol_within_10pct_fraction": 0.5,
+  "eol_within_25pct_fraction": 0.5,
+  "extras": {
+    "prediction_method": "linear extrapolation from first 50 cycles",
+    "eol_threshold_ah": 1.4,
+    "eol_threshold_fraction": null,
+    "n_cells": 13,
+    "n_cells_scored": 4,
+    "n_cells_abstained": 0,
+    "n_cells_observed_not_predicted": 9,
+    "cells_observed_not_predicted": [
+      {
+        "cell_id": "B0046",
+        "actual_eol": 16,
+        "reason": "EOL at cycle 16 is inside the 50-cycle window"
+      },
+      {
+        "cell_id": "B0026",
+        "actual_eol": 5,
+        "reason": "EOL at cycle 5 is inside the 50-cycle window"
+      },
+      {
+        "cell_id": "B0044",
+        "actual_eol": 5,
+        "reason": "EOL at cycle 5 is inside the 50-cycle window"
+      },
+      {
+        "cell_id": "B0042",
+        "actual_eol": 5,
+        "reason": "EOL at cycle 5 is inside the 50-cycle window"
+      },
+      {
+        "cell_id": "B0043",
+        "actual_eol": 5,
+        "reason": "EOL at cycle 5 is inside the 50-cycle window"
+      },
+      {
+        "cell_id": "B0047",
+        "actual_eol": 9,
+        "reason": "EOL at cycle 9 is inside the 50-cycle window"
+      },
+      {
+        "cell_id": "B0048",
+        "actual_eol": 11,
+        "reason": "EOL at cycle 11 is inside the 50-cycle window"
+      },
+      {
+        "cell_id": "B0029",
+        "actual_eol": 40,
+        "reason": "EOL at cycle 40 is inside the 50-cycle window"
+      },
+      {
+        "cell_id": "B0030",
+        "actual_eol": 40,
+        "reason": "EOL at cycle 40 is inside the 50-cycle window"
+      }
+    ],
+    "n_cells_forecastable": 4,
+    "coverage_of_forecastable": 1.0,
+    "scoring_note": "Scored only on cells whose EOL lies BEYOND the observation window (otherwise the predictor watches the cell die rather than predicting it) AND where the baseline produced a prediction. It previously returned len(capacity) on every failure path, which for a run-to-failure cell IS the label; those returns scored as perfect. Coverage is published so a method that only answers on easy cells cannot hide behind a high score.",
+    "note": "Naive linear-fit baseline. Severson 2019 Nature Energy paper achieved ~9% MAPE using delta-Q featurization; this is the much-simpler floor."
+  },
+  "generated_at": "2026-08-20T19:35:20.752139Z"
+}

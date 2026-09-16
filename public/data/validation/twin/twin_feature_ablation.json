@@ -1,0 +1,332 @@
+{
+  "dataset": "Twin feature ablation: does an ML twin travel?",
+  "n_samples": 10954,
+  "n_plants": 7,
+  "hypothesis": "Calendar and clock features encode site-specific shading geometry, because shading recurs at a fixed solar position on a fixed date. Removing them should improve leave-one-plant-out performance while worsening same-plant performance.",
+  "hypothesis_supported": false,
+  "transfer_improves_without_calendar": true,
+  "same_plant_cost_as_predicted": false,
+  "best_feature_set_on_unseen_plant": "all",
+  "best_beats_naive_baseline": false,
+  "nmae_pct": 10.039,
+  "reference_nmae_pct": 8.899,
+  "uplift_vs_reference_pct": -12.81,
+  "normalizer": "mean_daily_energy_kwh",
+  "by_feature_set": {
+    "physics": {
+      "same_plant": {
+        "dataset": "same_plant/physics",
+        "n_samples": 2194,
+        "n_windows": null,
+        "normalizer": "mean_daily_energy_kwh",
+        "normalizer_value": 2123.197,
+        "nmae_pct": 12.608,
+        "nrmse_pct": 23.709,
+        "mbe_pct": 2.477,
+        "model": {
+          "label": "hybrid",
+          "nmae_pct": 12.608,
+          "nrmse_pct": 23.709,
+          "mbe_pct": 2.477,
+          "r2_footnote_only": 0.9599
+        },
+        "baselines": {
+          "irradiance_scaling": {
+            "label": "irradiance_scaling",
+            "nmae_pct": 12.315,
+            "nrmse_pct": 23.222,
+            "mbe_pct": 2.488,
+            "r2_footnote_only": 0.9615
+          }
+        },
+        "retention": {},
+        "extras": {},
+        "reference_baseline": "irradiance_scaling",
+        "reference_nmae_pct": 12.315,
+        "uplift_vs_reference_pct": -2.37
+      },
+      "leave_one_plant_out": {
+        "dataset": "leave_one_plant_out/physics",
+        "n_samples": 9495,
+        "n_windows": null,
+        "normalizer": "mean_daily_energy_kwh",
+        "normalizer_value": 2323.841,
+        "nmae_pct": 10.26,
+        "nrmse_pct": 19.967,
+        "mbe_pct": -1.199,
+        "model": {
+          "label": "hybrid",
+          "nmae_pct": 10.26,
+          "nrmse_pct": 19.967,
+          "mbe_pct": -1.199,
+          "r2_footnote_only": 0.9654
+        },
+        "baselines": {
+          "irradiance_scaling": {
+            "label": "irradiance_scaling",
+            "nmae_pct": 8.899,
+            "nrmse_pct": 18.687,
+            "mbe_pct": 0.309,
+            "r2_footnote_only": 0.9697
+          }
+        },
+        "retention": {},
+        "extras": {},
+        "reference_baseline": "irradiance_scaling",
+        "reference_nmae_pct": 8.899,
+        "uplift_vs_reference_pct": -15.3
+      }
+    },
+    "physics+calendar": {
+      "same_plant": {
+        "dataset": "same_plant/physics+calendar",
+        "n_samples": 2194,
+        "n_windows": null,
+        "normalizer": "mean_daily_energy_kwh",
+        "normalizer_value": 2123.197,
+        "nmae_pct": 12.609,
+        "nrmse_pct": 23.938,
+        "mbe_pct": 2.286,
+        "model": {
+          "label": "hybrid",
+          "nmae_pct": 12.609,
+          "nrmse_pct": 23.938,
+          "mbe_pct": 2.286,
+          "r2_footnote_only": 0.9591
+        },
+        "baselines": {
+          "irradiance_scaling": {
+            "label": "irradiance_scaling",
+            "nmae_pct": 12.315,
+            "nrmse_pct": 23.222,
+            "mbe_pct": 2.488,
+            "r2_footnote_only": 0.9615
+          }
+        },
+        "retention": {},
+        "extras": {},
+        "reference_baseline": "irradiance_scaling",
+        "reference_nmae_pct": 12.315,
+        "uplift_vs_reference_pct": -2.39
+      },
+      "leave_one_plant_out": {
+        "dataset": "leave_one_plant_out/physics+calendar",
+        "n_samples": 9495,
+        "n_windows": null,
+        "normalizer": "mean_daily_energy_kwh",
+        "normalizer_value": 2323.841,
+        "nmae_pct": 10.261,
+        "nrmse_pct": 20.641,
+        "mbe_pct": -0.816,
+        "model": {
+          "label": "hybrid",
+          "nmae_pct": 10.261,
+          "nrmse_pct": 20.641,
+          "mbe_pct": -0.816,
+          "r2_footnote_only": 0.963
+        },
+        "baselines": {
+          "irradiance_scaling": {
+            "label": "irradiance_scaling",
+            "nmae_pct": 8.899,
+            "nrmse_pct": 18.687,
+            "mbe_pct": 0.309,
+            "r2_footnote_only": 0.9697
+          }
+        },
+        "retention": {},
+        "extras": {},
+        "reference_baseline": "irradiance_scaling",
+        "reference_nmae_pct": 8.899,
+        "uplift_vs_reference_pct": -15.31
+      }
+    },
+    "physics+clock": {
+      "same_plant": {
+        "dataset": "same_plant/physics+clock",
+        "n_samples": 2194,
+        "n_windows": null,
+        "normalizer": "mean_daily_energy_kwh",
+        "normalizer_value": 2123.197,
+        "nmae_pct": 12.652,
+        "nrmse_pct": 23.515,
+        "mbe_pct": 2.543,
+        "model": {
+          "label": "hybrid",
+          "nmae_pct": 12.652,
+          "nrmse_pct": 23.515,
+          "mbe_pct": 2.543,
+          "r2_footnote_only": 0.9605
+        },
+        "baselines": {
+          "irradiance_scaling": {
+            "label": "irradiance_scaling",
+            "nmae_pct": 12.315,
+            "nrmse_pct": 23.222,
+            "mbe_pct": 2.488,
+            "r2_footnote_only": 0.9615
+          }
+        },
+        "retention": {},
+        "extras": {},
+        "reference_baseline": "irradiance_scaling",
+        "reference_nmae_pct": 12.315,
+        "uplift_vs_reference_pct": -2.74
+      },
+      "leave_one_plant_out": {
+        "dataset": "leave_one_plant_out/physics+clock",
+        "n_samples": 9495,
+        "n_windows": null,
+        "normalizer": "mean_daily_energy_kwh",
+        "normalizer_value": 2323.841,
+        "nmae_pct": 10.326,
+        "nrmse_pct": 20.337,
+        "mbe_pct": -1.154,
+        "model": {
+          "label": "hybrid",
+          "nmae_pct": 10.326,
+          "nrmse_pct": 20.337,
+          "mbe_pct": -1.154,
+          "r2_footnote_only": 0.9641
+        },
+        "baselines": {
+          "irradiance_scaling": {
+            "label": "irradiance_scaling",
+            "nmae_pct": 8.899,
+            "nrmse_pct": 18.687,
+            "mbe_pct": 0.309,
+            "r2_footnote_only": 0.9697
+          }
+        },
+        "retention": {},
+        "extras": {},
+        "reference_baseline": "irradiance_scaling",
+        "reference_nmae_pct": 8.899,
+        "uplift_vs_reference_pct": -16.03
+      }
+    },
+    "all": {
+      "same_plant": {
+        "dataset": "same_plant/all",
+        "n_samples": 2194,
+        "n_windows": null,
+        "normalizer": "mean_daily_energy_kwh",
+        "normalizer_value": 2123.197,
+        "nmae_pct": 12.456,
+        "nrmse_pct": 23.716,
+        "mbe_pct": 2.383,
+        "model": {
+          "label": "hybrid",
+          "nmae_pct": 12.456,
+          "nrmse_pct": 23.716,
+          "mbe_pct": 2.383,
+          "r2_footnote_only": 0.9598
+        },
+        "baselines": {
+          "irradiance_scaling": {
+            "label": "irradiance_scaling",
+            "nmae_pct": 12.315,
+            "nrmse_pct": 23.222,
+            "mbe_pct": 2.488,
+            "r2_footnote_only": 0.9615
+          }
+        },
+        "retention": {},
+        "extras": {},
+        "reference_baseline": "irradiance_scaling",
+        "reference_nmae_pct": 12.315,
+        "uplift_vs_reference_pct": -1.14
+      },
+      "leave_one_plant_out": {
+        "dataset": "leave_one_plant_out/all",
+        "n_samples": 9495,
+        "n_windows": null,
+        "normalizer": "mean_daily_energy_kwh",
+        "normalizer_value": 2323.841,
+        "nmae_pct": 10.039,
+        "nrmse_pct": 20.282,
+        "mbe_pct": -0.536,
+        "model": {
+          "label": "hybrid",
+          "nmae_pct": 10.039,
+          "nrmse_pct": 20.282,
+          "mbe_pct": -0.536,
+          "r2_footnote_only": 0.9643
+        },
+        "baselines": {
+          "irradiance_scaling": {
+            "label": "irradiance_scaling",
+            "nmae_pct": 8.899,
+            "nrmse_pct": 18.687,
+            "mbe_pct": 0.309,
+            "r2_footnote_only": 0.9697
+          }
+        },
+        "retention": {},
+        "extras": {},
+        "reference_baseline": "irradiance_scaling",
+        "reference_nmae_pct": 8.899,
+        "uplift_vs_reference_pct": -12.81
+      }
+    }
+  },
+  "feature_sets": {
+    "physics": [
+      "irr",
+      "irr_sq",
+      "cell_temp_proxy",
+      "wind_proxy",
+      "clearsky_index"
+    ],
+    "physics+calendar": [
+      "irr",
+      "irr_sq",
+      "cell_temp_proxy",
+      "wind_proxy",
+      "clearsky_index",
+      "doy_sin",
+      "doy_cos"
+    ],
+    "physics+clock": [
+      "irr",
+      "irr_sq",
+      "cell_temp_proxy",
+      "wind_proxy",
+      "clearsky_index",
+      "day_progress"
+    ],
+    "all": [
+      "irr",
+      "irr_sq",
+      "cell_temp_proxy",
+      "wind_proxy",
+      "clearsky_index",
+      "doy_sin",
+      "doy_cos",
+      "day_progress"
+    ]
+  },
+  "excluded_from_headline": [
+    "gamma"
+  ],
+  "interpretation": "If the hypothesis is supported, a twin that travels is buildable by restricting features to physical covariates. If it is not, the most plausible explanation for the transfer failure is ruled out, and the physics twin ships alone at 6.61% nMAE with no ML layer.",
+  "generated_at": "2026-08-20T18:09:54.259168Z",
+  "result": {
+    "hypothesis_supported": false,
+    "finding": "At DAILY resolution the calendar features are near-irrelevant: adding day-of-year sine and cosine changes leave-one-plant-out nMAE from 10.260% to 10.261%, and same-plant from 12.608% to 12.609%. Irradiance is itself strongly seasonal, so day-of-year carries almost no information the model does not already have.",
+    "every_feature_set_loses_to_the_naive_line": true,
+    "uplift_range_pct": [
+      -16.0,
+      -12.8
+    ],
+    "conclusion": "The proposed explanation for the transfer failure is ruled out at this resolution. Machine learning loses to a fitted irradiance line on an unseen plant regardless of feature set, by 12.8% to 16.0%."
+  },
+  "critical_limitation": {
+    "what": "THIS TEST CANNOT EVALUATE THE SHADING HYPOTHESIS, and that is a flaw in the experiment rather than a finding about the world.",
+    "why": "Row-to-row shading is a WITHIN-DAY phenomenon: a row shades its neighbour at a particular hour, at a particular sun elevation. The corpus used here is DAILY MEAN power, so the within-day dimension has already been averaged away before the model sees anything. There is no clock feature that can be built from it. The `day_progress` feature in this run is (day-of-year mod 30)/30, which is a monthly cycle and NOT a within-day clock; it was mislabelled.",
+    "what_this_does_and_does_not_show": "Shows: at daily resolution, calendar features do not explain the transfer failure, and ML does not beat a line on an unseen plant. Does NOT show: that site geometry is irrelevant to transfer. That question needs the 15-minute corpus, where shading is actually observable.",
+    "next_test": "Re-run on the 15-minute data (alpha_cleaned.parquet and siblings, ~1.3M rows) with a genuine solar-position feature set: solar elevation, azimuth, angle of incidence and hour-angle. Only there can the shading channel be opened or closed."
+  },
+  "headline": "Hypothesis NOT supported at daily resolution: calendar features change nMAE by 0.001pp, and every feature set loses to a naive irradiance line by 13-16%. The shading question remains open and needs 15-minute data.",
+  "status": "negative_result_with_a_stated_limitation"
+}

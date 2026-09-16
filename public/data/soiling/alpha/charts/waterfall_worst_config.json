@@ -1,0 +1,134 @@
+{
+  "chartType": "bar",
+  "title": {
+    "text": "Loss Breakdown - INV 04.099",
+    "subtext": "Total Loss: 14.4% (IEA PVPS T13 Method)",
+    "left": "center"
+  },
+  "tooltip": {
+    "trigger": "axis",
+    "axisPointer": {
+      "type": "shadow"
+    },
+    "formatter": "{b}: {c}%"
+  },
+  "legend": {
+    "show": false
+  },
+  "grid": {
+    "top": "80",
+    "left": "80",
+    "right": "40",
+    "bottom": "60"
+  },
+  "xAxis": {
+    "type": "category",
+    "data": [
+      "Temperature",
+      "Spectral",
+      "Soiling",
+      "Inverter",
+      "Wiring/BOP",
+      "Degradation"
+    ],
+    "axisLabel": {
+      "rotate": 30
+    }
+  },
+  "yAxis": {
+    "type": "value",
+    "name": "Loss (%)",
+    "max": 9.996
+  },
+  "series": [
+    {
+      "name": "Loss",
+      "type": "bar",
+      "data": [
+        {
+          "value": 0.6,
+          "itemStyle": {
+            "color": "#fac858"
+          },
+          "label": {
+            "show": true,
+            "position": "top",
+            "formatter": "{c}%"
+          }
+        },
+        {
+          "value": 1.0,
+          "itemStyle": {
+            "color": "#73c0de"
+          },
+          "label": {
+            "show": true,
+            "position": "top",
+            "formatter": "{c}%"
+          }
+        },
+        {
+          "value": 8.33,
+          "itemStyle": {
+            "color": "#ee6666"
+          },
+          "label": {
+            "show": true,
+            "position": "top",
+            "formatter": "{c}%"
+          }
+        },
+        {
+          "value": 2.0,
+          "itemStyle": {
+            "color": "#9a60b4"
+          },
+          "label": {
+            "show": true,
+            "position": "top",
+            "formatter": "{c}%"
+          }
+        },
+        {
+          "value": 2.0,
+          "itemStyle": {
+            "color": "#fc8452"
+          },
+          "label": {
+            "show": true,
+            "position": "top",
+            "formatter": "{c}%"
+          }
+        },
+        {
+          "value": 0.5,
+          "itemStyle": {
+            "color": "#3ba272"
+          },
+          "label": {
+            "show": true,
+            "position": "top",
+            "formatter": "{c}%"
+          }
+        }
+      ],
+      "emphasis": {
+        "itemStyle": {
+          "shadowBlur": 10
+        }
+      }
+    }
+  ],
+  "graphic": [
+    {
+      "type": "text",
+      "left": "80%",
+      "top": "15%",
+      "style": {
+        "text": "Controllable",
+        "fill": "#ee6666",
+        "fontSize": 12
+      }
+    }
+  ]
+}

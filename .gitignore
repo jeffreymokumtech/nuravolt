@@ -1,0 +1,197 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+**/node_modules/
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+.env
+.env.production
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# public
+public/robots.txt
+public/sitemap.xml
+public/sitemap-0.xml
+
+# Backend data folder (SCADA, weather, models, outputs)
+backenddata/
+
+# Keep configs versioned
+!backenddata/configs/
+!backenddata/configs/**
+
+# Large data files
+*.parquet
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+*.pkl
+*.joblib
+
+# Log files
+*.log
+
+# Model registry databases
+*.db
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Notebook download cache (NASA / CALCE / Severson / etc.)
+notebooks/_cache/
+notebooks/_executed_test.ipynb
+
+# Editor / local-machine / runtime state
+.vscode/
+.cache/
+.claude/scheduled_tasks.lock
+.claude/commands/
+.mcp.json
+
+# Python backup files left from refactors
+**/*.bak
+**/*.bak[0-9]*
+
+# Debug screenshots (repo root only — NOT public/images/screenshots/, which
+# ships production hero / OG / landing imagery)
+/screenshots/
+/voltage-twin-*.png
+/alpha-voltage-twin.png
+
+# Ad-hoc training / evaluation scripts at repo root (use scripts/ for
+# committed utilities)
+/run_alpha1_*.py
+/run_per_inverter_analysis.py
+/run_digital_twin_training.py
+/compare_ml_models.py
+/validate_sorting.py
+/test_pipeline.py
+/test_per_inverter_analysis.py
+/convert-og-image.html
+
+# ML training output (regeneratable; large)
+public/data/digitaltwin/**/training_timestamps_*.csv
+public/data/digitaltwin/**/models/
+public/data/digitaltwin/**/*.cbm
+
+# Deprecated analytics backend (older Python pipeline, replaced by nuravolt/)
+analyticsbackend/
+
+# CatBoost artifacts
+catboost_info/
+
+# Deprecated analytics backend
+analyticsbackend_deprecated/
+
+# QA agent run artifacts (screenshots, API dumps, reports, MCP session traces)
+automation/qa/outputs/
+
+# Demo - included in repo but blocked in production via middleware
+
+# Large data files (keep small JSON summaries, exclude bulk analysis outputs)
+public/data/digitaltwin/**/residuals_*.csv
+public/data/digitaltwin/**/*_heatmap*.json
+# per_inverter/: track ONLY the two served JSONs (history-capped, <~1 MB) —
+# without them the sr-estimate route 404s in every fresh deploy. Bulk CSV
+# side-outputs stay ignored.
+public/data/soiling/*/per_inverter/*
+!public/data/soiling/*/per_inverter/*_per_inverter_sr.json
+!public/data/soiling/*/per_inverter/all_inverters.json
+public/data/soiling/*/time_series/
+public/data/soiling/*/transfer_features.json
+public/data/soiling/*/cams_aod_history.json
+public/data/prices/_raw/
+
+# Local working dirs — design assets, ML model binaries, sales/outreach drafts
+branding/
+/models/*
+!/models/rul/
+sales-assets/
+
+# Ad-hoc screenshots at repo root (one-off captures, not shipped imagery)
+/audit_*.png
+/boreas_*.png
+/classifier_*.png
+/claude_removed.png
+/cockpit_*.png
+/curtailment_*.png
+/fault_audit_*.png
+/fleet_*.png
+/hero_*.png
+/inverter_*.png
+/maintenance_horizon_page.png
+/mppt_voltage_after*.png
+/onboard_*.png
+/overhaul_*.png
+/portfolio_v2.png
+/propag_*.png
+/recolor_*.png
+/route_migration_*.png
+/sandbox_*.png
+/sang_*.png
+/ribera_fixed.png
+/soiling_review_*.png
+/soiling_v2_*.png
+/solutions_pv_v2.png
+
+# Local Iceberg lakehouse warehouse (Phase 1 — docs/DATA_ARCHITECTURE_GUIDE.md).
+# The dev catalog + parquet data live here; regenerate with scripts/lake_register_bronze.py.
+/lake/
+
+# WhatsApp bridge session credentials (never commit)
+store/
+
+# Portfolio hygiene 2026-09-16: never-tracked local material
+career-ops/
+disabled_pages_backup/
+.idea/
+_archived_components/
+/*.png
+/*.jpeg
+/*.jpg
+/*.html
+/*.bak
+.env.bak*
+leadgen.json
+linkedin_replies.txt
+old-tailwind.config.js
+comprehensive-test.js
+test-dashboard.js
+NuraVolt-Asset-Analytics-Guide.pdf
+/audit-warranty.yml
+/chat-warranty-turn.yml
+
+*.swp
